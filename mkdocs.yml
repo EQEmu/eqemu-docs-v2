@@ -1,8 +1,8 @@
 site_name: EQEmulator Docs
 plugins:
   - search
-#repo_url: https://github.com/EQEmu/Server
-#repo_name: EQEmu/Server
+repo_url: https://github.com/EQEmu/eqemu-docs-v2
+repo_name: EQEmu Docs
 theme:
   features:
     - navigation.tabs
