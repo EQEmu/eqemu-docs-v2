@@ -6,9 +6,9 @@ description: >-
 
 # Install PEQ Database Editor
 
-{% hint style="info" %}
-If you do not need to run your own editor, you can simply use the publicly available version of the PEQ Database Editor found at [eoc.akkadius.com](http://eoc.akkadius.com).  Input the settings for your server on the [Login](http://eoc.akkadius.com/EOC2/login.php) page and be sure to follow the on-screen instructions.
-{% endhint %}
+!!! info
+      If you do not need to run your own editor, you can simply use the publicly available version of the PEQ Database Editor found at [eoc.akkadius.com](http://eoc.akkadius.com).  Input the settings for your server on the [Login](http://eoc.akkadius.com/EOC2/login.php) page and be sure to follow the on-screen instructions.
+
 
 ## Documented Setups by OS:
 
@@ -258,9 +258,9 @@ Point your web browser to `http://localhost/<editor-directory>/index.php` and lo
 
 _Big thanks to Gloat for running through this, and RedVapor for some example sed scripts and greps!_
 
-{% hint style="info" %}
-If you can skip having to sudo each line with (sudo -i or sudo su) it can save a lot of sudo's
-{% endhint %}
+!!! info
+      If you can skip having to sudo each line with (sudo -i or sudo su) it can save a lot of sudo's
+
 
 Install MySQL
 
@@ -317,9 +317,9 @@ Start Apache
 sudo systemctl start apache2.service
 ```
 
-{% hint style="info" %}
-You can point your browser to the ip address to make sure webserver is working at this point.
-{% endhint %}
+!!! info
+      You can point your browser to the ip address to make sure webserver is working at this point.
+
 
 Install PHP
 
@@ -333,13 +333,13 @@ Look for your loaded PHP configuration file
 php -i | grep "Loaded Configuration File"
 ```
 
-{% hint style="info" %}
-There are a number of other different methods to find your php.ini file(s), such as using grep to search for the setting of interest:
+!!! info
+      There are a number of other different methods to find your php.ini file(s), such as using grep to search for the setting of interest:
 
 ```
 grep -r short_open_tag /etc/php/
 ```
-{% endhint %}
+
 
 Edit your PHP configuration file (example file location used shown below)
 
@@ -347,14 +347,14 @@ Edit your PHP configuration file (example file location used shown below)
 sudo nano /etc/php/7.2/apache2/php.ini
 ```
 
-{% hint style="info" %}
-If you'd rather not use an editor to make the adjustments, a simple sed script can make them for you (an example for php v7.3 is below):
+!!! info
+      If you'd rather not use an editor to make the adjustments, a simple sed script can make them for you (an example for php v7.3 is below):
 
 ```
 sudo sed -i 's/short_open_tag\ =\ Off/short_open_tag\ =\ on/g' /etc/php/7.3/apache2/php.ini
 sudo sed -i 's/short_open_tag\ =\ Off/short_open_tag\ =\ on/g' /etc/php/7.3/cli/php.ini
 ```
-{% endhint %}
+
 
 Search (ctrl + W) for "short_open_tag"
 
@@ -410,21 +410,21 @@ Open your config file for editing and input your settings
 nano config.php
 ```
 
-{% hint style="info" %}
-Depending on your environment, you may need to change ownership of the web directory.  An example is below (your user:group IDs might be different):
+!!! info
+      Depending on your environment, you may need to change ownership of the web directory.  An example is below (your user:group IDs might be different):
 
 ```
 sudo chown -R www-data:www-data /var/www/html/
 ```
-{% endhint %}
 
-{% hint style="success" %}
-After all of these changes, it might be a good idea to restart Apache:
+
+!!! info
+      After all of these changes, it might be a good idea to restart Apache:
 
 ```
 systemctl restart apache2
 ```
-{% endhint %}
+
 
 Execute the queries found in the sql directory on your database
 
@@ -456,9 +456,9 @@ Choose `OK` to approve the User Account Control (UAC) permission.
 
 ![UAC Warning](../../gitbook/assets/uac-warning.png)
 
-{% hint style="warning" %}
-Be sure to **deselect **MySQL!! (assuming you used the Akkadius EQEmu Server Installer, you already have MariaDB)
-{% endhint %}
+!!! warning
+      Be sure to **deselect **MySQL!! (assuming you used the Akkadius EQEmu Server Installer, you already have MariaDB)
+
 
 ![Deselect MySQL before continuing](../../gitbook/assets/deselect-mysql.png)
 
@@ -478,9 +478,9 @@ Click `Start` to start Apache.
 
 ![Start or Configure Apache](../../../gitbook/assets/start-apache.png)
 
-{% hint style="success" %}
-If you want to configure Apache auto-start, click on `config` (you will need to exit the control panel and restart as Admin to save the configuration).
-{% endhint %}
+!!! info
+      If you want to configure Apache auto-start, click on `config` (you will need to exit the control panel and restart as Admin to save the configuration).
+
 
 ![Be sure to Save your changes as Administrator](../../gitbook/assets/auto-start-apache.png)
 
@@ -492,9 +492,9 @@ Download a copy of the PEQ Database Editor from GitHub:  [https://github.com/Pro
 
 Extract the contents of the zip file to `C:\xampp\htdocs.
 
-{% hint style="info" %}
-If you would like to change the name of the PEQ Database Editor directory, now is the time.  Note that you can move the contents to the root htdocs directory.  Changing this name will effect the URL used to access the Editor.
-{% endhint %}
+!!! info
+      If you would like to change the name of the PEQ Database Editor directory, now is the time.  Note that you can move the contents to the root htdocs directory.  Changing this name will effect the URL used to access the Editor.
+
 
 Navigate to the `C:\xampp\htdocs\peqphpeditor-master\ folder.
 
@@ -504,9 +504,9 @@ Copy the file `config.php.dist` and rename it `config.php`.
 
 Open the `config.php` file with a text editor and fill in your information (default values used below).
 
-{% hint style="success" %}
-If you don't know your login information, remember that you can reference it in your `eqemu_config.json` file found in your server folder.
-{% endhint %}
+!!! info
+      If you don't know your login information, remember that you can reference it in your `eqemu_config.json` file found in your server folder.
+
 
 ```
 /**
@@ -545,9 +545,9 @@ Also look for **error_reporting** to turn turn off some warnings.
 error_reporting = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
 ```
 
-{% hint style="info" %}
-Restart (stop/start) your Apache service or process after any changes to .conf or .ini files
-{% endhint %}
+!!! info
+      Restart (stop/start) your Apache service or process after any changes to .conf or .ini files
+
 
 ### Navigate to your PEQ Database Editor
 
@@ -559,13 +559,13 @@ http://localhost/peqphpeditor-master/index.php
 
 Enter the default username and password: "admin" and "password".
 
-{% hint style="info" %}
-When shutting down XAMPP and/or the computer, it is recommended to stop MySQL/MariaDB through the console rather than using the control panel. The reason is that the control panel just kills the process rather than letting the database shut down cleanly. Losing power or shutting down the database server using the control panel has been known to corrupt databases. The HTTP (Apache) server can be stopped from the control panel without issues.
-{% endhint %}
+!!! info
+      When shutting down XAMPP and/or the computer, it is recommended to stop MySQL/MariaDB through the console rather than using the control panel. The reason is that the control panel just kills the process rather than letting the database shut down cleanly. Losing power or shutting down the database server using the control panel has been known to corrupt databases. The HTTP (Apache) server can be stopped from the control panel without issues.
+
 
 {% hint style="danger" %}
 If you aren't running MySQL/MariaDB as a service (i.e. you started the database manually), it is a good idea to shut down the database cleanly. To do this, open a command prompt (from the XAMPP control panel if you haven't added MySQL/MariaDB to your PATH variables) and run the following command (only use the -p if your root user has a password):
-{% endhint %}
+
 
 ```
 mysqladmin shutdown -uroot -p

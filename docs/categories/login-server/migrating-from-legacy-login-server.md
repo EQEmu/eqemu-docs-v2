@@ -12,9 +12,9 @@ There is no straight migration path for the configuration file, you will simply 
 
 To migrate from a Legacy Login server database, you can use the provided `.sql` that you may find also available in the source at `loginserver/login_util/login_old_to_new_schema_convert.sql`
 
-{% hint style="info" %}
-Take note of the old table names in the script, if you used different table names (Because they were previously configurable) you will need to change the table names to reflect
-{% endhint %}
+!!! info
+      Take note of the old table names in the script, if you used different table names (Because they were previously configurable) you will need to change the table names to reflect
+
 
 ### Migration SQL
 

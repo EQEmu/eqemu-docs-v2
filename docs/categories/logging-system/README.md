@@ -33,9 +33,9 @@ All settings are managed in **logsys_categories** database table
 
 When a process boots up, such as **zone/world/ucs/queryserv/etc**. These settings will load and whatever applies to the server category wise is what it will use as **rules** to understand where to send output, as well as what level of information (high or low) to display
 
-{% hint style="info" %}
-Please note that **log_to_gmsay** is only available for zone-level debugging
-{% endhint %}
+!!! info
+      Please note that **log_to_gmsay** is only available for zone-level debugging
+
 
 ## In-Game Commands
 

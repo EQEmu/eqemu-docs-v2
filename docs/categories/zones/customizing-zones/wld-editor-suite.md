@@ -30,9 +30,9 @@ Texture Adder is a tool for adding new texture set data, allowing you to add cus
 
 8. Voila!
 
-{% hint style="info" %}
-Note that the texture set data in the .wld file is different from the texture files that go into the .s3d. Other than the visibility/transparency settings (and some unknowns, see below), they basically just tell the client "a texture with this name exists, and you should try to load it for this model and ID".
-{% endhint %}
+!!! info
+      Note that the texture set data in the .wld file is different from the texture files that go into the .s3d. Other than the visibility/transparency settings (and some unknowns, see below), they basically just tell the client "a texture with this name exists, and you should try to load it for this model and ID".
+
 
 ## Transparentifier
 

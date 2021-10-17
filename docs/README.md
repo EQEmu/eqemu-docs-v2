@@ -2,9 +2,8 @@
 
 Welcome to the EQEmu Wiki.  The information presented on this wiki represents the commitment of countless hours of coding and documentation by a large, passionate, open-source community.  The purpose of this wiki is to allow a scalable transfer of knowledge and information regarding this massive project.  Please feel free to utilize this resource, and help us to improve it along your journey.
 
-{% hint style="info" %}
-This wiki is a living document that is intended to replace earlier knowledge-bases.  If you see anything that is missing or could be improved, please feel free to contribute!   If you do not have permission to edit, please get in touch on [Discord](https://discord.gg/QHsm7CD).
-{% endhint %}
+!!! info
+        This wiki is a living document that is intended to replace earlier knowledge-bases.  If you see anything that is missing or could be improved, please feel free to contribute!   If you do not have permission to edit, please get in touch on [Discord](https://discord.gg/QHsm7CD).
 
 ### Getting Started
 

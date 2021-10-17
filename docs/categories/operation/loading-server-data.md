@@ -86,9 +86,9 @@ This page explains how different assets on the server are loaded and by what met
 
 * In game command **#reloadstatic** - will reload objects from the `objects` table for the respective zone and instance
 
-{% hint style="success" %}
-Note that you will likely have to zone for your client to update.
-{% endhint %}
+!!! info
+      Note that you will likely have to zone for your client to update.
+
 
 ## Pets
 

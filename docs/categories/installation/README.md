@@ -31,9 +31,9 @@ All of the code that you see for EQEmu Server Github is the what makes the world
 
 If you want shelves full of weapons to storm the government building where they're holding Morpheus captive, you'll need a database that contains that information. When you run the installer, you get a copy of the PEQ database. The PEQ database is the database created, modified and maintained by the folks at [ProjectEQ.net](https://projecteq.net/). Thousands and thousands of hours have likely been spent on the PEQ Database, and the people that run the project were incredibly generous and made their database open source so that anyone could make use of it. 
 
-{% hint style="success" %}
-Daily database dumps of the PEQ Database are [available here](http://db.projecteq.net/)
-{% endhint %}
+!!! info
+      Daily database dumps of the PEQ Database are [available here](http://db.projecteq.net/)
+
 
 The PEQ database may not provide the exact data that makes **your world** exactly the way **YOU** want it, but they have saved you countless hours of creating [zones](../zones/), [NPCs](../npc/), [pathing grids](../npc/spawns/grids.md), and more. This is something to keep in mind before you spend your time complaining about the database content--they give freely, and at least to some degree, you have benefitted from their hard work. If you want to customize your world, you'll have to do some hard work too; and once you've done this work, please consider sharing it with the community, as so many others have done--someone **just like you** will benefit.
 
@@ -41,9 +41,9 @@ The PEQ database may not provide the exact data that makes **your world** exactl
 
 Consider this your first step in customizing your world once you've run the installer script.  You will need to [configure your eqemu_config.json](configure-your-eqemu_config.md) file to set your world's name, the name of your database, and more.  Follow the instructions carefully so that your decisions do not become the cause of something going horribly wrong.
 
-{% hint style="warning" %}
-Be sure to back up any files before you start to modify them!  
-{% endhint %}
+!!! warning
+      Be sure to back up any files before you start to modify them!  
+
 
 ### Where we go from there, is a choice I leave to you
 

@@ -2,9 +2,9 @@
 
 EQEmulator is a custom, completely from-scratch, open source server implementation for EverQuest, built mostly on C++. EQEmulator is an open-source project, released under the GNU General Public License.
 
-{% hint style="warning" %}
-**EverQuest clients are the intellectual property of the Daybreak Game Company, LLC.** Copies of Daybreak Game Company intellectual property are not sourced through the EQEmulator project, nor should you provide unlicensed copies through any EQEmulator asset.
-{% endhint %}
+!!! warning
+      **EverQuest clients are the intellectual property of the Daybreak Game Company, LLC.** Copies of Daybreak Game Company intellectual property are not sourced through the EQEmulator project, nor should you provide unlicensed copies through any EQEmulator asset.
+
 
 This page is intended to assist you in configuring your client to connect to an EQEmu server.
 
@@ -36,9 +36,8 @@ Each server will likely have some small modifications that you are required to m
 
 While we cannot cover every server, we can provide tips for the modified files that you should seek out for each new server for which you plan to connect.  
 
-{% hint style="info" %}
-It is highly recommended that you create a specific client folder for each server, so that you do not have to keep modifying these files.
-{% endhint %}
+!!! info
+        It is highly recommended that you create a specific client folder for each server, so that you do not have to keep modifying these files.
 
 #### Spell File:  spells_%s.txt
 

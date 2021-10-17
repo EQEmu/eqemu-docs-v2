@@ -19,9 +19,9 @@ This isn't necessary if you're running from the `18.04` iso.
 
 #### Starting the Linux Installer
 
-{% hint style="warning" %}
-It is not advised to log in as `root` or run `sudo -i` to install and run EQEmu
-{% endhint %}
+!!! warning
+      It is not advised to log in as `root` or run `sudo -i` to install and run EQEmu
+
 
 * First you will need to kick off the installer using the single line command line also referenced on the README in the EQEmu/Server repository
 * You can use curl or wget to kick off the installer (whichever your OS has)

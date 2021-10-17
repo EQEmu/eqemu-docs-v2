@@ -6,17 +6,17 @@ description: This article describes the ability to use multiple database and dat
 
 
 
-{% hint style="warning" %}
-**Warning **This feature is for **advanced server operators**
-{% endhint %}
+!!! warning
+      **Warning **This feature is for **advanced server operators**
+
 
 ## What is Multi Tenancy in Software?
 
 There are several types of multi-tenancy in Software, the one we're going to be talking about implemented in the server backend is described as simply being able to use different database connections for different types of data
 
-{% hint style="info" %}
-Multi-tenant architecture hosts data in multiple databases. This model is relatively complex in terms of management and maintenance, but tenants can be separated by a chosen criterion.
-{% endhint %}
+!!! info
+      Multi-tenant architecture hosts data in multiple databases. This model is relatively complex in terms of management and maintenance, but tenants can be separated by a chosen criterion.
+
 
 ![](<../../gitbook/assets/image (19).png>)
 

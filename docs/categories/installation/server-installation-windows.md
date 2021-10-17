@@ -27,9 +27,9 @@ This installer assumes you have a **clean **install of Windows and an Internet C
 * **Optimized and latest server binaries (Stable)**
 * **Loginserver**
 
-{% hint style="info" %}
-More installer info found in the installation details
-{% endhint %}
+!!! info
+      More installer info found in the installation details
+
 
 ## Server Installation
 
@@ -122,9 +122,9 @@ When the installation process is done running, you will see **"press any key to 
 
 ### Change Server Name
 
-{% hint style="info" %}
-Change your server name in **eqemu_config.json **under** shortname **and** longname**
-{% endhint %}
+!!! info
+      Change your server name in **eqemu_config.json **under** shortname **and** longname**
+
 
 ### Set a GM Account (Optional)
 
@@ -134,8 +134,8 @@ To set your account as a GM account; use the **t_set_gm_account.bat** helper scr
 
 The windows installer comes pre-configured with a **Local Login Server **
 
-{% hint style="success" %}
-The server installer is configured to connect to the both the **EQEmu Public Login Server** and the **Local Login Server**
+!!! info
+      The server installer is configured to connect to the both the **EQEmu Public Login Server** and the **Local Login Server**
 
 You can use **both** methods of logging into your server
 
@@ -143,19 +143,19 @@ You can use **both** methods of logging into your server
 
 * EQEmu Public Login Server
 * Local Login Server (Private LAN Play)
-{% endhint %}
+
 
 Many server operators choose to keep things simple by only using the public login server
 
-{% hint style="info" %}
-For information regarding the configuration and operation of a **Local Login Server; **please refer to the documentation in the [Login Server Space](https://eqemu.gitbook.io/eqemulator-loginserver/loginserver/configuration)
-{% endhint %}
+!!! info
+      For information regarding the configuration and operation of a **Local Login Server; **please refer to the documentation in the [Login Server Space](https://eqemu.gitbook.io/eqemulator-loginserver/loginserver/configuration)
+
 
 ### Connecting Clients to a Login Server
 
-{% hint style="success" %}
-Remember that all **EverQuest Clients** on the local network will need to have a modified **eqhost.txt** (Client file) file that points at your Local Login Server
-{% endhint %}
+!!! info
+      Remember that all **EverQuest Clients** on the local network will need to have a modified **eqhost.txt** (Client file) file that points at your Local Login Server
+
 
 {% code title="" %}
 ```javascript
@@ -166,10 +166,10 @@ Host=192.168.0.1:5999
 
 Be sure to adjust the IP address to the IP address of your login server on your local network.
 
-{% hint style="success" %}
-**Port 5998** is required when using the **Titanium** or **Secrets of Faydwer **clients\
+!!! info
+      **Port 5998** is required when using the **Titanium** or **Secrets of Faydwer **clients\
 **Port 5999** is required when using the **Seeds of Destruction, Underfoot** or **Rain of Fear** client and above
-{% endhint %}
+
 
 ### Starting Server with Login Server (Optional)
 
@@ -177,9 +177,9 @@ Once you have configured your login server, restart your world server using the 
 
 ### Connecting to Local Login Server
 
-{% hint style="info" %}
-For more Local Login Server configuration options; see [Login Server Space](https://eqemu.gitbook.io/eqemulator-loginserver/loginserver/configuration)
-{% endhint %}
+!!! info
+      For more Local Login Server configuration options; see [Login Server Space](https://eqemu.gitbook.io/eqemulator-loginserver/loginserver/configuration)
+
 
 Connect using your game client and you should see the server select screen
 

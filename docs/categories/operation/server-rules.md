@@ -12,13 +12,13 @@ To edit rules, you can use the #rules set &lt;key&gt; &lt;value&gt; command to s
 
 You can then use #reloadallrules to force all zones to reload the new rules. 
 
-{% hint style="warning" %}
-The `notes` field in the database is set by the server software.  If you adjust the values in the field, they will be overwritten and restored to default values when you update your server binaries.
-{% endhint %}
+!!! warning
+      The `notes` field in the database is set by the server software.  If you adjust the values in the field, they will be overwritten and restored to default values when you update your server binaries.
 
-{% hint style="info" %}
-If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
-{% endhint %}
+
+!!! info
+      If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
+
 
 | **Type** | **Category** | **Name** | **Default Value** | **Description** |
 | :--- | :--- | :--- | :--- | :--- |

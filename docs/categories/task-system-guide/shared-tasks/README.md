@@ -14,17 +14,17 @@ Dynamic zones are the same underlying instancing system that expedition's use. T
 Client::CreateTaskDynamicZone(int taskid, LUA_TTABLE dynamic_zone_info)
 ```
 
-{% hint style="warning" %}
-This method is currently only available to the Lua API
-{% endhint %}
+!!! warning
+      This method is currently only available to the Lua API
+
 
 This method creates a dynamic zone for a client assigned to the specified task id. If the client does not have a task for the task id or the specified task id is not a shared task, then the dynamic zone is not created. If dynamic zone creation is successful then all members of the client's shared task are added to it. Multiple dynamic zones may be created for a shared task to support custom servers.
 
 Dynamic zone creation data is passed through the `dynamic_zone_info` parameter similar to the [Client::CreateExpedition](https://docs.eqemu.io/server/categories/expedition-system/quest-api-lua/client-methods#expedition-createexpedition-lua_ttable-expedition_info) API. Passing a duration for the instance data will have no effect. The shared task system will automatically override the duration to the shared task's remaining time.
 
-{% hint style="warning" %}
-A shared task set to `0` duration in the database for unlimited time is not supported and the dynamic zone will be set to a max duration of 24 hours (suspected max of live shared tasks)
-{% endhint %}
+!!! warning
+      A shared task set to `0` duration in the database for unlimited time is not supported and the dynamic zone will be set to a max duration of 24 hours (suspected max of live shared tasks)
+
 
 | key name | supported keys | description |
 | :--- | :--- | :--- |

@@ -12,9 +12,8 @@ VSCode can be found at: [https://code.visualstudio.com/](https://code.visualstud
 
 If on Mac or Windows, you can install [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 
-{% hint style="info" %}
-Docker for Windows requires Windows 10 Pro 64bit or better [https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)
-{% endhint %}
+!!! info
+    Docker for Windows requires Windows 10 Pro 64bit or better [https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)
 
 Either fork or clone the [eqemu server repo](https://github.com/EQEmu/Server) (**Be sure to include submodules!**)
 
@@ -24,11 +23,8 @@ $ cd server
 $ code .
 ```
 
-{% hint style="info" %}
- If `code` is not a recognized command, you can alternatively Open Visual Studio Code manually, and drag-drop the Server folder into the window.
-{% endhint %}
-
-
+!!! info
+    If `code` is not a recognized command, you can alternatively Open Visual Studio Code manually, and drag-drop the Server folder into the window.
 
 ## Prepare extensions
 

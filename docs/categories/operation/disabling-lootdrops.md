@@ -8,9 +8,9 @@ description: >-
 
 Did you know that you can disable lootdrop entries in a way that allows you to restore them later?  This overlooked feature will allow you to turn off certain lootdrop entries--perhaps those that are out of era for your server, and easily turn them back on later.
 
-{% hint style="info" %}
-A "disabled" loot drop entry simply means that the item will no longer have the possibility of dropping when the NPC is killed.
-{% endhint %}
+!!! info
+      A "disabled" loot drop entry simply means that the item will no longer have the possibility of dropping when the NPC is killed.
+
 
 ### Using PEQ Database Editor
 
@@ -22,9 +22,9 @@ In the PEQ Database editor, you'll notice that there is a button with two red ar
 
 Once you click the button, the lootdrop entry is then disabled, and the icon changes to two blue arrows pointing upwards.  Clicking the arrow again toggles the state and the item is once again enabled for dropping.  
 
-{% hint style="info" %}
-Note that the chance goes to '0' when disabled, and returns to its previous value once re-enabled.  We used this functionality to **preserve the original value** in case we want to **retrieve it later**.
-{% endhint %}
+!!! info
+      Note that the chance goes to '0' when disabled, and returns to its previous value once re-enabled.  We used this functionality to **preserve the original value** in case we want to **retrieve it later**.
+
 
 ![Disabled lootdrop entry](../../gitbook/assets/enable_lootdrop_entry.png)
 

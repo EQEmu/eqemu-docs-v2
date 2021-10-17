@@ -20,9 +20,9 @@ Source Code
 
 ## How to use the program
 
-{% hint style="info" %}
-Note: Only Titanium, SoF, and RoF2 (Rain of Fear, Steam Release #2) are currently supported!
-{% endhint %}
+!!! info
+      Note: Only Titanium, SoF, and RoF2 (Rain of Fear, Steam Release #2) are currently supported!
+
 
 Unzip EQRI.exe into your EQ directory, or create a new folder inside your EQ directory called "EQRI", and unzip the program into that. Technically, it can be unzipped to and run from anywhere, with the following caveats:
 

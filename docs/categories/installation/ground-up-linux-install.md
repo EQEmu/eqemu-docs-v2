@@ -1,8 +1,8 @@
 # Ground Up Linux Install
 
-{% hint style="info" %}
-It is recommended to use the [**Linux-Server install**](server-installation-linux.md)** **in nearly all cases, this is for advanced users/developers. Note the Linux-Server install above DOES include source code building, so it can do all steps below.
-{% endhint %}
+!!! info
+      It is recommended to use the [**Linux-Server install**](server-installation-linux.md)** **in nearly all cases, this is for advanced users/developers. Note the Linux-Server install above DOES include source code building, so it can do all steps below.
+
 
 ubuntu apt-get install requirements. (you can refer to [https://github.com/EQEmu/Server/blob/master/utils/scripts/linux_installer/install.sh#L91](https://github.com/EQEmu/Server/blob/master/utils/scripts/linux_installer/install.sh#L91)) for other environment installs
 

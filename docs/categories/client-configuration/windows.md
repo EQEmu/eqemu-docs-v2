@@ -1,16 +1,16 @@
 # Windows
 
-{% hint style="info" %}
-Be sure to adjust your eqhost file as [indicated for all clients](./).
-{% endhint %}
+!!! info
+      Be sure to adjust your eqhost file as [indicated for all clients](./).
+
 
 ### Generic Connection Instructions
 
 The are the generic instructions for configuring your client for connection to an EQEmu Server.
 
-{% hint style="warning" %}
-Do not launch your EverQuest client prior to making these adjustments, as it will attempt to patch and you will have to reinstall the client from scratch!
-{% endhint %}
+!!! warning
+      Do not launch your EverQuest client prior to making these adjustments, as it will attempt to patch and you will have to reinstall the client from scratch!
+
 
 Navigate to your EverQuest client directory and right-click on the eqgame.exe application.
 

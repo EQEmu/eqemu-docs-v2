@@ -8,19 +8,16 @@ description: >-
 
 The EverQuest client can be run through Wine v4 (old) or v5 (current) on macOS Mojave. A similar workflow should work for older versions of macOS.  
 
-{% hint style="danger" %}
-You **cannot** use a case-sensitive drive formatting schema.
-{% endhint %}
+!!! danger
+    You **cannot** use a case-sensitive drive formatting schema.
 
-{% hint style="warning" %}
-If you are running Catalina, you will **not** be able to run EverQuest at this time. 
-{% endhint %}
+!!! warning
+    If you are running Catalina, you will **not** be able to run EverQuest at this time. 
 
 If you wish to downgrade Catalina to Mojave, you will be in for an adventure.  It can be accomplished, but is well-beyond the scope of this guide.
 
-{% hint style="info" %}
-With the introduction of macOS Mavericks, "App Nap" was introduced.  You will likely want to turn this off (instructions below).
-{% endhint %}
+!!! info
+    With the introduction of macOS Mavericks, "App Nap" was introduced.  You will likely want to turn this off (instructions below).
 
 **To configure your system, follow these steps:**
 
@@ -75,9 +72,8 @@ sudo ln -s /usr/local/lib /usr/X11/lib/*
 
 ## Install Wine
 
-{% hint style="info" %}
-This step has recently been updated due to changes with Wine.
-{% endhint %}
+!!! info
+    This step has recently been updated due to changes with Wine.
 
 * In Terminal... (_/Applications/Utilities/Terminal.app_)
 * Copy and paste this command and execute:
@@ -88,9 +84,8 @@ brew install cask wine-stable
 
 ### Create a 32-bit Wine Prefix
 
-{% hint style="info" %}
-Unfortunately, wine-stable now installs a 64-bit Prefix.  Be sure to complete this step to overcome this unfortunate decision.
-{% endhint %}
+!!! info
+    Unfortunately, wine-stable now installs a 64-bit Prefix.  Be sure to complete this step to overcome this unfortunate decision.
 
 * Copy and paste this command and execute:
 
@@ -134,9 +129,9 @@ WINE=${WINE:-wine} WINEPREFIX=${WINEPREFIX:-$HOME/.wine} $WINE regedit /tmp/font
 
 ## Launch EverQuest
 
-{% hint style="info" %}
-Be sure to follow the instructions to [configure your client](../../../../categories/how-to-guides/client-configuration#all-operating-systems) for use with EQEmu that are applicable to all operating systems.
-{% endhint %}
+!!! info
+      Be sure to follow the instructions to [configure your client](../../../../categories/how-to-guides/client-configuration#all-operating-systems) for use with EQEmu that are applicable to all operating systems.
+
 
 * In Terminal... (_/Applications/Utilities/Terminal.app_)
 * Navigate to your EverQuest directory (IE _cd Applications/EverQuest/_)
@@ -185,9 +180,9 @@ Mac OS Mavericks introduced a power-saving feature called "App Nap" to save batt
 * HKEY_CURRENT_USER -&gt; Software -&gt; Wine -&gt; Direct3D
 * Create a DWORD Value (REG_DWORD) named "[csmt](https://wiki.archlinux.org/index.php/wine#CSMT)" and set the value to 0x0 (disable)
 
-{% hint style="info" %}
-If you do not find Direct3D in Wine, locate your installation and make the same modification.
-{% endhint %}
+!!! info
+      If you do not find Direct3D in Wine, locate your installation and make the same modification.
+
 
 ![](../../gitbook/assets/regedit-mojave.png)
 

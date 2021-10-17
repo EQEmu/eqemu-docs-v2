@@ -4,9 +4,9 @@
 
 You can change the starting zone for characters on a per race/class and deity basis, as well as for Titanium or SOF+ clients. This is separate from the Tutorial zone- this can be enabled/disabled as required. Note: the tutorial may teleport players to POK regardless of what you set.
 
-{% hint style="warning" %}
-**NB:** The variable "startzone" in the variables table is no longer used. Any references to this are deprecated.
-{% endhint %}
+!!! warning
+      **NB:** The variable "startzone" in the variables table is no longer used. Any references to this are deprecated.
+
 
 You might wish to have a different starting zone for Titanium clients than SOF+ in case you wish to use a zone that is not available in the Titanium install. If you go wrong somewhere in the process, SOF+ clients will put players in Crescent Reach. Titanium clients will end up in the old default city (Gnomes in Ak'anon, Wood Elves in Kelethin etc)
 

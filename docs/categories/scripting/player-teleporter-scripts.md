@@ -70,9 +70,9 @@ sub EVENT_ITEM {
 
 This quest script is an example of a teleporter script that allows you to port to a specific instance of a zone.
 
-{% hint style="success" %}
-Be sure to read up on [Using Data Buckets](using-data-buckets.md) 
-{% endhint %}
+!!! info
+      Be sure to read up on [Using Data Buckets](using-data-buckets.md) 
+
 
 ```perl
 #:: Create a scalar variable to store the cost of instance deletion - 1,000,000 copper pieces (1,000pp)

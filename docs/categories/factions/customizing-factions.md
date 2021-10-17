@@ -6,13 +6,13 @@ description: This page describes customizing factions on your EQEmu server
 
 Every faction that exists on a server is listed in the [`faction_list`](https://eqemu.gitbook.io/database-schema/categories/factions/faction_list) table. This table includes a unique id, a name, and a starting (base) faction. This starting value is combined with any race/class/deity adjustments that apply (see [`faction_list_mod`](https://eqemu.gitbook.io/database-schema/categories/factions/faction_list_mod) table) to create the starting faction for characters when they are born. As characters interact with the world, they can gain/lose faction through their actions, be that killing or questing. These values are continuously updated in the [`faction_values`](https://eqemu.gitbook.io/database-schema/categories/factions/faction_values) table.
 
-{% hint style="info" %}
-Note that the `faction_values` table contains _character_ data, even though it does not follow the Database Schema Guidelines (it should be `character_faction_values`).
-{% endhint %}
+!!! info
+      Note that the `faction_values` table contains _character_ data, even though it does not follow the Database Schema Guidelines (it should be `character_faction_values`).
 
-{% hint style="success" %}
-As of [06 March 2019](https://eqemu.gitbook.io/changelog/years/2019#3-1-2019) we have imported the client faction list and we now use these renumbered factions. The client does not have a base for any of the factions, all of the offsets are realized in faction_list_mod instead. This does not mean that the base cannot be altered for custom results.
-{% endhint %}
+
+!!! info
+      As of [06 March 2019](https://eqemu.gitbook.io/changelog/years/2019#3-1-2019) we have imported the client faction list and we now use these renumbered factions. The client does not have a base for any of the factions, all of the offsets are realized in faction_list_mod instead. This does not mean that the base cannot be altered for custom results.
+
 
 Each faction has a minimum and a maximum value, at which point no more faction can be lost or gained. This information is stored in the `faction_base_data` table. The default _base_ maximum is 2000 and the _base_ minimum is -2000 if there is no entry. The amount a character can earn is based on these constants **and** the faction's initial base value. For example, a faction that starts out at 0 (base value in `faction_list`) is a simple case, and would use the maximum of 2000 and minimum of -2000.
 
@@ -22,9 +22,9 @@ A character's unmodified faction value at any time is calculated by the followin
 
 > Current Unmodified Faction = faction_list 'base' integer + faction_values 'current_value' integer
 
-{% hint style="info" %}
-Again, note that the integer in the 'current_value' field of the `faction_values` table represents the factions gains and hits the player has received from killing NPCs or completing quests.
-{% endhint %}
+!!! info
+      Again, note that the integer in the 'current_value' field of the `faction_values` table represents the factions gains and hits the player has received from killing NPCs or completing quests.
+
 
 This faction value is then adjusted by any impact caused by the character's race/class/deity combination. These modifications are stored in the `faction_list_mod` table. These adjustments cannot be made up for by any actions or deeds:  they are permanent marks on the character's record, and can therefore impact how high (or low) a character can get with the faction in question. They can be temporarily masked by things like illusions, but cannot be completely erased.
 

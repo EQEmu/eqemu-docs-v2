@@ -6,9 +6,9 @@ description: Login Server configuration options
 
 The login server configuration file is stored in the server root and is named `login.json` below is the most recent configuration per **September 17, 2019**
 
-{% hint style="warning" %}
-**Warning** Be careful with how you configure your Login server as it some settings may not be ideal for your needs
-{% endhint %}
+!!! warning
+      **Warning** Be careful with how you configure your Login server as it some settings may not be ideal for your needs
+
 
 ```javascript
 {

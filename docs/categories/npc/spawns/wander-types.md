@@ -4,9 +4,9 @@ description: EQEmu Grid Wander Types
 
 # Wander Types
 
-{% hint style="info" %}
-These Wander Types are assigned to a [Grid](https://eqemu.gitbook.io/database-schema/categories/grids) to cause the behavior listed below as the NPC wanders through Grid Waypoint Entries.
-{% endhint %}
+!!! info
+      These Wander Types are assigned to a [Grid](https://eqemu.gitbook.io/database-schema/categories/grids) to cause the behavior listed below as the NPC wanders through Grid Waypoint Entries.
+
 
 <table>
   <thead>

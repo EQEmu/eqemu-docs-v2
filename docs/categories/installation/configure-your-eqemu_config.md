@@ -4,13 +4,13 @@ description: This page describes the settings and options in your eqemu_config.j
 
 # Configure your eqemu_config
 
-{% hint style="warning" %}
-If you make use of the various services listed below, be sure to **open the corresponding ports** on your server / firewall / router to TCP and UDP traffic!
-{% endhint %}
+!!! warning
+      If you make use of the various services listed below, be sure to **open the corresponding ports** on your server / firewall / router to TCP and UDP traffic!
+
 
 {% hint style="danger" %}
 STOP!  Did you read the line above?  It's a **really** important tip.
-{% endhint %}
+
 
 | Legend |
 | :--- |
@@ -112,9 +112,9 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 | account |  | Account forum username for public EQEmu authentication, this is used with worldserver registration |
 | password |  | Account forum password |
 
-{% hint style="warning" %}
-Your server will need to use port 5998 to communicate with the public EQEmu loginserver.  Do NOT change that value as you would for your eqhost file, based on client.
-{% endhint %}
+!!! warning
+      Your server will need to use port 5998 to communicate with the public EQEmu loginserver.  Do NOT change that value as you would for your eqhost file, based on client.
+
 
 * Note: Multiple Loginserver endpoints can be established by using the same configuration above, however declaring your loginserver subsections with a number, below is an example
 

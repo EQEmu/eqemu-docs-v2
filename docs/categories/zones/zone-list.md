@@ -6,9 +6,9 @@ description: >-
 
 # Zone List
 
-{% hint style="success" %}
-Note that the zoneidnumber in your database is separate from the zone table id
-{% endhint %}
+!!! info
+      Note that the zoneidnumber in your database is separate from the zone table id
+
 
 | Zone ID | Zone Long Name | Zone Short Name |
 | :--- | :--- | :--- |

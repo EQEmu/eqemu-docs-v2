@@ -2,9 +2,9 @@
 
 ## Summon (1)
 
-{% hint style="info" %}
-Summon, denoted by special attack 1 or "S" (old code), allows you to teleport the player to the NPC, or the NPC to the player.
-{% endhint %}
+!!! info
+      Summon, denoted by special attack 1 or "S" (old code), allows you to teleport the player to the NPC, or the NPC to the player.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -29,9 +29,9 @@ Summon, denoted by special attack 1 or "S" (old code), allows you to teleport th
 
 ## Enrage (2)
 
-{% hint style="info" %}
-Enrage, denoted by special attack 2 or "E" (old code), allows the NPC to riposte incoming melee attacks.
-{% endhint %}
+!!! info
+      Enrage, denoted by special attack 2 or "E" (old code), allows the NPC to riposte incoming melee attacks.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -55,9 +55,9 @@ Enrage, denoted by special attack 2 or "E" (old code), allows the NPC to riposte
 
 ## Rampage (3)
 
-{% hint style="info" %}
-Rampage, denoted by special attack 3 or "R" (old code), allows the NPC to attack additional players.
-{% endhint %}
+!!! info
+      Rampage, denoted by special attack 3 or "R" (old code), allows the NPC to attack additional players.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -86,9 +86,9 @@ Rampage, denoted by special attack 3 or "R" (old code), allows the NPC to attack
 
 ## Area Rampage (4)
 
-{% hint style="info" %}
-Area Rampage, denoted by special attack 4 or "r" (old code), allows the NPC to attack additional players.
-{% endhint %}
+!!! info
+      Area Rampage, denoted by special attack 4 or "r" (old code), allows the NPC to attack additional players.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -117,9 +117,9 @@ Area Rampage, denoted by special attack 4 or "r" (old code), allows the NPC to a
 
 ## Flurry (5)
 
-{% hint style="info" %}
-Flurry, denoted by special attack 5 or "F" (old code), allows the NPC to have additional melee attacks against a player.
-{% endhint %}
+!!! info
+      Flurry, denoted by special attack 5 or "F" (old code), allows the NPC to have additional melee attacks against a player.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -148,9 +148,9 @@ Flurry, denoted by special attack 5 or "F" (old code), allows the NPC to have ad
 
 ## Triple Attack (6)
 
-{% hint style="info" %}
-Triple Attack, denoted by special attack 6 or "T" (old code), allows the NPC to have three melee attacks against a player.
-{% endhint %}
+!!! info
+      Triple Attack, denoted by special attack 6 or "T" (old code), allows the NPC to have three melee attacks against a player.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -169,9 +169,9 @@ Triple Attack, denoted by special attack 6 or "T" (old code), allows the NPC to 
 
 ## Quad Attack (7)
 
-{% hint style="info" %}
-Quad Attack, denoted by special attack 7 or "Q" (old code), allows the NPC to have four melee attacks against a player.
-{% endhint %}
+!!! info
+      Quad Attack, denoted by special attack 7 or "Q" (old code), allows the NPC to have four melee attacks against a player.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -190,9 +190,9 @@ Quad Attack, denoted by special attack 7 or "Q" (old code), allows the NPC to ha
 
 ## Dual Wield (8)
 
-{% hint style="info" %}
-Dual Wield, denoted by special attack 8 or "L" (old code), allows the NPC to utilize two weapons.
-{% endhint %}
+!!! info
+      Dual Wield, denoted by special attack 8 or "L" (old code), allows the NPC to utilize two weapons.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -211,9 +211,9 @@ Dual Wield, denoted by special attack 8 or "L" (old code), allows the NPC to uti
 
 ## Bane Attack (9)
 
-{% hint style="info" %}
-Bane Attack, denoted by special attack 9 or "b" (old code), gives the NPC the ability to hit NPCs that require bane weapons to damage.
-{% endhint %}
+!!! info
+      Bane Attack, denoted by special attack 9 or "b" (old code), gives the NPC the ability to hit NPCs that require bane weapons to damage.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -232,9 +232,9 @@ Bane Attack, denoted by special attack 9 or "b" (old code), gives the NPC the ab
 
 ## Magical Attack (10)
 
-{% hint style="info" %}
-Magical Attack, denoted by special attack 10 or "m" (old code), gives the NPC the ability to hit NPCs that require magical weapons to damage.
-{% endhint %}
+!!! info
+      Magical Attack, denoted by special attack 10 or "m" (old code), gives the NPC the ability to hit NPCs that require magical weapons to damage.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -253,9 +253,9 @@ Magical Attack, denoted by special attack 10 or "m" (old code), gives the NPC th
 
 ## Ranged Attack (11)
 
-{% hint style="info" %}
-Ranged Attack, denoted by special attack 11 or "Y" (old code), gives the NPC the ability to perform ranged attacks if their target is out of melee range.
-{% endhint %}
+!!! info
+      Ranged Attack, denoted by special attack 11 or "Y" (old code), gives the NPC the ability to perform ranged attacks if their target is out of melee range.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -278,9 +278,9 @@ Ranged Attack, denoted by special attack 11 or "Y" (old code), gives the NPC the
 
 ## Unslowable (12)
 
-{% hint style="info" %}
-Unslowable, denoted by special attack 12 or "U" (old code), makes the NPC immune to slow effects.
-{% endhint %}
+!!! info
+      Unslowable, denoted by special attack 12 or "U" (old code), makes the NPC immune to slow effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -299,9 +299,9 @@ Unslowable, denoted by special attack 12 or "U" (old code), makes the NPC immune
 
 ## Unmezable (13)
 
-{% hint style="info" %}
-Unmezable, denoted by special attack 13 or "M" (old code), makes the NPC immune to mesmerization effects.
-{% endhint %}
+!!! info
+      Unmezable, denoted by special attack 13 or "M" (old code), makes the NPC immune to mesmerization effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -320,9 +320,9 @@ Unmezable, denoted by special attack 13 or "M" (old code), makes the NPC immune 
 
 ## Uncharmable (14)
 
-{% hint style="info" %}
-Uncharmable, denoted by special attack 14 or "C" (old code), makes the NPC immune to charm effects.
-{% endhint %}
+!!! info
+      Uncharmable, denoted by special attack 14 or "C" (old code), makes the NPC immune to charm effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -341,9 +341,9 @@ Uncharmable, denoted by special attack 14 or "C" (old code), makes the NPC immun
 
 ## Unstunable (15)
 
-{% hint style="info" %}
-Unstunable, denoted by special attack 15 or "N" (old code), makes the NPC immune to stun effects.
-{% endhint %}
+!!! info
+      Unstunable, denoted by special attack 15 or "N" (old code), makes the NPC immune to stun effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -362,9 +362,9 @@ Unstunable, denoted by special attack 15 or "N" (old code), makes the NPC immune
 
 ## Unsnareable (16)
 
-{% hint style="info" %}
-Unsnareable, denoted by special attack 16 or "I" (old code), makes the NPC immune to snare effects.
-{% endhint %}
+!!! info
+      Unsnareable, denoted by special attack 16 or "I" (old code), makes the NPC immune to snare effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -383,9 +383,9 @@ Unsnareable, denoted by special attack 16 or "I" (old code), makes the NPC immun
 
 ## Unfearable (17)
 
-{% hint style="info" %}
-Unfearable, denoted by special attack 17 or "D" (old code), makes the NPC immune to fear effects.
-{% endhint %}
+!!! info
+      Unfearable, denoted by special attack 17 or "D" (old code), makes the NPC immune to fear effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -404,9 +404,9 @@ Unfearable, denoted by special attack 17 or "D" (old code), makes the NPC immune
 
 ## Immune to Dispell (18)
 
-{% hint style="info" %}
-Immune to Dispell, denoted by special attack 18 or "K" (old code), makes the NPC immune to dispelling spells.
-{% endhint %}
+!!! info
+      Immune to Dispell, denoted by special attack 18 or "K" (old code), makes the NPC immune to dispelling spells.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -425,9 +425,9 @@ Immune to Dispell, denoted by special attack 18 or "K" (old code), makes the NPC
 
 ## Immune to Melee (19)
 
-{% hint style="info" %}
-Immune to Melee, denoted by special attack 19 or "A" (old code), makes the NPC immune to all melee damage.
-{% endhint %}
+!!! info
+      Immune to Melee, denoted by special attack 19 or "A" (old code), makes the NPC immune to all melee damage.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -446,9 +446,9 @@ Immune to Melee, denoted by special attack 19 or "A" (old code), makes the NPC i
 
 ## Immune to Magic (20)
 
-{% hint style="info" %}
-Immune to Magic, denoted by special attack 20 or "B" (old code), makes the NPC immune to all magic spells.
-{% endhint %}
+!!! info
+      Immune to Magic, denoted by special attack 20 or "B" (old code), makes the NPC immune to all magic spells.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -467,9 +467,9 @@ Immune to Magic, denoted by special attack 20 or "B" (old code), makes the NPC i
 
 ## Immune to Fleeing (21)
 
-{% hint style="info" %}
-Immune to Fleeing, denoted by special attack 21 or "f" (old code), prevents the NPC from fleeing under any circumstances.
-{% endhint %}
+!!! info
+      Immune to Fleeing, denoted by special attack 21 or "f" (old code), prevents the NPC from fleeing under any circumstances.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -488,9 +488,9 @@ Immune to Fleeing, denoted by special attack 21 or "f" (old code), prevents the 
 
 ## Immune to Non-Bane Damage (22)
 
-{% hint style="info" %}
-Immune to Non-Bane Damage, denoted by special attack 22 or "O" (old code), prevents the NPC from being damaged by weapons that don't have the bane type matching its bodytype.
-{% endhint %}
+!!! info
+      Immune to Non-Bane Damage, denoted by special attack 22 or "O" (old code), prevents the NPC from being damaged by weapons that don't have the bane type matching its bodytype.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -509,9 +509,9 @@ Immune to Non-Bane Damage, denoted by special attack 22 or "O" (old code), preve
 
 ## Immune to Non-Magical Damage (23)
 
-{% hint style="info" %}
-Immune to Non-Magical Damage, denoted by special attack 23 or "W" (old code), prevents the NPC from being damaged by weapons that are not magical.
-{% endhint %}
+!!! info
+      Immune to Non-Magical Damage, denoted by special attack 23 or "W" (old code), prevents the NPC from being damaged by weapons that are not magical.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -530,9 +530,9 @@ Immune to Non-Magical Damage, denoted by special attack 23 or "W" (old code), pr
 
 ## Will Not Aggro (24)
 
-{% hint style="info" %}
-Will Not Aggro, denoted by special attack 24 or "H" (old code), prevents a player from getting on an NPC's hate list.
-{% endhint %}
+!!! info
+      Will Not Aggro, denoted by special attack 24 or "H" (old code), prevents a player from getting on an NPC's hate list.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -551,9 +551,9 @@ Will Not Aggro, denoted by special attack 24 or "H" (old code), prevents a playe
 
 ## Immune to Aggro (25)
 
-{% hint style="info" %}
-Immune to Aggro, denoted by special attack 25 or "G" (old code), prevents the NPC from getting on an NPC's hate list.
-{% endhint %}
+!!! info
+      Immune to Aggro, denoted by special attack 25 or "G" (old code), prevents the NPC from getting on an NPC's hate list.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -572,9 +572,9 @@ Immune to Aggro, denoted by special attack 25 or "G" (old code), prevents the NP
 
 ## Resist Ranged Spells (26)
 
-{% hint style="info" %}
-Resist Ranged Spells, denoted by special attack 26 or "g" (old code), prevents the NPC from being damaged from spells cast outside of melee range ("belly caster" mob).
-{% endhint %}
+!!! info
+      Resist Ranged Spells, denoted by special attack 26 or "g" (old code), prevents the NPC from being damaged from spells cast outside of melee range ("belly caster" mob).
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -610,9 +610,9 @@ Resist Ranged Spells, denoted by special attack 26 or "g" (old code), prevents t
 
 ## Immune to Taunt (28)
 
-{% hint style="info" %}
-Immune to Taunt, denoted by special attack 28 or "i" (old code), prevents the NPC from taunted by players.
-{% endhint %}
+!!! info
+      Immune to Taunt, denoted by special attack 28 or "i" (old code), prevents the NPC from taunted by players.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -631,9 +631,9 @@ Immune to Taunt, denoted by special attack 28 or "i" (old code), prevents the NP
 
 ## Tunnel Vision (29)
 
-{% hint style="info" %}
-Tunnel Vision, denoted by special attack 29 or "t" (old code), makes anyone not on the top of the hate list generate a different amount of hate.
-{% endhint %}
+!!! info
+      Tunnel Vision, denoted by special attack 29 or "t" (old code), makes anyone not on the top of the hate list generate a different amount of hate.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -653,9 +653,9 @@ Tunnel Vision, denoted by special attack 29 or "t" (old code), makes anyone not 
 
 ## Does NOT buff/heal friends (30)
 
-{% hint style="info" %}
-Does NOT buff/heal friends, denoted by special attack 30 or "n" (old code), makes the NPC NOT buff or heal members of the same faction.
-{% endhint %}
+!!! info
+      Does NOT buff/heal friends, denoted by special attack 30 or "n" (old code), makes the NPC NOT buff or heal members of the same faction.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -674,9 +674,9 @@ Does NOT buff/heal friends, denoted by special attack 30 or "n" (old code), make
 
 ## Unpacifiable (31)
 
-{% hint style="info" %}
-Unpacifiable, denoted by special attack 31 or "p" (old code), makes the NPC immune to lull effects.
-{% endhint %}
+!!! info
+      Unpacifiable, denoted by special attack 31 or "p" (old code), makes the NPC immune to lull effects.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -695,9 +695,9 @@ Unpacifiable, denoted by special attack 31 or "p" (old code), makes the NPC immu
 
 ## Leashed (32)
 
-{% hint style="info" %}
-Leashed, denoted by special attack 32 or "J" (old code), makes the NPC return to their aggro point, fully heal, and wipes their hate list if the NPC is pulled out of a particular range.
-{% endhint %}
+!!! info
+      Leashed, denoted by special attack 32 or "J" (old code), makes the NPC return to their aggro point, fully heal, and wipes their hate list if the NPC is pulled out of a particular range.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -717,9 +717,9 @@ Leashed, denoted by special attack 32 or "J" (old code), makes the NPC return to
 
 ## Tethered (33)
 
-{% hint style="info" %}
-Tethered, denoted by special attack 33 or "j" (old code), is used to leashe the mob to their aggro range.
-{% endhint %}
+!!! info
+      Tethered, denoted by special attack 33 or "j" (old code), is used to leashe the mob to their aggro range.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -739,9 +739,9 @@ Tethered, denoted by special attack 33 or "j" (old code), is used to leashe the 
 
 ## Destructible Object (34)
 
-{% hint style="info" %}
-Destructible Object, denoted by special attack 34 or "o" (old code), is used on destructing NPCs. (Deprecated?)
-{% endhint %}
+!!! info
+      Destructible Object, denoted by special attack 34 or "o" (old code), is used on destructing NPCs. (Deprecated?)
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -760,9 +760,9 @@ Destructible Object, denoted by special attack 34 or "o" (old code), is used on 
 
 ## No Harm from Players (35)
 
-{% hint style="info" %}
-No Harm from Players, denoted by special attack 35 or "Z" (old code), prevents players from being able to harm the NPC in any way.
-{% endhint %}
+!!! info
+      No Harm from Players, denoted by special attack 35 or "Z" (old code), prevents players from being able to harm the NPC in any way.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -781,9 +781,9 @@ No Harm from Players, denoted by special attack 35 or "Z" (old code), prevents p
 
 ## Always Flee (36)
 
-{% hint style="info" %}
-Always Flee, denoted by special attack 36, makes the NPC flee at low health even if faction allies are near.
-{% endhint %}
+!!! info
+      Always Flee, denoted by special attack 36, makes the NPC flee at low health even if faction allies are near.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -802,9 +802,9 @@ Always Flee, denoted by special attack 36, makes the NPC flee at low health even
 
 ## Flee Percentage (37)
 
-{% hint style="info" %}
-Flee Percentage, denoted by special attack 37, makes the NPC flee at low health even if faction allies are near, at a given percent.
-{% endhint %}
+!!! info
+      Flee Percentage, denoted by special attack 37, makes the NPC flee at low health even if faction allies are near, at a given percent.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -824,9 +824,9 @@ Flee Percentage, denoted by special attack 37, makes the NPC flee at low health 
 
 ## Allow Beneficial (38)
 
-{% hint style="info" %}
-Allow Beneficial, denoted by special attack 38, allows players to cast beneficial spells on the NPC.
-{% endhint %}
+!!! info
+      Allow Beneficial, denoted by special attack 38, allows players to cast beneficial spells on the NPC.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -845,9 +845,9 @@ Allow Beneficial, denoted by special attack 38, allows players to cast beneficia
 
 ## Disable Melee (39)
 
-{% hint style="info" %}
-Disable Melee, denoted by special attack 39, makes the NPC unable to melee, but does allow the NPC to aggro.
-{% endhint %}
+!!! info
+      Disable Melee, denoted by special attack 39, makes the NPC unable to melee, but does allow the NPC to aggro.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -866,9 +866,9 @@ Disable Melee, denoted by special attack 39, makes the NPC unable to melee, but 
 
 ## Chase Distance (40)
 
-{% hint style="info" %}
-Chase Distance, denoted by special attack 40, establishes the minimum and maximum distances between the NPC and an aggro player.
-{% endhint %}
+!!! info
+      Chase Distance, denoted by special attack 40, establishes the minimum and maximum distances between the NPC and an aggro player.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -891,9 +891,9 @@ Chase Distance, denoted by special attack 40, establishes the minimum and maximu
 
 ## Allow Tank (41)
 
-{% hint style="info" %}
-Allow Tank, denoted by special attack 41, sets the NPC to allow other NPCs to take aggro from players.
-{% endhint %}
+!!! info
+      Allow Tank, denoted by special attack 41, sets the NPC to allow other NPCs to take aggro from players.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -912,9 +912,9 @@ Allow Tank, denoted by special attack 41, sets the NPC to allow other NPCs to ta
 
 ## Ignore Root Aggro (42)
 
-{% hint style="info" %}
-Ignore Root Aggro, denoted by special attack 42, sets the NPC to ignore the rules of root aggro--the NPC will not attack the closest player, but rather the player on top of the hate list.
-{% endhint %}
+!!! info
+      Ignore Root Aggro, denoted by special attack 42, sets the NPC to ignore the rules of root aggro--the NPC will not attack the closest player, but rather the player on top of the hate list.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -933,9 +933,9 @@ Ignore Root Aggro, denoted by special attack 42, sets the NPC to ignore the rule
 
 ## Casting Resist Diff (43)
 
-{% hint style="info" %}
-Casting Resist Diff, denoted by special attack 43, makes the NPC's spells cast at a different resist level.
-{% endhint %}
+!!! info
+      Casting Resist Diff, denoted by special attack 43, makes the NPC's spells cast at a different resist level.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -955,9 +955,9 @@ Casting Resist Diff, denoted by special attack 43, makes the NPC's spells cast a
 
 ## Counter Avoid Damage (44)
 
-{% hint style="info" %}
-Counter Avoid Damage, denoted by special attack 44, makes the NPC more likely to hit a player, decreasing their chance for at avoiding melee through dodge/parry/riposte/etc.
-{% endhint %}
+!!! info
+      Counter Avoid Damage, denoted by special attack 44, makes the NPC more likely to hit a player, decreasing their chance for at avoiding melee through dodge/parry/riposte/etc.
+
 
 | Settings |  | Defaults |
 | :--- | :--- | :--- |
@@ -995,9 +995,9 @@ Counter Avoid Damage, denoted by special attack 44, makes the NPC more likely to
 
 ## Proximity Aggro (45)
 
-{% hint style="info" %}
-Proximity Aggro, denoted by special attack 45, allows the NPC to engage new clients while in combat if the client is within their proximity.
-{% endhint %}
+!!! info
+      Proximity Aggro, denoted by special attack 45, allows the NPC to engage new clients while in combat if the client is within their proximity.
+
 
 ### **Example:**
 
@@ -1012,9 +1012,9 @@ Proximity Aggro, denoted by special attack 45, allows the NPC to engage new clie
 
 ## Immune Ranged Attacks (46)
 
-{% hint style="info" %}
-Immune Ranged Attacks, denoted by special attack 46, makes the NPC immune to ranged attacks.
-{% endhint %}
+!!! info
+      Immune Ranged Attacks, denoted by special attack 46, makes the NPC immune to ranged attacks.
+
 
 ### **Example:**
 
@@ -1029,9 +1029,9 @@ Immune Ranged Attacks, denoted by special attack 46, makes the NPC immune to ran
 
 ## Immune Client Damage (47)
 
-{% hint style="info" %}
-Immune Client Damage, denoted by special attack 47, makes the NPC immune to damage by clients.
-{% endhint %}
+!!! info
+      Immune Client Damage, denoted by special attack 47, makes the NPC immune to damage by clients.
+
 
 ### **Example:**
 
@@ -1046,9 +1046,9 @@ Immune Client Damage, denoted by special attack 47, makes the NPC immune to dama
 
 ## Immune NPC Damage (48)
 
-{% hint style="info" %}
-Immune NPC Damage, denoted by special attack 48, makes the NPC immune to damage by NPCs.
-{% endhint %}
+!!! info
+      Immune NPC Damage, denoted by special attack 48, makes the NPC immune to damage by NPCs.
+
 
 ### **Example:**
 
@@ -1063,9 +1063,9 @@ Immune NPC Damage, denoted by special attack 48, makes the NPC immune to damage 
 
 ## Immune Client Aggro (49)
 
-{% hint style="info" %}
-Immune Client Aggro, denoted by special attack 49, makes the NPC immune to aggro by clients.
-{% endhint %}
+!!! info
+      Immune Client Aggro, denoted by special attack 49, makes the NPC immune to aggro by clients.
+
 
 ### **Example:**
 
@@ -1080,9 +1080,9 @@ Immune Client Aggro, denoted by special attack 49, makes the NPC immune to aggro
 
 ## Immune NPC Aggro (50)
 
-{% hint style="info" %}
-Immune NPC Aggro, denoted by special attack 50, makes the NPC immune to aggro by NPCs.
-{% endhint %}
+!!! info
+      Immune NPC Aggro, denoted by special attack 50, makes the NPC immune to aggro by NPCs.
+
 
 ### **Example:**
 

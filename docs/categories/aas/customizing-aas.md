@@ -44,9 +44,9 @@ Let's examine the rank effects for our _Innate Run Speed_ AA:
 
 We see that at all ranks, the spell effect in use is 271, and we see that the base1 value increases at each rank.
 
-{% hint style="success" %}
-If you haven't read up on Spells for your EQEmu Server, you might want to take a quick look at the [Spells Guide](../spells/) before continuing.
-{% endhint %}
+!!! info
+      If you haven't read up on Spells for your EQEmu Server, you might want to take a quick look at the [Spells Guide](../spells/) before continuing.
+
 
 271 is SE_BaseMovementSpeed and BV of the effect is percent.  While SE 271 does not have limit or max value, it unfortunately does not stack with other movement increases.  To summarize in a table, here is each rank of _Innate Run Speed_:
 

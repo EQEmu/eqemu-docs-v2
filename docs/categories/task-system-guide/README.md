@@ -8,9 +8,9 @@ The EQEmu Task System allows implementation of quests that utilize the clients T
 
 Much of the Task System functionality can be found in [/zones/task.cpp](https://github.com/EQEmu/Server/blob/master/zone/tasks.cpp) and should be referenced by those comfortable with looking at the EQEmu source code.
 
-{% hint style="info" %}
-While every attempt will be made to keep this page updated, please reference the additional supporting documentation found in the [Database Schema](https://eqemu.gitbook.io/database-schema/), [Quest API](https://eqemu.gitbook.io/quest-api/), and [Changelog](https://eqemu.gitbook.io/changelog/).
-{% endhint %}
+!!! info
+      While every attempt will be made to keep this page updated, please reference the additional supporting documentation found in the [Database Schema](https://eqemu.gitbook.io/database-schema/), [Quest API](https://eqemu.gitbook.io/quest-api/), and [Changelog](https://eqemu.gitbook.io/changelog/).
+
 
 | Section Description                                                     | Link                                                                                                                  |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -71,9 +71,9 @@ The most up to date information regarding the database schema can be found in th
 
 #### Activity Types
 
-{% hint style="info" %}
-Please note that **quest::updatetaskactivity **could be used in many EVENT triggers if you did not want to use the task system as described in the table below.
-{% endhint %}
+!!! info
+      Please note that **quest::updatetaskactivity **could be used in many EVENT triggers if you did not want to use the task system as described in the table below.
+
 
 | Type ID | <p>Type <br>Name</p> | Information and usage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -116,9 +116,9 @@ Please note that **quest::updatetaskactivity **could be used in many EVENT trigg
 
 ### Completed Tasks
 
-{% hint style="warning" %}
-If the rule **TaskSystem:RecordCompletedTasks** is set to **false**, then this table is not used.
-{% endhint %}
+!!! warning
+      If the rule **TaskSystem:RecordCompletedTasks** is set to **false**, then this table is not used.
+
 
 #### Field Descriptions
 
@@ -129,9 +129,9 @@ If the rule **TaskSystem:RecordCompletedTasks** is set to **false**, then this t
 | taskid        | int       | Task Identifier; ID from tasks table               |
 | activityid    | int       | Activity Identifier; ID from tasks table           |
 
-{% hint style="info" %}
-This table may have duplicate entries for repeatable tasks.  To display Optional Tasks, be sure to set the rule **TaskSystem:RecordCompletedOptionalTasks** to **true**.
-{% endhint %}
+!!! info
+      This table may have duplicate entries for repeatable tasks.  To display Optional Tasks, be sure to set the rule **TaskSystem:RecordCompletedOptionalTasks** to **true**.
+
 
 ### Goallists Table
 
@@ -142,15 +142,15 @@ This table may have duplicate entries for repeatable tasks.  To display Optional
 | listid | int       | Goal List Identifier; repeat ID for multiple entries |
 | entry  | int       | Entry Identifier; either npc_type id or item id      |
 
-{% hint style="info" %}
-Example: list id 10 for a "kill" mission could have three rows, all with list id 10, and entries of 2001, 2102, and 2103 (for Fippy Darkpaw, Kraxz Darkpaw, and Grarrax Darkpaw).
-{% endhint %}
+!!! info
+      Example: list id 10 for a "kill" mission could have three rows, all with list id 10, and entries of 2001, 2102, and 2103 (for Fippy Darkpaw, Kraxz Darkpaw, and Grarrax Darkpaw).
+
 
 ### Proximities Table
 
-{% hint style="warning" %}
-The rule **TaskSystem:EnableTaskProximity** must be set to **true **to allow the use of proximities independent of proximities defined by quest scripts for npcs (IE for "explore" tasks).
-{% endhint %}
+!!! warning
+      The rule **TaskSystem:EnableTaskProximity** must be set to **true **to allow the use of proximities independent of proximities defined by quest scripts for npcs (IE for "explore" tasks).
+
 
 #### Field Descriptions
 
@@ -167,13 +167,13 @@ The rule **TaskSystem:EnableTaskProximity** must be set to **true **to allow the
 
 {% hint style="danger" %}
 Overlapping proximities will only trigger proximity detection for the proximity with the lowest-numbered **exploreid**.
-{% endhint %}
+
 
 ### Tasksets Table
 
-{% hint style="info" %}
-Task Sets are intended to make it easier to write quest NPCs that can offer a lot of tasks. While this functionality can also be achieved with quest::assigntask, it is important to note that players can remove tasks when writing your scripts.  A Task Set could require a series of tasks in a progression.
-{% endhint %}
+!!! info
+      Task Sets are intended to make it easier to write quest NPCs that can offer a lot of tasks. While this functionality can also be achieved with quest::assigntask, it is important to note that players can remove tasks when writing your scripts.  A Task Set could require a series of tasks in a progression.
+
 
 #### Field Descriptions
 
@@ -217,9 +217,9 @@ Task Sets are intended to make it easier to write quest NPCs that can offer a lo
 
 ## Logging Options
 
-{% hint style="info" %}
-These options are present in the Logging System through [logsys_categories](https://eqemu.gitbook.io/database-schema/categories/admin/logsys_categories) or in-game via command #logs set [output] [type] [level]
-{% endhint %}
+!!! info
+      These options are present in the Logging System through [logsys_categories](https://eqemu.gitbook.io/database-schema/categories/admin/logsys_categories) or in-game via command #logs set [output] [type] [level]
+
 
 ```sql
 1 LOG_CATEGORY( TASKS )
@@ -237,9 +237,9 @@ TASKS UPDATE is used to print out debug information when checking if activities 
 
 These are the **quest::[methods]** and **EVENT** triggers that are related to the Task System.
 
-{% hint style="info" %}
-Be sure to reference the [Quest API](https://eqemu.gitbook.io/quest-api/) in the event that functionality is expanded.
-{% endhint %}
+!!! info
+      Be sure to reference the [Quest API](https://eqemu.gitbook.io/quest-api/) in the event that functionality is expanded.
+
 
 ### taskselector
 
@@ -756,9 +756,9 @@ sub EVENT_SAY {
 
 * when a player accepts a task from the task selector window.
 
-{% hint style="info" %}
-If the assigntask(taskid) function is used to forcibly assign a task to a player, then this sub will also be called with task_id set to taskid if assigntask is successful.
-{% endhint %}
+!!! info
+      If the assigntask(taskid) function is used to forcibly assign a task to a player, then this sub will also be called with task_id set to taskid if assigntask is successful.
+
 
 ### EVENT_TASK_COMPLETE
 

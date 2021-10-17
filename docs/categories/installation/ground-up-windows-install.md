@@ -1,20 +1,20 @@
 # Ground Up Windows Install
 
-{% hint style="info" %}
-This guide is intended for advanced users who want to configure EQEmu "from the ground up" for a windows server. It is not the recommended route, we suggest using the [Windows-Server install ](server-installation-windows.md)instead for most cases
+!!! info
+      This guide is intended for advanced users who want to configure EQEmu "from the ground up" for a windows server. It is not the recommended route, we suggest using the [Windows-Server install ](server-installation-windows.md)instead for most cases
 
 This guide provides instructions for compiling 32-bit Windows server binaries and setting up a local development server
 
 Read through this guide before starting to ensure an understanding of the process
-{% endhint %}
 
-{% hint style="info" %}
-The target computer must have an active internet connection at the time of installation.
+
+!!! info
+      The target computer must have an active internet connection at the time of installation.
 
 Please direct any questions to our server support channel in [[discord](https://discord.gg/QHsm7CD)]
 
 _Screenshots may vary depending on options selected and program graphical user interface changes._
-{% endhint %}
+
 
 ## Compiler Setup
 
@@ -78,15 +78,15 @@ During the install process, ensure the option for `Desktop development with C++`
 
 ![](https://user-images.githubusercontent.com/3311166/60468475-b40e3b80-9c27-11e9-8b2b-462bd0f22165.png)
 
-{% hint style="info" %}
-This package is required by Visual Studio to compile c/c++ code and by CMake to determine available compiler options. It will also cause CMake file generation to fail, if not enabled
-{% endhint %}
+!!! info
+      This package is required by Visual Studio to compile c/c++ code and by CMake to determine available compiler options. It will also cause CMake file generation to fail, if not enabled
+
 
 If you selected Visual Studio 2017 Community Edition, you will need to update to the most current version.
 
-{% hint style="info" %}
-This requirement is not needed for Visual Studio 2019 installations..but, it is a good idea to have the most up-to-date compiler features
-{% endhint %}
+!!! info
+      This requirement is not needed for Visual Studio 2019 installations..but, it is a good idea to have the most up-to-date compiler features
+
 
 ### Install Perl
 
@@ -222,9 +222,9 @@ The following list contains the most common options of interest to the majority 
 * `EQEMU_DEBUG_LEVEL` [_5_] Determines what additional messaging and debugging code is enabled/disabled (_12_ is max)
 * `EQEMU_ENABLE_BOTS` [_disabled_] Compiles server code with Bot support (user choice)
 
-{% hint style="info" %}
-Ensure that you set `EQEMU_BUILD_LOGIN` to **enabled**
-{% endhint %}
+!!! info
+      Ensure that you set `EQEMU_BUILD_LOGIN` to **enabled**
+
 
 Once you have set the options that you would like for your server, click `Configure` again.
 
@@ -236,9 +236,9 @@ These new options are only file path definitions. No additional changes need to 
 
 ![](https://user-images.githubusercontent.com/3311166/60629846-76471980-9dc5-11e9-9b30-d7059103ed89.png)
 
-{% hint style="info" %}
-Regardless of option settings, anytime that you have red (unconfigured) entries in your options list, you will need to click `Configure` to ensure that the settings are applied to the current CMake file generation template.
-{% endhint %}
+!!! info
+      Regardless of option settings, anytime that you have red (unconfigured) entries in your options list, you will need to click `Configure` to ensure that the settings are applied to the current CMake file generation template.
+
 
 You can now click the `Generate` button.
 
@@ -267,9 +267,9 @@ There are 4 options:
 * `Release` - similar to `RelWithDebugInfo`..but, without access to debug symbols (not recommended)
 * `MinSizeRel` - Same as `Release` with the exception of trading off faster code for smaller size (not recommended)
 
-{% hint style="info" %}
-**Debug** _is _preferred_ for a local test server_
-{% endhint %}
+!!! info
+      **Debug** _is _preferred_ for a local test server_
+
 
 To compile your server code, you have two choices:
 
@@ -278,9 +278,9 @@ To compile your server code, you have two choices:
 
 ![](https://user-images.githubusercontent.com/3311166/60749565-c3fc8700-9f69-11e9-8b54-fa331602d8c3.png)
 
-{% hint style="info" %}
-Both paths result in the same action. Use whichever you are more comfortable with
-{% endhint %}
+!!! info
+      Both paths result in the same action. Use whichever you are more comfortable with
+
 
 The compiled code will be located in the `c:\<account>\Server\build\bin\<build_type>`folder.
 

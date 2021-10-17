@@ -8,9 +8,9 @@ description: >-
 
 If you make ANY changes to the spells on your server, you will have to generate a new `spells_us.txt` file.  It is important to note that your database probably has MANY spells inside, as EQEmu attempts to support all of the spells that are available.  
 
-{% hint style="info" %}
-If you're creating your own `spells_us.txt` file, please make sure that the maximum id of the spells in your `spells_new` database table is below the value listed below.
-{% endhint %}
+!!! info
+
+    If you're creating your own `spells_us.txt` file, please make sure that the maximum id of the spells in your `spells_new` database table is below the value listed below.
 
 | **Client** | **Max Spell ID** |
 | :--- | :--- |

@@ -6,9 +6,9 @@ The purpose of this guide to serve as a reference for our source generated repos
 
 "The simplest approach, especially with an existing system, is to create a new Repository implementation for each business object you need to store to or retrieve from your persistence layer. Further, you should only implement the specific methods you are calling in your application."
 
-{% hint style="info" %}
-Reference [https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
-{% endhint %}
+!!! info
+      Reference [https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
+       
 
 ![Repository Pattern Illustration A](<../../gitbook/assets/image (9).png>)
 
