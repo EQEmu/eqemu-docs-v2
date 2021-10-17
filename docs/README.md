@@ -5,6 +5,8 @@ Welcome to the EQEmu Wiki.  The information presented on this wiki represents th
 !!! info
         This wiki is a living document that is intended to replace earlier knowledge-bases.  If you see anything that is missing or could be improved, please feel free to contribute!   If you do not have permission to edit, please get in touch on [Discord](https://discord.gg/QHsm7CD).
 
+test
+
 ### Getting Started
 
 | Page | Description |

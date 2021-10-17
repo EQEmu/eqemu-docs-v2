@@ -24,7 +24,7 @@ func main() {
 				if err != nil {
 					log.Println(err)
 				}
-				
+
 				// run mkdocs build
 				cmd = exec.Command("mkdocs", "build")
 				_, err = cmd.Output()
