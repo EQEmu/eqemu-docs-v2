@@ -10,14 +10,14 @@
 | safe\_x | float | Safe X Coordinate |
 | safe\_y | float | Safe Y Coordinate |
 | safe\_z | float | Safe Z Coordinate |
-| graveyard\_id | float | [Graveyard Identifier](../../../schema/categories/zone/graveyard.md) |
+| graveyard\_id | float | [Graveyard Identifier](../../../schema/categories/graveyards/graveyard.md) |
 | min\_level | tinyint | Minimum Level |
 | min\_status | tinyint | [Minimum Status](../../../../categories/player/status-levels) |
 | zoneidnumber | int | [Unique Zone Identifier](../../../../categories/zones/zone-list) |
 | version | tinyint | Version |
 | timezone | int | Timezone |
 | maxclients | int | Maximum Clients |
-| ruleset | int | [Ruleset Identifier](../../../schema/categories/zone/rule_sets.md) |
+| ruleset | int | [Ruleset Identifier](../../../schema/categories/rules/rule_sets.md) |
 | note | varchar | Note |
 | underworld | float | Bottom Z to represent when the player is under the world |
 | minclip | float | Minimum Clipping Distance |

@@ -5,7 +5,7 @@
 | id | int | Unique NPC Type Identifier |
 | name | text | Name |
 | lastname | varchar | Last Name |
-| level | tinyint | Level |
+| level | tinyint | Level | 
 | race | smallint | [Race](../../../../categories/npc/race-list) |
 | class | tinyint | [Class](../../../../categories/player/class-list) |
 | bodytype | int | [Body Type](../../../../categories/npc/body-types) |
@@ -18,14 +18,14 @@
 | size | float | Size |
 | hp\_regen\_rate | int | Health Regeneration |
 | mana\_regen\_rate | int | Mana Regeneration |
-| loottable\_id | int | [Loottable Identifier](../../../schema/categories/npcs/loottable.md) |
-| merchant\_id | int | [Merchant Identifier](../../../schema/categories/npcs/merchantlist.md) |
-| alt\_currency\_id | int | [Alternate Currency Identifier](../../../schema/categories/npcs/alternate_currency.md) |
+| loottable\_id | int | [Loottable Identifier](../../../schema/categories/loot/loottable.md) |
+| merchant\_id | int | [Merchant Identifier](../../../schema/categories/merchants/merchantlist.md) |
+| alt\_currency\_id | int | [Alternate Currency Identifier](../../../schema/categories/alternate-currency/alternate_currency.md) |
 | npc\_spells\_id | int | [NPC Spell Set Identifier](npc_spells.md) |
 | npc\_spells\_effects\_id | int | [NPC Spell Effects Identifier](npc_spells_effects.md) |
-| npc\_faction\_id | int | [NPC Faction Identifier](../../../schema/categories/npcs/faction_list.md) |
-| adventure\_template\_id | int | [Adventure Template Identifier](../../../schema/categories/npcs/adventure_template.md) |
-| trap\_template | int | [Trap Template Identifier](../../../schema/categories/npcs/traps.md) |
+| npc\_faction\_id | int | [NPC Faction Identifier](../../../schema/categories/factions/faction_list.md) |
+| adventure\_template\_id | int | [Adventure Template Identifier](../../../schema/categories/adventures/adventure_template.md) |
+| trap\_template | int | [Trap Template Identifier](../../../schema/categories/traps/traps.md) |
 | mindmg | int | Minimum Damage |
 | maxdmg | int | Maximum Damage |
 | attack\_count | smallint | Attack Count |
