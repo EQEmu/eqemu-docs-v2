@@ -1,0 +1,289 @@
+site_name: EQEmulator Docs
+plugins:
+  - search
+#repo_url: https://github.com/EQEmu/Server
+#repo_name: EQEmu/Server
+theme:
+  features:
+    - navigation.tabs
+    #    - navigation.tabs.sticky
+    #    - navigation.sections
+    #    - navigation.expand
+    - navigation.indexes
+    #    - navigation.sections
+    #    - navigation.top
+    - navigation.instant
+    - content.tabs.link
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+        custom_checkbox: true
+nav:
+  - Server:
+      - 'AAs':
+          - 'categories/aas/README.md'
+          - 'AA Categories': 'categories/aas/aa-categories.md'
+          - 'AA Nonspell Actions': 'categories/aas/aa-nonspell-actions.md'
+          - 'AA Target Types': 'categories/aas/aa-target-types.md'
+          - 'AA Types': 'categories/aas/aa-types.md'
+          - 'Customizing AAs': 'categories/aas/customizing-aas.md'
+      - Bots:
+          - 'Stance Types': 'categories/bots/stance-types.md'
+          - 'Bot Commands': 'categories/bots/bot-commands.md'
+          - 'Bot Heal Rotations': 'categories/bots/bot-heal-rotations.md'
+          - 'Bot Groups': 'categories/bots/bot-groups.md'
+      - Client Configuration:
+          - 'macOS Client Configuration': 'categories/client-configuration/macos-mojave-client-configuration.md'
+          - 'Windows Client Configuration': 'categories/client-configuration/windows-client-configuration.md'
+          - 'Frequently Asked Questions': 'categories/client-configuration/frequently-asked-questions.md'
+          - 'Play Guide': 'categories/client-configuration/play-guide.md'
+          - 'Underfoot Missing Files': 'categories/client-configuration/underfoot-missing-files.md'
+      - Database:
+          - 'Database Schema': 'https://eqemu.gitbook.io/database-schema/'
+      - Multi Tenancy:
+          - 'Database Backup Tool': 'categories/database/database-backup-tool.md'
+      - Expedition System:
+          - 'Database': 'categories/expedition-system/database.md'
+          - 'Lockouts': 'categories/expedition-system/lockouts.md'
+          - Quest API (Lua):
+              - 'Example': 'categories/expedition-system/quest-api-lua/example.md'
+              - 'Client Methods': 'categories/expedition-system/quest-api-lua/client-methods.md'
+              - 'Expedition Methods': 'categories/expedition-system/quest-api-lua/expedition-methods.md'
+              - 'Global Methods': 'categories/expedition-system/quest-api-lua/global-methods.md'
+              - 'Group/Raid Methods': 'categories/expedition-system/quest-api-lua/group-raid-methods.md'
+          - Quest API (Perl):
+              - 'Example': 'categories/expedition-system/quest-api-perl/example.md'
+              - 'Client Methods': 'categories/expedition-system/quest-api-perl/client-methods.md'
+              - 'Expedition Methods': 'categories/expedition-system/quest-api-perl/expedition-methods.md'
+              - 'Global Methods': 'categories/expedition-system/quest-api-perl/global-methods.md'
+              - 'Group/Raid Methods': 'categories/expedition-system/quest-api-perl/group-raid-methods.md'
+      - Factions:
+          - 'Creating a New Faction': 'categories/factions/add-a-new-faction.md'
+          - 'Customizing Factions': 'categories/factions/customizing-factions.md'
+          - 'Faction Values': 'categories/factions/faction-values.md'
+      - Items:
+          - 'Item Lore Groups': 'categories/items/item-lore-groups.md'
+          - 'Powersources': 'categories/items/powersources.md'
+          - 'Item Sizes': 'categories/items/item-sizes.md'
+          - 'Item Class': 'categories/items/item-class.md'
+          - 'GetItemStat Identifiers': 'categories/items/getitemstat-identifiers.md'
+          - 'Augment Restrictions': 'categories/items/augment-restrictions.md'
+          - 'Alternate Currencies': 'categories/items/alternate-currencies.md'
+          - 'Bard Types': 'categories/items/bard-types.md'
+          - 'Ornament Types': 'categories/items/ornament-types.md'
+          - 'Augment Types': 'categories/items/augment-types.md'
+          - 'Click Types': 'categories/items/click-types.md'
+          - 'Food and Drink': 'categories/items/food-and-drink.md'
+          - 'Item Types': 'categories/items/item-types.md'
+          - 'Item Click Types': 'categories/items/item-click-types.md'
+          - 'Item Element Types': 'categories/items/item-element-types.md'
+      - Inventory:
+          - 'Inventory Slots': 'categories/inventory/inventory-slots.md'
+          - 'Item Slots': 'categories/inventory/item-slots.md'
+          - 'Bag Sizes': 'categories/inventory/bag-sizes.md'
+          - 'Bag Types': 'categories/inventory/bag-types.md'
+      - Logging System:
+          - 'Logging Categories': 'categories/logging-system/logging-categories.md'
+          - 'Logging for Developers': 'categories/logging-system/logging-for-developers.md'
+          - 'Logging Packets': 'categories/logging-system/logging-packets.md'
+      - Login Server:
+          - 'Auto Create Login Accounts': 'categories/login-server/auto-create-login-accounts.md'
+          - 'REST API': 'categories/login-server/login-server-rest-api.md'
+          - 'Database Schema': 'categories/login-server/database-schema.md'
+          - 'CLI Management Interface': 'categories/login-server/login-server-cli-management-interface.md'
+          - 'Migrating from Legacy Login Server': 'categories/login-server/migrating-from-legacy-login-server.md'
+          - 'Configuration': 'categories/login-server/login-server-configuration.md'
+          - 'Commonly Asked Questions': 'categories/login-server/commonly-asked-questions.md'
+          - 'World Registration': 'categories/login-server/world-registration.md'
+          - 'World Servers with Same Names': 'categories/login-server/world-servers-with-same-names.md'
+      - Maps:
+          - 'Editing Maps': 'categories/maps/editing-maps.md'
+      - NPC:
+          - 'NPC Aggro': 'categories/npc/npc-aggro.md'
+          - 'ModifyNPCStat Identifiers': 'categories/npc/modifynpcstat-identifiers.md'
+          - 'Stuck Behavior': 'categories/npc/stuck-behavior.md'
+          - 'Mob Version List': 'categories/npc/mob-version-list.md'
+          - 'Race List': 'categories/npc/race-list.md'
+          - 'NPC Models': 'categories/npc/npc-models.md'
+          - 'Fly Modes': 'categories/npc/fly-modes.md'
+          - 'Client Race Inventory': 'categories/npc/client-race-inventory.md'
+          - 'Animations': 'categories/npc/animations.md'
+          - 'Facial Features': 'categories/npc/facial-features.md'
+          - 'Genders': 'categories/npc/genders.md'
+          - 'Textures': 'categories/npc/textures.md'
+          - Spawns:
+              - 'On Change Types': 'categories/npc/spawns/on-change-types.md'
+              - 'Pause Types': 'categories/npc/spawns/pause-types.md'
+              - 'Wander Types': 'categories/npc/spawns/wander-types.md'
+              - 'Action Types': 'categories/npc/spawns/action-types.md'
+              - 'NPC Despawn Types': 'categories/npc/spawns/npc-despawn-types.md'
+              - 'Grids': 'categories/npc/spawns/grids.md'
+          - 'Body Types': 'categories/npc/body-types.md'
+          - 'Emote Types': 'categories/npc/emote-types.md'
+          - 'Emote Event Types': 'categories/npc/emote-event-types.md'
+          - Customizing NPCs:
+              - 'Using the PEQ Database Editing Interface': 'categories/npc/customizing-npcs/using-the-peq-database-editing-interface.md'
+          - 'NPC Animation Types': 'categories/npc/npc-animation-types.md'
+          - 'NPC Scaling': 'categories/npc/npc-scaling.md'
+          - 'Special Attacks': 'categories/npc/special-attacks.md'
+      - Operation:
+          - 'Adjust Maximum Level': 'categories/operation/adjust-maximum-level.md'
+          - 'Adjust World Date / Time': 'categories/operation/adjust-world-date-time.md'
+          - 'Changing Start Zones': 'categories/operation/changing-start-zones.md'
+          - 'Chat Channel Types': 'categories/operation/chat-channel-types.md'
+          - 'Commands Reference': 'categories/operation/in-game-command-reference.md'
+          - 'Database Schema Migrations': 'categories/operation/database-schema-migrations.md'
+          - 'DBStr Types': 'categories/operation/dbstr-types.md'
+          - 'Disabling Lootdrop Entries': 'categories/operation/disabling-lootdrops.md'
+          - 'Disabling Merchantlist Entries': 'categories/operation/disabling-merchantlist-entries.md'
+          - 'Expansion Bitmasks': 'categories/operation/expansion-bitmasks.md'
+          - 'Expansion List': 'categories/operation/expansion-list.md'
+          - 'Exporting Client Files': 'categories/operation/exporting-client-files.md'
+          - 'First Time Running A Server': 'categories/operation/first-time-running-a-server.md'
+          - 'Implement PvP': 'categories/operation/implement-pvp.md'
+          - 'Loading Server Data': 'categories/operation/loading-server-data.md'
+          - 'NATS Channels': 'categories/operation/nats-channels.md'
+          - 'Server Rules': 'categories/operation/server-rules.md'
+          - 'Server Variables': 'categories/operation/server-variables.md'
+          - 'Updating Server Assets': 'categories/operation/updating-server-assets.md'
+      - Player:
+          - 'Class List': 'categories/player/class-list.md'
+          - 'Client Version Bitmasks': 'categories/player/client-version-bitmasks.md'
+          - 'Deity List': 'categories/player/deity-list.md'
+          - 'Experience by Level': 'categories/player/experience-by-level.md'
+          - 'Guild Ranks': 'categories/player/guild-ranks.md'
+          - 'Languages': 'categories/player/languages.md'
+          - 'Player Housing': 'categories/player/player-housing.md'
+          - 'Race List': 'https://eqemu.gitbook.io/server/categories/npc/race-list'
+      - Skills:
+          - 'Slash Commands': 'categories/player/slash-commands.md'
+          - 'Status Levels': 'categories/player/status-levels.md'
+      - Server Installation:
+          - 'Basic Server Install - Linux': 'categories/installation/server-installation-linux.md'
+          - 'Basic Server Install - Windows': 'categories/installation/server-installation-windows.md'
+          - 'Bot Installation': 'categories/installation/bot-installation.md'
+          - 'Configure your eqemu_config': 'categories/installation/configure-your-eqemu_config.md'
+          - 'Development Server Setup': 'categories/installation/development-server-setup.md'
+          - 'Ground Up Linux Install': 'categories/installation/ground-up-linux-install.md'
+          - 'Ground Up Windows Install': 'categories/installation/ground-up-windows-install.md'
+          - 'Install PEQ Database Editor': 'categories/installation/install-peq-database-editor.md'
+          - 'Troubleshooting': 'categories/installation/troubleshooting.md'
+          - 'VSCode Dev Container Environment': 'categories/installation/vscode-dev-container-environment.md'
+      - Scripting:
+          - 'Lua Mods': 'categories/scripting/lua-mods.md'
+          - 'Emote Colors': 'categories/scripting/emote-colors.md'
+          - 'Encounters (Lua)': 'categories/scripting/encounters-lua.md'
+          - 'Entity Lists': 'categories/scripting/entity-lists.md'
+          - 'Entity Variables': 'categories/scripting/entity-variables.md'
+          - 'GMSay': 'categories/scripting/gmsay.md'
+          - 'Using Data Buckets': 'categories/scripting/using-data-buckets.md'
+          - 'Converting QGlobals': 'categories/scripting/converting-qglobals.md'
+          - 'Player Buffer Scripts': 'categories/scripting/player-buffer-scripts.md'
+          - 'Player Teleporter Scripts': 'categories/scripting/player-teleporter-scripts.md'
+      - Spells:
+          - 'Aura Movement Types': 'categories/spells/aura-movement-types.md'
+          - 'Aura Spawn Types': 'categories/spells/aura-spawn-types.md'
+          - 'Aura Types': 'categories/spells/aura-types.md'
+          - 'Base Value Formulas': 'categories/spells/base-value-formulas.md'
+          - 'Blocked Spell Types': 'categories/spells/blocked-spell-types.md'
+          - 'Bot Spell List IDs': 'categories/spells/bot-spell-list-ids.md'
+          - 'Buff Duration Formulas': 'categories/spells/buff-duration-formulas.md'
+          - 'Client Spell ID Limitations': 'categories/spells/client-spell-id-limitations.md'
+          - 'Damage Shield Types': 'categories/spells/damage-shield-types.md'
+          - 'Damage Shield Types': 'categories/spells/damage-shield-types-1.md'
+          - 'Element Types': 'categories/spells/element-types.md'
+          - 'Environment Types': 'categories/spells/environment-types.md'
+          - 'GetSpellStat Identifiers': 'categories/spells/getspellstat-identifiers.md'
+          - 'Illusion Spell Guidelines': 'categories/spells/illusion-spell-guidelines.md'
+          - 'NPC Spell Categories': 'categories/spells/npc-spell-categories.md'
+          - 'Numhit Types': 'categories/spells/numhit-types.md'
+          - 'Numhit Types': 'categories/spells/numhit-types-1.md'
+          - 'Resist Types': 'categories/spells/resist-types.md'
+          - 'Spell Attack Speed': 'categories/spells/spell-attack-speed.md'
+          - 'Spell Buff Stacking': 'categories/spells/spell-buff-stacking.md'
+          - 'Spell Conditions': 'categories/spells/spell-conditions.md'
+          - 'Spell Damage Modifiers': 'categories/spells/spell-damage-modifiers.md'
+          - 'Spell Effect Fields': 'categories/spells/spell-effect-fields.md'
+          - 'Spell Effect IDs': 'categories/spells/spell-effect-ids.md'
+          - 'Spell Groups': 'categories/spells/spell-groups.md'
+          - 'Spell Heal Modifiers': 'categories/spells/spell-heal-modifiers.md'
+          - 'Spell Mechanics': 'categories/spells/spell-mechanics.md'
+          - 'Spell Resist Types': 'categories/spells/spell-resist-types.md'
+          - 'Spell Target Restrictions': 'categories/spells/spell-target-restrictions.md'
+          - 'Spell Types': 'categories/spells/spell-types.md'
+          - 'Target Types': 'categories/spells/target-types.md'
+          - 'Time of Day Types': 'categories/spells/time-of-day-types.md'
+          - 'Type Effect Description Number': 'categories/spells/type-effect-description-number.md'
+      - Task System:
+          - 'Task Duration Codes': 'categories/task-system-guide/task-duration-codes.md'
+          - 'Task Activity Types': 'categories/task-system-guide/task-activity-types.md'
+          - 'Task Types': 'categories/task-system-guide/task-types.md'
+          - Shared Tasks:
+              - 'Example': 'categories/task-system-guide/shared-tasks/example.md'
+      - Zones:
+          - 'Trap Types': 'categories/zones/trap-types.md'
+          - 'LDON Themes': 'categories/zones/ldon-themes.md'
+          - 'Object Types': 'categories/zones/object-types.md'
+          - 'Door Open Types': 'categories/zones/door-open-types.md'
+          - 'Environment Emitters': 'categories/zones/environment-emitters.md'
+          - 'Adjusting Zone Shutdown Delay': 'categories/zones/adjusting-zone-shutdown-delay.md'
+          - Customizing Zones:
+              - 'Custom Zone Making': 'categories/zones/customizing-zones/custom-zone-making.md'
+              - 'Fog System and Clip Plane': 'categories/zones/customizing-zones/fog-system-and-clip-plane.md'
+              - 'GL Model Viewer': 'categories/zones/customizing-zones/gl-model-viewer.md'
+              - 'List Objects Tool': 'categories/zones/customizing-zones/list-objects-tool.md'
+              - 'Placing Objects': 'categories/zones/customizing-zones/placing-objects.md'
+              - 'Sky System': 'categories/zones/customizing-zones/sky-system.md'
+              - 'WLD Editor Suite': 'categories/zones/customizing-zones/wld-editor-suite.md'
+              - 'WLD File Reference': 'categories/zones/customizing-zones/wld-file-reference.md'
+              - 'XMI to MIDI Converter': 'categories/zones/customizing-zones/xmi-to-midi-converter.md'
+              - 'Zone Utility Tools': 'categories/zones/customizing-zones/zone-utility-tools.md'
+          - 'Zone Header Identifiers': 'categories/zones/zone-header-identifiers.md'
+          - 'Zone List': 'categories/zones/zone-list.md'
+          - 'Zone Types': 'categories/zones/zone-types.md'
+  - Changelog:
+      - '2021': 'changelog/server/2021.md'
+      - '2020': 'changelog/server/2020.md'
+      - '2019': 'changelog/server/2019.md'
+      - '2018': 'changelog/server/2018.md'
+      - '2017': 'changelog/server/2017.md'
+      - '2016': 'changelog/server/2016.md'
+      - '2015': 'changelog/server/2015.md'
+      - '2014': 'changelog/server/2014.md'
+      - '2013': 'changelog/server/2013.md'
+      - '2012': 'changelog/server/2012.md'
+      - '2011': 'changelog/server/2011.md'
+      - '2010': 'changelog/server/2010.md'
+      - '2009': 'changelog/server/2009.md'
+      - '2008': 'changelog/server/2008.md'
+      - '2007': 'changelog/server/2007.md'
+      - '2006': 'changelog/server/2006.md'
+      - '2005': 'changelog/server/2005.md'
+      - '2004': 'changelog/server/2004.md'
+      - '2003': 'changelog/server/2003.md'
