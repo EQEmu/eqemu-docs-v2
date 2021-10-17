@@ -165,8 +165,8 @@ The most up to date information regarding the database schema can be found in th
 | minz      | float     | Minimum Z Coordinate                                                                                            |
 | maxz      | float     | Maximum Z Coordinate                                                                                            |
 
-{% hint style="danger" %}
-Overlapping proximities will only trigger proximity detection for the proximity with the lowest-numbered **exploreid**.
+!!! danger
+      Overlapping proximities will only trigger proximity detection for the proximity with the lowest-numbered **exploreid**.
 
 
 ### Tasksets Table

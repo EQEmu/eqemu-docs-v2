@@ -563,8 +563,8 @@ Enter the default username and password: "admin" and "password".
       When shutting down XAMPP and/or the computer, it is recommended to stop MySQL/MariaDB through the console rather than using the control panel. The reason is that the control panel just kills the process rather than letting the database shut down cleanly. Losing power or shutting down the database server using the control panel has been known to corrupt databases. The HTTP (Apache) server can be stopped from the control panel without issues.
 
 
-{% hint style="danger" %}
-If you aren't running MySQL/MariaDB as a service (i.e. you started the database manually), it is a good idea to shut down the database cleanly. To do this, open a command prompt (from the XAMPP control panel if you haven't added MySQL/MariaDB to your PATH variables) and run the following command (only use the -p if your root user has a password):
+!!! danger
+      If you aren't running MySQL/MariaDB as a service (i.e. you started the database manually), it is a good idea to shut down the database cleanly. To do this, open a command prompt (from the XAMPP control panel if you haven't added MySQL/MariaDB to your PATH variables) and run the following command (only use the -p if your root user has a password):
 
 
 ```

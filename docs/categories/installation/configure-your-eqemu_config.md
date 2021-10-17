@@ -8,8 +8,8 @@ description: This page describes the settings and options in your eqemu_config.j
       If you make use of the various services listed below, be sure to **open the corresponding ports** on your server / firewall / router to TCP and UDP traffic!
 
 
-{% hint style="danger" %}
-STOP!  Did you read the line above?  It's a **really** important tip.
+!!! danger
+      STOP!  Did you read the line above?  It's a **really** important tip.
 
 
 | Legend |
