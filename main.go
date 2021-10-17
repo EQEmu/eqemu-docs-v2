@@ -16,11 +16,18 @@ func main() {
 		"/deploy", func(c echo.Context) error {
 			if c.Request().Header.Get("X-Github-Event") != "" &&
 				c.Request().Header.Get("X-Github-Delivery") != "" {
-
-				// run mkdocs build
 				start := time.Now()
-				cmd := exec.Command("mkdocs", "build")
+
+				// run git pull
+				cmd := exec.Command("git", "pull")
 				_, err := cmd.Output()
+				if err != nil {
+					log.Println(err)
+				}
+				
+				// run mkdocs build
+				cmd = exec.Command("mkdocs", "build")
+				_, err = cmd.Output()
 
 				if err != nil {
 					log.Println(err)
