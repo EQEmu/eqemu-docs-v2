@@ -478,7 +478,6 @@ nav:
           - 'base_data': 'schema/categories/client-files/base_data.md'
           - 'db_str': 'schema/categories/client-files/db_str.md'
           - 'skill_caps': 'schema/categories/client-files/skill_caps.md'
-          - 'spells_new': 'schema/categories/client-files/spells_new.md'
       - 'Data Storage':
           - 'data_buckets': 'schema/categories/data-storage/data_buckets.md'
           - 'quest_globals': 'schema/categories/data-storage/quest_globals.md'

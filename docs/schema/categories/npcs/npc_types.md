@@ -6,26 +6,26 @@
 | name | text | Name |
 | lastname | varchar | Last Name |
 | level | tinyint | Level |
-| race | smallint | [Race](https://eqemu.gitbook.io/server/categories/npc/race-list) |
-| class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/player/class-list) |
-| bodytype | int | [Body Type](https://eqemu.gitbook.io/server/categories/npc/body-types) |
+| race | smallint | [Race](../../../../categories/npc/race-list) |
+| class | tinyint | [Class](../../../../categories/player/class-list) |
+| bodytype | int | [Body Type](../../../../categories/npc/body-types) |
 | hp | int | Health |
 | mana | int | Mana |
-| gender | tinyint | [Gender](https://eqemu.gitbook.io/server/categories/npc/genders) |
-| texture | tinyint | [Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| helmtexture | tinyint | [Helmet Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
+| gender | tinyint | [Gender](../../../../categories/npc/genders) |
+| texture | tinyint | [Texture](../../../../categories/npc/textures) |
+| helmtexture | tinyint | [Helmet Texture](../../../../categories/npc/textures) |
 | herosforgemodel | int | Hero's Forge Model |
 | size | float | Size |
 | hp\_regen\_rate | int | Health Regeneration |
 | mana\_regen\_rate | int | Mana Regeneration |
-| loottable\_id | int | [Loottable Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/loottable.md) |
-| merchant\_id | int | [Merchant Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/merchantlist.md) |
-| alt\_currency\_id | int | [Alternate Currency Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/alternate_currency.md) |
+| loottable\_id | int | [Loottable Identifier](../../../schema/categories/npcs/loottable.md) |
+| merchant\_id | int | [Merchant Identifier](../../../schema/categories/npcs/merchantlist.md) |
+| alt\_currency\_id | int | [Alternate Currency Identifier](../../../schema/categories/npcs/alternate_currency.md) |
 | npc\_spells\_id | int | [NPC Spell Set Identifier](npc_spells.md) |
 | npc\_spells\_effects\_id | int | [NPC Spell Effects Identifier](npc_spells_effects.md) |
-| npc\_faction\_id | int | [NPC Faction Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/faction_list.md) |
-| adventure\_template\_id | int | [Adventure Template Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/adventure_template.md) |
-| trap\_template | int | [Trap Template Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/npcs/traps.md) |
+| npc\_faction\_id | int | [NPC Faction Identifier](../../../schema/categories/npcs/faction_list.md) |
+| adventure\_template\_id | int | [Adventure Template Identifier](../../../schema/categories/npcs/adventure_template.md) |
+| trap\_template | int | [Trap Template Identifier](../../../schema/categories/npcs/traps.md) |
 | mindmg | int | Minimum Damage |
 | maxdmg | int | Maximum Damage |
 | attack\_count | smallint | Attack Count |
@@ -50,9 +50,9 @@
 | d\_melee\_texture1 | int | Primary Weapon Texture |
 | d\_melee\_texture2 | int | Secondary Weapon Texture |
 | ammo\_idfile | varchar | Ammo Texture |
-| prim\_melee\_type | tinyint | [Primary Melee Type](https://eqemu.gitbook.io/server/categories/player/skills) |
-| sec\_melee\_type | tinyint | [Secondary Melee Type](https://eqemu.gitbook.io/server/categories/player/skills) |
-| ranged\_type | tinyint | [Ranged Type](https://eqemu.gitbook.io/server/categories/player/skills) |
+| prim\_melee\_type | tinyint | [Primary Melee Type](../../../../categories/player/skills) |
+| sec\_melee\_type | tinyint | [Secondary Melee Type](../../../../categories/player/skills) |
+| ranged\_type | tinyint | [Ranged Type](../../../../categories/player/skills) |
 | runspeed | float | Run Speed |
 | MR | smallint | Magic Resistance |
 | CR | smallint | Cold Resistance |
@@ -98,11 +98,11 @@
 | healscale | float | Heal Scale: 25 = 25%, 50 = 50%, 100 = 100% |
 | no\_target\_hotkey | tinyint | No Target Hotkey: 0 = False, 1 = True |
 | raid\_target | tinyint | Raid Target: 0 = False, 1 = True |
-| armtexture | tinyint | [Arm Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| bracertexture | tinyint | [Bracer Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| handtexture | tinyint | [Hand Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| legtexture | tinyint | [Leg Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| feettexture | tinyint | [Feet Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
+| armtexture | tinyint | [Arm Texture](../../../../categories/npc/textures) |
+| bracertexture | tinyint | [Bracer Texture](../../../../categories/npc/textures) |
+| handtexture | tinyint | [Hand Texture](../../../../categories/npc/textures) |
+| legtexture | tinyint | [Leg Texture](../../../../categories/npc/textures) |
+| feettexture | tinyint | [Feet Texture](../../../../categories/npc/textures) |
 | light | tinyint | Light |
 | walkspeed | tinyint | Walk Speed |
 | peqid | int | PEQ Identifier |
@@ -122,6 +122,6 @@
 | rare\_spawn | tinyint | Rare Spawn: 0 = False, 1 = True |
 | stuck\_behavior | tinyint | Stuck Behavior |
 | model | smallint | Model |
-| flymode | tinyint | [Fly Mode](https://eqemu.gitbook.io/server/categories/npc/fly-modes) |
+| flymode | tinyint | [Fly Mode](../../../../categories/npc/fly-modes) |
 | always\_aggro | tinyint | Aggro regardless of \_int or level : 0 = False, 1 = True |
 

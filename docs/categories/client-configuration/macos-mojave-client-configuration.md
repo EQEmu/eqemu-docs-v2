@@ -135,7 +135,7 @@ WINE=${WINE:-wine} WINEPREFIX=${WINEPREFIX:-$HOME/.wine} $WINE regedit /tmp/font
 ## Launch EverQuest
 
 {% hint style="info" %}
-Be sure to follow the instructions to [configure your client](https://eqemu.gitbook.io/server/categories/how-to-guides/client-configuration#all-operating-systems) for use with EQEmu that are applicable to all operating systems.
+Be sure to follow the instructions to [configure your client](../../../../categories/how-to-guides/client-configuration#all-operating-systems) for use with EQEmu that are applicable to all operating systems.
 {% endhint %}
 
 * In Terminal... (_/Applications/Utilities/Terminal.app_)

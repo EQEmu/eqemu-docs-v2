@@ -2,7 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| gid | int | [Group Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/raids/group_id.md) |
+| gid | int | [Group Identifier](../../../schema/categories/raids/group_id.md) |
 | rid | int | [Raid Identifier](raid_details.md) |
 | marknpc | varchar | Mark NPC: 0 = False, 1 = True |
 | maintank | varchar | Main Tank: 0 = False, 1 = True |

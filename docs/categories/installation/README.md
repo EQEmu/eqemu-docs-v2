@@ -49,9 +49,9 @@ Be sure to back up any files before you start to modify them!
 
 | Choice | Description |
 | :--- | :--- |
-| [Operation](https://eqemu.gitbook.io/server/categories/operation) | Learn the ins-and-outs of operating your new world |
-| [PEQ DB Editor](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor) | How to install the PEQ DB editor (so you can customize your world). |
-| [Scripting](https://eqemu.gitbook.io/server/categories/scripting) | Learn to customize NPC interactions through scripts |
+| [Operation](../../../../categories/operation) | Learn the ins-and-outs of operating your new world |
+| [PEQ DB Editor](../../../../categories/installation/install-peq-database-editor) | How to install the PEQ DB editor (so you can customize your world). |
+| [Scripting](../../../../categories/scripting) | Learn to customize NPC interactions through scripts |
 | [Client Config](../client-configuration/) | You'll have to configure your client to connect to your world |
 | [Custom NPCs](../npc/customizing-npcs/) | Learn to create a custom NPC |
 | [Help!](https://discord.gg/QHsm7CD) | Join the discussion on Discord--look for **#support server** |

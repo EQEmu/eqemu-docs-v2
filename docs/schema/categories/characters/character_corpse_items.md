@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | corpse\_id | int | [Corpse Identifier](character_corpses.md) |
 | equip\_slot | int | Equipment Slot |
-| item\_id | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/characters/items.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/characters/items.md) |
 | charges | int | Item Charges |
 | aug\_1 | int | Item Augment Slot 1 |
 | aug\_2 | int | Item Augment Slot 2 |

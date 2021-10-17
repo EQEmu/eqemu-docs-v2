@@ -3,9 +3,9 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | time\_index | int | Inventory Snapshot Time Identifier |
-| charid | int | [Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/inventory/character_data.md) |
-| slotid | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots) |
-| itemid | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/inventory/items.md) |
+| charid | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
 | color | int | Color |
 | augslot1 | mediumint | Augment Slot 1 |

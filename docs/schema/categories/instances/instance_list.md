@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Instance Identifier |
-| zone | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zone | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | version | tinyint | Version |
 | is\_global | tinyint | Is Global: 0 = False, 1 = True |
 | start\_time | int | Start Time UNIX Timestamp |

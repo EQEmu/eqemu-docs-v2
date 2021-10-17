@@ -3,9 +3,9 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bot Spell Casting Chance Identifier |
-| spell\_type\_index | tinyint | [Spell Type Identifier](https://eqemu.gitbook.io/server/categories/spells/spell-types) |
-| class\_id | tinyint | [Class Identifier](https://eqemu.gitbook.io/server/categories/player/class-list) |
-| stance\_index | tinyint | [Stance Type Identifier](https://eqemu.gitbook.io/server/categories/bots/stance-types) |
+| spell\_type\_index | tinyint | [Spell Type Identifier](../../../../categories/spells/spell-types) |
+| class\_id | tinyint | [Class Identifier](../../../../categories/player/class-list) |
+| stance\_index | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
 | nHSND\_value | tinyint | nHSND Value |
 | pH\_value | tinyint | pH Value |
 | pS\_value | tinyint | pS Value |

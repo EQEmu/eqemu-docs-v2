@@ -4,9 +4,9 @@
 | :--- | :--- | :--- |
 | MercBuffId | int | Unique Mercenary Buff Identifier |
 | MercId | int | [Mercenary Identifier](mercs.md) |
-| SpellId | int | [Spell Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/mercenaries/spells_new.md) |
+| SpellId | int | [Spell Identifier](../../../schema/categories/mercenaries/spells_new.md) |
 | CasterLevel | int | Caster Level |
-| DurationFormula | int | [Duration Formula](https://eqemu.gitbook.io/server/categories/spells/buff-duration-formulas) |
+| DurationFormula | int | [Duration Formula](../../../../categories/spells/buff-duration-formulas) |
 | TicsRemaining | int | Tics Remaining |
 | PoisonCounters | int | Poison Counters |
 | DiseaseCounters | int | Disease Counters |

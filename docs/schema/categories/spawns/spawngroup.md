@@ -12,7 +12,7 @@
 | min\_y | float | Min Y Coordinate |
 | delay | int | Roaming Delay |
 | mindelay | int | Minimum Delay |
-| despawn | tinyint | [Despawn Type](https://eqemu.gitbook.io/server/categories/npc/spawns/npc-despawn-types) |
+| despawn | tinyint | [Despawn Type](../../../../categories/npc/spawns/npc-despawn-types) |
 | despawn\_timer | int | Despawn Timer in Seconds |
 | wp\_spawns | tinyint |  |
 

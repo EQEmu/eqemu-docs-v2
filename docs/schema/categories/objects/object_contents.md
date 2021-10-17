@@ -2,10 +2,10 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| zoneid | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | parentid | int | [Object Identifier](object.md) |
 | bagidx | int | Bag Index |
-| itemid | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/objects/items.md) |
+| itemid | int | [Item Identifier](../../../schema/categories/objects/items.md) |
 | charges | smallint | Charges |
 | droptime | datetime | Drop Time |
 | augslot1 | mediumint | Augment Slot 1 |

@@ -14,11 +14,11 @@ While every attempt will be made to keep this page updated, please reference the
 
 | Section Description                                                     | Link                                                                                                                  |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Database Schema:  All of the DB tables for the task system              | [Database Schema](https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide#database-schema)         |
-| GM Commands:  in-game GM commands for the task system                   | [GM Commands](https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide#gm-commands)                 |
-| Task System Rules:  server rules effecting the task system              | [Task System Rules](https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide#task-system-rules)     |
-| Logging Options: use with the Logging System                            | [Logging Options](https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide#logging-options)         |
-| Quest API: quest methods and EVENT triggers relating to the task system | [Quest API](https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide#quest-api-for-the-task-system) |
+| Database Schema:  All of the DB tables for the task system              | [Database Schema](../../../../categories/how-to-guides/task-system-guide#database-schema)         |
+| GM Commands:  in-game GM commands for the task system                   | [GM Commands](../../../../categories/how-to-guides/task-system-guide#gm-commands)                 |
+| Task System Rules:  server rules effecting the task system              | [Task System Rules](../../../../categories/how-to-guides/task-system-guide#task-system-rules)     |
+| Logging Options: use with the Logging System                            | [Logging Options](../../../../categories/how-to-guides/task-system-guide#logging-options)         |
+| Quest API: quest methods and EVENT triggers relating to the task system | [Quest API](../../../../categories/how-to-guides/task-system-guide#quest-api-for-the-task-system) |
 
 ## Database Schema
 
@@ -31,9 +31,9 @@ The most up to date information regarding the database schema can be found in th
 | Column           | Data Type | Description                                                                                                                                  |
 | ---------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | id               | int       | Unique Task Identifier; use 1 - 9999, a value of 0 should NOT be used                                                                        |
-| type             | tinyint   | [Task Type](https://eqemu.gitbook.io/server/categories/types/task-types); 0=Task, 1=Shared, 2=Quest, 3=Expedition                            |
+| type             | tinyint   | [Task Type](../../../../categories/types/task-types); 0=Task, 1=Shared, 2=Quest, 3=Expedition                            |
 | duration         | int       | Duration in seconds; if 0, the task has no time limit                                                                                        |
-| duration_code    | tinyint   | [Duration Code](https://eqemu.gitbook.io/server/categories/reference-lists/task-duration-codes); 0=None, 1=Short, 2=Medium, 3=Long           |
+| duration_code    | tinyint   | [Duration Code](../../../../categories/reference-lists/task-duration-codes); 0=None, 1=Short, 2=Medium, 3=Long           |
 | title            | varchar   | Title                                                                                                                                        |
 | description      | text      | Description; only the active task description displays                                                                                       |
 | reward           | varchar   | Reward Description                                                                                                                           |
@@ -56,7 +56,7 @@ The most up to date information regarding the database schema can be found in th
 | taskid               | int       | Task Identifier (ID from Tasks table); each activity for a task will utilize the same ID.                                                                                                                                                                      |
 | activityid           | int       | Activity Identifier: Starts at 0, **must be sequential**                                                                                                                                                                                                       |
 | step                 | int       | Step: 0 = Always Available, >0 = Must Complete Previous ("stepped" task)                                                                                                                                                                                       |
-| activitytype         | tinyint   | [Activity Type](https://eqemu.gitbook.io/server/categories/types/task-activity-types) (or see below)                                                                                                                                                           |
+| activitytype         | tinyint   | [Activity Type](../../../../categories/types/task-activity-types) (or see below)                                                                                                                                                           |
 | target_name          | varchar   | Target Name                                                                                                                                                                                                                                                    |
 | item_list            | varchar   | Item Identifier List                                                                                                                                                                                                                                           |
 | skill_list           | varchar   | Skill Identifier List                                                                                                                                                                                                                                          |
@@ -66,7 +66,7 @@ The most up to date information regarding the database schema can be found in th
 | goalmethod           | int       | <p>Goal Method: </p><p>0 = Single Value (npc_type ID or item ID)</p><p>1 = List (refers to the goallist table to use a list of npc_type IDs or Item IDs)</p><p>2 = Under control of quest system</p>                                                           |
 | goalcount            | int       | Goal Count (how many of the things in the goal id must be done)                                                                                                                                                                                                |
 | delivertonpc         | int       | Deliver To NPC: 0 = No Delivery NPC, >0 = npc_type ID                                                                                                                                                                                                          |
-| zones                | varchar   | [Zones List](https://eqemu.gitbook.io/server/categories/reference-lists/zones)--use the zoneidnumber field; "0" displays "ALL".  Activities will only be counted if completed in the assigned zone. Can also be used as "Touch" for visiting an assigned zone. |
+| zones                | varchar   | [Zones List](../../../../categories/reference-lists/zones)--use the zoneidnumber field; "0" displays "ALL".  Activities will only be counted if completed in the assigned zone. Can also be used as "Touch" for visiting an assigned zone. |
 | optional             | tinyint   | Optional: 0 = False, 1 = True; if a task activity is optional, the task will be complete when all non-optional task activities are completed.                                                                                                                  |
 
 #### Activity Types
@@ -99,7 +99,7 @@ Please note that **quest::updatetaskactivity **could be used in many EVENT trigg
 | charid       | int       | Character Identifier; ID from character_data                                                                      |
 | taskid       | int       | Task Identifier; ID from tasks table                                                                              |
 | slot         | int       | <p>Slot; the slot number (up to 19) that causes the activity to </p><p>display in order to the client</p>         |
-| type         | tinyint   | [Task Type](https://eqemu.gitbook.io/server/categories/types/task-types); 0=Task, 1=Shared, 2=Quest, 3=Expedition |
+| type         | tinyint   | [Task Type](../../../../categories/types/task-types); 0=Task, 1=Shared, 2=Quest, 3=Expedition |
 | acceptedtime | int       | Accepted Time UNIX Timestamp                                                                                      |
 
 ### Character_Activities Table
@@ -156,7 +156,7 @@ The rule **TaskSystem:EnableTaskProximity** must be set to **true **to allow the
 
 | Column    | Data Type | Description                                                                                                     |
 | --------- | --------- | --------------------------------------------------------------------------------------------------------------- |
-| zoneid    | int       | [Zone Identifier](https://eqemu.gitbook.io/server/categories/reference-lists/zones); use the zoneidnumber field |
+| zoneid    | int       | [Zone Identifier](../../../../categories/reference-lists/zones); use the zoneidnumber field |
 | exploreid | int       | Explore Identifier; match the goalid in the activity table for type 5 (explore) activities                      |
 | minx      | float     | Minimum X Coordinate                                                                                            |
 | maxx      | float     | Maximum X Coordinate                                                                                            |

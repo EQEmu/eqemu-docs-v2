@@ -6,7 +6,7 @@ So you would like to understand spells? It's a bit of a journey, so let's get st
 
 There are tens of thousands of records in your [spells_new](https://eqemu.gitbook.io/database-schema/tables/spells_new) table, and making sense of them all can be a little daunting (at least at first).
 
-Each spell has MANY fields related to it--and you're probably wondering what all of these fields do. You may even be up against some [Client Limitations](https://eqemu.gitbook.io/server/categories/reference-lists/client-spell-id-limitations), or perhaps you've just discovered that AAs are actually spells! Don't get too worked up!! (╯°□°）╯彡 ┻━┻
+Each spell has MANY fields related to it--and you're probably wondering what all of these fields do. You may even be up against some [Client Limitations](../../../../categories/reference-lists/client-spell-id-limitations), or perhaps you've just discovered that AAs are actually spells! Don't get too worked up!! (╯°□°）╯彡 ┻━┻
 
 We'll explore these topics below.
 
@@ -35,7 +35,7 @@ This simplified table shows that Slot 1 is where all the action is in the Greate
 
 ### Spell Effects
 
-There is an entire page on the Wiki describing each [Spell Effect](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids). A spell effect, in simplest terms, determines what is modified, or what is caused to happen, by the spell. It is important to understand that each slot, as shown above, can have a Spell Effect enumerated in the Effect ID field--that is to say that each Spell can have one or more spell effects that occur when the spell is cast.
+There is an entire page on the Wiki describing each [Spell Effect](../../../../categories/spells/spell-effect-ids). A spell effect, in simplest terms, determines what is modified, or what is caused to happen, by the spell. It is important to understand that each slot, as shown above, can have a Spell Effect enumerated in the Effect ID field--that is to say that each Spell can have one or more spell effects that occur when the spell is cast.
 
 Dissecting the information presented in the Greater Healing spell table above, we see that Spell Effect 0 is listed in the first slot (effectid1 field in your database). Cross-referencing with the Spell Effect list, we find that Spell Effect 0 is "SE_CurrentHP", or Spell Effect Current Hit Points. We can therefore surmise the the Greater Healing spell must have something to do with hit points.
 
@@ -57,7 +57,7 @@ So we have established that the Greater Healing spell is capable of changing cur
 
 ### Formula
 
-Formula values are integers that are used in coordination with the Spell Effect to determine its outcome as well. Each Spell Effect can use a different formula, and those are found in the [spell_effects.cpp](https://github.com/EQEmu/Server/blob/master/zone/spell_effects.cpp) source file. A wiki page also details those [Base Value Formulas](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) if you're not comfortable looking at the code.
+Formula values are integers that are used in coordination with the Spell Effect to determine its outcome as well. Each Spell Effect can use a different formula, and those are found in the [spell_effects.cpp](https://github.com/EQEmu/Server/blob/master/zone/spell_effects.cpp) source file. A wiki page also details those [Base Value Formulas](../../../../categories/spells/base-value-formulas) if you're not comfortable looking at the code.
 
 In the case of our Greater Healing spell, we see that the value for Formula in Slot 1 is 7 (formula1 field in your database). Referencing the source, we find that the spell calc is Base Value + User Level _ _* Formula. If we assume that we are a level 20 Cleric, casting the Greater Healing spell: 140 + 20 * 7 = 280. This of course assumes that there are no focus effects being taken into consideration. If we are instead a level 29 Druid, we would hit the spell's max value: 140 + 29 * 7 = 343--which is greater than the 300 hit point Max Value. As a result, the Druid would only heal 300 hit points using this spell.
 
@@ -208,7 +208,7 @@ Protection of the Glades:
 
 ## Understanding the Remaining Fields
 
-A dizzying array of fields exists that have not been covered above. Many of these fields are quite self-explanatory, such as the level at which each class can use the spell, the deities allowed to use the spell, cast-on messages, etc. This section is meant to cover the remaining fields as questions arise about their functionality. Remember to reference the information on [spells_new](https://eqemu.gitbook.io/database-schema/tables/spells_new) found on this wiki, and the information contained in the [spdat.h](https://github.com/EQEmu/Server/blob/master/common/spdat.h) source file, as well as the other helpful wiki pages for [Base Value Formulas](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas), [Spell Target Restrictions](https://eqemu.gitbook.io/server/categories/spells/spell-target-restrictions), [Spell Resist Types](spell-resist-types.md), and [Damage Shield Types](https://eqemu.gitbook.io/server/categories/spells/damage-shield-types).
+A dizzying array of fields exists that have not been covered above. Many of these fields are quite self-explanatory, such as the level at which each class can use the spell, the deities allowed to use the spell, cast-on messages, etc. This section is meant to cover the remaining fields as questions arise about their functionality. Remember to reference the information on [spells_new](https://eqemu.gitbook.io/database-schema/tables/spells_new) found on this wiki, and the information contained in the [spdat.h](https://github.com/EQEmu/Server/blob/master/common/spdat.h) source file, as well as the other helpful wiki pages for [Base Value Formulas](../../../../categories/spells/base-value-formulas), [Spell Target Restrictions](../../../../categories/spells/spell-target-restrictions), [Spell Resist Types](spell-resist-types.md), and [Damage Shield Types](../../../../categories/spells/damage-shield-types).
 
 ## Reagents
 

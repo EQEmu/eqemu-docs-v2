@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | gridid | int | [Grid Identifier](grid.md) |
-| zoneid | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | number | int | Waypoint Identifier |
 | x | float | X Coordinate |
 | y | float | Y Coordinate |

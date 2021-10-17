@@ -3,8 +3,8 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |
-| slotid | mediumint | [Slot Identifier](https://eqemu.gitbook.io/server/categories/inventory/inventory-slots) |
-| itemid | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/account/items.md) |
+| slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| itemid | int | [Item Identifier](../../../schema/categories/account/items.md) |
 | charges | smallint | Charges |
 | augslot1 | mediumint | Augment Slot 1 |
 | augslot2 | mediumint | Augment Slot 2 |

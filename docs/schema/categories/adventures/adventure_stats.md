@@ -2,7 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| player\_id | int | [Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/adventures/character_data.md) |
+| player\_id | int | [Character Identifier](../../../schema/categories/adventures/character_data.md) |
 | guk\_wins | mediumint | Deepest Guk Wins |
 | mir\_wins | mediumint | Miragul's Menagerie Wins |
 | mmc\_wins | mediumint | Mistmoore Catacombs Wins |

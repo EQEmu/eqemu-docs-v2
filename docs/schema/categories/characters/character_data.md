@@ -3,22 +3,22 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Character Identifier |
-| account\_id | int | [Account Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/characters/account.md) |
+| account\_id | int | [Account Identifier](../../../schema/categories/account/account.md) |
 | name | varchar | Name |
 | last\_name | varchar | Last Name |
 | title | varchar | Title |
 | suffix | varchar | Suffix |
-| zone\_id | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zone\_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | zone\_instance | int | Zone Instance Identifier |
 | y | float | Y Coordinate |
 | x | float | X Coordinate |
 | z | float | Z Coordinate |
 | heading | float | Heading Coordinate |
-| gender | tinyint | [Gender](https://eqemu.gitbook.io/server/categories/npc/genders) |
-| race | smallint | [Race](https://eqemu.gitbook.io/server/categories/npc/race-list) |
-| class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/player/class-list) |
+| gender | tinyint | [Gender](../../../../categories/npc/genders) |
+| race | smallint | [Race](../../../../categories/npc/race-list) |
+| class | tinyint | [Class](../../../../categories/player/class-list) |
 | level | int | Level |
-| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list) |
+| deity | int | [Deity](../../../../categories/player/deity-list) |
 | birthday | int | UNIX Timestamp of Birthday |
 | last\_login | int | UNIX Timestamp of Last Login |
 | time\_played | int | Time Played |
@@ -36,7 +36,7 @@
 | drakkin\_tattoo | int | Drakkin Tattoo |
 | drakkin\_details | int | Drakkin Details |
 | ability\_time\_seconds | tinyint | Ability Timer in Seconds |
-| ability\_number | tinyint | [Ability Number](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/characters/aa_ability.md) |
+| ability\_number | tinyint | [Ability Number](../../../schema/categories/characters/aa_ability.md) |
 | ability\_time\_minutes | tinyint | Ability Timer in Minutes |
 | ability\_time\_hours | tinyint | Ability Timer in Hours |
 | exp | int | Experience |
@@ -64,11 +64,11 @@
 | hunger\_level | int | Hunger Level |
 | thirst\_level | int | Thirst Level |
 | ability\_up | int | Ability Up |
-| ldon\_points\_guk | int | LDoN Points - [Deepest Guk](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
-| ldon\_points\_mir | int | LDoN Points - [Miragul's Menagerie](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
-| ldon\_points\_mmc | int | LDoN Points - [Mistmoore Catacombs](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
-| ldon\_points\_ruj | int | LDoN Points - [Rujarkian Hills](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
-| ldon\_points\_tak | int | LDoN Points - [Takish-Hiz](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
+| ldon\_points\_guk | int | LDoN Points - [Deepest Guk](../../../../categories/zones/ldon-themes) |
+| ldon\_points\_mir | int | LDoN Points - [Miragul's Menagerie](../../../../categories/zones/ldon-themes) |
+| ldon\_points\_mmc | int | LDoN Points - [Mistmoore Catacombs](../../../../categories/zones/ldon-themes) |
+| ldon\_points\_ruj | int | LDoN Points - [Rujarkian Hills](../../../../categories/zones/ldon-themes) |
+| ldon\_points\_tak | int | LDoN Points - [Takish-Hiz](../../../../categories/zones/ldon-themes) |
 | ldon\_points\_available | int | LDoN Points Available |
 | tribute\_time\_remaining | int | Tribute Time Remaining |
 | career\_tribute\_points | int | Career Tribute Points |

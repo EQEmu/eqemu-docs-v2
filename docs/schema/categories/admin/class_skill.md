@@ -2,8 +2,8 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| class | smallint | [Class](https://eqemu.gitbook.io/server/categories/player/class-list) |
-| name | varchar | [Name](https://eqemu.gitbook.io/server/categories/player/class-list) |
+| class | smallint | [Class](../../../../categories/player/class-list) |
+| name | varchar | [Name](../../../../categories/player/class-list) |
 | skill\_0 | smallint | Required Level for 1H Blunt |
 | skill\_1 | smallint | Required Level for 1H Slashing |
 | skill\_2 | smallint | Required Level for 2H Blunt |

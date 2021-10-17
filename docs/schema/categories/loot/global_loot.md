@@ -10,9 +10,9 @@
 | max\_level | int | Maximum Level |
 | rare | tinyint | Rare: 0 = False, 1 = True |
 | raid | tinyint | Raid: 0 = False, 1 = True |
-| race | mediumtext | [Race](https://eqemu.gitbook.io/server/categories/npc/race-list), multiple races supported if \| delimited |
-| class | mediumtext | [Class](https://eqemu.gitbook.io/server/categories/player/class-list), multiple classes supported if \| delimited |
-| bodytype | mediumtext | [Body Type](https://eqemu.gitbook.io/server/categories/npc/body-types), multiple body types supported if \| delimited |
-| zone | mediumtext | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list),, multiple zones supported if \| delimited |
+| race | mediumtext | [Race](../../../../categories/npc/race-list), multiple races supported if \| delimited |
+| class | mediumtext | [Class](../../../../categories/player/class-list), multiple classes supported if \| delimited |
+| bodytype | mediumtext | [Body Type](../../../../categories/npc/body-types), multiple body types supported if \| delimited |
+| zone | mediumtext | [Zone Short Name](../../../../categories/zones/zone-list),, multiple zones supported if \| delimited |
 | hot\_zone | tinyint |  |
 

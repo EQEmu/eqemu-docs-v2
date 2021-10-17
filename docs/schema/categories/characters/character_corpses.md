@@ -5,7 +5,7 @@
 | id | int | Unique Corpse Identifier |
 | charid | int | [Character Identifier](character_data.md) |
 | charname | varchar | Character Name |
-| zone\_id | smallint | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zone\_id | smallint | [Zone Identifier](../../../../categories/zones/zone-list) |
 | instance\_id | smallint | Instance Identifier |
 | x | float | X Coordinate |
 | y | float | Y Coordinate |
@@ -19,12 +19,12 @@
 | exp | int | Experience |
 | size | int | Size |
 | level | int | Level |
-| race | int | [Race](https://eqemu.gitbook.io/server/categories/npc/race-list) |
-| gender | int | [Gender](https://eqemu.gitbook.io/server/categories/npc/genders) |
-| class | int | [Class](https://eqemu.gitbook.io/server/categories/player/class-list) |
-| deity | int | [Deity](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| texture | int | [Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
-| helm\_texture | int | [Helm Texture](https://eqemu.gitbook.io/server/categories/npc/textures) |
+| race | int | [Race](../../../../categories/npc/race-list) |
+| gender | int | [Gender](../../../../categories/npc/genders) |
+| class | int | [Class](../../../../categories/player/class-list) |
+| deity | int | [Deity](../../../../categories/player/deity-list) |
+| texture | int | [Texture](../../../../categories/npc/textures) |
+| helm\_texture | int | [Helm Texture](../../../../categories/npc/textures) |
 | copper | int | Copper |
 | silver | int | Silver |
 | gold | int | Gold |

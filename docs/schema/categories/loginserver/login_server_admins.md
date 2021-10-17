@@ -9,5 +9,5 @@
 | last\_name | varchar | Last Name |
 | email | varchar | Email |
 | registration\_date | datetime | Registration Date |
-| registration\_ip\_address | varchar | [Registration IP Address](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/loginserver/account_ip.md) |
+| registration\_ip\_address | varchar | [Registration IP Address](../../../schema/categories/loginserver/account_ip.md) |
 

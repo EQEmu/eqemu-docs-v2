@@ -12,10 +12,10 @@ If you do not need to run your own editor, you can simply use the publicly avail
 
 ## Documented Setups by OS:
 
-* [CentOS](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor#centos)
-* [MacOS](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor#macos)
-* [Ubuntu](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor#ubuntu)
-* [Windows](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor#windows)
+* [CentOS](../../../../categories/installation/install-peq-database-editor#centos)
+* [MacOS](../../../../categories/installation/install-peq-database-editor#macos)
+* [Ubuntu](../../../../categories/installation/install-peq-database-editor#ubuntu)
+* [Windows](../../../../categories/installation/install-peq-database-editor#windows)
 
 ## Unix-like System Installation Instructions
 

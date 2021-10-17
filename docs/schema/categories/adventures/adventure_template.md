@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Adventure Identifier](adventure_details.md) |
-| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
 | zone\_version | tinyint | Zone Version |
 | is\_hard | tinyint | Hard: 0 = False, 1 = True |
 | is\_raid | tinyint | Raid: 0 = False, 1 = True |
@@ -21,8 +21,8 @@
 | zone\_in\_time | int | Zone In Duration |
 | win\_points | smallint | LDoN Points for Winning |
 | lose\_points | smallint | LDoN Points for Losing |
-| theme | tinyint | [LDoN Theme](https://eqemu.gitbook.io/server/categories/zones/ldon-themes) |
-| zone\_in\_zone\_id | smallint | [Zone In Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| theme | tinyint | [LDoN Theme](../../../../categories/zones/ldon-themes) |
+| zone\_in\_zone\_id | smallint | [Zone In Zone Identifier](../../../../categories/zones/zone-list) |
 | zone\_in\_x | float | Zone In X Coordinate |
 | zone\_in\_y | float | Zone In Y Coordinate |
 | zone\_in\_object\_id | smallint | Zone In Object Identifier |
@@ -30,7 +30,7 @@
 | dest\_y | float | Destination Y Coordinate |
 | dest\_z | float | Destination Z Coordinate |
 | dest\_h | float | Destination Heading Coordinate |
-| graveyard\_zone\_id | int | [Zone Identifier](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
+| graveyard\_zone\_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | graveyard\_x | float | Graveyard X Coordinate |
 | graveyard\_y | float | Graveyard Y Coordinate |
 | graveyard\_z | float | Graveyard Z Coordinate |

@@ -2,8 +2,8 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| skillID | tinyint | [Skill Identifier](https://eqemu.gitbook.io/server/categories/player/skills) |
-| class | tinyint | [Class](https://eqemu.gitbook.io/server/categories/player/class-list) |
+| skillID | tinyint | [Skill Identifier](../../../../categories/player/skills) |
+| class | tinyint | [Class](../../../../categories/player/class-list) |
 | level | tinyint | Level |
 | cap | mediumint | Cap |
 | class\_ | tinyint | Unknown |

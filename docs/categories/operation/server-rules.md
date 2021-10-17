@@ -134,7 +134,7 @@ If you would like to improve upon the descriptions or notes in the Server Rules 
 | Boolean | Character | AllowMQTarget | FALSE | Disables putting players in the 'hackers' list for targeting beyond the clip plane or attempting to target something untargetable |
 | Boolean | Character | UseOldBindWound | FALSE | Uses the original bind wound behavior |
 | Boolean | Character | GrantHoTTOnCreate | FALSE | Grant Health of Target's Target leadership AA on character creation |
-| Integer | Expansion | CurrentExpansion | -1 | Sets which server side expansion is enabled. See [https://eqemu.gitbook.io/server/in-development/project-peq-expansions/expansion-content-filtering](https://eqemu.gitbook.io/server/in-development/project-peq-expansions/expansion-content-filtering) for more details. |
+| Integer | Expansion | CurrentExpansion | -1 | Sets which server side expansion is enabled. See [../../../../in-development/project-peq-expansions/expansion-content-filtering](../../../../in-development/project-peq-expansions/expansion-content-filtering) for more details. |
 | Integer | Mercs | SuspendIntervalMS | 10000 |  |
 | Integer | Mercs | UpkeepIntervalMS | 180000 |  |
 | Integer | Mercs | SuspendIntervalS | 10 |  |

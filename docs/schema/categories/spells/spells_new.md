@@ -5,7 +5,7 @@
 | id | int | Unique Spell Identifier |
 | name | varchar | Name |
 | player\_1 | varchar | Player\_1 |
-| teleport\_zone | varchar | The zone you are teleporting to or the [NPC Name](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/npc_types.md) you want to spawn. |
+| teleport\_zone | varchar | The zone you are teleporting to or the [NPC Name](../../../schema/categories/npcs/npc_types.md) you want to spawn. |
 | you\_cast | varchar | The message sent to others when you cast the spell. |
 | other\_casts | varchar | The message seen when someone around you casts the spell. |
 | cast\_on\_you | varchar | The message received when the spell is cast on you. |
@@ -18,7 +18,7 @@
 | cast\_time | int | Cast Time in Milliseconds |
 | recovery\_time | int | Recovery Time in Seconds |
 | recast\_time | int | Recast Time in Seconds |
-| buffdurationformula | int | [Buff Duration Formula](https://eqemu.gitbook.io/server/categories/spells/buff-duration-formulas) |
+| buffdurationformula | int | [Buff Duration Formula](../../../../categories/spells/buff-duration-formulas) |
 | buffduration | int | Buff Duration |
 | AEDuration | int | Area of Effect Duration |
 | mana | int | Mana Cost |
@@ -60,10 +60,10 @@
 | max12 | int | Max 12 |
 | icon | int | Icon |
 | memicon | int | Memmed Icon |
-| components1 | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/items.md) |
-| components2 | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/items.md) |
-| components3 | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/items.md) |
-| components4 | int | [Item Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/items.md) |
+| components1 | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| components2 | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| components3 | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| components4 | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | component\_counts1 | int | Component Count 1 |
 | component\_counts2 | int | Component Count 2 |
 | component\_counts3 | int | Component Count 3 |
@@ -72,40 +72,40 @@
 | NoexpendReagent2 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent3 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent4 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
-| formula1 | int | [Formula 1](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula2 | int | [Formula 2](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula3 | int | [Formula 3](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula4 | int | [Formula 4](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula5 | int | [Formula 5](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula6 | int | [Formula 6](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula7 | int | [Formula 7](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula8 | int | [Formula 8](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula9 | int | [Formula 9](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula10 | int | [Formula 10](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula11 | int | [Formula 11](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
-| formula12 | int | [Formula 12](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) |
+| formula1 | int | [Formula 1](../../../../categories/spells/base-value-formulas) |
+| formula2 | int | [Formula 2](../../../../categories/spells/base-value-formulas) |
+| formula3 | int | [Formula 3](../../../../categories/spells/base-value-formulas) |
+| formula4 | int | [Formula 4](../../../../categories/spells/base-value-formulas) |
+| formula5 | int | [Formula 5](../../../../categories/spells/base-value-formulas) |
+| formula6 | int | [Formula 6](../../../../categories/spells/base-value-formulas) |
+| formula7 | int | [Formula 7](../../../../categories/spells/base-value-formulas) |
+| formula8 | int | [Formula 8](../../../../categories/spells/base-value-formulas) |
+| formula9 | int | [Formula 9](../../../../categories/spells/base-value-formulas) |
+| formula10 | int | [Formula 10](../../../../categories/spells/base-value-formulas) |
+| formula11 | int | [Formula 11](../../../../categories/spells/base-value-formulas) |
+| formula12 | int | [Formula 12](../../../../categories/spells/base-value-formulas) |
 | LightType | int | Light Type |
 | goodEffect | int | Good Effect: 0 = Detrimental, 1 = Beneficial, 2 = Beneficial Group Only |
 | Activated | int | Activated |
-| resisttype | int | [Resist Type](https://eqemu.gitbook.io/server/categories/spells/resist-types) |
-| effectid1 | int | [Effect Identifier 1](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid2 | int | [Effect Identifier 2](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid3 | int | [Effect Identifier 3](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid4 | int | [Effect Identifier 4](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid5 | int | [Effect Identifier 5](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid6 | int | [Effect Identifier 6](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid7 | int | [Effect Identifier 7](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid8 | int | [Effect Identifier 8](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid9 | int | [Effect Identifier 9](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid10 | int | [Effect Identifier 10](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid11 | int | [Effect Identifier 11](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| effectid12 | int | [Effect Identifier 12](https://eqemu.gitbook.io/server/categories/spells/spell-effect-ids) |
-| targettype | int | [Target Type](https://eqemu.gitbook.io/server/categories/spells/target-types) |
+| resisttype | int | [Resist Type](../../../../categories/spells/resist-types) |
+| effectid1 | int | [Effect Identifier 1](../../../../categories/spells/spell-effect-ids) |
+| effectid2 | int | [Effect Identifier 2](../../../../categories/spells/spell-effect-ids) |
+| effectid3 | int | [Effect Identifier 3](../../../../categories/spells/spell-effect-ids) |
+| effectid4 | int | [Effect Identifier 4](../../../../categories/spells/spell-effect-ids) |
+| effectid5 | int | [Effect Identifier 5](../../../../categories/spells/spell-effect-ids) |
+| effectid6 | int | [Effect Identifier 6](../../../../categories/spells/spell-effect-ids) |
+| effectid7 | int | [Effect Identifier 7](../../../../categories/spells/spell-effect-ids) |
+| effectid8 | int | [Effect Identifier 8](../../../../categories/spells/spell-effect-ids) |
+| effectid9 | int | [Effect Identifier 9](../../../../categories/spells/spell-effect-ids) |
+| effectid10 | int | [Effect Identifier 10](../../../../categories/spells/spell-effect-ids) |
+| effectid11 | int | [Effect Identifier 11](../../../../categories/spells/spell-effect-ids) |
+| effectid12 | int | [Effect Identifier 12](../../../../categories/spells/spell-effect-ids) |
+| targettype | int | [Target Type](../../../../categories/spells/target-types) |
 | basediff | int | Base Difficult Fizzle Adjustment |
-| skill | int | [Skill Identifier](https://eqemu.gitbook.io/server/categories/player/skills) |
-| zonetype | int | [Zone Type](https://eqemu.gitbook.io/server/categories/zones/zone-types) |
-| EnvironmentType | int | [Environment Type](https://eqemu.gitbook.io/server/categories/spells/environment-types) |
-| TimeOfDay | int | [Time of Day Type](https://eqemu.gitbook.io/server/categories/spells/time-of-day-types) |
+| skill | int | [Skill Identifier](../../../../categories/player/skills) |
+| zonetype | int | [Zone Type](../../../../categories/zones/zone-types) |
+| EnvironmentType | int | [Environment Type](../../../../categories/spells/environment-types) |
+| TimeOfDay | int | [Time of Day Type](../../../../categories/spells/time-of-day-types) |
 | classes1 | int | Required Level for Warrior |
 | classes2 | int | Required Level for Cleric |
 | classes3 | int | Required Level for Paladin |
@@ -127,23 +127,23 @@
 | TravelType | int | Travel Type \(Unused\) |
 | SpellAffectIndex | int | Spell Affect Index |
 | disallow\_sit | int | Disallow Sit: 0 = False, 1 = True |
-| deities0 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities1 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities2 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities3 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities4 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities5 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities6 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities7 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities8 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities9 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities10 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities11 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities12 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities13 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities14 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities15 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
-| deities16 | int | [Deity List](https://eqemu.gitbook.io/server/categories/player/deity-list) |
+| deities0 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities1 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities2 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities3 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities4 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities5 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities6 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities7 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities8 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities9 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities10 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities11 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities12 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities13 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities14 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities15 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities16 | int | [Deity List](../../../../categories/player/deity-list) |
 | field142 | int | Unknown |
 | field143 | int | Unknown |
 | new\_icon | int | New Icon |
@@ -157,17 +157,17 @@
 | field152 | int | Unknown |
 | field153 | int | Unknown |
 | short\_buff\_box | int | Short Buff Box: 0 = False, 1 = True |
-| descnum | int | [Description Number](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/db_str.md) |
-| typedescnum | int | [Type Description Number](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/db_str.md) |
-| effectdescnum | int | [Effect Description Number](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/db_str.md) |
-| effectdescnum2 | int | [Effect Description Number 2](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/db_str.md) |
+| descnum | int | [Description Number](../../../schema/categories/client-files/db_str.md) |
+| typedescnum | int | [Type Description Number](../../../schema/categories/client-files/db_str.md) |
+| effectdescnum | int | [Effect Description Number](../../../schema/categories/client-files/db_str.md) |
+| effectdescnum2 | int | [Effect Description Number 2](../../../schema/categories/client-files/db_str.md) |
 | npc\_no\_los | int | NPC No Line of Sight: 0 = False, 1 = True |
 | field160 | int | Unknown |
 | reflectable | int | Reflectable: 0 = False, 1 = True |
 | bonushate | int | Bonus Hate |
 | field163 | int | Unknown |
 | field164 | int | Unknown |
-| ldon\_trap | int | [LDoN Trap Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/spells/traps.md) |
+| ldon\_trap | int | [LDoN Trap Identifier](../../../schema/categories/traps/traps.md) |
 | EndurCost | int | Endurance Cost |
 | EndurTimerIndex | int | Endurance Timer |
 | IsDiscipline | int | Is Discipline: 0 = False, 1 = True |
@@ -177,19 +177,19 @@
 | field172 | int | Unknown |
 | HateAdded | int | Hate Added |
 | EndurUpkeep | int | Endurance Upkeep |
-| numhitstype | int | [Number of Hits Type](https://eqemu.gitbook.io/server/categories/spells/numhit-types) |
+| numhitstype | int | [Number of Hits Type](../../../../categories/spells/numhit-types) |
 | numhits | int | Number of Hits |
 | pvpresistbase | int | PVP Resist Base |
 | pvpresistcalc | int | PVP Resist Calc |
 | pvpresistcap | int | PVP Resist Cap |
-| spell\_category | int | [Spell Category](https://eqemu.gitbook.io/server/categories/spells/spell-groups) |
+| spell\_category | int | [Spell Category](../../../../categories/spells/spell-groups) |
 | field181 | int | Unknown |
 | field182 | int | Unknown |
 | pcnpc\_only\_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
 | cast\_not\_standing | int | Cast Not Standing: 0 = False, 1 = True |
 | can\_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |
 | nodispell | int | No Dispell: 0 = False, 1 = True |
-| npc\_category | int | [NPC Spell Category Identifier](https://eqemu.gitbook.io/server/categories/spells/npc-spell-categories) |
+| npc\_category | int | [NPC Spell Category Identifier](../../../../categories/spells/npc-spell-categories) |
 | npc\_usefulness | int | NPC Usefulness |
 | MinResist | int | Minimum Resistance |
 | MaxResist | int | Maximum Resistance |
@@ -209,11 +209,11 @@
 | field204 | int | Unknown |
 | no\_block | int | No Block: 0 = False, 1 = True |
 | field206 | int | Unknown |
-| spellgroup | int | [Spell Group](https://eqemu.gitbook.io/server/categories/spells/spell-groups) |
+| spellgroup | int | [Spell Group](../../../../categories/spells/spell-groups) |
 | rank | int | Rank |
 | field209 | int | Unknown |
 | field210 | int | Unknown |
-| CastRestriction | int | [Cast Restrictions](https://eqemu.gitbook.io/server/categories/spells/spell-target-restrictions) |
+| CastRestriction | int | [Cast Restrictions](../../../../categories/spells/spell-target-restrictions) |
 | allowrest | int | Allow Rest: 0 = False, 1 = True |
 | InCombat | int | In Combat: 0 = False, 1 = True |
 | OutofCombat | int | Out Of Combat: 0 = False, 1 = True |

@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | buffs\_index | int | Unique Entry Identifier |
 | bot\_id | int | [Bot Identifier](bot_data.md) |
-| spell\_id | int | [Spell Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/bots/spells_new.md) |
+| spell\_id | int | [Spell Identifier](../../../schema/categories/bots/spells_new.md) |
 | caster\_level | tinyint | Caster level |
 | duration\_formula | int | Duration Formula |
 | tics\_remaining | int | Tics Remaining |

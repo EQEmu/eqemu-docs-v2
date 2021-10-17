@@ -233,7 +233,7 @@ Congratulations!  You have added your first quest script to your first NPC!  The
 
 ## In Game Steps
 
-If you're hanging out in The Mines of Gloomingdeep, you can issue three commands to get your bot to spawn.  Be sure to review the [In Game Command Reference](https://eqemu.gitbook.io/server/categories/reference-lists/in-game-command-reference) (opens new window) if you're not sure what all of these do.
+If you're hanging out in The Mines of Gloomingdeep, you can issue three commands to get your bot to spawn.  Be sure to review the [In Game Command Reference](../../../../categories/reference-lists/in-game-command-reference) (opens new window) if you're not sure what all of these do.
 
 > #hotfix
 >

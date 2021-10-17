@@ -3,12 +3,12 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Report Identifier |
-| zone | varchar | [Zone Short Name](https://eqemu.gitbook.io/server/categories/zones/zone-list) |
-| client\_version\_id | int | [Client Version Identifier](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks) |
-| client\_version\_name | varchar | [Client Version Name](https://eqemu.gitbook.io/server/categories/player/client-version-bitmasks) |
-| account\_id | int | [Account Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/admin/account.md) |
-| character\_id | int | [Character Identifier](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/admin/character_data.md) |
-| character\_name | varchar | [Character Name](https://github.com/EQEmu/docs-db-schema/tree/e0eb157dbf5563b03c0faf391abc87ec69239f4a/docs/schema/categories/admin/character_data.md) |
+| zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
+| client\_version\_id | int | [Client Version Identifier](../../../../categories/player/client-version-bitmasks) |
+| client\_version\_name | varchar | [Client Version Name](../../../../categories/player/client-version-bitmasks) |
+| account\_id | int | [Account Identifier](../../../schema/categories/admin/account.md) |
+| character\_id | int | [Character Identifier](../../../schema/categories/admin/character_data.md) |
+| character\_name | varchar | [Character Name](../../../schema/categories/admin/character_data.md) |
 | reporter\_spoof | tinyint | Reporter Spoof |
 | category\_id | int | Category Identifier |
 | category\_name | varchar | Category Name |

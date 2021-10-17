@@ -31,7 +31,7 @@ Once you've made your changes, scroll down and click the "Submit Changes" button
 The advantage of this method of disabling items available on a merchant is that you can turn them off and on without deleting the record permanently.  If you delete the item altogether, if you choose to add it again later, you will have to input the ID, buy price, sell price, faction, etc. so that the merchant can once again sell the item.
 
 {% hint style="info" %}
-If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
+If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](../../../../categories/how-to-guides/operation/loading-server-data) page.
 {% endhint %}
 
 ### Using an SQL Query
@@ -55,7 +55,7 @@ The result is that the probability of the item being in stock is now 0, and play
 ![This item will no longer be found on any merchant](../../gitbook/assets/merchantlist_entries_15323_disabled.png)
 
 {% hint style="info" %}
-If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
+If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](../../../../categories/how-to-guides/operation/loading-server-data) page.
 {% endhint %}
 
 To re-enable the item, a simple query can be used to reverse our change:

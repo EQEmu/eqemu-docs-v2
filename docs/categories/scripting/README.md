@@ -30,11 +30,11 @@ We're frequently asked for certain types of scripts that server operators need t
 
 The [Player Buffer Scripts](player-buffer-scripts.md) page gives you examples of how to automatically buff players (for instance, when a player levels up and needs new skills or spells), as well as examples of how to include NPCs that perform these duties or cast specific buffs when a player interacts with the Buffer NPC.
 
-These scripts range from fairly straightforward to relatively complex--be sure to reference [Event Subroutines](https://eqemu.gitbook.io/quest-api/methods/events) to learn why these scripts fire, [Quest API Functions](https://eqemu.gitbook.io/quest-api/perl/functions) to learn what each function does and how to properly call the function, and finally, [Customizing NPCs](https://eqemu.gitbook.io/server/categories/npc/customizing-npcs) if you would like to learn how to create your own NPC who will utilize any of these quest scripts.
+These scripts range from fairly straightforward to relatively complex--be sure to reference [Event Subroutines](https://eqemu.gitbook.io/quest-api/methods/events) to learn why these scripts fire, [Quest API Functions](https://eqemu.gitbook.io/quest-api/perl/functions) to learn what each function does and how to properly call the function, and finally, [Customizing NPCs](../../../../categories/npc/customizing-npcs) if you would like to learn how to create your own NPC who will utilize any of these quest scripts.
 
 ### Player Teleporting
 
-The [Player Teleporter Scripts](https://eqemu.gitbook.io/server/categories/scripting/player-teleporter-scripts) page gives some examples of how you can move players around in game.  Don't forget that there are plenty of examples in the default scripts that were installed with your server, such as the Nexus portals.  
+The [Player Teleporter Scripts](../../../../categories/scripting/player-teleporter-scripts) page gives some examples of how you can move players around in game.  Don't forget that there are plenty of examples in the default scripts that were installed with your server, such as the Nexus portals.  
 
 Often server operators would like to teleport users to a specific instance of a zone as well, which would allow you to create raid instances for competing guilds, or create custom dungeon crawls for your players.  The sample script includes something called a "Data Bucket", so you may want to read [Using Data Buckets](using-data-buckets.md) to gain some understanding of this flexible, performant system.
 

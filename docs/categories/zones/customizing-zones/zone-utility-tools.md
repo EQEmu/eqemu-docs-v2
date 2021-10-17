@@ -23,7 +23,7 @@ pfs.exe
 
 ## Azone
 
-* Azone is a binary responsible for generating our .map files by reading geometry files, for more information on these see [Maps Introduction](https://eqemu.gitbook.io/server/categories/maps).
+* Azone is a binary responsible for generating our .map files by reading geometry files, for more information on these see [Maps Introduction](../../../../categories/maps).
 * Azone will look within the current directory for each zone_name you pass it and attempt to open the files with one of three loaders in the following order:
   * EQG Standard
   * EQG Terrain (v4)
