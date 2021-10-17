@@ -133,10 +133,8 @@ nav:
                   - 'Notepad++': 'in-development/developer-area/tools/notepad++.md'
                   - 'TortoiseGit': 'in-development/developer-area/tools/tortoisegit.md'
       - 'Database':
-          - 'categories/database/README.md'
-          - 'Database Schema': 'https://eqemu.gitbook.io/database-schema/'
-      - Multi Tenancy:
-          - 'categories/database/multi-tenancy.md'
+          - 'Multi Tenancy': 'categories/database/multi-tenancy.md'
+          #          - 'Database Schema': 'schema/README.md'
           - 'Database Backup Tool': 'categories/database/database-backup-tool.md'
       - 'Expedition System':
           - 'categories/expedition-system/README.md'
@@ -360,6 +358,7 @@ nav:
           - 'Zone List': 'categories/zones/zone-list.md'
           - 'Zone Types': 'categories/zones/zone-types.md'
   - Database Schema:
+      - schema/README.md
       - 'AAs':
           - 'aa_ability': 'schema/categories/aas/aa_ability.md'
           - 'aa_actions': 'schema/categories/aas/aa_actions.md'
