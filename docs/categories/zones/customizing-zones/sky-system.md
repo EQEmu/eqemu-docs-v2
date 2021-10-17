@@ -47,7 +47,7 @@ Sky objects like the sun and moon are also found in each skybox variant. Althoug
 To add to the visual realism, a color gradient is applied to both the sky and cloud layer materials. When rendering the sky meshes, the sky texture is mixed with the color gradient with one color being defined at the horizon level and another at the pole of the skydome. Below are the values that are used in the client. These values were calculated by replacing the sky and cloud layer textures with white textures and sampling the color values in an image editor. The sky and cloud layer use different gradient values but the color values for the horizon are identical. All sky variants use the same gradient values.\
 ****
 
-![](../../../.gitbook/assets/sky-colors.png)
+![](../../../gitbook/assets/sky-colors.png)
 
 Shaders rendering the sky should interpolate the horizon and pole values using the min and max height of the sky layer. This color value can then be multiplied by the texture. There may be a slight difference in appearance due to the Trilogy client most likely calculating the gradient values per vertex rather than per pixel.
 

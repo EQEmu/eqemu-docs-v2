@@ -204,7 +204,7 @@ Once CMake knows where to look, click the `Configure` button. You will get a pop
 
 The next window will be for compiler selection. Ensure that the version of Visual Studio that you installed is selected (`Visual Studio 15 2017` or `Visual Studio 16 2019`). Leave the `Use default native compilers` option as-is. If you are using a newer version of CMake that has the `Optional platform for generator` drop-down box, ensure that `Win32` is selected. Finally, click `Finish` to proceed.
 
-![](../../.gitbook/assets/cmake_compiler_updated\_2.png)
+![](../../gitbook/assets/cmake_compiler_updated\_2.png)
 
 _Note: CMake will download the appropriate vcpkg and install its contents. User intervention is no longer required._\
 

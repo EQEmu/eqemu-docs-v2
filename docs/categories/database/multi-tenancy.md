@@ -18,7 +18,7 @@ There are several types of multi-tenancy in Software, the one we're going to be 
 Multi-tenant architecture hosts data in multiple databases. This model is relatively complex in terms of management and maintenance, but tenants can be separated by a chosen criterion.
 {% endhint %}
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../gitbook/assets/image (19).png>)
 
 ## How is Multi-Tenancy Used in the Server?
 
@@ -65,7 +65,7 @@ The notion of having a content database source is very powerful because it solve
 * It allows someone to make **different variants / flavors** of the same server using **different local rulesets**
 * It enables the [Project PEQ Expansions](../../in-development/project-peq-expansions/) project to be able to have many **standing replicas of each Expansion / Era;** enabling PEQ developers to jump between eras and maintain era accuracy
 
-![Many development servers using the same content database](<../../.gitbook/assets/image (18).png>)
+![Many development servers using the same content database](<../../gitbook/assets/image (18).png>)
 
 ## How Do I Know What Tables Belong to Which Category?
 

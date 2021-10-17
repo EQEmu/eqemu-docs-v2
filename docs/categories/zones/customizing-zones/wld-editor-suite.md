@@ -4,7 +4,7 @@ This is a suite of tools for manipulation of WLD files created by [Zaela](https:
 
 ## Download
 
-{% file src="../../../.gitbook/assets/wldeditorsuite.7z" %}
+{% file src="../../../gitbook/assets/wldeditorsuite.7z" %}
 7zip file containing WLD Editor Suite
 {% endfile %}
 
@@ -18,7 +18,7 @@ Texture Adder is a tool for adding new texture set data, allowing you to add cus
 2. Extract the internal .wld file using S3DSpy.
 3. Run Texture Adder and select the .wld file from File > Load WLD. This will produce a list of model texture sets, like so:  
 
-![](../../../.gitbook/assets/tglgjza.png)
+![](../../../gitbook/assets/tglgjza.png)
 
 4\. Select a model texture set from the list.
 
@@ -44,7 +44,7 @@ Transparentifier is a tool for editing texture visibility flags, allowing you to
 2. Extract the internal .wld file using S3DSpy.
 3. Run Transparentifier and select the .wld file from File > Load WLD. This will produce a list of texture data, like so:
 
-![](../../../.gitbook/assets/j31jhfb.png)
+![](../../../gitbook/assets/j31jhfb.png)
 
 
 

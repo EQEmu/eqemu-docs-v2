@@ -56,7 +56,7 @@ If Snake received +1200 faction points, he would consider "Ally".  If Snake rece
 
 The NPCs using faction ID 361 - Ashen Order have a base value of 0, but they DO have a modifier based on both race and class \(but none on deity\):
 
-![Class and Race modifiers for faction 361 - Ashen Order](../../.gitbook/assets/ashen_order-flm.png)
+![Class and Race modifiers for faction 361 - Ashen Order](../../gitbook/assets/ashen_order-flm.png)
 
 Above we see a rather cryptic list of modifiers to faction 361 - Ashen Order.  Note that in the `mod_name` column, we see the [Classes](https://eqemu.gitbook.io/server/categories/player/class-list) to be modified \(c11, c5, c7, c9\) as well as the [Races](https://eqemu.gitbook.io/server/categories/npc/race-list) to be modified \(r10, r128, r6, r9\), and their corresponding modifier values in the 'mod' column.
 

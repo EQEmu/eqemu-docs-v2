@@ -16,11 +16,11 @@ Navigate to your EverQuest client directory and right-click on the eqgame.exe ap
 
 Choose the _**Send To**_ option, and choose _**Desktop \(create shortcut\)**_.
 
-![](../../.gitbook/assets/screenshot4%20%281%29.jpg)
+![](../../gitbook/assets/screenshot4%20%281%29.jpg)
 
 Right-click on the shortcut you created on your desktop, and select the _**Properties**_ option.
 
-![](../../.gitbook/assets/screenshot_10_2_19__9_39_am.png)
+![](../../gitbook/assets/screenshot_10_2_19__9_39_am.png)
 
 In the _**Target**_ field, add " patchme", without the quotation marks, to the end of the line:
 
@@ -31,7 +31,7 @@ In the _**Target**_ field, add " patchme", without the quotation marks, to the e
 
 The final result can look like this:
 
-![](../../.gitbook/assets/shortcut_properties.png)
+![](../../gitbook/assets/shortcut_properties.png)
 
 ### 
 

@@ -14,19 +14,19 @@ If you would like to disable any particular item from the merchant's inventory, 
 
 Navigate to the Loot tab in PEQ Database Editor, select the Zone and the Merchant in which you are interested.  You will see a listing of the merchant's wares:
 
-![A merchantlist table in PEQ Database Editor](../../.gitbook/assets/merchantlist_entries.png)
+![A merchantlist table in PEQ Database Editor](../../gitbook/assets/merchantlist_entries.png)
 
 Note the field that shows Probability Req--this is the probability that the merchant will have the item.  To Edit this field, select the "Edit this Merchant" button, which looks like a stack of papers:
 
-![Click to edit the merchant&apos;s wares](../../.gitbook/assets/merchantlist_edit_this_merchant.png)
+![Click to edit the merchant&apos;s wares](../../gitbook/assets/merchantlist_edit_this_merchant.png)
 
 Once you're in edit mode, you can change the probability to '0' to indicate that there's NO chance this merchant will stock the item.
 
-![Change the probability to 0](../../.gitbook/assets/merchantlist_edit_probability.png)
+![Change the probability to 0](../../gitbook/assets/merchantlist_edit_probability.png)
 
 Once you've made your changes, scroll down and click the "Submit Changes" button.  There is now no chance that the merchant will stock the item.  You can easily re-enable the item at a later time by returning the probability required field to 100 percent.
 
-![A disabled item on a merchantlist](../../.gitbook/assets/merchantlist_disabled.png)
+![A disabled item on a merchantlist](../../gitbook/assets/merchantlist_disabled.png)
 
 The advantage of this method of disabling items available on a merchant is that you can turn them off and on without deleting the record permanently.  If you delete the item altogether, if you choose to add it again later, you will have to input the ID, buy price, sell price, faction, etc. so that the merchant can once again sell the item.
 
@@ -40,7 +40,7 @@ You can also easily disable merchantlist entries globally by using an sql query.
 
 If we want to see how many merchantlist entries contain item ID 15323 - Spell: Eye of Zomm, we can simply filter \(query\) the merchanlist entries for this item by ID.
 
-![Item 15323 - Spell: Eye of Zomm](../../.gitbook/assets/merchantlist_entries_15323.png)
+![Item 15323 - Spell: Eye of Zomm](../../gitbook/assets/merchantlist_entries_15323.png)
 
 To disable this item so that merchants no longer keep it in stock, while preserving the entry in the merchantlist, we issue a simple query:
 
@@ -52,7 +52,7 @@ WHERE item = 15323
 
 The result is that the probability of the item being in stock is now 0, and players will no longer find this item for sale in our world:
 
-![This item will no longer be found on any merchant](../../.gitbook/assets/merchantlist_entries_15323_disabled.png)
+![This item will no longer be found on any merchant](../../gitbook/assets/merchantlist_entries_15323_disabled.png)
 
 {% hint style="info" %}
 If you want to see this change in-game immediately, you can use the command **\#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.

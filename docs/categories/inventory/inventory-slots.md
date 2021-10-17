@@ -30,7 +30,7 @@
 * PowerSource = 21
 * Ammo = 22
 
-![Equipment Slots](../../.gitbook/assets/image.png)
+![Equipment Slots](../../gitbook/assets/image.png)
 
 #### General slots \(personal\)
 
@@ -45,7 +45,7 @@
 * General9 = 31
 * General10 = 32
 
-![General Slots](../../.gitbook/assets/image%20%288%29.png)
+![General Slots](../../gitbook/assets/image%20%288%29.png)
 
 Bag slots in general inventory are:
 
@@ -114,7 +114,7 @@ Bags in the shared bank are:
 * 2500 : 2531 -&gt; 2540
 * 2501 : 2541 -&gt; 2550
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../gitbook/assets/image%20%286%29.png)
 
 **Note: Not all clients support all of the server-recognized slots. Care should be taken when attempting to hard-code slot values over the use of server-based free slot requests.**
 

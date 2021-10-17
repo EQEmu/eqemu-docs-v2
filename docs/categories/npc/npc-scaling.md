@@ -127,5 +127,5 @@ To see stats being loaded on NPC's during a repop or spawn, under the **NPC Scal
 
 You can also see which attributes are applied to an NPC using the DevTools mob info display window \(Targeting an NPC\). Any stat that has been loaded from the global scale system has an asterisk next to it
 
-![](../../.gitbook/assets/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3338333839333533363237353330303335322f3532343039323732303738343836373334322f756e6b6e6f776e2e706e67.png)
+![](../../gitbook/assets/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3338333839333533363237353330303335322f3532343039323732303738343836373334322f756e6b6e6f776e2e706e67.png)
 

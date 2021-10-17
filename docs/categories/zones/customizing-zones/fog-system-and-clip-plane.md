@@ -15,7 +15,7 @@ _Nektulos with just fog (left) and fog and sky (right)_
 
 The fog color for each zone is mixed with a blend color that corresponds with in game time. As a result, the fog color in game will be significantly darker than the raw value sent to the client. The fog blend color mimics the ambient light hour values where during the sunset and sunrise the is a slight red tint and during nighttime, a very slight blue tint which allows the fog to better blend with the skydome visuals. These color values are consistent regardless if the zone uses a sky or not. 
 
-![](../../../.gitbook/assets/fog-colors.jpg)
+![](../../../gitbook/assets/fog-colors.jpg)
 
 To get the exact blend color, linearly interpolate between the value for the hour before and after the current time. Below is a listing of the blend color at each hour. To calculate the final color value that appears in the zone, you can use the formula below for each color component. For example:
 
@@ -68,7 +68,7 @@ It is important to note that even if the far plane is set to a very large number
 
 In some special cases, the fog color and distance values are overridden by game state. Below is a list of these cases. Note that these values were sampled from the client directly and therefore represent the blended, not raw, color values and that the start and end values are consistent across all clip settings:
 
-![](../../../.gitbook/assets/special-fog-color.png)
+![](../../../gitbook/assets/special-fog-color.png)
 
 
 

@@ -14,11 +14,11 @@ A "disabled" loot drop entry simply means that the item will no longer have the 
 
 ### Using PEQ Database Editor
 
-![A Loot Table in PEQ Database Editor](../../.gitbook/assets/lootdrop_entries.png)
+![A Loot Table in PEQ Database Editor](../../gitbook/assets/lootdrop_entries.png)
 
 In the PEQ Database editor, you'll notice that there is a button with two red arrows pointing downward.  This button allows you to disable a lootdrop entry.
 
-![Disable Arrows](../../.gitbook/assets/disable_lootdrop_entry.png)
+![Disable Arrows](../../gitbook/assets/disable_lootdrop_entry.png)
 
 Once you click the button, the lootdrop entry is then disabled, and the icon changes to two blue arrows pointing upwards.  Clicking the arrow again toggles the state and the item is once again enabled for dropping.  
 
@@ -26,7 +26,7 @@ Once you click the button, the lootdrop entry is then disabled, and the icon cha
 Note that the chance goes to '0' when disabled, and returns to its previous value once re-enabled.  We used this functionality to **preserve the original value** in case we want to **retrieve it later**.
 {% endhint %}
 
-![Disabled lootdrop entry](../../.gitbook/assets/enable_lootdrop_entry.png)
+![Disabled lootdrop entry](../../gitbook/assets/enable_lootdrop_entry.png)
 
 How does this work?  Is it magic?  The function becomes apparent if you utilize an sql query to achieve the same results.  
 
@@ -38,7 +38,7 @@ For this example, we will disable all lootdrop entries for item ID 5015 - Rusty 
 
 First, let's take a look at our database to see the item listed in its corresponding lootdrop\_entries.  Notice the "chance" column, which is used to set the probability of the item dropping when the NPC is killed.
 
-![Rusty Scythe - Enabled](../../.gitbook/assets/lootdrop_entry_5015_enabled%20%281%29.png)
+![Rusty Scythe - Enabled](../../gitbook/assets/lootdrop_entry_5015_enabled%20%281%29.png)
 
 As of this writing, there are 161 lootdrop\_entries containing a 5015 - Rusty Scythe.  If we want to turn off drops of this item, but do so in a manner that allows us to restore them later, we can run the following query:
 
@@ -50,7 +50,7 @@ WHERE item_id = 5015
 
 The result is that the normal drop chance is moved into the disabled chance field, allowing us to retrieve it later, should we decide to re-enable drops.  Notice that all the values simply move to the adjacent field.
 
-![Rusty Scythe - Disabled](../../.gitbook/assets/lootdrop_entry_5015_disabled.png)
+![Rusty Scythe - Disabled](../../gitbook/assets/lootdrop_entry_5015_disabled.png)
 
 Since the "chance" of the Rusty Scythe dropping has been reduced to 0, we will no longer have to endure those bothersome drops.  The Disabled Chance field does nothing--it is simply a placeholder for the old drop chance value.
 
@@ -64,7 +64,7 @@ WHERE item_id = 5015
 
 And we can then see that we have restored the values we moved to our disabled\_chance field, once again allowing the Rusty Scythe to drop in our world:
 
-![Restored lootdrop\_entries](../../.gitbook/assets/lootdrop_entry_5015_enabled.png)
+![Restored lootdrop\_entries](../../gitbook/assets/lootdrop_entry_5015_enabled.png)
 
 That's all there is to it!  Enjoy a world free from those unwanted loots, and a clever method to disable loots in a non-destructive manner.
 

@@ -6,7 +6,7 @@ This work has been completed by [Shendare](https://github.com/Shendare), who has
 
 You can download the program from the link below:
 
-{% file src="../../.gitbook/assets/eqri.zip" %}
+{% file src="../../gitbook/assets/eqri.zip" %}
 Compiled binary - EQRI.exe
 {% endfile %}
 
@@ -14,7 +14,7 @@ Compiled binary - EQRI.exe
 
 You can download the source files from the link below:
 
-{% file src="../../.gitbook/assets/eqri_source.zip" %}
+{% file src="../../gitbook/assets/eqri_source.zip" %}
 Source Code
 {% endfile %}
 

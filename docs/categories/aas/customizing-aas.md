@@ -16,17 +16,17 @@ By default, when a player reaches level 51, the player unlocks the option to ded
 
 AAs often have "ranks" available that allow you to progress the ability, making the effects more powerful at each rank level purchased.  These values are stored in the [aa_rank](https://eqemu.gitbook.io/database-schema/categories/aas/aa_ranks) table. For example, _Innate Run Speed_ has many ranks to represent the levels it can be trained. 
 
-![Innate Run Speed from your aa_ability table](../../.gitbook/assets/innate-run-speed.png)
+![Innate Run Speed from your aa_ability table](../../gitbook/assets/innate-run-speed.png)
 
 Notice the field `first_rank_id`.  This field allows us to then explore the AA ability to find out additional parameters:
 
-![Innate Run Speed, Ranks 1 - 3 in the aa_ranks table](../../.gitbook/assets/innate-run-speed-ranks.png)
+![Innate Run Speed, Ranks 1 - 3 in the aa_ranks table](../../gitbook/assets/innate-run-speed-ranks.png)
 
 Notice the two columns for previous and next rank id.  At the first rank of Innate Run Speed, we know there are no earlier ranks, so the `prev_id` field reads **-1.  **The next rank ID is then **63**, which then goes to **64**, and then goes to **672**.  Notice that these rank IDs are not always consecutive.  Obviously we can infer that Innate Run Speed has _at least_ four ranks, since our next ID takes us to 672--if the AA stopped at the third rank, we would have instead seen a **-1** value.
 
 Let's take a look at rank ID 672 and find out how far this goes...
 
-![Innate Run Speed IV and V in the aa_ranks table](../../.gitbook/assets/innate-run-aa-ranks-672.png)
+![Innate Run Speed IV and V in the aa_ranks table](../../gitbook/assets/innate-run-aa-ranks-672.png)
 
 Note again the `prev_id` and `next_id` column values.  We remember from the previous step that we left off at ID **64**, and see that the next ID is **673**. We see at ID 673 that we finally reach the end, indicated by the **-1** value in the `next_id` column.  
 
@@ -40,7 +40,7 @@ The effects of each rank of an AA is stored in the aptly named [aa_rank_effects]
 
 Let's examine the rank effects for our _Innate Run Speed_ AA:
 
-![Innate Run Speed aa_rank_effects](../../.gitbook/assets/innate-run-rank-effects.png)
+![Innate Run Speed aa_rank_effects](../../gitbook/assets/innate-run-rank-effects.png)
 
 We see that at all ranks, the spell effect in use is 271, and we see that the base1 value increases at each rank.
 

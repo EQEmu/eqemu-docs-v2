@@ -151,7 +151,7 @@ Navigate to the sql directory.  The files that you find in this directory contai
 nano schema.sql
 ```
 
-![Copy the query to your Database Editing Client](../../.gitbook/assets/schema-sql.png)
+![Copy the query to your Database Editing Client](../../gitbook/assets/schema-sql.png)
 
 Repeat this process for any remaining files in the sql directory.
 
@@ -196,7 +196,7 @@ Verify that the appropriate version is running.
 php --version
 ```
 
-![Verify that v7.1 is returned.](../../.gitbook/assets/php--version.png)
+![Verify that v7.1 is returned.](../../gitbook/assets/php--version.png)
 
 Locate your loaded PHP configuration file.
 
@@ -248,7 +248,7 @@ cd sql
 nano schema.sql
 ```
 
-![Copy the query to your Database Editing Client](../../.gitbook/assets/schema-sql.png)
+![Copy the query to your Database Editing Client](../../gitbook/assets/schema-sql.png)
 
 Repeat this process for any remaining files in the sql directory.
 
@@ -454,13 +454,13 @@ Run the installer for XAMPP.  Choose `continue` when you receive the Windows Fir
 
 Choose `OK` to approve the User Account Control (UAC) permission.
 
-![UAC Warning](../../.gitbook/assets/uac-warning.png)
+![UAC Warning](../../gitbook/assets/uac-warning.png)
 
 {% hint style="warning" %}
 Be sure to **deselect **MySQL!! (assuming you used the Akkadius EQEmu Server Installer, you already have MariaDB)
 {% endhint %}
 
-![Deselect MySQL before continuing](../../.gitbook/assets/deselect-mysql.png)
+![Deselect MySQL before continuing](../../gitbook/assets/deselect-mysql.png)
 
 Choose `next` to continue installation.
 
@@ -476,19 +476,19 @@ Check the `Start Control Panel` option and `Finish`.
 
 Click `Start` to start Apache.
 
-![Start or Configure Apache](../../.gitbook/assets/start-apache.png)
+![Start or Configure Apache](../../../gitbook/assets/start-apache.png)
 
 {% hint style="success" %}
 If you want to configure Apache auto-start, click on `config` (you will need to exit the control panel and restart as Admin to save the configuration).
 {% endhint %}
 
-![Be sure to Save your changes as Administrator](../../.gitbook/assets/auto-start-apache.png)
+![Be sure to Save your changes as Administrator](../../gitbook/assets/auto-start-apache.png)
 
 ### Install PEQ Database Editor
 
 Download a copy of the PEQ Database Editor from GitHub:  [https://github.com/ProjectEQ/peqphpeditor](https://github.com/ProjectEQ/peqphpeditor)
 
-![Choose the Download Zip option](../../.gitbook/assets/download-peq.png)
+![Choose the Download Zip option](../../gitbook/assets/download-peq.png)
 
 Extract the contents of the zip file to `C:\xampp\htdocs\`.
 
@@ -537,7 +537,7 @@ Open the `php.ini` file with a text editor.
 
 Locate the `short_open_tag` line and set it to `On`.
 
-![Search for "short_open_tag" and set to On](../../.gitbook/assets/php-ini-short_open_tag.png)
+![Search for "short_open_tag" and set to On](../../gitbook/assets/php-ini-short_open_tag.png)
 
 Also look for **error_reporting** to turn turn off some warnings.
 

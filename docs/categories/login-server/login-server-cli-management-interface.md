@@ -10,7 +10,7 @@ In the latest overhaul of the login server, an enhanced command-line management 
 
 ## CLI Menu
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../gitbook/assets/image (17).png>)
 
 ### Help Menu
 
