@@ -49,9 +49,9 @@ A **member** of one heal rotation can be a **target** in its own or different on
 ### **Interval**
 
 * The time in seconds between caster promptings of healers in the member pool
-* Assuming that all casters are capable of healing in a given cycle, the time for a complete healing cycle would be **\#\_of\_hr\_members** x **interval\_in\_seconds** \(6 members, 5-second interval = 30 second cycle\)
+* Assuming that all casters are capable of healing in a given cycle, the time for a complete healing cycle would be **#_of_hr_members** x **interval_in_seconds** (6 members, 5-second interval = 30 second cycle)
 * The healing cycle is not penalized for a caster's inability to cast. In this case, the caster is simply 'skipped' and the next caster is prompted until all casters have been cleared from the cycle
-* If no casters are available for a given cycle \(or remainer of,\) then the cycle pool remains empty for the remainder of the interval and a new cycle is started upon its elapsing
+* If no casters are available for a given cycle (or remainer of,) then the cycle pool remains empty for the remainder of the interval and a new cycle is started upon its elapsing
 
 ### **Fast Heals**
 
@@ -68,7 +68,7 @@ A **member** of one heal rotation can be a **target** in its own or different on
 ### **Adaptive Targeting**
 
 * There are two modes of reactive healing: **Standard** and **Adaptive Targeting**
-* **Standard mode** has very basic criteria for determining a 'healable' target: **Tank** \(as marked by group,\) then **Healer**, and finally, **Everyone**
+* **Standard mode** has very basic criteria for determining a 'healable' target: **Tank** (as marked by group,) then **Healer**, and finally, **Everyone**
 * **Adaptive Targeting mode** uses more advanced criteria for selecting a target:
   * **Heal Frequency:** Average heal recurrence rate for a given time period - good for finding hr targets that have grabbed hate away from a tank
   * **Heal Count:** Highest heal count for a given time period - backup for Heal Frequency
@@ -83,7 +83,7 @@ A **member** of one heal rotation can be a **target** in its own or different on
 
 ## Heal Rotation Options - Proactive
 
-### **HOT \(Heal Override Target\)**
+### **HOT (Heal Override Target)**
 
 * The HOT is a singular target that you can designate from the target pool for focused healing
 * Once set, all reactive criteria are ignored and the target will be healed on interval timing - regardless of current health
@@ -97,10 +97,10 @@ usage: (<target_creator>) ^healrotationcreate ([creator_name])
     ([interval=5: 1-30(seconds)] [fastheals=off: on | off] [adaptivetargeting=off: on | off] [castingoverride=off: on | off])
 ```
 
-* ^healrotationcreate - Creates a Heal Rotation with the selected bot as its creator using the default settings \(interval of **5** seconds, fast heals **off**, adaptive targeting **off**, casting override **off**\)
-* ^healrotationcreate Jojo 3 off on on - Creates a Heal Rotation with 'Jojo' as its creator using the provided settings \(interval of **3** seconds, fast heals **off**, adaptive targeting **on**, casting override **on**\)
+* ^healrotationcreate - Creates a Heal Rotation with the selected bot as its creator using the default settings (interval of **5** seconds, fast heals **off**, adaptive targeting **off**, casting override **off**)
+* ^healrotationcreate Jojo 3 off on on - Creates a Heal Rotation with 'Jojo' as its creator using the provided settings (interval of **3** seconds, fast heals **off**, adaptive targeting **on**, casting override **on**)
 
-If you have previously used ^healrotationsave on the 'creator' bot, the settings will automatically load when this command is issued. \(See **Saving a Heal Rotation**\)
+If you have previously used ^healrotationsave on the 'creator' bot, the settings will automatically load when this command is issued. (See **Saving a Heal Rotation**)
 
 ## Saving a Heal Rotation
 
@@ -134,7 +134,7 @@ usage: (<target_member>) ^healrotationremovemember ([member_name])
 * ^healrotationremovemember - Removes selected healer bot from their heal rotation
 * ^healrotationremovemember Jojo - Removes healer bot 'Jojo' from its heal rotation
 
-Removing the last member from a heal rotation, \(whether through command use, by camping, or any other means,\) will also clear the target pool and consume the heal rotation instance.
+Removing the last member from a heal rotation, (whether through command use, by camping, or any other means,) will also clear the target pool and consume the heal rotation instance.
 
 ## Adding Heal Rotation Pool Targets
 

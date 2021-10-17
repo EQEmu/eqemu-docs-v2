@@ -17,7 +17,7 @@
 
 **These steps were used on August 18, 2011: **
 
-1. Locate the Underfoot install. Mine resides in C:\EQ\Everquest_UF\\.
+1. Locate the Underfoot install. Mine resides in C:\EQ\Everquest_UF\.
 2. Make a new folder for the Live install, C:\EQ\Everquest_Live\ is a good location.
 3. Copy everything from the Underfoot folder to the Live folder.
 4. While that is copying, open your browser and go to http://www.everquest.com∞ and click on Everquest and then look for the button for the free trial.

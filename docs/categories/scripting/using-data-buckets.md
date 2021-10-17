@@ -25,7 +25,7 @@ delete_data(std::string bucket_key)
 
 ## Storage
 
-* Data buckets are stored in the \[\[data_buckets]] table and has a very simple structure
+* Data buckets are stored in the [[data_buckets]] table and has a very simple structure
   * **id**
   * **key**
   * **value**
@@ -183,7 +183,7 @@ quest::set_data("my_example_flag", "some_value", 3600); # 3600 seconds = 1 hour 
 
 ## Benchmarks
 
-* Below are some simple benchmarks used to calculate performance. While even these numbers could be greatly optimized yet, these are plenty good for most use cases that server operators need. If you need even faster temporary data storage within the context of a zone, I would suggest using \[\[Entity Variables]] as they operate purely in memory
+* Below are some simple benchmarks used to calculate performance. While even these numbers could be greatly optimized yet, these are plenty good for most use cases that server operators need. If you need even faster temporary data storage within the context of a zone, I would suggest using [[Entity Variables]] as they operate purely in memory
 
 ![image](https://user-images.githubusercontent.com/3319450/42429025-83c1d260-82fc-11e8-804f-f7490ac23600.png)
 
@@ -319,7 +319,7 @@ sub EVENT_ITEM {
 
 At line 22 above, we see the implementation of the Data Bucket Key.  This replaces the use of `quest::setglobal`.  In the Database, we see the corresponding key:
 
-![](../../gitbook/assets/\_mysql\_5\_6\_45\__fvproject_fvproject_data_buckets.png)
+![](../../gitbook/assets/_mysql_5_6_45__fvproject_fvproject_data_buckets.png)
 
 Note that we clean up the key upon handing in the requisite tax money and list with the following (line 41 above):
 

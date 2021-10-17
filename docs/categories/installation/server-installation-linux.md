@@ -24,7 +24,7 @@ It is not advised to log in as `root` or run `sudo -i` to install and run EQEmu
 {% endhint %}
 
 * First you will need to kick off the installer using the single line command line also referenced on the README in the EQEmu/Server repository
-* You can use curl or wget to kick off the installer \(whichever your OS has\)
+* You can use curl or wget to kick off the installer (whichever your OS has)
 
 _curl_
 
@@ -147,7 +147,7 @@ World: UP Zones: (30/30) UCS: UP Queryserv: UP
 
 #### Basic Server Configuration
 
-* To configure your server name, shortname and other parameters, you can visit [eqemu\_config](configure-your-eqemu_config.md)
+* To configure your server name, shortname and other parameters, you can visit [eqemu_config](configure-your-eqemu_config.md)
 * To configure additional zones to boot, those options can be set in the startup script
 
 That's it! You should be set!

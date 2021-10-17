@@ -13,9 +13,9 @@ To emulate the original Everquest PVP servers, the only rule you have to adjust 
 | 2 | TZ/VZ | Partial Support |
 | 4 | Sullon Zek | Partial support |
 | 6 | Discord | Partial Support |
-| 7+ | Discord+ \(Any value above 6\) | Discord without the no-drop restrictions removed |
+| 7+ | Discord+ (Any value above 6) | Discord without the no-drop restrictions removed |
 
-Rules from this point onward are optional, and allow you the ability to customize your PVP server beyond the classic PVP rules. If you enable PVPSettings then adjust the below, most values will override defaults. Some exceptions include PVPLootCoin \(once true by above PVPSettings, it cannot be turned off without setting PVPSettings to 0\).
+Rules from this point onward are optional, and allow you the ability to customize your PVP server beyond the classic PVP rules. If you enable PVPSettings then adjust the below, most values will override defaults. Some exceptions include PVPLootCoin (once true by above PVPSettings, it cannot be turned off without setting PVPSettings to 0).
 
 ### World:PVPMinLevel
 
@@ -27,7 +27,7 @@ minimum level pvp is enabled
 
 ### World:PVPUseDeityBasedPVP
 
-use deity based pvp alignment \(agnostic is neutral\)
+use deity based pvp alignment (agnostic is neutral)
 
 | Default | RZ | TV/VZ | SZ |
 | :--- | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ use deity based pvp alignment \(agnostic is neutral\)
 
 ### World:PVPUseTeamsBySizeBasedPVP
 
-use racial size based pvp alignment \(drakkin is human group\)
+use racial size based pvp alignment (drakkin is human group)
 
 | Default | RZ | TV/VZ | SZ |
 | :--- | :--- | :--- | :--- |
@@ -107,7 +107,7 @@ Can players loot coin from player corpses?
 
 ### Spells:PVPRootBreakFromSpells
 
-Chance for root to break when cast on by a client \(20% more than native root\)
+Chance for root to break when cast on by a client (20% more than native root)
 
 | Default | RZ | TV/VZ | SZ |
 | :--- | :--- | :--- | :--- |

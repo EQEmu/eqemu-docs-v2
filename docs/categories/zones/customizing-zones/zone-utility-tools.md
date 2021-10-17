@@ -6,7 +6,7 @@ description: This page organizes various tools for manipulation of Zones.
 
 **Download**
 
-* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build\_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
+* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
 
 **Source**
 
@@ -24,9 +24,9 @@ pfs.exe
 ## Azone
 
 * Azone is a binary responsible for generating our .map files by reading geometry files, for more information on these see [Maps Introduction](https://eqemu.gitbook.io/server/categories/maps).
-* Azone will look within the current directory for each zone\_name you pass it and attempt to open the files with one of three loaders in the following order:
+* Azone will look within the current directory for each zone_name you pass it and attempt to open the files with one of three loaders in the following order:
   * EQG Standard
-  * EQG Terrain \(v4\)
+  * EQG Terrain (v4)
   * S3D
 
 **Usage**
@@ -62,7 +62,7 @@ Each of these **.wtr** files may then be copied to the server's maps directory t
 
 ## PFS
 
-PFS is a command line utility for manipulating pfs \(S3D/EQG\) files. It works similarly to S3DSpy but from a command line.
+PFS is a command line utility for manipulating pfs (S3D/EQG) files. It works similarly to S3DSpy but from a command line.
 
 The usage is modeled loosely after 7-Zip's command line utility for familiarity:
 
@@ -107,7 +107,7 @@ Holding shift will increase the speed you move within the world drastically.
 
 If you're having trouble with getting a zone to render here are some things to check:
 
-* Your graphics card and drivers support OpenGL 3.3 or 3.0 \(you need to specify within CMake for a special 3.0 build\)
+* Your graphics card and drivers support OpenGL 3.3 or 3.0 (you need to specify within CMake for a special 3.0 build)
 * The program can see the shaders/ directory and has the shaders files within it.
 * The program can see the map and wtr files you are attempting to load.
 

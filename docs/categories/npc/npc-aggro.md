@@ -27,7 +27,7 @@ Create the new entry in npc_faction. This will be an umbrella for NPC behavior e
 
 ### Create new faction_list_mod entries to account for the Erudite loving aspect.  
 
-So we wanted our new NPCs to like Erudites. We do this by adding an entry to faction_list_mod. This applies to any and all NPCs that refer back to the new faction_list entry. So we add an entry, using the faction_list value we created in step 1, a mod_name (\[rcd]#) and a value. We want Erudites to be amiable to start. So we need to get them from -1000 up to at least 101. Depending on where you want them in the amiable range, the mod would be something like 1101+. So the new entry would be (id, (step 1 id), 1101, r3). Erudites are race 3.
+So we wanted our new NPCs to like Erudites. We do this by adding an entry to faction_list_mod. This applies to any and all NPCs that refer back to the new faction_list entry. So we add an entry, using the faction_list value we created in step 1, a mod_name ([rcd]#) and a value. We want Erudites to be amiable to start. So we need to get them from -1000 up to at least 101. Depending on where you want them in the amiable range, the mod would be something like 1101+. So the new entry would be (id, (step 1 id), 1101, r3). Erudites are race 3.
 
 ### Create how the new npc_faction reacts to other NPCS and PCs via npc_faction_entries.
 

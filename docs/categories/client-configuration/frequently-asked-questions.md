@@ -16,11 +16,11 @@
 
 **What is required to play on an Everquest Emulator Server?**
 
-* The only requirement is a fresh install of Everquest Titanium \(disks\), Secrets of Faydwer \(disks\), Seeds of Destruction \(Steam\), Underfoot \(Steam\), or Rain of Fear \(Steam\) unpatched.
+* The only requirement is a fresh install of Everquest Titanium (disks), Secrets of Faydwer (disks), Seeds of Destruction (Steam), Underfoot (Steam), or Rain of Fear (Steam) unpatched.
 
 **Can I use the separate Expansion CDs if I have all of the Expansions included in Titanium?**
 
-* No, only Everquest Titanium Pack \(Discs\) or Secrets of Faydwer \(Discs\) will work for the emulator.  The rest of the compatible clients are all Digital Downloads from Steam. Nothing else will work.
+* No, only Everquest Titanium Pack (Discs) or Secrets of Faydwer (Discs) will work for the emulator.  The rest of the compatible clients are all Digital Downloads from Steam. Nothing else will work.
 
 **Is there any place I can download an Everquest Cient for EQEmulator?**
 
@@ -66,7 +66,7 @@
 **When I try to open EQ, the window blinks black and then closes and I get an error, but EQ never even starts.**
 
 * Most likely you are having a resolution or drivers issue. Try adjusting your EQ or Desktop Resolutions or updating your video drivers. It may just be that EQ is trying to start in a resolution that it does not support. If setting your desktop to 1024X768 does not work, then you may need to set it in your eqclient.ini. There should be a file named OptionsEditor.exe in your Everquest folder. Open that program and set your resolution to 1024X768 and see if that helps. If not, run it again and try other resolutions. Once you have it working, you should be able to adjust your resolution from in game and then /camp out to save the new settings.
-* Another possible resolution to this issue is sometimes to try another video card driver for your video card. You may want to try using an older driver or newer one to see if that makes a difference. You may need to run a driver cleaner application when installing your new \(or old\) video card drivers, depending on the instructions for changing drivers on your specific video card.
+* Another possible resolution to this issue is sometimes to try another video card driver for your video card. You may want to try using an older driver or newer one to see if that makes a difference. You may need to run a driver cleaner application when installing your new (or old) video card drivers, depending on the instructions for changing drivers on your specific video card.
 * If none of the above resolves your resolution, crash, or lockup problems, try the suggestions below:
   * Right click on your Everquest icon and go under compatibility mode. There is a checkbox for "runs in 640x480 resolution". Click this. It does not mean the game will run in 640x480 but the intro screen will. Without that one checked, you may not even be able to get into the game.
   * Now, change these under your video mode. If EQ starts in windowed mode, or if the character select is in windowed mode do this; center the windowed mode window up on your screen, to where it covers the entire screen. Now Hit ALT-ENTER and you will go full screen before you go into the game. Only then enter the world, not in windowed mode. The reason for this is if you go full screen it sometimes crashes and I would rather crash before my character enters the world.
@@ -97,7 +97,7 @@ WindowedHeight=1200
 
 **I can get to the login screen, but I get an error saying that the connection timed out when I try to log in.**
 
-* Either the login server is down, or more likely you need to adjust your eqhost.txt file as described in the play guide. Make certain that there are no extra spaces or carriage returns in the file. Also make sure you didn't accidentally save the file as eqhost.txt.txt or it won't work at all. Also, if you are trying to use EQEmu with an EQLive \(Patched\) installation instead of directly from the Titanium or Secrets of Faydwer Disks without patching, you will get a connection timed out error as well. In this case, though, it takes considerably longer before the error pops up after trying to log in. When the problem is with your network connection, the LS, or your eqhost.txt file, it should only take about 30 seconds or less to return with the error. But, if you are running a patched version of EQ, it can take minutes before the error pops up, if it ever does at all.
+* Either the login server is down, or more likely you need to adjust your eqhost.txt file as described in the play guide. Make certain that there are no extra spaces or carriage returns in the file. Also make sure you didn't accidentally save the file as eqhost.txt.txt or it won't work at all. Also, if you are trying to use EQEmu with an EQLive (Patched) installation instead of directly from the Titanium or Secrets of Faydwer Disks without patching, you will get a connection timed out error as well. In this case, though, it takes considerably longer before the error pops up after trying to log in. When the problem is with your network connection, the LS, or your eqhost.txt file, it should only take about 30 seconds or less to return with the error. But, if you are running a patched version of EQ, it can take minutes before the error pops up, if it ever does at all.
 
 **I can get to the login screen, but I get an error about my username or password being wrong.**
 
@@ -109,7 +109,7 @@ WindowedHeight=1200
 
 **I can log into the Server Select screen, but when I get there, no servers are showing up. It is just a blank list.**
 
-* This usually means there is a network problem. Either your network is blocking port 5998 or your router may just be having issues that need to be corrected. If you live in a dorm or are playing from a public network, it is probably going through a proxy and that means they are most likely blocking port 5998, so you won't be able to play. If you are playing from home and have control of your internet connection, then the problem is probably either with your router/modem or with your PC. First, make sure that you don't have a firewall or any other security programs running that might block your connectivity in any way. Next, make sure you aren't forwarding port 5998 to any PCs on your network \(this includes port range forwarding that would include port 5998 in the range\). If not, next you want to try powering down your modem and router. Then power up your modem and wait until it gets a connection. Next, power up your router and wait for it to connect. Last, reboot your PC and try connecting to EQEmu again. If that still isn't working, then there is a good chance that you need to reset your router or router/modem back to factory defaults. Most modems have a sunken in button that you can hold down to reset it to defaults. Check your product documentation for how to do it. Once that is done, set up your router again and try connecting to EQEmu again. It should be working now, but if not, there may be an issue with the routing from your ISP or your router may just be going bad.
+* This usually means there is a network problem. Either your network is blocking port 5998 or your router may just be having issues that need to be corrected. If you live in a dorm or are playing from a public network, it is probably going through a proxy and that means they are most likely blocking port 5998, so you won't be able to play. If you are playing from home and have control of your internet connection, then the problem is probably either with your router/modem or with your PC. First, make sure that you don't have a firewall or any other security programs running that might block your connectivity in any way. Next, make sure you aren't forwarding port 5998 to any PCs on your network (this includes port range forwarding that would include port 5998 in the range). If not, next you want to try powering down your modem and router. Then power up your modem and wait until it gets a connection. Next, power up your router and wait for it to connect. Last, reboot your PC and try connecting to EQEmu again. If that still isn't working, then there is a good chance that you need to reset your router or router/modem back to factory defaults. Most modems have a sunken in button that you can hold down to reset it to defaults. Check your product documentation for how to do it. Once that is done, set up your router again and try connecting to EQEmu again. It should be working now, but if not, there may be an issue with the routing from your ISP or your router may just be going bad.
 
 **I can log into the Server Select screen, but when I try to connect, the screen goes black and then goes to the login screen again.**
 
@@ -125,7 +125,7 @@ WindowedHeight=1200
 8. Make sure your drivers are up to date for your Video Card.
 9. If you have sound enabled, make sure your sound card is working.
 10. Try resetting your router. If that doesn't help, try connecting your PC directly to your cable/dsl modem and see if that helps.
-11. If you previously had another version of EQ installed and installed SoF over the old install \(even if you uninstalled EQ before-hand\), you will need to uninstall EQ again and delete the Everquest install folder completely, and then install SoF again from scratch. Otherwise, simply installing SoF to a new/different folder than your current EQ install works just fine.
+11. If you previously had another version of EQ installed and installed SoF over the old install (even if you uninstalled EQ before-hand), you will need to uninstall EQ again and delete the Everquest install folder completely, and then install SoF again from scratch. Otherwise, simply installing SoF to a new/different folder than your current EQ install works just fine.
 
 **I am having weird choppiness/warping when I play and/or getting disconnected very often.**
 
@@ -150,15 +150,15 @@ WindowedHeight=1200
 
 **The server I play on Limits the number of players allowed per-IP. More than 1 person plays from my IP. How can we get it increased?**
 
-* EQEmu has no control over the IP limit settings of individual servers. Please make the IP limit increase request to the GM\(s\)/Admin\(s\) of the server you play on. Check their website/forums and post there with your request if possible. To find their website, please either check the MOTD on the server, ask in /ooc, or refer to the server list here and click the "view" link next to the server you play on:
+* EQEmu has no control over the IP limit settings of individual servers. Please make the IP limit increase request to the GM(s)/Admin(s) of the server you play on. Check their website/forums and post there with your request if possible. To find their website, please either check the MOTD on the server, ask in /ooc, or refer to the server list here and click the "view" link next to the server you play on:
 * [http://www.eqemulator.org/index.php?pageid=serverlist](http://www.eqemulator.org/index.php?pageid=serverlist)
 * If the server has a website, it is most likely on that page.
 
 **Everquest works fine, but all of the fonts are hard to read due to being a bit blocky or garbled. How do I correct this so fonts look normal?**
 
-* If your fonts are showing up oddly, you are probably running an LCD monitor and not running EQ at your monitor's native resolution. Try running in Windowed mode and see if that corrects the font issues \(ALT+ENTER\). If that fixes it, then just make sure when you are running in full screen mode, you are running at the native resolution of your monitor.
+* If your fonts are showing up oddly, you are probably running an LCD monitor and not running EQ at your monitor's native resolution. Try running in Windowed mode and see if that corrects the font issues (ALT+ENTER). If that fixes it, then just make sure when you are running in full screen mode, you are running at the native resolution of your monitor.
 
-**I run Windows Vista/7 and am unable to type certain characters in the chat window such as: + = \[ \] { } " '. How is this fixed?**
+**I run Windows Vista/7 and am unable to type certain characters in the chat window such as: + = [ ] { } " '. How is this fixed?**
 
 1. Open Device Manager
 2. Click on "Keyboards" to open the tree.
@@ -171,7 +171,7 @@ WindowedHeight=1200
 
 **I am still having a problem with playing that wasn't answered here. What should I do?**
 
-* First try reading and searching the forums. If you still can't find the solution, you should make a post in one of the support threads with as many details as possible about your issue. Make sure to post in the right section that is related to your issue \(General Support, Spell Support, Windows Server Support, Linux Server Support or Mini Login Support\).
+* First try reading and searching the forums. If you still can't find the solution, you should make a post in one of the support threads with as many details as possible about your issue. Make sure to post in the right section that is related to your issue (General Support, Spell Support, Windows Server Support, Linux Server Support or Mini Login Support).
 
 ## Server Administrator Support
 
@@ -182,7 +182,7 @@ WindowedHeight=1200
 **I ran the world.exe from the command prompt and it stops after giving an error about being unable to connect to the database.**
 
 * Make sure you have the config file setup properly. If you are certain that it is set correctly, then make sure you ran the following command from the mysql prompt in your database and set your new password to what you want it to be:
-* set password for 'root'@'localhost' = OLD\_PASSWORD\('newpwd'\);
+* set password for 'root'@'localhost' = OLD_PASSWORD('newpwd');
 
 **My server loads up and everything looks ok accept I can't cast any detrimental spells and mobs won't aggro even if they are KoS.**
 
@@ -215,19 +215,19 @@ WindowedHeight=1200
 **My server was running fine before I updated to the latest Source/Binaries and now something is not working properly.**
 
 * Make sure that you added all required SQL files as noted in the changelog.txt file. Check the SVN folder here for the full list:
-* http://code.google.com/p/projecteqemu/source/browse/\#svn/trunk/EQEmuServer/utils/sql/svn∞
-* You will want to source in any updates that occurred between the revision your server was last running and the revision it is running now. For example; If your server was running Rev1143 and you upgraded it to Rev1200, you will need to source the 1195\_account\_suspendeduntil.sql into your db and can optionally source 1144\_optional\_rule\_return\_nodrop.sql as well.
+* http://code.google.com/p/projecteqemu/source/browse/#svn/trunk/EQEmuServer/utils/sql/svn∞
+* You will want to source in any updates that occurred between the revision your server was last running and the revision it is running now. For example; If your server was running Rev1143 and you upgraded it to Rev1200, you will need to source the 1195_account_suspendeduntil.sql into your db and can optionally source 1144_optional_rule_return_nodrop.sql as well.
 
 **My EQEmu Web Tool gives an error when trying to connect to it and does not prompt for login.**
 
-* First, make sure you have the HTTP service enabled in your eqemu\_config.xml
+* First, make sure you have the HTTP service enabled in your eqemu_config.xml
 * If it is enabled and still not functioning, make sure you have the mime.types file in your server folder.
 * Also, make sure you have port 9080 open in your router/firewall and/or forwarded.
 * Last, make sure your EQEmu server is started, or the tool will not function.
 
 **My EQEmu Web Tool gives a login prompt, but I am not able to authenticate.**
 
-* First, you must be logging into the Web Tool on a GM account \(using your normal Login Server account name\), as normal accounts will not work.
+* First, you must be logging into the Web Tool on a GM account (using your normal Login Server account name), as normal accounts will not work.
 
 Second, you must set a password in your account table password field for the account you want access on. You can hash the password so it is encrypted.
 

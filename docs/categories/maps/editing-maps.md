@@ -2,7 +2,7 @@
 
 **Download**
 
-* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build\_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
+* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
 
 **Source**
 
@@ -28,13 +28,13 @@ From [Maps Introduction](./)
 
 Lets walk through the process of creating a .nav file for Najena.
 
-When you start map\_edit you will be presented with this screen
+When you start map_edit you will be presented with this screen
 
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/01_blank.png?raw=true)
 
 You will notice that no zone is loaded and the navigation module is not yet activated.
 
-* Navigate to the file menu and select Open\(CTRL + O\) and type the zone you would like to open.
+* Navigate to the file menu and select Open(CTRL + O) and type the zone you would like to open.
 
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/02_file_menu.png?raw=true)
 
@@ -48,7 +48,7 @@ From here you can view the collidable geometry of the zone in grey, the non-coll
 
 ## Options Menu
 
-* Quickly lets cover the options menu, navigate to File -&gt; Options\(ALT + O\)
+* Quickly lets cover the options menu, navigate to File -&gt; Options(ALT + O)
 
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/05_options.png?raw=true)
 
@@ -57,9 +57,9 @@ From here you see various options:
 * **Render Collidable Mesh** A checkbox that controls whether the grey geometry is drawn.
 * **Render Non-Collidable Mesh** A checkbox that controls whether the light blue geometry is drawn.
 * **Render Bounding Box** A checkbox that controls whether the bounding box is drawn.
-* **Enable Backface Culling** A checkbox that controls whether polygons facing away from the camera are drawn. \(See example below\)
+* **Enable Backface Culling** A checkbox that controls whether polygons facing away from the camera are drawn. (See example below)
 * **Bounding Box** Six sliders that let you control the bounding box used by this zone, you can CTRL+Click on the values to be able to manually type in a value.
-* **Render Volumes** A checkbox that controls whether EQG volumes \(watermaps\) are rendered \(s3d volumes/watermaps are never rendered\).
+* **Render Volumes** A checkbox that controls whether EQG volumes (watermaps) are rendered (s3d volumes/watermaps are never rendered).
 
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/06_backface_culling_off.png?raw=true)
 
@@ -101,15 +101,15 @@ After a time a mesh will be generated and will show as blue overlay on the geome
 | **Min Region Size** | The min size a region can be to be segmented off into its own polygon. |
 | **Merged Region Size** | The minimum size a region needs to be before the algorithm attempt to merge a region into another. |
 | **Partitioning Type** | The algorithm used for partitioning internally. Have never found much reason to change this from default but it causes the algorithm to generate slightly different meshes. |
-| **Max Edge Length** | Maximum length an edge can be in the basic polygon mesh output. The bigger this is the larger polygons can be. For flat surfaces that are very large \(eg ocean bottoms\) this can dramatically reduce polygon count. |
+| **Max Edge Length** | Maximum length an edge can be in the basic polygon mesh output. The bigger this is the larger polygons can be. For flat surfaces that are very large (eg ocean bottoms) this can dramatically reduce polygon count. |
 | **Max Edge Error** | The maximum deviation an edge can have in the basic polygon mesh output. |
 | **Verts per Poly** | Maximum verts any poly can have. Do not set above 6. Setting this to something really low would probably needlessly complicate the mesh. |
 | **Sample Distance** | When creating the detail mesh it samples from points nearby. This is the distance to sample around a point. Generally going the smaller the number the more accurate the mesh is but also the more nodes that need to be generated. |
 | **Max Sample Error** | Maximum error, like distance this is the maximum the error can be before the detail mesh discards a sample point. Smaller leads to more accurate but slower meshes. |
 | **Tile Size** | The tile size of the map, the larger the tile the fewer of them that need to be generated but also the longer they need to be generated. |
 
-* Generally you wont have to change this but something to keep note of is there is a maximum amount of nodes a tile can contain and connections \(covered below\) can only connect a tile either to itself or to one of its potential 8 adjacent tiles.
-* So you may need to up this if you have a large portal or decrease it if you find it having difficulty creating a tile at all.\|
+* Generally you wont have to change this but something to keep note of is there is a maximum amount of nodes a tile can contain and connections (covered below) can only connect a tile either to itself or to one of its potential 8 adjacent tiles.
+* So you may need to up this if you have a large portal or decrease it if you find it having difficulty creating a tile at all..|
 
 ## Fixing Navmesh Gaps
 
@@ -126,7 +126,7 @@ By turning off the non-collidable mesh and using the test tool we can confirm th
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/14_connections.png?raw=true)
 
 * You'll see a few options, what we want in this case is a bi-directional connection as these can move in either direction.  We also want the area type to be "Water" as it is going into and out of a pool of water.
-* Place the connection by clicking on the mesh once \(for start pos\) and again \(for end pos\)
+* Place the connection by clicking on the mesh once (for start pos) and again (for end pos)
 
 ![](https://github.com/EQEmu/Server/wiki/images/map-edit/15_connection_added.png?raw=true)
 

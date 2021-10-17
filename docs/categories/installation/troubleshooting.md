@@ -6,9 +6,9 @@ Below are some common issues that Windows users encounter when installing EQEmu 
 
 ### Cannot Connect
 
-#### Improperly configured eqemu\_config
+#### Improperly configured eqemu_config
 
-Please verify that you followed the instructions in the How-To Guide for [Configuring your eqemu\_config](configure-your-eqemu_config.md).
+Please verify that you followed the instructions in the How-To Guide for [Configuring your eqemu_config](configure-your-eqemu_config.md).
 
 #### Windows Firewall
 
@@ -30,7 +30,7 @@ Below are some common issues that Linux users encounter when installing EQEmu Se
 
 ### Cannot Connect
 
-#### Improperly configured eqemu\_config
+#### Improperly configured eqemu_config
 
-Please verify that you followed the instructions in the How-To Guide for [Configuring your eqemu\_config](configure-your-eqemu_config.md).
+Please verify that you followed the instructions in the How-To Guide for [Configuring your eqemu_config](configure-your-eqemu_config.md).
 

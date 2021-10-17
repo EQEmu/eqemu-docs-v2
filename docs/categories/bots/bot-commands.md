@@ -4,9 +4,9 @@
 
 The **bot command system** has been redesigned and is now a clone of the existing **EQEmu command system**.
 
-Instead of using the **old operator** and **command tokens** \#bot command, use the **new operator** with the **new command tokens** \(i.e., ^command\).
+Instead of using the **old operator** and **command tokens** #bot command, use the **new operator** with the **new command tokens** (i.e., ^command).
 
-A **redirect** has also been added to the server command interpreter that will allow the use of \#bot command..but, only the **new command tokens** may be used.
+A **redirect** has also been added to the server command interpreter that will allow the use of #bot command..but, only the **new command tokens** may be used.
 
 Many of the **commands** have been **reviewed**, **re-coded** and **improved upon**, where possible.
 

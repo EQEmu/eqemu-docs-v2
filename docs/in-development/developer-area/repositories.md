@@ -332,7 +332,7 @@ You can see how we've had to use zero raw SQL to interact with the database in o
 Another real use example is where we need some additional criteria to pull some results from the database. Instead of querying for grids by zone using raw SQL we want to encapsulate some of this so it can be easily used in our domain logic. We could use `GetWhere` quickly, but to make a more re-usable method we're going to create some new methods for our pathing grids
 
 * static std::vector GetZoneGrids(int zone_id) 
-* static Grid GetGrid(const std::vector \&grids, int grid_id)
+* static Grid GetGrid(const std::vector &grids, int grid_id)
 
 {% code title="grid_repository.h" %}
 ```cpp

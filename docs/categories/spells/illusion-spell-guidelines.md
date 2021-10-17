@@ -8,7 +8,7 @@ These are influenced by spell base, limit, and max values.
 
 If an Illusion Spell has a max value of 0 on the Illusion effect ID we use the base value as the Race ID, assume the [gender](../npc/genders.md) using a source method, use the limit value as [texture](../npc/textures.md), and the max value as [helmtexture](../npc/textures.md).
 
-Example Spell is Illusion: Human \(582\).
+Example Spell is Illusion: Human (582).
 
 ### Gender-Specific Illusions
 
@@ -18,17 +18,17 @@ If an Illusion Spell has a max value greater than 0 on the Illusion effect ID we
 * 2 is Female
 * 3 is Neuter
 
-Example Spell is Illusion: Male \(1732\).
+Example Spell is Illusion: Male (1732).
 
 ### Gender and Texture Specific Spells
 
 If an Illusion Spell has a max value greater than 0 on the Illusion effect ID and the limit value is not 0, we then check if the max value is not equal to 3, if it's not equal to 3 we use the base value as the Race ID, the max value minus 1 as the [gender](../npc/genders.md), the limit value as [texture](../npc/textures.md), and the max value as [helmtexture](../npc/textures.md).
 
-Example Spell is Illusion: Runic Tattoo Nihil Male \(33575\).
+Example Spell is Illusion: Runic Tattoo Nihil Male (33575).
 
 ### Gender, Texture, and Helmtexture Specific Spells
 
 If an Illusion Spell has a max value greater than 0 and equal to 3, we use the base value as the Race ID, assume the [gender](../npc/genders.md) using a source method, use the limit value as [texture](../npc/textures.md) and [helmtexture](../npc/textures.md).
 
-Example Spell is Illusion: Rallosian Goblin \(32787\).
+Example Spell is Illusion: Rallosian Goblin (32787).
 

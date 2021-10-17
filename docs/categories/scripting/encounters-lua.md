@@ -4,7 +4,7 @@ description: >-
   scripts only (not perl).
 ---
 
-# Encounters \(Lua\)
+# Encounters (Lua)
 
 #### Encounter Scripts
 
@@ -42,6 +42,6 @@ Unloading the encounter will automatically unhook all functions that are current
 
 Note:
 
-* Encounter scripts cannot properly catch EVENT\_COMMAND or EVENT\_TRADE unless an existing quest is already listening for them.
+* Encounter scripts cannot properly catch EVENT_COMMAND or EVENT_TRADE unless an existing quest is already listening for them.
 * Encounter scripts also run before any normal script and will catch return values.
 

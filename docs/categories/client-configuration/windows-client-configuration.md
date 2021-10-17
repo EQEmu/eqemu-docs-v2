@@ -27,7 +27,7 @@ In the _**Target**_ field, add " patchme", without the quotation marks, to the e
 
 1. If there are spaces in your file path:\
    \
-   `"C:\Program Files\Everquest\eqgame.exe" patchme`\
+   `"C:\Program Files\Everquest\eqgame.exe" patchme`
 
 2.  If there are no spaces in your file path:\
     \

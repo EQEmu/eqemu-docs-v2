@@ -8,7 +8,7 @@ description: >-
 
 ### Editing Rules
 
-To edit variables, some are tied to admin \#commands that will refresh the variable cache \(noted on description below\), otherwise you must restart world and zone to have them take full effect.
+To edit variables, some are tied to admin #commands that will refresh the variable cache (noted on description below), otherwise you must restart world and zone to have them take full effect.
 
 <table>
   <thead>

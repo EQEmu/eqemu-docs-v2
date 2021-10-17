@@ -39,7 +39,7 @@ The most up to date information regarding the database schema can be found in th
 | reward           | varchar   | Reward Description                                                                                                                           |
 | rewardid         | int       | Item ID number, or a reference to a list of item ID numbers (from goallists table)                                                           |
 | cashreward       | int       | Cash Reward, listed in copper (system will convert to plat, gold, etc.)                                                                      |
-| xpreward         | int       | Experience Reward; for level-based, set a negative value using the following formula:  max level \* 100 + experience percent                 |
+| xpreward         | int       | Experience Reward; for level-based, set a negative value using the following formula:  max level * 100 + experience percent                 |
 | rewardmethod     | tinyint   | Reward Method: 0 = Single Item ID, 1 = List of Items (in the goallist table), 2 = Quest Controlled (reward granted through NPC quest script) |
 | minlevel         | tinyint   | Minimum Level to obtain tasks                                                                                                                |
 | maxlevel         | tinyint   | Maximum Level to obtain tasks                                                                                                                |
@@ -196,7 +196,7 @@ Task Sets are intended to make it easier to write quest NPCs that can offer a lo
 | Command               | Description                                                           |
 | --------------------- | --------------------------------------------------------------------- |
 | #task show            | Shows the active tasks for the targeted client                        |
-| #task update \[count] | Updates the specified activity by 1, or by \[count]                   |
+| #task update [count] | Updates the specified activity by 1, or by [count]                   |
 | #task reloadall       | Reload all information relating to tasks from DB (all zones)          |
 | #task reload task     | Reload all information for the specified task from the DB (all zones) |
 | #task reload lists    | Reload all information from the goallists table (all zones)           |
@@ -218,7 +218,7 @@ Task Sets are intended to make it easier to write quest NPCs that can offer a lo
 ## Logging Options
 
 {% hint style="info" %}
-These options are present in the Logging System through [logsys_categories](https://eqemu.gitbook.io/database-schema/categories/admin/logsys_categories) or in-game via command #logs set \[output] \[type] \[level]
+These options are present in the Logging System through [logsys_categories](https://eqemu.gitbook.io/database-schema/categories/admin/logsys_categories) or in-game via command #logs set [output] [type] [level]
 {% endhint %}
 
 ```sql
@@ -235,7 +235,7 @@ TASKS UPDATE is used to print out debug information when checking if activities 
 
 ## Quest API (for the task system)
 
-These are the **quest::\[methods]** and **EVENT** triggers that are related to the Task System.
+These are the **quest::[methods]** and **EVENT** triggers that are related to the Task System.
 
 {% hint style="info" %}
 Be sure to reference the [Quest API](https://eqemu.gitbook.io/quest-api/) in the event that functionality is expanded.

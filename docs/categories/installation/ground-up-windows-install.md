@@ -11,7 +11,7 @@ Read through this guide before starting to ensure an understanding of the proces
 {% hint style="info" %}
 The target computer must have an active internet connection at the time of installation.
 
-Please direct any questions to our server support channel in \[[discord](https://discord.gg/QHsm7CD)]
+Please direct any questions to our server support channel in [[discord](https://discord.gg/QHsm7CD)]
 
 _Screenshots may vary depending on options selected and program graphical user interface changes._
 {% endhint %}
@@ -20,7 +20,7 @@ _Screenshots may vary depending on options selected and program graphical user i
 
 The current c/c++ support standard of the EQEmulator server code base mandates the use of Visual Studio 2017 or later compilers.
 
-Visual Studio 2017 is the current EQEmulator standard for binary compilation. Please ensure that your system meets the \[[Visual Studio 2017 Minimum System Requirements](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-system-requirements-vs#visual-studio-2017-system-requirements)].
+Visual Studio 2017 is the current EQEmulator standard for binary compilation. Please ensure that your system meets the [[Visual Studio 2017 Minimum System Requirements](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-system-requirements-vs#visual-studio-2017-system-requirements)].
 
 Visual Studio 2019 may also be used..though, less is known about the stability of this platform with the EQEmulator code base.
 
@@ -55,16 +55,16 @@ Some of the pre-requisites for compiling binaries are the same as running a serv
 
 If you have already installed any of the following, the download and installation requirement should be omitted:
 
-*   Visual Studio 2017 Community Edition \[[select Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)]
+*   Visual Studio 2017 Community Edition [[select Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)]
 
     _Note: Microsoft now requires a user account to download Visual Studio. Clicking the Visual Studio link above will take you to the "older versions" page. Clicking the_ `Download` _button on that page will prompt you to log in or create an account._
-*   Visual Studio 2019 Community Edition \[[alternative download](https://visualstudio.microsoft.com/vs/)]
+*   Visual Studio 2019 Community Edition [[alternative download](https://visualstudio.microsoft.com/vs/)]
 
     _Note: Only install one version of Visual Studio_
-* Perl v5.12.3.1204 (32-bit) \[[download](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/ActivePerl-5.12.3.1204-MSWin32-x86-294330.msi)]
-* CMake (64-bit) \[[download](https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-win64-x64.msi)]
-* Git (64-bit) \[[download](https://git-scm.com/download/win)]
-*   TortoiseGit (64-bit - optional) \[[download](https://download.tortoisegit.org/tgit/2.8.0.0/TortoiseGit-2.8.0.0-64bit.msi)]
+* Perl v5.12.3.1204 (32-bit) [[download](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/ActivePerl-5.12.3.1204-MSWin32-x86-294330.msi)]
+* CMake (64-bit) [[download](https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-win64-x64.msi)]
+* Git (64-bit) [[download](https://git-scm.com/download/win)]
+*   TortoiseGit (64-bit - optional) [[download](https://download.tortoisegit.org/tgit/2.8.0.0/TortoiseGit-2.8.0.0-64bit.msi)]
 
     _Note: TortoiseGit is a menu-driven, add-on gui interface for Git. Though optional, this instructional provides for its use._
 
@@ -92,7 +92,7 @@ This requirement is not needed for Visual Studio 2019 installations..but, it is 
 
 This installation is self-explanatory.
 
-_Note: It is recommended that you install in the root folder (_`c:\`_) to avoid possible issues._
+_Note: It is recommended that you install in the root folder (_`c:\_) to avoid possible issues._
 
 ### Install CMake
 
@@ -119,16 +119,16 @@ There are two options:
 1. Create a local repository from the parent EQEmulator project that can be updated, managed and maintained (recommended)
 2.  Create a local repository from a fork of the EQEmulator project that you manage (optional - select only if you want to contribute back to the parent project)
 
-    _Note: If you choose to create a fork of the EQEmulator repository, you will need to create a _\[[github.com](https://github.com)] _account._
+    _Note: If you choose to create a fork of the EQEmulator repository, you will need to create a _[[github.com](https://github.com)] _account._
 
 If you chose option 1, create a sub-folder called `git-eqemulator` in the root folder of c: drive.
 
 If you chose option 2, create a sub-folder called `git-<git-username>` in the root folder of c: drive. (example: git username is `Pavlov`, folder name would be `git-pavlov`)
 
-The purpose of this folder is to facilitate code management. We'll refer to this as the `account`folder.\
+The purpose of this folder is to facilitate code management. We'll refer to this as the `account`folder..
 
 
-Go to the EQEmulator server code repository web page at [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server).\
+Go to the EQEmulator server code repository web page at [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server)..
 
 
 If you chose option 2 and are creating a fork, click on the fork button to add the repository to your github account. You should be redirected to your fork's main repository page.
@@ -141,7 +141,7 @@ Finally, click the `Clone or download` button, then `Open in Desktop` button to 
 
 You should now have a managed local code repository on your computer.
 
-_Note: It is helpful to create a shortcut to the_ `account` _folder and place it on your desktop._\
+_Note: It is helpful to create a shortcut to the_ `account` _folder and place it on your desktop._.
 
 
 ### Install Submodules
@@ -164,7 +164,7 @@ Submodules are now installed.\
 
 To install the required dependencies:
 
-* Download the \[[dependencies](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/WindowsDependencies_x86.zip)] file
+* Download the [[dependencies](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/WindowsDependencies_x86.zip)] file
 * Navigate down to `c:\<account>\Server\dependencies`
 * Copy the downloaded file into the folder
 * Unpack the file
@@ -176,7 +176,7 @@ Dependencies are now installed.\
 
 To install VCPkg:
 
-* Download the \[[vcpkg](https://github.com/EQEmu/Server/releases/download/v1.2/vcpkg-export-x86.zip)] file
+* Download the [[vcpkg](https://github.com/EQEmu/Server/releases/download/v1.2/vcpkg-export-x86.zip)] file
 * Navigate down to `c:\<account>\Server`
 * Create a folder called `vcpkg`
 * Navigate down to `c:\<account>\Server\vcpkg`
@@ -204,7 +204,7 @@ Once CMake knows where to look, click the `Configure` button. You will get a pop
 
 The next window will be for compiler selection. Ensure that the version of Visual Studio that you installed is selected (`Visual Studio 15 2017` or `Visual Studio 16 2019`). Leave the `Use default native compilers` option as-is. If you are using a newer version of CMake that has the `Optional platform for generator` drop-down box, ensure that `Win32` is selected. Finally, click `Finish` to proceed.
 
-![](../../gitbook/assets/cmake_compiler_updated\_2.png)
+![](../../gitbook/assets/cmake_compiler_updated_2.png)
 
 _Note: CMake will download the appropriate vcpkg and install its contents. User intervention is no longer required._\
 
@@ -215,12 +215,12 @@ You should now have a list of unconfigured options (in red) displayed in the mai
 
 The following list contains the most common options of interest to the majority of users:
 
-* `EQEMU_BUILD_CLIENT_FILES` \[_enabled_] Builds binaries used to import/export client support files
-* `EQEMU_BUILD_LOGIN` \[_disabled_] Builds the login server (this guide makes use of the login server - change this option to _**enabled**_)
-* `EQEMU_BUILD_LUA` \[_enabled_] Compiles server code with Lua support
-* `EQEMU_BUILD_PERL` \[_enabled_] Compiles server code with Perl support
-* `EQEMU_DEBUG_LEVEL` \[_5_] Determines what additional messaging and debugging code is enabled/disabled (_12_ is max)
-* `EQEMU_ENABLE_BOTS` \[_disabled_] Compiles server code with Bot support (user choice)
+* `EQEMU_BUILD_CLIENT_FILES` [_enabled_] Builds binaries used to import/export client support files
+* `EQEMU_BUILD_LOGIN` [_disabled_] Builds the login server (this guide makes use of the login server - change this option to _**enabled**_)
+* `EQEMU_BUILD_LUA` [_enabled_] Compiles server code with Lua support
+* `EQEMU_BUILD_PERL` [_enabled_] Compiles server code with Perl support
+* `EQEMU_DEBUG_LEVEL` [_5_] Determines what additional messaging and debugging code is enabled/disabled (_12_ is max)
+* `EQEMU_ENABLE_BOTS` [_disabled_] Compiles server code with Bot support (user choice)
 
 {% hint style="info" %}
 Ensure that you set `EQEMU_BUILD_LOGIN` to **enabled**

@@ -62,9 +62,9 @@ NOTE: The program must have write permission in the EQ directory to create the o
 
 ### **Model Availability Loading**
 
-1. Uses a hard-coded list of Luclin-enabled models (global5\_chr\[2], frog_mount_chr, and globalXXX_chr\[2] for playable races)
+1. Uses a hard-coded list of Luclin-enabled models (global5_chr[2], frog_mount_chr, and globalXXX_chr[2] for playable races)
 2. Parses Resources\GlobalLoad.txt for remaining global model sources
-3. Using the Zone list, parses all ZoneNick_chr\[2].s3d files for zone-local models
+3. Using the Zone list, parses all ZoneNick_chr[2].s3d files for zone-local models
 4. Using the Zone list, parses all ZoneNick_chr.txt files for zone models imported from EQGs, S3Ds, and other zones
 5. Looks for any race/gender models that aren't being referenced in a .S3D or ZoneNick_chr.txt file ("orphan models"), and looks for a ModelCode_chr.s3d or ModelCode.eqg file for it
 
@@ -188,7 +188,7 @@ The example below demonstrates the output for zone 0 - Globals:
 {% tab title="Titanium" %}
 ## Globally Available Race Models
 
-* **Source:** global7\_chr.s3d (Loaded when Luclin models disabled)
+* **Source:** global7_chr.s3d (Loaded when Luclin models disabled)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalhum_chr.s3d (Loaded with Luclin models)
@@ -247,7 +247,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalkef_chr.s3d (Loaded with Luclin models)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
-* **Source:** global5\_chr.s3d (Loaded with Luclin models)
+* **Source:** global5_chr.s3d (Loaded with Luclin models)
   * **AEL** - Air Elemental (Race 210, Gender 2)
   * **EEL** - Earth Elemental (Race 209, Gender 2)
   * **FEL** - Fire Elemental (Race 212, Gender 2)
@@ -290,7 +290,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **RAP** - Raptor (Race 163, Gender 2) - Textures: **00 01**
 * **Source:** skt_chr.s3d (Loaded via GlobalLoad.txt)
   * **SKT** - Skeleton (Race 367, Gender 2) - Textures: **00-04**
-* **Source:** global6\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global6_chr.s3d (Loaded via GlobalLoad.txt)
   * **ALL** - Alligator (Race 91, Gender 2) - Textures: **00 01**, Heads: **00 01**
   * **DRK** - Drake (Race 89, Gender 2) - Textures: **00-03**
   * **WOF** - Chokadai (Race 356, Gender 2) - Textures: **00 01**
@@ -299,7 +299,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **TIG** - Tiger (Race 63, Gender 2)
   * **WOL** - Wolf (Race 42, Gender 2) - Textures: **00-03**
   * **WOE** - Wolf (Race 120, Gender 2) - Textures: **00-03**
-* **Source:** global4\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global4_chr.s3d (Loaded via GlobalLoad.txt)
   * **IKS** - Undead Iksar (Race 161, Gender 2) - Heads: **00 01**
   * **SPE** - Spectre (Race 85, Gender 2)
   * **BAF** - Barbarian Female (Race 2, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
@@ -338,7 +338,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **TRM** - Troll Male (Race 9, Gender 0) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
   * **ELF** - Wood Elf Female (Race 4, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
   * **ELM** - Wood Elf Male (Race 4, Gender 0) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
-* **Source:** global2\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global2_chr.s3d (Loaded via GlobalLoad.txt)
   * **BEA** - Bear (Race 43, Gender 2) - Textures: **00-02**, Heads: **00-02**
   * **BRI** - Bristlebane (Race 153, Gender 2)
   * **CAZ** - Cazic Thule (Race 95, Gender 2) - Heads: **00 01**
@@ -355,7 +355,7 @@ The example below demonstrates the output for zone 0 - Globals:
 {% tab title="SoF" %}
 ## Globally Available Race Models
 
-* **Source:** global7\_chr.s3d (Loaded when Luclin models disabled)
+* **Source:** global7_chr.s3d (Loaded when Luclin models disabled)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalhum_chr.s3d (Loaded with Luclin models)
@@ -414,7 +414,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalkef_chr.s3d (Loaded with Luclin models)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
-* **Source:** global5\_chr.s3d (Loaded with Luclin models)
+* **Source:** global5_chr.s3d (Loaded with Luclin models)
   * **AEL** - Air Elemental (Race 210, Gender 2)
   * **EEL** - Earth Elemental (Race 209, Gender 2)
   * **FEL** - Fire Elemental (Race 212, Gender 2)
@@ -499,7 +499,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **WOR** - Worg (Race 580, Gender 2) - Heads: **00-02**
 * **Source:** skt_chr.s3d (Loaded via GlobalLoad.txt)
   * **SKT** - Skeleton (Race 367, Gender 2) - Textures: **00-04**
-* **Source:** global6\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global6_chr.s3d (Loaded via GlobalLoad.txt)
   * **ALL** - Alligator (Race 91, Gender 2) - Textures: **00 01**, Heads: **00 01**
   * **DRK** - Drake (Race 89, Gender 2) - Textures: **00-03**
   * **WOF** - Chokadai (Race 356, Gender 2) - Textures: **00 01**
@@ -508,7 +508,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **TIG** - Tiger (Race 63, Gender 2)
   * **WOL** - Wolf (Race 42, Gender 2) - Textures: **00-03**
   * **WOE** - Wolf (Race 120, Gender 2) - Textures: **00-03**
-* **Source:** global4\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global4_chr.s3d (Loaded via GlobalLoad.txt)
   * **IKS** - Undead Iksar (Race 161, Gender 2) - Heads: **00 01**
   * **SPE** - Spectre (Race 85, Gender 2)
   * **BAF** - Barbarian Female (Race 2, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
@@ -593,7 +593,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **G05** - Banner (Race 586, Gender 2)
 * **Source:** i10.eqg (Loaded via GlobalLoad.txt)
   * **I10** - Campfire (Race 567, Gender 2)
-* **Source:** global2\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global2_chr.s3d (Loaded via GlobalLoad.txt)
   * **BEA** - Bear (Race 43, Gender 2) - Textures: **00-02**, Heads: **00-02**
   * **BRI** - Bristlebane (Race 153, Gender 2)
   * **CAZ** - Cazic Thule (Race 95, Gender 2) - Heads: **00 01**
@@ -610,7 +610,7 @@ The example below demonstrates the output for zone 0 - Globals:
 {% tab title="RoF2" %}
 ## Globally Available Race Models
 
-* **Source:** global7\_chr.s3d (Loaded when Luclin models disabled)
+* **Source:** global7_chr.s3d (Loaded when Luclin models disabled)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalhum_chr.s3d (Loaded with Luclin models)
@@ -669,7 +669,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **KEM** - Vah Shir Male (Race 130, Gender 0) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
 * **Source:** globalkef_chr.s3d (Loaded with Luclin models)
   * **KEF** - Vah Shir Female (Race 130, Gender 1) - Textures: **00-03, 50**, Heads: **00-03**, Faces: **00-07**
-* **Source:** global5\_chr.s3d (Loaded with Luclin models)
+* **Source:** global5_chr.s3d (Loaded with Luclin models)
   * **AEL** - Air Elemental (Race 210, Gender 2)
   * **EEL** - Earth Elemental (Race 209, Gender 2)
   * **FEL** - Fire Elemental (Race 212, Gender 2)
@@ -1294,7 +1294,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **TNM** - Nihil Male (Race 385, Gender 0) - Textures: **00-04**
 * **Source:** skt_chr.s3d (Loaded via GlobalLoad.txt)
   * **SKT** - Skeleton (Race 367, Gender 2) - Textures: **00-04**
-* **Source:** global6\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global6_chr.s3d (Loaded via GlobalLoad.txt)
   * **ALL** - Alligator (Race 91, Gender 2) - Textures: **00 01**, Heads: **00 01**
   * **DRK** - Drake (Race 89, Gender 2) - Textures: **00-03**
   * **WOF** - Chokidai (Race 356, Gender 2) - Textures: **00 01**
@@ -1303,7 +1303,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **TIG** - Tiger (Race 63, Gender 2)
   * **WOL** - Wolf (Race 42, Gender 2) - Textures: **00-03**
   * **WOE** - Wolf (Race 120, Gender 2) - Textures: **00-03**
-* **Source:** global4\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global4_chr.s3d (Loaded via GlobalLoad.txt)
   * **IKS** - Undead Iksar (Race 161, Gender 2) - Heads: **00 01**
   * **SPE** - Spectre (Race 85, Gender 2)
   * **BAF** - Barbarian Female (Race 2, Gender 1) - Textures: **00-03**, Heads: **00-03**, Faces: **00-07**
@@ -1352,7 +1352,7 @@ The example below demonstrates the output for zone 0 - Globals:
   * **JKR** - Jokester (Race 384, Gender 2) - Textures: **00-02**
 * **Source:** mmy_chr.s3d (Loaded via GlobalLoad.txt)
   * **MMY** - Mummy (Race 368, Gender 2)
-* **Source:** global2\_chr.s3d (Loaded via GlobalLoad.txt)
+* **Source:** global2_chr.s3d (Loaded via GlobalLoad.txt)
   * **BEA** - Bear (Race 43, Gender 2) - Textures: **00-02**, Heads: **00-02**
   * **BRI** - Bristlebane (Race 153, Gender 2)
   * **CAZ** - Cazic Thule (Race 95, Gender 2) - Heads: **00 01**

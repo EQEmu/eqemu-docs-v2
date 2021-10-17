@@ -9,7 +9,7 @@
 | 2 | First line of a 2-line spell name.  Also applicable to AA hotkeys. |
 | 3 | Second line of a 2-line spell name. Also applicable to AA hotkeys. |
 | 4 | AA description. |
-| 5 | Corresponds to the typedescnum and effectdescnum columns in[ spells\_new](http://wiki.eqemulator.org/p?spells_new&frm=dbstr_us_txt) . |
+| 5 | Corresponds to the typedescnum and effectdescnum columns in[ spells_new](http://wiki.eqemulator.org/p?spells_new&frm=dbstr_us_txt) . |
 | 6 | Spells. |
 | 7 | Lore Group. |
 | 8 | Race descriptions shown at character creation. |
@@ -35,7 +35,7 @@
 | 2 | First line of a 2-line spell name.  Also applicable to AA hotkeys. |
 | 3 | Second line of a 2-line spell name. Also applicable to AA hotkeys. |
 | 4 | AA description. |
-| 5 | Corresponds to the typedescnum and effectdescnum columns in [ spells\_new](http://wiki.eqemulator.org/p?spells_new&frm=dbstr_us_txt) . |
+| 5 | Corresponds to the typedescnum and effectdescnum columns in [ spells_new](http://wiki.eqemulator.org/p?spells_new&frm=dbstr_us_txt) . |
 | 6 | Spells. |
 | 7 | Lore Group. |
 | 8 | Race descriptions shown at character creation. |

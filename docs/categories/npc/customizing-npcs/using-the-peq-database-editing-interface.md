@@ -235,11 +235,11 @@ Congratulations!  You have added your first quest script to your first NPC!  The
 
 If you're hanging out in The Mines of Gloomingdeep, you can issue three commands to get your bot to spawn.  Be sure to review the [In Game Command Reference](https://eqemu.gitbook.io/server/categories/reference-lists/in-game-command-reference) (opens new window) if you're not sure what all of these do.
 
-> \#hotfix
+> #hotfix
 >
-> \#reloadquest
+> #reloadquest
 >
-> \#repop
+> #repop
 
 This will bring over all of your NPC settings, reload your quest files and repop the zone.  At this point your should see your new NPC!
 

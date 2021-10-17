@@ -29,7 +29,7 @@ Add a line to the bottom of the file, it is going to look similar to the followi
 9058|2014_11_17_example_update_file.sql|SHOW TABLES LIKE 'character_mercenaries'|empty|
 ```
 
-* This example would then have users run `2014_11_17_example_update_file.sql` when they don't have the 'character\_mercenaries' table because of the empty condition
+* This example would then have users run `2014_11_17_example_update_file.sql` when they don't have the 'character_mercenaries' table because of the empty condition
 * That's it! As far as what is needed from a developer to have the server run the migration, that is all you need to do
 
 ## Manifest Conditions
@@ -56,7 +56,7 @@ Example: Version|Filename.sql|Query_to_Check_Condition_For_Needed_Update|match t
 9056|2014_11_08_RaidMembers.sql|SHOW COLUMNS FROM `raid_members` LIKE 'groupid'|missing|unsigned
 ```
 
-This entry is looking for what the column looks like in raid\_members and to see if it is an unsigned integer
+This entry is looking for what the column looks like in raid_members and to see if it is an unsigned integer
 
 The match type is `missing`, so I'm looking to see if the word 'unsigned' is missing from the table. In this case if unsigned was missing, we need to run this update because that is what the update did
 
@@ -72,7 +72,7 @@ ALTER TABLE `raid_members` CHANGE COLUMN `groupid` `groupid` INT(4) UNSIGNED NOT
 9055|2014_10_30_special_abilities_null.sql|SHOW COLUMNS FROM `npc_types` LIKE 'special_abilities'|contains|NO
 ```
 
-This entry is looking for what the column looks like in npc\_types, column 'special\_abilities' to see if it contains the word 'NO' \(If special\_abilities is nullable\), which if you look at the SQL result at the given time before this update is applied
+This entry is looking for what the column looks like in npc_types, column 'special_abilities' to see if it contains the word 'NO' (If special_abilities is nullable), which if you look at the SQL result at the given time before this update is applied
 
 You will see the data about column regarding NULL, defined as NO. Which means the field can't be null, we want it to be able to be null because it causes issues with later MySQL versions, which is why this update was made
 

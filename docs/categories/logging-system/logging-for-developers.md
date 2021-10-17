@@ -31,7 +31,7 @@ The macro is necessary because we check for whether the category is enabled or n
 
 In `eqemu_logsys.cpp` you can set default values for the log system initialization routine
 
-* [https://github.com/EQEmu/Server/blob/master/common/eqemu\_logsys.cpp\#L90](https://github.com/EQEmu/Server/blob/master/common/eqemu_logsys.cpp#L90)
+* [https://github.com/EQEmu/Server/blob/master/common/eqemu_logsys.cpp#L90](https://github.com/EQEmu/Server/blob/master/common/eqemu_logsys.cpp#L90)
 
 ```text
 void EQEmuLogSys::LoadLogSettingsDefaults()
@@ -65,5 +65,5 @@ void EQEmuLogSys::LoadLogSettingsDefaults()
 
 ## Default Category Colors
 
-Color settings for GMSay and console respectively can be managed in eqemu\_logsys.cpp
+Color settings for GMSay and console respectively can be managed in eqemu_logsys.cpp
 

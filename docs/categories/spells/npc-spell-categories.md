@@ -2,7 +2,7 @@
 
 | NPC Spell Category ID | NPC Spell Category Name |
 | :--- | :--- |
-| 0 | Not Applicable \(Non NPC Spell\) |
+| 0 | Not Applicable (Non NPC Spell) |
 | 1 | Area of Effect Detrimental |
 | 2 | Single Target Detrimental |
 | 3 | Buffs |

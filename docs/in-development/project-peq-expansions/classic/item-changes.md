@@ -8,31 +8,31 @@ description: Item Changes in the Classic Era of EverQuest
 
 | Item | Era | Zone | Obtained | Nerf/Removal Info |
 | :--- | :--- | :--- | :--- | :--- |
-| Silk Lined Steel Armor | Classic | Ak'Anon | Rylin Coil | Removed items / Restricted classes \(was GNM/ALL\) |
+| Silk Lined Steel Armor | Classic | Ak'Anon | Rylin Coil | Removed items / Restricted classes (was GNM/ALL) |
 | [Box of Abu-Kar](https://lucy.allakhazam.com/item.html?id=11703) | Classic | ALL | Level 35+ Mobs 0.01% | Removed item |
 | [A Servant's Blade](https://lucy.allakhazam.com/item.html?id=1879) | Classic | Befallen | A Servant of T'Vyl | Removed mob, removed item |
-| [Ebon Scythe](https://lucy.allakhazam.com/item.html?id=1871) | Classic | Befallen | Asaka L\`Rei | Removed item / possibly mob? |
-| [Enchanted Fine Steel Bastard Sword](https://lucy.allakhazam.com/item.html?id=5213) | Classic | Befallen | Knight V\`Tal | Removed item \(1.8% drop rate\) / mob |
-| [Enchanted Fine Steel Great Staff](https://lucy.allakhazam.com/item.html?id=5215) | Classic | Befallen | Kahaptra Z\`Taj | Removed item \(4.8% drop rate\) / mob |
-| [Enchanted Fine Steel Long Sword](https://lucy.allakhazam.com/item.html?id=5212) | Classic | Befallen | Knight V\`Tal | Removed item \(98% drop rate\) / mob |
-| [Enchanted Fine Steel Morning Star](https://lucy.allakhazam.com/item.html?id=5214) | Classic | Befallen | Asaka L\`Rei | Removed item \(common drop\) / mob |
-| [Enchanted Fine Steel Rapier](https://lucy.allakhazam.com/item.html?id=5216) | Classic | Befallen | Korven Nisere | Removed item \(very rare drop\) / mob |
-| [Pristine Studded Boots](https://lucy.allakhazam.com/item.html?id=1883) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
-| [Pristine Studded Bracer](https://lucy.allakhazam.com/item.html?id=1881) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
-| [Pristine Studded Gloves](https://lucy.allakhazam.com/item.html?id=1885) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
-| [Pristine Studded Leggings](https://lucy.allakhazam.com/item.html?id=1882) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
-| [Pristine Studded Sleeves](https://lucy.allakhazam.com/item.html?id=1884) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
-| [Pristine Studded Tunic](https://lucy.allakhazam.com/item.html?id=1880) | Classic | Befallen | Guardian of T\`Vyl | Removed item / mob |
+| [Ebon Scythe](https://lucy.allakhazam.com/item.html?id=1871) | Classic | Befallen | Asaka L\Rei | Removed item / possibly mob? |
+| [Enchanted Fine Steel Bastard Sword](https://lucy.allakhazam.com/item.html?id=5213) | Classic | Befallen | Knight V`Tal | Removed item (1.8% drop rate) / mob |
+| [Enchanted Fine Steel Great Staff](https://lucy.allakhazam.com/item.html?id=5215) | Classic | Befallen | Kahaptra Z`Taj | Removed item (4.8% drop rate) / mob |
+| [Enchanted Fine Steel Long Sword](https://lucy.allakhazam.com/item.html?id=5212) | Classic | Befallen | Knight V`Tal | Removed item (98% drop rate) / mob |
+| [Enchanted Fine Steel Morning Star](https://lucy.allakhazam.com/item.html?id=5214) | Classic | Befallen | Asaka L`Rei | Removed item (common drop) / mob |
+| [Enchanted Fine Steel Rapier](https://lucy.allakhazam.com/item.html?id=5216) | Classic | Befallen | Korven Nisere | Removed item (very rare drop) / mob |
+| [Pristine Studded Boots](https://lucy.allakhazam.com/item.html?id=1883) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
+| [Pristine Studded Bracer](https://lucy.allakhazam.com/item.html?id=1881) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
+| [Pristine Studded Gloves](https://lucy.allakhazam.com/item.html?id=1885) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
+| [Pristine Studded Leggings](https://lucy.allakhazam.com/item.html?id=1882) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
+| [Pristine Studded Sleeves](https://lucy.allakhazam.com/item.html?id=1884) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
+| [Pristine Studded Tunic](https://lucy.allakhazam.com/item.html?id=1880) | Classic | Befallen | Guardian of T`Vyl | Removed item / mob |
 | [Shimmering Ruby Stiletto](https://lucy.allakhazam.com/item.html?id=5820) | Classic | Befallen | Korven Nisere | Removed item / mob |
-| [Silver Plated War Sword](https://lucy.allakhazam.com/item.html?id=1876) | Classic | Befallen | Baron Telyx V\`Zher | Removed item / mob |
+| [Silver Plated War Sword](https://lucy.allakhazam.com/item.html?id=1876) | Classic | Befallen | Baron Telyx V`Zher | Removed item / mob |
 | Skeletal Rod | Classic | Befallen | Skeleton Lrodd | Removed item |
 | Thaumaturgist's Sash | Classic | Befallen | Arisen Thaumaturgist | Removed item / mob |
-| [Golem Metal Wand](https://lucy.allakhazam.com/item.html?id=14313) | Classic | Befallen / Temple of Cazic Thule | Kahaptra Z\`Taj / Stone Golem | Removed item / mobs |
+| [Golem Metal Wand](https://lucy.allakhazam.com/item.html?id=14313) | Classic | Befallen / Temple of Cazic Thule | Kahaptra Z`Taj / Stone Golem | Removed item / mobs |
 | [Heartstone Amulet](https://lucy.allakhazam.com/item.html?id=10164) | Classic | Castle Mistmoore | Vampire Bodyguard | Removed item / mob |
 | Small Brass Trumpet | Classic | Castle Mistmoore | a deathly usher | Removed item |
 | Werewolf Tail | Classic | Castle Mistmoore | Magrek | Removed item / mob |
 | Legionnaire Torn Shoulderpads | Classic | Crushbone | Orc Legionnaires | Removed item / Quest unknown |
-| Ornate Runed Dagger | Classic | Crushbone | Ambassador D\`Vinn | Removed item |
+| Ornate Runed Dagger | Classic | Crushbone | Ambassador D`Vinn | Removed item |
 | Orc Wrath Bracer | Classic | East Commonlands | Lord Shin Ree | Removed item |
 | [Thex Dagger](https://lucy.allakhazam.com/item.html?id=13353) | Classic | Felwithe | Princess Lenya | Changed quest reward / Quest: Silent Watch Shield |
 | Scouting Dagger | Classic | High Keep | Bloody Shank Quest | Removed as quest reward / see Scout's Dagger Quest |
@@ -41,7 +41,7 @@ description: Item Changes in the Classic Era of EverQuest
 | [A Jagged Shard of Bone](https://lucy.allakhazam.com/item.html?id=1574) | Classic | Lesser Faydark | Undead Sprite | Removed Fear proc, Removed from loot tables |
 | [Blighted Mare Hide](https://lucy.allakhazam.com/item.html?id=1584) | Classic | Lesser Faydark | Blighted Mare | Removed item / Quest: Child of Innorruuk |
 | [Blighted Mare Hoof](https://lucy.allakhazam.com/item.html?id=1585) | Classic | Lesser Faydark | Blighted Mare | Removed item / Quest unknown |
-| Ebon Backpack | Classic | Lesser Faydark | Zyrria I\`Vanres | Removed mob / Quest: Child of Innorruuk |
+| Ebon Backpack | Classic | Lesser Faydark | Zyrria I`Vanres | Removed mob / Quest: Child of Innorruuk |
 | [Emerald Cloak of the Faydark](https://lucy.allakhazam.com/item.html?id=1580) | Classic | Lesser Faydark | Talisyn | Removed mob / Quest: Boodboil |
 | [Equestrielle's Eye](https://lucy.allakhazam.com/item.html?id=1815) | Classic | Lesser Faydark | Equestrielle the Corrupted | Removed item / mob |
 | Glimmer Ring | Classic | Lesser Faydark | Mina Glimmerwing | Removed item |
@@ -57,10 +57,10 @@ description: Item Changes in the Classic Era of EverQuest
 | Bone Handed Dagger | Classic | Najena | Linara Parlone | Removed item |
 | [Journeyman's Boots](https://lucy.allakhazam.com/item.html?id=2300) | Classic | Najena | Drelzna | Removed item / quest from SolRo Tower |
 | Writhing Lash | Classic | Najena / Unrest | Tentacle Terrors | Removed item / Changed to Tenticle Whip? |
-| [Priest of Innoruuk's Heart](https://lucy.allakhazam.com/item.html?id=2645) | Classic | Nektulos Forest | Teir\`Dal Surveyor | Removed item / Quest unknown |
+| [Priest of Innoruuk's Heart](https://lucy.allakhazam.com/item.html?id=2645) | Classic | Nektulos Forest | Teir`Dal Surveyor | Removed item / Quest unknown |
 | [Glowing Blade](https://lucy.allakhazam.com/item.html?id=12991) | Classic | Neriak | Merchants in the Neriak Zones | Removed item / Quest unknown |
-| [Enlarged Fire Beetle Eye](https://lucy.allakhazam.com/item.html?id=13745) | Classic | North Qeynos / Nagafen's Lair | Queen Kliknik / Queen Klaknak | Removed item \(uncommon drop\) |
-| [Deluxe Sewing Kit](https://lucy.allakhazam.com/item.html?id=17966) | Classic | Numerous | Large Sewing Kits made 8 \(from 10\) | Replaced Large Sewing kits with Deluxe |
+| [Enlarged Fire Beetle Eye](https://lucy.allakhazam.com/item.html?id=13745) | Classic | North Qeynos / Nagafen's Lair | Queen Kliknik / Queen Klaknak | Removed item (uncommon drop) |
+| [Deluxe Sewing Kit](https://lucy.allakhazam.com/item.html?id=17966) | Classic | Numerous | Large Sewing Kits made 8 (from 10) | Replaced Large Sewing kits with Deluxe |
 | Denon's Disruptive Discord | Classic | Numerous | Bard Song Vendors | Nerfed to only affect stationary mobs |
 | [Egg Shaped Pumice](https://lucy.allakhazam.com/item.html?id=14513) | Classic | Numerous | Vendors in Starting Cities | Removed item |
 | Sense Magic Spell | Classic | Numerous | Spell vendors | Replaced by True North |

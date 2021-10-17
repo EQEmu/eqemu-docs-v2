@@ -18,10 +18,10 @@ When we're discussion "Client Files", we are specifically referring to some key 
 
 | File Name | Content |
 | :--- | :--- |
-| BaseData.txt | An ASCII export of your [base\_data](https://eqemu.gitbook.io/database-schema/categories/client-files/base_data) table, which contains information regarding class "base" stats, such as HP, Mana and Endurance by level. |
-| dbstr\_us.txt | An ASCII export of your [db\_str](https://eqemu.gitbook.io/database-schema/categories/client-files/db_str) table, which contains the text that is displayed to a player character from various sources, such as spells or trades. |
-| SkillCaps.txt | An ASCII export of your [skill\_caps](https://eqemu.gitbook.io/database-schema/categories/client-files/skill_caps) table, which contains information about skills \(1HS, 1HB, Abjuration, etc.\) by class and level. |
-| spells\_us.txt | An ASCII export of your [spells\_new](https://eqemu.gitbook.io/database-schema/categories/client-files/spells_new) table, which contains information about all of the [spells](../spells/) in use in your world. |
+| BaseData.txt | An ASCII export of your [base_data](https://eqemu.gitbook.io/database-schema/categories/client-files/base_data) table, which contains information regarding class "base" stats, such as HP, Mana and Endurance by level. |
+| dbstr_us.txt | An ASCII export of your [db_str](https://eqemu.gitbook.io/database-schema/categories/client-files/db_str) table, which contains the text that is displayed to a player character from various sources, such as spells or trades. |
+| SkillCaps.txt | An ASCII export of your [skill_caps](https://eqemu.gitbook.io/database-schema/categories/client-files/skill_caps) table, which contains information about skills (1HS, 1HB, Abjuration, etc.) by class and level. |
+| spells_us.txt | An ASCII export of your [spells_new](https://eqemu.gitbook.io/database-schema/categories/client-files/spells_new) table, which contains information about all of the [spells](../spells/) in use in your world. |
 
 {% hint style="info" %}
 Be sure to read out [Client Spell Limitations](../spells/client-spell-id-limitations.md) before exporting your client files!

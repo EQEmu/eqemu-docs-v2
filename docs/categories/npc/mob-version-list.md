@@ -5,7 +5,7 @@ This list is fluid and may not reflect final implementation.
 | Mob | Value |
 | :--- | :--- |
 | Unknown | 0 |
-| Client62\* | 1 |
+| Client62* | 1 |
 | Titanium | 2 |
 | SoF | 3 |
 | SoD | 4 |

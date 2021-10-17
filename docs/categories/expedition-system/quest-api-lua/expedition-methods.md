@@ -1,10 +1,10 @@
 # Expedition Methods
 
-## `void` AddLockout\(string event\_name, uint32 seconds\_duration\) <a id="dz-add-lockout"></a>
+## `void` AddLockout(string event_name, uint32 seconds_duration) <a id="dz-add-lockout"></a>
 
 Adds an event lockout timer to the expedition with the specified duration.
 
-The lockout is added to all current members of the expedition whether they're inside the zone or not. This also adds the lockout to any clients inside the dynamic zone that are not part of the expedition \(in the event that they've quit the expedition and haven't been teleported out yet\)
+The lockout is added to all current members of the expedition whether they're inside the zone or not. This also adds the lockout to any clients inside the dynamic zone that are not part of the expedition (in the event that they've quit the expedition and haven't been teleported out yet)
 
 The lockout is also stored internally in the expedition. New members added to the expedition will receive these lockouts once they zone into the expedition's dynamic zone.
 
@@ -12,7 +12,7 @@ The lockout replaces any existing lockout held by the expedition and members.
 
 The lockout is assigned the current expedition's internal uuid for tracking.
 
-> Note: The source adds 60s to the lockout timer sent to clients to compensate for the client displaying lockouts rounded down to the nearest minute. If adding lockout times using live packet data subtract 60s from the time \(live adds 60s as well\)
+> Note: The source adds 60s to the lockout timer sent to clients to compensate for the client displaying lockouts rounded down to the nearest minute. If adding lockout times using live packet data subtract 60s from the time (live adds 60s as well)
 
 ```lua
 function event_death(e)
@@ -25,7 +25,7 @@ function event_death(e)
 end
 ```
 
-## `void` AddLockoutDuration\(string event\_name, int seconds, bool members\_only = true\) <a id="dz-add-lockout-duration"></a>
+## `void` AddLockoutDuration(string event_name, int seconds, bool members_only = true) <a id="dz-add-lockout-duration"></a>
 
 Adds duration to existing member lockouts for the event. If `seconds` is negative then lockout duration is reduced.
 
@@ -53,7 +53,7 @@ function event_death(e)
 end
 ```
 
-## `void` AddReplayLockout\(int seconds\_duration\) <a id="dz-add-replay-lockout"></a>
+## `void` AddReplayLockout(int seconds_duration) <a id="dz-add-replay-lockout"></a>
 
 Adds a `Replay Timer` lockout to the expedition. This is a shortcut alternative to adding the lockout by name through the `AddLockout` method.
 
@@ -73,7 +73,7 @@ function event_say(e)
 end
 ```
 
-## `void` AddReplayLockoutDuration\(int seconds, bool members\_only = true\) <a id="dz-add-replay-lockout-duration"></a>
+## `void` AddReplayLockoutDuration(int seconds, bool members_only = true) <a id="dz-add-replay-lockout-duration"></a>
 
 Adds duration to expedition's `Replay Timer` lockout. See AddLockoutDuration
 
@@ -102,7 +102,7 @@ function event_death(e)
 end
 ```
 
-## `uint32_t` GetDynamicZoneID\(\) <a id="dz-get-dz-id"></a>
+## `uint32_t` GetDynamicZoneID() <a id="dz-get-dz-id"></a>
 
 Returns the expedition's dynamic zone id
 
@@ -110,7 +110,7 @@ Returns the expedition's dynamic zone id
 local dz_id = expedition:GetDynamicZoneID()
 ```
 
-## `uint32_t` GetID\(\) <a id="dz-get-id"></a>
+## `uint32_t` GetID() <a id="dz-get-id"></a>
 
 Returns the expedition's id
 
@@ -118,7 +118,7 @@ Returns the expedition's id
 local id = expedition:GetID()
 ```
 
-## `int` GetInstanceID\(\) <a id="dz-get-instance-id"></a>
+## `int` GetInstanceID() <a id="dz-get-instance-id"></a>
 
 Returns the expedition's dynamic zone instance id
 
@@ -126,7 +126,7 @@ Returns the expedition's dynamic zone instance id
 local instance_id = expedition:GetInstanceID()
 ```
 
-## `string` GetLeaderName\(\) <a id="dz-get-leader-name"></a>
+## `string` GetLeaderName() <a id="dz-get-leader-name"></a>
 
 Returns the expedition's current leader name
 
@@ -134,7 +134,7 @@ Returns the expedition's current leader name
 local leader_name = expedition:GetLeaderName()
 ```
 
-## `LUA_TTABLE` GetLockouts\(\) <a id="dz-get-lockouts"></a>
+## `LUA_TTABLE` GetLockouts() <a id="dz-get-lockouts"></a>
 
 Returns a table containing the expedition's current internal lockouts and time remaining. This includes lockouts that were inherited by the leader on creation and not just lockouts assigned during the current expedition.
 
@@ -145,9 +145,9 @@ for event_name,remaining in pairs(lockouts) do
 end
 ```
 
-## `string` GetLootEventByNPCTypeID\(uint32 npc\_type\_id\) <a id="dz-get-loot-event-by-npctype"></a>
+## `string` GetLootEventByNPCTypeID(uint32 npc_type_id) <a id="dz-get-loot-event-by-npctype"></a>
 
-## `string` GetLootEventBySpawnID\(uint32 spawn\_id\) <a id="dz-get-loot-event-by-spawnid"></a>
+## `string` GetLootEventBySpawnID(uint32 spawn_id) <a id="dz-get-loot-event-by-spawnid"></a>
 
 Returns an event name associated with an npc type id or spawn id set by the SetLootEventByNPCTypeID or SetLootEventBySpawnID apis.
 
@@ -169,7 +169,7 @@ function event_death(e)
 end
 ```
 
-## `int` GetMemberCount\(\) <a id="dz-get-member-count"></a>
+## `int` GetMemberCount() <a id="dz-get-member-count"></a>
 
 Returns number of members in expedition
 
@@ -177,7 +177,7 @@ Returns number of members in expedition
 local count = dz:GetMemberCount()
 ```
 
-## `LUA_TTABLE` GetMembers\(\) <a id="dz-get-members"></a>
+## `LUA_TTABLE` GetMembers() <a id="dz-get-members"></a>
 
 Returns a Lua table containing member names and character ids
 
@@ -188,7 +188,7 @@ for name,id in pairs(members) do
 end
 ```
 
-## `string` GetName\(\) <a id="dz-get-name"></a>
+## `string` GetName() <a id="dz-get-name"></a>
 
 Returns name of the expedition
 
@@ -196,7 +196,7 @@ Returns name of the expedition
 local expedition_name = dz:GetName()
 ```
 
-## `int` GetSecondsRemaining\(\) <a id="dz-get-seconds-remaining"></a>
+## `int` GetSecondsRemaining() <a id="dz-get-seconds-remaining"></a>
 
 Returns seconds remaining until expedition's dynamic zone expires
 
@@ -204,7 +204,7 @@ Returns seconds remaining until expedition's dynamic zone expires
 local seconds_remaining = dz:GetSecondsRemaining()
 ```
 
-## `string` GetUUID\(\) <a id="dz-get-uuid"></a>
+## `string` GetUUID() <a id="dz-get-uuid"></a>
 
 Returns expedition's internal uuid assigned on creation
 
@@ -212,7 +212,7 @@ Returns expedition's internal uuid assigned on creation
 local uuid = dz:GetUUID()
 ```
 
-## `int` GetZoneID\(\) <a id="dz-get-zone-id"></a>
+## `int` GetZoneID() <a id="dz-get-zone-id"></a>
 
 Returns zone id of the expedition's dynamic zone
 
@@ -220,7 +220,7 @@ Returns zone id of the expedition's dynamic zone
 local zone_id = dz:GetZoneID()
 ```
 
-## `string` GetZoneName\(\) <a id="dz-get-zone-name"></a>
+## `string` GetZoneName() <a id="dz-get-zone-name"></a>
 
 Returns zone short name of the expedition's dynamic zone
 
@@ -228,7 +228,7 @@ Returns zone short name of the expedition's dynamic zone
 local zone_short_name = dz:GetZoneName()
 ```
 
-## `int` GetZoneVersion\(\) <a id="dz-get-zone-version"></a>
+## `int` GetZoneVersion() <a id="dz-get-zone-version"></a>
 
 Returns zone version of the expedition's dynamic zone instance
 
@@ -236,7 +236,7 @@ Returns zone version of the expedition's dynamic zone instance
 local zone_version = dz:GetZoneVersion()
 ```
 
-## `bool` HasLockout\(string event\_name\) <a id="dz-has-lockout"></a>
+## `bool` HasLockout(string event_name) <a id="dz-has-lockout"></a>
 
 Returns whether the expedition internally has the specified event lockout. This is the primary function that should be used for initialization scripts to determine which events are available to an expedition.
 
@@ -252,7 +252,7 @@ function init()
 end
 ```
 
-## `bool` HasReplayLockout\(\) <a id="dz-has-replay-lockout"></a>
+## `bool` HasReplayLockout() <a id="dz-has-replay-lockout"></a>
 
 Returns whether the expedition internally has a `Replay Timer` lockout set. Shortcut alternative to checking `HasLockout`
 
@@ -260,7 +260,7 @@ Returns whether the expedition internally has a `Replay Timer` lockout set. Shor
 local has_replay_lockout = dz:HasReplayLockout()
 ```
 
-## `bool` IsLocked\(\) <a id="dz-is-locked"></a>
+## `bool` IsLocked() <a id="dz-is-locked"></a>
 
 Returns if the expedition is currently locked by `SetLocked`
 
@@ -275,7 +275,7 @@ if dz.valid then
 end
 ```
 
-## `void` RemoveCompass\(\) <a id="dz-remove-compass"></a>
+## `void` RemoveCompass() <a id="dz-remove-compass"></a>
 
 Removes any compass set by `SetCompass`
 
@@ -283,7 +283,7 @@ Removes any compass set by `SetCompass`
 dz:RemoveCompass()
 ```
 
-## `void` RemoveLockout\(string event\_name\) <a id="dz-remove-lockout"></a>
+## `void` RemoveLockout(string event_name) <a id="dz-remove-lockout"></a>
 
 Removes the lockout from the expedition and from any current members
 
@@ -291,9 +291,9 @@ Removes the lockout from the expedition and from any current members
 dz:RemoveLockout("Ture")
 ```
 
-## `void` SetCompass\(int zone\_id, float x, float y, float z\) <a id="dz-set-compass-zoneid"></a>
+## `void` SetCompass(int zone_id, float x, float y, float z) <a id="dz-set-compass-zoneid"></a>
 
-## `void` SetCompass\(string zone\_short\_name, float x, float y, float z\) <a id="dz-set-compass-zonename"></a>
+## `void` SetCompass(string zone_short_name, float x, float y, float z) <a id="dz-set-compass-zonename"></a>
 
 Set the location of the expedition's dynamic zone compass. This only applies to non-instances outside of the dz.
 
@@ -311,7 +311,7 @@ function event_say(e)
 end
 ```
 
-## `void` SetLocked\(bool locked, ExpeditionLockMessage lock\_msg = ExpeditionLockMessage::None, uint32\_t msg\_color = Chat::Yellow\) <a id="dz-set-locked"></a>
+## `void` SetLocked(bool locked, ExpeditionLockMessage lock_msg = ExpeditionLockMessage::None, uint32_t msg_color = Chat::Yellow) <a id="dz-set-locked"></a>
 
 If true, lock an expedition to prevent new members from being added. False unlocks.
 
@@ -327,7 +327,7 @@ function event_death(e)
 end
 ```
 
-## `void` SetLootEventByNPCTypeID\(uint32\_t npc\_type\_id, string event\_name\) <a id="dz-set-loot-event-by-npctype"></a>
+## `void` SetLootEventByNPCTypeID(uint32_t npc_type_id, string event_name) <a id="dz-set-loot-event-by-npctype"></a>
 
 > Important: This must be set from a script inside the expedition's dynamic zone instance
 
@@ -345,7 +345,7 @@ function init()
 end
 ```
 
-## `void` SetLootEventBySpawnID\(uint32\_t spawn\_id, string event\_name\) <a id="dz-set-loot-event-by-spawnid"></a>
+## `void` SetLootEventBySpawnID(uint32_t spawn_id, string event_name) <a id="dz-set-loot-event-by-spawnid"></a>
 
 > Important: This must be set from a script inside the expedition's dynamic zone instance
 
@@ -368,7 +368,7 @@ function event_death(e)
 end
 ```
 
-## `void` SetReplayLockoutOnMemberJoin\(bool value\) <a id="dz-set-replay-lockout-on-member-join"></a>
+## `void` SetReplayLockoutOnMemberJoin(bool value) <a id="dz-set-replay-lockout-on-member-join"></a>
 
 This toggles whether `Replay Timer` lockouts are automatically added to new members that join an expedition
 
@@ -383,9 +383,9 @@ function event_say(e)
 end
 ```
 
-## `void` SetSafeReturn\(uint32\_t zone\_id, float x, float y, float z, float heading\) <a id="dz-set-safe-return-zoneid"></a>
+## `void` SetSafeReturn(uint32_t zone_id, float x, float y, float z, float heading) <a id="dz-set-safe-return-zoneid"></a>
 
-## `void` SetSafeReturn\(string zone\_short\_name, float x, float y, float z, float heading\) <a id="dz-set-safe-return-zonename"></a>
+## `void` SetSafeReturn(string zone_short_name, float x, float y, float z, float heading) <a id="dz-set-safe-return-zonename"></a>
 
 Set the expedition's dynamic zone safe return zone and coordinates. This is the location clients are moved to when an expedition expires or for clients that are automatically teleported out of the zone by the kick timer if they quit the expedition
 
@@ -403,7 +403,7 @@ function event_say(e)
 end
 ```
 
-## `void` SetSecondsRemaining\(uint32 seconds\_remaining\) <a id="dz-set-seconds-remaining"></a>
+## `void` SetSecondsRemaining(uint32 seconds_remaining) <a id="dz-set-seconds-remaining"></a>
 
 Set seconds remaining on expedition's dynamic zone before it expires. This currently only supports reducing time. It will have no effect if the new seconds remaining is larger than the current time remaining.
 
@@ -421,7 +421,7 @@ function event_timer(e)
 end
 ```
 
-## `void` SetZoneInLocation\(float x, float y, float z, float heading\) <a id="dz-set-zonein-location"></a>
+## `void` SetZoneInLocation(float x, float y, float z, float heading) <a id="dz-set-zonein-location"></a>
 
 Override the zone-in location of the expedition's dynamic zone used by `Client::MovePCDynamicZone`
 
@@ -436,7 +436,7 @@ function event_say(e)
 end
 ```
 
-## `void` UpdateLockoutDuration\(string event\_name, uint32\_t seconds, bool members\_only = true\) <a id="dz-update-lockout-duration"></a>
+## `void` UpdateLockoutDuration(string event_name, uint32_t seconds, bool members_only = true) <a id="dz-update-lockout-duration"></a>
 
 Sets the lockout of all members in the expedition to the specified duration based on the expedition's internal lockout start time.
 

@@ -105,5 +105,5 @@ And now we have finished adding _Innate Run Speed 6_, which provides a movement 
 | #reloadaa          | loads changes to the DB to the world                               |
 | #resetaa           | Requires a player target, resets their AAs and refunds the points  |
 | #resetaa_timer     | Resets your target's AA timers so that AAs can be used immediately |
-| #setaapts \[value] | Set your target's available AA points                              |
-| #setaaxp \[value]  | Set your target's AA experience                                    |
+| #setaapts [value] | Set your target's available AA points                              |
+| #setaaxp [value]  | Set your target's AA experience                                    |

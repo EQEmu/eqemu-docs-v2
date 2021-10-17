@@ -1,391 +1,391 @@
 # NPC Models
 
-Below is a list of NPC Race Models that are used in the \_chr text files in the client
+Below is a list of NPC Race Models that are used in the _chr text files in the client
 
 | **Race ID** | **Model Code** | **File Loaded From** | **Race** |
 | :--- | :--- | :--- | :--- |
 | 8 | dwm |  | Dwarf |
-| 13 | avi | southkarana\_chr | Aviak |
+| 13 | avi | southkarana_chr | Aviak |
 | 14 | wer |  | Werewolf |
-| 15 | brm | lfaydark\_chr | Brownie |
+| 15 | brm | lfaydark_chr | Brownie |
 | 16 | cem |  | Centaur |
-| 17 | gom | velketor\_chr | Golem |
-| 18 | gia | commons\_chr | Giant |
-| 19 | trk | hateplane\_chr | Trakanon |
-| 20 | vst | karnor\_chr | Venril Sathir |
-| 21 | beh | fearplane\_chr | Evil Eye |
-| 22 | bet | ecommons\_chr | Beetle |
-| 23 | cpm | warrens\_chr | Kerran |
-| 24 | fis | tox\_chr | Fish |
+| 17 | gom | velketor_chr | Golem |
+| 18 | gia | commons_chr | Giant |
+| 19 | trk | hateplane_chr | Trakanon |
+| 20 | vst | karnor_chr | Venril Sathir |
+| 21 | beh | fearplane_chr | Evil Eye |
+| 22 | bet | ecommons_chr | Beetle |
+| 23 | cpm | warrens_chr | Kerran |
+| 24 | fis | tox_chr | Fish |
 | 25 | fam |  | Fairy |
-| 26 | fro | gukbottom\_chr | Froglok |
-| 27 | frg | gukbottom\_chr | Froglok |
-| 28 | fun | unrest\_chr | Fungusman |
-| 29 | gam | velketor\_chr | Gargoyle |
-| 30 | beh | fearplane\_chr | Gasbag |
-| 31 | cub | fearplane\_chr | Gelatinous Cube |
+| 26 | fro | gukbottom_chr | Froglok |
+| 27 | frg | gukbottom_chr | Froglok |
+| 28 | fun | unrest_chr | Fungusman |
+| 29 | gam | velketor_chr | Gargoyle |
+| 30 | beh | fearplane_chr | Gasbag |
+| 31 | cub | fearplane_chr | Gelatinous Cube |
 | 32 | ghm |  | Ghost |
-| 33 | ghu | commons\_chr | Ghoul |
+| 33 | ghu | commons_chr | Ghoul |
 | 34 | bat | bat | Bat |
-| 36 | rat | butcher\_chr | Rat |
-| 37 | sna | ecommons\_chr | Snake |
-| 38 | spi | ecommons\_chr | Spider |
-| 39 | gnn | blackburrow\_chr | Gnoll |
-| 40 | gob | commons\_chr | Goblin |
-| 41 | gor | cazicthule\_chr | Gorilla |
+| 36 | rat | butcher_chr | Rat |
+| 37 | sna | ecommons_chr | Snake |
+| 38 | spi | ecommons_chr | Spider |
+| 39 | gnn | blackburrow_chr | Gnoll |
+| 40 | gob | commons_chr | Goblin |
+| 41 | gor | cazicthule_chr | Gorilla |
 | 42 | wom |  | Wolf |
-| 43 | bea | rivervale\_chr | Bear |
-| 44 | fpm | freporte\_chr | Guard |
-| 45 | dml | charasis\_chr | Demi Lich |
-| 46 | imp | soldungb\_chr | Imp |
-| 47 | gri | commons\_chr | Griffin |
-| 48 | kob | warrens\_chr | Kobold |
-| 49 | dra | dra\_chr | Dragon |
-| 50 | lim | eastkarana\_chr | Lion |
-| 51 | liz | oot\_chr | Lizard Man |
-| 52 | mim | mim\_chr | Mimic |
-| 53 | min | steamfont\_chr | Minotaur |
-| 54 | orc | sro\_chr | Orc |
-| 55 | bgm | oasis\_chr | Beggar |
+| 43 | bea | rivervale_chr | Bear |
+| 44 | fpm | freporte_chr | Guard |
+| 45 | dml | charasis_chr | Demi Lich |
+| 46 | imp | soldungb_chr | Imp |
+| 47 | gri | commons_chr | Griffin |
+| 48 | kob | warrens_chr | Kobold |
+| 49 | dra | dra_chr | Dragon |
+| 50 | lim | eastkarana_chr | Lion |
+| 51 | liz | oot_chr | Lizard Man |
+| 52 | mim | mim_chr | Mimic |
+| 53 | min | steamfont_chr | Minotaur |
+| 54 | orc | sro_chr | Orc |
+| 55 | bgm | oasis_chr | Beggar |
 | 56 | pim |  | Pixie |
-| 57 | drm | pojustice\_chr | Drachnid |
-| 58 | sol | soltemple\_chr | Solusek Ro |
-| 59 | bgg | lakeofillomen\_chr | Goblin |
-| 60 | ske | povalor\_chr | Skeleton |
-| 61 | sha | oot\_chr | Shark |
+| 57 | drm | pojustice_chr | Drachnid |
+| 58 | sol | soltemple_chr | Solusek Ro |
+| 59 | bgg | lakeofillomen_chr | Goblin |
+| 60 | ske | povalor_chr | Skeleton |
+| 61 | sha | oot_chr | Shark |
 | 62 | tun |  | Tunare |
-| 63 | tig | tox\_chr | Tiger |
-| 64 | tre | southkarana\_chr | Treant |
-| 65 | dvm | mistmoore\_chr | Vampire |
-| 66 | ral | potactics\_chr | Rallos Zek |
-| 67 | hhm | highkeep\_chr | Human |
-| 68 | tem | tem\_cht | Tentacle Terror |
-| 69 | wil | ecommons\_chr | Will-O-Wisp |
-| 70 | zom | innothule\_chr | Zombie |
-| 71 | qcm | qeynos\_chr | Human |
+| 63 | tig | tox_chr | Tiger |
+| 64 | tre | southkarana_chr | Treant |
+| 65 | dvm | mistmoore_chr | Vampire |
+| 66 | ral | potactics_chr | Rallos Zek |
+| 67 | hhm | highkeep_chr | Human |
+| 68 | tem | tem_cht | Tentacle Terror |
+| 69 | wil | ecommons_chr | Will-O-Wisp |
+| 70 | zom | innothule_chr | Zombie |
+| 71 | qcm | qeynos_chr | Human |
 | 73 | launch |  | Launch |
-| 74 | pir | tox\_chr | Piranha |
-| 75 | ele | poair\_chr | Elemental |
-| 76 | pum | pum\_chr | Puma |
-| 77 | ngm | neriaka\_chr | Dark Elf |
-| 78 | egm | erudnint\_chr | Erudite |
-| 79 | bix | kithicor\_chr | Bixie |
-| 80 | rea | karnor\_chr | Reanimated Hand |
-| 81 | rim | misty\_chr | Halfling |
-| 82 | sca | eastkarana\_chr | Scarecrow |
-| 83 | sku | butcher\_chr | Skunk |
+| 74 | pir | tox_chr | Piranha |
+| 75 | ele | poair_chr | Elemental |
+| 76 | pum | pum_chr | Puma |
+| 77 | ngm | neriaka_chr | Dark Elf |
+| 78 | egm | erudnint_chr | Erudite |
+| 79 | bix | kithicor_chr | Bixie |
+| 80 | rea | karnor_chr | Reanimated Hand |
+| 81 | rim | misty_chr | Halfling |
+| 82 | sca | eastkarana_chr | Scarecrow |
+| 83 | sku | butcher_chr | Skunk |
 | 84 | sne |  | Snake Elemental |
-| 85 | spe | unrest\_chr | Spectre |
-| 86 | sph | rathemtn\_chr | Sphinx |
-| 87 | arm | oggok\_chr | Armadillo |
-| 88 | clm | steamfont\_chr | Clockwork Gnome |
-| 89 | drk | westwastes\_chr | Drake |
-| 90 | hlm | halas\_chr | Barbarian |
-| 91 | all | timorous\_chr | Alligator |
-| 92 | grm | oggok\_chr | Troll |
-| 93 | okm | oggok\_chr | Ogre |
-| 94 | kam | kaladimb\_chr | Dwarf |
-| 95 | caz | unrest\_chr | Cazic Thule |
-| 96 | coc | dreadlands\_chr | Cockatrice |
+| 85 | spe | unrest_chr | Spectre |
+| 86 | sph | rathemtn_chr | Sphinx |
+| 87 | arm | oggok_chr | Armadillo |
+| 88 | clm | steamfont_chr | Clockwork Gnome |
+| 89 | drk | westwastes_chr | Drake |
+| 90 | hlm | halas_chr | Barbarian |
+| 91 | all | timorous_chr | Alligator |
+| 92 | grm | oggok_chr | Troll |
+| 93 | okm | oggok_chr | Ogre |
+| 94 | kam | kaladimb_chr | Dwarf |
+| 95 | caz | unrest_chr | Cazic Thule |
+| 96 | coc | dreadlands_chr | Cockatrice |
 | 97 | dia |  | Daisy Man |
-| 98 | vsm | potimeb\_chr | Vampire |
-| 99 | den | potimeb\_chr | Amygdalan |
-| 100 | der | unrest\_chr | Dervish |
-| 101 | efr | soltemple\_chr | Efreeti |
-| 102 | frt | innothule\_chr | Tadpole |
-| 103 | ked | kedge\_chr | Kedge |
-| 104 | lee | westwastes\_chr | Leech |
-| 105 | swo | kedge\_chr | Swordfish |
-| 106 | fem | gfaydark\_chr | Guard |
-| 107 | mam | southkarana\_chr | Mammoth |
-| 108 | eye | qeynos\_chr | Eye |
-| 109 | was | gfaydark\_chr | Wasp |
-| 110 | mer | oot\_chr | Mermaid |
-| 111 | har | steamfont\_chr | Harpy |
-| 112 | gfm | gfaydark\_chr | Guard |
-| 113 | dri | firiona\_chr | Drixie |
+| 98 | vsm | potimeb_chr | Vampire |
+| 99 | den | potimeb_chr | Amygdalan |
+| 100 | der | unrest_chr | Dervish |
+| 101 | efr | soltemple_chr | Efreeti |
+| 102 | frt | innothule_chr | Tadpole |
+| 103 | ked | kedge_chr | Kedge |
+| 104 | lee | westwastes_chr | Leech |
+| 105 | swo | kedge_chr | Swordfish |
+| 106 | fem | gfaydark_chr | Guard |
+| 107 | mam | southkarana_chr | Mammoth |
+| 108 | eye | qeynos_chr | Eye |
+| 109 | was | gfaydark_chr | Wasp |
+| 110 | mer | oot_chr | Mermaid |
+| 111 | har | steamfont_chr | Harpy |
+| 112 | gfm | gfaydark_chr | Guard |
+| 113 | dri | firiona_chr | Drixie |
 | 114 | gsp |  | Ghost Ship |
 | 115 | cla |  | Clam |
-| 116 | sea | twilight\_chr | Seahorse |
-| 117 | gdm | unrest\_chr | Ghost |
-| 118 | gem | paineel\_chr | Ghost |
-| 119 | stc | trakanon\_chr | Sabertooth |
+| 116 | sea | twilight_chr | Seahorse |
+| 117 | gdm | unrest_chr | Ghost |
+| 118 | gem | paineel_chr | Ghost |
+| 119 | stc | trakanon_chr | Sabertooth |
 | 120 | woe |  | Wolf |
-| 121 | grg | fearplane\_chr | Gorgon |
-| 122 | dru | hateplane\_chr | Dragon |
-| 123 | inn | unrest\_chr | Innoruuk |
-| 124 | uni | lfaydark\_chr | Unicorn |
-| 125 | peg | southkarana\_chr | Pegasus |
-| 126 | dji | dji\_chr | Djinn |
-| 127 | ivm | qeynos\_chr | Invisible Man |
-| 129 | scr | scr\_chr | Scorpion |
-| 131 | srw | lakeofillomen\_chr | Sarnak |
+| 121 | grg | fearplane_chr | Gorgon |
+| 122 | dru | hateplane_chr | Dragon |
+| 123 | inn | unrest_chr | Innoruuk |
+| 124 | uni | lfaydark_chr | Unicorn |
+| 125 | peg | southkarana_chr | Pegasus |
+| 126 | dji | dji_chr | Djinn |
+| 127 | ivm | qeynos_chr | Invisible Man |
+| 129 | scr | scr_chr | Scorpion |
+| 131 | srw | lakeofillomen_chr | Sarnak |
 | 132 | dlk |  | Draglock |
-| 133 | lyc | dreadlands\_chr | Drolvarg |
-| 134 | mos | cazicthule\_chr2 | Mosquito |
-| 135 | rhi | overthere\_chr | Rhinoceros |
-| 136 | xal | karnor\_chr | Xalgoz |
-| 137 | kgo | lakeofillomen\_chr | Goblin |
-| 138 | yet | warslikswood\_chr | Yeti |
-| 139 | icm | warslikswood\_chr | Iksar |
-| 140 | fgi | dreadlands\_chr | Giant |
-| 144 | brn | nurga\_chr | Burynai |
-| 145 | goo | goo\_chr | Goo |
-| 146 | ssn | karnor\_chr | Sarnak Spirit |
-| 147 | sim | karnor\_chr | Iksar Spirit |
-| 148 | bac | kedge\_chr | Fish |
-| 149 | isc | overthere\_chr | Scorpion |
+| 133 | lyc | dreadlands_chr | Drolvarg |
+| 134 | mos | cazicthule_chr2 | Mosquito |
+| 135 | rhi | overthere_chr | Rhinoceros |
+| 136 | xal | karnor_chr | Xalgoz |
+| 137 | kgo | lakeofillomen_chr | Goblin |
+| 138 | yet | warslikswood_chr | Yeti |
+| 139 | icm | warslikswood_chr | Iksar |
+| 140 | fgi | dreadlands_chr | Giant |
+| 144 | brn | nurga_chr | Burynai |
+| 145 | goo | goo_chr | Goo |
+| 146 | ssn | karnor_chr | Sarnak Spirit |
+| 147 | sim | karnor_chr | Iksar Spirit |
+| 148 | bac | kedge_chr | Fish |
+| 149 | isc | overthere_chr | Scorpion |
 | 150 | ero |  | Erollisi |
 | 151 | tri |  | Tribunal |
 | 152 | ber |  | Bertoxxulous |
 | 153 | bri | bri | Bristlebane |
-| 154 | fdr | fdr\_chr | Fay Drake |
-| 155 | ssk | lakeofillomen\_chr | Undead Sarnak |
-| 156 | vrm | pojustice\_chr | Ratman |
-| 157 | wyv | wyv\_chr | Wyvern |
+| 154 | fdr | fdr_chr | Fay Drake |
+| 155 | ssk | lakeofillomen_chr | Undead Sarnak |
+| 156 | vrm | pojustice_chr | Ratman |
+| 157 | wyv | wyv_chr | Wyvern |
 | 158 | wur | wur | Wurm |
-| 159 | dev | swampofnohope\_chr | Devourer |
-| 160 | ikg | karnor\_chr | Iksar Golem |
-| 161 | iks | lakeofillomen\_chr | Undead Iksar |
-| 162 | mep | trakanon\_chr | Man-Eating Plant |
-| 163 | rap | wakening\_chr | Raptor |
-| 164 | sgo | lakeofillomen\_chr | Sarnak Golem |
-| 165 | sed | sed\_chr | Dragon |
-| 166 | ikh | karnor\_chr | Animated Hand |
-| 167 | suc | overthere\_chr | Succulent |
-| 168 | fmo | fmo\_chr | Holgresh |
-| 169 | btm | westwastes\_chr | Brontotherium |
+| 159 | dev | swampofnohope_chr | Devourer |
+| 160 | ikg | karnor_chr | Iksar Golem |
+| 161 | iks | lakeofillomen_chr | Undead Iksar |
+| 162 | mep | trakanon_chr | Man-Eating Plant |
+| 163 | rap | wakening_chr | Raptor |
+| 164 | sgo | lakeofillomen_chr | Sarnak Golem |
+| 165 | sed | sed_chr | Dragon |
+| 166 | ikh | karnor_chr | Animated Hand |
+| 167 | suc | overthere_chr | Succulent |
+| 168 | fmo | fmo_chr | Holgresh |
+| 169 | btm | westwastes_chr | Brontotherium |
 | 170 | sde |  | Snow Dervish |
 | 171 | diw | diw | Dire Wolf |
-| 172 | mtc | mtc\_chr | Manticore |
-| 173 | tot | postorms\_chr | Totem |
-| 174 | spc | frozenshadow\_chr | Ice Spectre |
-| 175 | ena | frozenshadow\_chr | Enchanted Armor |
-| 176 | sbu | eastwastes\_chr | Snow Rabbit |
-| 177 | wal | sirens\_chr | Walrus |
-| 178 | rgm | rgm\_chr | Geonid |
-| 181 | yak | wakening\_chr | Yakkar |
+| 172 | mtc | mtc_chr | Manticore |
+| 173 | tot | postorms_chr | Totem |
+| 174 | spc | frozenshadow_chr | Ice Spectre |
+| 175 | ena | frozenshadow_chr | Enchanted Armor |
+| 176 | sbu | eastwastes_chr | Snow Rabbit |
+| 177 | wal | sirens_chr | Walrus |
+| 178 | rgm | rgm_chr | Geonid |
+| 181 | yak | wakening_chr | Yakkar |
 | 182 | fan |  | Faun |
-| 183 | com | thurgadina\_chr | Coldain |
-| 184 | dr2 | dr2\_chr | Dragon |
-| 185 | hag | frozenshadow\_chr | Hag |
+| 183 | com | thurgadina_chr | Coldain |
+| 184 | dr2 | dr2_chr | Dragon |
+| 185 | hag | frozenshadow_chr | Hag |
 | 186 | hip |  | Hippogriff |
-| 187 | sir | sirens\_chr | Siren |
-| 188 | fsg | westwastes\_chr | Giant |
-| 189 | stg | westwastes\_chr | Giant |
-| 190 | otm | thurgadina\_chr | Othmir |
-| 191 | wlm | warrens\_chr | Ulthork |
-| 192 | ccd | ccd\_chr | Dragon |
+| 187 | sir | sirens_chr | Siren |
+| 188 | fsg | westwastes_chr | Giant |
+| 189 | stg | westwastes_chr | Giant |
+| 190 | otm | thurgadina_chr | Othmir |
+| 191 | wlm | warrens_chr | Ulthork |
+| 192 | ccd | ccd_chr | Dragon |
 | 193 | abh | abh | Abhorrent |
-| 194 | stu | stu\_chr | Sea Turtle |
-| 195 | bwd | bwd\_chr | Dragon |
-| 196 | gdr | gdr\_chr | Dragon |
+| 194 | stu | stu_chr | Sea Turtle |
+| 195 | bwd | bwd_chr | Dragon |
+| 196 | gdr | gdr_chr | Dragon |
 | 197 | ron |  | Ronnie Test |
-| 198 | pri | pri\_chr | Dragon |
-| 199 | skn | skn\_chr | Shik'Nar |
-| 200 | rhp | sharvahl\_chr | Rockhopper |
-| 201 | unb | unb\_chr | Underbulk |
-| 202 | gmm | tenebrous\_chr | Grimling |
-| 203 | vac | vac\_chr | Worm |
+| 198 | pri | pri_chr | Dragon |
+| 199 | skn | skn_chr | Shik'Nar |
+| 200 | rhp | sharvahl_chr | Rockhopper |
+| 201 | unb | unb_chr | Underbulk |
+| 202 | gmm | tenebrous_chr | Grimling |
+| 203 | vac | vac_chr | Worm |
 | 204 | ecs |  | Evan Test |
-| 205 | kha | ssratemple\_chr | Shadel |
-| 206 | owb | paludal\_chr | Owlbear |
-| 207 | rnb | shadeweaver\_chr | Rhino Beetle |
-| 208 | vpm | tenebrous\_chr | Vampire |
-| 209 | eel | eel\_chr | Earth Elemental |
+| 205 | kha | ssratemple_chr | Shadel |
+| 206 | owb | paludal_chr | Owlbear |
+| 207 | rnb | shadeweaver_chr | Rhino Beetle |
+| 208 | vpm | tenebrous_chr | Vampire |
+| 209 | eel | eel_chr | Earth Elemental |
 | 210 | ael |  | Air Elemental |
-| 211 | wel | torgiran\_chr | Water Elemental |
-| 212 | fel | solrotower\_chr | Fire Elemental |
-| 213 | wet | twilight\_chr | Wetfang Minnow |
-| 214 | tho | thedeep\_chr | Thought Horror |
-| 215 | teg | umbral\_chr | Tegi |
+| 211 | wel | torgiran_chr | Water Elemental |
+| 212 | fel | solrotower_chr | Fire Elemental |
+| 213 | wet | twilight_chr | Wetfang Minnow |
+| 214 | tho | thedeep_chr | Thought Horror |
+| 215 | teg | umbral_chr | Tegi |
 | 216 | hsm |  | Horse |
-| 217 | shm | ssratemple\_chr | Shissar |
-| 218 | fug | povalor\_chr | Fungal Fiend |
-| 219 | vol | tenebrous\_chr | Vampire |
-| 220 | sgr | sgr\_chr | Stonegrabber |
-| 221 | sch | scarlet\_chr | Scarlet Cheetah |
-| 222 | zel | umbral\_chr | Zelniak |
-| 223 | lcr | podisease\_chr | Lightcrawler |
-| 224 | sdm | griegsend\_chr | Shade |
-| 225 | snn | snn\_chr | Sunfbelow |
-| 226 | srv | acrylia\_chr | Sun Revenant |
-| 227 | shr | fungusgrove\_chr | Shrieker |
-| 228 | gal | umbral\_chr | Galorian |
-| 229 | net | umbral\_chr | Netherbian |
-| 230 | akm | vexthal\_chr | Akheva |
+| 217 | shm | ssratemple_chr | Shissar |
+| 218 | fug | povalor_chr | Fungal Fiend |
+| 219 | vol | tenebrous_chr | Vampire |
+| 220 | sgr | sgr_chr | Stonegrabber |
+| 221 | sch | scarlet_chr | Scarlet Cheetah |
+| 222 | zel | umbral_chr | Zelniak |
+| 223 | lcr | podisease_chr | Lightcrawler |
+| 224 | sdm | griegsend_chr | Shade |
+| 225 | snn | snn_chr | Sunfbelow |
+| 226 | srv | acrylia_chr | Sun Revenant |
+| 227 | shr | fungusgrove_chr | Shrieker |
+| 228 | gal | umbral_chr | Galorian |
+| 229 | net | umbral_chr | Netherbian |
+| 230 | akm | vexthal_chr | Akheva |
 | 231 | spr | spr | Grieg Veneficus |
-| 232 | sow | tenebrous\_chr | Sonic Wolf |
+| 232 | sow | tenebrous_chr | Sonic Wolf |
 | 233 | gsm |  | Ground Shaker |
-| 234 | kes | umbral\_chr | Vah Shir Skeleton |
-| 235 | muh | muh\_chr | Wretch |
+| 234 | kes | umbral_chr | Vah Shir Skeleton |
+| 235 | muh | muh_chr | Wretch |
 | 236 | ser |  | Seru |
-| 237 | rem | rem\_chr | Recuso |
+| 237 | rem | rem_chr | Recuso |
 | 238 | vsk |  | Vah Shir |
 | 239 | vsg |  | Guard |
 | 240 | tpm |  | Teleport Man |
-| 241 | luj | luj\_chr | Werewolf |
-| 242 | nyd | nyd\_chr | Nymph |
-| 243 | nym | nym\_chr | Dryad |
-| 244 | trn | trn\_chr | Treant |
-| 245 | wrf | wrf\_chr | Fly |
-| 246 | tmr | powater\_chr | Tarew Marr |
-| 247 | sro | sro\_chr | Solusek Ro |
+| 241 | luj | luj_chr | Werewolf |
+| 242 | nyd | nyd_chr | Nymph |
+| 243 | nym | nym_chr | Dryad |
+| 244 | trn | trn_chr | Treant |
+| 245 | wrf | wrf_chr | Fly |
+| 246 | tmr | powater_chr | Tarew Marr |
+| 247 | sro | sro_chr | Solusek Ro |
 | 248 | clg | clg | Clockwork Golem |
-| 249 | clb | clb\_chr | Clockwork Brain |
-| 250 | skb | ponightmare\_chr | Banshee |
-| 251 | goj | pojustice\_chr | Guard of Justice |
-| 253 | dsb | potimeb\_chr | Diseased Fiend |
-| 254 | srg | solrotower\_chr | Solusek Ro Guard |
-| 255 | btx | codecay\_chr | Bertoxxulous |
-| 256 | tbu | pojustice\_chr | The Tribunal |
-| 257 | trt | nightmareb\_chr | Terris Thule |
-| 258 | veg | veg\_chr | Vegerog |
-| 259 | cro | ponightmare\_chr | Crocodile |
-| 260 | nbt | ponightmare\_chr | Bat |
-| 261 | slg | powater\_chr | Hraquis |
+| 249 | clb | clb_chr | Clockwork Brain |
+| 250 | skb | ponightmare_chr | Banshee |
+| 251 | goj | pojustice_chr | Guard of Justice |
+| 253 | dsb | potimeb_chr | Diseased Fiend |
+| 254 | srg | solrotower_chr | Solusek Ro Guard |
+| 255 | btx | codecay_chr | Bertoxxulous |
+| 256 | tbu | pojustice_chr | The Tribunal |
+| 257 | trt | nightmareb_chr | Terris Thule |
+| 258 | veg | veg_chr | Vegerog |
+| 259 | cro | ponightmare_chr | Crocodile |
+| 260 | nbt | ponightmare_chr | Bat |
+| 261 | slg | powater_chr | Hraquis |
 | 262 | trq |  | Tranquilion |
-| 263 | tin | poinnovation\_chr | Tin Soldier |
-| 264 | nmw | ponightmare\_chr | Nightmare Wraith |
-| 265 | mal | mal\_chr | Malarian |
-| 266 | kop | potimeb\_chr | Knight of Pestilence |
-| 267 | lep | podisease\_chr | Lepertoloth |
-| 268 | bub | podisease\_chr | Bubonian |
-| 269 | buu | podisease\_chr | Bubonian Underling |
-| 270 | pus | pus\_chr | Pusling |
-| 271 | wmp | wmp\_chr | Water Mephit |
-| 272 | str | str\_chr | Stormrider |
-| 273 | jub | poinnovation\_chr | Junk Beast |
+| 263 | tin | poinnovation_chr | Tin Soldier |
+| 264 | nmw | ponightmare_chr | Nightmare Wraith |
+| 265 | mal | mal_chr | Malarian |
+| 266 | kop | potimeb_chr | Knight of Pestilence |
+| 267 | lep | podisease_chr | Lepertoloth |
+| 268 | bub | podisease_chr | Bubonian |
+| 269 | buu | podisease_chr | Bubonian Underling |
+| 270 | pus | pus_chr | Pusling |
+| 271 | wmp | wmp_chr | Water Mephit |
+| 272 | str | str_chr | Stormrider |
+| 273 | jub | poinnovation_chr | Junk Beast |
 | 274 | brc | brc | Broken Clockwork |
-| 275 | glc | poinnovation\_chr | Giant Clockwork |
-| 276 | cwb | poinnovation\_chr | Clockwork Beetle |
-| 277 | nmg | ponightmare\_chr | Nightmare Goblin |
-| 278 | kar | postorms\_chr | Karana |
-| 279 | brv | brv\_chr | Blood Raven |
-| 280 | ggl | ggl\_chr | Nightmare Gargoyle |
-| 281 | moi | potorment\_chr | Mouth of Insanity |
+| 275 | glc | poinnovation_chr | Giant Clockwork |
+| 276 | cwb | poinnovation_chr | Clockwork Beetle |
+| 277 | nmg | ponightmare_chr | Nightmare Goblin |
+| 278 | kar | postorms_chr | Karana |
+| 279 | brv | brv_chr | Blood Raven |
+| 280 | ggl | ggl_chr | Nightmare Gargoyle |
+| 281 | moi | potorment_chr | Mouth of Insanity |
 | 282 | hss |  | Skeletal Horse |
-| 283 | sar | potorment\_chr | Saryrn |
-| 284 | fen | pofire\_chr | Fennin Ro |
-| 285 | trw | trw\_chr | Tormentor |
-| 286 | npt | ponightmare\_chr | Soul Devourer |
-| 287 | nmh | solrotower\_chr | Nightmare |
-| 288 | raz | powar\_chr | Rallos Zek |
-| 289 | vaz | powar\_chr | Vallon Zek |
-| 290 | taz | powar\_chr | Tallon Zek |
-| 291 | amp | poair\_chr | Air Mephit |
-| 292 | emp | emp\_chr | Earth Mephit |
-| 293 | fmp | fmp\_chr | Fire Mephit |
-| 294 | nmp | ponightmare\_chr | Nightmare Mephit |
-| 295 | zeb | potimeb\_chr | Zebuxoruk |
-| 296 | mar | hohonorb\_chr | Mithaniel Marr |
-| 297 | udk | udk\_chr | Undead Knight |
-| 298 | rth | poearthb\_chr | The Rathe |
-| 299 | xeg | poair\_chr | Xegony |
-| 300 | gtd | gtd\_chr | Fiend |
+| 283 | sar | potorment_chr | Saryrn |
+| 284 | fen | pofire_chr | Fennin Ro |
+| 285 | trw | trw_chr | Tormentor |
+| 286 | npt | ponightmare_chr | Soul Devourer |
+| 287 | nmh | solrotower_chr | Nightmare |
+| 288 | raz | powar_chr | Rallos Zek |
+| 289 | vaz | powar_chr | Vallon Zek |
+| 290 | taz | powar_chr | Tallon Zek |
+| 291 | amp | poair_chr | Air Mephit |
+| 292 | emp | emp_chr | Earth Mephit |
+| 293 | fmp | fmp_chr | Fire Mephit |
+| 294 | nmp | ponightmare_chr | Nightmare Mephit |
+| 295 | zeb | potimeb_chr | Zebuxoruk |
+| 296 | mar | hohonorb_chr | Mithaniel Marr |
+| 297 | udk | udk_chr | Undead Knight |
+| 298 | rth | poearthb_chr | The Rathe |
+| 299 | xeg | poair_chr | Xegony |
+| 300 | gtd | gtd_chr | Fiend |
 | 301 | ont |  | Test Object |
-| 302 | crb | crb\_chr | Crab |
-| 303 | phx | solrotower\_chr | Phoenix |
-| 304 | tmt | tmt\_chr | Dragon |
-| 305 | pbr | pbr\_chr | Bear |
+| 302 | crb | crb_chr | Crab |
+| 303 | phx | solrotower_chr | Phoenix |
+| 304 | tmt | tmt_chr | Dragon |
+| 305 | pbr | pbr_chr | Bear |
 | 306 | sta | sta | Giant |
-| 307 | ssa | postorms\_chr | Giant |
-| 308 | skr | postorms\_chr | Giant |
-| 309 | svo | postorms\_chr | Giant |
-| 310 | sma | postorms\_chr | Giant |
-| 311 | stf | stf\_chr | Giant |
-| 312 | sce | postorms\_chr | Giant |
-| 313 | wrw | potactics\_chr | War Wraith |
-| 314 | wru | hohonora\_chr | Wrulon |
-| 315 | krk | krk\_chr | Kraken |
-| 316 | paf | paf\_chr | Poison Frog |
+| 307 | ssa | postorms_chr | Giant |
+| 308 | skr | postorms_chr | Giant |
+| 309 | svo | postorms_chr | Giant |
+| 310 | sma | postorms_chr | Giant |
+| 311 | stf | stf_chr | Giant |
+| 312 | sce | postorms_chr | Giant |
+| 313 | wrw | potactics_chr | War Wraith |
+| 314 | wru | hohonora_chr | Wrulon |
+| 315 | krk | krk_chr | Kraken |
+| 316 | paf | paf_chr | Poison Frog |
 | 317 | qzt |  | Nilborien |
-| 318 | val | potactics\_chr | Valorian |
-| 319 | wrb | powar\_chr | War Boar |
-| 320 | efe | efe\_chr | Efreeti |
-| 321 | wbu | wbu\_chr | War Boar |
-| 322 | bkn | povalor\_chr | Valorian |
+| 318 | val | potactics_chr | Valorian |
+| 319 | wrb | powar_chr | War Boar |
+| 320 | efe | efe_chr | Efreeti |
+| 321 | wbu | wbu_chr | War Boar |
+| 322 | bkn | povalor_chr | Valorian |
 | 323 | aam | aam | Animated Armor |
 | 324 | udf |  | Undead Footman |
-| 325 | rzm | powar\_chr | Rallos Zek Minion |
-| 326 | spd | spd\_chr | Arachnid |
-| 327 | spl | povalor\_chr | Crystal Spider |
+| 325 | rzm | powar_chr | Rallos Zek Minion |
+| 326 | spd | spd_chr | Arachnid |
+| 327 | spl | povalor_chr | Crystal Spider |
 | 328 | zbc |  | Zebuxoruk's Cage |
 | 329 | btp |  | BoT Portal |
-| 331 | tbm | tbm\_chr | Troll |
-| 332 | fbm | fbm\_chr | Troll |
-| 333 | tsm | tsm\_chr | Troll |
+| 331 | tbm | tbm_chr | Troll |
+| 332 | fbm | fbm_chr | Troll |
+| 333 | tsm | tsm_chr | Troll |
 | 334 | spb | spb | Ghost |
-| 335 | tpb | tpb\_chr | Pirate |
-| 336 | tvp | tvp\_chr | Pirate |
-| 337 | tpo | tpo\_chr | Pirate |
-| 338 | gpm | gpm\_chr | Pirate |
-| 339 | dpm | dpm\_chr | Pirate |
-| 340 | opm | opm\_chr | Pirate |
-| 341 | hpm | hpm\_chr | Pirate |
-| 342 | epm | epm\_chr | Pirate |
+| 335 | tpb | tpb_chr | Pirate |
+| 336 | tvp | tvp_chr | Pirate |
+| 337 | tpo | tpo_chr | Pirate |
+| 338 | gpm | gpm_chr | Pirate |
+| 339 | dpm | dpm_chr | Pirate |
+| 340 | opm | opm_chr | Pirate |
+| 341 | hpm | hpm_chr | Pirate |
+| 342 | epm | epm_chr | Pirate |
 | 343 | rpf |  | Frog |
-| 344 | tzm | tzm\_chr | Troll Zombie |
-| 345 | lug | lug\_chr | Luggald |
-| 346 | lga | lga\_chr | Luggald |
-| 347 | lgr | lgr\_chr | Luggalds |
+| 344 | tzm | tzm_chr | Troll Zombie |
+| 345 | lug | lug_chr | Luggald |
+| 346 | lga | lga_chr | Luggald |
+| 347 | lgr | lgr_chr | Luggalds |
 | 348 | fmt |  | Drogmore |
-| 349 | fsk | fsk\_chr | Froglok Skeleton |
+| 349 | fsk | fsk_chr | Froglok Skeleton |
 | 350 | fud | fud | Undead Froglok |
-| 351 | iwm | iwm\_chr | Knight of Hate |
-| 352 | izm | izm\_chr | Arcanist of Hate |
-| 353 | vek | vek\_chr | Veksar |
-| 354 | gvk | gvk\_chr | Veksar |
-| 355 | bvk | bvk\_chr | Veksar |
-| 356 | wof | wof\_chr | Chokidai |
-| 357 | wuf | wuf\_chr | Undead Chokidai |
+| 351 | iwm | iwm_chr | Knight of Hate |
+| 352 | izm | izm_chr | Arcanist of Hate |
+| 353 | vek | vek_chr | Veksar |
+| 354 | gvk | gvk_chr | Veksar |
+| 355 | bvk | bvk_chr | Veksar |
+| 356 | wof | wof_chr | Chokidai |
+| 357 | wuf | wuf_chr | Undead Chokidai |
 | 358 | uvk |  | Undead Veksar |
-| 359 | lmm | lmm\_chr | Vampire |
-| 360 | mmm | mmm\_chr | Vampire |
-| 361 | rom | rom\_chr | Rujarkian Orc |
-| 362 | bgb | bgb\_chr | Bone Golem |
-| 363 | syn | syn\_chr | Synarcana |
-| 364 | sem | sem\_chr | Sand Elf |
-| 365 | mmv | mmv\_chr | Vampire |
-| 366 | roe | roe\_chr | Rujarkian Orc |
+| 359 | lmm | lmm_chr | Vampire |
+| 360 | mmm | mmm_chr | Vampire |
+| 361 | rom | rom_chr | Rujarkian Orc |
+| 362 | bgb | bgb_chr | Bone Golem |
+| 363 | syn | syn_chr | Synarcana |
+| 364 | sem | sem_chr | Sand Elf |
+| 365 | mmv | mmv_chr | Vampire |
+| 366 | roe | roe_chr | Rujarkian Orc |
 | 367 | skt | skt | Skeleton |
-| 368 | mmy | mmy\_chr | Mummy |
-| 369 | gbl | gbl\_chr | Goblin |
-| 370 | nin | nin\_chr | Insect |
-| 371 | fgh | fgh\_chr | Froglok Ghost |
-| 372 | drv | drv\_chr | Dervish |
+| 368 | mmy | mmy_chr | Mummy |
+| 369 | gbl | gbl_chr | Goblin |
+| 370 | nin | nin_chr | Insect |
+| 371 | fgh | fgh_chr | Froglok Ghost |
+| 372 | drv | drv_chr | Dervish |
 | 373 | sdc | sdc | Shade |
 | 374 | glm | glm | Golem |
-| 375 | eey | eey\_chr | Evil Eye |
-| 376 | box | box\_chr | Box |
-| 377 | brl | brl\_chr | Barrel |
+| 375 | eey | eey_chr | Evil Eye |
+| 376 | box | box_chr | Box |
+| 377 | brl | brl_chr | Barrel |
 | 378 | cst | cst | Chest |
-| 379 | vas | vas\_chr | Vase |
-| 380 | tbl | tbl\_chr | Table |
-| 381 | rak | rak\_chr | Weapon Rack |
-| 382 | cpt | cpt\_chr | Coffin |
-| 383 | bon | bon\_chr | Bones |
-| 384 | jkr | jkr\_chr | Jokester |
-| 385 | tnm | tnm\_chr | Nihil |
-| 386 | tem | tem\_cht | Trusik |
-| 387 | tgl | tgl\_chr | Stone Worker |
-| 388 | twf | twf\_chr | Hynid |
-| 389 | tac | tac\_chr | Turepta |
-| 390 | tmb | tmb\_chr | Cragbeast |
-| 391 | ttb | ttb\_chr | Stonemite |
-| 392 | iwh | iwh\_chr | Ukun |
-| 393 | iec | iec\_chr | Ixt |
-| 394 | ila | ila\_chr | Ikaav |
-| 395 | icy | icy\_chr | Aneuk |
-| 396 | ihu | ihu\_chr | Kyv |
-| 397 | isb | isb\_chr | Noc |
-| 398 | ibr | ibr\_chr | Ra\`tuk |
-| 399 | ifc | ifc\_chr | Taneth |
-| 400 | ilb | ilb\_chr | Huvul |
+| 379 | vas | vas_chr | Vase |
+| 380 | tbl | tbl_chr | Table |
+| 381 | rak | rak_chr | Weapon Rack |
+| 382 | cpt | cpt_chr | Coffin |
+| 383 | bon | bon_chr | Bones |
+| 384 | jkr | jkr_chr | Jokester |
+| 385 | tnm | tnm_chr | Nihil |
+| 386 | tem | tem_cht | Trusik |
+| 387 | tgl | tgl_chr | Stone Worker |
+| 388 | twf | twf_chr | Hynid |
+| 389 | tac | tac_chr | Turepta |
+| 390 | tmb | tmb_chr | Cragbeast |
+| 391 | ttb | ttb_chr | Stonemite |
+| 392 | iwh | iwh_chr | Ukun |
+| 393 | iec | iec_chr | Ixt |
+| 394 | ila | ila_chr | Ikaav |
+| 395 | icy | icy_chr | Aneuk |
+| 396 | ihu | ihu_chr | Kyv |
+| 397 | isb | isb_chr | Noc |
+| 398 | ibr | ibr_chr | Ra\tuk |
+| 399 | ifc | ifc_chr | Taneth |
+| 400 | ilb | ilb_chr | Huvul |
 | 401 | iwb |  | Mutna |
-| 402 | ise | ise\_chr | Mastruq |
+| 402 | ise | ise_chr | Mastruq |
 | 403 | tln | tln | Taelosian |
-| 404 | shp | shp\_chr | Discord Ship |
+| 404 | shp | shp_chr | Discord Ship |
 | 405 | tgo | tgo | Stone Worker |
 | 406 | clv | clv | Mata Muram |
 | 407 | mur | mur | Lightning Warrior |
@@ -574,12 +574,12 @@ Below is a list of NPC Race Models that are used in the \_chr text files in the 
 | 592 | i15 |  | Coffin |
 | 593 | i16 |  | Guardian CPU |
 | 594 | mwo |  | Worg |
-| 595 | obj\_blimp |  | Mansion |
-| 596 | obp\_meldrath |  | Floating Island |
+| 595 | obj_blimp |  | Mansion |
+| 596 | obp_meldrath |  | Floating Island |
 | 597 | mcs |  | Cragslither |
 | 598 | mwr |  | Wrulon |
 | 599 | s01 |  |  |
-| 600 | ivm | qeynos\_chr | Invisible Man of Zomm |
+| 600 | ivm | qeynos_chr | Invisible Man of Zomm |
 | 601 | swc | swc | Robocopter of Zomm |
 | 602 | bur | bur | Burynai |
 | 603 | fgg |  | Frog |

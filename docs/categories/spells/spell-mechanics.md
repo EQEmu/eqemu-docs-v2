@@ -4,9 +4,9 @@
 
 **Collection of details on various spell effect mechanics.**
 
-\*Most of the mechanics described in this section were deduced from extensive personal parsing on live server \~ Kayen
+*Most of the mechanics described in this section were deduced from extensive personal parsing on live server .~ Kayen
 
-\*Term 'resist check' means essessentially the chance for the spell to be resisted. Resist checks can occur for various reasons after the spell has already landed. Failed 'resist check' means as if it was resisted.
+*Term 'resist check' means essessentially the chance for the spell to be resisted. Resist checks can occur for various reasons after the spell has already landed. Failed 'resist check' means as if it was resisted.
 
 **ROOT**
 
@@ -26,7 +26,7 @@
     * When multiple roots are applied to the same target the root in the first slot is always removed first from spell damage.
     * Only roots from determinental spells can be broken by direct damage spells.
 
-\*The following spell effects (Charm, Mez, Pacify) resist chances are influenced in part by this specific **charisma modifier.**
+*The following spell effects (Charm, Mez, Pacify) resist chances are influenced in part by this specific **charisma modifier.**
 
 * Charisma Modifer applies a bonus/penalty to your resist chance base on your charisma statistic.
   * For Charisma >= 75 and <= 255, every 10 Charisma is equivelent to a -1 resist modifier. _(-1 = 0,5 % reduction in resist chance)_
@@ -81,7 +81,7 @@
 * **SE_CancelMagic (27), SE_Purify (291), SE_DispelDetrimental (124)**, **SE_DispelBeneficial (209)**
   * When dispel is cast every buff starting with the first buff slot is checked to see if it can be removed. _(Buffs can be set immune to dispel in table)_
     * If it fails to dispel a buff it will move on to the next buff and try that until there are no buffs left to check.
-    * Dispels often have multiple chances to dispel as in [Annul Magic](http://lucy.allakhazam.com/spell.html?id=1526\&source=Live)
+    * Dispels often have multiple chances to dispel as in [Annul Magic](http://lucy.allakhazam.com/spell.html?id=1526&source=Live)
       * Meaning for each 'slot' there is a dispel, is its own independent chance to run through your buff list and remove a buff.
   * To determine if the buff will be removed dispels check the level of the caster agianst the buff level.
     * Buff Level is determined by the level of the caster who that buff.
@@ -96,7 +96,7 @@
         * This means that the level difference is (15+9) - 24 = 0
         * Resutling in a 36% chance to remove the buff.
 
-**6/6/14** - \[**PATCH 5-20-14**] Note: _Updated all spells which use Remove Detrimental and Cancel Beneficial spell effects to use a new method. The chances for those spells to affect their targets have not changed unless otherwise noted_
+**6/6/14** - [**PATCH 5-20-14**] Note: _Updated all spells which use Remove Detrimental and Cancel Beneficial spell effects to use a new method. The chances for those spells to affect their targets have not changed unless otherwise noted_
 
 * Base value now defines a percent chance for success? Where Base / 10 = Chance (Ie. 950 / 10 = 95%)
 * _At present time this effect is supported using PRE or POST patch values._
@@ -106,16 +106,16 @@
 * **SE_DeathSave (150)**
   * When a DeathSave buff (_Divine Intervention / Death Pact)_ is applied to a target the owner of the buff is given a chance at receiving a heal when under 15% hit points.
     * This effect always triggers when under 15% HP.
-      * The heal amount is determined by the base value \[1=Partial 3000 HP] \[2=Full 8000 HP].
+      * The heal amount is determined by the base value [1=Partial 3000 HP] [2=Full 8000 HP].
         * If Max Value is set as heal amount this value will be used instead as the heal amount.
       * Chance to receive a heal is determined by the owner of the buffs Charisma.
-        * Chance = ((Charisma \* 3) +1) / 10) 
+        * Chance = ((Charisma * 3) +1) / 10) 
         * If chance is successful then the owner of the buff recieves the heal and the buff FADES.
         * If chance is NOT succesful then the buff FADES.
           * OR If you fail and have an effect from **SE_UnfailingDivinity (277)** _**'**AA Unfailing Divinity'_ you are given a second chance.
             * The chance is the same as the initial check using Charisma.
             * If succesful then the owner of the buff recievies a heal that is modified by the value of **SE_UnfailingDivinity (277)**
-              * If value of effect is 20 then your heal is only 20% of the initial value _(Ie. 8000 \* 20 / 100)_
+              * If value of effect is 20 then your heal is only 20% of the initial value _(Ie. 8000 * 20 / 100)_
             * If chance is NOT succesful then buff FADES
 
 **DIVINE SAVE**
@@ -124,16 +124,16 @@
   * Divine Save provides an opportunity to avoid death. The effect is triggered on the owner of the buff/aa/item with this effect when actual character death occurs (after delay death effects).
     * The base value determines the chance for this effect to occur upon death, if successful...
       * The owner of the effect has their HP restored to (1)
-      * A spell is cast on the owner (Spell ID determined by base2/limit). This is typically the heal spell [Touch of the Divine I](http://lucy.allakhazam.com/spell.html?id=4544\&source=Live).
-      * The short duration buff [Touch of the Divine](http://lucy.allakhazam.com/spell.html?id=4789\&source=Live) is ALWAYS cast, providing HOT/Removal of Determineal Buffs/Invulnerability.
+      * A spell is cast on the owner (Spell ID determined by base2/limit). This is typically the heal spell [Touch of the Divine I](http://lucy.allakhazam.com/spell.html?id=4544&source=Live).
+      * The short duration buff [Touch of the Divine](http://lucy.allakhazam.com/spell.html?id=4789&source=Live) is ALWAYS cast, providing HOT/Removal of Determineal Buffs/Invulnerability.
 
 **SE_FcBaseEffects (413)**
 
 * Focus effect that modifies the base values_ (value before any other modifications are applied)_ of many spell effects _(not typically subject to focus effects). _
 * List of known spell effects that are FcBaseEffects modifies
   * SE_SkillAttack - Modifies base weapon damage amount
-  * Direct/DoT base spell damage amounts. [ Spell Damage Modifiers](http://wiki.eqemulator.org/p?Spells_DamageModifiers\&frm=Spells_Mechanics)
-  * Heal/HoT base spell healing amounts. [ Heal Modifiers](http://wiki.eqemulator.org/p?Spells_HealModifiers\&frm=Spells_Mechanics)
+  * Direct/DoT base spell damage amounts. [ Spell Damage Modifiers](http://wiki.eqemulator.org/p?Spells_DamageModifiers&frm=Spells_Mechanics)
+  * Heal/HoT base spell healing amounts. [ Heal Modifiers](http://wiki.eqemulator.org/p?Spells_HealModifiers&frm=Spells_Mechanics)
   * SE_Rune - Modifies base rune amount
   * Bard instrument modifiers - NOT IMPLEMENTED  _(Was reports of crashes possibly due to this so remains disabled till can be resolved)_
   * Bard song effects (regular foci do not work on bard songs) - NOT IMPLEMENTED _(Was reports of crashes possibly due to this so remains disabled till can be resolved)_

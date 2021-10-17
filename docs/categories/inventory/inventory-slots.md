@@ -4,7 +4,7 @@
 
 ### Server-recognized slots
 
-#### Equipment slots \(worn\)
+#### Equipment slots (worn)
 
 * Charm = 0
 * Ear1 = 1
@@ -32,7 +32,7 @@
 
 ![Equipment Slots](../../gitbook/assets/image.png)
 
-#### General slots \(personal\)
+#### General slots (personal)
 
 * General1 = 23
 * General2 = 24
@@ -125,37 +125,37 @@ Bags in the shared bank are:
 
 ### Developer information on client-specific slot support
 
-\(in-work\)
+(in-work)
 
 **SoF Slots**
 
 #### Equipped slots
 
-\(somebody should make this prettier some day\)
+(somebody should make this prettier some day)
 
-* SLOT\_CHARM= 0
-* SLOT\_EAR01= 1
-* SLOT\_HEAD= 2
-* SLOT\_FACE= 3
-* SLOT\_EAR02= 4
-* SLOT\_NECK= 5
-* SLOT\_SHOULDER= 6
-* SLOT\_ARMS= 7
-* SLOT\_BACK= 8
-* SLOT\_BRACER01= 9
-* SLOT\_BRACER02= 10
-* SLOT\_RANGE= 11
-* SLOT\_HANDS= 12
-* SLOT\_PRIMARY= 13
-* SLOT\_SECONDARY= 14
-* SLOT\_RING01= 15
-* SLOT\_RING02= 16
-* SLOT\_CHEST= 17
-* SLOT\_LEGS= 18
-* SLOT\_FEET= 19
-* SLOT\_WAIST= 20
-* SLOT\_POWERSOURCE= 21
-* SLOT\_AMMO= 22
+* SLOT_CHARM= 0
+* SLOT_EAR01= 1
+* SLOT_HEAD= 2
+* SLOT_FACE= 3
+* SLOT_EAR02= 4
+* SLOT_NECK= 5
+* SLOT_SHOULDER= 6
+* SLOT_ARMS= 7
+* SLOT_BACK= 8
+* SLOT_BRACER01= 9
+* SLOT_BRACER02= 10
+* SLOT_RANGE= 11
+* SLOT_HANDS= 12
+* SLOT_PRIMARY= 13
+* SLOT_SECONDARY= 14
+* SLOT_RING01= 15
+* SLOT_RING02= 16
+* SLOT_CHEST= 17
+* SLOT_LEGS= 18
+* SLOT_FEET= 19
+* SLOT_WAIST= 20
+* SLOT_POWERSOURCE= 21
+* SLOT_AMMO= 22
 
 #### Inventory Slots
 
@@ -190,7 +190,7 @@ Bags in personal inventory are:
 
 #### Cursor
 
-Cursor is slot 31, and the bag slots for the cursor are 342-&gt;351 \(haven't confirmed slots inside bag on cursor for SoF yet\).
+Cursor is slot 31, and the bag slots for the cursor are 342-&gt;351 (haven't confirmed slots inside bag on cursor for SoF yet).
 
 #### SoF Bank
 

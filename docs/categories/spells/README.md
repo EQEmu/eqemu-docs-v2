@@ -59,7 +59,7 @@ So we have established that the Greater Healing spell is capable of changing cur
 
 Formula values are integers that are used in coordination with the Spell Effect to determine its outcome as well. Each Spell Effect can use a different formula, and those are found in the [spell_effects.cpp](https://github.com/EQEmu/Server/blob/master/zone/spell_effects.cpp) source file. A wiki page also details those [Base Value Formulas](https://eqemu.gitbook.io/server/categories/spells/base-value-formulas) if you're not comfortable looking at the code.
 
-In the case of our Greater Healing spell, we see that the value for Formula in Slot 1 is 7 (formula1 field in your database). Referencing the source, we find that the spell calc is Base Value + User Level _ _\* Formula. If we assume that we are a level 20 Cleric, casting the Greater Healing spell: 140 + 20 \* 7 = 280. This of course assumes that there are no focus effects being taken into consideration. If we are instead a level 29 Druid, we would hit the spell's max value: 140 + 29 \* 7 = 343--which is greater than the 300 hit point Max Value. As a result, the Druid would only heal 300 hit points using this spell.
+In the case of our Greater Healing spell, we see that the value for Formula in Slot 1 is 7 (formula1 field in your database). Referencing the source, we find that the spell calc is Base Value + User Level _ _* Formula. If we assume that we are a level 20 Cleric, casting the Greater Healing spell: 140 + 20 * 7 = 280. This of course assumes that there are no focus effects being taken into consideration. If we are instead a level 29 Druid, we would hit the spell's max value: 140 + 29 * 7 = 343--which is greater than the 300 hit point Max Value. As a result, the Druid would only heal 300 hit points using this spell.
 
 ### Summary
 
@@ -94,26 +94,26 @@ We see that slots 1 through 4 have something going on, and slots 5 through 12 ar
 
 Cross reference the Spell Effects table.
 
-`Slot 1: 97 - SE_ManaPool: Increase/Decrease max mana pool `\
-`Slot 2: 15 - SE_CurrentMana: Direct +/- mana, duration allows for mana over time `\
-`Slot 3: 8 - SE_INT: +/- INT `\
-`Slot 4: 9 - SE_WIS: +/- WIS `\
+`Slot 1: 97 - SE_ManaPool: Increase/Decrease max mana pool `.
+`Slot 2: 15 - SE_CurrentMana: Direct +/- mana, duration allows for mana over time `.
+`Slot 3: 8 - SE_INT: +/- INT `.
+`Slot 4: 9 - SE_WIS: +/- WIS `.
 
 
 #### Effect Base Value
 
-`Slot 1: SE_ManaPool - +250 `\
-`Slot 2: SE_CurrentMana - +14 `\
-`Slot 3: SE_INT - +25 `\
-`Slot 4: SE_WIS - +25 `\
+`Slot 1: SE_ManaPool - +250 `.
+`Slot 2: SE_CurrentMana - +14 `.
+`Slot 3: SE_INT - +25 `.
+`Slot 4: SE_WIS - +25 `.
 
 
 #### Max
 
-`Slot 1: SE_ManaPool - 250 `\
-`Slot 2: SE_CurrentMana - 14 `\
-`Slot 3: SE_INT - 25 `\
-`Slot 4: SE_WIS - 25 `\
+`Slot 1: SE_ManaPool - 250 `.
+`Slot 2: SE_CurrentMana - 14 `.
+`Slot 3: SE_INT - 25 `.
+`Slot 4: SE_WIS - 25 `.
 
 
 #### Formula
@@ -158,31 +158,31 @@ We see that slots 1 through 6 have something going on, and slots 7 through 12 ar
 
 Cross reference the Spell Effects table.
 
-`Slot 1: 1 - SE_ArmorClass: +/- AC `\
-`Slot 2: 69 - SE_TotalHP: Increases Max HP (standard 'HP Buffs') `\
-`Slot 3: 79 - SE_CurrentHPOnce: Direct Damage/Healing `\
-`Slot 4: 15 - SE_CurrentMana: Direct +/- mana, duration allows for mana over time `\
-`Slot 5: 148 - SE_StackingCommand_Block: Prevents buff from taking hold if criteria met. (SLOT = 'formula - 201') Buff Stacking `\
-`Slot 6: 148 - SE_StackingCommand_Block: Prevents buff from taking hold if criteria met. (SLOT = 'formula - 201') Buff Stacking `\
+`Slot 1: 1 - SE_ArmorClass: +/- AC `.
+`Slot 2: 69 - SE_TotalHP: Increases Max HP (standard 'HP Buffs') `.
+`Slot 3: 79 - SE_CurrentHPOnce: Direct Damage/Healing `.
+`Slot 4: 15 - SE_CurrentMana: Direct +/- mana, duration allows for mana over time `.
+`Slot 5: 148 - SE_StackingCommand_Block: Prevents buff from taking hold if criteria met. (SLOT = 'formula - 201') Buff Stacking `.
+`Slot 6: 148 - SE_StackingCommand_Block: Prevents buff from taking hold if criteria met. (SLOT = 'formula - 201') Buff Stacking `
 
 
 #### Effect Base Value
 
-`Slot 1: SE_ArmorClass - +25 `\
-`Slot 2: SE_TotalHP - +290 `\
-`Slot 3: SE_CurrentHPOnce - +290 (heal up the new-found reservoir of hit points) `\
-`Slot 4: SE_CurrentMana - +6 (remember duration allows for mana over time) `\
-`Slot 5: SE_StackingCommand_Block - 1 (block spells using SE_ArmorClass) `\
-`Slot 6: SE_StackingCommand_Block - 69 (block spells using SE_TotalHP) `\
+`Slot 1: SE_ArmorClass - +25 `
+`Slot 2: SE_TotalHP - +290 `
+`Slot 3: SE_CurrentHPOnce - +290 (heal up the new-found reservoir of hit points) `
+`Slot 4: SE_CurrentMana - +6 (remember duration allows for mana over time) `
+`Slot 5: SE_StackingCommand_Block - 1 (block spells using SE_ArmorClass) `
+`Slot 6: SE_StackingCommand_Block - 69 (block spells using SE_TotalHP) `
 
 
 #### Max
 
-`Slot 1: SE_ArmorClass - 80 `\
-`Slot 2: SE_TotalHP - 485 `\
-`Slot 3: SE_CurrentHPOnce - 485 `\
-`Slot 4: SE_CurrentMana - 0 (not used) `\
-`Slot 5: SE_StackingCommand_Block - Less than 1081 (block spells with less than 1081 AC addition)`\
+`Slot 1: SE_ArmorClass - 80 `
+`Slot 2: SE_TotalHP - 485 `
+`Slot 3: SE_CurrentHPOnce - 485 `
+`Slot 4: SE_CurrentMana - 0 (not used) `
+`Slot 5: SE_StackingCommand_Block - Less than 1081 (block spells with less than 1081 AC addition)`
 `Slot 6: SE_StackingCommand_Block - Less than 2486 (block spells with less than 2486 HP addition)`
 
 #### Formula
@@ -254,7 +254,7 @@ Two fields impact the duration of buffs: buffduration (in ticks) and buffduratio
 
 ### Buff Duration Formula 0
 
-Not a buff! This formula is used for instant spells. Ex. [Greater Healing](http://lucy.allakhazam.com/spell.html?id=15\&source=Live)
+Not a buff! This formula is used for instant spells. Ex. [Greater Healing](http://lucy.allakhazam.com/spell.html?id=15&source=Live)
 
 ### Buff Duration Formula 1
 
@@ -262,7 +262,7 @@ Not a buff! This formula is used for instant spells. Ex. [Greater Healing](http:
 
 Choose the lesser integer of the two values: Level ÷ 2, or the buffduration field.
 
-Example: [Heat Blood](http://lucy.allakhazam.com/spell.html?id=360\&source=Live), Spell ID 360, buffduration field = 6.
+Example: [Heat Blood](http://lucy.allakhazam.com/spell.html?id=360&source=Live), Spell ID 360, buffduration field = 6.
 
 _As a level 10 NEC:_
 
@@ -294,7 +294,7 @@ Smallest Answer: 6 ticks
 
 Choose the lesser integer of the two values: Level ÷ 2 + 5, or the buffduration field.
 
-Example: [Root](http://lucy.allakhazam.com/spell.html?id=230\&source=Live), Spell ID 230, buffduration field = 8.
+Example: [Root](http://lucy.allakhazam.com/spell.html?id=230&source=Live), Spell ID 230, buffduration field = 8.
 
 _As a level 4 WIZ:_
 
@@ -324,7 +324,7 @@ Smallest Answer: 8 ticks
 
 Choose the lesser integer of the two values: Level x 30, or the buffduration field.
 
-Example: [Invisibility](http://lucy.allakhazam.com/spell.html?id=42\&source=Live), Spell ID 42, buffduration field = 200.
+Example: [Invisibility](http://lucy.allakhazam.com/spell.html?id=42&source=Live), Spell ID 42, buffduration field = 200.
 
 _As a level 4 ENC:_
 
@@ -350,7 +350,7 @@ Smallest Answer: 200 ticks
 
 50, unless buffduration is lower.
 
-Example: [Resurrection Sickness](http://lucy.allakhazam.com/spell.html?id=757\&source=Live), Spell ID 757, buffduration field = 50.
+Example: [Resurrection Sickness](http://lucy.allakhazam.com/spell.html?id=757&source=Live), Spell ID 757, buffduration field = 50.
 
 ```
 buffduration = X
@@ -359,7 +359,7 @@ No, they are the same.
 Smallest Answer: 50 ticks
 ```
 
-Example: [Song of the Deep Seas](http://lucy.allakhazam.com/spell.html?id=1973\&source=Live), Spell ID 1973, buffduration field = 25.
+Example: [Song of the Deep Seas](http://lucy.allakhazam.com/spell.html?id=1973&source=Live), Spell ID 1973, buffduration field = 25.
 
 ```
 buffduration = X
@@ -372,7 +372,7 @@ Smallest Answer: 25 ticks
 
 2, unless buffduration is lower.
 
-Example: [Flash of Light](http://lucy.allakhazam.com/spell.html?id=201\&source=Live), Spell ID 201, buffduration field = 2.
+Example: [Flash of Light](http://lucy.allakhazam.com/spell.html?id=201&source=Live), Spell ID 201, buffduration field = 2.
 
 ```
 buffduration = X
@@ -381,7 +381,7 @@ No, they are the same.
 Smallest Answer: 2 ticks
 ```
 
-Example: [The Unspoken Word](http://lucy.allakhazam.com/spell.html?id=1545\&source=Live), Spell ID 1545, buffduration field = 1.
+Example: [The Unspoken Word](http://lucy.allakhazam.com/spell.html?id=1545&source=Live), Spell ID 1545, buffduration field = 1.
 
 ```
 buffduration = X
@@ -394,7 +394,7 @@ Smallest Answer: 1 ticks
 
 Choose the lesser integer of the two values: Level ÷ 2 + 2, or the buffduration field.
 
-Example: [Drowsy](http://lucy.allakhazam.com/spell.html?id=270\&source=Live), Spell ID 270, buffduration field = 35.
+Example: [Drowsy](http://lucy.allakhazam.com/spell.html?id=270&source=Live), Spell ID 270, buffduration field = 35.
 
 _As a level 6 SHM:_
 
@@ -420,7 +420,7 @@ Smallest Answer: 35 ticks
 
 Choose the lesser integer of the two values: Level, or the buffduration field.
 
-Example: [Fear](http://lucy.allakhazam.com/spell.html?id=229\&source=Live), Spell ID 229, buffduration field = 3.
+Example: [Fear](http://lucy.allakhazam.com/spell.html?id=229&source=Live), Spell ID 229, buffduration field = 3.
 
 _As a level 2 NEC:_
 
@@ -444,7 +444,7 @@ Smallest Answer: 3 ticks
 
 Choose the lesser integer of the two values: Level + 10, or the buffduration field.
 
-Example: [Vampiric Embrace](http://lucy.allakhazam.com/spell.html?id=359\&source=Live), Spell ID 359, buffduration field = 75.
+Example: [Vampiric Embrace](http://lucy.allakhazam.com/spell.html?id=359&source=Live), Spell ID 359, buffduration field = 75.
 
 _As a level 7 NEC:_
 
@@ -470,7 +470,7 @@ Smallest Answer: 75 ticks
 
 Choose the lesser integer of the two values: 2 x Level + 10, or the buffduration field.
 
-Example: [Ensnare](http://lucy.allakhazam.com/spell.html?id=512\&source=Live), Spell ID 512, buffduration field = 140.
+Example: [Ensnare](http://lucy.allakhazam.com/spell.html?id=512&source=Live), Spell ID 512, buffduration field = 140.
 
 _As a level 26 DRU:_
 
@@ -496,7 +496,7 @@ Smallest Answer: 140 ticks
 
 Choose the lesser integer of the two values: 3 x Level + 10, or the buffduration field.
 
-Example: [Regeneration](http://lucy.allakhazam.com/spell.html?id=144\&source=Live), Spell ID 144, buffduration field = 205.
+Example: [Regeneration](http://lucy.allakhazam.com/spell.html?id=144&source=Live), Spell ID 144, buffduration field = 205.
 
 _As a level 34 DRU:_
 
@@ -522,7 +522,7 @@ Smallest Answer: 205 ticks
 
 Choose the lesser integer of the two values: 30 x (Level + 3), or the buffduration field.
 
-Example: [See Invisible](http://lucy.allakhazam.com/spell.html?id=80\&source=Live), Spell ID 80, buffduration field = 270.
+Example: [See Invisible](http://lucy.allakhazam.com/spell.html?id=80&source=Live), Spell ID 80, buffduration field = 270.
 
 _As a level 4 WIZ:_
 
@@ -576,7 +576,7 @@ Used by some potions and powerful spells.
 
 ### Buff Duration Formula 50
 
-Permanent. Used for permanent buffs that might get stripped due to other forces (IE casting when using [Perfected Invisibility](http://lucy.allakhazam.com/spell.html?id=13219\&source=Live)).
+Permanent. Used for permanent buffs that might get stripped due to other forces (IE casting when using [Perfected Invisibility](http://lucy.allakhazam.com/spell.html?id=13219&source=Live)).
 
 ### Buff Duration Formula 51
 

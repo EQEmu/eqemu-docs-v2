@@ -2,7 +2,7 @@
 
 ## Description
 
-**\* Manipulating entity lists is EXTREMELY powerful and if you were smart you would read this article.**
+*** Manipulating entity lists is EXTREMELY powerful and if you were smart you would read this article.**
 
 This article also assumes you have read other articles and have a relatively basic understanding of the quest/scripting engine.
 
@@ -15,7 +15,7 @@ To start off, an entity could be any of the following:
 * **Object** ($object - not implied)
 * **Corpse** ($corpse - not implied)
 
-In this simple example below you can always assume that the **client** is the player who **'triggered'** the script to occur, and the **NPC** who is bound to the script that has triggered:[?](http://wiki.eqemulator.org/p?Entity_Lists\_-\_How_to_Use_Them\&frm=Ultimate_Perl_Reference#)
+In this simple example below you can always assume that the **client** is the player who **'triggered'** the script to occur, and the **NPC** who is bound to the script that has triggered:[?](http://wiki.eqemulator.org/p?Entity_Lists_-_How_to_Use_Them&frm=Ultimate_Perl_Reference#)
 
 {% tabs %}
 {% tab title="Perl" %}

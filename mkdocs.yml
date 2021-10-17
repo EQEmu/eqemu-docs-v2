@@ -18,12 +18,12 @@ theme:
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
-    - navigation.sections
+    - navigation.instant
+#    - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
-#    - navigation.tracking
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
@@ -45,47 +45,48 @@ theme:
         name: Switch to dark mode
 
 markdown_extensions:
-    - admonition
-    - abbr
-    - attr_list
-    - def_list
-    - footnotes
-    - meta
-    - md_in_html
-    - toc:
-          permalink: true
-    - pymdownx.arithmatex:
-          generic: true
-    - pymdownx.betterem:
-          smart_enable: all
-    - pymdownx.caret
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.highlight
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.magiclink:
-          repo_url_shorthand: true
-          user: squidfunk
-          repo: mkdocs-material
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid-experimental
-                format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tabbed:
-          alternate_style: true
-    - pymdownx.tasklist:
-          custom_checkbox: true
-    - pymdownx.tilde
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
   - Server:
-      - 'AAs':
+      - 'README.md'
+      - AAs:
           - 'categories/aas/README.md'
           - 'AA Categories': 'categories/aas/aa-categories.md'
           - 'AA Nonspell Actions': 'categories/aas/aa-nonspell-actions.md'
@@ -93,40 +94,75 @@ nav:
           - 'AA Types': 'categories/aas/aa-types.md'
           - 'Customizing AAs': 'categories/aas/customizing-aas.md'
       - Bots:
+          - 'categories/bots/README.md'
           - 'Stance Types': 'categories/bots/stance-types.md'
           - 'Bot Commands': 'categories/bots/bot-commands.md'
           - 'Bot Heal Rotations': 'categories/bots/bot-heal-rotations.md'
           - 'Bot Groups': 'categories/bots/bot-groups.md'
       - Client Configuration:
+          - 'categories/client-configuration/README.md'
           - 'macOS Client Configuration': 'categories/client-configuration/macos-mojave-client-configuration.md'
           - 'Windows Client Configuration': 'categories/client-configuration/windows-client-configuration.md'
           - 'Frequently Asked Questions': 'categories/client-configuration/frequently-asked-questions.md'
           - 'Play Guide': 'categories/client-configuration/play-guide.md'
           - 'Underfoot Missing Files': 'categories/client-configuration/underfoot-missing-files.md'
-      - Database:
+      - Developer:
+          - 'Project PEQ Expansions':
+              - 'Classic':
+                  - 'in-development/project-peq-expansions/classic/README.md'
+                  - 'Item Changes': 'in-development/project-peq-expansions/classic/item-changes.md'
+                  - 'Zone Changes': 'in-development/project-peq-expansions/classic/zone-changes.md'
+              - 'Zone Version Switching': 'in-development/project-peq-expansions/zone-version-switching.md'
+              - 'Expansion and Content Filtering': 'in-development/project-peq-expansions/expansion-content-filtering.md'
+              - 'Expansion List Reference': 'in-development/project-peq-expansions/expansion-list-reference.md'
+              - 'Design Considerations': 'in-development/project-peq-expansions/design-considerations.md'
+          - 'Developer Area':
+              - 'in-development/developer-area/README.md'
+              - 'Repositories': 'in-development/developer-area/repositories.md'
+              - 'EQDictionary': 'in-development/developer-area/eqdictionary.md'
+              - 'Inventory':
+                  - 'in-development/developer-area/inventory/README.md'
+                  - 'Inventory Overhaul': 'in-development/developer-area/inventory/inventory-overhaul.md'
+                  - 'Perl Inventory Slot Identifiers': 'in-development/developer-area/inventory/perl-inventory-slot-identifiers.md'
+              - 'Packet and OpCode Analysis':
+                  - 'in-development/developer-area/packet-and-opcode-analysis.md'
+              - 'Tools':
+                  - 'in-development/developer-area/tools/README.md'
+                  - 'Tools Cheat Sheet': 'in-development/developer-area/tools/tools-cheat-sheet.md'
+                  - 'Lua for Windows': 'in-development/developer-area/tools/lua-for-windows.md'
+                  - 'Notepad++': 'in-development/developer-area/tools/notepad++.md'
+                  - 'TortoiseGit': 'in-development/developer-area/tools/tortoisegit.md'
+      - 'Database':
+          - 'categories/database/README.md'
           - 'Database Schema': 'https://eqemu.gitbook.io/database-schema/'
       - Multi Tenancy:
+          - 'categories/database/multi-tenancy.md'
           - 'Database Backup Tool': 'categories/database/database-backup-tool.md'
-      - Expedition System:
+      - 'Expedition System':
+          - 'categories/expedition-system/README.md'
           - 'Database': 'categories/expedition-system/database.md'
           - 'Lockouts': 'categories/expedition-system/lockouts.md'
-          - Quest API (Lua):
+          - 'Quest API (Lua)':
+              - 'categories/expedition-system/quest-api-lua/README.md'
               - 'Example': 'categories/expedition-system/quest-api-lua/example.md'
               - 'Client Methods': 'categories/expedition-system/quest-api-lua/client-methods.md'
               - 'Expedition Methods': 'categories/expedition-system/quest-api-lua/expedition-methods.md'
               - 'Global Methods': 'categories/expedition-system/quest-api-lua/global-methods.md'
               - 'Group/Raid Methods': 'categories/expedition-system/quest-api-lua/group-raid-methods.md'
-          - Quest API (Perl):
+          - 'Quest API (Perl)':
+              - 'categories/expedition-system/quest-api-perl/README.md'
               - 'Example': 'categories/expedition-system/quest-api-perl/example.md'
               - 'Client Methods': 'categories/expedition-system/quest-api-perl/client-methods.md'
               - 'Expedition Methods': 'categories/expedition-system/quest-api-perl/expedition-methods.md'
               - 'Global Methods': 'categories/expedition-system/quest-api-perl/global-methods.md'
               - 'Group/Raid Methods': 'categories/expedition-system/quest-api-perl/group-raid-methods.md'
-      - Factions:
+      - 'Factions':
+          - 'categories/factions/README.md'
           - 'Creating a New Faction': 'categories/factions/add-a-new-faction.md'
           - 'Customizing Factions': 'categories/factions/customizing-factions.md'
           - 'Faction Values': 'categories/factions/faction-values.md'
-      - Items:
+      - 'Items':
+          - 'categories/items/README.md'
           - 'Item Lore Groups': 'categories/items/item-lore-groups.md'
           - 'Powersources': 'categories/items/powersources.md'
           - 'Item Sizes': 'categories/items/item-sizes.md'
@@ -142,16 +178,19 @@ nav:
           - 'Item Types': 'categories/items/item-types.md'
           - 'Item Click Types': 'categories/items/item-click-types.md'
           - 'Item Element Types': 'categories/items/item-element-types.md'
-      - Inventory:
+      - 'Inventory':
+          - 'categories/inventory/README.md'
           - 'Inventory Slots': 'categories/inventory/inventory-slots.md'
           - 'Item Slots': 'categories/inventory/item-slots.md'
           - 'Bag Sizes': 'categories/inventory/bag-sizes.md'
           - 'Bag Types': 'categories/inventory/bag-types.md'
-      - Logging System:
+      - 'Logging System':
+          - 'categories/logging-system/README.md'
           - 'Logging Categories': 'categories/logging-system/logging-categories.md'
           - 'Logging for Developers': 'categories/logging-system/logging-for-developers.md'
           - 'Logging Packets': 'categories/logging-system/logging-packets.md'
-      - Login Server:
+      - 'Login Server':
+          - 'categories/login-server/README.md'
           - 'Auto Create Login Accounts': 'categories/login-server/auto-create-login-accounts.md'
           - 'REST API': 'categories/login-server/login-server-rest-api.md'
           - 'Database Schema': 'categories/login-server/database-schema.md'
@@ -161,9 +200,11 @@ nav:
           - 'Commonly Asked Questions': 'categories/login-server/commonly-asked-questions.md'
           - 'World Registration': 'categories/login-server/world-registration.md'
           - 'World Servers with Same Names': 'categories/login-server/world-servers-with-same-names.md'
-      - Maps:
+      - 'Maps':
+          - 'categories/maps/README.md'
           - 'Editing Maps': 'categories/maps/editing-maps.md'
-      - NPC:
+      - 'NPC':
+          - 'categories/npc/README.md'
           - 'NPC Aggro': 'categories/npc/npc-aggro.md'
           - 'ModifyNPCStat Identifiers': 'categories/npc/modifynpcstat-identifiers.md'
           - 'Stuck Behavior': 'categories/npc/stuck-behavior.md'
@@ -176,7 +217,8 @@ nav:
           - 'Facial Features': 'categories/npc/facial-features.md'
           - 'Genders': 'categories/npc/genders.md'
           - 'Textures': 'categories/npc/textures.md'
-          - Spawns:
+          - 'Spawns':
+              - 'categories/npc/spawns/README.md'
               - 'On Change Types': 'categories/npc/spawns/on-change-types.md'
               - 'Pause Types': 'categories/npc/spawns/pause-types.md'
               - 'Wander Types': 'categories/npc/spawns/wander-types.md'
@@ -186,12 +228,14 @@ nav:
           - 'Body Types': 'categories/npc/body-types.md'
           - 'Emote Types': 'categories/npc/emote-types.md'
           - 'Emote Event Types': 'categories/npc/emote-event-types.md'
-          - Customizing NPCs:
+          - 'Customizing NPCs':
+              - 'categories/npc/customizing-npcs/README.md'
               - 'Using the PEQ Database Editing Interface': 'categories/npc/customizing-npcs/using-the-peq-database-editing-interface.md'
           - 'NPC Animation Types': 'categories/npc/npc-animation-types.md'
           - 'NPC Scaling': 'categories/npc/npc-scaling.md'
           - 'Special Attacks': 'categories/npc/special-attacks.md'
-      - Operation:
+      - 'Operation':
+          - 'categories/operation/README.md'
           - 'Adjust Maximum Level': 'categories/operation/adjust-maximum-level.md'
           - 'Adjust World Date / Time': 'categories/operation/adjust-world-date-time.md'
           - 'Changing Start Zones': 'categories/operation/changing-start-zones.md'
@@ -211,7 +255,8 @@ nav:
           - 'Server Rules': 'categories/operation/server-rules.md'
           - 'Server Variables': 'categories/operation/server-variables.md'
           - 'Updating Server Assets': 'categories/operation/updating-server-assets.md'
-      - Player:
+      - 'Player':
+          - 'categories/player/README.md'
           - 'Class List': 'categories/player/class-list.md'
           - 'Client Version Bitmasks': 'categories/player/client-version-bitmasks.md'
           - 'Deity List': 'categories/player/deity-list.md'
@@ -219,11 +264,13 @@ nav:
           - 'Guild Ranks': 'categories/player/guild-ranks.md'
           - 'Languages': 'categories/player/languages.md'
           - 'Player Housing': 'categories/player/player-housing.md'
-          - 'Race List': 'https://eqemu.gitbook.io/server/categories/npc/race-list'
-      - Skills:
+          - 'Race List': 'categories/npc/race-list.md'
+      - 'Skills':
+          - 'categories/player/skills.md'
           - 'Slash Commands': 'categories/player/slash-commands.md'
           - 'Status Levels': 'categories/player/status-levels.md'
-      - Server Installation:
+      - 'Server Installation':
+          - 'categories/installation/README.md'
           - 'Basic Server Install - Linux': 'categories/installation/server-installation-linux.md'
           - 'Basic Server Install - Windows': 'categories/installation/server-installation-windows.md'
           - 'Bot Installation': 'categories/installation/bot-installation.md'
@@ -234,7 +281,8 @@ nav:
           - 'Install PEQ Database Editor': 'categories/installation/install-peq-database-editor.md'
           - 'Troubleshooting': 'categories/installation/troubleshooting.md'
           - 'VSCode Dev Container Environment': 'categories/installation/vscode-dev-container-environment.md'
-      - Scripting:
+      - 'Scripting':
+          - 'categories/scripting/README.md'
           - 'Lua Mods': 'categories/scripting/lua-mods.md'
           - 'Emote Colors': 'categories/scripting/emote-colors.md'
           - 'Encounters (Lua)': 'categories/scripting/encounters-lua.md'
@@ -245,7 +293,8 @@ nav:
           - 'Converting QGlobals': 'categories/scripting/converting-qglobals.md'
           - 'Player Buffer Scripts': 'categories/scripting/player-buffer-scripts.md'
           - 'Player Teleporter Scripts': 'categories/scripting/player-teleporter-scripts.md'
-      - Spells:
+      - 'Spells':
+          - 'categories/spells/README.md'
           - 'Aura Movement Types': 'categories/spells/aura-movement-types.md'
           - 'Aura Spawn Types': 'categories/spells/aura-spawn-types.md'
           - 'Aura Types': 'categories/spells/aura-types.md'
@@ -279,20 +328,24 @@ nav:
           - 'Target Types': 'categories/spells/target-types.md'
           - 'Time of Day Types': 'categories/spells/time-of-day-types.md'
           - 'Type Effect Description Number': 'categories/spells/type-effect-description-number.md'
-      - Task System:
+      - 'Task System':
+          - 'categories/task-system-guide/README.md'
           - 'Task Duration Codes': 'categories/task-system-guide/task-duration-codes.md'
           - 'Task Activity Types': 'categories/task-system-guide/task-activity-types.md'
           - 'Task Types': 'categories/task-system-guide/task-types.md'
-          - Shared Tasks:
+          - 'Shared Tasks':
+              - 'categories/task-system-guide/shared-tasks/README.md'
               - 'Example': 'categories/task-system-guide/shared-tasks/example.md'
-      - Zones:
+      - 'Zones':
+          - 'categories/zones/README.md'
           - 'Trap Types': 'categories/zones/trap-types.md'
           - 'LDON Themes': 'categories/zones/ldon-themes.md'
           - 'Object Types': 'categories/zones/object-types.md'
           - 'Door Open Types': 'categories/zones/door-open-types.md'
           - 'Environment Emitters': 'categories/zones/environment-emitters.md'
           - 'Adjusting Zone Shutdown Delay': 'categories/zones/adjusting-zone-shutdown-delay.md'
-          - Customizing Zones:
+          - 'Customizing Zones':
+              - 'categories/zones/customizing-zones/README.md'
               - 'Custom Zone Making': 'categories/zones/customizing-zones/custom-zone-making.md'
               - 'Fog System and Clip Plane': 'categories/zones/customizing-zones/fog-system-and-clip-plane.md'
               - 'GL Model Viewer': 'categories/zones/customizing-zones/gl-model-viewer.md'

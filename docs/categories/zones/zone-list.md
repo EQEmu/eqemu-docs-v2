@@ -322,7 +322,7 @@ Note that the zoneidnumber in your database is separate from the zone table id
 | 354 | The Hive | drachnidhive |
 | 355 | The Hatchery | drachnidhivea |
 | 356 | The Cocoons | drachnidhiveb |
-| 357 | Queen Sendaii\`s Lair | drachnidhivec |
+| 357 | Queen Sendaii\s Lair | drachnidhivec |
 | 358 | Stoneroot Falls | westkorlach |
 | 359 | Prince's Manor | westkorlacha |
 | 360 | Caverns of the Lost | westkorlachb |
@@ -362,7 +362,7 @@ Note that the zoneidnumber in your database is separate from the zone table id
 | 394 | Crescent Reach | crescent |
 | 395 | Blightfire Moors | moors |
 | 396 | Stone Hive | stonehive |
-| 397 | Goru\`kar Mesa | mesa |
+| 397 | Goru\kar Mesa | mesa |
 | 398 | Blackfeather Roost | roost |
 | 399 | The Steppes | steppes |
 | 400 | Icefall Glacier | icefall |

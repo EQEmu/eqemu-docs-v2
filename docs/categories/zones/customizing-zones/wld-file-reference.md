@@ -69,12 +69,12 @@ There are other fragment types in the ZoneConverter source, but I haven't encoun
 
 ### Notes on 0x36 fragment:
 
-1\. Fragment1 refers to a 0x31 fragment to tell the client what textures are used.\
-2\. Polygons are sorted by texture index. That is, all polygons in the Data5 area that use a particular texture are grouped together.\
-3\. Fragment2 optionally refers to a 0x2F fragment if the mesh is animated (e.g. trees or flags that sway in the breeze).\
-4\. Fragment4 always refers to the first 0x03 fragment in the file (I have no idea why).\
-5\. I don't fully understand this fragment. The Data6 and Data9 areas have something to do with mob models, but I don't know how they work yet.\
-6\. There are new-format and old-format .WLD files. They have different values in the .WLD header and the main difference is in the 0x36 fragment. In new-format files, the texture coordinate values are signed 32-bit values; in old-format files they're signed 16-bit values. At this time OpenZone only exports old-format files but it would be no great effort to switch it to new-format files.
+1. Fragment1 refers to a 0x31 fragment to tell the client what textures are used.\
+2. Polygons are sorted by texture index. That is, all polygons in the Data5 area that use a particular texture are grouped together.\
+3. Fragment2 optionally refers to a 0x2F fragment if the mesh is animated (e.g. trees or flags that sway in the breeze).\
+4. Fragment4 always refers to the first 0x03 fragment in the file (I have no idea why).\
+5. I don't fully understand this fragment. The Data6 and Data9 areas have something to do with mob models, but I don't know how they work yet.\
+6. There are new-format and old-format .WLD files. They have different values in the .WLD header and the main difference is in the 0x36 fragment. In new-format files, the texture coordinate values are signed 32-bit values; in old-format files they're signed 16-bit values. At this time OpenZone only exports old-format files but it would be no great effort to switch it to new-format files.
 
 0x37 - Mesh Animated Vertices - For a given 0x36 fragment, this fragment contains a number of animation "frames". For each frame it contains a complete vertex list that supercedes the vertex list in the 0x36 fragment. For instance, if there are three frames and 15 vertices, there will be three sets of 15 vertex values in the 0x37 fragment and they will be used in lieu of the 15 vertex values in the 0x36 fragment.
 
@@ -100,7 +100,7 @@ There are other fragment types in the ZoneConverter source, but I haven't encoun
 
 "WT_ZONE" .................... Regions are underwater "LA_ZONE" ................... Regions are lava "DRP_ZONE" ................... Regions are PvP areas
 
-"DRNTP##########\_ZONE" ....... e.g. DRNTP00025-02698-645.6-00020999\_ZONE. This seems to tell the client that these regions constitute a zoneline. If the player enters one of these regions the client knows the player is zoning and knows the destination. I don't know if the client makes use of this since I don't think every zone has this at all zone points, but it looks interesting. I don't understand the format of the numbered part of the name.
+"DRNTP##########_ZONE" ....... e.g. DRNTP00025-02698-645.6-00020999_ZONE. This seems to tell the client that these regions constitute a zoneline. If the player enters one of these regions the client knows the player is zoning and knows the destination. I don't know if the client makes use of this since I don't think every zone has this at all zone points, but it looks interesting. I don't understand the format of the numbered part of the name.
 
 ## Animated (Mob) models
 
@@ -129,7 +129,7 @@ There are other fragment types in the ZoneConverter source, but I haven't encoun
 0x2D - Mesh Reference - Refers to the 0x36 fragment.\
 0x36 - Mesh - Contains the actual vertex and polygon data. Also contains information on textures, texture coordinates, and shading.
 
-0x32 - Vertex Color - For each object that has been placed, there is one of these (put 100 trees in your zone and there are 100 of these fragments). It contains vertex shading information for each object. For example, if you have a torch near some trees, those trees should have their polygons shaded based on the light color, angle of incidence, distance, and any intervening polygons. The EQ client does \*not\* dyamically shade polygons in a zone; all polygons must be shaded in this way (including 0x36 fragments in the main zone file).
+0x32 - Vertex Color - For each object that has been placed, there is one of these (put 100 trees in your zone and there are 100 of these fragments). It contains vertex shading information for each object. For example, if you have a torch near some trees, those trees should have their polygons shaded based on the light color, angle of incidence, distance, and any intervening polygons. The EQ client does *not* dyamically shade polygons in a zone; all polygons must be shaded in this way (including 0x36 fragments in the main zone file).
 
 0x33 - Vertex Color Reference - Refers to a 0x32 fragment.
 
@@ -407,7 +407,7 @@ Its purpose is unknown, though it looks like some sort of transformation matrix.
 
 Its purpose is unknown. Only exists if bit 5 of Params7Flags is 1.
 
-#### Params7Data : (Params7Size \* 2) DWORDs
+#### Params7Data : (Params7Size * 2) DWORDs
 
 Their purpose is unknown. Only exists if bit 5 of Params7Flags is 1.
 
@@ -425,7 +425,7 @@ Its purpose is unknown, but it always seems to contain 0.
 
 ### Notes
 
-This fragment is poorly understood. It seems to contain 26 parameters, some of which are DWORDS (32-bit integers) and some of which are FLOATS (32-bit floating-point values). Until more is known, they are here described as Params\[0..25] and their known values are documented.
+This fragment is poorly understood. It seems to contain 26 parameters, some of which are DWORDS (32-bit integers) and some of which are FLOATS (32-bit floating-point values). Until more is known, they are here described as Params[0..25] and their known values are documented.
 
 In main zone files, the name of this fragment always seems to be CAMERA_DUMMY. 
 
@@ -435,22 +435,22 @@ All fields not mentioned contain zero (0).
 
 | Param       | Value | Type  |
 | ----------- | ----- | ----- |
-| Params\[1]  | 0     | DWORD |
-| Params\[2]  | 1     | FLOAT |
-| Params\[5]  | -1.0  | FLOAT |
-| Params\[6]  | 1.0   | FLOAT |
-| Params\[8]  | 1.0   | FLOAT |
-| Params\[9]  | 1.0   | FLOAT |
-| Params\[11] | 1.0   | FLOAT |
-| Params\[12] | -1.0  | FLOAT |
-| Params\[14] | -1.0  | FLOAT |
-| Params\[15] | -1.0  | FLOAT |
-| Params\[16] | 4     | DWORD |
-| Params\[20] | 1     | DWORD |
-| Params\[21] | 2     | DWORD |
-| Params\[22] | 3     | DWORD |
-| Params\[24] | 1     | DWORD |
-| Params\[25] | 11    | DWORD |
+| Params[1]  | 0     | DWORD |
+| Params[2]  | 1     | FLOAT |
+| Params[5]  | -1.0  | FLOAT |
+| Params[6]  | 1.0   | FLOAT |
+| Params[8]  | 1.0   | FLOAT |
+| Params[9]  | 1.0   | FLOAT |
+| Params[11] | 1.0   | FLOAT |
+| Params[12] | -1.0  | FLOAT |
+| Params[14] | -1.0  | FLOAT |
+| Params[15] | -1.0  | FLOAT |
+| Params[16] | 4     | DWORD |
+| Params[20] | 1     | DWORD |
+| Params[21] | 2     | DWORD |
+| Params[22] | 3     | DWORD |
+| Params[24] | 1     | DWORD |
+| Params[25] | 11    | DWORD |
 
 ## 0x09 — Camera Reference — REFERENCE
 
@@ -474,7 +474,7 @@ For each piece there is a 0x13 Mob Skeleton Piece Track Reference fragment, whic
 
 #### Flags : DWORD
 
-Bit 0 ........ If 1, Params1\[0..2] fields exist.\
+Bit 0 ........ If 1, Params1[0..2] fields exist.\
 Bit 1 ........ If 1, Params2 exists.\
 Bit 9 ........ If 1, Size2, Fragment3, and Data3 fields exist.
 
@@ -486,15 +486,15 @@ Number of track reference entries (see below)
 
 Optionally points to a 0x18 Polygon Animation Reference? fragment.
 
-#### Params1\[0] : DWORD
+#### Params1[0] : DWORD
 
 Unknown purpose. Only exists if bit 0 of Flags is 1.
 
-#### Params1\[1] : DWORD
+#### Params1[1] : DWORD
 
 Unknown purpose. Only exists if bit 0 of Flags is 1.
 
-#### Params1\[2] : DWORD
+#### Params1[2] : DWORD
 
 Unknown purpose. Only exists if bit 0 of Flags is 1.
 
@@ -642,7 +642,7 @@ Unknown purpose. It’s usually set to 1000, but I’ve also seen it set to 100.
 
 ### Notes
 
-When this fragment is used in a main zone file, the name of the fragment seems to always be PLAYER\_1.
+When this fragment is used in a main zone file, the name of the fragment seems to always be PLAYER_1.
 
 ### Fields
 
@@ -698,7 +698,7 @@ An encoded string. It’s purpose and possible values are unknown.
 
 ## 0x15 — Object Location — REFERENCE
 
-When used in main zone files, the reference points to a 0x14 Player Info fragment. When used for static (placeable) objects, the reference is a string reference (not a fragment reference) and points to a “magic” string. It typically contains the name of the object with “\_ACTORDEF” appended to the end.
+When used in main zone files, the reference points to a 0x14 Player Info fragment. When used for static (placeable) objects, the reference is a string reference (not a fragment reference) and points to a “magic” string. It typically contains the name of the object with “_ACTORDEF” appended to the end.
 
 ### Fields
 
@@ -734,7 +734,7 @@ When used in main zone files, typically contains 0. When used for placeable obje
 
 When used in main zone files, typically contains 0. When used for placeable objects, contains a value describing rotation around the X axis, scaled as Degrees x (512 / 360).
 
-#### Params1\[3] : FLOAT
+#### Params1[3] : FLOAT
 
 Typically contains 0 (though might be more significant for placeable objects).
 
@@ -833,7 +833,7 @@ When used in main zone files, the name of this fragment is typically DEFAULT_LIG
 Bit 1 ........ Typically 1 when dealing with placed light sources.\
 Bit 2 ........ Typically 1.\
 Bit 3 ........ Typically 1 when dealing with placed light sources. If Bit 4 is 1 then Params3b only exists if this bit is also 1 (not sure about this).\
-Bit 4 ........ If 0, Params3a exists but Params3b and Params4\[0..3] don’t exist. Otherwise, Params3a doesn’t exist but Params3b and Params4\[0..3] do exist. This flag seems to determine whether the light is just a simple white light or a light with its own color values.
+Bit 4 ........ If 0, Params3a exists but Params3b and Params4[0..3] don’t exist. Otherwise, Params3a doesn’t exist but Params3b and Params4[0..3] do exist. This flag seems to determine whether the light is just a simple white light or a light with its own color values.
 
 #### Params2 : DWORD
 
@@ -847,19 +847,19 @@ Typically contains 1.
 
 Typically contains 200 (attenuation?).
 
-#### Params4\[0] : FLOAT
+#### Params4[0] : FLOAT
 
 Typically contains 1.
 
-#### Params4\[1] : FLOAT
+#### Params4[1] : FLOAT
 
 Light red component, scaled from 0 (no red component) to 1 (100% red).
 
-#### Params4\[2] : FLOAT
+#### Params4[2] : FLOAT
 
 Light green component, scaled from 0 (no green component) to 1 (100% green).
 
-#### Params4\[3] : FLOAT
+#### Params4[3] : FLOAT
 
 Light blue component, scaled from 0 (no blue component) to 1 (100% blue).
 
@@ -958,17 +958,17 @@ Tells how many Data6 entries there are (usually only 1).
 
 #### Data1 : BYTEs
 
-According to the ZoneConverter source there are 12 \* Size1 bytes here. Their format is unknown, for lack of sample data to figure it out.
+According to the ZoneConverter source there are 12 * Size1 bytes here. Their format is unknown, for lack of sample data to figure it out.
 
 #### Data2 : BYTEs
 
-According to the ZoneConverter source there are 8 \* Size2 bytes here. Their format is unknown, for lack of sample data to figure it out.
+According to the ZoneConverter source there are 8 * Size2 bytes here. Their format is unknown, for lack of sample data to figure it out.
 
 Data3 entries (There are Size3 of these):
 
 #### Data3Flags : DWORD
 
-Bit 1 ........ If 1, then the Data3Params1\[0..2] and Data3Params2 fields exist.
+Bit 1 ........ If 1, then the Data3Params1[0..2] and Data3Params2 fields exist.
 
 #### Data3Size1 : DWORD
 
@@ -978,15 +978,15 @@ Tells how many Data3Data1 DWORDs there are.
 
 There are Data3Size1 DWORDs. Their purpose is unknown.
 
-#### Data3Params1\[0] : DWORD
+#### Data3Params1[0] : DWORD
 
 Unknown purpose. Only exists if Data3Flags Bit 1 is set to 1.
 
-#### Data3Params1\[1] : DWORD
+#### Data3Params1[1] : DWORD
 
 Unknown purpose. Only exists if Data3Flags Bit 1 is set to 1.
 
-#### Data3Params1\[2] : DWORD
+#### Data3Params1[2] : DWORD
 
 Unknown purpose. Only exists if Data3Flags Bit 1 is set to 1.
 
@@ -1022,15 +1022,15 @@ Tells the number of bytes in the Data4Name field.
 
 Contains an encoded string. This field is Data4NameSize bytes long. Data5 entries (There are Size5 of these):
 
-#### Data5Params1\[0] : DWORD
+#### Data5Params1[0] : DWORD
 
 Unknown purpose. Typically contains zero.
 
-#### Data5Params1\[1] : DWORD
+#### Data5Params1[1] : DWORD
 
 Unknown purpose. Typically contains zero.
 
-#### Data5Params1\[2] : DWORD
+#### Data5Params1[2] : DWORD
 
 Unknown purpose. Typically contains zero.
 
@@ -1131,7 +1131,7 @@ This fragment lets you flag certain regions (as defined by 0x22 BSP Region fragm
 WT_ZONE ................................................ Flag all regions in the list as underwater regions.\
 LA_ZONE ................................................. Flag all regions in the list as lava regions.\
 DRP_ZONE .............................................. Flag all regions in the list as PvP regions.\
-DRNTP##########\_ZONE............. Flag all regions in the list as zone point regions. The ####’s are actually numbers and hyphens that somehow tell the client the zone destination. This method of setting zone points may or may not be obsolete.
+DRNTP##########_ZONE............. Flag all regions in the list as zone point regions. The ####’s are actually numbers and hyphens that somehow tell the client the zone destination. This method of setting zone points may or may not be obsolete.
 
 ### Fields
 
@@ -1153,7 +1153,7 @@ Tells how many bytes follow in the Data2 field.
 
 #### Data2 : BYTEs
 
-An encoded string. An alternate way of using this fragment is to call this fragment Z####\_ZONE, where #### is a four- digit number starting with zero. Then Data2 would contain a “magic” string that told the client what was special about the included regions (e.g. WTN\_\_01521000000000000000000000\__\_000000000000). This field is padded with nulls to make it end on a DWORD boundary.
+An encoded string. An alternate way of using this fragment is to call this fragment Z####_ZONE, where #### is a four- digit number starting with zero. Then Data2 would contain a “magic” string that told the client what was special about the included regions (e.g. WTN__01521000000000000000000000___000000000000). This field is padded with nulls to make it end on a DWORD boundary.
 
 ## 0x2A — Ambient Light — REFERENCE
 
@@ -1190,7 +1190,7 @@ Bit 1 ........ If 1, then Params2 is valid. Otherwise it must contain zero.\
 Bit 9 ........ If 1, then the Size8 field and Data8 entries exist.\
 Bit 11 ...... If 1, then the PolygonTexCount field and PolygonTex entries exist.\
 Bit 12 ...... If 1, then the VertexTexCount field and VertexTex entries exist.\
-Bit 13 ...... If 1, then the Params3\[] fields exist.
+Bit 13 ...... If 1, then the Params3[] fields exist.
 
 #### VertexCount : DWORD
 
@@ -1376,15 +1376,15 @@ Number of vertices that use the same texture. Vertex entries, like polygon entri
 
 The index of the texture that the vertices use, according to the 0x31Texture List fragment that this fragment references. This field only exists if bit 12 of Flags is 1.
 
-#### Params3\[0] : DWORD
+#### Params3[0] : DWORD
 
 Its purpose is unknown. This field only exists if bit 13 of Flags is 1.
 
-#### Params3\[1] : DWORD
+#### Params3[1] : DWORD
 
 Its purpose is unknown. This field only exists if bit 13 of Flags is 1.
 
-#### Params3\[2] : DWORD
+#### Params3[2] : DWORD
 
 Its purpose is unknown. This field only exists if bit 13 of Flags is 1.
 
@@ -1433,11 +1433,11 @@ To make a fully transparent texture, set Params1 to 0.
 
 Typically contains 0x004E4E4E, but I’ve also seen 0xB2B2B2. Could this be an RGB reflectivity value?
 
-#### Params3\[0] : FLOAT
+#### Params3[0] : FLOAT
 
 Typically contains 0. Its purpose is unknown.
 
-#### Params3\[1] : FLOAT
+#### Params3[1] : FLOAT
 
 Typically contains 0 for transparent textures and 0.75 for all others. Its purpose is unknown.
 
@@ -1545,15 +1545,15 @@ This is similar to CenterX but references the Y axis.
 
 This is similar to CenterX but references the Z axis.
 
-#### Params2\[0] : DWORD
+#### Params2[0] : DWORD
 
 Typically contains zero. Its purpose is unknown.
 
-#### Params2\[1] : DWORD
+#### Params2[1] : DWORD
 
 Typically contains zero. Its purpose is unknown.
 
-#### Params2\[2] : DWORD
+#### Params2[2] : DWORD
 
 Typically contains zero. Its purpose is unknown.
 

@@ -20,23 +20,23 @@ If you're creating your own `spells_us.txt` file, please make sure that the maxi
 | Underfoot | 28,000 |
 | Rain of Fear | 45,000 |
 | Rain of Fear 2 | 45,000 |
-| The Darkend Sea \(not yet supported\) | 50,000 |
+| The Darkend Sea (not yet supported) | 50,000 |
 
 To generate your new `spells_us.txt` file:
 
-1.\) Go to your server directory \(Linux example below\):
+1.) Go to your server directory (Linux example below):
 
 ```text
 cd /home/eqemu/server
 ```
 
-2.\) Create an `export` directory \(you only need to do this the first time\):
+2.) Create an `export` directory (you only need to do this the first time):
 
 ```text
 mkdir export
 ```
 
-3.\) Run the `export_client_files` binary:
+3.) Run the `export_client_files` binary:
 
 ```text
 ./export_client_files

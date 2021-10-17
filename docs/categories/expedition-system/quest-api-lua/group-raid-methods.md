@@ -8,7 +8,7 @@ Returns true if any group member has the specified lockout.
 
 Passing a non-zero `max_check_count` will limit to checking that number of group members in no guaranteed order.
 
-See Raid::DoesAnyMemberHaveExpeditionLockout for example. \
+See Raid::DoesAnyMemberHaveExpeditionLockout for example. .
 
 
 ## Raid methods

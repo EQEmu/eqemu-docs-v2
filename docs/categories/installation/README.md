@@ -6,7 +6,7 @@ description: This page describes installing EQEmu Server
 
 ### So you want to be a server operator?
 
-Welcome to the world of EQEmulator. Chances are that you're wondering what it would be like to craft your own world. Perhaps you don't like how someone runs the world they have created, perhaps you would like to customize a world because nothing like \[insert your idea\] exists. Maybe you just want to run around a world like some kind of god and slay all of those nasty beasties that had the upper hand when you played EverQuest in 1999. There's really no right or wrong reason to create a world--but certainly there are ways that it can go horribly wrong, and your decisions will likely be the cause.
+Welcome to the world of EQEmulator. Chances are that you're wondering what it would be like to craft your own world. Perhaps you don't like how someone runs the world they have created, perhaps you would like to customize a world because nothing like [insert your idea] exists. Maybe you just want to run around a world like some kind of god and slay all of those nasty beasties that had the upper hand when you played EverQuest in 1999. There's really no right or wrong reason to create a world--but certainly there are ways that it can go horribly wrong, and your decisions will likely be the cause.
 
 This guide is nothing more than the beginning of the journey to creating your own world. This guide is an attempt to impart some wisdom on those willing to receive it, and is written in the hope that you will read it carefully, thoroughly, and consider things carefully before charging into the unknown and wasting hours of your time by making a bad decision.
 
@@ -14,7 +14,7 @@ This guide is nothing more than the beginning of the journey to creating your ow
 
 It's probably a good idea to take a step back and make a few observations before we get into some deeper concepts. A world server, in the simplest terms, is an application that runs on a computer, and communicates with a database of information. 
 
-When Neo joins Morpheus in the Construct Program in the movie _The Matrix_, their conversation parallels much of what you're hoping to create: you have a program \(EQEmu server\) and you can load anything you want \(from the database\). To extend the analogy, the world server, like The Matrix, has "rules" that determine how everything works. To paraphrase Morpheus, some rules on your World Server can be bent, and some rules can be broken.
+When Neo joins Morpheus in the Construct Program in the movie _The Matrix_, their conversation parallels much of what you're hoping to create: you have a program (EQEmu server) and you can load anything you want (from the database). To extend the analogy, the world server, like The Matrix, has "rules" that determine how everything works. To paraphrase Morpheus, some rules on your World Server can be bent, and some rules can be broken.
 
 * Installing using scripted installation:  
   * [Basic Server Install - Linux](server-installation-linux.md)
@@ -39,7 +39,7 @@ The PEQ database may not provide the exact data that makes **your world** exactl
 
 ### Making the World Server talk to the Database
 
-Consider this your first step in customizing your world once you've run the installer script.  You will need to [configure your eqemu\_config.json](configure-your-eqemu_config.md) file to set your world's name, the name of your database, and more.  Follow the instructions carefully so that your decisions do not become the cause of something going horribly wrong.
+Consider this your first step in customizing your world once you've run the installer script.  You will need to [configure your eqemu_config.json](configure-your-eqemu_config.md) file to set your world's name, the name of your database, and more.  Follow the instructions carefully so that your decisions do not become the cause of something going horribly wrong.
 
 {% hint style="warning" %}
 Be sure to back up any files before you start to modify them!  
@@ -50,11 +50,11 @@ Be sure to back up any files before you start to modify them!
 | Choice | Description |
 | :--- | :--- |
 | [Operation](https://eqemu.gitbook.io/server/categories/operation) | Learn the ins-and-outs of operating your new world |
-| [PEQ DB Editor](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor) | How to install the PEQ DB editor \(so you can customize your world\). |
+| [PEQ DB Editor](https://eqemu.gitbook.io/server/categories/installation/install-peq-database-editor) | How to install the PEQ DB editor (so you can customize your world). |
 | [Scripting](https://eqemu.gitbook.io/server/categories/scripting) | Learn to customize NPC interactions through scripts |
 | [Client Config](../client-configuration/) | You'll have to configure your client to connect to your world |
 | [Custom NPCs](../npc/customizing-npcs/) | Learn to create a custom NPC |
-| [Help!](https://discord.gg/QHsm7CD) | Join the discussion on Discord--look for **\#support server** |
+| [Help!](https://discord.gg/QHsm7CD) | Join the discussion on Discord--look for **#support server** |
 
 
 

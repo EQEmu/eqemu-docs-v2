@@ -8,7 +8,7 @@ description: These are the settings for AA Target Types on your EQEmu Server.
 | :--- | :--- |
 | 0 | None |
 | 1 | Self |
-| 2 | Current Target \(Single\) |
+| 2 | Current Target (Single) |
 | 3 | Group |
 | 4 | Group of Current Target |
 | 5 | Pet |

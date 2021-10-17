@@ -1,6 +1,6 @@
 # Door Open Types
 
-* 115-152: All need invert\_state to 1 to work correctly. If invert\_state is 0, they don't move but you take damage still if you touch them \(Thanks Qadar, for this information\):
+* 115-152: All need invert_state to 1 to work correctly. If invert_state is 0, they don't move but you take damage still if you touch them (Thanks Qadar, for this information):
 
 | **Open Type ID** | **Description** | **Notes** |
 | :--- | :--- | :--- |
@@ -54,11 +54,11 @@
 | 47 | nothing |  |
 | 48 | nothing |  |
 | 49 | nothing |  |
-| 50 | no door showing \(invisible\) |  |
+| 50 | no door showing (invisible) |  |
 | 51 | nothing |  |
 | 52 | nothing |  |
-| 53 | no door showing \(invisible\) |  |
-| 54 | no door showing \(invisible\) |  |
+| 53 | no door showing (invisible) |  |
+| 54 | no door showing (invisible) |  |
 | 55 | nothing |  |
 | 56 | nothing |  |
 | 57 | nothing |  |
@@ -69,9 +69,9 @@
 | 130 | swings back and forth, 4 points pendulum damage |  |
 | 135 | no movement, 4 points blade damage if touched |  |
 | 140 | moves up then down, 4 points crush damage |  |
-| 142 | moves up then down nonstop automatically \(moves up and down 1 time only if invert\_state is set to 0\) |  |
-| 143 | moves up then down nonstop automatically \(moves up and down 1 time only if invert\_state is set to 0\) |  |
-| 144 | moves up then down nonstop automatically \(moves up and down 1 time only if invert\_state is set to 0\) |  |
+| 142 | moves up then down nonstop automatically (moves up and down 1 time only if invert_state is set to 0) |  |
+| 143 | moves up then down nonstop automatically (moves up and down 1 time only if invert_state is set to 0) |  |
+| 144 | moves up then down nonstop automatically (moves up and down 1 time only if invert_state is set to 0) |  |
 | 145 | down then up, slow movement, 10 points crushed damage |  |
 | 146 | down then up, fast movement, 50 points crushed damage |  |
 | 150 | slide fast left, back slowly, 10 points crushed damage |  |

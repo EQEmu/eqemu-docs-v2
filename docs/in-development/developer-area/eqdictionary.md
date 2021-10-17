@@ -6,7 +6,7 @@ EQDictionary is a collection of lookup references, accessed by specific namespac
 
 References are usually tied back to the originating client definition and are available through an indexed lookup system. Server-based 'hybrid' definitions may also be implemented to bridge differences between client implementations and server requirements.
 
-The purpose of this system is to allow cyclic or minimum conditional evaluations in order to transform data.\
+The purpose of this system is to allow cyclic or minimum conditional evaluations in order to transform data..
 
 
 #### What can you do with it?
@@ -43,7 +43,7 @@ The second case will allow clients to be added in any order..but, requires awkwa
 
 The EQDictionary (last) case does not require any special ordering of clients or manipulation of mask bits. In fact, this system makes ClientVersion comparison and bitmask use obsolete.
 
-Additionally, duplicate definitions can be avoided by having a singular location to reference.\
+Additionally, duplicate definitions can be avoided by having a singular location to reference..
 
 
 #### What makes up EQDictionary?
@@ -73,7 +73,7 @@ Creating dynamic lookups and embedding them into system classes allow for criter
 
 Dynamic lookups resolve the complexity of coding needed to support the myriad of conditions required support to customizable server features.
 
-A deep, working knowledge of client behavior is required to correctly set up dynamic entries. Testing through server setting changes and client observation is the best way to achieve this.\
+A deep, working knowledge of client behavior is required to correctly set up dynamic entries. Testing through server setting changes and client observation is the best way to achieve this..
 
 
 #### Where do I look for all of this?
@@ -95,8 +95,8 @@ Currently, the following files comprise the system:
 * [uf_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/uf_limits.cpp)
 * [rof_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/rof_limits.h)
 * [rof_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/rof_limits.cpp)
-* [rof2\_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/rof2\_limits.h)
-* [rof2\_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/rof2\_limits.cpp)
+* [rof2_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/rof2_limits.h)
+* [rof2_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/rof2_limits.cpp)
 
 #### How do I create a new lookup or add to an existing one?
 

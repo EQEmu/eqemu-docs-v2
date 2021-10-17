@@ -14,7 +14,7 @@ It looks like a single opcode (0x125C) is used for multiple packet types. At fir
 
 Packet captures specific to trophy data is blocked at the moment. None of my characters on live have trophies, and I think that's why I'm not seeing a response from the server. There's nothing to send back. Unless I can find someone with at least one trophy (ideally a guild and a personal one), I'll have to spend some time questing to get one.
 
-\[TODO: Add image of neighborhood search window]
+[TODO: Add image of neighborhood search window]
 
 ### Current Issues
 
@@ -250,11 +250,11 @@ Matches the RoF2 NewZone_Struct, but 20 bytes of new data that comes after the B
 | UnknownFlag                | 4               | Appears to be 1 for neighborhood related zones, but setting this to 1 and sending to RoF2 did not enable the Place button in the client. |
 | scriptIDOnFishing          | 4               |                                                                                                                                          |
 | scriptIDOnForage           | 4               |                                                                                                                                          |
-| zone_short_name2\[32]      | 32              | name of the housing file (e.g. phinterior3a3)                                                                                            |
-| WeatherString\[32]         | 32              |                                                                                                                                          |
-| SkyString2\[32]            | 32              |                                                                                                                                          |
+| zone_short_name2[32]      | 32              | name of the housing file (e.g. phinterior3a3)                                                                                            |
+| WeatherString[32]         | 32              |                                                                                                                                          |
+| SkyString2[32]            | 32              |                                                                                                                                          |
 | SkyRelated2                | 4               |                                                                                                                                          |
-| WeatherString2\[32]        | 32              |                                                                                                                                          |
+| WeatherString2[32]        | 32              |                                                                                                                                          |
 | WeatherChangeTime          | 4               |                                                                                                                                          |
 | Climate                    | 4               |                                                                                                                                          |
 | NPCAggroMaxDist            | 4               |                                                                                                                                          |

@@ -4,8 +4,8 @@
 | :--- | :--- |
 | 10 |  Tool Box |
 | 11 |  Research |
-| 12 |  "Mortar" \(Opens experiment combine window\) |
-| 13 |  "Self Dusting" \(Opens experiment combine window\) |
+| 12 |  "Mortar" (Opens experiment combine window) |
+| 13 |  "Self Dusting" (Opens experiment combine window) |
 | 14 |  Baking |
 | 15 |  Baking |
 | 16 |  Tailoring |
@@ -15,13 +15,13 @@
 | 20 |  Jewelcraft |
 | 21 |  Pottery Wheel |
 | 22 |  Pottery Kiln |
-| 24 |  Wiz only combine container \(Research container?\) |
+| 24 |  Wiz only combine container (Research container?) |
 | 25 |  Mage only |
 | 26 |  Necro only |
 | 27 |  Ench Only |
-| 28 |  Invalid or Class/Race limited \(Client crash w/DEF NEC\) |
-| 29 |  Invalid or Class/Race limited \(Client crash w/DEF NEC\) |
-| 30 |  "Always Works" \(Opens experiment combine window\) |
+| 28 |  Invalid or Class/Race limited (Client crash w/DEF NEC) |
+| 29 |  Invalid or Class/Race limited (Client crash w/DEF NEC) |
+| 30 |  "Always Works" (Opens experiment combine window) |
 | 31 |  High Elves Forge |
 | 32 |  Dark Elves Forge |
 | 33 |  Ogre Forge |

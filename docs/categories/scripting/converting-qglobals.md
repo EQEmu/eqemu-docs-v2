@@ -152,7 +152,7 @@ WHERE
 
 #### Lua:
 
-The Lua module necessary for using the Lua script \(lua\_modules/buckets.lua\):
+The Lua module necessary for using the Lua script (lua_modules/buckets.lua):
 
 {% tabs %}
 {% tab title="buckets.lua" %}
@@ -313,7 +313,7 @@ end
 
 #### Perl
 
-The Perl plugin necessary for using the Perl script \(plugins/buckets.pl\):
+The Perl plugin necessary for using the Perl script (plugins/buckets.pl):
 
 {% tabs %}
 {% tab title="buckets.pl" %}

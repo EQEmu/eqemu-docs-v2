@@ -20,7 +20,7 @@ select * from logsys_categories where log_category_description like '%packet%';
 5 rows in set (0.04 sec)
 ```
 
-## **Enable in Game \(Example\)**
+## **Enable in Game (Example)**
 
 Below would enable client -&gt; server direction packet logging to the client
 
@@ -54,7 +54,7 @@ In this example - a client clicking a 'Krono' is unhandled by the server, at whi
   * Packet: Server -&gt; Client With Dump
   * Packet: Server -&gt; Client With Dump
 
-## Packet Information \(With Dump\)
+## Packet Information (With Dump)
 
 Below is an example of a full packet payload being output to the client
 

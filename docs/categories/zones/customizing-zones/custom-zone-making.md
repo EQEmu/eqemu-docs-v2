@@ -12,7 +12,7 @@ OpenZone supports the following flows to import and generate zones:
 
 | Flow | Ext | Pros | Cons |
 | :--- | :--- | :--- | :--- |
-| OpenZone \(.scn\) | .scn | All features available | Very clunky, camera movement horrible, have to type in coordinates |
+| OpenZone (.scn) | .scn | All features available | Very clunky, camera movement horrible, have to type in coordinates |
 | 3d Studio Max | .3ds | Native modeling controls | Unverified if works with latest version, might have poly limits? |
 | Quake 3 | .bsp | Ongoing updates, easy UI, free | TBD |
 | Dungeon Builder | .3ds | TBD | TBD |
@@ -24,7 +24,7 @@ To simplify the process of quake 3 bsp importing, I have a repo I set up here: [
 1. Download a zip of [https://github.com/demoncia/zones/archive/refs/heads/main.zip](https://github.com/demoncia/zones/archive/refs/heads/main.zip)
 2. Extract to a path of your choosing. 
 3. Start radiant.exe
-   1. Your first start it may prompt for what game to use, use the Everquest option \(it should be the only one\).
+   1. Your first start it may prompt for what game to use, use the Everquest option (it should be the only one).
    2. After clicking next, it'll ask where your game path is. Set it to the library/textures subdirectory.
 4. If you skip above, or mess it up, go to the top menu select edit, preferences. here's a screenshot of how I have it set up when I have the project at c:\code\projects\demoncia\zones: 
 
@@ -40,7 +40,7 @@ Your textures should load and look like this:
 
 If all textures state Shader Not Found, review that your library/textures/quake3/ has maps, scripts, and textures subdirectories.
 
-On the top menu, select build, \(final\). On success, a message such as the highlighted should appear: 
+On the top menu, select build, (final). On success, a message such as the highlighted should appear: 
 
 ![](../../../gitbook/assets/image%20%2823%29.png)
 
@@ -52,7 +52,7 @@ On the top menu, select file, import, Quake 3 Map... and browse for library/text
 
 ![](../../../gitbook/assets/image%20%2821%29.png)
 
-\(If multiple q3Mesh1 entries exist on the top left hierarchy, select one and press the delete key, and confirm. Any time you import, you'll want to delete the old mesh\)
+(If multiple q3Mesh1 entries exist on the top left hierarchy, select one and press the delete key, and confirm. Any time you import, you'll want to delete the old mesh)
 
 On the top menu, select file, export, Export to s3d... Enter new zone name: clz. click ok through each message.
 

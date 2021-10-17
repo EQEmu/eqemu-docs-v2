@@ -1,6 +1,6 @@
 # Expansion Bitmasks
 
-| ID | Token | Value \(int\) | Value \(hex\) |
+| ID | Token | Value (int) | Value (hex) |
 | :--- | :--- | :--- | :--- |
 | 0 | bitEverQuest | 0 | 0x00000000 |
 | 1 | bitRoK | 1 | 0x00000001 |
@@ -25,7 +25,7 @@
 
 
 
-| ID | Token | Value \(int\) | Value \(hex\) |
+| ID | Token | Value (int) | Value (hex) |
 | :--- | :--- | :--- | :--- |
 | 0 | maskEverQuest | 0 | 0x00000000 |
 | 1 | maskRoK | 1 | 0x00000001 |

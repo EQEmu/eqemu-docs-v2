@@ -2,7 +2,7 @@
 description: This page describes the settings and options in your eqemu_config.json file.
 ---
 
-# Configure your eqemu\_config
+# Configure your eqemu_config
 
 {% hint style="warning" %}
 If you make use of the various services listed below, be sure to **open the corresponding ports** on your server / firewall / router to TCP and UDP traffic!
@@ -14,21 +14,21 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Legend |
 | :--- |
-| \*Required |
+| *Required |
 | Not required |
 
 ### Config Example
 
 * Config format: .json
 * Below is a working base config example from our installer:
-* [https://github.com/Akkadius/eqemu-install-v2/blob/master/eqemu\_config.json](https://github.com/Akkadius/eqemu-install-v2/blob/master/eqemu_config.json)
+* [https://github.com/Akkadius/eqemu-install-v2/blob/master/eqemu_config.json](https://github.com/Akkadius/eqemu-install-v2/blob/master/eqemu_config.json)
 
 ### world
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*shortname |  | This is the short name of your server, this shows up in a client's .ini file eg: servername\_charactername.ini |
-| \*longname |  | This is the long name of your server, this shows up in a on the Loginserver |
+| *shortname |  | This is the short name of your server, this shows up in a client's .ini file eg: servername_charactername.ini |
+| *longname |  | This is the long name of your server, this shows up in a on the Loginserver |
 | address |  | Not required, but binds the server to this address, default is to listen on all addresses |
 | localaddress |  | Not required, but recommended to set for LAN setups so other local clients can connect properly |
 | maxclients | -1 | This sets the max amount of clients that can connect to your server, -1 is unlimited |
@@ -41,9 +41,9 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*ip | 127.0.0.1 | Telnet server IP \(0.0.0.0 would bind all addresses\) |
-| \*port | 9000 | Telnet server port |
-| \*enabled | false | Enables the telnet service |
+| *ip | 127.0.0.1 | Telnet server IP (0.0.0.0 would bind all addresses) |
+| *port | 9000 | Telnet server port |
+| *enabled | false | Enables the telnet service |
 
 ### database
 
@@ -51,23 +51,23 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*username | eq | MySQL username |
-| \*password | eq | MySQL password |
-| \*host | localhost | MySQL host |
-| \*port | 3306 | MySQL port |
-| \*db | eq | MySQL database name |
+| *username | eq | MySQL username |
+| *password | eq | MySQL password |
+| *host | localhost | MySQL host |
+| *port | 3306 | MySQL port |
+| *db | eq | MySQL database name |
 
 ### qsdatabase
 
-* Required for a connection to the query server MySQL database if you decide to use a different and external source and/or database for it \(Logging purposes or otherwise\)
+* Required for a connection to the query server MySQL database if you decide to use a different and external source and/or database for it (Logging purposes or otherwise)
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*username | eq | MySQL username |
-| \*password | eq | MySQL password |
-| \*host | localhost | MySQL host |
-| \*port | 3306 | MySQL port |
-| \*db | eq | MySQL database name |
+| *username | eq | MySQL username |
+| *password | eq | MySQL password |
+| *host | localhost | MySQL host |
+| *port | 3306 | MySQL port |
+| *db | eq | MySQL database name |
 
 ### mailserver
 
@@ -75,7 +75,7 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*host |  | Mailserver hostname - just use \(0.0.0.0\) |
+| *host |  | Mailserver hostname - just use (0.0.0.0) |
 | port | 7778 | Mailserver port |
 
 ### chatserver
@@ -84,7 +84,7 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*host |  | Chatserver hostname - just use \(0.0.0.0\) |
+| *host |  | Chatserver hostname - just use (0.0.0.0) |
 | port | 7778 | Chatserver port |
 
 ### zones
@@ -93,7 +93,7 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*defaultstatus | 0 | Default status on account creation |
+| *defaultstatus | 0 | Default status on account creation |
 
 #### ports
 
@@ -106,9 +106,9 @@ STOP!  Did you read the line above?  It's a **really** important tip.
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
-| \*host | login.eqemulator.net | This is the hostname of the loginserver endpoint |
-| \*port | 5998 | Loginserver endpoint port |
-| legacy | 0 | When set to 1, will connect to old netcode \(IE current public LS\) |
+| *host | login.eqemulator.net | This is the hostname of the loginserver endpoint |
+| *port | 5998 | Loginserver endpoint port |
+| legacy | 0 | When set to 1, will connect to old netcode (IE current public LS) |
 | account |  | Account forum username for public EQEmu authentication, this is used with worldserver registration |
 | password |  | Account forum password |
 
@@ -145,8 +145,8 @@ Your server will need to use port 5998 to communicate with the public EQEmu logi
 | maps | Maps/ | Maps directory |
 | quests | quests/ | Quests Directory |
 | plugins | plugins/ | Plugins Directory |
-| lua\_modules | lua\_modules/ | LUA Modules Directory |
+| lua_modules | lua_modules/ | LUA Modules Directory |
 | patches | ./ | Patches Directory |
-| shared\_memory | shared/ | Shared Memory Directory |
+| shared_memory | shared/ | Shared Memory Directory |
 | logs | logs/ | Logs Directory |
 

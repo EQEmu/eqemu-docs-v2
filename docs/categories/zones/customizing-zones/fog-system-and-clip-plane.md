@@ -4,7 +4,7 @@ description: This page describes the fog system and clip plane usage.
 
 # Fog System and Clip Plane
 
-EverQuest uses linear per vertex fog. Each zone has the option of using fog, sky or both together. Fog variables, included with other zone variables, are sent to the client each time you enter the zone. Variables that affect the fog include FogRed, FogGreen, FogBlue, FogStart, FogEnd, MinClip and MaxClip. When a zone does not use fog, the far plane defines the maximum distance from the camera that geometry is rendered. Beyond the far clip plane, the sky can be visible, or a solid color in non fog zones.\
+EverQuest uses linear per vertex fog. Each zone has the option of using fog, sky or both together. Fog variables, included with other zone variables, are sent to the client each time you enter the zone. Variables that affect the fog include FogRed, FogGreen, FogBlue, FogStart, FogEnd, MinClip and MaxClip. When a zone does not use fog, the far plane defines the maximum distance from the camera that geometry is rendered. Beyond the far clip plane, the sky can be visible, or a solid color in non fog zones..
 ****
 
 ![](https://lh6.googleusercontent.com/Lk0uLAMT7mSS_hw-GgqHf2JapAa84FO3D0gwUjbHCFx6slg8zpkIXuinueCfUwv3XBlhqKOvFlq6BwiwnRS4kKB9UGOYP_E6AaiobbonnEGj4e1fhhiHztkBzGMUkqd4ZzXjlEDN)![](https://lh4.googleusercontent.com/lVgi_Q6ByP6FF6dhUH80HSIOL4wKmjuYj2u0wIy7Ggh8XKxf6-TFdqNAd8Yjh7vcdCxYd5l8TPUxqnA7zuoUXXc4zkf7Ja1Wv05Oy1GfXlA85wgaadPhtqjmD7Kbvkoexl5rVLto)
@@ -19,7 +19,7 @@ The fog color for each zone is mixed with a blend color that corresponds with in
 
 To get the exact blend color, linearly interpolate between the value for the hour before and after the current time. Below is a listing of the blend color at each hour. To calculate the final color value that appears in the zone, you can use the formula below for each color component. For example:
 
-**FinalFogRedValue = InterpolatedRedValueAtSpecifiedHour / 255 \* DatabaseRedValue**
+**FinalFogRedValue = InterpolatedRedValueAtSpecifiedHour / 255 * DatabaseRedValue**
 
 There is also some fog color flickering (noticeable while moving) which seems to be unintentional and may be responsible for any slight variances in calculation.
 
@@ -27,7 +27,7 @@ There is also some fog color flickering (noticeable while moving) which seems to
 
 As EverQuest fog is calculated linearly, each zone that uses it has a fog start and end value. The fog start value is the distance at which fog will begin to affect the color of vertices and the end value denotes that anything equal or greater than this distance will be equal to the value of the fog color (i.e. fog is at 100% density). There are a handful of zones that do not use fog and anything past the far clip plane is not rendered.
 
-![](https://lh6.googleusercontent.com/YNDsil-Qp1U3tSMD4lbea1FTUOcSV-d8bMbcVwGiIKcHdyklJspSTgEjnJ8cgchJ-BpHwPoVFZeVyUST168hTLxFRg4EzRypIY3\_empcz0mRSgnu3CloMdhqtveN1Q5UQ9GQX9hy)![](https://lh3.googleusercontent.com/dYJIb4wKBxaBFs09RV-HqJqEOqxJIAcvUVKXfzmU9IhU2lhpP5L4msVS-9sx7fv9GOcnqkF9yIcV2DMhzUzcu1z7987weHr-jgUSUyZ5T2OgImaP2vROEGyHD3Mxh73Ilj8RvtjG)
+![](https://lh6.googleusercontent.com/YNDsil-Qp1U3tSMD4lbea1FTUOcSV-d8bMbcVwGiIKcHdyklJspSTgEjnJ8cgchJ-BpHwPoVFZeVyUST168hTLxFRg4EzRypIY3_empcz0mRSgnu3CloMdhqtveN1Q5UQ9GQX9hy)![](https://lh3.googleusercontent.com/dYJIb4wKBxaBFs09RV-HqJqEOqxJIAcvUVKXfzmU9IhU2lhpP5L4msVS-9sx7fv9GOcnqkF9yIcV2DMhzUzcu1z7987weHr-jgUSUyZ5T2OgImaP2vROEGyHD3Mxh73Ilj8RvtjG)
 
 Some zones like Firiona Vie have drastic differences between the min and max draw distance
 
@@ -35,26 +35,26 @@ The player is able to modify the game draw distance by changing the value of the
 
 | **Index** | **Fog Start**                                 | **Fog End (Far Clip Plane)**                                            |
 | --------- | --------------------------------------------- | ----------------------------------------------------------------------- |
-| 0         | (ClipMin - FogClipMax) \* 1.0 + FogClipMin    | <p>ClipMin + (FogClipMax - ClipMin) * 0</p><p>or</p><p>ClipMin</p>      |
-| 1         | (ClipMin - FogClipMax) \* 0.7 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) \* 0.1                                 |
-| 2         | (ClipMin - FogClipMax) \* 0.5 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) \* 0.3                                 |
-| 3         | (ClipMin - FogClipMax) \* 0.3 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) \* 0.5                                 |
-| 4         | (ClipMin - FogClipMax) \* 0.1 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) \* 0.7                                 |
+| 0         | (ClipMin - FogClipMax) * 1.0 + FogClipMin    | <p>ClipMin + (FogClipMax - ClipMin) * 0</p><p>or</p><p>ClipMin</p>      |
+| 1         | (ClipMin - FogClipMax) * 0.7 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) * 0.1                                 |
+| 2         | (ClipMin - FogClipMax) * 0.5 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) * 0.3                                 |
+| 3         | (ClipMin - FogClipMax) * 0.3 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) * 0.5                                 |
+| 4         | (ClipMin - FogClipMax) * 0.1 + FogClipMin    | ClipMin + (FogClipMax - ClipMin) * 0.7                                 |
 | 5         | FogClipMin                                    | <p>ClipMin + (FogClipMax - ClipMin) * 1.0</p><p>or</p><p>FogClipMax</p> |
-| 6         | (ClipMax - FogClipMax) \* 0.066 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.066                            |
-| 7         | (ClipMax - FogClipMax) \* 0.132 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.132                            |
-| 8         | (ClipMax - FogClipMax) \* 0.198 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.198                            |
-| 9         | (ClipMax - FogClipMax) \* 0.264 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.264                            |
-| 10        | (ClipMax - FogClipMax) \* 0.333 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.33                             |
-| 11        | (ClipMax - FogClipMax ) \* 0.396 + FogClipMin | FogClipMax + (ClipMax - FogClipMax) \* 0.396                            |
-| 12        | (ClipMax - FogClipMax) \* 0.462 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.462                            |
-| 13        | (ClipMax - FogClipMax) \* 0.528 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.528                            |
-| 14        | (ClipMax - FogClipMax) \* 0.594 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.594                            |
-| 15        | (ClipMax - FogClipMax) \* 0.666 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.66                             |
-| 16        | (ClipMax - FogClipMax) \* 0.726 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.726                            |
-| 17        | (ClipMax - FogClipMax) \* 0.792 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.792                            |
-| 18        | (ClipMax - FogClipMax) \* 0.858 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.858                            |
-| 19        | (ClipMax - FogClipMax) \* 0.924 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) \* 0.924                            |
+| 6         | (ClipMax - FogClipMax) * 0.066 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.066                            |
+| 7         | (ClipMax - FogClipMax) * 0.132 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.132                            |
+| 8         | (ClipMax - FogClipMax) * 0.198 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.198                            |
+| 9         | (ClipMax - FogClipMax) * 0.264 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.264                            |
+| 10        | (ClipMax - FogClipMax) * 0.333 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.33                             |
+| 11        | (ClipMax - FogClipMax ) * 0.396 + FogClipMin | FogClipMax + (ClipMax - FogClipMax) * 0.396                            |
+| 12        | (ClipMax - FogClipMax) * 0.462 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.462                            |
+| 13        | (ClipMax - FogClipMax) * 0.528 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.528                            |
+| 14        | (ClipMax - FogClipMax) * 0.594 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.594                            |
+| 15        | (ClipMax - FogClipMax) * 0.666 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.66                             |
+| 16        | (ClipMax - FogClipMax) * 0.726 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.726                            |
+| 17        | (ClipMax - FogClipMax) * 0.792 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.792                            |
+| 18        | (ClipMax - FogClipMax) * 0.858 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.858                            |
+| 19        | (ClipMax - FogClipMax) * 0.924 + FogClipMin  | FogClipMax + (ClipMax - FogClipMax) * 0.924                            |
 | 20        | ClipMax - FogClipMax + FogClipMin             | <p>FogClipMax + (ClipMax - FogClipMax) * 1.0</p><p>or</p><p>ClipMax</p> |
 
 **Notes:**

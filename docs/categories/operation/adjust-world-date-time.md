@@ -14,7 +14,7 @@ Year
 Real Time
 ```
 
-Sample file contents \(PEQ 2013-12-21\):
+Sample file contents (PEQ 2013-12-21):
 
 ```text
 1000

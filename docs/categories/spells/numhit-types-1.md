@@ -1,11 +1,11 @@
 # Numhit Types
 
-Num Hits Type field \(175\) determines what behavior will tick down the numhits counter on specified buffs.
+Num Hits Type field (175) determines what behavior will tick down the numhits counter on specified buffs.
 
 | **ID** | **Description** |
 | :--- | :--- |
-| 1 | Attempted incoming melee attacks \(hit or miss\) on YOU. |
-| 2 | Attempted outgoing melee attacks \(hit or miss\) on YOUR TARGET. |
+| 1 | Attempted incoming melee attacks (hit or miss) on YOU. |
+| 2 | Attempted outgoing melee attacks (hit or miss) on YOUR TARGET. |
 | 3 | Incoming detrimental spells |
 | 4 | Outgoing deterimental spells |
 | 5 | Successful outgoing melee attack HIT on YOUR TARGET. |

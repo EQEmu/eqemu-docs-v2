@@ -4,141 +4,141 @@ description: Changes to Zones in the Classic EQ Era
 
 # Zone Changes
 
-## Ak'Anon \(akanon\)
+## Ak'Anon (akanon)
 
-## The Arena \(arena\)
+## The Arena (arena)
 
-## Befallen \(befallen\)
+## Befallen (befallen)
 
-## Gorge of King Xorbb \(beholder\)
+## Gorge of King Xorbb (beholder)
 
-## Blackburrow \(blackburrow\)
+## Blackburrow (blackburrow)
 
-## Butcherblock Mountains \(butcher\)
+## Butcherblock Mountains (butcher)
 
-## Dagnor's Cauldron \(cauldron\)
+## Dagnor's Cauldron (cauldron)
 
-## The Temple of Cazic-Thule \(cazicthule\)
+## The Temple of Cazic-Thule (cazicthule)
 
-## West Commonlands \(commons\)
+## West Commonlands (commons)
 
-## Crushbone \(crushbone\)
+## Crushbone (crushbone)
 
-## Sunset Home \(cshome\)
+## Sunset Home (cshome)
 
-## Eastern Plains of Karana \(eastkarana\)
+## Eastern Plains of Karana (eastkarana)
 
-## East Commonlands \(ecommons\)
+## East Commonlands (ecommons)
 
-## Erudin \(erudnext\)
+## Erudin (erudnext)
 
-## The Erudin Palace \(erudnint\)
+## The Erudin Palace (erudnint)
 
-## Erud's Crossing \(erudsxing\)
+## Erud's Crossing (erudsxing)
 
-## Everfrost Peaks \(everfrost\)
+## Everfrost Peaks (everfrost)
 
-## The Feerrott \(feerrott\)
+## The Feerrott (feerrott)
 
-## Northern Felwithe \(felwithea\)
+## Northern Felwithe (felwithea)
 
-## Southern Felwithe \(felwitheb\)
+## Southern Felwithe (felwitheb)
 
-## East Freeport \(freporte\)
+## East Freeport (freporte)
 
-## North Freeport \(freportn\)
+## North Freeport (freportn)
 
-## West Freeport \(freportw\)
+## West Freeport (freportw)
 
-## The Greater Faydark \(gfaydark\)
+## The Greater Faydark (gfaydark)
 
-## Grobb \(grobb\)
+## Grobb (grobb)
 
-## The Ruins of Old Guk \(gukbottom\)
+## The Ruins of Old Guk (gukbottom)
 
-## The City of Guk \(guktop\)
+## The City of Guk (guktop)
 
-## Halas \(halas\)
+## Halas (halas)
 
-## High Keep \(highkeep\)
+## High Keep (highkeep)
 
-## Highpass Hold \(highpass\)
+## Highpass Hold (highpass)
 
-## Innothule Swamp \(innothule\)
+## Innothule Swamp (innothule)
 
-## South Kaladim \(kaladima\)
+## South Kaladim (kaladima)
 
-## North Kaladim \(kaladimb\)
+## North Kaladim (kaladimb)
 
-## Kedge Keep \(kedge\)
+## Kedge Keep (kedge)
 
-## Kerra Isle \(kerraridge\)
+## Kerra Isle (kerraridge)
 
-## Kithicor Forest \(kithicor\)
+## Kithicor Forest (kithicor)
 
-## Lake Rathetear \(lakerathe\)
+## Lake Rathetear (lakerathe)
 
-## The Lavastorm Mountains \(lavastorm\)
+## The Lavastorm Mountains (lavastorm)
 
-## The Lesser Faydark \(lfaydark\)
+## The Lesser Faydark (lfaydark)
 
-## The Castle of Mistmoore \(mistmoore\)
+## The Castle of Mistmoore (mistmoore)
 
-## Misty Thicket \(misty\)
+## Misty Thicket (misty)
 
-## Najena \(najena\)
+## Najena (najena)
 
-## The Nektulos Forest \(nektulos \)
+## The Nektulos Forest (nektulos )
 
-## Neriak - Foreign Quarter \(neriaka\)
+## Neriak - Foreign Quarter (neriaka)
 
-## Neriak - Commons \(neriakb\)
+## Neriak - Commons (neriakb)
 
-## Neriak - 3rd Gate \(neriakc\)
+## Neriak - 3rd Gate (neriakc)
 
-## The Northern Plains of Karana \(northkarana\)
+## The Northern Plains of Karana (northkarana)
 
-## Northern Desert of Ro \(nro\)
+## Northern Desert of Ro (nro)
 
-## Oasis of Marr \(oasis\)
+## Oasis of Marr (oasis)
 
-## Oggok \(oggok\)
+## Oggok (oggok)
 
-## Ocean of Tears \(oot\)
+## Ocean of Tears (oot)
 
-## The Lair of the Splitpaw \(paw\)
+## The Lair of the Splitpaw (paw)
 
-## The Permafrost Caverns \(permafrost\)
+## The Permafrost Caverns (permafrost)
 
-## The Qeynos Aqueduct System \(qcat\)
+## The Qeynos Aqueduct System (qcat)
 
-## The Western Plains of Karana \(qey2hh1\)
+## The Western Plains of Karana (qey2hh1)
 
-## South Qeynos \(qeynos\)
+## South Qeynos (qeynos)
 
-## North Qeynos \(qeynos2\)
+## North Qeynos (qeynos2)
 
-## The Qeynos Hills \(qeytoqrg\)
+## The Qeynos Hills (qeytoqrg)
 
-## The Surefall Glade \(qrg\)
+## The Surefall Glade (qrg)
 
-## The Rathe Mountains \(rathemtn\)
+## The Rathe Mountains (rathemtn)
 
-## Rivervale \(rivervale\)
+## Rivervale (rivervale)
 
-## The Liberated Citadel of Runnyeye \(runnyeye\)
+## The Liberated Citadel of Runnyeye (runnyeye)
 
-## Solusek's Eye \(soldunga\)
+## Solusek's Eye (soldunga)
 
-## Nagafen's Lair \(soldungb\)
+## Nagafen's Lair (soldungb)
 
-## The Southern Plains of Karana \(southkarana\)
+## The Southern Plains of Karana (southkarana)
 
-## Southern Desert of Ro \(sro\)
+## Southern Desert of Ro (sro)
 
-## Steamfont Mountains \(steamfont\)
+## Steamfont Mountains (steamfont)
 
-## Toxxulia Forest \(tox\)
+## Toxxulia Forest (tox)
 
-## The Estate of Unrest \(unrest
+## The Estate of Unrest (unrest
 

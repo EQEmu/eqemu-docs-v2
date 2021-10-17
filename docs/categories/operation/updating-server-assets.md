@@ -2,9 +2,9 @@
 
 We have an automated way for pulling down certain assets and maintaining parts of the server
 
-The main script we use for this is **eqemu\_server.pl** in the server folder
+The main script we use for this is **eqemu_server.pl** in the server folder
 
-**eqemu\_server.pl** is a required part of the server binary set.
+**eqemu_server.pl** is a required part of the server binary set.
 
 World will download a fresh copy on bootup and then run the script to make sure no database schema updates need to be ran, it also does a handful of other very powerful things
 
@@ -31,9 +31,9 @@ Enter a command #>
 
 ### Assets Menu
 
-* The assets menu will show a variety of options depending on what OS you are running the script on \(Windows or Linux\)
+* The assets menu will show a variety of options depending on what OS you are running the script on (Windows or Linux)
 
-Example: perl eqemu\_server.pl maps
+Example: perl eqemu_server.pl maps
 
 ```text
 
@@ -56,29 +56,29 @@ Example: perl eqemu\_server.pl maps
 | Command | Action |
 | :--- | :--- |
 | maps | Download latest maps |
-| opcodes | Download latest opcodes \(Patches for eq clients\) |
+| opcodes | Download latest opcodes (Patches for eq clients) |
 | quests | Download latest quests |
 | plugins | Download latest plugins |
-| lua\_modules | Download latest lua\_modules |
-| utility\_scripts | Download utility scripts |
-| setup\_loginserver | Windows Loginserver setup |
-| linux\_login\_server\_setup | Loginserver setup for Linux |
+| lua_modules | Download latest lua_modules |
+| utility_scripts | Download utility scripts |
+| setup_loginserver | Windows Loginserver setup |
+| linux_login_server_setup | Loginserver setup for Linux |
 
 #### Database Maintenance Commands
 
 | Command | Action |
 | :--- | :--- |
-| backup\_database | Back up database to backups/ |
-| backup\_database\_compressed | Back up database \(zip/tar\) to backups/ |
-| backup\_player\_tables | Backs up only player tables to backsup/ |
-| check\_db\_updates | Checks for database updates manually \(should not be needed\) |
-| check\_bot\_db\_updates | Checks for bot database updates manually \(should not be needed\) |
-| remove\_duplicate\_rules | Older databases used to have tons of duplicate rules - this can be ran to purge them for the new inheritance rules |
-| drop\_db\_bots\_schema | Removes bot database schema |
+| backup_database | Back up database to backups/ |
+| backup_database_compressed | Back up database (zip/tar) to backups/ |
+| backup_player_tables | Backs up only player tables to backsup/ |
+| check_db_updates | Checks for database updates manually (should not be needed) |
+| check_bot_db_updates | Checks for bot database updates manually (should not be needed) |
+| remove_duplicate_rules | Older databases used to have tons of duplicate rules - this can be ran to purge them for the new inheritance rules |
+| drop_db_bots_schema | Removes bot database schema |
 
 #### Updating Windows Binaries - Stable
 
-* **perl eqemu\_server.pl windows\_server\_download** will download EQEmu development team approved 'stable' binaries - you can check the date on the files as to when they were built
+* **perl eqemu_server.pl windows_server_download** will download EQEmu development team approved 'stable' binaries - you can check the date on the files as to when they were built
 
 Example:
 
@@ -126,7 +126,7 @@ Example:
 
 #### Updating Windows Binaries - Unstable - Latest
 
-* **perl eqemu\_server.pl windows\_server\_latest** - will download the latest compiled binaries from our **AppVeyor CI integration**
+* **perl eqemu_server.pl windows_server_latest** - will download the latest compiled binaries from our **AppVeyor CI integration**
 
 Example:
 

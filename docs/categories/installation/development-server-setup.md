@@ -15,9 +15,9 @@ mkdir eqemu_test
 cd eqemu_test
 ```
 
-**Using eqemu\_server.pl**
+**Using eqemu_server.pl**
 
-* Now that we are in our server folder, we can either copy the eqemu\_server.pl from another server folder, or we can pull down a fresh copy from Github
+* Now that we are in our server folder, we can either copy the eqemu_server.pl from another server folder, or we can pull down a fresh copy from Github
 * You can use curl, wget or manually create the file
 
 ```text
@@ -48,7 +48,7 @@ wget --no-check-certificate --cache=no https://raw.githubusercontent.com/EQEmu/S
 **Waiting for Installation**
 
 * Next, this is going to kick off installer routines - and build the source in the following directory:
-  * **/home/eqemu/eqemu\_test**\_source/Server/build
+  * **/home/eqemu/eqemu_test**_source/Server/build
   * When this is done compiling, the folder you created will by symlinked to this custom build directory
 * Once complete, you will see installation summary info presented to you
 
@@ -72,7 +72,7 @@ wget --no-check-certificate --cache=no https://raw.githubusercontent.com/EQEmu/S
 
 **Server Start Test**
 
-* If necessary, return back to your original folder and start your respective start script whether you are in Windows or Linux, in Linux we will use ./server\_start.sh
+* If necessary, return back to your original folder and start your respective start script whether you are in Windows or Linux, in Linux we will use ./server_start.sh
 
 ```text
 root@debian:/home/eqemu/eqemu_test# ./server_start.sh

@@ -4,7 +4,7 @@ Shared tasks use the existing task system quest API with the added availability 
 
 Note that mixing shared task types with other types is not supported via the [taskselector](https://docs.eqemu.io/server/categories/task-system-guide#taskselector) APIs since shared tasks need to run through separate validation for player count and member level requirements. If any shared task type is included in a task selector offer, all other task types will be dropped.
 
-The [EVENT\_TASK ACCEPTED](https://docs.eqemu.io/server/categories/task-system-guide#event_taskaccepted) event will only occur if shared task creation was successful after passing all validation requirements defined in the `tasks` database entry.
+The [EVENT_TASK ACCEPTED](https://docs.eqemu.io/server/categories/task-system-guide#event_taskaccepted) event will only occur if shared task creation was successful after passing all validation requirements defined in the `tasks` database entry.
 
 ## Dynamic Zones
 
@@ -23,7 +23,7 @@ This method creates a dynamic zone for a client assigned to the specified task i
 Dynamic zone creation data is passed through the `dynamic_zone_info` parameter similar to the [Client::CreateExpedition](https://docs.eqemu.io/server/categories/expedition-system/quest-api-lua/client-methods#expedition-createexpedition-lua_ttable-expedition_info) API. Passing a duration for the instance data will have no effect. The shared task system will automatically override the duration to the shared task's remaining time.
 
 {% hint style="warning" %}
-A shared task set to `0` duration in the database for unlimited time is not supported and the dynamic zone will be set to a max duration of 24 hours \(suspected max of live shared tasks\)
+A shared task set to `0` duration in the database for unlimited time is not supported and the dynamic zone will be set to a max duration of 24 hours (suspected max of live shared tasks)
 {% endhint %}
 
 | key name | supported keys | description |
@@ -37,19 +37,19 @@ A shared task set to `0` duration in the database for unlimited time is not supp
 
 | key | type | description |
 | :--- | :--- | :--- |
-| `zone` | int or string | zone id or zone short\_name of the expedition's dz instance |
+| `zone` | int or string | zone id or zone short_name of the expedition's dz instance |
 | `version` | int | dz instance version |
-| `duration` | int | \(optional\) no effect |
+| `duration` | int | (optional) no effect |
 
 #### compass, safereturn, and zonein keys <a id="compass-safereturn-and-zonein-keys"></a>
 
 | key | type | description |
 | :--- | :--- | :--- |
 | `zone` | int or string | zone id or zone short name |
-| `x` | float | `(optional)` x coordinate \(default: `0`\) |
-| `y` | float | `(optional)` y coordinate \(default: `0`\) |
-| `z` | float | `(optional)` z coordinate \(default: `0`\) |
-| `h` | float | `(optional)` heading \(default: `0`\) |
+| `x` | float | `(optional)` x coordinate (default: `0`) |
+| `y` | float | `(optional)` y coordinate (default: `0`) |
+| `z` | float | `(optional)` z coordinate (default: `0`) |
+| `h` | float | `(optional)` heading (default: `0`) |
 
 ```lua
 local shared_task_id = 4795 -- some database task id with type set to shared task

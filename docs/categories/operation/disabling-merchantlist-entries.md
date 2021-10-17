@@ -6,7 +6,7 @@ description: >-
 
 # Disabling Merchantlist Entries
 
-Did you know that you can disable merchantlist entries in a way that allows you to restore them later?  Most merchantlist entries have a probability of 100--meaning that the merchant will always have the item \(there are very few exceptions\).  
+Did you know that you can disable merchantlist entries in a way that allows you to restore them later?  Most merchantlist entries have a probability of 100--meaning that the merchant will always have the item (there are very few exceptions).  
 
 If you would like to disable any particular item from the merchant's inventory, perhaps those that are out of era for your server, and easily turn them back on later, follow the steps below.
 
@@ -31,14 +31,14 @@ Once you've made your changes, scroll down and click the "Submit Changes" button
 The advantage of this method of disabling items available on a merchant is that you can turn them off and on without deleting the record permanently.  If you delete the item altogether, if you choose to add it again later, you will have to input the ID, buy price, sell price, faction, etc. so that the merchant can once again sell the item.
 
 {% hint style="info" %}
-If you want to see this change in-game immediately, you can use the command **\#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
+If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
 {% endhint %}
 
 ### Using an SQL Query
 
 You can also easily disable merchantlist entries globally by using an sql query.  Since the probability that a merchant will have an item is typically 100 percent, you can utilize a query for any item ID to set the probability to 0--disabling the item from being sold.
 
-If we want to see how many merchantlist entries contain item ID 15323 - Spell: Eye of Zomm, we can simply filter \(query\) the merchanlist entries for this item by ID.
+If we want to see how many merchantlist entries contain item ID 15323 - Spell: Eye of Zomm, we can simply filter (query) the merchanlist entries for this item by ID.
 
 ![Item 15323 - Spell: Eye of Zomm](../../gitbook/assets/merchantlist_entries_15323.png)
 
@@ -55,7 +55,7 @@ The result is that the probability of the item being in stock is now 0, and play
 ![This item will no longer be found on any merchant](../../gitbook/assets/merchantlist_entries_15323_disabled.png)
 
 {% hint style="info" %}
-If you want to see this change in-game immediately, you can use the command **\#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
+If you want to see this change in-game immediately, you can use the command **#reloadmerchants**, which is documented on the [Loading Server Data](https://eqemu.gitbook.io/server/categories/how-to-guides/operation/loading-server-data) page.
 {% endhint %}
 
 To re-enable the item, a simple query can be used to reverse our change:

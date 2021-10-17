@@ -31,7 +31,7 @@
 | 39 | Group No Pets |
 | 40 | Area of EffectPC V2 |
 | 41 | Group v2 |
-| 42 | Self \(Directional\) |
+| 42 | Self (Directional) |
 | 43 | Group With Pets |
 | 44 | Beam |
 

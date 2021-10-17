@@ -7,7 +7,7 @@
 * This does not send a scaling value in the item header.
 * Each infusible item has 2 reserved slots for powersource augments of type 1 and type 2, generally just weapons actually use both.
 * The stat aug goes in type 1 slot and proc aug goes into type 2.
-* The augslot\#unk2 values seem to be 1 for the powersource slots, unsure if this actually has to do with powersources or just that they make sue of whatever it is.
+* The augslot#unk2 values seem to be 1 for the powersource slots, unsure if this actually has to do with powersources or just that they make sue of whatever it is.
 
 ## Dull Orbs
 
@@ -22,7 +22,7 @@
 
 | **Name** | **Gear Aug** | **1-Hander Augs** | **2-Hander Augs** | **Bow Augs** |
 | :--- | :--- | :--- | :--- | :--- |
-| [Murky Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=33769) | [Earth](http://lucy.allakhazam.com/item.html?id=80820) \(?\) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80926) \(?\) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80933) \(?\) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80937) \(?\) |
+| [Murky Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=33769) | [Earth](http://lucy.allakhazam.com/item.html?id=80820) (?) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80926) (?) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80933) (?) | [Earth Procs](http://lucy.allakhazam.com/item.html?id=80937) (?) |
 | [Murky Energeian Air Orb](http://lucy.allakhazam.com/item.html?id=33770) | Air | Air Procs | Air Procs | Air Procs |
 | [Murky Energeian Decay Orb](http://lucy.allakhazam.com/item.html?id=33772) | Decay | Decay Procs | Decay Procs | Decay Procs |
 | [Murky Energeian Fire Orb](http://lucy.allakhazam.com/item.html?id=33768) | Fire | Fire Procs | Fire Procs | Fire Procs |
@@ -79,45 +79,45 @@
 
 | **Name** | **Gear Aug** | **1-Hander Augs** | **2-Hander Augs** | **Bow Augs** |
 | :--- | :--- | :--- | :--- | :--- |
-| [Translucent Energeian Air Orb](http://lucy.allakhazam.com/item.html?id=80727) | [Air](http://lucy.allakhazam.com/item.html?id=80822) \(?\) | Air Procs | Air Procs | Air Procs |
-| [Translucent Energeian Decay Orb](http://lucy.allakhazam.com/item.html?id=80729) | [Decay](http://lucy.allakhazam.com/item.html?id=80826) \(?\) | Decay Procs | Decay Procs | Decay Procs |
-| [Translucent Energeian Disease Orb](http://lucy.allakhazam.com/item.html?id=80731) | [Disease](http://lucy.allakhazam.com/item.html?id=80830) \(?\) | Disease Procs | Disease Procs | Disease Procs |
-| [Translucent Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=80726) | [Earth](http://lucy.allakhazam.com/item.html?id=80820) \(?\) | Earth Procs | Earth Procs | Earth Procs |
+| [Translucent Energeian Air Orb](http://lucy.allakhazam.com/item.html?id=80727) | [Air](http://lucy.allakhazam.com/item.html?id=80822) (?) | Air Procs | Air Procs | Air Procs |
+| [Translucent Energeian Decay Orb](http://lucy.allakhazam.com/item.html?id=80729) | [Decay](http://lucy.allakhazam.com/item.html?id=80826) (?) | Decay Procs | Decay Procs | Decay Procs |
+| [Translucent Energeian Disease Orb](http://lucy.allakhazam.com/item.html?id=80731) | [Disease](http://lucy.allakhazam.com/item.html?id=80830) (?) | Disease Procs | Disease Procs | Disease Procs |
+| [Translucent Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=80726) | [Earth](http://lucy.allakhazam.com/item.html?id=80820) (?) | Earth Procs | Earth Procs | Earth Procs |
 | [Translucent Energeian Elemental Orb](http://lucy.allakhazam.com/item.html?id=80738) | [Elemental](http://lucy.allakhazam.com/item.html?id=80844) | [Elemental Procs](http://lucy.allakhazam.com/item.html?id=81090) | [Elemental Procs](http://lucy.allakhazam.com/item.html?id=81092) | [Elemental Procs](http://lucy.allakhazam.com/item.html?id=81094) |
-| [Translucent Energeian Ethereal Orb](http://lucy.allakhazam.com/item.html?id=80737) | [Ethereal](http://lucy.allakhazam.com/item.html?id=80842) \(?\) | Ethereal Procs | Ethereal Procs | Ethereal Procs |
-| [Translucent Energeian Fire Orb](http://lucy.allakhazam.com/item.html?id=80725) | [Fire](http://lucy.allakhazam.com/item.html?id=80818) \(?\) | Fire Procs | Fire Procs | Fire Procs |
-| [Translucent Energeian Growth Orb](http://lucy.allakhazam.com/item.html?id=80728) | [Growth](http://lucy.allakhazam.com/item.html?id=80824) \(?\) | Growth Procs | Growth Procs | Growth Procs |
-| [Translucent Energeian Ice Orb](http://lucy.allakhazam.com/item.html?id=80724) | [Ice](http://lucy.allakhazam.com/item.html?id=80816) \(?\) | Ice Procs | Ice Procs | Ice Procs |
-| [Translucent Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=80734) | [Light](http://lucy.allakhazam.com/item.html?id=80836) \(?\) | Light Procs | Light Procs | Light Procs |
-| [Translucent Energeian Poison Orb](http://lucy.allakhazam.com/item.html?id=80730) | [Poison](http://lucy.allakhazam.com/item.html?id=80828) \(?\) | Poison Procs | Poison Procs | Poison Procs |
-| [Translucent Energeian Shadow Orb](http://lucy.allakhazam.com/item.html?id=80733) | [Shadow](http://lucy.allakhazam.com/item.html?id=80834) \(?\) | Shadow Procs | Shadow Procs | Shadow Procs |
-| [Translucent Energeian Steam Orb](http://lucy.allakhazam.com/item.html?id=80735) | [Steam](http://lucy.allakhazam.com/item.html?id=80838) \(?\) | Steam Procs | Steam Procs | Steam Procs |
-| [Translucent Energeian Stone Orb](http://lucy.allakhazam.com/item.html?id=80736) | [Stone](http://lucy.allakhazam.com/item.html?id=80840) \(?\) | Stone Procs | Stone Procs | Stone Procs |
-| [Translucent Energeian Water Orb](http://lucy.allakhazam.com/item.html?id=80732) | [Water](http://lucy.allakhazam.com/item.html?id=80832) \(?\) | Water Procs | Water Procs | Water Procs |
+| [Translucent Energeian Ethereal Orb](http://lucy.allakhazam.com/item.html?id=80737) | [Ethereal](http://lucy.allakhazam.com/item.html?id=80842) (?) | Ethereal Procs | Ethereal Procs | Ethereal Procs |
+| [Translucent Energeian Fire Orb](http://lucy.allakhazam.com/item.html?id=80725) | [Fire](http://lucy.allakhazam.com/item.html?id=80818) (?) | Fire Procs | Fire Procs | Fire Procs |
+| [Translucent Energeian Growth Orb](http://lucy.allakhazam.com/item.html?id=80728) | [Growth](http://lucy.allakhazam.com/item.html?id=80824) (?) | Growth Procs | Growth Procs | Growth Procs |
+| [Translucent Energeian Ice Orb](http://lucy.allakhazam.com/item.html?id=80724) | [Ice](http://lucy.allakhazam.com/item.html?id=80816) (?) | Ice Procs | Ice Procs | Ice Procs |
+| [Translucent Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=80734) | [Light](http://lucy.allakhazam.com/item.html?id=80836) (?) | Light Procs | Light Procs | Light Procs |
+| [Translucent Energeian Poison Orb](http://lucy.allakhazam.com/item.html?id=80730) | [Poison](http://lucy.allakhazam.com/item.html?id=80828) (?) | Poison Procs | Poison Procs | Poison Procs |
+| [Translucent Energeian Shadow Orb](http://lucy.allakhazam.com/item.html?id=80733) | [Shadow](http://lucy.allakhazam.com/item.html?id=80834) (?) | Shadow Procs | Shadow Procs | Shadow Procs |
+| [Translucent Energeian Steam Orb](http://lucy.allakhazam.com/item.html?id=80735) | [Steam](http://lucy.allakhazam.com/item.html?id=80838) (?) | Steam Procs | Steam Procs | Steam Procs |
+| [Translucent Energeian Stone Orb](http://lucy.allakhazam.com/item.html?id=80736) | [Stone](http://lucy.allakhazam.com/item.html?id=80840) (?) | Stone Procs | Stone Procs | Stone Procs |
+| [Translucent Energeian Water Orb](http://lucy.allakhazam.com/item.html?id=80732) | [Water](http://lucy.allakhazam.com/item.html?id=80832) (?) | Water Procs | Water Procs | Water Procs |
 
 ## Pure Orbs
 
 | **Name** | **Gear Augs** | **1-Hander Augs** | **2-Hander Augs** | **Bow Augs** |
 | :--- | :--- | :--- | :--- | :--- |
-| [Pure Energeian Air Orb](http://lucy.allakhazam.com/item.html?id=80742) | [Air](http://lucy.allakhazam.com/item.html?id=80852) \(?\) | Air Procs | Air Procs | Air Procs |
-| [Pure Energeian Death Orb](http://lucy.allakhazam.com/item.html?id=80755) | [Death](http://lucy.allakhazam.com/item.html?id=80878) \(?\) | Death Procs | Death Procs | Death Procs |
-| [Pure Energeian Decay Orb](http://lucy.allakhazam.com/item.html?id=80744) | [Decay](http://lucy.allakhazam.com/item.html?id=80856) \(?\) | Deacy Procs | Decay Procs | Decay Procs |
-| [Pure Energeian Disease Orb](http://lucy.allakhazam.com/item.html?id=80746) | [Disease](http://lucy.allakhazam.com/item.html?id=80860) \(?\) | Disease Procs | Disease Procs | Disease Procs |
-| [Pure Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=80741) | [Earth](http://lucy.allakhazam.com/item.html?id=80850) \(?\) | Earth Procs | Earth Procs | Earth Procs |
-| [Pure Energeian Elemental Orb](http://lucy.allakhazam.com/item.html?id=80753) | [Elemental](http://lucy.allakhazam.com/item.html?id=80874) \(?\) | Elemental Procs | Elemental Procs | Elemental Procs |
-| [Pure Energeian Ethereal Orb](http://lucy.allakhazam.com/item.html?id=80752) | [Ethereal](http://lucy.allakhazam.com/item.html?id=80872) \(?\) | Ethereal Procs | Ethereal Procs | Ethereal Procs |
-| [Pure Energeian Fire Orb](http://lucy.allakhazam.com/item.html?id=80740) | [Fire](http://lucy.allakhazam.com/item.html?id=80848) \(?\) | Fire Procs | Fire Procs | Fire Procs |
-| [Pure Energeian Growth Orb](http://lucy.allakhazam.com/item.html?id=80743) | [Growth](http://lucy.allakhazam.com/item.html?id=80854) \(?\) | Growth Procs | Growth Procs | Growth Procs |
-| [Pure Energeian Ice Orb](http://lucy.allakhazam.com/item.html?id=80739) | [Ice](http://lucy.allakhazam.com/item.html?id=80846) \(?\) | Ice Procs | Ice Procs | Ice Procs |
-| [Pure Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=80749) | [Light](http://lucy.allakhazam.com/item.html?id=80866) \(??\) | Light Procs | Light Procs | Light Procs |
-| [Pure Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=66277) | [Light](http://lucy.allakhazam.com/item.html?id=80866) \(??\) | Light Procs | Light Procs | Light Procs |
-| [Pure Energeian Metal Orb](http://lucy.allakhazam.com/item.html?id=80754) | [Metal](http://lucy.allakhazam.com/item.html?id=80876) \(??\) | Metal Procs | Metal Procs | Metal Procs |
-| [Pure Energeian Metal Orb](http://lucy.allakhazam.com/item.html?id=66278) | [Metal](http://lucy.allakhazam.com/item.html?id=80876) \(??\) | Metal Procs | Metal Procs | Metal Procs |
-| [Pure Energeian Poison Orb](http://lucy.allakhazam.com/item.html?id=80745) | [Poison](http://lucy.allakhazam.com/item.html?id=80858) \(?\) | Poison Procs | Poison Procs | Poison Procs |
-| [Pure Energeian Shadow Orb](http://lucy.allakhazam.com/item.html?id=80748) | [Shadow](http://lucy.allakhazam.com/item.html?id=80864) \(?\) | Shadow Procs | Shadow Procs | Shadow Procs |
-| [Pure Energeian Steam Orb](http://lucy.allakhazam.com/item.html?id=80750) | [Steam](http://lucy.allakhazam.com/item.html?id=80868) \(?\) | Steam Procs | Steam Procs | Steam Procs |
-| [Pure Energeian Stone Orb](http://lucy.allakhazam.com/item.html?id=80751) | [Stone](http://lucy.allakhazam.com/item.html?id=80870) \(?\) | Stone Procs | Stone Procs | Stone Procs |
-| [Pure Energeian Water Orb](http://lucy.allakhazam.com/item.html?id=80747) | [Water](http://lucy.allakhazam.com/item.html?id=80862) \(?\) | Water Procs | Water Procs | Water Procs |
+| [Pure Energeian Air Orb](http://lucy.allakhazam.com/item.html?id=80742) | [Air](http://lucy.allakhazam.com/item.html?id=80852) (?) | Air Procs | Air Procs | Air Procs |
+| [Pure Energeian Death Orb](http://lucy.allakhazam.com/item.html?id=80755) | [Death](http://lucy.allakhazam.com/item.html?id=80878) (?) | Death Procs | Death Procs | Death Procs |
+| [Pure Energeian Decay Orb](http://lucy.allakhazam.com/item.html?id=80744) | [Decay](http://lucy.allakhazam.com/item.html?id=80856) (?) | Deacy Procs | Decay Procs | Decay Procs |
+| [Pure Energeian Disease Orb](http://lucy.allakhazam.com/item.html?id=80746) | [Disease](http://lucy.allakhazam.com/item.html?id=80860) (?) | Disease Procs | Disease Procs | Disease Procs |
+| [Pure Energeian Earth Orb](http://lucy.allakhazam.com/item.html?id=80741) | [Earth](http://lucy.allakhazam.com/item.html?id=80850) (?) | Earth Procs | Earth Procs | Earth Procs |
+| [Pure Energeian Elemental Orb](http://lucy.allakhazam.com/item.html?id=80753) | [Elemental](http://lucy.allakhazam.com/item.html?id=80874) (?) | Elemental Procs | Elemental Procs | Elemental Procs |
+| [Pure Energeian Ethereal Orb](http://lucy.allakhazam.com/item.html?id=80752) | [Ethereal](http://lucy.allakhazam.com/item.html?id=80872) (?) | Ethereal Procs | Ethereal Procs | Ethereal Procs |
+| [Pure Energeian Fire Orb](http://lucy.allakhazam.com/item.html?id=80740) | [Fire](http://lucy.allakhazam.com/item.html?id=80848) (?) | Fire Procs | Fire Procs | Fire Procs |
+| [Pure Energeian Growth Orb](http://lucy.allakhazam.com/item.html?id=80743) | [Growth](http://lucy.allakhazam.com/item.html?id=80854) (?) | Growth Procs | Growth Procs | Growth Procs |
+| [Pure Energeian Ice Orb](http://lucy.allakhazam.com/item.html?id=80739) | [Ice](http://lucy.allakhazam.com/item.html?id=80846) (?) | Ice Procs | Ice Procs | Ice Procs |
+| [Pure Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=80749) | [Light](http://lucy.allakhazam.com/item.html?id=80866) (??) | Light Procs | Light Procs | Light Procs |
+| [Pure Energeian Light Orb](http://lucy.allakhazam.com/item.html?id=66277) | [Light](http://lucy.allakhazam.com/item.html?id=80866) (??) | Light Procs | Light Procs | Light Procs |
+| [Pure Energeian Metal Orb](http://lucy.allakhazam.com/item.html?id=80754) | [Metal](http://lucy.allakhazam.com/item.html?id=80876) (??) | Metal Procs | Metal Procs | Metal Procs |
+| [Pure Energeian Metal Orb](http://lucy.allakhazam.com/item.html?id=66278) | [Metal](http://lucy.allakhazam.com/item.html?id=80876) (??) | Metal Procs | Metal Procs | Metal Procs |
+| [Pure Energeian Poison Orb](http://lucy.allakhazam.com/item.html?id=80745) | [Poison](http://lucy.allakhazam.com/item.html?id=80858) (?) | Poison Procs | Poison Procs | Poison Procs |
+| [Pure Energeian Shadow Orb](http://lucy.allakhazam.com/item.html?id=80748) | [Shadow](http://lucy.allakhazam.com/item.html?id=80864) (?) | Shadow Procs | Shadow Procs | Shadow Procs |
+| [Pure Energeian Steam Orb](http://lucy.allakhazam.com/item.html?id=80750) | [Steam](http://lucy.allakhazam.com/item.html?id=80868) (?) | Steam Procs | Steam Procs | Steam Procs |
+| [Pure Energeian Stone Orb](http://lucy.allakhazam.com/item.html?id=80751) | [Stone](http://lucy.allakhazam.com/item.html?id=80870) (?) | Stone Procs | Stone Procs | Stone Procs |
+| [Pure Energeian Water Orb](http://lucy.allakhazam.com/item.html?id=80747) | [Water](http://lucy.allakhazam.com/item.html?id=80862) (?) | Water Procs | Water Procs | Water Procs |
 
 ## Dropped
 

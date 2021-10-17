@@ -1,9 +1,9 @@
 # Client Version Bitmasks
 
-| **Token** | **Value \(int\)** | **Value \(hex\)** |
+| **Token** | **Value (int)** | **Value (hex)** |
 | :--- | :--- | :--- |
 | bitUnknown | 0 | 0x00000000 |
-| bitClient62\* | 1 | 0x00000001 |
+| bitClient62* | 1 | 0x00000001 |
 | bitTitanium | 2 | 0x00000002 |
 | bitSoF | 4 | 0x00000004 |
 | bitSoD | 8 | 0x00000008 |

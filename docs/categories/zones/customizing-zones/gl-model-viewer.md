@@ -6,7 +6,7 @@
 
 When downloaded, place it in your game folder, and you can run it as shown below
 
-These same models can be spawned using [doors](https://github.com/EQEmu/Server/wiki/doors) and [object](https://github.com/EQEmu/Server/wiki/object), keep note that while below lists _BBROCK8\_DMSPRITEDEF_ the way you would spawn this in game would be just 'BBROCK8' without the '\_DMSPRITEDEF' postfix
+These same models can be spawned using [doors](https://github.com/EQEmu/Server/wiki/doors) and [object](https://github.com/EQEmu/Server/wiki/object), keep note that while below lists _BBROCK8_DMSPRITEDEF_ the way you would spawn this in game would be just 'BBROCK8' without the '_DMSPRITEDEF' postfix
 
 **Usage**
 

@@ -11,9 +11,9 @@ description: >-
 
 * There will be no mechanism to close off clients based on server expansion settings.  
 * Server Operators are welcome to customize client requirements.
-* Spells \(spells\_us.txt\) will **not** have expansion settings:
+* Spells (spells_us.txt) will **not** have expansion settings:
   * Various clients have spell count limitations
-  * spells\_us.txt should be part of a standard "patch day" download when an expansion is launched
+  * spells_us.txt should be part of a standard "patch day" download when an expansion is launched
 * Spell gems and spell book icons will **not** have expansion settings
 * Models will **not** have expansion settings
   * Feel free to customize using eqclient.ini pre-Luclin models
@@ -22,8 +22,8 @@ description: >-
   * The actual map content will not be controlled with expansion settings
   * Server operators can choose to provide any maps they wish
 * Skill Caps???
-* db\_str???
-* base\_data???
+* db_str???
+* base_data???
 
 ## Quest Scripts
 
@@ -63,17 +63,17 @@ sub EVENT_SAY {
 
 Obviously AAs were added at each expansion.  As AAs make use of spells, it would be incumbent upon the server operator to include any out-of-era spells in their server files.
 
-* aa\_ability
+* aa_ability
   * Here we likely need a min/max expansion setting
   * Don't forget HT/LoH
-* aa\_actions
-* aa\_effects
-* aa\_ranks
-* aa\_rank\_effects
-* aa\_rank\_prereqs
-* aa\_required\_level\_cost
-* aa\_timers
-* altadv\_vars
+* aa_actions
+* aa_effects
+* aa_ranks
+* aa_rank_effects
+* aa_rank_prereqs
+* aa_required_level_cost
+* aa_timers
+* altadv_vars
   * Were AAs regrouped during our timeline?  We may need an expansion setting on this expansion setting.
 
 ### Account
@@ -81,63 +81,63 @@ Obviously AAs were added at each expansion.  As AAs make use of spells, it would
 Accounts have an expansion setting on them that opens race / class combos.  **This should probably be examined at part of this development cycle.**
 
 * account
-* account\_flags
-* account\_ip
-* account\_rewards
+* account_flags
+* account_ip
+* account_rewards
   * Veteran rewards will need min/max expansion settings
 * sharedbank
   * Does this use the account expansion setting?
 
 ### Admin
 
-* banned\_ips
-* bot\_command\_settings
-* bug\_reports
+* banned_ips
+* bot_command_settings
+* bug_reports
 * bugs
 * chatchannels
   * Chatchannels could make use of a rule setting to be turned on at the appropriate time for status &lt; X.
-* class\_skill
-* command\_settings
-* db\_version
-* discovered\_items
+* class_skill
+* command_settings
+* db_version
+* discovered_items
 * eqtime
 * eventlog
-* fear\_hints
-* gm\_ips
+* fear_hints
+* gm_ips
 * hackers
-* ip\_exemptions
-* level\_exp\_mods
-* logsys\_categories
-* name\_filter
-* perl\_event\_export\_settings
+* ip_exemptions
+* level_exp_mods
+* logsys_categories
+* name_filter
+* perl_event_export_settings
 * petitions
-* profanity\_list
+* profanity_list
 * races
 * reports
 * saylink
-* start\_zones
+* start_zones
   * Requires min/max expansion settings
-* starting\_items
+* starting_items
   * Requires min/max expansion settings
 * variables
-* veteran\_reward\_templates
+* veteran_reward_templates
 
 ### Adventures
 
-These tables are all related to LDON.  Presumably gating would occur with either zone access or npc\_types for Adventures.
+These tables are all related to LDON.  Presumably gating would occur with either zone access or npc_types for Adventures.
 
-* adventure\_details
-* adventure\_members
-* adventure\_stats
-* adventure\_template
-* adventure\_template\_entry
-* adventure\_template\_entry\_flavor
+* adventure_details
+* adventure_members
+* adventure_stats
+* adventure_template
+* adventure_template_entry
+* adventure_template_entry_flavor
 
 ### Alternate Currency
 
-The actual currencies were introduced on some timeline.  Given that an item\_id is assigned and that each currency is a table entry, likely no min/max expansion setting is required.
+The actual currencies were introduced on some timeline.  Given that an item_id is assigned and that each currency is a table entry, likely no min/max expansion setting is required.
 
-* alternate\_currency
+* alternate_currency
 
 ### Books
 
@@ -157,84 +157,84 @@ No action needed.
 
 ### Characters
 
-* character\_activities
-* character\_alternate\_abilities
-* character\_alt\_currency
-* character\_auras
-* character\_bandolier
+* character_activities
+* character_alternate_abilities
+* character_alt_currency
+* character_auras
+* character_bandolier
   * Is access to the bandolier currently observing expansion setting?
-* character\_bind
-* character\_buffs
-* character\_corpses
-* character\_corpse\_items
-* character\_currency
-* character\_data
-* character\_disciplines
-* character\_enabledtasks
-* character\_inspect\_messages
-* character\_item\_recast
-* character\_languages
-* character\_leadership\_abilities
-* character\_material
-* character\_memmed\_spells
-* character\_pet\_buffs
-* character\_pet\_info
-* character\_pet\_inventory
-* character\_potionbelt
+* character_bind
+* character_buffs
+* character_corpses
+* character_corpse_items
+* character_currency
+* character_data
+* character_disciplines
+* character_enabledtasks
+* character_inspect_messages
+* character_item_recast
+* character_languages
+* character_leadership_abilities
+* character_material
+* character_memmed_spells
+* character_pet_buffs
+* character_pet_info
+* character_pet_inventory
+* character_potionbelt
   * Is access to the potion belt currently observing expansion setting?
-* character\_skills
-* character\_spells
-* character\_tasks
-* character\_task\_lockouts
-* character\_tribute
-* char\_create\_combinations
+* character_skills
+* character_spells
+* character_tasks
+* character_task_lockouts
+* character_tribute
+* char_create_combinations
   * Uses existing expansion setting.
-* char\_create\_point\_allocations
+* char_create_point_allocations
   * Requires min/max expansion settings
-* char\_recipe\_list
+* char_recipe_list
 * friends
 * keyring
   * Is access to the key ring currently observing expansion setting?
 * lfguild
 * mail
-* player\_titlesets
+* player_titlesets
 
 ### Client Files
 
 Please note the Client section above.
 
-* base\_data
-* db\_str
-* skill\_caps
-* spells\_new
+* base_data
+* db_str
+* skill_caps
+* spells_new
   * NO expansion setting.
 
 ### Data Storage
 
 No action needed.
 
-* data\_buckets
-* quest\_globals
+* data_buckets
+* quest_globals
 
 ### Doors
 
-Certainly doors change throughout the various--keyitem\(s\) came and went, destination settings changed \(IE tox vs toxxulia PoK book\).
+Certainly doors change throughout the various--keyitem(s) came and went, destination settings changed (IE tox vs toxxulia PoK book).
 
 * doors
   * Requires min/max expansion setting
 
 ### Factions
 
-Generally factions are gated by access to mobs.  Some factions were added to npc\_types as time went on, so under the NPC tables we'll want to look at min/max expansion settings.  Noudess should probably confirm that faction\_list\_mod didn't change, especially.
+Generally factions are gated by access to mobs.  Some factions were added to npc_types as time went on, so under the NPC tables we'll want to look at min/max expansion settings.  Noudess should probably confirm that faction_list_mod didn't change, especially.
 
-* client\_faction\_associations
-* client\_faction\_names
-* client\_server\_faction\_map
-* custom\_faction\_mappings
-* faction\_base\_data
-* faction\_list
-* faction\_list\_mod
-* faction\_values
+* client_faction_associations
+* client_faction_names
+* client_server_faction_map
+* custom_faction_mappings
+* faction_base_data
+* faction_list
+* faction_list_mod
+* faction_values
 
 ### Graveyards
 
@@ -246,32 +246,32 @@ Graveyards were gated by access to zones.  No min/max expansion setting required
 
 Ground spawns, like fishing, certainly changed over time.  A min/max expansion setting is required.
 
-* ground\_spawn
+* ground_spawn
   * Requires min/max expansion setting
 
 ### Groups
 
 Player table.  No min/max expansion setting required.
 
-* group\_id
-* group\_leaders
+* group_id
+* group_leaders
 
 ### Guilds
 
 The guild hall was added during DoN, some guild management tools were added during LoY.  
 
 * guilds
-* guild\_bank
-* guild\_ranks
-* guild\_members
-* guild\_relations
+* guild_bank
+* guild_ranks
+* guild_members
+* guild_relations
 
 ### Grids
 
 Grids do not need expansion settings as the associated spawn2 point would gate the settings.
 
 * grid
-* grid\_entries
+* grid_entries
 
 ### Horses
 
@@ -283,71 +283,71 @@ Horses were introduced and evolved over time, but likely they would be gated thr
 
 Player table.  No min/max expansion setting required.
 
-* instance\_list
-* instance\_list\_player
+* instance_list
+* instance_list_player
 
 ### Inventory
 
 Player table.  No min/max expansion setting required.
 
 * inventory
-* inventory\_snapshots
-* inventory\_versions
+* inventory_snapshots
+* inventory_versions
 
 ### Items
 
 Items would be gated by lootdrop entries and merchantlists.  Some consideration could be given to nerfed items, but ultimately the server operator should probably make that decision.  
 
 * items
-* item\_tick
+* item_tick
 
 ### Loginserver
 
 World utility.  No min/max expansion setting required.
 
-* login\_accounts
-* login\_api\_tokens
-* login\_server\_admins
-* login\_server\_types
-* login\_world\_servers
+* login_accounts
+* login_api_tokens
+* login_server_admins
+* login_server_types
+* login_world_servers
 
 ### Loot
 
 Loot requires min/max expansion settings on multiple fronts:
 
-* global\_loot
+* global_loot
   * Requires min/max expansion settings
   * Example: Box of Abu-Kar
 * lootdrop
   * Requires min/max expansion settings
   * Example: Manastone
-* lootdrop\_entries
+* lootdrop_entries
 * loottable
   * Requires min/max expansion settings
   * Example: Manastone
-* loottable\_entries
+* loottable_entries
 
 ### Mercenaries
 
 Mercenaries did evolve over time, however, are gated by zone/quest access.
 
 * mercs
-* merc\_armorinfo
-* merc\_buffs
-* merc\_inventory
-* merc\_merchantlist\_entries
-* merc\_merchant\_templates
-* merc\_merchant\_template\_entries
-* merc\_name\_types
-* merc\_npc\_types
-* merc\_spell\_lists
-* merc\_spell\_list\_entries
-* merc\_stance\_entries
-* merc\_stats
-* merc\_subtypes
-* merc\_templates
-* merc\_types
-* merc\_weaponinfo
+* merc_armorinfo
+* merc_buffs
+* merc_inventory
+* merc_merchantlist_entries
+* merc_merchant_templates
+* merc_merchant_template_entries
+* merc_name_types
+* merc_npc_types
+* merc_spell_lists
+* merc_spell_list_entries
+* merc_stance_entries
+* merc_stats
+* merc_subtypes
+* merc_templates
+* merc_types
+* merc_weaponinfo
 
 ### Merchants
 
@@ -356,25 +356,25 @@ Merchantlists certainly changed over time.
 * merchantlist
   * Requires min/max expansion settings
   * Example:  any spell scrolls
-* merchantlist\_temp
+* merchantlist_temp
 
 ### NPCs
 
 NPCs require min/max expansion settings on at least factions.  
 
-* npc\_emotes
-* npc\_faction
+* npc_emotes
+* npc_faction
   * Requires min/max expansion settings
   * Example: Primordial Malice
-* npc\_faction\_entries
-* npc\_scale\_global\_base
-* npc\_spells
-* npc\_spells\_effects
-* npc\_spells\_effects\_entries
-* npc\_spells\_entries
-* npc\_types
-* npc\_types\_metadata
-* npc\_types\_tint
+* npc_faction_entries
+* npc_scale_global_base
+* npc_spells
+* npc_spells_effects
+* npc_spells_effects_entries
+* npc_spells_entries
+* npc_types
+* npc_types_metadata
+* npc_types_tint
 * proximities
 
 ### Objects
@@ -384,86 +384,86 @@ Objects require min/max expansion settings--zones changed over time.
 * object
   * Requires min/max expansion settings
   * Example: LDON camps
-* object\_contents
+* object_contents
 
 ### Pets
 
 Pets would be gated by spell/aa access.
 
 * pets
-* pets\_equipmentset
-* pets\_equipmentset\_entries
+* pets_equipmentset
+* pets_equipmentset_entries
 
 ### Query Server
 
 World utility.  No min/max expansions required.
 
-* qs\_merchant\_transaction\_record
-* qs\_merchant\_transaction\_record\_entries
-* qs\_player\_aa\_rate\_hourly
-* qs\_player\_delete\_record
-* qs\_player\_delete\_record\_entries
-* qs\_player\_events
-* qs\_player\_handin\_record
-* qs\_player\_handin\_record\_entries
-* qs\_player\_move\_record
-* qs\_player\_move\_record\_entries
-* qs\_player\_npc\_kill\_record
-* qs\_player\_npc\_kill\_record\_entries
-* qs\_player\_speech
-* qs\_player\_trade\_record
-* qs\_player\_trade\_record\_entries
+* qs_merchant_transaction_record
+* qs_merchant_transaction_record_entries
+* qs_player_aa_rate_hourly
+* qs_player_delete_record
+* qs_player_delete_record_entries
+* qs_player_events
+* qs_player_handin_record
+* qs_player_handin_record_entries
+* qs_player_move_record
+* qs_player_move_record_entries
+* qs_player_npc_kill_record
+* qs_player_npc_kill_record_entries
+* qs_player_speech
+* qs_player_trade_record
+* qs_player_trade_record_entries
 
 ### Raids
 
 Player table.  No min/max expansion settings necessary.
 
-* raid\_details
-* raid\_leaders
-* raid\_members
+* raid_details
+* raid_leaders
+* raid_members
 
 ### Rules
 
 Rules certainly changed over time--the question is whether or not this should be handled with various rule sets, or make use of a min/max expansion setting.
 
-* rule\_sets
-* rule\_values
+* rule_sets
+* rule_values
 
 ### Spawns
 
 Spawns certainly evolve over time.
 
-* respawn\_times
+* respawn_times
   * This may require min/max expansion setting
 * spawn2
   * Min/Max expansion setting required.
 * spawnentry
 * spawngroup
-* spawn\_conditions
-* spawn\_condition\_values
-* spawn\_events
+* spawn_conditions
+* spawn_condition_values
+* spawn_events
 
 ### Spells
 
 Spells evolved over time.  Please see "Client" section above--spells will not get a min/max expansion setting.
 
 * auras
-* blocked\_spells
+* blocked_spells
 * damageshieldtypes
-* spell\_buckets
-* spell\_globals
-* spells\_new
+* spell_buckets
+* spell_globals
+* spells_new
 
 ### Tasks
 
 These would be gated by quest scripts.
 
-* completed\_tasks
+* completed_tasks
 * goallists
 * tasks
 * tasksets
-* task\_activities
-* task\_replay\_groups
+* task_activities
+* task_replay_groups
 
 ### Timers
 
@@ -486,16 +486,16 @@ Tradeskills evolved over time and will require min/max expansion settings.
   * Requires min/max expansion setting
 * forage
   * Requires min/max expansion setting
-* tradeskill\_recipe
+* tradeskill_recipe
   * Requires min/max expansion setting
-* tradeskill\_recipe\_entries
+* tradeskill_recipe_entries
 
 ### Traps
 
 Some traps did evolve over time.
 
-* ldon\_trap\_entries
-* ldon\_trap\_templates
+* ldon_trap_entries
+* ldon_trap_templates
 * traps
   * Add min/max expansion settings
 
@@ -504,22 +504,22 @@ Some traps did evolve over time.
 Tributes were added during GoD and evolved over time.  Obviously merchantlist and lootdrop expansion settings would restrict item access to be used as tribute.  Is this effected by world expansion setting?
 
 * tributes
-* tribute\_levels
+* tribute_levels
 
 ### Zones
 
 Zones evolved over time--access to zones as well as zone points.  Min/Max expansion settings are required.
 
 * launcher
-* launcher\_zones
+* launcher_zones
 * zone
-  * Requires min/max expansion setting \(rather than using status / level\)
-* zoneserver\_auth
-* zone\_flags
-* zone\_points
+  * Requires min/max expansion setting (rather than using status / level)
+* zoneserver_auth
+* zone_flags
+* zone_points
   * Requires min/max expansion settings
   * Example:  highpass vs. highpasshold
-* zone\_server
+* zone_server
 
 ## Combat
 

@@ -44,7 +44,7 @@
 | /bandolier            |                                                                                                                                                          |
 | /barter               |                                                                                                                                                          |
 | /bazaar               |                                                                                                                                                          |
-| /becomenpc            | FORMAT: /becomenpc \<race#> \[sex(M, F, N, N is default)] \[material#] \[head#] \[face#] \[height] \[level max]                                          |
+| /becomenpc            | FORMAT: /becomenpc .<race#> [sex(M, F, N, N is default)] [material#] [head#] [face#] [height] [level max]                                          |
 | /beta                 |                                                                                                                                                          |
 | /betabuff             |                                                                                                                                                          |
 | /bird                 |                                                                                                                                                          |

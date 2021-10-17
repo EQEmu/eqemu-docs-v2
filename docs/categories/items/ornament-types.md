@@ -6,7 +6,7 @@ description: This page describes the item ornament types available on your EQEmu
 
 ### Preview
 
-* To preview: \#heromodel id
+* To preview: #heromodel id
 
 | **ID** | **Full Name** | **Image** |
 | :--- | :--- | :--- |

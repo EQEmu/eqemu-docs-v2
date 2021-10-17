@@ -14,7 +14,7 @@ Do not launch your EverQuest client prior to making these adjustments, as it wil
 
 Navigate to your EverQuest client directory and right-click on the eqgame.exe application.
 
-Choose the _**Send To**_ option, and choose _**Desktop \(create shortcut\)**_.
+Choose the _**Send To**_ option, and choose _**Desktop (create shortcut)**_.
 
 ![](../../gitbook/assets/screenshot4%20%281%29.jpg)
 

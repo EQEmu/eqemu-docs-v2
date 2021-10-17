@@ -1,4 +1,4 @@
-# Quest API \(Lua\)
+# Quest API (Lua)
 
 > Note: Methods described as returning a `nullptr` for Expedition return types refers to the internal wrapped pointer and should not be validated with Lua's `nil`. Use `result.valid` or `result.null` to check the return result.
 
@@ -6,45 +6,45 @@
 
 | return type | function |
 | ---: | :--- |
-| void | eq.add\_expedition\_lockout\_all\_clients\(string expedition\_name, string event\_name, int seconds, string uuid = ""\) |
-| void | eq.add\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name, int seconds, string uuid = ""\) |
-| Expedition\* | eq.get\_expedition\(\) |
-| Expedition\* | eq.get\_expedition\_by\_char\_id\(int character\_id\) |
-| Expedition\* | eq.get\_expedition\_by\_dz\_id\(int dz\_id\) |
-| Expedition\* | eq.get\_expedition\_by\_zone\_instance\(int zone\_id, int instance\_id\) |
-| LUA\_TTABLE | eq.get\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name\) |
-| LUA\_TTABLE | eq.get\_expedition\_lockouts\_by\_char\_id\(int character\_id, string expedition\_name = ""\) |
-| void | eq.remove\_all\_expedition\_lockouts\_by\_char\_id\(int character\_id, string expedition\_name = ""\) |
-| void | eq.remove\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name\) |
+| void | eq.add_expedition_lockout_all_clients(string expedition_name, string event_name, int seconds, string uuid = "") |
+| void | eq.add_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name, int seconds, string uuid = "") |
+| Expedition* | eq.get_expedition() |
+| Expedition* | eq.get_expedition_by_char_id(int character_id) |
+| Expedition* | eq.get_expedition_by_dz_id(int dz_id) |
+| Expedition* | eq.get_expedition_by_zone_instance(int zone_id, int instance_id) |
+| LUA_TTABLE | eq.get_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name) |
+| LUA_TTABLE | eq.get_expedition_lockouts_by_char_id(int character_id, string expedition_name = "") |
+| void | eq.remove_all_expedition_lockouts_by_char_id(int character_id, string expedition_name = "") |
+| void | eq.remove_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name) |
 
 ## Client methods
 
 | return type | function |
 | ---: | :--- |
-| void | AddExpeditionLockout\(string expedition\_name, string event\_name, uint32 seconds, string uuid = ""\) |
-| void | AddExpeditionLockoutDuration\(string expedition\_name, string event\_name, int seconds, string uuid = ""\) |
-| Expedition\* | CreateExpedition\(string zone\_short\_name, int zone\_version, int duration, string expedition\_name, int min\_players, int max\_players, bool disable\_messages = false\) |
-| Expedition\* | CreateExpedition\(LUA\_TTABLE expedition\_info\) |
-| Expedition\* | GetExpedition\(\) |
-| LUA\_TTABLE | GetExpeditionLockouts\(string expedition\_name = ""\) |
-| string | GetLockoutExpeditionUUID\(string expedition\_name, string event\_name\) |
-| bool | HasExpeditionLockout\(string expedition\_name, string event\_name\) |
-| void | MovePCDynamicZone\(int zone\_id, int zone\_version = -1, bool msg\_if\_invalid = true\) |
-| void | MovePCDynamicZone\(string zone\_short\_name, int zone\_version = -1, bool msg\_if\_invalid = true\) |
-| void | RemoveAllExpeditionLockouts\(string expedition\_name = ""\) |
-| void | RemoveExpeditionLockout\(string expedition\_name, string event\_name\) |
+| void | AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds, string uuid = "") |
+| void | AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds, string uuid = "") |
+| Expedition* | CreateExpedition(string zone_short_name, int zone_version, int duration, string expedition_name, int min_players, int max_players, bool disable_messages = false) |
+| Expedition* | CreateExpedition(LUA_TTABLE expedition_info) |
+| Expedition* | GetExpedition() |
+| LUA_TTABLE | GetExpeditionLockouts(string expedition_name = "") |
+| string | GetLockoutExpeditionUUID(string expedition_name, string event_name) |
+| bool | HasExpeditionLockout(string expedition_name, string event_name) |
+| void | MovePCDynamicZone(int zone_id, int zone_version = -1, bool msg_if_invalid = true) |
+| void | MovePCDynamicZone(string zone_short_name, int zone_version = -1, bool msg_if_invalid = true) |
+| void | RemoveAllExpeditionLockouts(string expedition_name = "") |
+| void | RemoveExpeditionLockout(string expedition_name, string event_name) |
 
 ## Group methods
 
 | return type | function |
 | ---: | :--- |
-| bool | DoesAnyMemberHaveExpeditionLockout\(string expedition\_name, string event\_name, int max\_member\_check\_count = 0\) |
+| bool | DoesAnyMemberHaveExpeditionLockout(string expedition_name, string event_name, int max_member_check_count = 0) |
 
 ## Raid methods
 
 | return type | function |
 | ---: | :--- |
-| bool | DoesAnyMemberHaveExpeditionLockout\(string expedition\_name, string event\_name, int max\_member\_check\_count = 0\) |
+| bool | DoesAnyMemberHaveExpeditionLockout(string expedition_name, string event_name, int max_member_check_count = 0) |
 
 ## Expedition methods
 
@@ -55,41 +55,41 @@
 
 | return type | function |
 | ---: | :--- |
-| void | AddLockout\(string event\_name, uint32 seconds\_duration\) |
-| void | AddLockoutDuration\(string event\_name, int seconds, bool members\_only = true\) |
-| void | AddReplayLockout\(int seconds\_duration\) |
-| void | AddReplayLockoutDuration\(int seconds\_duration, bool members\_only = true\) |
-| uint32 | GetDynamicZoneID\(\) |
-| uint32 | GetID\(\) |
-| int | GetInstanceID\(\) |
-| string | GetLeaderName\(\) |
-| LUA\_TTABLE | GetLockouts\(\) |
-| string | GetLootEventByNPCTypeID\(uint32 npc\_type\_id\) |
-| string | GetLootEventBySpawnID\(uint32 spawn\_id\) |
-| uint32 | GetMemberCount\(\) |
-| LUA\_TTABLE | GetMembers\(\) |
-| string | GetName\(\) |
-| int | GetSecondsRemaining\(\) |
-| string | GetUUID\(\) |
-| int | GetZoneID\(\) |
-| string | GetZoneName\(\) |
-| int | GetZoneVersion\(\) |
-| bool | HasLockout\(string event\_name\) |
-| bool | HasReplayLockout\(\) |
-| bool | IsLocked\(\) |
-| void | RemoveCompass\(\) |
-| void | RemoveLockout\(string event\_name\) |
-| void | SetCompass\(int zone\_id, float x, float y, float z\) |
-| void | SetCompass\(string zone\_short\_name, float x, float y, float z\) |
-| void | SetLocked\(bool value, ExpeditionLockMessage lock\_msg = ExpeditionLockMessage::None, uint32 msg\_color = Chat::Yellow\) |
-| void | SetLootEventByNPCTypeID\(uint32\_t npc\_type\_id, string event\_name\) |
-| void | SetLootEventBySpawnID\(uint32\_t spawn\_id, string event\_name\) |
-| void | SetReplayLockoutOnMemberJoin\(bool value\) |
-| void | SetSafeReturn\(uint32\_t zone\_id, float x, float y, float z, float heading\) |
-| void | SetSafeReturn\(string zone\_short\_name, float x, float y, float z, float heading\) |
-| void | SetZoneInLocation\(float x, float y, float z, float heading\) |
-| void | SetSecondsRemaining\(uint32 seconds\_remaining\) |
-| void | UpdateLockoutDuration\(string event\_name, uint32\_t seconds, bool members\_only = true\) |
+| void | AddLockout(string event_name, uint32 seconds_duration) |
+| void | AddLockoutDuration(string event_name, int seconds, bool members_only = true) |
+| void | AddReplayLockout(int seconds_duration) |
+| void | AddReplayLockoutDuration(int seconds_duration, bool members_only = true) |
+| uint32 | GetDynamicZoneID() |
+| uint32 | GetID() |
+| int | GetInstanceID() |
+| string | GetLeaderName() |
+| LUA_TTABLE | GetLockouts() |
+| string | GetLootEventByNPCTypeID(uint32 npc_type_id) |
+| string | GetLootEventBySpawnID(uint32 spawn_id) |
+| uint32 | GetMemberCount() |
+| LUA_TTABLE | GetMembers() |
+| string | GetName() |
+| int | GetSecondsRemaining() |
+| string | GetUUID() |
+| int | GetZoneID() |
+| string | GetZoneName() |
+| int | GetZoneVersion() |
+| bool | HasLockout(string event_name) |
+| bool | HasReplayLockout() |
+| bool | IsLocked() |
+| void | RemoveCompass() |
+| void | RemoveLockout(string event_name) |
+| void | SetCompass(int zone_id, float x, float y, float z) |
+| void | SetCompass(string zone_short_name, float x, float y, float z) |
+| void | SetLocked(bool value, ExpeditionLockMessage lock_msg = ExpeditionLockMessage::None, uint32 msg_color = Chat::Yellow) |
+| void | SetLootEventByNPCTypeID(uint32_t npc_type_id, string event_name) |
+| void | SetLootEventBySpawnID(uint32_t spawn_id, string event_name) |
+| void | SetReplayLockoutOnMemberJoin(bool value) |
+| void | SetSafeReturn(uint32_t zone_id, float x, float y, float z, float heading) |
+| void | SetSafeReturn(string zone_short_name, float x, float y, float z, float heading) |
+| void | SetZoneInLocation(float x, float y, float z, float heading) |
+| void | SetSecondsRemaining(uint32 seconds_remaining) |
+| void | UpdateLockoutDuration(string event_name, uint32_t seconds, bool members_only = true) |
 
 ## Expedition constants <a id="expedition-constants"></a>
 

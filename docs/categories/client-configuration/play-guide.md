@@ -16,7 +16,7 @@
 
 See the ClientFeatures page to view some of the differences between the clients. Also see the [Client Versions](../player/client-version-bitmasks.md) page for details on determining if the client you have is compatible with EQEmu or not.
 
-* Note: If using the Underfoot client, some files may need to be copied from another EQ install as mentioned in the[ ](http://wiki.eqemulator.org/p?UFMissingFilesList\&frm=Frequently_Asked_Questions--Play_Guide%3A_Getting_Started)[Underfoot Missing Files](underfoot-missing-files.md) page and discussed [here](http://www.eqemulator.org/forums/showthread.php?t=31635)
+* Note: If using the Underfoot client, some files may need to be copied from another EQ install as mentioned in the[ ](http://wiki.eqemulator.org/p?UFMissingFilesList&frm=Frequently_Asked_Questions--Play_Guide%3A_Getting_Started)[Underfoot Missing Files](underfoot-missing-files.md) page and discussed [here](http://www.eqemulator.org/forums/showthread.php?t=31635)
 * Note: Do not download the Rain of Fear client from anyplace other than Steam, or you may get an incompatible version of the client!
   * The Rain of Fear client is no longer available from Steam.
 
@@ -48,7 +48,7 @@ See the ClientFeatures page to view some of the differences between the clients.
   * Please go to the Login Server page (located under Miscellaneous in your UserCP∞).
     * [Select "Create a LS Account."](http://www.eqemulator.org/account/?CreateLS)
     * Fill out the fields and proceed.
-    * \***Please note that your EQEmulator Forum account and EQEmulator Login Server account are totally seperate; you should use a different username/password combination for each.**
+    * ***Please note that your EQEmulator Forum account and EQEmulator Login Server account are totally seperate; you should use a different username/password combination for each.**
 * Your Login Server Account passwords are now recoverable as of March 2014, but you must setup verification right away.
   * [Verification](http://www.eqemulator.org/account/?SMS)
 
@@ -85,7 +85,7 @@ Host=login.eqemulator.net:5999
 ### Quick FAQs
 
 * **Can I use the anniversary edition or other expansions?**
-  * NO. As the it says above, you can only use Titanium, Secrets of Faydwer, Seeds of Destruction, Underfoot, or Rain of Fear at this time. Other versions like platinum, anniversary, and trilogy WILL NOT WORK. EQEmu compatibility is created for very specific versions of the eqgame.exe file.  Every time SOE releases a patch, it is a different version.  See the[ Client_Versions](http://wiki.eqemulator.org/p?Client_Versions\&frm=Frequently_Asked_Questions--Play_Guide%3A_Getting_Started) page for specific version details.
+  * NO. As the it says above, you can only use Titanium, Secrets of Faydwer, Seeds of Destruction, Underfoot, or Rain of Fear at this time. Other versions like platinum, anniversary, and trilogy WILL NOT WORK. EQEmu compatibility is created for very specific versions of the eqgame.exe file.  Every time SOE releases a patch, it is a different version.  See the[ Client_Versions](http://wiki.eqemulator.org/p?Client_Versions&frm=Frequently_Asked_Questions--Play_Guide%3A_Getting_Started) page for specific version details.
 * **Can I use third party software like MacroQuest and Magelo?**
   * Check the rules for the server you play on. Why people would lie about this is beyond me.
 * **Can I use custom UIs? **

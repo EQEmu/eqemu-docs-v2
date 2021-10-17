@@ -15,8 +15,8 @@ One of the first introductions of a native scaling system includes **Global Base
 | Type | Description | Determination |
 | :---: | :---: | :---: |
 | 0 | Trash | No special flags set |
-| 1 | Named | Has flag **rare\_spawn** set in **npc\_types** to **1** - or - name has **\#** in the beginning - or - first character in name is capitalized |
-| 2 | Raid | Has flag **rare\_spawn** set in **npc\_types** to **1** |
+| 1 | Named | Has flag **rare_spawn** set in **npc_types** to **1** - or - name has **#** in the beginning - or - first character in name is capitalized |
+| 2 | Raid | Has flag **rare_spawn** set in **npc_types** to **1** |
 
 * This data is simply an example of Levels 50-52, but has data from every **Type**
 
@@ -29,7 +29,7 @@ select * from npc_scale_global_base where level >= 50 and level <= 52 order by t
 * The stats in the table will apply to an NPC when their original stat or attribute is 0 in the database, so to let an NPC be completely handled by this table you would set all the following stats to 0 in the `npc_types` table
 * As alluded to before, each NPC is keyed off of **type** and **level**, so if an NPC is flagged as a named and is level 52, it will inherit the values from the row of **type 1** and **level 52** which has an **hp** value of 16080, this happens immediately upon spawn / repop
 
-| \*type | \*level | ac | hp | accuracy | slow\_mitigation | attack | strength | stamina | dexterity | agility | intelligence | wisdom | charisma | magic\_resist | cold\_resist | fire\_resist | poison\_resist | disease\_resist | corruption\_resist | physical\_resist | min\_dmg | max\_dmg | hp\_regen\_rate | attack\_delay | spell\_scale | heal\_scale | special\_abilities |
+| *type | *level | ac | hp | accuracy | slow_mitigation | attack | strength | stamina | dexterity | agility | intelligence | wisdom | charisma | magic_resist | cold_resist | fire_resist | poison_resist | disease_resist | corruption_resist | physical_resist | min_dmg | max_dmg | hp_regen_rate | attack_delay | spell_scale | heal_scale | special_abilities |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 50 | 245 | 10000 | 50 | 0 | 50 | 194 | 194 | 194 | 194 | 194 | 194 | 194 | 26 | 26 | 26 | 26 | 26 | 41 | 10 | 74 | 204 | 50 | 21 | 100 | 100 |  |
 | 0 | 51 | 249 | 11700 | 53 | 0 | 53 | 197 | 197 | 197 | 197 | 197 | 197 | 197 | 27 | 27 | 27 | 27 | 27 | 42 | 11 | 78 | 231 | 51 | 20 | 100 | 100 |  |
@@ -69,17 +69,17 @@ bool NpcScaleManager::IsAutoScaled(NPC *npc)
 
 ### Scaling Commands
 
-* **scale \[static/dynamic\] \(With targeted NPC\)**
-* **scale \[npc\_name\_search\] \[static/dynamic\] \(To make zone-wide changes\)**
-* **scale all \[static/dynamic\]**
+* **scale [static/dynamic] (With targeted NPC)**
+* **scale [npc_name_search] [static/dynamic] (To make zone-wide changes)**
+* **scale all [static/dynamic]**
 
 With the above commands, static essentially going to take the scaling profile from the table above and applied it directory to the `npc_types` data on the NPC itself
 
-### Example: \#scale static
+### Example: #scale static
 
 ![](../../gitbook/assets/50069130-4ec49280-018e-11e9-9bd7-614350753d8d.png)
 
-### Example: \#scale dynamic
+### Example: #scale dynamic
 
 ![](../../gitbook/assets/50069170-74ea3280-018e-11e9-9373-f8a3a2863cf5.png)
 
@@ -95,11 +95,11 @@ You must click  before actually pushing the changes to make sure it is the chang
 
 ### Zonewide
 
-To simply change everything in the zone you can use **\#scale all \[static/dynamic\]** - just like name search it will ask for confirmation before applying
+To simply change everything in the zone you can use **#scale all [static/dynamic]** - just like name search it will ask for confirmation before applying
 
 ### Logging
 
-To see stats being loaded on NPC's during a repop or spawn, under the **NPC Scaling** logging category you can see attributes that are being applied to the NPC. The below is a snippet from a \#repop in **Griegs End**
+To see stats being loaded on NPC's during a repop or spawn, under the **NPC Scaling** logging category you can see attributes that are being applied to the NPC. The below is a snippet from a #repop in **Griegs End**
 
 ```text
 [NPC Scaling] (a shrouded willsapper) level: 54 type: 0 Auto: true Setting: ac: 261 max_hp: 16800 accuracy: 62 slow_mitigation: 10 atk: 62 str: 206 sta: 206 dex: 206 agi: 206 int: 206 wis: 206 cha: 206 mr: 28 cr: 44 fr: 28 pr: 14 dr: 28 cr: 44 pr: 14 min_hit: 48 max_hit: 169 hp_regen: 54 attack_delay: 20 spell_scale: 100 heal_scale: 100 special_abilities:
@@ -125,7 +125,7 @@ To see stats being loaded on NPC's during a repop or spawn, under the **NPC Scal
 
 ### DevTools
 
-You can also see which attributes are applied to an NPC using the DevTools mob info display window \(Targeting an NPC\). Any stat that has been loaded from the global scale system has an asterisk next to it
+You can also see which attributes are applied to an NPC using the DevTools mob info display window (Targeting an NPC). Any stat that has been loaded from the global scale system has an asterisk next to it
 
 ![](../../gitbook/assets/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3338333839333533363237353330303335322f3532343039323732303738343836373334322f756e6b6e6f776e2e706e67.png)
 

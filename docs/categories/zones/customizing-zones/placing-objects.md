@@ -3,7 +3,7 @@
 ## Description
 
 * So, have you ever wanted to know how to place a trade skill object? Well, it's really quite simple. You really only need to worry about the icon, model file, location, and heading.
-* Doors in the database are stored in the[ object](http://wiki.eqemulator.org/p?object\&frm=Placing_Objects) table
+* Doors in the database are stored in the[ object](http://wiki.eqemulator.org/p?object&frm=Placing_Objects) table
 
 ## Requirements
 
@@ -39,13 +39,13 @@ INSERT INTO object VALUES (ItemID, ZoneID, LocYPos, LocXPos, Height, Heading, 0,
 
 | **Model File ID** | **Model**     |
 | ----------------- | ------------- |
-| IT66\_ACTORDEF    | Forge         |
-| IT69\_ACTORDEF    | Stove         |
-| IT70\_ACTORDEF    | Brew barrel   |
-| IT73\_ACTORDEF    | Pottery Kiln  |
-| IT74\_ACTORDEF    | Pottery wheel |
-| IT128\_ACTORDEF   | Loom          |
-| IT10714\_ACTORDEF | Augment Bath  |
+| IT66_ACTORDEF    | Forge         |
+| IT69_ACTORDEF    | Stove         |
+| IT70_ACTORDEF    | Brew barrel   |
+| IT73_ACTORDEF    | Pottery Kiln  |
+| IT74_ACTORDEF    | Pottery wheel |
+| IT128_ACTORDEF   | Loom          |
+| IT10714_ACTORDEF | Augment Bath  |
 
 ## **Heading**
 

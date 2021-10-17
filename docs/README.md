@@ -1,4 +1,4 @@
-# Server
+# Welcome
 
 Welcome to the EQEmu Wiki.  The information presented on this wiki represents the commitment of countless hours of coding and documentation by a large, passionate, open-source community.  The purpose of this wiki is to allow a scalable transfer of knowledge and information regarding this massive project.  Please feel free to utilize this resource, and help us to improve it along your journey.
 

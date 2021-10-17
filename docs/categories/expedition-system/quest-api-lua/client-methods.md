@@ -1,6 +1,6 @@
 # Client Methods
 
-## `void` AddExpeditionLockout\(string expedition\_name, string event\_name, uint32 seconds, string uuid = ""\)
+## `void` AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds, string uuid = "")
 
 Assigns the specified lockout to the client. If the client already has the lockout it's replaced with this one. If a uuid isn't supplied one is generated
 
@@ -8,9 +8,9 @@ Assigns the specified lockout to the client. If the client already has the locko
 e.other:AddExpeditionLockout("Anguish, the Fallen Palace", "Ture", 300)
 ```
 
-## `void` AddExpeditionLockoutDuration\(string expedition\_name, string event\_name, int seconds, string uuid = ""\)
+## `void` AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds, string uuid = "")
 
-Adds `seconds` to the specified client lockout duration. If `seconds` is negative then the duration of the lockout is reduced \(limited to 0\).
+Adds `seconds` to the specified client lockout duration. If `seconds` is negative then the duration of the lockout is reduced (limited to 0).
 
 If the client does not have the lockout and `seconds` is positive, a new lockout is created with the specified uuid. If a uuid isn't supplied one is generated.
 
@@ -21,13 +21,13 @@ e.other:AddExpeditionLockoutDuration("Anguish, the Fallen Palace", "Ture", -300)
 e.other:AddExpeditionLockoutDuration("Anguish, the Fallen Palace", "Keldovan the Harrier", 300)
 ```
 
-## `Expedition*` CreateExpedition\(string zone\_short\_name, int zone\_version, int duration, string expedition\_name, int min\_players, int max\_players, bool disable\_messages = false\)
+## `Expedition*` CreateExpedition(string zone_short_name, int zone_version, int duration, string expedition_name, int min_players, int max_players, bool disable_messages = false)
 
-This initiates an expedition creation request by the client. All members in the client's current group or raid \(if in one\) are validated for the expedition request. On success an expedition object is returned and all members of the client's group/raid are added to the expedition. Returns nullptr if the request is rejected
+This initiates an expedition creation request by the client. All members in the client's current group or raid (if in one) are validated for the expedition request. On success an expedition object is returned and all members of the client's group/raid are added to the expedition. Returns nullptr if the request is rejected
 
 This method takes both the instance zone details and expedition details
 
-Passing `true` for the optional `disable_messages` parameter disables all expedition rejection messages sent to the leader \(member lockout conflicts, etc\)
+Passing `true` for the optional `disable_messages` parameter disables all expedition rejection messages sent to the leader (member lockout conflicts, etc)
 
 > Note: Expedition creation follows behavior introduced with the live September 16, 2020 patch. The expedition may be created even if the group or raid exceeds the expedition's max player requirement, but only members up to the max are added to it. Players are added based on priority of raid group number followed by ungrouped players. The raid leader is added first. Players inside groups or raid groups may not be added in displayed order.
 
@@ -42,7 +42,7 @@ function event_say(e)
 end
 ```
 
-## `Expedition*` CreateExpedition\(LUA\_TTABLE expedition\_info\)
+## `Expedition*` CreateExpedition(LUA_TTABLE expedition_info)
 
 This is an alternate expedition request method that uses a table containing all creation data.
 
@@ -54,7 +54,7 @@ Keys marked as `optional` may be excluded if not used
 
 | key name | supported keys | description |
 | :--- | :--- | :--- |
-| `expedition` | name, min\_players, max\_players, disable\_messages | expedition options |
+| `expedition` | name, min_players, max_players, disable_messages | expedition options |
 | `instance` | zone, version, duration | dz instance details |
 | `compass` | zone, x, y, z | `(optional)` compass coordinates |
 | `safereturn` | zone, x, y, z, h | `(optional)` safe return coordinates |
@@ -73,19 +73,19 @@ Keys marked as `optional` may be excluded if not used
 
 | key | type | description |
 | :--- | :---: | :--- |
-| `zone` | int or string | zone id or zone short\_name of the expedition's dz instance |
+| `zone` | int or string | zone id or zone short_name of the expedition's dz instance |
 | `version` | int | dz instance version |
-| `duration` | int | dz expire time \(seconds\) |
+| `duration` | int | dz expire time (seconds) |
 
 #### compass, safereturn, and zonein keys
 
 | key | type | description |
 | :--- | :---: | :--- |
 | `zone` | int or string | zone id or zone short name |
-| `x` | float | `(optional)` x coordinate \(default: `0`\) |
-| `y` | float | `(optional)` y coordinate \(default: `0`\) |
-| `z` | float | `(optional)` z coordinate \(default: `0`\) |
-| `h` | float | `(optional)` heading \(default: `0`\) |
+| `x` | float | `(optional)` x coordinate (default: `0`) |
+| `y` | float | `(optional)` y coordinate (default: `0`) |
+| `z` | float | `(optional)` z coordinate (default: `0`) |
+| `h` | float | `(optional)` heading (default: `0`) |
 
 ```lua
 local anguish_info = {
@@ -101,7 +101,7 @@ if dz.valid then
 end
 ```
 
-## `Expedition*` GetExpedition\(\)
+## `Expedition*` GetExpedition()
 
 Return client's current expedition if client is in one, otherwise returns nullptr
 
@@ -112,9 +112,9 @@ if not dz.valid then
 end
 ```
 
-## `LUA_TTABLE` GetExpeditionLockouts\(string expedition\_name = ""\)
+## `LUA_TTABLE` GetExpeditionLockouts(string expedition_name = "")
 
-Returns a hash table keyed on expedition name containing an event hash table with client's current lockouts. If expedition\_name is supplied then just an event hash table is returned for that expedition. The value of event hash tables is the lockout's remaining duration. Returns empty table if client doesn't have any lockouts
+Returns a hash table keyed on expedition name containing an event hash table with client's current lockouts. If expedition_name is supplied then just an event hash table is returned for that expedition. The value of event hash tables is the lockout's remaining duration. Returns empty table if client doesn't have any lockouts
 
 ```lua
 local lockouts = e.other:GetLockouts()
@@ -135,7 +135,7 @@ for event_name,remaining in pairs(lockouts) do
 end
 ```
 
-## `string` GetLockoutExpeditionUUID\(string expedition\_name, string event\_name\)
+## `string` GetLockoutExpeditionUUID(string expedition_name, string event_name)
 
 Returns uuid string of the expedition the lockout was received in. Returns an empty string if client doesn't have the lockout
 
@@ -146,7 +146,7 @@ if uuid ~= "" then
 end
 ```
 
-## `bool` HasExpeditionLockout\(string expedition\_name, string event\_name\)
+## `bool` HasExpeditionLockout(string expedition_name, string event_name)
 
 Returns true of the client has the lockout, false otherwise
 
@@ -159,19 +159,19 @@ else
 end
 ```
 
-## `void` MovePCDynamicZone\(int zone\_id, int zone\_version = -1, bool msg\_if\_invalid = true\)
+## `void` MovePCDynamicZone(int zone_id, int zone_version = -1, bool msg_if_invalid = true)
 
-## `void` MovePCDynamicZone\(string zone\_short\_name, int zone\_version = -1, bool msg\_if\_invalid = true\)
+## `void` MovePCDynamicZone(string zone_short_name, int zone_version = -1, bool msg_if_invalid = true)
 
-Attempts to move the client to the specified zone if the client is part of a system \(expedition or otherwise\) with an associated dynamic zone instance in the target zone.
+Attempts to move the client to the specified zone if the client is part of a system (expedition or otherwise) with an associated dynamic zone instance in the target zone.
 
-If a valid `zone_version` \(0 or higher\) is supplied then the move will only be allowed if a player's dz to `zone_id` is also for that `zone_version`.
+If a valid `zone_version` (0 or higher) is supplied then the move will only be allowed if a player's dz to `zone_id` is also for that `zone_version`.
 
-If the client is not associated with a dz for the specified zone, the client is not moved. If `msg_if_invalid` is true \(default\) the client is sent a message that the way is blocked.
+If the client is not associated with a dz for the specified zone, the client is not moved. If `msg_if_invalid` is true (default) the client is sent a message that the way is blocked.
 
 If the client is associated with multiple dz systems to the same zone, the client's `DynamicZoneSwitchListWnd` interface window is invoked to allow the client to choose which dynamic zone to enter.
 
-On success, the player is moved to the dynamic zone's zone in coordinates \(set on creation or afterwards\) If no zone in coordinates are set, the player is moved to the zone's default safe coords.
+On success, the player is moved to the dynamic zone's zone in coordinates (set on creation or afterwards) If no zone in coordinates are set, the player is moved to the zone's default safe coords.
 
 `MovePCInstance` should be used if finer control of zone in location is required, but care must be taken to validate the client is part of an instance for the target zone
 
@@ -180,7 +180,7 @@ e.other:MovePCDynamicZone(317) -- by zone id
 e.other:MovePCDynamicZone("anguish") -- by zone short name
 ```
 
-## `void` RemoveAllExpeditionLockouts\(string expedition\_name = ""\)
+## `void` RemoveAllExpeditionLockouts(string expedition_name = "")
 
 Removes all expedition lockouts from the character, optionally filtered on an expedition name
 
@@ -191,7 +191,7 @@ e.other:RemoveAllExpeditionLockouts(e.other:CharacterID())
 e.other:RemoveAllExpeditionLockouts(e.other:CharacterID(), "Anguish, the Fallen Palace")
 ```
 
-## `void` RemoveExpeditionLockout\(string expedition\_name, string event\_name\)
+## `void` RemoveExpeditionLockout(string expedition_name, string event_name)
 
 Removes the specified lockout from the character. No-op if the character doesn't have the lockout
 

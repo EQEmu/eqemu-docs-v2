@@ -15,7 +15,7 @@ Link:  [https://github.com/ProjectEQ/peqphpeditor](https://github.com/ProjectEQ/
 Description:  An intuitive editor that allows you to make changes to your world server.  
 Installation: [Install PEQ Database Editor](../../../categories/installation/install-peq-database-editor.md)
 
-#### EQEmu Operations Center \(EOC\)
+#### EQEmu Operations Center (EOC)
 
 Link:  [http://eoc.akkadius.com/](http://eoc.akkadius.com/)  
 Description:  A powerful editor that includes mass editing, file utilities, and more.  
@@ -89,8 +89,8 @@ Description:  Extracts individual spell and item icons from .dds and .tga sprite
 
 #### EQ Eff2Emt Zone Sounds Converter
 
-Link \(command line\):  [https://github.com/Shendare/Eff2Emt](https://github.com/Shendare/Eff2Emt)  
-Link \(GUI\):  [https://github.com/Shendare/Eff2EmtGUI](https://github.com/Shendare/Eff2EmtGUI)  
+Link (command line):  [https://github.com/Shendare/Eff2Emt](https://github.com/Shendare/Eff2Emt)  
+Link (GUI):  [https://github.com/Shendare/Eff2EmtGUI](https://github.com/Shendare/Eff2EmtGUI)  
 Description:  Converts .eff sound effect files to .emt format
 
 #### EQZip

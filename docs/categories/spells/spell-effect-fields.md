@@ -6,48 +6,48 @@
 | :--- | :--- | :--- |
 | id | SPELLINDEX |  |
 | name | SPELLNAME |  |
-| player\_1 | ACTORTAG |  |
-| teleport\_zone | NPC\_FILENAME |  |
-| you\_cast | CASTERMETXT |  |
-| other\_casts | CASTEROTHERTXT |  |
-| cast\_on\_you | CASTEDMETXT |  |
-| cast\_on\_other | CASTEDOTHERTXT |  |
-| spell\_fades | SPELLGONE |  |
+| player_1 | ACTORTAG |  |
+| teleport_zone | NPC_FILENAME |  |
+| you_cast | CASTERMETXT |  |
+| other_casts | CASTEROTHERTXT |  |
+| cast_on_you | CASTEDMETXT |  |
+| cast_on_other | CASTEDOTHERTXT |  |
+| spell_fades | SPELLGONE |  |
 | range | RANGE |  |
 | aoerange | IMPACTRADIUS |  |
 | pushback | OUTFORCE |  |
 | pushup | UPFORCE |  |
-| cast\_time | CASTINGTIME |  |
-| recovery\_time | RECOVERYDELAY |  |
-| recast\_time | SPELLDELAY |  |
+| cast_time | CASTINGTIME |  |
+| recovery_time | RECOVERYDELAY |  |
+| recast_time | SPELLDELAY |  |
 | buffdurationformula | DURATIONBASE |  |
 | buffduration | DURATIONCAP |  |
 | AEDuration | IMPACTDURATION |  |
 | mana | MANACOST |  |
-| effect\_base\_value1 | BASEAFFECT1 |  |
-| effect\_base\_value2 | BASEAFFECT2 |  |
-| effect\_base\_value3 | BASEAFFECT3 |  |
-| effect\_base\_value4 | BASEAFFECT4 |  |
-| effect\_base\_value5 | BASEAFFECT5 |  |
-| effect\_base\_value6 | BASEAFFECT6 |  |
-| effect\_base\_value7 | BASEAFFECT7 |  |
-| effect\_base\_value8 | BASEAFFECT8 |  |
-| effect\_base\_value9 | BASEAFFECT9 |  |
-| effect\_base\_value10 | BASEAFFECT10 |  |
-| effect\_base\_value11 | BASEAFFECT11 |  |
-| effect\_base\_value12 | BASEAFFECT12 |  |
-| effect\_limit\_value1 | BASE\_EFFECT2\_1 |  |
-| effect\_limit\_value2 | BASE\_EFFECT2\_2 |  |
-| effect\_limit\_value3 | BASE\_EFFECT2\_3 |  |
-| effect\_limit\_value4 | BASE\_EFFECT2\_4 |  |
-| effect\_limit\_value5 | BASE\_EFFECT2\_5 |  |
-| effect\_limit\_value6 | BASE\_EFFECT2\_6 |  |
-| effect\_limit\_value7 | BASE\_EFFECT2\_7 |  |
-| effect\_limit\_value8 | BASE\_EFFECT2\_8 |  |
-| effect\_limit\_value9 | BASE\_EFFECT2\_9 |  |
-| effect\_limit\_value10 | BASE\_EFFECT2\_10 |  |
-| effect\_limit\_value11 | BASE\_EFFECT2\_11 |  |
-| effect\_limit\_value12 | BASE\_EFFECT2\_12 |  |
+| effect_base_value1 | BASEAFFECT1 |  |
+| effect_base_value2 | BASEAFFECT2 |  |
+| effect_base_value3 | BASEAFFECT3 |  |
+| effect_base_value4 | BASEAFFECT4 |  |
+| effect_base_value5 | BASEAFFECT5 |  |
+| effect_base_value6 | BASEAFFECT6 |  |
+| effect_base_value7 | BASEAFFECT7 |  |
+| effect_base_value8 | BASEAFFECT8 |  |
+| effect_base_value9 | BASEAFFECT9 |  |
+| effect_base_value10 | BASEAFFECT10 |  |
+| effect_base_value11 | BASEAFFECT11 |  |
+| effect_base_value12 | BASEAFFECT12 |  |
+| effect_limit_value1 | BASE_EFFECT2_1 |  |
+| effect_limit_value2 | BASE_EFFECT2_2 |  |
+| effect_limit_value3 | BASE_EFFECT2_3 |  |
+| effect_limit_value4 | BASE_EFFECT2_4 |  |
+| effect_limit_value5 | BASE_EFFECT2_5 |  |
+| effect_limit_value6 | BASE_EFFECT2_6 |  |
+| effect_limit_value7 | BASE_EFFECT2_7 |  |
+| effect_limit_value8 | BASE_EFFECT2_8 |  |
+| effect_limit_value9 | BASE_EFFECT2_9 |  |
+| effect_limit_value10 | BASE_EFFECT2_10 |  |
+| effect_limit_value11 | BASE_EFFECT2_11 |  |
+| effect_limit_value12 | BASE_EFFECT2_12 |  |
 | max1 | AFFECT1CAP |  |
 | max2 | AFFECT2CAP |  |
 | max3 | AFFECT3CAP |  |
@@ -66,10 +66,10 @@
 | components2 | EXPENDREAGENT2 |  |
 | components3 | EXPENDREAGENT3 |  |
 | components4 | EXPENDREAGENT4 |  |
-| component\_counts1 | EXPENDQTY1 |  |
-| component\_counts2 | EXPENDQTY2 |  |
-| component\_counts3 | EXPENDQTY3 |  |
-| component\_counts4 | EXPENDQTY4 |  |
+| component_counts1 | EXPENDQTY1 |  |
+| component_counts2 | EXPENDQTY2 |  |
+| component_counts3 | EXPENDQTY3 |  |
+| component_counts4 | EXPENDQTY4 |  |
 | NoexpendReagent1 | NOEXPENDREAGENT1 |  |
 | NoexpendReagent2 | NOEXPENDREAGENT2 |  |
 | NoexpendReagent3 | NOEXPENDREAGENT3 |  |
@@ -128,117 +128,117 @@
 | TargetAnim | TARGETANIM |  |
 | TravelType | TRAVELTYPE |  |
 | SpellAffectIndex | SPELLAFFECTINDEX |  |
-| disallow\_sit | CANCELONSIT |  |
-| deities0 | DIETY\_AGNOSTIC |  |
-| deities1 | DIETY\_BERTOXXULOUS |  |
-| deities2 | DIETY\_BRELLSERILIS |  |
-| deities3 | DIETY\_CAZICTHULE |  |
-| deities4 | DIETY\_EROLLISIMARR |  |
-| deities5 | DIETY\_FIZZLETHORP |  |
-| deities6 | DIETY\_INNORUUK |  |
-| deities7 | DIETY\_KARANA |  |
-| deities8 | DIETY\_MITHMARR |  |
-| deities9 | DIETY\_PREXUS |  |
-| deities10 | DIETY\_QUELLIOUS |  |
-| deities11 | DIETY\_RALLOSZEK |  |
-| deities12 | DIETY\_RODCETNIFE |  |
-| deities13 | DIETY\_SOLUSEKRO |  |
-| deities14 | DIETY\_TRIBUNAL |  |
-| deities15 | DIETY\_TUNARE |  |
-| deities16 | DIETY\_VEESHAN |  |
-| field142 | NPC\_NO\_CAST | Seen 100-15 ???? |
-| field143 | AI\_PT\_BONUS |  |
-| new\_icon | NEW\_ICON |  |
-| spellanim | SPELL\_EFFECT\_INDEX |  |
-| uninterruptable | NO\_INTERRUPT |  |
-| ResistDiff | RESIST\_MOD |  |
-| dot\_stacking\_exempt | NOT\_STACKABLE\_DOT |  |
-| deleteable | DELETE\_OK |  |
-| RecourseLink | REFLECT\_SPELLINDEX |  |
-| no\_partial\_resist | NO\_PARTIAL\_SAVE |  |
-| field152 | SMALL\_TARGETS\_ONLY |  |
-| field153 | USES\_PERSISTENT\_PARTICLES |  |
-| short\_buff\_box | BARD\_BUFF\_BOX |  |
-| descnum | DESCRIPTION\_INDEX |  |
-| typedescnum | PRIMARY\_CATEGORY |  |
-| effectdescnum | SECONDARY\_CATEGORY\_1 |  |
-| effectdescnum2 | SECONDARY\_CATEGORY\_2 |  |
-| npc\_no\_los | NO\_NPC\_LOS |  |
+| disallow_sit | CANCELONSIT |  |
+| deities0 | DIETY_AGNOSTIC |  |
+| deities1 | DIETY_BERTOXXULOUS |  |
+| deities2 | DIETY_BRELLSERILIS |  |
+| deities3 | DIETY_CAZICTHULE |  |
+| deities4 | DIETY_EROLLISIMARR |  |
+| deities5 | DIETY_FIZZLETHORP |  |
+| deities6 | DIETY_INNORUUK |  |
+| deities7 | DIETY_KARANA |  |
+| deities8 | DIETY_MITHMARR |  |
+| deities9 | DIETY_PREXUS |  |
+| deities10 | DIETY_QUELLIOUS |  |
+| deities11 | DIETY_RALLOSZEK |  |
+| deities12 | DIETY_RODCETNIFE |  |
+| deities13 | DIETY_SOLUSEKRO |  |
+| deities14 | DIETY_TRIBUNAL |  |
+| deities15 | DIETY_TUNARE |  |
+| deities16 | DIETY_VEESHAN |  |
+| field142 | NPC_NO_CAST | Seen 100-15 ???? |
+| field143 | AI_PT_BONUS |  |
+| new_icon | NEW_ICON |  |
+| spellanim | SPELL_EFFECT_INDEX |  |
+| uninterruptable | NO_INTERRUPT |  |
+| ResistDiff | RESIST_MOD |  |
+| dot_stacking_exempt | NOT_STACKABLE_DOT |  |
+| deleteable | DELETE_OK |  |
+| RecourseLink | REFLECT_SPELLINDEX |  |
+| no_partial_resist | NO_PARTIAL_SAVE |  |
+| field152 | SMALL_TARGETS_ONLY |  |
+| field153 | USES_PERSISTENT_PARTICLES |  |
+| short_buff_box | BARD_BUFF_BOX |  |
+| descnum | DESCRIPTION_INDEX |  |
+| typedescnum | PRIMARY_CATEGORY |  |
+| effectdescnum | SECONDARY_CATEGORY_1 |  |
+| effectdescnum2 | SECONDARY_CATEGORY_2 |  |
+| npc_no_los | NO_NPC_LOS |  |
 | field160 | FEEDBACKABLE | ????? - probably was never implemented. |
 | reflectable | REFLECTABLE |  |
-| bonushate | HATE\_MOD |  |
-| field163 | RESIST\_PER\_LEVEL |  |
-| field164 | RESIST\_CAP |  |
-| ldon\_trap | AFFECT\_INANIMATE |  |
-| EndurCost | STAMINA\_COST |  |
-| EndurTimerIndex | TIMER\_INDEX |  |
-| IsDiscipline | IS\_SKILL |  |
-| field169 | ATTACK\_OPENING | unused |
-| field170 | DEFENSE\_OPENING | unused |
-| field171 | SKILL\_OPENING | unused |
-| field172 | NPC\_ERROR\_OPENING | unused |
-| HateAdded | SPELL\_HATE\_GIVEN |  |
-| EndurUpkeep | ENDUR\_UPKEEP |  |
-| field175 | LIMITED\_USE\_TYPE |  |
-| numhits | LIMITED\_USE\_COUNT |  |
-| pvpresistbase | PVP\_RESIST\_MOD |  |
-| pvpresistcalc | PVP\_RESIST\_PER\_LEVEL |  |
-| pvpresistcap | PVP\_RESIST\_CAP |  |
-| spell\_category | GLOBAL\_GROUP |  |
-| field181 | PVP\_DURATION | PVP Override |
-| field182 | PVP\_DURATION\_CAP | PVP Override |
-| field183 | PCNPC\_ONLY\_FLAG |  |
-| field184 | CAST\_NOT\_STANDING | Blocks SE\_InterruptCasting from affecting the casting spell, allows to cast while not standing, while invis, and breaks invul |
-| can\_mgb | CAN\_MGB |  |
-| nodispell | NO\_DISPELL |  |
-| npc\_category | NPC\_MEM\_CATEGORY |  |
-| npc\_usefulness | NPC\_USEFULNESS |  |
-| MinResist | MIN\_RESIST |  |
-| MaxResist | MAX\_RESIST |  |
-| viral\_targets | MIN\_SPREAD\_TIME |  |
-| viral\_timer | MAX\_SPREAD\_TIME |  |
-| nimbuseffect | DURATION\_PARTICLE\_EFFECT |  |
-| ConeStartAngle | CONE\_START\_ANGLE |  |
-| ConeStopAngle | CONE\_END\_ANGLE |  |
-| sneaking | SNEAK\_ATTACK |  |
-| not\_extendable | NOT\_FOCUSABLE | Updated to not\_focusable |
-| field198 | NO\_DETRIMENTAL\_SPELL\_AGGRO | Updated to no\_detrimental\_spell\_aggro |
-| field199 | SHOW\_WEAR\_OFF\_MESSAGE |  |
-| suspendable | IS\_COUNTDOWN\_HELD |  |
-| viral\_range | SPREAD\_RADIUS |  |
-| songcap | BASE\_EFFECTS\_FOCUS\_CAP |  |
-| field203 | STACKS\_WITH\_SELF |  |
-| field204 | NOT\_SHOWN\_TO\_PLAYER |  |
-| no\_block | NO\_BUFF\_BLOCK |  |
-| field206 | ANIM\_VARIATION |  |
-| spellgroup | SPELL\_GROUP |  |
-| rank | SPELL\_GROUP\_RANK |  |
-| field209 | NO\_RESIST | updated to no\_resist |
-| field210 | ALLOW\_SPELLSCRIBE |  |
-| CastRestriction | SPELL\_REQ\_ASSOCIATION\_ID |  |
-| allowrest | BYPASS\_REGEN\_CHECK |  |
-| InCombat | CAN\_CAST\_IN\_COMBAT |  |
-| OutofCombat | CAN\_CAST\_OUT\_OF\_COMBAT |  |
-| field215 | SHOW\_DOT\_MESSAGE |  |
+| bonushate | HATE_MOD |  |
+| field163 | RESIST_PER_LEVEL |  |
+| field164 | RESIST_CAP |  |
+| ldon_trap | AFFECT_INANIMATE |  |
+| EndurCost | STAMINA_COST |  |
+| EndurTimerIndex | TIMER_INDEX |  |
+| IsDiscipline | IS_SKILL |  |
+| field169 | ATTACK_OPENING | unused |
+| field170 | DEFENSE_OPENING | unused |
+| field171 | SKILL_OPENING | unused |
+| field172 | NPC_ERROR_OPENING | unused |
+| HateAdded | SPELL_HATE_GIVEN |  |
+| EndurUpkeep | ENDUR_UPKEEP |  |
+| field175 | LIMITED_USE_TYPE |  |
+| numhits | LIMITED_USE_COUNT |  |
+| pvpresistbase | PVP_RESIST_MOD |  |
+| pvpresistcalc | PVP_RESIST_PER_LEVEL |  |
+| pvpresistcap | PVP_RESIST_CAP |  |
+| spell_category | GLOBAL_GROUP |  |
+| field181 | PVP_DURATION | PVP Override |
+| field182 | PVP_DURATION_CAP | PVP Override |
+| field183 | PCNPC_ONLY_FLAG |  |
+| field184 | CAST_NOT_STANDING | Blocks SE_InterruptCasting from affecting the casting spell, allows to cast while not standing, while invis, and breaks invul |
+| can_mgb | CAN_MGB |  |
+| nodispell | NO_DISPELL |  |
+| npc_category | NPC_MEM_CATEGORY |  |
+| npc_usefulness | NPC_USEFULNESS |  |
+| MinResist | MIN_RESIST |  |
+| MaxResist | MAX_RESIST |  |
+| viral_targets | MIN_SPREAD_TIME |  |
+| viral_timer | MAX_SPREAD_TIME |  |
+| nimbuseffect | DURATION_PARTICLE_EFFECT |  |
+| ConeStartAngle | CONE_START_ANGLE |  |
+| ConeStopAngle | CONE_END_ANGLE |  |
+| sneaking | SNEAK_ATTACK |  |
+| not_extendable | NOT_FOCUSABLE | Updated to not_focusable |
+| field198 | NO_DETRIMENTAL_SPELL_AGGRO | Updated to no_detrimental_spell_aggro |
+| field199 | SHOW_WEAR_OFF_MESSAGE |  |
+| suspendable | IS_COUNTDOWN_HELD |  |
+| viral_range | SPREAD_RADIUS |  |
+| songcap | BASE_EFFECTS_FOCUS_CAP |  |
+| field203 | STACKS_WITH_SELF |  |
+| field204 | NOT_SHOWN_TO_PLAYER |  |
+| no_block | NO_BUFF_BLOCK |  |
+| field206 | ANIM_VARIATION |  |
+| spellgroup | SPELL_GROUP |  |
+| rank | SPELL_GROUP_RANK |  |
+| field209 | NO_RESIST | updated to no_resist |
+| field210 | ALLOW_SPELLSCRIBE |  |
+| CastRestriction | SPELL_REQ_ASSOCIATION_ID |  |
+| allowrest | BYPASS_REGEN_CHECK |  |
+| InCombat | CAN_CAST_IN_COMBAT |  |
+| OutofCombat | CAN_CAST_OUT_OF_COMBAT |  |
+| field215 | SHOW_DOT_MESSAGE |  |
 | field216 | INVALID |  |
-| field217 | OVERRIDE\_CRIT\_CHANCE | Updated to override\_crit\_chance |
-| aemaxtargets | MAX\_TARGETS |  |
-| maxtargets | NO\_HEAL\_DAMAGE\_ITEM\_MOD | Updated to no\_heal\_damage\_item\_mod |
-| field220 | CASTER\_REQUIREMENT\_ID | Need to figure out what these do |
-| field221 | SPELL\_CLASS |  |
-| field222 | SPELL\_SUBCLASS |  |
-| field223 | AI\_VALID\_TARGETS |  |
-| persistdeath | NO\_STRIP\_ON\_DEATH |  |
-| field225 | BASE\_EFFECTS\_FOCUS\_SLOPE |  |
-| field226 | BASE\_EFFECTS\_FOCUS\_OFFSET |  |
-| min\_dist | DISTANCE\_MOD\_CLOSE\_DIST |  |
-| min\_dist\_mod | DISTANCE\_MOD\_CLOSE\_MULT |  |
-| max\_dist | DISTANCE\_MOD\_FAR\_DIST |  |
-| max\_dist\_mod | DISTANCE\_MOD\_FAR\_MULT |  |
-| min\_range | MIN\_RANGE |  |
-| field232 | NO\_REMOVE | Updated to no\_remove |
-| field233 | SPELL\_RECOURSE\_TYPE |  |
-| field234 | ONLY\_DURING\_FAST\_REGEN |  |
-| field235 | IS\_BETA\_ONLY |  |
-| field236 | SPELL\_SUBGROUP |  |
+| field217 | OVERRIDE_CRIT_CHANCE | Updated to override_crit_chance |
+| aemaxtargets | MAX_TARGETS |  |
+| maxtargets | NO_HEAL_DAMAGE_ITEM_MOD | Updated to no_heal_damage_item_mod |
+| field220 | CASTER_REQUIREMENT_ID | Need to figure out what these do |
+| field221 | SPELL_CLASS |  |
+| field222 | SPELL_SUBCLASS |  |
+| field223 | AI_VALID_TARGETS |  |
+| persistdeath | NO_STRIP_ON_DEATH |  |
+| field225 | BASE_EFFECTS_FOCUS_SLOPE |  |
+| field226 | BASE_EFFECTS_FOCUS_OFFSET |  |
+| min_dist | DISTANCE_MOD_CLOSE_DIST |  |
+| min_dist_mod | DISTANCE_MOD_CLOSE_MULT |  |
+| max_dist | DISTANCE_MOD_FAR_DIST |  |
+| max_dist_mod | DISTANCE_MOD_FAR_MULT |  |
+| min_range | MIN_RANGE |  |
+| field232 | NO_REMOVE | Updated to no_remove |
+| field233 | SPELL_RECOURSE_TYPE |  |
+| field234 | ONLY_DURING_FAST_REGEN |  |
+| field235 | IS_BETA_ONLY |  |
+| field236 | SPELL_SUBGROUP |  |
 

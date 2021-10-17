@@ -1,6 +1,6 @@
 # Global Methods
 
-## `void` add\_expedition\_lockout\_all\_clients\(string expedition\_name, string event\_name, int seconds, string uuid = ""\) <a id="add-expedition-lockouts-all-clients"></a>
+## `void` add_expedition_lockout_all_clients(string expedition_name, string event_name, int seconds, string uuid = "") <a id="add-expedition-lockouts-all-clients"></a>
 
 Adds the specified lockout to all clients in the current zone. If a client already has the lockout it's replaced with this one. If a uuid is not supplied one is generated and applied to all clients.
 
@@ -8,7 +8,7 @@ Adds the specified lockout to all clients in the current zone. If a client alrea
 quest::add_expedition_lockout_all_clients("Added expedition", "Added event", 7200);
 ```
 
-## `void` add\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name, int seconds, string uuid = ""\) <a id="add-expedition-lockouts-by-char-id"></a>
+## `void` add_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name, int seconds, string uuid = "") <a id="add-expedition-lockouts-by-char-id"></a>
 
 Adds the specified lockout to the character with an optional specified uuid. If the client already has the lockout it's replaced with this one. If a uuid is not supplied one is generated when the lockout is added to the character
 
@@ -16,7 +16,7 @@ Adds the specified lockout to the character with an optional specified uuid. If 
 quest::add_expedition_lockout_by_char_id($client->CharacterID(), "Added expedition", "Added event", 7200);
 ```
 
-## `Expedition*` get\_expedition\(\) <a id="get-expedition"></a>
+## `Expedition*` get_expedition() <a id="get-expedition"></a>
 
 Returns an Expedition object corresponding to current zone if it's a valid dynamic zone instance being used for an expedition, otherwise returns nullptr.
 
@@ -27,7 +27,7 @@ if ($dz) {
 }
 ```
 
-## `Expedition*` get\_expedition\_by\_char\_id\(int character\_id\) <a id="get-expedition-by-char-id"></a>
+## `Expedition*` get_expedition_by_char_id(int character_id) <a id="get-expedition-by-char-id"></a>
 
 Returns the character's current Expedition if the character is in one, otherwise returns nullptr.
 
@@ -38,7 +38,7 @@ if ($dz) {
 }
 ```
 
-## `Expedition*` get\_expedition\_by\_dz\_id\(int dz\_id\) <a id="get-expedition-by-dz-id"></a>
+## `Expedition*` get_expedition_by_dz_id(int dz_id) <a id="get-expedition-by-dz-id"></a>
 
 Returns the Expedition for the specified dynamic zone id if it's valid, otherwise returns nullptr.
 
@@ -57,7 +57,7 @@ if ($dzid > 0) {
 }
 ```
 
-## `Expedition*` get\_expedition\_by\_zone\_instance\(int zone\_id, int instance\_id\) <a id="get-expedition-by-zone-instance"></a>
+## `Expedition*` get_expedition_by_zone_instance(int zone_id, int instance_id) <a id="get-expedition-by-zone-instance"></a>
 
 Returns the Expedition for the specified zone and instance id if it's a valid dynamic zone instance, otherwise returns nullptr.
 
@@ -72,7 +72,7 @@ if ($dz) {
 }
 ```
 
-## `HASHREF` get\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name\) <a id="get-expedition-lockout-by-char-id"></a>
+## `HASHREF` get_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name) <a id="get-expedition-lockout-by-char-id"></a>
 
 Returns a hash reference containing lockout details.
 
@@ -89,7 +89,7 @@ if (keys %{ $lockout }) {
 }
 ```
 
-## `HASHREF` get\_expedition\_lockouts\_by\_char\_id\(int character\_id, string expedition\_name = ""\) <a id="get-expedition-lockouts-by-char-id"></a>
+## `HASHREF` get_expedition_lockouts_by_char_id(int character_id, string expedition_name = "") <a id="get-expedition-lockouts-by-char-id"></a>
 
 Returns a hash reference containing all of character's current lockouts keyed by expedition name. If an optional `expedition_name` is passed in it returns a hash reference of lockouts keyed by event name for that expedition.
 
@@ -118,7 +118,7 @@ foreach my $event_name (keys %{ $anguish_lockouts }) {
 }
 ```
 
-## `void` remove\_all\_expedition\_lockouts\_by\_char\_id\(int character\_id, string expedition\_name = ""\) <a id="remove-all-expedition-lockouts-by-char-id"></a>
+## `void` remove_all_expedition_lockouts_by_char_id(int character_id, string expedition_name = "") <a id="remove-all-expedition-lockouts-by-char-id"></a>
 
 Removes all expedition lockouts from the character, optionally filtered on an expedition name
 
@@ -129,7 +129,7 @@ quest::remove_all_expedition_lockouts_by_char_id($client->CharacterID());
 quest::remove_all_expedition_lockouts_by_char_id($client->CharacterID(), "Anguish, the Fallen Palace");
 ```
 
-## `void` remove\_expedition\_lockout\_by\_char\_id\(int character\_id, string expedition\_name, string event\_name\) <a id="remove-expedition-lockout-by-char-id"></a>
+## `void` remove_expedition_lockout_by_char_id(int character_id, string expedition_name, string event_name) <a id="remove-expedition-lockout-by-char-id"></a>
 
 Removes the specified lockout from the character. No-op if the character doesn't have the lockout
 

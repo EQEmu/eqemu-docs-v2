@@ -22,7 +22,7 @@ Another approach: `UDP and (*Source in 69.174.0.0/16 or *Destination in 69.174.0
 
 When I’m setting up for a capture, I initially log the entire login sequence from authentication, through character select, and into the server. That captures a large amount of data that is helpful for identifying the specific patch (the last time the client was patched), the server’s entire list of guilds, character select information, etc. This approach does log your account name and password. If you plan on sharing this capture file, make sure you delete those packets, and the packets that list your character names.
 
-To configure Message Anaylzer to properly export for the extractor, first you need to right click the header column of the preview pane, and go to Add Column... Navigate to TCP->Segment->Payload. Right click and select Add as column. Now, right click a row in the Payload section column, select Display Binary Values As -> Hex. Now, To export the capture in Message Analyzer, go to Session -> Analysis Grid -> Export -> All, in the drop down choose Tab Delimited (\*.txt)
+To configure Message Anaylzer to properly export for the extractor, first you need to right click the header column of the preview pane, and go to Add Column... Navigate to TCP->Segment->Payload. Right click and select Add as column. Now, right click a row in the Payload section column, select Display Binary Values As -> Hex. Now, To export the capture in Message Analyzer, go to Session -> Analysis Grid -> Export -> All, in the drop down choose Tab Delimited (*.txt)
 
 Then, I will move my character to the area of the game I want to investigate. If, for example, I wanted to learn more about how Shrouds work I would move to a Shroud “vendor”. Then I would start a capture session, interact with the vendor, and save the capture. Screenshots are also helpful, especially for cases where you can see information on the screen. This will help pinpoint specific values (data type and placement) in the packet. I usually repeat that process at least one more time to pinpoint which packets relate to shrouds and which were just noise from other people in the zone.
 
@@ -64,16 +64,16 @@ Finding an opcode in the current client is easy. It’s in the packet capture. F
 
 
 > cmp edx,1659h\
-> ja loc\_13FF3ED\
-> jz loc\_13FF512
+> ja loc_13FF3ED\
+> jz loc_13FF512
 
 They may also appear like this:\
 
 
-> cmp \[ebp+var\_5354], 6786h\
-> ja short loc\_4C1BD8\
-> cmp \[ebp+var\_5354], 6786h\
-> jz short loc\_4C90DB
+> cmp [ebp+var_5354], 6786h\
+> ja short loc_4C1BD8\
+> cmp [ebp+var_5354], 6786h\
+> jz short loc_4C90DB
 
 They also appear in multiple sections with login-based opcodes (e.g. guild list, password mismatch, etc.) typically being in an entirely separate part of the executable. The other opcodes are in blocks (like those above) with jumps to other blocks of opcodes (if smaller than X, goto location ABC, else goto location ZYX).
 

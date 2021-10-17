@@ -1,6 +1,6 @@
 # Database Backup Tool
 
-World has a database backup utility wrapped as a CLI \(Command Line Interface\) utility
+World has a database backup utility wrapped as a CLI (Command Line Interface) utility
 
 It's what powers the ProjectEQ archives micro-service [http://db.projecteq.net/](http://db.projecteq.net/) 
 
@@ -8,14 +8,14 @@ Dumper wrapper script [https://github.com/EQEmu/Server/blob/master/utils/sql/peq
 
 ## Features
 
-* Selectively backup certain types of tables \(content tables, player tables, login tables, state tables, system tables etc\)
+* Selectively backup certain types of tables (content tables, player tables, login tables, state tables, system tables etc)
 * Does not table lock by default; making it easy to backup a server while it is online and players are running on it
-* Supports table locking \(Can impact server playability\)
+* Supports table locking (Can impact server playability)
 * Supports specifying a custom dump path
 * Supports piping the dump output to console instead of writing directly to a file
-* Supports option for compressing the backup \(only works with file output\) as long as you have a supported compression utility installed
-  * 7Zip \(Linux, Windows\)
-  * Tar \(Linux\)
+* Supports option for compressing the backup (only works with file output) as long as you have a supported compression utility installed
+  * 7Zip (Linux, Windows)
+  * Tar (Linux)
 
 ### CLI Options
 
@@ -45,9 +45,9 @@ Options
 
 ### Schema Source
 
-The schema source for the table groupings can be found in the source at [https://github.com/EQEmu/Server/blob/master/common/database\_schema.h\#L27](https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L27) 
+The schema source for the table groupings can be found in the source at [https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L27](https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L27) 
 
-## Example Output\(s\)
+## Example Output(s)
 
 The below shows a few different types of examples
 
@@ -63,7 +63,7 @@ eqemu@e5311a8e9505:~/server$ ./bin/world database:dump --compress --player-table
 [World] [Info] Compressed dump created at [backups/peq-2021-05-17-player.tar.gz]
 ```
 
-### Append Multiple Table Categories \(System, State, Login\)
+### Append Multiple Table Categories (System, State, Login)
 
 You can specify as many or as little table groupings as possible
 

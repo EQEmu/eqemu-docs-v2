@@ -490,13 +490,13 @@ Download a copy of the PEQ Database Editor from GitHub:  [https://github.com/Pro
 
 ![Choose the Download Zip option](../../gitbook/assets/download-peq.png)
 
-Extract the contents of the zip file to `C:\xampp\htdocs\`.
+Extract the contents of the zip file to `C:\xampp\htdocs.
 
 {% hint style="info" %}
 If you would like to change the name of the PEQ Database Editor directory, now is the time.  Note that you can move the contents to the root htdocs directory.  Changing this name will effect the URL used to access the Editor.
 {% endhint %}
 
-Navigate to the `C:\xampp\htdocs\peqphpeditor-master\` folder.
+Navigate to the `C:\xampp\htdocs\peqphpeditor-master\ folder.
 
 Copy the file `config.php.dist` and rename it `config.php`.
 
@@ -523,7 +523,7 @@ Save your changes to the configuration file.
 
 #### Update Database Schema
 
-Navigate to the `sql` folder (ex. `C:\xampp\htdocs\peqphpeditor-master\sql\`
+Navigate to the `sql` folder (ex. `C:\xampp\htdocs\peqphpeditor-master\sql\
 
 Open the file `schema.sql` with a text editor and copy and paste the contents into the HeidiSQL Client's query window and execute (HeidiSQL installed when you used Akkadius' EQEmu Windows Installer Script).
 

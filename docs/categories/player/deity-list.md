@@ -24,7 +24,7 @@ This list is used in quest API calls like the following:
 | Tunare | 215 | 32768 |
 | Veeshan | 216 | 65536 |
 
-This list is used in spells\_new.
+This list is used in spells_new.
 
 #### Spells ID List
 

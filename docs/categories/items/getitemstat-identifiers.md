@@ -48,7 +48,7 @@
 | banedmgamt |
 | banedmgbody |
 | magic |
-| casttime\_ |
+| casttime_ |
 | reqlevel |
 | bardtype |
 | bardvalue |

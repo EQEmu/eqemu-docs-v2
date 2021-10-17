@@ -40,7 +40,7 @@ While we cannot cover every server, we can provide tips for the modified files t
 It is highly recommended that you create a specific client folder for each server, so that you do not have to keep modifying these files.
 {% endhint %}
 
-#### Spell File:  spells\_%s.txt
+#### Spell File:  spells_%s.txt
 
 This file contains the client-sided descriptions and effects for spells.  If the server operator has made changes to the spells in their world, you will likely NOT be able to see spell effects if you do not update this file.  This file goes in your main EverQuest directory.  
 
@@ -58,7 +58,7 @@ These files are typically modified to show "old" icons, such as on a Time-Locked
 
 There are several files:  `spells01.tga` through `spells07.tga`. 
 
-#### Strings:  dbstr\_%s.txt
+#### Strings:  dbstr_%s.txt
 
 Database Strings are typically modified to customize things like alternate currency or AA descriptions, among many other uses, on a customized server.  This file goes in your main EverQuest directory.
 

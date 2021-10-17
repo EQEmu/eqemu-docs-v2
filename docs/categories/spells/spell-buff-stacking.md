@@ -21,8 +21,8 @@
 * **SE_Screech (123)**
   * Any effect with SE_Screech that has a value of +1 will block any other effect with SE_Screech in it that has a value of -1.
     * Example:
-      * Spell [Screech](http://lucy.allakhazam.com/spell.html?id=1383\&source=Live) has SE_Screech with value of -1. 
-      * Spell [Screech Immunity](http://lucy.allakhazam.com/spell.html?id=2785\&source=Live) has SE_Screech with value of +1
+      * Spell [Screech](http://lucy.allakhazam.com/spell.html?id=1383&source=Live) has SE_Screech with value of -1. 
+      * Spell [Screech Immunity](http://lucy.allakhazam.com/spell.html?id=2785&source=Live) has SE_Screech with value of +1
         * If you have the buff Screech Immunity, the spell Screech will not be able to effect you or any other spell with Screech at (-1)
 * **SE_AStacker (446), SE_BStacker (447), SE_CStaker (448), SE_DStaker (447) **
   * Buffs containing these effects can block each other from taking hold via the following. _(Does not matter what slot the effect is in)_

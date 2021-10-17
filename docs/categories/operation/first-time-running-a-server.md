@@ -4,8 +4,8 @@
 
 1. Log in to your server with the character you wish to make a GM
 2. Log out to the character selection screen.
-3. Go into your SQL editor of choice \(or command line\) and change account.status to 255.
-4. Log in and enjoy GM commands \(typing \#help will give you a list of commands\)
+3. Go into your SQL editor of choice (or command line) and change account.status to 255.
+4. Log in and enjoy GM commands (typing #help will give you a list of commands)
 
 For example, in Linux step three would look something like this:
 

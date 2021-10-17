@@ -34,14 +34,14 @@ Understanding the interaction of the database tables will surely help, should yo
 
 | Table | Description |
 | :--- | :--- |
-| [aa\_ability](https://eqemu.gitbook.io/database-schema/categories/aas/aa_ability) | the name of each AA, class/race/deity restrictions, enable/disable, [AA type](aa-types.md) setting |
-| [aa\_actions](https://eqemu.gitbook.io/database-schema/categories/aas/aa_actions) | assigned spellid, timers, [AA target types](aa-target-types.md) setting |
-| [aa\_effects](https://eqemu.gitbook.io/database-schema/categories/aas/aa_effects) | links the spell effects and spell base values to each AA |
-| [aa\_rank\_effects](https://eqemu.gitbook.io/database-schema/categories/aas/aa_rank_effects) | modifies spell effects and base values for each AA as ranks increase |
-| [aa\_rank\_prereqs](https://eqemu.gitbook.io/database-schema/categories/aas/aa_rank_prereqs) | determines any prerequisites required before an AA purchase is allowed |
-| [aa\_ranks](https://eqemu.gitbook.io/database-schema/categories/aas/aa_ranks) | settings for each AA cost and progression through its ranks |
-| [aa\_required\_level\_cost](https://eqemu.gitbook.io/database-schema/categories/aas/aa_required_level_cost) | Handles certain AAs such as Harm Touch and Lay On Hands which can progress with or without AA experience cost, based solely on level |
-| [aa\_timers](https://eqemu.gitbook.io/database-schema/categories/aas/aa_timers) | a character data table that indicates when a time-limited AA will again be available to the player |
+| [aa_ability](https://eqemu.gitbook.io/database-schema/categories/aas/aa_ability) | the name of each AA, class/race/deity restrictions, enable/disable, [AA type](aa-types.md) setting |
+| [aa_actions](https://eqemu.gitbook.io/database-schema/categories/aas/aa_actions) | assigned spellid, timers, [AA target types](aa-target-types.md) setting |
+| [aa_effects](https://eqemu.gitbook.io/database-schema/categories/aas/aa_effects) | links the spell effects and spell base values to each AA |
+| [aa_rank_effects](https://eqemu.gitbook.io/database-schema/categories/aas/aa_rank_effects) | modifies spell effects and base values for each AA as ranks increase |
+| [aa_rank_prereqs](https://eqemu.gitbook.io/database-schema/categories/aas/aa_rank_prereqs) | determines any prerequisites required before an AA purchase is allowed |
+| [aa_ranks](https://eqemu.gitbook.io/database-schema/categories/aas/aa_ranks) | settings for each AA cost and progression through its ranks |
+| [aa_required_level_cost](https://eqemu.gitbook.io/database-schema/categories/aas/aa_required_level_cost) | Handles certain AAs such as Harm Touch and Lay On Hands which can progress with or without AA experience cost, based solely on level |
+| [aa_timers](https://eqemu.gitbook.io/database-schema/categories/aas/aa_timers) | a character data table that indicates when a time-limited AA will again be available to the player |
 
 
 
