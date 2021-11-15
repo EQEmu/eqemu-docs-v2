@@ -36,7 +36,7 @@
 | drakkin\_tattoo | int | Drakkin Tattoo |
 | drakkin\_details | int | Drakkin Details |
 | ability\_time\_seconds | tinyint | Ability Timer in Seconds |
-| ability\_number | tinyint | [Ability Number](../../../schema/categories/characters/aa_ability.md) |
+| ability\_number | tinyint | [Ability Number](../../../schema/categories/aas/aa_ability.md) |
 | ability\_time\_minutes | tinyint | Ability Timer in Minutes |
 | ability\_time\_hours | tinyint | Ability Timer in Hours |
 | exp | int | Experience |
