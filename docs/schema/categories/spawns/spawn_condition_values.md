@@ -5,5 +5,5 @@
 | id | int | [Spawn Condition Identifier](spawn_conditions.md) |
 | value | tinyint | Value |
 | zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| instance\_id | int | [Instance Identifier](../../../schema/categories/spawns/instance_list.md) |
+| instance\_id | int | [Instance Identifier](../../../schema/categories/instances/instance_list.md) |
 
