@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
-| exploreid | int | [Explore Identifier](../../../schema/categories/npcs/goallists.md) |
+| exploreid | int | [Explore Identifier](../../../schema/categories/tasks/goallists.md) |
 | minx | float | Minimum X Coordinate |
 | maxx | float | Maximum X Coordinate |
 | miny | float | Minimum Y Coordinate |
