@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Entry Identifier |
 | adventure\_id | smallint | Unique Adventure Identifier |
-| instance\_id | int | [Instance Identifier](../../../schema/categories/adventures/instance_list.md) |
+| instance\_id | int | [Instance Identifier](../../../schema/categories/instances/instance_list.md) |
 | count | smallint | Count |
 | assassinate\_count | smallint | Assassinate Count |
 | status | tinyint | Status |
