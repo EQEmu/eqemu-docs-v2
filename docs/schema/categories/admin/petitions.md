@@ -4,8 +4,8 @@
 | :--- | :--- | :--- |
 | dib | int | Unknown |
 | petid | int | Unique Petition Entry Identifier |
-| charname | varchar | [Character Name](../../../schema/categories/admin/character_data.md) |
-| accountname | varchar | [Account Name](../../../schema/categories/admin/account.md) |
+| charname | varchar | [Character Name](../../../schema/categories/characters/character_data.md) |
+| accountname | varchar | [Account Name](../../../schema/categories/account/account.md) |
 | lastgm | varchar | Last GM |
 | petitiontext | text | Petition Text |
 | gmtext | text | GM Text |
