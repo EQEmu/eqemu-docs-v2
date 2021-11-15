@@ -12,9 +12,9 @@
 | pos\_z | float | Door Z Coordinate |
 | heading | float | Door Heading Coordinate |
 | opentype | smallint | [Door Open Type](../../../../categories/zones/door-open-types) |
-| guild | smallint | [Guild Identifier](../../../schema/categories/doors/guilds.md) |
+| guild | smallint | [Guild Identifier](../../../schema/categories/guilds/guilds.md) |
 | lockpick | smallint | Lockpicking Skill Required: -1 = Unpickable |
-| keyitem | int | [Item Identifier](../../../schema/categories/doors/items.md) |
+| keyitem | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | nokeyring | tinyint | No Key Ring: 0 = False, 1 = True |
 | triggerdoor | smallint | Trigger Door: 0 For Current Door or use a Unique Door Identifier |
 | triggertype | smallint | Trigger Type: 1 = Open a Type 255 door, 255 = Will Not Open |
@@ -22,7 +22,7 @@
 | doorisopen | smallint | Door Is Open: 0 = False, 1 = True |
 | door\_param | int | Door Parameter |
 | dest\_zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| dest\_instance | int | [Destination Instance](../../../schema/categories/doors/instance_list.md) |
+| dest\_instance | int | [Destination Instance](../../../schema/categories/instances/instance_list.md) |
 | dest\_x | float | Destination X Coordinate |
 | dest\_y | float | Destination Y Coordinate |
 | dest\_z | float | Destination Z Coordinate |
