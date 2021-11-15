@@ -12,7 +12,7 @@
 | heading | float | Heading Coordinate |
 | respawntime | int | Respawn Time in Seconds |
 | variance | int | Variance in Seconds |
-| pathgrid | int | [Path Grid Identifier](../../../schema/categories/spawns/grid.md) |
+| pathgrid | int | [Path Grid Identifier](../../../schema/categories/grids/grid.md) |
 | \_condition | mediumint | Condition |
 | cond\_value | mediumint | Condition Value |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
