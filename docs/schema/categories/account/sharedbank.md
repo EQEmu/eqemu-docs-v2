@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |
 | slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
-| itemid | int | [Item Identifier](../../../schema/categories/account/items.md) |
+| itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
 | augslot1 | mediumint | Augment Slot 1 |
 | augslot2 | mediumint | Augment Slot 2 |
