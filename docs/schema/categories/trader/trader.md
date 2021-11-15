@@ -2,8 +2,8 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Unique Character Identifier](../../../schema/categories/trader/character_data.md) |
-| item\_id | int | [Item Identifier](../../../schema/categories/trader/items.md) |
+| char\_id | int | [Unique Character Identifier](../../../schema/categories/characters/character_data.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | serialnumber | int | Serial Number |
 | charges | int | Charges |
 | item\_cost | int | Item Cost |
