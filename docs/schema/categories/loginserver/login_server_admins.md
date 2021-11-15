@@ -9,5 +9,5 @@
 | last\_name | varchar | Last Name |
 | email | varchar | Email |
 | registration\_date | datetime | Registration Date |
-| registration\_ip\_address | varchar | [Registration IP Address](../../../schema/categories/loginserver/account_ip.md) |
+| registration\_ip\_address | varchar | [Registration IP Address](../../../schema/categories/account/account_ip.md) |
 
