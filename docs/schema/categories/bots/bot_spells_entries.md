@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Bot Spell Entry Identifier |
 | npc\_spells\_id | int | [Bot Spell List Identifier](../../../../categories/spells/bot-spell-list-ids) |
-| spellid | smallint | [Spell Identifier](../../../schema/categories/bots/spells_new.md) |
+| spellid | smallint | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | type | int | [Spell Type](../../../../categories/spells/spell-types) |
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |
