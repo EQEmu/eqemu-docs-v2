@@ -4,10 +4,10 @@
 | :--- | :--- | :--- |
 | move\_id | int | Unique Move Identifier |
 | time | timestamp | Time Timestamp |
-| char\_id | int | [Character Identifier](../../../schema/categories/query_server/character_data.md) |
+| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | from\_slot | mediumint | [From Slot Identifier](../../../../categories/inventory/inventory-slots) |
 | to\_slot | mediumint | [To Slot Identifier](../../../../categories/inventory/inventory-slots) |
 | stack\_size | mediumint | Stack Size |
-| char\_items | mediumint | [Character Item Identifier](../../../schema/categories/query_server/items.md) |
+| char\_items | mediumint | [Character Item Identifier](../../../schema/categories/items/items.md) |
 | postaction | tinyint | Post Action |
 
