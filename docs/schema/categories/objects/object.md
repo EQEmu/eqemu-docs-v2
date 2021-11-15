@@ -9,7 +9,7 @@
 | ypos | float | Y Coordinate |
 | zpos | float | Z Coordinate |
 | heading | float | Heading Coordinate |
-| itemid | int | [Item Identifier](../../../schema/categories/objects/items.md) |
+| itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
 | objectname | varchar | Object Name |
 | type | int | [Type](../../../../categories/zones/object-types) |
