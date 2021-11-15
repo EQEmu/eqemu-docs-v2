@@ -6,9 +6,9 @@
 | zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
 | client\_version\_id | int | [Client Version Identifier](../../../../categories/player/client-version-bitmasks) |
 | client\_version\_name | varchar | [Client Version Name](../../../../categories/player/client-version-bitmasks) |
-| account\_id | int | [Account Identifier](../../../schema/categories/admin/account.md) |
-| character\_id | int | [Character Identifier](../../../schema/categories/admin/character_data.md) |
-| character\_name | varchar | [Character Name](../../../schema/categories/admin/character_data.md) |
+| account\_id | int | [Account Identifier](../../../schema/categories/account/account.md) |
+| character\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| character\_name | varchar | [Character Name](../../../schema/categories/characters/character_data.md) |
 | reporter\_spoof | tinyint | Reporter Spoof |
 | category\_id | int | Category Identifier |
 | category\_name | varchar | Category Name |
