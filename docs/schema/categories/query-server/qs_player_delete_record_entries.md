@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | event\_id | int | Unique Event Identifier |
 | char\_slot | mediumint | [Character Slot Identifier](../../../../categories/inventory/inventory-slots) |
-| item\_id | int | [Item Identifier](../../../schema/categories/query_server/items.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | mediumint | Charges |
 | aug\_1 | int | Augment Slot 1 |
 | aug\_2 | int | Augment Slot 2 |
