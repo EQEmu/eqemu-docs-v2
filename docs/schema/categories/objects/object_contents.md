@@ -5,7 +5,7 @@
 | zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
 | parentid | int | [Object Identifier](object.md) |
 | bagidx | int | Bag Index |
-| itemid | int | [Item Identifier](../../../schema/categories/objects/items.md) |
+| itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
 | droptime | datetime | Drop Time |
 | augslot1 | mediumint | Augment Slot 1 |
