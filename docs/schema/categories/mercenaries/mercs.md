@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | MercID | int | Unique Mercenary Identifier |
-| OwnerCharacterID | int | [Owner Character Identifier](../../../schema/categories/mercenaries/character_data.md) |
+| OwnerCharacterID | int | [Owner Character Identifier](../../../schema/categories/characters/character_data.md) |
 | Slot | tinyint | Slot |
 | Name | varchar | Name |
 | TemplateID | int | [Template Identifier](merc_templates.md) |
