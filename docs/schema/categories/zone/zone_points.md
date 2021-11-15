@@ -14,7 +14,7 @@
 | target\_x | float | Target X Coordinate |
 | target\_z | float | Target Z Coordinate |
 | target\_heading | float | Target Heading Coordinate |
-| zoneinst | smallint | [Instance Identifier](../../../schema/categories/zone/instance_list.d) |
+| zoneinst | smallint | [Instance Identifier](../../../categories/instances/instance_list) |
 | target\_zone\_id | int | [Target Zone Identifier](../../../../categories/zones/zone-list) |
 | target\_instance | int | Target Instance Identifier |
 | buffer | float | Zone Point Buffer |
