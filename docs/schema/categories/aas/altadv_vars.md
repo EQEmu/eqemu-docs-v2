@@ -11,7 +11,7 @@
 | title\_sid | int | Title SID |
 | desc\_sid | int | Description SID |
 | type | tinyint | Type |
-| spellid | int | [Spell Identifier](../../../schema/categories/aas/spells_new.md) |
+| spellid | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | prereq\_skill | int | Prerequisite Skill Level |
 | prereq\_minpoints | int | Prerequisite Minimum Points |
 | spell\_type | int | [Spell Type](../../../../categories/spells/spell-types) |
