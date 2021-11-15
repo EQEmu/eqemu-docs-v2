@@ -3,8 +3,8 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | raidid | int | [Raid Identifier](raid_details.md) |
-| charid | int | [Character Identifier](../../../schema/categories/raids/character_data.md) |
-| groupid | int | [Group Identifier](../../../schema/categories/raids/group_id.md) |
+| charid | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| groupid | int | [Group Identifier](../../../schema/categories/groups/group_id.md) |
 | \_class | tinyint | [Class](../../../../categories/player/class-list) |
 | level | tinyint | Level |
 | name | varchar | Name |
