@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | delete\_id | int | Unique Delete Identifier |
 | time | timestamp | Time Timestamp |
-| char\_id | int | [Character Identifier](../../../schema/categories/query_server/character_data.md) |
+| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | stack\_size | mediumint | Stack Size |
-| char\_items | mediumint | [Character Items Identifier](../../../schema/categories/query_server/items.md) |
+| char\_items | mediumint | [Character Items Identifier](../../../schema/categories/items/items.md) |
 
