@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | claim\_id | int | Unique Claim Identifier |
 | name | varchar | Name |
-| item\_id | int | [Item Identifier](../../../schema/categories/admin/items.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
 | reward\_slot | tinyint | Reward Slot |
 
