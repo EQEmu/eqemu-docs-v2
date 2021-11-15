@@ -3,5 +3,5 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Instance Identifier](instance_list.md) |
-| charid | int | [Character Identifier](../../../schema/categories/instances/character_data.md) |
+| charid | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 
