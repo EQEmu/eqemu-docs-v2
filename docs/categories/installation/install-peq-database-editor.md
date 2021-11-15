@@ -476,7 +476,7 @@ Check the `Start Control Panel` option and `Finish`.
 
 Click `Start` to start Apache.
 
-![Start or Configure Apache](../../../gitbook/assets/start-apache.png)
+![Start or Configure Apache](../../gitbook/assets/start-apache.png)
 
 !!! info
       If you want to configure Apache auto-start, click on `config` (you will need to exit the control panel and restart as Admin to save the configuration).

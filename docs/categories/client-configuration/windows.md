@@ -16,7 +16,7 @@ Navigate to your EverQuest client directory and right-click on the eqgame.exe ap
 
 Choose the _**Send To**_ option, and choose _**Desktop (create shortcut)**_.
 
-![](../../gitbook/assets/screenshot4%20%281%29.jpg)
+![](../../gitbook/assets/screenshot4.jpg)
 
 Right-click on the shortcut you created on your desktop, and select the _**Properties**_ option.
 
