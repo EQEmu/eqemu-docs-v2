@@ -4,5 +4,5 @@
 | :--- | :--- | :--- |
 | id | int | [Character Identifier](character_data.md) |
 | slot\_id | smallint | Slot Identifier |
-| disc\_id | smallint | [Discipline Identifier](../../../schema/categories/characters/spells_new.md) |
+| disc\_id | smallint | [Discipline Identifier](../../../schema/categories/spells/spells_new.md) |
 
