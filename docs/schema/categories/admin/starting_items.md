@@ -7,7 +7,7 @@
 | class | int | [Class](../../../../categories/player/class-list): 0 = All |
 | deityid | int | [Deity](../../../../categories/player/deity-list): 0 = Alll |
 | zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
-| itemid | int | [Item Identifier](../../../schema/categories/admin/items.md) |
+| itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | item\_charges | tinyint | Item Charges |
 | gm | tinyint | GM: 0 = False, 1 = True |
 | slot | mediumint | [Slot](../../../../categories/inventory/inventory-slots) |
