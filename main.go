@@ -20,8 +20,6 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	SendDeployMessage()
-
 	e := echo.New()
 	e.POST(
 		"/deploy", func(c echo.Context) error {
@@ -49,6 +47,8 @@ func main() {
 				if err != nil {
 					log.Println(err)
 				}
+
+				SendDeployMessage()
 
 				return c.JSON(
 					http.StatusOK,
