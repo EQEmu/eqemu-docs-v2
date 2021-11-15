@@ -4,5 +4,5 @@
 | :--- | :--- | :--- |
 | id | int | [Unique Character Identifier](character_data.md) |
 | slot | tinyint | Slot |
-| spell\_id | int | [Spell Identifier](../../../schema/categories/characters/spells_new.md) |
+| spell\_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 
