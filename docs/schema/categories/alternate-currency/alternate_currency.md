@@ -3,5 +3,5 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Alternate Currency Identifier](../../../../categories/items/alternate-currencies) |
-| item\_id | int | [Item Identifier](../../../schema/categories/alternate_currency/items.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 
