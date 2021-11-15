@@ -6,7 +6,7 @@
 | pet | int | Pet |
 | petname | varchar | Pet Name |
 | petpower | int | Pet Power |
-| spell\_id | int | [Spell Identifier](../../../schema/categories/characters/spells_new.md) |
+| spell\_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | hp | int | Health |
 | mana | int | Mana |
 | size | float | Size |
