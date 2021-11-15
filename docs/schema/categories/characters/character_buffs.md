@@ -2,9 +2,9 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| character\_id | int | [Character Identifier](character_data.md) |
+| character\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | slot\_id | tinyint | Buff Slot |
-| spell\_id | smallint | [Buff Spell Identifier](../../../schema/categories/characters/spells_new.md) |
+| spell\_id | smallint | [Buff Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | caster\_level | tinyint | Caster Level |
 | caster\_name | varchar | Caster Name |
 | ticsremaining | int | Tics Remaining |
