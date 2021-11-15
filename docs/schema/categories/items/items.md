@@ -41,7 +41,7 @@
 | banedmgrace | int | [Bane Damage Race](../../../../categories/npc/race-list) |
 | bardtype | int | [Bard Type](../../../../categories/items/bard-types) |
 | bardvalue | int | Bard Value |
-| book | int | [Book](../../../schema/categories/items/books.md) |
+| book | int | [Book](../../../schema/categories/books/books.md) |
 | casttime | int | Cast Time in Seconds |
 | casttime\_ | int | Cast Time in Seconds |
 | charmfile | varchar | Charm File |
