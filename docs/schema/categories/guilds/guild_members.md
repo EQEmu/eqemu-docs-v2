@@ -2,7 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Character Identifier](../../../schema/categories/guilds/character_data.md) |
+| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | guild\_id | mediumint | [Guild Identifier](guilds.md) |
 | rank | tinyint | [Rank](../../../../categories/player/guild-ranks) |
 | tribute\_enable | tinyint | Tribute Enable: 0 = False, 1 = True |
