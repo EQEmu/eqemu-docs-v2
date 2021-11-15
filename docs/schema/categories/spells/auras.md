@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | int | Unique Aura Identifier |
-| npc\_type | int | [NPC Type Identifier](../../../schema/categories/spells/npc_types.md) |
+| npc\_type | int | [NPC Type Identifier](../../../schema/categories/npcs/npc_types.md) |
 | name | varchar | Name |
 | spell\_id | int | [Spell Identifier](spells_new.md) |
 | distance | int | Distance |
