@@ -9,7 +9,7 @@
 | desc\_sid | int | Description SID |
 | cost | int | Cost in AA Points |
 | level\_req | int | Level Required |
-| spell | int | [Spell Identifier](../../../schema/categories/aas/spells_new.md) |
+| spell | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | spell\_type | int | [Spell Type](../../../../categories/spells/spell-types) |
 | recast\_time | int | Recast Timer |
 | expansion | int | [Expansion Identifier](../../../../categories/operation/expansion-list) |
