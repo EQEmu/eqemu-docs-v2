@@ -12,7 +12,7 @@
 | min\_y | float | Minimum Y Coordinate |
 | heading | float | Heading Coordinate |
 | name | varchar | Name |
-| item | int | [Item Identifier](../../../schema/categories/ground_spawns/items.md) |
+| item | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | max\_allowed | int | Max Allowed |
 | comment | varchar | Comment |
 | respawn\_timer | int | Respawn Timer in Seconds |
