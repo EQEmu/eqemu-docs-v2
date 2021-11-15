@@ -2,7 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| filename | varchar | [NPC Type Name](../../../schema/categories/horses/npc_types.md) |
+| filename | varchar | [NPC Type Name](../../../schema/categories/npcs/npc_types.md) |
 | race | smallint | [Race](../../../../categories/npc/race-list) |
 | gender | tinyint | [Gender](../../../../categories/npc/genders) |
 | texture | tinyint | [Texture](../../../../categories/npc/textures) |
