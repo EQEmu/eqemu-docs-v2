@@ -4,5 +4,5 @@
 | :--- | :--- | :--- |
 | set\_id | int | [Pet Equipment Set Identifier](pets_equipmentset.md) |
 | slot | int | Slot |
-| item\_id | int | [Item Identifier](../../../schema/categories/pets/items.md) |
+| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 
