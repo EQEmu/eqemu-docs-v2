@@ -10,9 +10,9 @@
 | max\_aa\_points | mediumint | Maximum AA Points |
 | class | tinyint | [Class](../../../../categories/player/class-list) |
 | gender | tinyint | [Gender](../../../../categories/npc/genders) |
-| char\_id | int | [Unique Character Identifier](../../../schema/categories/titles/character_data.md) |
+| char\_id | int | [Unique Character Identifier](../../../../schema/categories/characters/character_data) |
 | status | int | [Required Status](../../../../categories/player/status-levels) |
-| item\_id | int | [Item Identifier](../../../schema/categories/titles/items.md) |
+| item\_id | int | [Item Identifier](../../../../schema/categories/items/items) |
 | prefix | varchar | Prefix |
 | suffix | varchar | Suffix |
 | title\_set | int | Title Set Identifier |
