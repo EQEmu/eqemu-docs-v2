@@ -5,7 +5,7 @@
 | aaid | mediumint | AA Identifier |
 | rank | tinyint | Rank: Starts at 0 |
 | reuse\_time | mediumint | Reuse timer in seconds |
-| spell\_id | mediumint | [Spell Identifier](../../../schema/categories/aas/spells_new.md) |
+| spell\_id | mediumint | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | target | tinyint | [AA Target Type](../../../../categories/aas/aa-target-types) |
 | nonspell\_action | tinyint | [AA Nonspell Action](../../../../categories/aas/aa-nonspell-actions) |
 | nonspell\_mana | mediumint | Mana that the nonspell action consumes. |
