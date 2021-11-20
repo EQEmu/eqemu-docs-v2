@@ -84,6 +84,13 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
+  - 'Play (Client)':
+      - 'categories/client-configuration/README.md'
+      - 'macOS Client Configuration': 'categories/client-configuration/macos-mojave-client-configuration.md'
+      - 'Windows Client Configuration': 'categories/client-configuration/windows-client-configuration.md'
+      - 'Frequently Asked Questions': 'categories/client-configuration/frequently-asked-questions.md'
+      - 'Play Guide': 'categories/client-configuration/play-guide.md'
+      - 'Underfoot Missing Files': 'categories/client-configuration/underfoot-missing-files.md'
   - Server:
       - 'README.md'
       - AAs:
@@ -99,13 +106,6 @@ nav:
           - 'Bot Commands': 'categories/bots/bot-commands.md'
           - 'Bot Heal Rotations': 'categories/bots/bot-heal-rotations.md'
           - 'Bot Groups': 'categories/bots/bot-groups.md'
-      - Client Configuration:
-          - 'categories/client-configuration/README.md'
-          - 'macOS Client Configuration': 'categories/client-configuration/macos-mojave-client-configuration.md'
-          - 'Windows Client Configuration': 'categories/client-configuration/windows-client-configuration.md'
-          - 'Frequently Asked Questions': 'categories/client-configuration/frequently-asked-questions.md'
-          - 'Play Guide': 'categories/client-configuration/play-guide.md'
-          - 'Underfoot Missing Files': 'categories/client-configuration/underfoot-missing-files.md'
       - Developer:
           - 'Project PEQ Expansions':
               - 'Classic':
@@ -490,7 +490,12 @@ nav:
           - 'faction_base_data': 'schema/categories/factions/faction_base_data.md'
           - 'faction_list': 'schema/categories/factions/faction_list.md'
           - 'faction_list_mod': 'schema/categories/factions/faction_list_mod.md'
+          - 'faction_list_mod_prefix': 'schema/categories/factions/faction_list_mod_prefix.md'
+          - 'faction_list_prefix': 'schema/categories/factions/faction_list_prefix.md'
           - 'faction_values': 'schema/categories/factions/faction_values.md'
+          - 'faction_values_prefix': 'schema/categories/factions/faction_values_prefix.md'
+          - 'npc_faction_entries_prefix': 'schema/categories/factions/npc_faction_entries_prefix.md'
+          - 'npc_faction_prefix': 'schema/categories/factions/npc_faction_prefix.md'
       - 'Graveyards':
           - 'graveyard': 'schema/categories/graveyards/graveyard.md'
       - 'Ground Spawns':
@@ -613,10 +618,13 @@ nav:
       - 'Tasks':
           - 'completed_tasks': 'schema/categories/tasks/completed_tasks.md'
           - 'goallists': 'schema/categories/tasks/goallists.md'
-          - 'tasks': 'schema/categories/tasks/tasks.md'
-          - 'tasksets': 'schema/categories/tasks/tasksets.md'
+          - 'shared_task_activities': 'schema/categories/tasks/shared_task_activities.md'
+          - 'shared_task_members': 'schema/categories/tasks/shared_task_members.md'
+          - 'shared_task_state': 'schema/categories/tasks/shared_task_state.md'
           - 'task_activities': 'schema/categories/tasks/task_activities.md'
           - 'task_replay_groups': 'schema/categories/tasks/task_replay_groups.md'
+          - 'tasks': 'schema/categories/tasks/tasks.md'
+          - 'tasksets': 'schema/categories/tasks/tasksets.md'
       - 'Timers':
           - 'timers': 'schema/categories/timers/timers.md'
       - 'Titles':
