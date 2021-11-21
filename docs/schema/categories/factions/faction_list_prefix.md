@@ -1,5 +1,5 @@
+# faction_list_prefix
+
 | Column | Data Type | Description |
-| ------ | --------- | ----------- |
-| id     | int       |             |
-| name   | varchar   |             |
-| base   | smallint  |             |
+| :--- | :--- | :--- |
+

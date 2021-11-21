@@ -10,4 +10,5 @@
 | hp | int | Health |
 | mana | int | Mana |
 | size | float | Size |
+| taunting | tinyint |  |
 

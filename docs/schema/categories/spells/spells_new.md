@@ -2,6 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
+| field182 | int | Unknown |
 | id | int | Unique Spell Identifier |
 | name | varchar | Name |
 | player_1 | varchar | Player_1 |
@@ -183,8 +184,8 @@
 | pvpresistcalc | int | PVP Resist Calc |
 | pvpresistcap | int | PVP Resist Cap |
 | spell_category | int | [Spell Category](../../../../categories/spells/spell-groups) |
-| field181 | int | Unknown |
-| field182 | int | Unknown |
+| pvp_duration | int |  |
+| pvp_duration_cap | int |  |
 | pcnpc_only_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
 | cast_not_standing | int | Cast Not Standing: 0 = False, 1 = True |
 | can_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |

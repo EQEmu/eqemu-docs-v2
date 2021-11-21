@@ -5,7 +5,7 @@
 | id | int | Unique NPC Type Identifier |
 | name | text | Name |
 | lastname | varchar | Last Name |
-| level | tinyint | Level | 
+| level | tinyint | Level |
 | race | smallint | [Race](../../../../categories/npc/race-list) |
 | class | tinyint | [Class](../../../../categories/player/class-list) |
 | bodytype | int | [Body Type](../../../../categories/npc/body-types) |
@@ -124,4 +124,5 @@
 | model | smallint | Model |
 | flymode | tinyint | [Fly Mode](../../../../categories/npc/fly-modes) |
 | always_aggro | tinyint | Aggro regardless of _int or level : 0 = False, 1 = True |
+| exp_mod | int |  |
 

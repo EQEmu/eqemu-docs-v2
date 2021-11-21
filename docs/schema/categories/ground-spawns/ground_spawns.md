@@ -16,4 +16,8 @@
 | max_allowed | int | Max Allowed |
 | comment | varchar | Comment |
 | respawn_timer | int | Respawn Timer in Seconds |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

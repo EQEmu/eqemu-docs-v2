@@ -19,4 +19,11 @@
 | target_instance | int | Target Instance Identifier |
 | buffer | float | Zone Point Buffer |
 | client_version_mask | int | [Client Version Mask](../../../../categories/player/client-version-bitmasks) |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
+| is_virtual | tinyint |  |
+| height | int |  |
+| width | int |  |
 

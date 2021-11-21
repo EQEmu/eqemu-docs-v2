@@ -12,6 +12,7 @@
 | z | float | Z Coordinate |
 | heading | float | Heading Coordinate |
 | time_of_death | datetime | Time of Death |
+| guild_consent_id | int |  |
 | is_rezzed | tinyint | Is Rezzed: 0 = False, 1 = True |
 | is_buried | tinyint | Is Buried: 0 = False, 1 = True |
 | was_at_graveyard | tinyint | Was At Graveyard: 0 = False, 1 = True |
@@ -48,5 +49,4 @@
 | wc_7 | int | Wear Change 7 |
 | wc_8 | int | Wear Change 8 |
 | wc_9 | int | Wear Change 9 |
-| guild_consent_id | int |  |
 

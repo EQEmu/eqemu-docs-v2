@@ -1,6 +1,5 @@
-| Column     | Data Type | Description |
-| ---------- | --------- | ----------- |
-| id         | int       |             |
-| faction_id | int       |             |
-| mod        | smallint  |             |
-| mod_name   | varchar   |             |
+# faction_list_mod_prefix
+
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+

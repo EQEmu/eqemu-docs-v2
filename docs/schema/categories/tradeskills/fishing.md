@@ -9,4 +9,8 @@
 | chance | smallint | Chance: 0 = Never, 100 = Always |
 | npc_id | int | [NPC Type Identifier](../../../schema/categories/npcs/npc_types.md) |
 | npc_chance | int | NPC Chance: 0 = Never, 100 = Always |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

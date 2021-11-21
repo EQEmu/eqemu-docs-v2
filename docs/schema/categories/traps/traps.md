@@ -23,4 +23,8 @@
 | group | tinyint | Group |
 | despawn_when_triggered | tinyint | Despawn When Triggered: 0 = False, 1 = True |
 | undetectable | tinyint | Undetectable: 0 = False, 1= True |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

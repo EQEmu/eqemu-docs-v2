@@ -1,9 +1,5 @@
-This page was updated September 3 2019
+# shared_task_state
 
-| Column        | Data Type | Description |
-| ------------- | --------- | ----------- |
-| id            | int       |             |
-| task_id       | int       |             |
-| accepted_time | int       |             |
-| is_locked     | tinyint   |             |
-| is_completed  | tinyint   |             |
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+

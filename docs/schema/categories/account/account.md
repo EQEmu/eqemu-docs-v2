@@ -8,6 +8,7 @@
 | sharedplat | int | Platinum in Shared Bank. |
 | password | varchar | Private loginserver password. |
 | status | int | [Status](../../../../categories/player/status-levels) |
+| ls_id | varchar |  |
 | lsaccount_id | int | Loginserver Account Identifier |
 | gmspeed | tinyint | GM Speed: 0 = Disabled, 1 = Enabled |
 | revoked | tinyint | OOC Revoked: 0 = False, 1 = True |
@@ -20,5 +21,4 @@
 | expansion | tinyint | Expansion |
 | ban_reason | text | Ban Reason |
 | suspend_reason | text | Suspension Reason |
-| ls_id | varchar |  |
 

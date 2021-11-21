@@ -1,8 +1,8 @@
-This page was updated September 3 2019
+# shared_task_members
 
-| Column         | Data Type | Description |
-| -------------- | --------- | ----------- |
-| shared_task_id | int       |             |
-| character_id   | int       |             |
-| character_name | varchar   |             |
-| is_leader      | tinyint   |             |
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+| shared_task_id | bigint |  |
+| character_id | bigint |  |
+| is_leader | tinyint |  |
+

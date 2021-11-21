@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/EQEmu/eqemu-docs-v2/config"
 	"github.com/EQEmu/eqemu-docs-v2/internal/database"
-	"github.com/k0kubun/pp"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"log"
@@ -166,23 +165,36 @@ func (c *DbGenerateDocsCommand) WriteDbDocs() {
 	}
 
 	// sections
+	wroteFiles := 0
 	sections := config.GetMkDocsDbSchemaSections()
 	for _, pages := range sections {
 		for _, page := range pages {
 			table := path.Base(page)
 			table = strings.ReplaceAll(table, ".md", "")
 
-			// write markdown
-			markdown := c.BuildMarkdownForTable(table, schemaConfig)
-			if len(markdown) > 0 {
-				err = os.WriteFile(page, []byte(markdown), 755)
-				if err != nil {
-					log.Println(err)
+			if _, ok := navTables[table]; ok {
+
+				// write markdown
+				markdown := c.BuildMarkdownForTable(table, schemaConfig)
+				if len(markdown) > 0 {
+					mdPath := fmt.Sprintf("./docs/%v", page)
+
+					err := os.MkdirAll(path.Dir(mdPath), os.ModePerm)
+					if err != nil {
+						log.Println(err)
+					}
+
+					err = os.WriteFile(mdPath, []byte(markdown), os.ModePerm)
+					if err != nil {
+						log.Println(err)
+					}
+					wroteFiles++
 				}
-				fmt.Printf("Wrote [%v]\n", path)
 			}
 		}
 	}
+
+	fmt.Printf("Wrote [%v] files\n", wroteFiles)
 }
 
 type TableFieldEntry struct {
@@ -221,9 +233,8 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	markdown := fmt.Sprintf("# %v\n\n%v", table, tableHeader)
 
-	for i := 1; i <= 1000; i++ {
+	for i := 0; i <= 1000; i++ {
 		if val, ok := tableFields[i]; ok {
-			pp.Println(val)
 			markdown = fmt.Sprintf(
 				"%v\n| %v | %v | %v |",
 				markdown,
@@ -233,6 +244,8 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 			)
 		}
 	}
+
+	markdown = fmt.Sprintf("%v\n\n", markdown)
 
 	return markdown
 }

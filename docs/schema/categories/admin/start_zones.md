@@ -17,4 +17,8 @@
 | bind_y | float | Bind Y Coordinate |
 | bind_z | float | Bind Z Coordinate |
 | select_rank | tinyint | Select Rank: Always 50 |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

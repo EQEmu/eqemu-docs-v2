@@ -89,6 +89,7 @@
     - character_data: schema/categories/characters/character_data.md
     - character_disciplines: schema/categories/characters/character_disciplines.md
     - character_enabledtasks: schema/categories/characters/character_enabledtasks.md
+    - character_expedition_lockouts: schema/categories/characters/character_expedition_lockouts.md
     - character_inspect_messages: schema/categories/characters/character_inspect_messages.md
     - character_item_recast: schema/categories/characters/character_item_recast.md
     - character_languages: schema/categories/characters/character_languages.md
@@ -121,6 +122,10 @@
     - quest_globals: schema/categories/data-storage/quest_globals.md
 - Doors:
     - doors: schema/categories/doors/doors.md
+- Expeditions:
+    - character_expedition_lockouts: schema/categories/expeditions/character_expedition_lockouts.md
+    - expeditions: schema/categories/expeditions/expeditions.md
+    - expedition_lockouts: schema/categories/expeditions/expedition_lockouts.md
 - Factions:
     - client_faction_associations: schema/categories/factions/client_faction_associations.md
     - client_faction_names: schema/categories/factions/client_faction_names.md
@@ -232,6 +237,8 @@
     - qs_player_speech: schema/categories/query-server/qs_player_speech.md
     - qs_player_trade_record: schema/categories/query-server/qs_player_trade_record.md
     - qs_player_trade_record_entries: schema/categories/query-server/qs_player_trade_record_entries.md
+- Scheduler:
+      - server_scheduled_events: schema/categories/scheduler/server_scheduled_events.md
 - Raids:
     - raid_details: schema/categories/raids/raid_details.md
     - raid_leaders: schema/categories/raids/raid_leaders.md

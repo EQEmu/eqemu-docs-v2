@@ -10,9 +10,13 @@
 | max_level | int | Maximum Level |
 | rare | tinyint | Rare: 0 = False, 1 = True |
 | raid | tinyint | Raid: 0 = False, 1 = True |
-| race | mediumtext | [Race](../../../../categories/npc/race-list), multiple races supported if \| delimited |
-| class | mediumtext | [Class](../../../../categories/player/class-list), multiple classes supported if \| delimited |
-| bodytype | mediumtext | [Body Type](../../../../categories/npc/body-types), multiple body types supported if \| delimited |
-| zone | mediumtext | [Zone Short Name](../../../../categories/zones/zone-list),, multiple zones supported if \| delimited |
+| race | mediumtext | [Race](../../../../categories/npc/race-list), multiple races supported if \ |
+| class | mediumtext | [Class](../../../../categories/player/class-list), multiple classes supported if \ |
+| bodytype | mediumtext | [Body Type](../../../../categories/npc/body-types), multiple body types supported if \ |
+| zone | mediumtext | [Zone Short Name](../../../../categories/zones/zone-list),, multiple zones supported if \ |
 | hot_zone | tinyint |  |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

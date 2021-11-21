@@ -10,6 +10,7 @@
 | safe_x | float | Safe X Coordinate |
 | safe_y | float | Safe Y Coordinate |
 | safe_z | float | Safe Z Coordinate |
+| safe_heading | float |  |
 | graveyard_id | float | [Graveyard Identifier](../../../schema/categories/graveyards/graveyard.md) |
 | min_level | tinyint | Minimum Level |
 | min_status | tinyint | [Minimum Status](../../../../categories/player/status-levels) |
@@ -88,4 +89,11 @@
 | fast_regen_endurance | int | Fast Regen Endurance |
 | npc_max_aggro_dist | int | NPC Max Aggro Distance |
 | max_movement_update_range | int | Max Movement Update Range |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
+| underworld_teleport_index | int |  |
+| lava_damage | int |  |
+| min_lava_damage | int |  |
 

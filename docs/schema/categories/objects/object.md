@@ -28,4 +28,8 @@
 | tilt_x | float | Tilt X |
 | tilt_y | float | Tilt Y |
 | display_name | varchar | Display Name |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

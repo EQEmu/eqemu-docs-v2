@@ -33,4 +33,8 @@
 | buffer | float | Unused |
 | client_version_mask | int | [Client Version Mask](../../../../categories/player/client-version-bitmasks) |
 | is_ldon_door | smallint | Is LDoN Door: 0 = False, 1 = True |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

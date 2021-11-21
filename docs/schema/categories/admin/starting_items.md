@@ -11,4 +11,8 @@
 | item_charges | tinyint | Item Charges |
 | gm | tinyint | GM: 0 = False, 1 = True |
 | slot | mediumint | [Slot](../../../../categories/inventory/inventory-slots) |
+| min_expansion | tinyint |  |
+| max_expansion | tinyint |  |
+| content_flags | varchar |  |
+| content_flags_disabled | varchar |  |
 

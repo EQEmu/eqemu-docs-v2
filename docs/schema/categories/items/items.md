@@ -2,6 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
+| UNK219 | int | Unknown |
 | id | int | Unique Item Identifier |
 | minstatus | smallint | [Minimum Status](../../../../categories/player/status-levels) |
 | Name | varchar | Name |
@@ -263,7 +264,7 @@
 | bardname | varchar | Bard Name |
 | bardunk7 | smallint | Unknown |
 | UNK214 | smallint | Unknown |
-| UNK219 | int | Unknown |
+| subtype | int |  |
 | UNK220 | int | Unknown |
 | UNK221 | int | Unknown |
 | heirloom | int | Heirloom: 0 = False, 1 = True |
@@ -287,5 +288,4 @@
 | UNK240 | int | Unknown |
 | UNK241 | int | Unknown |
 | epicitem | int | Epic Item: 0 = False, 1 = True |
-| subtype | int |  |
 

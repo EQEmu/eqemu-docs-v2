@@ -1,8 +1,5 @@
-This page was updated September 3 2019
+# shared_task_activities
 
-| Column         | Data Type | Description |
-| -------------- | --------- | ----------- |
-| shared_task_id | int       |             |
-| activity_id    | int       |             |
-| done_count     | int       |             |
-| completed      | tinyint   |             |
+| Column | Data Type | Description |
+| :--- | :--- | :--- |
+
