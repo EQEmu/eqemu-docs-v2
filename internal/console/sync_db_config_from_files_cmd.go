@@ -4,11 +4,13 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/EQEmu/eqemu-docs-v2/config"
+	"github.com/EQEmu/eqemu-docs-v2/internal/database"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 	"log"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 )
 
@@ -35,6 +37,10 @@ func NewSyncDbSchemaConfigFromFilesCommand() *SyncDbSchemaConfigFromFilesCommand
 }
 
 func (c *SyncDbSchemaConfigFromFilesCommand) Handle(_ *cobra.Command, _ []string) {
+	// schema
+	db := database.NewInstance()
+	schema, _ := db.GetSchema()
+
 	// read config
 	cfg, err := os.ReadFile(config.DbSchemaReferenceConfigFile)
 
@@ -85,12 +91,19 @@ func (c *SyncDbSchemaConfigFromFilesCommand) Handle(_ *cobra.Command, _ []string
 							if _, ok := configYaml[fileNameNoExt][col]; ok {
 								configYaml[fileNameNoExt][col]["dataType"] = dataType
 								configYaml[fileNameNoExt][col]["description"] = desc
-							}
 
+								for _, row := range schema {
+									for _, entry := range row {
+										if entry.Table == fileNameNoExt && entry.Column == col {
+											pos, _ := strconv.Atoi(entry.OrdinalPosition)
+											configYaml[fileNameNoExt][col]["ordinal_position"] = pos
+										}
+									}
+								}
+							}
 						}
 					}
 				}
-
 			}
 
 			return nil
