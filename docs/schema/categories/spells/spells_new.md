@@ -2,7 +2,6 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| field182 | int | Unknown |
 | id | int | Unique Spell Identifier |
 | name | varchar | Name |
 | player_1 | varchar | Player_1 |

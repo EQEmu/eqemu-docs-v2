@@ -2,7 +2,6 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| UNK219 | int | Unknown |
 | id | int | Unique Item Identifier |
 | minstatus | smallint | [Minimum Status](../../../../categories/player/status-levels) |
 | Name | varchar | Name |

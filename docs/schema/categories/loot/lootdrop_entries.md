@@ -2,7 +2,6 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| minlevel | tinyint | Minimum Level |
 | lootdrop_id | int | [Lootdrop Identifier](lootdrop.md) |
 | item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | item_charges | smallint | Item Charges |

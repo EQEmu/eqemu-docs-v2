@@ -342,14 +342,9 @@ nav:
   - Database Schema:
       - AAs:
           - aa_ability: schema/categories/aas/aa_ability.md
-          - aa_actions: schema/categories/aas/aa_actions.md
-          - aa_effects: schema/categories/aas/aa_effects.md
           - aa_ranks: schema/categories/aas/aa_ranks.md
           - aa_rank_effects: schema/categories/aas/aa_rank_effects.md
           - aa_rank_prereqs: schema/categories/aas/aa_rank_prereqs.md
-          - aa_required_level_cost: schema/categories/aas/aa_required_level_cost.md
-          - aa_timers: schema/categories/aas/aa_timers.md
-          - altadv_vars: schema/categories/aas/altadv_vars.md
       - Account:
           - account: schema/categories/account/account.md
           - account_flags: schema/categories/account/account_flags.md
@@ -362,13 +357,11 @@ nav:
           - bug_reports: schema/categories/admin/bug_reports.md
           - bugs: schema/categories/admin/bugs.md
           - chatchannels: schema/categories/admin/chatchannels.md
-          - class_skill: schema/categories/admin/class_skill.md
           - command_settings: schema/categories/admin/command_settings.md
           - db_version: schema/categories/admin/db_version.md
           - discovered_items: schema/categories/admin/discovered_items.md
           - eqtime: schema/categories/admin/eqtime.md
           - eventlog: schema/categories/admin/eventlog.md
-          - fear_hints: schema/categories/admin/fear_hints.md
           - gm_ips: schema/categories/admin/gm_ips.md
           - hackers: schema/categories/admin/hackers.md
           - ip_exemptions: schema/categories/admin/ip_exemptions.md
@@ -378,7 +371,6 @@ nav:
           - perl_event_export_settings: schema/categories/admin/perl_event_export_settings.md
           - petitions: schema/categories/admin/petitions.md
           - profanity_list: schema/categories/admin/profanity_list.md
-          - races: schema/categories/admin/races.md
           - reports: schema/categories/admin/reports.md
           - saylink: schema/categories/admin/saylink.md
           - start_zones: schema/categories/admin/start_zones.md
@@ -469,19 +461,10 @@ nav:
           - expeditions: schema/categories/expeditions/expeditions.md
           - expedition_lockouts: schema/categories/expeditions/expedition_lockouts.md
       - Factions:
-          - client_faction_associations: schema/categories/factions/client_faction_associations.md
-          - client_faction_names: schema/categories/factions/client_faction_names.md
-          - client_server_faction_map: schema/categories/factions/client_server_faction_map.md
-          - custom_faction_mappings: schema/categories/factions/custom_faction_mappings.md
           - faction_base_data: schema/categories/factions/faction_base_data.md
           - faction_list: schema/categories/factions/faction_list.md
-          - faction_list_mod: schema/categories/factions/faction_list_mod.md
-          - faction_list_mod_prefix: schema/categories/factions/faction_list_mod_prefix.md
           - faction_list_prefix: schema/categories/factions/faction_list_prefix.md
           - faction_values: schema/categories/factions/faction_values.md
-          - faction_values_prefix: schema/categories/factions/faction_values_prefix.md
-          - npc_faction_entries_prefix: schema/categories/factions/npc_faction_entries_prefix.md
-          - npc_faction_prefix: schema/categories/factions/npc_faction_prefix.md
       - Graveyards:
           - graveyard: schema/categories/graveyards/graveyard.md
       - Ground Spawns:
@@ -553,7 +536,6 @@ nav:
           - npc_spells_effects_entries: schema/categories/npcs/npc_spells_effects_entries.md
           - npc_spells_entries: schema/categories/npcs/npc_spells_entries.md
           - npc_types: schema/categories/npcs/npc_types.md
-          - npc_types_metadata: schema/categories/npcs/npc_types_metadata.md
           - npc_types_tint: schema/categories/npcs/npc_types_tint.md
           - proximities: schema/categories/npcs/proximities.md
       - Objects:
@@ -579,6 +561,8 @@ nav:
           - qs_player_speech: schema/categories/query-server/qs_player_speech.md
           - qs_player_trade_record: schema/categories/query-server/qs_player_trade_record.md
           - qs_player_trade_record_entries: schema/categories/query-server/qs_player_trade_record_entries.md
+      - Scheduler:
+          - server_scheduled_events: schema/categories/scheduler/server_scheduled_events.md
       - Raids:
           - raid_details: schema/categories/raids/raid_details.md
           - raid_leaders: schema/categories/raids/raid_leaders.md
@@ -634,10 +618,8 @@ nav:
           - launcher: schema/categories/zone/launcher.md
           - launcher_zones: schema/categories/zone/launcher_zones.md
           - zone: schema/categories/zone/zone.md
-          - zoneserver_auth: schema/categories/zone/zoneserver_auth.md
           - zone_flags: schema/categories/zone/zone_flags.md
           - zone_points: schema/categories/zone/zone_points.md
-          - zone_server: schema/categories/zone/zone_server.md
   - Changelog:
       - "2021": changelog/server/2021.md
       - "2020": changelog/server/2020.md

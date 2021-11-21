@@ -173,11 +173,11 @@ func (c *DbGenerateDocsCommand) WriteDbDocs() {
 			table = strings.ReplaceAll(table, ".md", "")
 
 			if _, ok := navTables[table]; ok {
+				mdPath := fmt.Sprintf("./docs/%v", page)
 
 				// write markdown
 				markdown := c.BuildMarkdownForTable(table, schemaConfig)
 				if len(markdown) > 0 {
-					mdPath := fmt.Sprintf("./docs/%v", page)
 
 					err := os.MkdirAll(path.Dir(mdPath), os.ModePerm)
 					if err != nil {
@@ -190,6 +190,15 @@ func (c *DbGenerateDocsCommand) WriteDbDocs() {
 					}
 					wroteFiles++
 				}
+
+				if len(markdown) == 0 {
+					//fmt.Printf("Table [%v] doesn't exist, deleting\n", table)
+					//err = os.Remove(mdPath)
+					//if err != nil {
+					//	log.Println(err)
+					//}
+				}
+
 			}
 		}
 	}
@@ -212,16 +221,25 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 				// type cast interface
 				// skip cast validation
 				column, _ := columnI.(string)
-				position, _ := fields["ordinal_position"].(int)
+				position, ok := fields["ordinal_position"].(int)
 				dataType, _ := fields["dataType"].(string)
 				nullable, _ := fields["nullable"].(string)
 				description, _ := fields["description"].(string)
 
-				tableFields[position] = TableFieldEntry{
-					column:      column,
-					dataType:    dataType,
-					nullable:    nullable,
-					description: description,
+				if ok {
+
+					if table == "aa_actions" {
+						fmt.Println(table)
+						fmt.Println(position)
+						fmt.Println(ok)
+					}
+
+					tableFields[position] = TableFieldEntry{
+						column:      column,
+						dataType:    dataType,
+						nullable:    nullable,
+						description: description,
+					}
 				}
 			}
 		}
@@ -233,6 +251,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	markdown := fmt.Sprintf("# %v\n\n%v", table, tableHeader)
 
+	entries := 0
 	for i := 0; i <= 1000; i++ {
 		if val, ok := tableFields[i]; ok {
 			markdown = fmt.Sprintf(
@@ -242,7 +261,12 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 				val.dataType,
 				val.description,
 			)
+			entries++
 		}
+	}
+
+	if entries == 0 {
+		return ""
 	}
 
 	markdown = fmt.Sprintf("%v\n\n", markdown)
