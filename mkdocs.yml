@@ -353,7 +353,6 @@ nav:
           - sharedbank: schema/categories/account/sharedbank.md
       - Admin:
           - banned_ips: schema/categories/admin/banned_ips.md
-          - bot_command_settings: schema/categories/admin/bot_command_settings.md
           - bug_reports: schema/categories/admin/bug_reports.md
           - bugs: schema/categories/admin/bugs.md
           - chatchannels: schema/categories/admin/chatchannels.md
@@ -604,7 +603,6 @@ nav:
           - shared_task_members: schema/categories/tasks/shared_task_members.md
           - shared_tasks: schema/categories/tasks/shared_tasks.md
           - task_activities: schema/categories/tasks/task_activities.md
-          - task_replay_groups: schema/categories/tasks/task_replay_groups.md
           - tasks: schema/categories/tasks/tasks.md
           - tasksets: schema/categories/tasks/tasksets.md
       - Timers:
