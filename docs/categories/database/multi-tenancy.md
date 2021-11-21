@@ -7,7 +7,7 @@ description: This article describes the ability to use multiple database and dat
 
 
 !!! warning
-      **Warning **This feature is for **advanced server operators**
+      This feature is for advanced server operators
 
 
 ## What is Multi Tenancy in Software?
@@ -30,7 +30,7 @@ As of this writing today; you can optionally declare a separate database connect
 
 Today you can declare your database configuration like so; everything will load out of this connection by default, using a content database connection is **entirely optional**
 
-```javascript
+```json
 cat eqemu_config.json | jq '.server.database'
 {
   "db": "peq",
@@ -43,7 +43,7 @@ cat eqemu_config.json | jq '.server.database'
 
 Now if you wanted to configure a content database source you would declare another database connection section that resembles the following
 
-```javascript
+```json
 cat eqemu_config.json | jq '.server.content_database'
 {
   "db": "peq_content",
@@ -71,5 +71,5 @@ The notion of having a content database source is very powerful because it solve
 
 Database table schema reference is maintained in the source at **./common/database_schema.h** and all table types are defined under **DatabaseSchema::GetContentTables()**
 
-{% embed url="https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L165" %}
+[https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L165](https://github.com/EQEmu/Server/blob/master/common/database_schema.h#L165)
 

@@ -55,6 +55,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.snippets
   - pymdownx.magiclink:
       repo: mkdocs-material
       repo_url_shorthand: true

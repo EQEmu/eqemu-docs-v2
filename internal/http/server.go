@@ -59,7 +59,14 @@ func Run() {
 			return c.JSON(http.StatusOK, echo.Map{"data": "Invalid request"})
 		},
 	)
-	e.Static("/", "public")
+
+	e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
+		Root:   "public",
+		Index:  "index.html",
+		Browse: false,
+		HTML5:  true,
+	}))
+
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%v", os.Getenv("HTTP_PORT"))))
 }
 
