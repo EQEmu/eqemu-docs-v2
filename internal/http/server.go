@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	copyo "github.com/otiai10/copy"
 	"log"
 	"net/http"
@@ -15,6 +16,9 @@ import (
 
 func Run() {
 	e := echo.New()
+	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
+		Level: 5,
+	}))
 	e.POST(
 		"/deploy", func(c echo.Context) error {
 			if c.Request().Header.Get("X-Github-Event") != "" &&
