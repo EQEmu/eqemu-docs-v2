@@ -410,21 +410,26 @@ nav:
       - Buyers:
           - buyer: schema/categories/buyers/buyer.md
       - Characters:
+          - char_create_combinations: schema/categories/characters/char_create_combinations.md
+          - char_create_point_allocations: schema/categories/characters/char_create_point_allocations.md
+          - char_recipe_list: schema/categories/characters/char_recipe_list.md
           - character_activities: schema/categories/characters/character_activities.md
-          - character_alternate_abilities: schema/categories/characters/character_alternate_abilities.md
           - character_alt_currency: schema/categories/characters/character_alt_currency.md
+          - character_alternate_abilities: schema/categories/characters/character_alternate_abilities.md
           - character_auras: schema/categories/characters/character_auras.md
           - character_bandolier: schema/categories/characters/character_bandolier.md
           - character_bind: schema/categories/characters/character_bind.md
           - character_buffs: schema/categories/characters/character_buffs.md
-          - character_corpses: schema/categories/characters/character_corpses.md
           - character_corpse_items: schema/categories/characters/character_corpse_items.md
+          - character_corpses: schema/categories/characters/character_corpses.md
           - character_currency: schema/categories/characters/character_currency.md
           - character_data: schema/categories/characters/character_data.md
           - character_disciplines: schema/categories/characters/character_disciplines.md
           - character_enabledtasks: schema/categories/characters/character_enabledtasks.md
+          - character_exp_modifiers: schema/categories/characters/character_exp_modifiers.md
           - character_expedition_lockouts: schema/categories/characters/character_expedition_lockouts.md
           - character_inspect_messages: schema/categories/characters/character_inspect_messages.md
+          - character_instance_safereturns: schema/categories/characters/character_instance_safereturns.md
           - character_item_recast: schema/categories/characters/character_item_recast.md
           - character_languages: schema/categories/characters/character_languages.md
           - character_leadership_abilities: schema/categories/characters/character_leadership_abilities.md
@@ -437,11 +442,8 @@ nav:
           - character_skills: schema/categories/characters/character_skills.md
           - character_spells: schema/categories/characters/character_spells.md
           - character_tasks: schema/categories/characters/character_tasks.md
-          - character_task_lockouts: schema/categories/characters/character_task_lockouts.md
+          - character_task_timers: schema/categories/characters/character_task_timers.md
           - character_tribute: schema/categories/characters/character_tribute.md
-          - char_create_combinations: schema/categories/characters/char_create_combinations.md
-          - char_create_point_allocations: schema/categories/characters/char_create_point_allocations.md
-          - char_recipe_list: schema/categories/characters/char_recipe_list.md
           - friends: schema/categories/characters/friends.md
           - keyring: schema/categories/characters/keyring.md
           - lfguild: schema/categories/characters/lfguild.md
@@ -456,6 +458,9 @@ nav:
           - quest_globals: schema/categories/data-storage/quest_globals.md
       - Doors:
           - doors: schema/categories/doors/doors.md
+      - Dynamic Zones:
+          - dynamic_zones: schema/categories/dynamic-zones/dynamic_zones.md
+          - dynamic_zone_members: schema/categories/dynamic-zones/dynamic_zone_members.md
       - Expeditions:
           - character_expedition_lockouts: schema/categories/expeditions/character_expedition_lockouts.md
           - expeditions: schema/categories/expeditions/expeditions.md
@@ -463,8 +468,10 @@ nav:
       - Factions:
           - faction_base_data: schema/categories/factions/faction_base_data.md
           - faction_list: schema/categories/factions/faction_list.md
-          - faction_list_prefix: schema/categories/factions/faction_list_prefix.md
+          - faction_list_mod: schema/categories/factions/faction_list_mod.md
           - faction_values: schema/categories/factions/faction_values.md
+      - Flagging:
+          - content_flags: schema/categories/flagging/content_flags.md
       - Graveyards:
           - graveyard: schema/categories/graveyards/graveyard.md
       - Ground Spawns:
@@ -543,6 +550,7 @@ nav:
           - object_contents: schema/categories/objects/object_contents.md
       - Pets:
           - pets: schema/categories/pets/pets.md
+          - pets_beastlord_data: schema/categories/pets/pets_beastlord_data.md
           - pets_equipmentset: schema/categories/pets/pets_equipmentset.md
           - pets_equipmentset_entries: schema/categories/pets/pets_equipmentset_entries.md
       - Query Server:
@@ -586,11 +594,15 @@ nav:
           - spell_globals: schema/categories/spells/spell_globals.md
           - spells_new: schema/categories/spells/spells_new.md
       - Tasks:
+          - completed_shared_task_activity_state: schema/categories/tasks/completed_shared_task_activity_state.md
+          - completed_shared_task_members: schema/categories/tasks/completed_shared_task_members.md
+          - completed_shared_tasks: schema/categories/tasks/completed_shared_tasks.md
           - completed_tasks: schema/categories/tasks/completed_tasks.md
           - goallists: schema/categories/tasks/goallists.md
-          - shared_task_activities: schema/categories/tasks/shared_task_activities.md
+          - shared_task_activity_state: schema/categories/tasks/shared_task_activity_state.md
+          - shared_task_dynamic_zones: schema/categories/tasks/shared_task_dynamic_zones.md
           - shared_task_members: schema/categories/tasks/shared_task_members.md
-          - shared_task_state: schema/categories/tasks/shared_task_state.md
+          - shared_tasks: schema/categories/tasks/shared_tasks.md
           - task_activities: schema/categories/tasks/task_activities.md
           - task_replay_groups: schema/categories/tasks/task_replay_groups.md
           - tasks: schema/categories/tasks/tasks.md
@@ -599,6 +611,9 @@ nav:
           - timers: schema/categories/timers/timers.md
       - Titles:
           - titles: schema/categories/titles/titles.md
+      - Tools:
+          - tool_game_objects: schema/categories/tools/tool_game_objects.md
+          - tool_gearup_armor_sets: schema/categories/tools/tool_gearup_armor_sets.md
       - Trader:
           - trader: schema/categories/trader/trader.md
           - trader_audit: schema/categories/trader/trader_audit.md
