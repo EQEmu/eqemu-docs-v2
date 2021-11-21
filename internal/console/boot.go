@@ -8,6 +8,7 @@ func Run() error {
 
 	// eventually move this to google wire
 	commands := []*cobra.Command{
+		NewTestCommand().Command(),
 		NewSyncDbSchemaConfigFromFilesCommand().Command(),
 	}
 

@@ -25,7 +25,7 @@ func (c *SyncDbSchemaConfigFromFilesCommand) Command() *cobra.Command {
 func NewSyncDbSchemaConfigFromFilesCommand() *SyncDbSchemaConfigFromFilesCommand {
 	i := &SyncDbSchemaConfigFromFilesCommand{
 		command: &cobra.Command{
-			Use:   "doc:sync-db-schema-config-from-files",
+			Use:   "doc:sync-db-cfg-from-files",
 			Short: "Synchronizes database-schema-reference.yml from markdown files (inverse)",
 		},
 	}
