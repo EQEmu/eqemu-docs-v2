@@ -5,7 +5,7 @@ go 1.14
 require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/joho/godotenv v1.4.0
-	github.com/k0kubun/pp v3.0.1+incompatible // indirect
+	github.com/k0kubun/pp v3.0.1+incompatible
 	github.com/labstack/echo/v4 v4.6.1
 	github.com/muesli/termenv v0.9.0
 	github.com/otiai10/copy v1.6.0
