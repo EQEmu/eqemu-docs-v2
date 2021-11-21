@@ -34,12 +34,6 @@ func NewSyncDbSchemaConfigFromFilesCommand() *SyncDbSchemaConfigFromFilesCommand
 	return i
 }
 
-type Column struct {
-	DataType    string `yaml:"dataType"`
-	Nullable    string `yaml:"nullable"`
-	Description string `yaml:"description"`
-}
-
 func (c *SyncDbSchemaConfigFromFilesCommand) Handle(_ *cobra.Command, _ []string) {
 	// read config
 	cfg, err := os.ReadFile(config.DbSchemaReferenceConfigFile)
