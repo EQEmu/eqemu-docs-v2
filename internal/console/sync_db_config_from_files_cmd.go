@@ -115,7 +115,7 @@ func (c *SyncDbSchemaConfigFromFilesCommand) Handle(_ *cobra.Command, _ []string
 	// yaml
 	var newConfig bytes.Buffer
 	yamlEncoder := yaml.NewEncoder(&newConfig)
-	yamlEncoder.SetIndent(2) // this is what you're looking for
+	yamlEncoder.SetIndent(2)
 	err = yamlEncoder.Encode(&configYaml)
 	if err != nil {
 		log.Println(err)
