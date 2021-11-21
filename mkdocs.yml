@@ -3,11 +3,9 @@ plugins:
   - search
 repo_url: https://github.com/EQEmu/eqemu-docs-v2
 repo_name: EQEmu Docs
-edit_uri: "https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/"
-
+edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
 extra_css:
   - stylesheets/extra.css
-
 theme:
   font:
     text: Roboto
@@ -15,35 +13,29 @@ theme:
   features:
     - content.code.annotate
     - content.tabs.link
-    # - header.autohide
-    # - navigation.expand
     - navigation.indexes
     - navigation.instant
-    #    - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    # - toc.integrate
   name: material
   palette:
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: red
       accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       primary: red
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-
 markdown_extensions:
   - admonition
   - abbr
@@ -60,615 +52,605 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
+      repo: mkdocs-material
       repo_url_shorthand: true
       user: squidfunk
-      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid-experimental
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
 nav:
-  - 'Play (Client)':
-      - 'categories/client-configuration/README.md'
-      - 'macOS Client Configuration': 'categories/client-configuration/macos-mojave-client-configuration.md'
-      - 'Windows Client Configuration': 'categories/client-configuration/windows-client-configuration.md'
-      - 'Frequently Asked Questions': 'categories/client-configuration/frequently-asked-questions.md'
-      - 'Play Guide': 'categories/client-configuration/play-guide.md'
-      - 'Underfoot Missing Files': 'categories/client-configuration/underfoot-missing-files.md'
+  - Play (Client):
+      - categories/client-configuration/README.md
+      - macOS Client Configuration: categories/client-configuration/macos-mojave-client-configuration.md
+      - Windows Client Configuration: categories/client-configuration/windows-client-configuration.md
+      - Frequently Asked Questions: categories/client-configuration/frequently-asked-questions.md
+      - Play Guide: categories/client-configuration/play-guide.md
+      - Underfoot Missing Files: categories/client-configuration/underfoot-missing-files.md
   - Server:
-      - 'README.md'
+      - README.md
       - AAs:
-          - 'categories/aas/README.md'
-          - 'AA Categories': 'categories/aas/aa-categories.md'
-          - 'AA Nonspell Actions': 'categories/aas/aa-nonspell-actions.md'
-          - 'AA Target Types': 'categories/aas/aa-target-types.md'
-          - 'AA Types': 'categories/aas/aa-types.md'
-          - 'Customizing AAs': 'categories/aas/customizing-aas.md'
+          - categories/aas/README.md
+          - AA Categories: categories/aas/aa-categories.md
+          - AA Nonspell Actions: categories/aas/aa-nonspell-actions.md
+          - AA Target Types: categories/aas/aa-target-types.md
+          - AA Types: categories/aas/aa-types.md
+          - Customizing AAs: categories/aas/customizing-aas.md
       - Bots:
-          - 'categories/bots/README.md'
-          - 'Stance Types': 'categories/bots/stance-types.md'
-          - 'Bot Commands': 'categories/bots/bot-commands.md'
-          - 'Bot Heal Rotations': 'categories/bots/bot-heal-rotations.md'
-          - 'Bot Groups': 'categories/bots/bot-groups.md'
+          - categories/bots/README.md
+          - Stance Types: categories/bots/stance-types.md
+          - Bot Commands: categories/bots/bot-commands.md
+          - Bot Heal Rotations: categories/bots/bot-heal-rotations.md
+          - Bot Groups: categories/bots/bot-groups.md
       - Developer:
-          - 'Project PEQ Expansions':
-              - 'Classic':
-                  - 'in-development/project-peq-expansions/classic/README.md'
-                  - 'Item Changes': 'in-development/project-peq-expansions/classic/item-changes.md'
-                  - 'Zone Changes': 'in-development/project-peq-expansions/classic/zone-changes.md'
-              - 'Zone Version Switching': 'in-development/project-peq-expansions/zone-version-switching.md'
-              - 'Expansion and Content Filtering': 'in-development/project-peq-expansions/expansion-content-filtering.md'
-              - 'Expansion List Reference': 'in-development/project-peq-expansions/expansion-list-reference.md'
-              - 'Design Considerations': 'in-development/project-peq-expansions/design-considerations.md'
-          - 'Developer Area':
-              - 'in-development/developer-area/README.md'
-              - 'Repositories': 'in-development/developer-area/repositories.md'
-              - 'EQDictionary': 'in-development/developer-area/eqdictionary.md'
-              - 'Inventory':
-                  - 'in-development/developer-area/inventory/README.md'
-                  - 'Inventory Overhaul': 'in-development/developer-area/inventory/inventory-overhaul.md'
-                  - 'Perl Inventory Slot Identifiers': 'in-development/developer-area/inventory/perl-inventory-slot-identifiers.md'
-              - 'Packet and OpCode Analysis':
-                  - 'in-development/developer-area/packet-and-opcode-analysis.md'
-              - 'Tools':
-                  - 'in-development/developer-area/tools/README.md'
-                  - 'Tools Cheat Sheet': 'in-development/developer-area/tools/tools-cheat-sheet.md'
-                  - 'Lua for Windows': 'in-development/developer-area/tools/lua-for-windows.md'
-                  - 'Notepad++': 'in-development/developer-area/tools/notepad++.md'
-                  - 'TortoiseGit': 'in-development/developer-area/tools/tortoisegit.md'
-      - 'Database':
-          - 'Multi Tenancy': 'categories/database/multi-tenancy.md'
-          #          - 'Database Schema': 'schema/README.md'
-          - 'Database Backup Tool': 'categories/database/database-backup-tool.md'
-      - 'Expedition System':
-          - 'categories/expedition-system/README.md'
-          - 'Database': 'categories/expedition-system/database.md'
-          - 'Lockouts': 'categories/expedition-system/lockouts.md'
-          - 'Quest API (Lua)':
-              - 'categories/expedition-system/quest-api-lua/README.md'
-              - 'Example': 'categories/expedition-system/quest-api-lua/example.md'
-              - 'Client Methods': 'categories/expedition-system/quest-api-lua/client-methods.md'
-              - 'Expedition Methods': 'categories/expedition-system/quest-api-lua/expedition-methods.md'
-              - 'Global Methods': 'categories/expedition-system/quest-api-lua/global-methods.md'
-              - 'Group/Raid Methods': 'categories/expedition-system/quest-api-lua/group-raid-methods.md'
-          - 'Quest API (Perl)':
-              - 'categories/expedition-system/quest-api-perl/README.md'
-              - 'Example': 'categories/expedition-system/quest-api-perl/example.md'
-              - 'Client Methods': 'categories/expedition-system/quest-api-perl/client-methods.md'
-              - 'Expedition Methods': 'categories/expedition-system/quest-api-perl/expedition-methods.md'
-              - 'Global Methods': 'categories/expedition-system/quest-api-perl/global-methods.md'
-              - 'Group/Raid Methods': 'categories/expedition-system/quest-api-perl/group-raid-methods.md'
-      - 'Factions':
-          - 'categories/factions/README.md'
-          - 'Creating a New Faction': 'categories/factions/add-a-new-faction.md'
-          - 'Customizing Factions': 'categories/factions/customizing-factions.md'
-          - 'Faction Values': 'categories/factions/faction-values.md'
-      - 'Items':
-          - 'categories/items/README.md'
-          - 'Item Lore Groups': 'categories/items/item-lore-groups.md'
-          - 'Powersources': 'categories/items/powersources.md'
-          - 'Item Sizes': 'categories/items/item-sizes.md'
-          - 'Item Class': 'categories/items/item-class.md'
-          - 'GetItemStat Identifiers': 'categories/items/getitemstat-identifiers.md'
-          - 'Augment Restrictions': 'categories/items/augment-restrictions.md'
-          - 'Alternate Currencies': 'categories/items/alternate-currencies.md'
-          - 'Bard Types': 'categories/items/bard-types.md'
-          - 'Ornament Types': 'categories/items/ornament-types.md'
-          - 'Augment Types': 'categories/items/augment-types.md'
-          - 'Click Types': 'categories/items/click-types.md'
-          - 'Food and Drink': 'categories/items/food-and-drink.md'
-          - 'Item Types': 'categories/items/item-types.md'
-          - 'Item Click Types': 'categories/items/item-click-types.md'
-          - 'Item Element Types': 'categories/items/item-element-types.md'
-      - 'Inventory':
-          - 'categories/inventory/README.md'
-          - 'Inventory Slots': 'categories/inventory/inventory-slots.md'
-          - 'Item Slots': 'categories/inventory/item-slots.md'
-          - 'Bag Sizes': 'categories/inventory/bag-sizes.md'
-          - 'Bag Types': 'categories/inventory/bag-types.md'
-      - 'Logging System':
-          - 'categories/logging-system/README.md'
-          - 'Logging Categories': 'categories/logging-system/logging-categories.md'
-          - 'Logging for Developers': 'categories/logging-system/logging-for-developers.md'
-          - 'Logging Packets': 'categories/logging-system/logging-packets.md'
-      - 'Login Server':
-          - 'categories/login-server/README.md'
-          - 'Auto Create Login Accounts': 'categories/login-server/auto-create-login-accounts.md'
-          - 'REST API': 'categories/login-server/login-server-rest-api.md'
-          - 'Database Schema': 'categories/login-server/database-schema.md'
-          - 'CLI Management Interface': 'categories/login-server/login-server-cli-management-interface.md'
-          - 'Migrating from Legacy Login Server': 'categories/login-server/migrating-from-legacy-login-server.md'
-          - 'Configuration': 'categories/login-server/login-server-configuration.md'
-          - 'Commonly Asked Questions': 'categories/login-server/commonly-asked-questions.md'
-          - 'World Registration': 'categories/login-server/world-registration.md'
-          - 'World Servers with Same Names': 'categories/login-server/world-servers-with-same-names.md'
-      - 'Maps':
-          - 'categories/maps/README.md'
-          - 'Editing Maps': 'categories/maps/editing-maps.md'
-      - 'NPC':
-          - 'categories/npc/README.md'
-          - 'NPC Aggro': 'categories/npc/npc-aggro.md'
-          - 'ModifyNPCStat Identifiers': 'categories/npc/modifynpcstat-identifiers.md'
-          - 'Stuck Behavior': 'categories/npc/stuck-behavior.md'
-          - 'Mob Version List': 'categories/npc/mob-version-list.md'
-          - 'Race List': 'categories/npc/race-list.md'
-          - 'NPC Models': 'categories/npc/npc-models.md'
-          - 'Fly Modes': 'categories/npc/fly-modes.md'
-          - 'Client Race Inventory': 'categories/npc/client-race-inventory.md'
-          - 'Animations': 'categories/npc/animations.md'
-          - 'Facial Features': 'categories/npc/facial-features.md'
-          - 'Genders': 'categories/npc/genders.md'
-          - 'Textures': 'categories/npc/textures.md'
-          - 'Spawns':
-              - 'categories/npc/spawns/README.md'
-              - 'On Change Types': 'categories/npc/spawns/on-change-types.md'
-              - 'Pause Types': 'categories/npc/spawns/pause-types.md'
-              - 'Wander Types': 'categories/npc/spawns/wander-types.md'
-              - 'Action Types': 'categories/npc/spawns/action-types.md'
-              - 'NPC Despawn Types': 'categories/npc/spawns/npc-despawn-types.md'
-              - 'Grids': 'categories/npc/spawns/grids.md'
-          - 'Body Types': 'categories/npc/body-types.md'
-          - 'Emote Types': 'categories/npc/emote-types.md'
-          - 'Emote Event Types': 'categories/npc/emote-event-types.md'
-          - 'Customizing NPCs':
-              - 'categories/npc/customizing-npcs/README.md'
-              - 'Using the PEQ Database Editing Interface': 'categories/npc/customizing-npcs/using-the-peq-database-editing-interface.md'
-          - 'NPC Animation Types': 'categories/npc/npc-animation-types.md'
-          - 'NPC Scaling': 'categories/npc/npc-scaling.md'
-          - 'Special Attacks': 'categories/npc/special-attacks.md'
-      - 'Operation':
-          - 'categories/operation/README.md'
-          - 'Adjust Maximum Level': 'categories/operation/adjust-maximum-level.md'
-          - 'Adjust World Date / Time': 'categories/operation/adjust-world-date-time.md'
-          - 'Changing Start Zones': 'categories/operation/changing-start-zones.md'
-          - 'Chat Channel Types': 'categories/operation/chat-channel-types.md'
-          - 'Commands Reference': 'categories/operation/in-game-command-reference.md'
-          - 'Database Schema Migrations': 'categories/operation/database-schema-migrations.md'
-          - 'DBStr Types': 'categories/operation/dbstr-types.md'
-          - 'Disabling Lootdrop Entries': 'categories/operation/disabling-lootdrops.md'
-          - 'Disabling Merchantlist Entries': 'categories/operation/disabling-merchantlist-entries.md'
-          - 'Expansion Bitmasks': 'categories/operation/expansion-bitmasks.md'
-          - 'Expansion List': 'categories/operation/expansion-list.md'
-          - 'Exporting Client Files': 'categories/operation/exporting-client-files.md'
-          - 'First Time Running A Server': 'categories/operation/first-time-running-a-server.md'
-          - 'Implement PvP': 'categories/operation/implement-pvp.md'
-          - 'Loading Server Data': 'categories/operation/loading-server-data.md'
-          - 'NATS Channels': 'categories/operation/nats-channels.md'
-          - 'Server Rules': 'categories/operation/server-rules.md'
-          - 'Server Variables': 'categories/operation/server-variables.md'
-          - 'Updating Server Assets': 'categories/operation/updating-server-assets.md'
-      - 'Player':
-          - 'categories/player/README.md'
-          - 'Class List': 'categories/player/class-list.md'
-          - 'Client Version Bitmasks': 'categories/player/client-version-bitmasks.md'
-          - 'Deity List': 'categories/player/deity-list.md'
-          - 'Experience by Level': 'categories/player/experience-by-level.md'
-          - 'Guild Ranks': 'categories/player/guild-ranks.md'
-          - 'Languages': 'categories/player/languages.md'
-          - 'Player Housing': 'categories/player/player-housing.md'
-          - 'Race List': 'categories/npc/race-list.md'
-      - 'Skills':
-          - 'categories/player/skills.md'
-          - 'Slash Commands': 'categories/player/slash-commands.md'
-          - 'Status Levels': 'categories/player/status-levels.md'
-      - 'Server Installation':
-          - 'categories/installation/README.md'
-          - 'Basic Server Install - Linux': 'categories/installation/server-installation-linux.md'
-          - 'Basic Server Install - Windows': 'categories/installation/server-installation-windows.md'
-          - 'Bot Installation': 'categories/installation/bot-installation.md'
-          - 'Configure your eqemu_config': 'categories/installation/configure-your-eqemu_config.md'
-          - 'Development Server Setup': 'categories/installation/development-server-setup.md'
-          - 'Ground Up Linux Install': 'categories/installation/ground-up-linux-install.md'
-          - 'Ground Up Windows Install': 'categories/installation/ground-up-windows-install.md'
-          - 'Install PEQ Database Editor': 'categories/installation/install-peq-database-editor.md'
-          - 'Troubleshooting': 'categories/installation/troubleshooting.md'
-          - 'VSCode Dev Container Environment': 'categories/installation/vscode-dev-container-environment.md'
-      - 'Scripting':
-          - 'categories/scripting/README.md'
-          - 'Lua Mods': 'categories/scripting/lua-mods.md'
-          - 'Emote Colors': 'categories/scripting/emote-colors.md'
-          - 'Encounters (Lua)': 'categories/scripting/encounters-lua.md'
-          - 'Entity Lists': 'categories/scripting/entity-lists.md'
-          - 'Entity Variables': 'categories/scripting/entity-variables.md'
-          - 'GMSay': 'categories/scripting/gmsay.md'
-          - 'Using Data Buckets': 'categories/scripting/using-data-buckets.md'
-          - 'Converting QGlobals': 'categories/scripting/converting-qglobals.md'
-          - 'Player Buffer Scripts': 'categories/scripting/player-buffer-scripts.md'
-          - 'Player Teleporter Scripts': 'categories/scripting/player-teleporter-scripts.md'
-      - 'Spells':
-          - 'categories/spells/README.md'
-          - 'Aura Movement Types': 'categories/spells/aura-movement-types.md'
-          - 'Aura Spawn Types': 'categories/spells/aura-spawn-types.md'
-          - 'Aura Types': 'categories/spells/aura-types.md'
-          - 'Base Value Formulas': 'categories/spells/base-value-formulas.md'
-          - 'Blocked Spell Types': 'categories/spells/blocked-spell-types.md'
-          - 'Bot Spell List IDs': 'categories/spells/bot-spell-list-ids.md'
-          - 'Buff Duration Formulas': 'categories/spells/buff-duration-formulas.md'
-          - 'Client Spell ID Limitations': 'categories/spells/client-spell-id-limitations.md'
-          - 'Damage Shield Types': 'categories/spells/damage-shield-types.md'
-          - 'Damage Shield Types': 'categories/spells/damage-shield-types-1.md'
-          - 'Element Types': 'categories/spells/element-types.md'
-          - 'Environment Types': 'categories/spells/environment-types.md'
-          - 'GetSpellStat Identifiers': 'categories/spells/getspellstat-identifiers.md'
-          - 'Illusion Spell Guidelines': 'categories/spells/illusion-spell-guidelines.md'
-          - 'NPC Spell Categories': 'categories/spells/npc-spell-categories.md'
-          - 'Numhit Types': 'categories/spells/numhit-types.md'
-          - 'Numhit Types': 'categories/spells/numhit-types-1.md'
-          - 'Resist Types': 'categories/spells/resist-types.md'
-          - 'Spell Attack Speed': 'categories/spells/spell-attack-speed.md'
-          - 'Spell Buff Stacking': 'categories/spells/spell-buff-stacking.md'
-          - 'Spell Conditions': 'categories/spells/spell-conditions.md'
-          - 'Spell Damage Modifiers': 'categories/spells/spell-damage-modifiers.md'
-          - 'Spell Effect Fields': 'categories/spells/spell-effect-fields.md'
-          - 'Spell Effect IDs': 'categories/spells/spell-effect-ids.md'
-          - 'Spell Groups': 'categories/spells/spell-groups.md'
-          - 'Spell Heal Modifiers': 'categories/spells/spell-heal-modifiers.md'
-          - 'Spell Mechanics': 'categories/spells/spell-mechanics.md'
-          - 'Spell Resist Types': 'categories/spells/spell-resist-types.md'
-          - 'Spell Target Restrictions': 'categories/spells/spell-target-restrictions.md'
-          - 'Spell Types': 'categories/spells/spell-types.md'
-          - 'Target Types': 'categories/spells/target-types.md'
-          - 'Time of Day Types': 'categories/spells/time-of-day-types.md'
-          - 'Type Effect Description Number': 'categories/spells/type-effect-description-number.md'
-      - 'Task System':
-          - 'categories/task-system-guide/README.md'
-          - 'Task Duration Codes': 'categories/task-system-guide/task-duration-codes.md'
-          - 'Task Activity Types': 'categories/task-system-guide/task-activity-types.md'
-          - 'Task Types': 'categories/task-system-guide/task-types.md'
-          - 'Shared Tasks':
-              - 'categories/task-system-guide/shared-tasks/README.md'
-              - 'Example': 'categories/task-system-guide/shared-tasks/example.md'
-      - 'Zones':
-          - 'categories/zones/README.md'
-          - 'Trap Types': 'categories/zones/trap-types.md'
-          - 'LDON Themes': 'categories/zones/ldon-themes.md'
-          - 'Object Types': 'categories/zones/object-types.md'
-          - 'Door Open Types': 'categories/zones/door-open-types.md'
-          - 'Environment Emitters': 'categories/zones/environment-emitters.md'
-          - 'Adjusting Zone Shutdown Delay': 'categories/zones/adjusting-zone-shutdown-delay.md'
-          - 'Customizing Zones':
-              - 'categories/zones/customizing-zones/README.md'
-              - 'Custom Zone Making': 'categories/zones/customizing-zones/custom-zone-making.md'
-              - 'Fog System and Clip Plane': 'categories/zones/customizing-zones/fog-system-and-clip-plane.md'
-              - 'GL Model Viewer': 'categories/zones/customizing-zones/gl-model-viewer.md'
-              - 'List Objects Tool': 'categories/zones/customizing-zones/list-objects-tool.md'
-              - 'Placing Objects': 'categories/zones/customizing-zones/placing-objects.md'
-              - 'Sky System': 'categories/zones/customizing-zones/sky-system.md'
-              - 'WLD Editor Suite': 'categories/zones/customizing-zones/wld-editor-suite.md'
-              - 'WLD File Reference': 'categories/zones/customizing-zones/wld-file-reference.md'
-              - 'XMI to MIDI Converter': 'categories/zones/customizing-zones/xmi-to-midi-converter.md'
-              - 'Zone Utility Tools': 'categories/zones/customizing-zones/zone-utility-tools.md'
-          - 'Zone Header Identifiers': 'categories/zones/zone-header-identifiers.md'
-          - 'Zone List': 'categories/zones/zone-list.md'
-          - 'Zone Types': 'categories/zones/zone-types.md'
+          - Project PEQ Expansions:
+              - Classic:
+                  - in-development/project-peq-expansions/classic/README.md
+                  - Item Changes: in-development/project-peq-expansions/classic/item-changes.md
+                  - Zone Changes: in-development/project-peq-expansions/classic/zone-changes.md
+              - Zone Version Switching: in-development/project-peq-expansions/zone-version-switching.md
+              - Expansion and Content Filtering: in-development/project-peq-expansions/expansion-content-filtering.md
+              - Expansion List Reference: in-development/project-peq-expansions/expansion-list-reference.md
+              - Design Considerations: in-development/project-peq-expansions/design-considerations.md
+          - Developer Area:
+              - in-development/developer-area/README.md
+              - Repositories: in-development/developer-area/repositories.md
+              - EQDictionary: in-development/developer-area/eqdictionary.md
+              - Inventory:
+                  - in-development/developer-area/inventory/README.md
+                  - Inventory Overhaul: in-development/developer-area/inventory/inventory-overhaul.md
+                  - Perl Inventory Slot Identifiers: in-development/developer-area/inventory/perl-inventory-slot-identifiers.md
+              - Packet and OpCode Analysis:
+                  - in-development/developer-area/packet-and-opcode-analysis.md
+              - Tools:
+                  - in-development/developer-area/tools/README.md
+                  - Tools Cheat Sheet: in-development/developer-area/tools/tools-cheat-sheet.md
+                  - Lua for Windows: in-development/developer-area/tools/lua-for-windows.md
+                  - Notepad++: in-development/developer-area/tools/notepad++.md
+                  - TortoiseGit: in-development/developer-area/tools/tortoisegit.md
+      - Database:
+          - Multi Tenancy: categories/database/multi-tenancy.md
+          - Database Backup Tool: categories/database/database-backup-tool.md
+      - Expedition System:
+          - categories/expedition-system/README.md
+          - Database: categories/expedition-system/database.md
+          - Lockouts: categories/expedition-system/lockouts.md
+          - Quest API (Lua):
+              - categories/expedition-system/quest-api-lua/README.md
+              - Example: categories/expedition-system/quest-api-lua/example.md
+              - Client Methods: categories/expedition-system/quest-api-lua/client-methods.md
+              - Expedition Methods: categories/expedition-system/quest-api-lua/expedition-methods.md
+              - Global Methods: categories/expedition-system/quest-api-lua/global-methods.md
+              - Group/Raid Methods: categories/expedition-system/quest-api-lua/group-raid-methods.md
+          - Quest API (Perl):
+              - categories/expedition-system/quest-api-perl/README.md
+              - Example: categories/expedition-system/quest-api-perl/example.md
+              - Client Methods: categories/expedition-system/quest-api-perl/client-methods.md
+              - Expedition Methods: categories/expedition-system/quest-api-perl/expedition-methods.md
+              - Global Methods: categories/expedition-system/quest-api-perl/global-methods.md
+              - Group/Raid Methods: categories/expedition-system/quest-api-perl/group-raid-methods.md
+      - Factions:
+          - categories/factions/README.md
+          - Creating a New Faction: categories/factions/add-a-new-faction.md
+          - Customizing Factions: categories/factions/customizing-factions.md
+          - Faction Values: categories/factions/faction-values.md
+      - Items:
+          - categories/items/README.md
+          - Item Lore Groups: categories/items/item-lore-groups.md
+          - Powersources: categories/items/powersources.md
+          - Item Sizes: categories/items/item-sizes.md
+          - Item Class: categories/items/item-class.md
+          - GetItemStat Identifiers: categories/items/getitemstat-identifiers.md
+          - Augment Restrictions: categories/items/augment-restrictions.md
+          - Alternate Currencies: categories/items/alternate-currencies.md
+          - Bard Types: categories/items/bard-types.md
+          - Ornament Types: categories/items/ornament-types.md
+          - Augment Types: categories/items/augment-types.md
+          - Click Types: categories/items/click-types.md
+          - Food and Drink: categories/items/food-and-drink.md
+          - Item Types: categories/items/item-types.md
+          - Item Click Types: categories/items/item-click-types.md
+          - Item Element Types: categories/items/item-element-types.md
+      - Inventory:
+          - categories/inventory/README.md
+          - Inventory Slots: categories/inventory/inventory-slots.md
+          - Item Slots: categories/inventory/item-slots.md
+          - Bag Sizes: categories/inventory/bag-sizes.md
+          - Bag Types: categories/inventory/bag-types.md
+      - Logging System:
+          - categories/logging-system/README.md
+          - Logging Categories: categories/logging-system/logging-categories.md
+          - Logging for Developers: categories/logging-system/logging-for-developers.md
+          - Logging Packets: categories/logging-system/logging-packets.md
+      - Login Server:
+          - categories/login-server/README.md
+          - Auto Create Login Accounts: categories/login-server/auto-create-login-accounts.md
+          - REST API: categories/login-server/login-server-rest-api.md
+          - Database Schema: categories/login-server/database-schema.md
+          - CLI Management Interface: categories/login-server/login-server-cli-management-interface.md
+          - Migrating from Legacy Login Server: categories/login-server/migrating-from-legacy-login-server.md
+          - Configuration: categories/login-server/login-server-configuration.md
+          - Commonly Asked Questions: categories/login-server/commonly-asked-questions.md
+          - World Registration: categories/login-server/world-registration.md
+          - World Servers with Same Names: categories/login-server/world-servers-with-same-names.md
+      - Maps:
+          - categories/maps/README.md
+          - Editing Maps: categories/maps/editing-maps.md
+      - NPC:
+          - categories/npc/README.md
+          - NPC Aggro: categories/npc/npc-aggro.md
+          - ModifyNPCStat Identifiers: categories/npc/modifynpcstat-identifiers.md
+          - Stuck Behavior: categories/npc/stuck-behavior.md
+          - Mob Version List: categories/npc/mob-version-list.md
+          - Race List: categories/npc/race-list.md
+          - NPC Models: categories/npc/npc-models.md
+          - Fly Modes: categories/npc/fly-modes.md
+          - Client Race Inventory: categories/npc/client-race-inventory.md
+          - Animations: categories/npc/animations.md
+          - Facial Features: categories/npc/facial-features.md
+          - Genders: categories/npc/genders.md
+          - Textures: categories/npc/textures.md
+          - Spawns:
+              - categories/npc/spawns/README.md
+              - On Change Types: categories/npc/spawns/on-change-types.md
+              - Pause Types: categories/npc/spawns/pause-types.md
+              - Wander Types: categories/npc/spawns/wander-types.md
+              - Action Types: categories/npc/spawns/action-types.md
+              - NPC Despawn Types: categories/npc/spawns/npc-despawn-types.md
+              - Grids: categories/npc/spawns/grids.md
+          - Body Types: categories/npc/body-types.md
+          - Emote Types: categories/npc/emote-types.md
+          - Emote Event Types: categories/npc/emote-event-types.md
+          - Customizing NPCs:
+              - categories/npc/customizing-npcs/README.md
+              - Using the PEQ Database Editing Interface: categories/npc/customizing-npcs/using-the-peq-database-editing-interface.md
+          - NPC Animation Types: categories/npc/npc-animation-types.md
+          - NPC Scaling: categories/npc/npc-scaling.md
+          - Special Attacks: categories/npc/special-attacks.md
+      - Operation:
+          - categories/operation/README.md
+          - Adjust Maximum Level: categories/operation/adjust-maximum-level.md
+          - Adjust World Date / Time: categories/operation/adjust-world-date-time.md
+          - Changing Start Zones: categories/operation/changing-start-zones.md
+          - Chat Channel Types: categories/operation/chat-channel-types.md
+          - Commands Reference: categories/operation/in-game-command-reference.md
+          - Database Schema Migrations: categories/operation/database-schema-migrations.md
+          - DBStr Types: categories/operation/dbstr-types.md
+          - Disabling Lootdrop Entries: categories/operation/disabling-lootdrops.md
+          - Disabling Merchantlist Entries: categories/operation/disabling-merchantlist-entries.md
+          - Expansion Bitmasks: categories/operation/expansion-bitmasks.md
+          - Expansion List: categories/operation/expansion-list.md
+          - Exporting Client Files: categories/operation/exporting-client-files.md
+          - First Time Running A Server: categories/operation/first-time-running-a-server.md
+          - Implement PvP: categories/operation/implement-pvp.md
+          - Loading Server Data: categories/operation/loading-server-data.md
+          - NATS Channels: categories/operation/nats-channels.md
+          - Server Rules: categories/operation/server-rules.md
+          - Server Variables: categories/operation/server-variables.md
+          - Updating Server Assets: categories/operation/updating-server-assets.md
+      - Player:
+          - categories/player/README.md
+          - Class List: categories/player/class-list.md
+          - Client Version Bitmasks: categories/player/client-version-bitmasks.md
+          - Deity List: categories/player/deity-list.md
+          - Experience by Level: categories/player/experience-by-level.md
+          - Guild Ranks: categories/player/guild-ranks.md
+          - Languages: categories/player/languages.md
+          - Player Housing: categories/player/player-housing.md
+          - Race List: categories/npc/race-list.md
+      - Skills:
+          - categories/player/skills.md
+          - Slash Commands: categories/player/slash-commands.md
+          - Status Levels: categories/player/status-levels.md
+      - Server Installation:
+          - categories/installation/README.md
+          - Basic Server Install - Linux: categories/installation/server-installation-linux.md
+          - Basic Server Install - Windows: categories/installation/server-installation-windows.md
+          - Bot Installation: categories/installation/bot-installation.md
+          - Configure your eqemu_config: categories/installation/configure-your-eqemu_config.md
+          - Development Server Setup: categories/installation/development-server-setup.md
+          - Ground Up Linux Install: categories/installation/ground-up-linux-install.md
+          - Ground Up Windows Install: categories/installation/ground-up-windows-install.md
+          - Install PEQ Database Editor: categories/installation/install-peq-database-editor.md
+          - Troubleshooting: categories/installation/troubleshooting.md
+          - VSCode Dev Container Environment: categories/installation/vscode-dev-container-environment.md
+      - Scripting:
+          - categories/scripting/README.md
+          - Lua Mods: categories/scripting/lua-mods.md
+          - Emote Colors: categories/scripting/emote-colors.md
+          - Encounters (Lua): categories/scripting/encounters-lua.md
+          - Entity Lists: categories/scripting/entity-lists.md
+          - Entity Variables: categories/scripting/entity-variables.md
+          - GMSay: categories/scripting/gmsay.md
+          - Using Data Buckets: categories/scripting/using-data-buckets.md
+          - Converting QGlobals: categories/scripting/converting-qglobals.md
+          - Player Buffer Scripts: categories/scripting/player-buffer-scripts.md
+          - Player Teleporter Scripts: categories/scripting/player-teleporter-scripts.md
+      - Spells:
+          - categories/spells/README.md
+          - Aura Movement Types: categories/spells/aura-movement-types.md
+          - Aura Spawn Types: categories/spells/aura-spawn-types.md
+          - Aura Types: categories/spells/aura-types.md
+          - Base Value Formulas: categories/spells/base-value-formulas.md
+          - Blocked Spell Types: categories/spells/blocked-spell-types.md
+          - Bot Spell List IDs: categories/spells/bot-spell-list-ids.md
+          - Buff Duration Formulas: categories/spells/buff-duration-formulas.md
+          - Client Spell ID Limitations: categories/spells/client-spell-id-limitations.md
+          - Damage Shield Types: categories/spells/damage-shield-types.md
+          - Damage Shield Types: categories/spells/damage-shield-types-1.md
+          - Element Types: categories/spells/element-types.md
+          - Environment Types: categories/spells/environment-types.md
+          - GetSpellStat Identifiers: categories/spells/getspellstat-identifiers.md
+          - Illusion Spell Guidelines: categories/spells/illusion-spell-guidelines.md
+          - NPC Spell Categories: categories/spells/npc-spell-categories.md
+          - Numhit Types: categories/spells/numhit-types.md
+          - Numhit Types: categories/spells/numhit-types-1.md
+          - Resist Types: categories/spells/resist-types.md
+          - Spell Attack Speed: categories/spells/spell-attack-speed.md
+          - Spell Buff Stacking: categories/spells/spell-buff-stacking.md
+          - Spell Conditions: categories/spells/spell-conditions.md
+          - Spell Damage Modifiers: categories/spells/spell-damage-modifiers.md
+          - Spell Effect Fields: categories/spells/spell-effect-fields.md
+          - Spell Effect IDs: categories/spells/spell-effect-ids.md
+          - Spell Groups: categories/spells/spell-groups.md
+          - Spell Heal Modifiers: categories/spells/spell-heal-modifiers.md
+          - Spell Mechanics: categories/spells/spell-mechanics.md
+          - Spell Resist Types: categories/spells/spell-resist-types.md
+          - Spell Target Restrictions: categories/spells/spell-target-restrictions.md
+          - Spell Types: categories/spells/spell-types.md
+          - Target Types: categories/spells/target-types.md
+          - Time of Day Types: categories/spells/time-of-day-types.md
+          - Type Effect Description Number: categories/spells/type-effect-description-number.md
+      - Task System:
+          - categories/task-system-guide/README.md
+          - Task Duration Codes: categories/task-system-guide/task-duration-codes.md
+          - Task Activity Types: categories/task-system-guide/task-activity-types.md
+          - Task Types: categories/task-system-guide/task-types.md
+          - Shared Tasks:
+              - categories/task-system-guide/shared-tasks/README.md
+              - Example: categories/task-system-guide/shared-tasks/example.md
+      - Zones:
+          - categories/zones/README.md
+          - Trap Types: categories/zones/trap-types.md
+          - LDON Themes: categories/zones/ldon-themes.md
+          - Object Types: categories/zones/object-types.md
+          - Door Open Types: categories/zones/door-open-types.md
+          - Environment Emitters: categories/zones/environment-emitters.md
+          - Adjusting Zone Shutdown Delay: categories/zones/adjusting-zone-shutdown-delay.md
+          - Customizing Zones:
+              - categories/zones/customizing-zones/README.md
+              - Custom Zone Making: categories/zones/customizing-zones/custom-zone-making.md
+              - Fog System and Clip Plane: categories/zones/customizing-zones/fog-system-and-clip-plane.md
+              - GL Model Viewer: categories/zones/customizing-zones/gl-model-viewer.md
+              - List Objects Tool: categories/zones/customizing-zones/list-objects-tool.md
+              - Placing Objects: categories/zones/customizing-zones/placing-objects.md
+              - Sky System: categories/zones/customizing-zones/sky-system.md
+              - WLD Editor Suite: categories/zones/customizing-zones/wld-editor-suite.md
+              - WLD File Reference: categories/zones/customizing-zones/wld-file-reference.md
+              - XMI to MIDI Converter: categories/zones/customizing-zones/xmi-to-midi-converter.md
+              - Zone Utility Tools: categories/zones/customizing-zones/zone-utility-tools.md
+          - Zone Header Identifiers: categories/zones/zone-header-identifiers.md
+          - Zone List: categories/zones/zone-list.md
+          - Zone Types: categories/zones/zone-types.md
   - Database Schema:
       - schema/README.md
-      - 'AAs':
-          - 'aa_ability': 'schema/categories/aas/aa_ability.md'
-          - 'aa_actions': 'schema/categories/aas/aa_actions.md'
-          - 'aa_effects': 'schema/categories/aas/aa_effects.md'
-          - 'aa_ranks': 'schema/categories/aas/aa_ranks.md'
-          - 'aa_rank_effects': 'schema/categories/aas/aa_rank_effects.md'
-          - 'aa_rank_prereqs': 'schema/categories/aas/aa_rank_prereqs.md'
-          - 'aa_required_level_cost': 'schema/categories/aas/aa_required_level_cost.md'
-          - 'aa_timers': 'schema/categories/aas/aa_timers.md'
-          - 'altadv_vars': 'schema/categories/aas/altadv_vars.md'
-      - 'Account':
-          - 'account': 'schema/categories/account/account.md'
-          - 'account_flags': 'schema/categories/account/account_flags.md'
-          - 'account_ip': 'schema/categories/account/account_ip.md'
-          - 'account_rewards': 'schema/categories/account/account_rewards.md'
-          - 'sharedbank': 'schema/categories/account/sharedbank.md'
-      - 'Admin':
-          - 'banned_ips': 'schema/categories/admin/banned_ips.md'
-          - 'bot_command_settings': 'schema/categories/admin/bot_command_settings.md'
-          - 'bug_reports': 'schema/categories/admin/bug_reports.md'
-          - 'bugs': 'schema/categories/admin/bugs.md'
-          - 'chatchannels': 'schema/categories/admin/chatchannels.md'
-          - 'class_skill': 'schema/categories/admin/class_skill.md'
-          - 'command_settings': 'schema/categories/admin/command_settings.md'
-          - 'db_version': 'schema/categories/admin/db_version.md'
-          - 'discovered_items': 'schema/categories/admin/discovered_items.md'
-          - 'eqtime': 'schema/categories/admin/eqtime.md'
-          - 'eventlog': 'schema/categories/admin/eventlog.md'
-          - 'fear_hints': 'schema/categories/admin/fear_hints.md'
-          - 'gm_ips': 'schema/categories/admin/gm_ips.md'
-          - 'hackers': 'schema/categories/admin/hackers.md'
-          - 'ip_exemptions': 'schema/categories/admin/ip_exemptions.md'
-          - 'level_exp_mods': 'schema/categories/admin/level_exp_mods.md'
-          - 'logsys_categories': 'schema/categories/admin/logsys_categories.md'
-          - 'name_filter': 'schema/categories/admin/name_filter.md'
-          - 'perl_event_export_settings': 'schema/categories/admin/perl_event_export_settings.md'
-          - 'petitions': 'schema/categories/admin/petitions.md'
-          - 'profanity_list': 'schema/categories/admin/profanity_list.md'
-          - 'races': 'schema/categories/admin/races.md'
-          - 'reports': 'schema/categories/admin/reports.md'
-          - 'saylink': 'schema/categories/admin/saylink.md'
-          - 'start_zones': 'schema/categories/admin/start_zones.md'
-          - 'starting_items': 'schema/categories/admin/starting_items.md'
-          - 'variables': 'schema/categories/admin/variables.md'
-          - 'veteran_reward_templates': 'schema/categories/admin/veteran_reward_templates.md'
-      - 'Adventures':
-          - 'adventure_details': 'schema/categories/adventures/adventure_details.md'
-          - 'adventure_members': 'schema/categories/adventures/adventure_members.md'
-          - 'adventure_stats': 'schema/categories/adventures/adventure_stats.md'
-          - 'adventure_template': 'schema/categories/adventures/adventure_template.md'
-          - 'adventure_template_entry': 'schema/categories/adventures/adventure_template_entry.md'
-          - 'adventure_template_entry_flavor': 'schema/categories/adventures/adventure_template_entry_flavor.md'
-      - 'Alternate Currency':
-          - 'alternate_currency': 'schema/categories/alternate-currency/alternate_currency.md'
-      - 'Books':
-          - 'books': 'schema/categories/books/books.md'
-      - 'Bots':
-          - 'bot_buffs': 'schema/categories/bots/bot_buffs.md'
-          - 'bot_data': 'schema/categories/bots/bot_data.md'
-          - 'bot_groups': 'schema/categories/bots/bot_groups.md'
-          - 'bot_group_members': 'schema/categories/bots/bot_group_members.md'
-          - 'bot_guild_members': 'schema/categories/bots/bot_guild_members.md'
-          - 'bot_heal_rotations': 'schema/categories/bots/bot_heal_rotations.md'
-          - 'bot_heal_rotation_members': 'schema/categories/bots/bot_heal_rotation_members.md'
-          - 'bot_heal_rotation_targets': 'schema/categories/bots/bot_heal_rotation_targets.md'
-          - 'bot_inspect_messages': 'schema/categories/bots/bot_inspect_messages.md'
-          - 'bot_inventories': 'schema/categories/bots/bot_inventories.md'
-          - 'bot_owner_options': 'schema/categories/bots/bot_owner_options.md'
-          - 'bot_pets': 'schema/categories/bots/bot_pets.md'
-          - 'bot_pet_buffs': 'schema/categories/bots/bot_pet_buffs.md'
-          - 'bot_pet_inventories': 'schema/categories/bots/bot_pet_inventories.md'
-          - 'bot_spells_entries': 'schema/categories/bots/bot_spells_entries.md'
-          - 'bot_spell_casting_chances': 'schema/categories/bots/bot_spell_casting_chances.md'
-          - 'bot_stances': 'schema/categories/bots/bot_stances.md'
-          - 'bot_timers': 'schema/categories/bots/bot_timers.md'
-      - 'Buyers':
-          - 'buyer': 'schema/categories/buyers/buyer.md'
-      - 'Characters':
-          - 'character_activities': 'schema/categories/characters/character_activities.md'
-          - 'character_alternate_abilities': 'schema/categories/characters/character_alternate_abilities.md'
-          - 'character_alt_currency': 'schema/categories/characters/character_alt_currency.md'
-          - 'character_auras': 'schema/categories/characters/character_auras.md'
-          - 'character_bandolier': 'schema/categories/characters/character_bandolier.md'
-          - 'character_bind': 'schema/categories/characters/character_bind.md'
-          - 'character_buffs': 'schema/categories/characters/character_buffs.md'
-          - 'character_corpses': 'schema/categories/characters/character_corpses.md'
-          - 'character_corpse_items': 'schema/categories/characters/character_corpse_items.md'
-          - 'character_currency': 'schema/categories/characters/character_currency.md'
-          - 'character_data': 'schema/categories/characters/character_data.md'
-          - 'character_disciplines': 'schema/categories/characters/character_disciplines.md'
-          - 'character_enabledtasks': 'schema/categories/characters/character_enabledtasks.md'
-          - 'character_inspect_messages': 'schema/categories/characters/character_inspect_messages.md'
-          - 'character_item_recast': 'schema/categories/characters/character_item_recast.md'
-          - 'character_languages': 'schema/categories/characters/character_languages.md'
-          - 'character_leadership_abilities': 'schema/categories/characters/character_leadership_abilities.md'
-          - 'character_material': 'schema/categories/characters/character_material.md'
-          - 'character_memmed_spells': 'schema/categories/characters/character_memmed_spells.md'
-          - 'character_pet_buffs': 'schema/categories/characters/character_pet_buffs.md'
-          - 'character_pet_info': 'schema/categories/characters/character_pet_info.md'
-          - 'character_pet_inventory': 'schema/categories/characters/character_pet_inventory.md'
-          - 'character_potionbelt': 'schema/categories/characters/character_potionbelt.md'
-          - 'character_skills': 'schema/categories/characters/character_skills.md'
-          - 'character_spells': 'schema/categories/characters/character_spells.md'
-          - 'character_tasks': 'schema/categories/characters/character_tasks.md'
-          - 'character_task_lockouts': 'schema/categories/characters/character_task_lockouts.md'
-          - 'character_tribute': 'schema/categories/characters/character_tribute.md'
-          - 'char_create_combinations': 'schema/categories/characters/char_create_combinations.md'
-          - 'char_create_point_allocations': 'schema/categories/characters/char_create_point_allocations.md'
-          - 'char_recipe_list': 'schema/categories/characters/char_recipe_list.md'
-          - 'friends': 'schema/categories/characters/friends.md'
-          - 'keyring': 'schema/categories/characters/keyring.md'
-          - 'lfguild': 'schema/categories/characters/lfguild.md'
-          - 'mail': 'schema/categories/characters/mail.md'
-          - 'player_titlesets': 'schema/categories/characters/player_titlesets.md'
-      - 'Client Files':
-          - 'base_data': 'schema/categories/client-files/base_data.md'
-          - 'db_str': 'schema/categories/client-files/db_str.md'
-          - 'skill_caps': 'schema/categories/client-files/skill_caps.md'
-      - 'Data Storage':
-          - 'data_buckets': 'schema/categories/data-storage/data_buckets.md'
-          - 'quest_globals': 'schema/categories/data-storage/quest_globals.md'
-      - 'Doors':
-          - 'doors': 'schema/categories/doors/doors.md'
-      - 'Factions':
-          - 'client_faction_associations': 'schema/categories/factions/client_faction_associations.md'
-          - 'client_faction_names': 'schema/categories/factions/client_faction_names.md'
-          - 'client_server_faction_map': 'schema/categories/factions/client_server_faction_map.md'
-          - 'custom_faction_mappings': 'schema/categories/factions/custom_faction_mappings.md'
-          - 'faction_base_data': 'schema/categories/factions/faction_base_data.md'
-          - 'faction_list': 'schema/categories/factions/faction_list.md'
-          - 'faction_list_mod': 'schema/categories/factions/faction_list_mod.md'
-          - 'faction_list_mod_prefix': 'schema/categories/factions/faction_list_mod_prefix.md'
-          - 'faction_list_prefix': 'schema/categories/factions/faction_list_prefix.md'
-          - 'faction_values': 'schema/categories/factions/faction_values.md'
-          - 'faction_values_prefix': 'schema/categories/factions/faction_values_prefix.md'
-          - 'npc_faction_entries_prefix': 'schema/categories/factions/npc_faction_entries_prefix.md'
-          - 'npc_faction_prefix': 'schema/categories/factions/npc_faction_prefix.md'
-      - 'Graveyards':
-          - 'graveyard': 'schema/categories/graveyards/graveyard.md'
-      - 'Ground Spawns':
-          - 'ground_spawns': 'schema/categories/ground-spawns/ground_spawns.md'
-      - 'Groups':
-          - 'group_id': 'schema/categories/groups/group_id.md'
-          - 'group_leaders': 'schema/categories/groups/group_leaders.md'
-      - 'Guilds':
-          - 'guilds': 'schema/categories/guilds/guilds.md'
-          - 'guild_bank': 'schema/categories/guilds/guild_bank.md'
-          - 'guild_ranks': 'schema/categories/guilds/guild_ranks.md'
-          - 'guild_members': 'schema/categories/guilds/guild_members.md'
-          - 'guild_relations': 'schema/categories/guilds/guild_relations.md'
-      - 'Grids':
-          - 'grid': 'schema/categories/grids/grid.md'
-          - 'grid_entries': 'schema/categories/grids/grid_entries.md'
-      - 'Horses':
-          - 'horses': 'schema/categories/horses/horses.md'
-      - 'Instances':
-          - 'instance_list': 'schema/categories/instances/instance_list.md'
-          - 'instance_list_player': 'schema/categories/instances/instance_list_player.md'
-      - 'Inventory':
-          - 'inventory': 'schema/categories/inventory/inventory.md'
-          - 'inventory_snapshots': 'schema/categories/inventory/inventory_snapshots.md'
-          - 'inventory_versions': 'schema/categories/inventory/inventory_versions.md'
-      - 'Items':
-          - 'items': 'schema/categories/items/items.md'
-          - 'item_tick': 'schema/categories/items/item_tick.md'
-      - 'Loginserver':
-          - 'login_accounts': 'schema/categories/loginserver/login_accounts.md'
-          - 'login_api_tokens': 'schema/categories/loginserver/login_api_tokens.md'
-          - 'login_server_admins': 'schema/categories/loginserver/login_server_admins.md'
-          - 'login_server_list_types': 'schema/categories/loginserver/login_server_list_types.md'
-          - 'login_world_servers': 'schema/categories/loginserver/login_world_servers.md'
-      - 'Loot':
-          - 'global_loot': 'schema/categories/loot/global_loot.md'
-          - 'lootdrop': 'schema/categories/loot/lootdrop.md'
-          - 'lootdrop_entries': 'schema/categories/loot/lootdrop_entries.md'
-          - 'loottable': 'schema/categories/loot/loottable.md'
-          - 'loottable_entries': 'schema/categories/loot/loottable_entries.md'
-      - 'Mercenaries':
-          - 'mercs': 'schema/categories/mercenaries/mercs.md'
-          - 'merc_armorinfo': 'schema/categories/mercenaries/merc_armorinfo.md'
-          - 'merc_buffs': 'schema/categories/mercenaries/merc_buffs.md'
-          - 'merc_inventory': 'schema/categories/mercenaries/merc_inventory.md'
-          - 'merc_merchant_entries': 'schema/categories/mercenaries/merc_merchant_entries.md'
-          - 'merc_merchant_templates': 'schema/categories/mercenaries/merc_merchant_templates.md'
-          - 'merc_merchant_template_entries': 'schema/categories/mercenaries/merc_merchant_template_entries.md'
-          - 'merc_name_types': 'schema/categories/mercenaries/merc_name_types.md'
-          - 'merc_npc_types': 'schema/categories/mercenaries/merc_npc_types.md'
-          - 'merc_spell_lists': 'schema/categories/mercenaries/merc_spell_lists.md'
-          - 'merc_spell_list_entries': 'schema/categories/mercenaries/merc_spell_list_entries.md'
-          - 'merc_stance_entries': 'schema/categories/mercenaries/merc_stance_entries.md'
-          - 'merc_stats': 'schema/categories/mercenaries/merc_stats.md'
-          - 'merc_subtypes': 'schema/categories/mercenaries/merc_subtypes.md'
-          - 'merc_templates': 'schema/categories/mercenaries/merc_templates.md'
-          - 'merc_types': 'schema/categories/mercenaries/merc_types.md'
-          - 'merc_weaponinfo': 'schema/categories/mercenaries/merc_weaponinfo.md'
-      - 'Merchants':
-          - 'merchantlist': 'schema/categories/merchants/merchantlist.md'
-          - 'merchantlist_temp': 'schema/categories/merchants/merchantlist_temp.md'
-      - 'NPCs':
-          - 'npc_emotes': 'schema/categories/npcs/npc_emotes.md'
-          - 'npc_faction': 'schema/categories/npcs/npc_faction.md'
-          - 'npc_faction_entries': 'schema/categories/npcs/npc_faction_entries.md'
-          - 'npc_scale_global_base': 'schema/categories/npcs/npc_scale_global_base.md'
-          - 'npc_spells': 'schema/categories/npcs/npc_spells.md'
-          - 'npc_spells_effects': 'schema/categories/npcs/npc_spells_effects.md'
-          - 'npc_spells_effects_entries': 'schema/categories/npcs/npc_spells_effects_entries.md'
-          - 'npc_spells_entries': 'schema/categories/npcs/npc_spells_entries.md'
-          - 'npc_types': 'schema/categories/npcs/npc_types.md'
-          - 'npc_types_metadata': 'schema/categories/npcs/npc_types_metadata.md'
-          - 'npc_types_tint': 'schema/categories/npcs/npc_types_tint.md'
-          - 'proximities': 'schema/categories/npcs/proximities.md'
-      - 'Objects':
-          - 'object': 'schema/categories/objects/object.md'
-          - 'object_contents': 'schema/categories/objects/object_contents.md'
-      - 'Pets':
-          - 'pets': 'schema/categories/pets/pets.md'
-          - 'pets_equipmentset': 'schema/categories/pets/pets_equipmentset.md'
-          - 'pets_equipmentset_entries': 'schema/categories/pets/pets_equipmentset_entries.md'
-      - 'Query Server':
-          - 'qs_merchant_transaction_record': 'schema/categories/query-server/qs_merchant_transaction_record.md'
-          - 'qs_merchant_transaction_record_entries': 'schema/categories/query-server/qs_merchant_transaction_record_entries.md'
-          - 'qs_player_aa_rate_hourly': 'schema/categories/query-server/qs_player_aa_rate_hourly.md'
-          - 'qs_player_delete_record': 'schema/categories/query-server/qs_player_delete_record.md'
-          - 'qs_player_delete_record_entries': 'schema/categories/query-server/qs_player_delete_record_entries.md'
-          - 'qs_player_events': 'schema/categories/query-server/qs_player_events.md'
-          - 'qs_player_handin_record': 'schema/categories/query-server/qs_player_handin_record.md'
-          - 'qs_player_handin_record_entries': 'schema/categories/query-server/qs_player_handin_record_entries.md'
-          - 'qs_player_move_record': 'schema/categories/query-server/qs_player_move_record.md'
-          - 'qs_player_move_record_entries': 'schema/categories/query-server/qs_player_move_record_entries.md'
-          - 'qs_player_npc_kill_record': 'schema/categories/query-server/qs_player_npc_kill_record.md'
-          - 'qs_player_npc_kill_record_entries': 'schema/categories/query-server/qs_player_npc_kill_record_entries.md'
-          - 'qs_player_speech': 'schema/categories/query-server/qs_player_speech.md'
-          - 'qs_player_trade_record': 'schema/categories/query-server/qs_player_trade_record.md'
-          - 'qs_player_trade_record_entries': 'schema/categories/query-server/qs_player_trade_record_entries.md'
-      - 'Raids':
-          - 'raid_details': 'schema/categories/raids/raid_details.md'
-          - 'raid_leaders': 'schema/categories/raids/raid_leaders.md'
-          - 'raid_members': 'schema/categories/raids/raid_members.md'
-      - 'Rules':
-          - 'rule_sets': 'schema/categories/rules/rule_sets.md'
-          - 'rule_values': 'schema/categories/rules/rule_values.md'
-      - 'Spawns':
-          - 'respawn_times': 'schema/categories/spawns/respawn_times.md'
-          - 'spawn2': 'schema/categories/spawns/spawn2.md'
-          - 'spawnentry': 'schema/categories/spawns/spawnentry.md'
-          - 'spawngroup': 'schema/categories/spawns/spawngroup.md'
-          - 'spawn_conditions': 'schema/categories/spawns/spawn_conditions.md'
-          - 'spawn_condition_values': 'schema/categories/spawns/spawn_condition_values.md'
-          - 'spawn_events': 'schema/categories/spawns/spawn_events.md'
-      - 'Spells':
-          - 'auras': 'schema/categories/spells/auras.md'
-          - 'blocked_spells': 'schema/categories/spells/blocked_spells.md'
-          - 'damageshieldtypes': 'schema/categories/spells/damageshieldtypes.md'
-          - 'spell_buckets': 'schema/categories/spells/spell_buckets.md'
-          - 'spell_globals': 'schema/categories/spells/spell_globals.md'
-          - 'spells_new': 'schema/categories/spells/spells_new.md'
-      - 'Tasks':
-          - 'completed_tasks': 'schema/categories/tasks/completed_tasks.md'
-          - 'goallists': 'schema/categories/tasks/goallists.md'
-          - 'shared_task_activities': 'schema/categories/tasks/shared_task_activities.md'
-          - 'shared_task_members': 'schema/categories/tasks/shared_task_members.md'
-          - 'shared_task_state': 'schema/categories/tasks/shared_task_state.md'
-          - 'task_activities': 'schema/categories/tasks/task_activities.md'
-          - 'task_replay_groups': 'schema/categories/tasks/task_replay_groups.md'
-          - 'tasks': 'schema/categories/tasks/tasks.md'
-          - 'tasksets': 'schema/categories/tasks/tasksets.md'
-      - 'Timers':
-          - 'timers': 'schema/categories/timers/timers.md'
-      - 'Titles':
-          - 'titles': 'schema/categories/titles/titles.md'
-      - 'Trader':
-          - 'trader': 'schema/categories/trader/trader.md'
-          - 'trader_audit': 'schema/categories/trader/trader_audit.md'
-      - 'Tradeskills':
-          - 'fishing': 'schema/categories/tradeskills/fishing.md'
-          - 'forage': 'schema/categories/tradeskills/forage.md'
-          - 'tradeskill_recipe': 'schema/categories/tradeskills/tradeskill_recipe.md'
-          - 'tradeskill_recipe_entries': 'schema/categories/tradeskills/tradeskill_recipe_entries.md'
-      - 'Traps':
-          - 'ldon_trap_entries': 'schema/categories/traps/ldon_trap_entries.md'
-          - 'ldon_trap_templates': 'schema/categories/traps/ldon_trap_templates.md'
-          - 'traps': 'schema/categories/traps/traps.md'
-      - 'Tributes':
-          - 'tributes': 'schema/categories/tributes/tributes.md'
-          - 'tribute_levels': 'schema/categories/tributes/tribute_levels.md'
-      - 'Zone':
-          - 'launcher': 'schema/categories/zone/launcher.md'
-          - 'launcher_zones': 'schema/categories/zone/launcher_zones.md'
-          - 'zone': 'schema/categories/zone/zone.md'
-          - 'zoneserver_auth': 'schema/categories/zone/zoneserver_auth.md'
-          - 'zone_flags': 'schema/categories/zone/zone_flags.md'
-          - 'zone_points': 'schema/categories/zone/zone_points.md'
-          - 'zone_server': 'schema/categories/zone/zone_server.md'
+      - AAs:
+          - aa_ability: schema/categories/aas/aa_ability.md
+          - aa_actions: schema/categories/aas/aa_actions.md
+          - aa_effects: schema/categories/aas/aa_effects.md
+          - aa_ranks: schema/categories/aas/aa_ranks.md
+          - aa_rank_effects: schema/categories/aas/aa_rank_effects.md
+          - aa_rank_prereqs: schema/categories/aas/aa_rank_prereqs.md
+          - aa_required_level_cost: schema/categories/aas/aa_required_level_cost.md
+          - aa_timers: schema/categories/aas/aa_timers.md
+          - altadv_vars: schema/categories/aas/altadv_vars.md
+      - Account:
+          - account: schema/categories/account/account.md
+          - account_flags: schema/categories/account/account_flags.md
+          - account_ip: schema/categories/account/account_ip.md
+          - account_rewards: schema/categories/account/account_rewards.md
+          - sharedbank: schema/categories/account/sharedbank.md
+      - Admin:
+          - banned_ips: schema/categories/admin/banned_ips.md
+          - bot_command_settings: schema/categories/admin/bot_command_settings.md
+          - bug_reports: schema/categories/admin/bug_reports.md
+          - bugs: schema/categories/admin/bugs.md
+          - chatchannels: schema/categories/admin/chatchannels.md
+          - class_skill: schema/categories/admin/class_skill.md
+          - command_settings: schema/categories/admin/command_settings.md
+          - db_version: schema/categories/admin/db_version.md
+          - discovered_items: schema/categories/admin/discovered_items.md
+          - eqtime: schema/categories/admin/eqtime.md
+          - eventlog: schema/categories/admin/eventlog.md
+          - fear_hints: schema/categories/admin/fear_hints.md
+          - gm_ips: schema/categories/admin/gm_ips.md
+          - hackers: schema/categories/admin/hackers.md
+          - ip_exemptions: schema/categories/admin/ip_exemptions.md
+          - level_exp_mods: schema/categories/admin/level_exp_mods.md
+          - logsys_categories: schema/categories/admin/logsys_categories.md
+          - name_filter: schema/categories/admin/name_filter.md
+          - perl_event_export_settings: schema/categories/admin/perl_event_export_settings.md
+          - petitions: schema/categories/admin/petitions.md
+          - profanity_list: schema/categories/admin/profanity_list.md
+          - races: schema/categories/admin/races.md
+          - reports: schema/categories/admin/reports.md
+          - saylink: schema/categories/admin/saylink.md
+          - start_zones: schema/categories/admin/start_zones.md
+          - starting_items: schema/categories/admin/starting_items.md
+          - variables: schema/categories/admin/variables.md
+          - veteran_reward_templates: schema/categories/admin/veteran_reward_templates.md
+      - Adventures:
+          - adventure_details: schema/categories/adventures/adventure_details.md
+          - adventure_members: schema/categories/adventures/adventure_members.md
+          - adventure_stats: schema/categories/adventures/adventure_stats.md
+          - adventure_template: schema/categories/adventures/adventure_template.md
+          - adventure_template_entry: schema/categories/adventures/adventure_template_entry.md
+          - adventure_template_entry_flavor: schema/categories/adventures/adventure_template_entry_flavor.md
+      - Alternate Currency:
+          - alternate_currency: schema/categories/alternate-currency/alternate_currency.md
+      - Books:
+          - books: schema/categories/books/books.md
+      - Bots:
+          - bot_buffs: schema/categories/bots/bot_buffs.md
+          - bot_data: schema/categories/bots/bot_data.md
+          - bot_groups: schema/categories/bots/bot_groups.md
+          - bot_group_members: schema/categories/bots/bot_group_members.md
+          - bot_guild_members: schema/categories/bots/bot_guild_members.md
+          - bot_heal_rotations: schema/categories/bots/bot_heal_rotations.md
+          - bot_heal_rotation_members: schema/categories/bots/bot_heal_rotation_members.md
+          - bot_heal_rotation_targets: schema/categories/bots/bot_heal_rotation_targets.md
+          - bot_inspect_messages: schema/categories/bots/bot_inspect_messages.md
+          - bot_inventories: schema/categories/bots/bot_inventories.md
+          - bot_owner_options: schema/categories/bots/bot_owner_options.md
+          - bot_pets: schema/categories/bots/bot_pets.md
+          - bot_pet_buffs: schema/categories/bots/bot_pet_buffs.md
+          - bot_pet_inventories: schema/categories/bots/bot_pet_inventories.md
+          - bot_spells_entries: schema/categories/bots/bot_spells_entries.md
+          - bot_spell_casting_chances: schema/categories/bots/bot_spell_casting_chances.md
+          - bot_stances: schema/categories/bots/bot_stances.md
+          - bot_timers: schema/categories/bots/bot_timers.md
+      - Buyers:
+          - buyer: schema/categories/buyers/buyer.md
+      - Characters:
+          - character_activities: schema/categories/characters/character_activities.md
+          - character_alternate_abilities: schema/categories/characters/character_alternate_abilities.md
+          - character_alt_currency: schema/categories/characters/character_alt_currency.md
+          - character_auras: schema/categories/characters/character_auras.md
+          - character_bandolier: schema/categories/characters/character_bandolier.md
+          - character_bind: schema/categories/characters/character_bind.md
+          - character_buffs: schema/categories/characters/character_buffs.md
+          - character_corpses: schema/categories/characters/character_corpses.md
+          - character_corpse_items: schema/categories/characters/character_corpse_items.md
+          - character_currency: schema/categories/characters/character_currency.md
+          - character_data: schema/categories/characters/character_data.md
+          - character_disciplines: schema/categories/characters/character_disciplines.md
+          - character_enabledtasks: schema/categories/characters/character_enabledtasks.md
+          - character_inspect_messages: schema/categories/characters/character_inspect_messages.md
+          - character_item_recast: schema/categories/characters/character_item_recast.md
+          - character_languages: schema/categories/characters/character_languages.md
+          - character_leadership_abilities: schema/categories/characters/character_leadership_abilities.md
+          - character_material: schema/categories/characters/character_material.md
+          - character_memmed_spells: schema/categories/characters/character_memmed_spells.md
+          - character_pet_buffs: schema/categories/characters/character_pet_buffs.md
+          - character_pet_info: schema/categories/characters/character_pet_info.md
+          - character_pet_inventory: schema/categories/characters/character_pet_inventory.md
+          - character_potionbelt: schema/categories/characters/character_potionbelt.md
+          - character_skills: schema/categories/characters/character_skills.md
+          - character_spells: schema/categories/characters/character_spells.md
+          - character_tasks: schema/categories/characters/character_tasks.md
+          - character_task_lockouts: schema/categories/characters/character_task_lockouts.md
+          - character_tribute: schema/categories/characters/character_tribute.md
+          - char_create_combinations: schema/categories/characters/char_create_combinations.md
+          - char_create_point_allocations: schema/categories/characters/char_create_point_allocations.md
+          - char_recipe_list: schema/categories/characters/char_recipe_list.md
+          - friends: schema/categories/characters/friends.md
+          - keyring: schema/categories/characters/keyring.md
+          - lfguild: schema/categories/characters/lfguild.md
+          - mail: schema/categories/characters/mail.md
+          - player_titlesets: schema/categories/characters/player_titlesets.md
+      - Client Files:
+          - base_data: schema/categories/client-files/base_data.md
+          - db_str: schema/categories/client-files/db_str.md
+          - skill_caps: schema/categories/client-files/skill_caps.md
+      - Data Storage:
+          - data_buckets: schema/categories/data-storage/data_buckets.md
+          - quest_globals: schema/categories/data-storage/quest_globals.md
+      - Doors:
+          - doors: schema/categories/doors/doors.md
+      - Factions:
+          - client_faction_associations: schema/categories/factions/client_faction_associations.md
+          - client_faction_names: schema/categories/factions/client_faction_names.md
+          - client_server_faction_map: schema/categories/factions/client_server_faction_map.md
+          - custom_faction_mappings: schema/categories/factions/custom_faction_mappings.md
+          - faction_base_data: schema/categories/factions/faction_base_data.md
+          - faction_list: schema/categories/factions/faction_list.md
+          - faction_list_mod: schema/categories/factions/faction_list_mod.md
+          - faction_list_mod_prefix: schema/categories/factions/faction_list_mod_prefix.md
+          - faction_list_prefix: schema/categories/factions/faction_list_prefix.md
+          - faction_values: schema/categories/factions/faction_values.md
+          - faction_values_prefix: schema/categories/factions/faction_values_prefix.md
+          - npc_faction_entries_prefix: schema/categories/factions/npc_faction_entries_prefix.md
+          - npc_faction_prefix: schema/categories/factions/npc_faction_prefix.md
+      - Graveyards:
+          - graveyard: schema/categories/graveyards/graveyard.md
+      - Ground Spawns:
+          - ground_spawns: schema/categories/ground-spawns/ground_spawns.md
+      - Groups:
+          - group_id: schema/categories/groups/group_id.md
+          - group_leaders: schema/categories/groups/group_leaders.md
+      - Guilds:
+          - guilds: schema/categories/guilds/guilds.md
+          - guild_bank: schema/categories/guilds/guild_bank.md
+          - guild_ranks: schema/categories/guilds/guild_ranks.md
+          - guild_members: schema/categories/guilds/guild_members.md
+          - guild_relations: schema/categories/guilds/guild_relations.md
+      - Grids:
+          - grid: schema/categories/grids/grid.md
+          - grid_entries: schema/categories/grids/grid_entries.md
+      - Horses:
+          - horses: schema/categories/horses/horses.md
+      - Instances:
+          - instance_list: schema/categories/instances/instance_list.md
+          - instance_list_player: schema/categories/instances/instance_list_player.md
+      - Inventory:
+          - inventory: schema/categories/inventory/inventory.md
+          - inventory_snapshots: schema/categories/inventory/inventory_snapshots.md
+          - inventory_versions: schema/categories/inventory/inventory_versions.md
+      - Items:
+          - items: schema/categories/items/items.md
+          - item_tick: schema/categories/items/item_tick.md
+      - Loginserver:
+          - login_accounts: schema/categories/loginserver/login_accounts.md
+          - login_api_tokens: schema/categories/loginserver/login_api_tokens.md
+          - login_server_admins: schema/categories/loginserver/login_server_admins.md
+          - login_server_list_types: schema/categories/loginserver/login_server_list_types.md
+          - login_world_servers: schema/categories/loginserver/login_world_servers.md
+      - Loot:
+          - global_loot: schema/categories/loot/global_loot.md
+          - lootdrop: schema/categories/loot/lootdrop.md
+          - lootdrop_entries: schema/categories/loot/lootdrop_entries.md
+          - loottable: schema/categories/loot/loottable.md
+          - loottable_entries: schema/categories/loot/loottable_entries.md
+      - Mercenaries:
+          - mercs: schema/categories/mercenaries/mercs.md
+          - merc_armorinfo: schema/categories/mercenaries/merc_armorinfo.md
+          - merc_buffs: schema/categories/mercenaries/merc_buffs.md
+          - merc_inventory: schema/categories/mercenaries/merc_inventory.md
+          - merc_merchant_entries: schema/categories/mercenaries/merc_merchant_entries.md
+          - merc_merchant_templates: schema/categories/mercenaries/merc_merchant_templates.md
+          - merc_merchant_template_entries: schema/categories/mercenaries/merc_merchant_template_entries.md
+          - merc_name_types: schema/categories/mercenaries/merc_name_types.md
+          - merc_npc_types: schema/categories/mercenaries/merc_npc_types.md
+          - merc_spell_lists: schema/categories/mercenaries/merc_spell_lists.md
+          - merc_spell_list_entries: schema/categories/mercenaries/merc_spell_list_entries.md
+          - merc_stance_entries: schema/categories/mercenaries/merc_stance_entries.md
+          - merc_stats: schema/categories/mercenaries/merc_stats.md
+          - merc_subtypes: schema/categories/mercenaries/merc_subtypes.md
+          - merc_templates: schema/categories/mercenaries/merc_templates.md
+          - merc_types: schema/categories/mercenaries/merc_types.md
+          - merc_weaponinfo: schema/categories/mercenaries/merc_weaponinfo.md
+      - Merchants:
+          - merchantlist: schema/categories/merchants/merchantlist.md
+          - merchantlist_temp: schema/categories/merchants/merchantlist_temp.md
+      - NPCs:
+          - npc_emotes: schema/categories/npcs/npc_emotes.md
+          - npc_faction: schema/categories/npcs/npc_faction.md
+          - npc_faction_entries: schema/categories/npcs/npc_faction_entries.md
+          - npc_scale_global_base: schema/categories/npcs/npc_scale_global_base.md
+          - npc_spells: schema/categories/npcs/npc_spells.md
+          - npc_spells_effects: schema/categories/npcs/npc_spells_effects.md
+          - npc_spells_effects_entries: schema/categories/npcs/npc_spells_effects_entries.md
+          - npc_spells_entries: schema/categories/npcs/npc_spells_entries.md
+          - npc_types: schema/categories/npcs/npc_types.md
+          - npc_types_metadata: schema/categories/npcs/npc_types_metadata.md
+          - npc_types_tint: schema/categories/npcs/npc_types_tint.md
+          - proximities: schema/categories/npcs/proximities.md
+      - Objects:
+          - object: schema/categories/objects/object.md
+          - object_contents: schema/categories/objects/object_contents.md
+      - Pets:
+          - pets: schema/categories/pets/pets.md
+          - pets_equipmentset: schema/categories/pets/pets_equipmentset.md
+          - pets_equipmentset_entries: schema/categories/pets/pets_equipmentset_entries.md
+      - Query Server:
+          - qs_merchant_transaction_record: schema/categories/query-server/qs_merchant_transaction_record.md
+          - qs_merchant_transaction_record_entries: schema/categories/query-server/qs_merchant_transaction_record_entries.md
+          - qs_player_aa_rate_hourly: schema/categories/query-server/qs_player_aa_rate_hourly.md
+          - qs_player_delete_record: schema/categories/query-server/qs_player_delete_record.md
+          - qs_player_delete_record_entries: schema/categories/query-server/qs_player_delete_record_entries.md
+          - qs_player_events: schema/categories/query-server/qs_player_events.md
+          - qs_player_handin_record: schema/categories/query-server/qs_player_handin_record.md
+          - qs_player_handin_record_entries: schema/categories/query-server/qs_player_handin_record_entries.md
+          - qs_player_move_record: schema/categories/query-server/qs_player_move_record.md
+          - qs_player_move_record_entries: schema/categories/query-server/qs_player_move_record_entries.md
+          - qs_player_npc_kill_record: schema/categories/query-server/qs_player_npc_kill_record.md
+          - qs_player_npc_kill_record_entries: schema/categories/query-server/qs_player_npc_kill_record_entries.md
+          - qs_player_speech: schema/categories/query-server/qs_player_speech.md
+          - qs_player_trade_record: schema/categories/query-server/qs_player_trade_record.md
+          - qs_player_trade_record_entries: schema/categories/query-server/qs_player_trade_record_entries.md
+      - Raids:
+          - raid_details: schema/categories/raids/raid_details.md
+          - raid_leaders: schema/categories/raids/raid_leaders.md
+          - raid_members: schema/categories/raids/raid_members.md
+      - Rules:
+          - rule_sets: schema/categories/rules/rule_sets.md
+          - rule_values: schema/categories/rules/rule_values.md
+      - Spawns:
+          - respawn_times: schema/categories/spawns/respawn_times.md
+          - spawn2: schema/categories/spawns/spawn2.md
+          - spawnentry: schema/categories/spawns/spawnentry.md
+          - spawngroup: schema/categories/spawns/spawngroup.md
+          - spawn_conditions: schema/categories/spawns/spawn_conditions.md
+          - spawn_condition_values: schema/categories/spawns/spawn_condition_values.md
+          - spawn_events: schema/categories/spawns/spawn_events.md
+      - Spells:
+          - auras: schema/categories/spells/auras.md
+          - blocked_spells: schema/categories/spells/blocked_spells.md
+          - damageshieldtypes: schema/categories/spells/damageshieldtypes.md
+          - spell_buckets: schema/categories/spells/spell_buckets.md
+          - spell_globals: schema/categories/spells/spell_globals.md
+          - spells_new: schema/categories/spells/spells_new.md
+      - Tasks:
+          - completed_tasks: schema/categories/tasks/completed_tasks.md
+          - goallists: schema/categories/tasks/goallists.md
+          - shared_task_activities: schema/categories/tasks/shared_task_activities.md
+          - shared_task_members: schema/categories/tasks/shared_task_members.md
+          - shared_task_state: schema/categories/tasks/shared_task_state.md
+          - task_activities: schema/categories/tasks/task_activities.md
+          - task_replay_groups: schema/categories/tasks/task_replay_groups.md
+          - tasks: schema/categories/tasks/tasks.md
+          - tasksets: schema/categories/tasks/tasksets.md
+      - Timers:
+          - timers: schema/categories/timers/timers.md
+      - Titles:
+          - titles: schema/categories/titles/titles.md
+      - Trader:
+          - trader: schema/categories/trader/trader.md
+          - trader_audit: schema/categories/trader/trader_audit.md
+      - Tradeskills:
+          - fishing: schema/categories/tradeskills/fishing.md
+          - forage: schema/categories/tradeskills/forage.md
+          - tradeskill_recipe: schema/categories/tradeskills/tradeskill_recipe.md
+          - tradeskill_recipe_entries: schema/categories/tradeskills/tradeskill_recipe_entries.md
+      - Traps:
+          - ldon_trap_entries: schema/categories/traps/ldon_trap_entries.md
+          - ldon_trap_templates: schema/categories/traps/ldon_trap_templates.md
+          - traps: schema/categories/traps/traps.md
+      - Tributes:
+          - tributes: schema/categories/tributes/tributes.md
+          - tribute_levels: schema/categories/tributes/tribute_levels.md
+      - Zone:
+          - launcher: schema/categories/zone/launcher.md
+          - launcher_zones: schema/categories/zone/launcher_zones.md
+          - zone: schema/categories/zone/zone.md
+          - zoneserver_auth: schema/categories/zone/zoneserver_auth.md
+          - zone_flags: schema/categories/zone/zone_flags.md
+          - zone_points: schema/categories/zone/zone_points.md
+          - zone_server: schema/categories/zone/zone_server.md
   - Changelog:
-      - '2021': 'changelog/server/2021.md'
-      - '2020': 'changelog/server/2020.md'
-      - '2019': 'changelog/server/2019.md'
-      - '2018': 'changelog/server/2018.md'
-      - '2017': 'changelog/server/2017.md'
-      - '2016': 'changelog/server/2016.md'
-      - '2015': 'changelog/server/2015.md'
-      - '2014': 'changelog/server/2014.md'
-      - '2013': 'changelog/server/2013.md'
-      - '2012': 'changelog/server/2012.md'
-      - '2011': 'changelog/server/2011.md'
-      - '2010': 'changelog/server/2010.md'
-      - '2009': 'changelog/server/2009.md'
-      - '2008': 'changelog/server/2008.md'
-      - '2007': 'changelog/server/2007.md'
-      - '2006': 'changelog/server/2006.md'
-      - '2005': 'changelog/server/2005.md'
-      - '2004': 'changelog/server/2004.md'
-      - '2003': 'changelog/server/2003.md'
+      - "2021": changelog/server/2021.md
+      - "2020": changelog/server/2020.md
+      - "2019": changelog/server/2019.md
+      - "2018": changelog/server/2018.md
+      - "2017": changelog/server/2017.md
+      - "2016": changelog/server/2016.md
+      - "2015": changelog/server/2015.md
+      - "2014": changelog/server/2014.md
+      - "2013": changelog/server/2013.md
+      - "2012": changelog/server/2012.md
+      - "2011": changelog/server/2011.md
+      - "2010": changelog/server/2010.md
+      - "2009": changelog/server/2009.md
+      - "2008": changelog/server/2008.md
+      - "2007": changelog/server/2007.md
+      - "2006": changelog/server/2006.md
+      - "2005": changelog/server/2005.md
+      - "2004": changelog/server/2004.md
+      - "2003": changelog/server/2003.md
