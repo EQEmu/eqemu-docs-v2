@@ -1,8 +1,12 @@
 package config
 
 import (
+	"fmt"
 	"gopkg.in/yaml.v3"
+	"log"
 	"os"
+	"path"
+	"strings"
 )
 
 type MkDocsCfg struct {
@@ -32,9 +36,9 @@ type MkDocsCfg struct {
 	} `yaml:"theme"`
 	MarkdownExtensions []interface{} `yaml:"markdown_extensions"`
 	Nav                []struct {
-		PlayClient     []interface{} `yaml:"Play (Client),omitempty"`
-		Server         []interface{} `yaml:"Server,omitempty"`
-		DatabaseSchema []interface{} `yaml:"Database Schema,omitempty"`
+		PlayClient     []interface{}                    `yaml:"Play (Client),omitempty"`
+		Server         []interface{}                    `yaml:"Server,omitempty"`
+		DatabaseSchema []map[string][]map[string]string `yaml:"Database Schema,omitempty"`
 		Changelog      []struct {
 			Num2003 string `yaml:"2003,omitempty"`
 			Num2004 string `yaml:"2004,omitempty"`
@@ -60,6 +64,8 @@ type MkDocsCfg struct {
 }
 
 func GetMkdocsConfig() (MkDocsCfg, error) {
+	fmt.Printf("Reading [%v]\n", MkDocsConfigFile)
+
 	// read config
 	cfg, err := os.ReadFile(MkDocsConfigFile)
 
@@ -71,4 +77,56 @@ func GetMkdocsConfig() (MkDocsCfg, error) {
 	}
 
 	return configYaml, nil
+}
+
+func GetMkDocsDatabaseConfig() []map[string][]map[string]string {
+	mkdocsCfg, err := GetMkdocsConfig()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// write nav block
+	for i, nav := range mkdocsCfg.Nav {
+		if len(nav.DatabaseSchema) > 0 {
+			return mkdocsCfg.Nav[i].DatabaseSchema
+		}
+	}
+
+	return nil
+}
+
+func GetMkDocsDbSchemaSections() map[string][]string {
+	files := make(map[string][]string, 0)
+	for _, entry := range GetMkDocsDatabaseConfig() {
+		//fmt.Println(entry)
+		for section, i := range entry {
+			for _, v := range i {
+				for _, page := range v {
+					files[section] = append(files[section], page)
+				}
+			}
+		}
+	}
+
+	return files
+}
+
+// GetMkDocsDbSchemaNavTables returns simple list of defined tables in mkdocs nav
+// map[string]bool{
+// "object":                                 true,
+// "login_api_tokens":                       true,
+// "keyring":                                true,
+// "altadv_vars":                            true,
+// "data_buckets":                           true,
+// "login_world_servers":                    true,
+func GetMkDocsDbSchemaNavTables() map[string]bool {
+	var tables = map[string]bool{}
+	for _, pages := range GetMkDocsDbSchemaSections() {
+		for _, page := range pages {
+			table := path.Base(page)
+			table = strings.ReplaceAll(table, ".md", "")
+			tables[table] = true
+		}
+	}
+	return tables
 }

@@ -107,3 +107,39 @@ func (i *Instance) GetSchema() (map[string][]DbSchemaRowResult, error) {
 
 	return tableColumnResponses, nil
 }
+
+func (i *Instance) GetSchemaTableNames() ([]string, error) {
+	rows, err := i.db.Query(
+		fmt.Sprintf(
+			`
+		SELECT
+		  TABLE_NAME
+		FROM
+		  INFORMATION_SCHEMA.COLUMNS
+		WHERE
+		  TABLE_SCHEMA = '%v' 
+		GROUP BY TABLE_NAME;
+	  `, os.Getenv("DB_NAME"),
+		),
+	)
+	if err != nil {
+		return nil, err
+	}
+
+	tables := []string{}
+
+	defer rows.Close()
+	for rows.Next() {
+		var row DbSchemaRowResult
+		err = rows.Scan(
+			&row.Table,
+		)
+		if err != nil {
+			return nil, err
+		}
+
+		tables = append(tables, row.Table)
+	}
+
+	return tables, nil
+}

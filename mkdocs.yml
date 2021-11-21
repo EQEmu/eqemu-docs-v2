@@ -340,7 +340,6 @@ nav:
           - Zone List: categories/zones/zone-list.md
           - Zone Types: categories/zones/zone-types.md
   - Database Schema:
-      - schema/README.md
       - AAs:
           - aa_ability: schema/categories/aas/aa_ability.md
           - aa_actions: schema/categories/aas/aa_actions.md

@@ -3327,6 +3327,63 @@ character_enabledtasks:
     description: '[Task Identifier](../../../schema/categories/tasks/tasks.md)'
     nullable: "NO"
     ordinal_position: 2
+character_exp_modifiers:
+  aa_modifier:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  exp_modifier:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+character_expedition_lockouts:
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  duration:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  expedition_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  expire_time:
+    dataType: datetime
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  from_expedition_uuid:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
 character_inspect_messages:
   id:
     dataType: int
@@ -3338,6 +3395,52 @@ character_inspect_messages:
     description: Inspect Message
     nullable: "NO"
     ordinal_position: 2
+character_instance_safereturns:
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  instance_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  instance_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  safe_heading:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
+  safe_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  safe_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  safe_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  safe_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
 character_item_recast:
   id:
     dataType: int
@@ -3535,6 +3638,11 @@ character_pet_info:
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 5
+  taunting:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
 character_pet_inventory:
   char_id:
     dataType: int
@@ -3609,6 +3717,32 @@ character_spells:
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
+character_task_timers:
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  expire_time:
+    dataType: datetime
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  task_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  timer_type:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
 character_tasks:
   acceptedtime:
     dataType: int
@@ -4024,6 +4158,79 @@ command_settings:
     description: Unique Command Identifier
     nullable: "NO"
     ordinal_position: 1
+completed_shared_task_activity_state:
+  activity_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  completed_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  done_count:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  shared_task_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  updated_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+completed_shared_task_members:
+  character_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  is_leader:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  shared_task_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+completed_shared_tasks:
+  accepted_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  completion_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  expire_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_locked:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  task_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
 completed_tasks:
   activityid:
     dataType: int
@@ -4045,6 +4252,27 @@ completed_tasks:
     description: '[Task Identifier](tasks.md)'
     nullable: "NO"
     ordinal_position: 3
+content_flags:
+  enabled:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  flag_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  notes:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
 custom_faction_mappings:
   new_faction:
     dataType: int
@@ -4137,17 +4365,27 @@ doors:
   buffer:
     dataType: float
     description: Unused
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 29
   client_version_mask:
     dataType: int
     description: '[Client Version Mask](../../../../categories/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 30
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 34
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 35
   dest_heading:
     dataType: float
     description: Destination Heading Coordinate
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 25
   dest_instance:
     dataType: int
@@ -4157,17 +4395,17 @@ doors:
   dest_x:
     dataType: float
     description: Destination X Coordinate
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 22
   dest_y:
     dataType: float
     description: Destination Y Coordinate
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 23
   dest_z:
     dataType: float
     description: Destination Z Coordinate
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 24
   dest_zone:
     dataType: varchar
@@ -4212,12 +4450,12 @@ doors:
   incline:
     dataType: int
     description: Incline
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 27
   invert_state:
     dataType: int
     description: 'This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](../../../../categories/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn.'
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 26
   is_ldon_door:
     dataType: smallint
@@ -4234,6 +4472,16 @@ doors:
     description: 'Lockpicking Skill Required: -1 = Unpickable'
     nullable: "NO"
     ordinal_position: 12
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 33
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 32
   name:
     dataType: varchar
     description: This is the name of the door, such as 'IT11161' or 'POPCREATE501', for names of objects you can see.
@@ -4289,6 +4537,133 @@ doors:
     description: '[Zone Short Name](../../../../categories/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 3
+dynamic_zone_members:
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  dynamic_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+dynamic_zones:
+  compass_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
+  compass_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 11
+  compass_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
+  compass_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
+  has_zone_in:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 22
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  instance_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  leader_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  max_players:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  min_players:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  safe_return_heading:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
+  safe_return_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
+  safe_return_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
+  safe_return_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
+  safe_return_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
+  type:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  uuid:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  zone_in_heading:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 21
+  zone_in_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
+  zone_in_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 19
+  zone_in_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 20
 eqtime:
   day:
     dataType: tinyint
@@ -4371,6 +4746,58 @@ eventlog:
     description: TIme Timestamp
     nullable: "NO"
     ordinal_position: 7
+expedition_lockouts:
+  duration:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  expedition_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  expire_time:
+    dataType: datetime
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  from_expedition_uuid:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+expeditions:
+  add_replay_on_join:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  dynamic_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_locked:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
 faction_base_data:
   client_faction_id:
     dataType: smallint
@@ -4500,11 +4927,31 @@ fishing:
     description: 'Chance: 0 = Never, 100 = Always'
     nullable: "NO"
     ordinal_position: 5
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
   id:
     dataType: int
     description: Unique Fishing Identifier
     nullable: "NO"
     ordinal_position: 1
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
   npc_chance:
     dataType: int
     description: 'NPC Chance: 0 = Never, 100 = Always'
@@ -4536,6 +4983,16 @@ forage:
     description: 'Chance: 0 = Never, 100 = Always'
     nullable: "NO"
     ordinal_position: 5
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
   id:
     dataType: int
     description: Unique Forage Identifier
@@ -4546,6 +5003,16 @@ forage:
     description: Level
     nullable: "NO"
     ordinal_position: 4
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
   zoneid:
     dataType: int
     description: '[Zone Identifier](../../../../categories/zones/zone-list)'
@@ -4578,6 +5045,16 @@ global_loot:
     description: '[Class](../../../../categories/player/class-list), multiple classes supported if \'
     nullable: "YES"
     ordinal_position: 10
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 16
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 17
   description:
     dataType: varchar
     description: Description
@@ -4603,11 +5080,21 @@ global_loot:
     description: '[Loottable Identifier](loottable.md)'
     nullable: "NO"
     ordinal_position: 3
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
   max_level:
     dataType: int
     description: Maximum Level
     nullable: "NO"
     ordinal_position: 6
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
   min_level:
     dataType: int
     description: Minimum Level
@@ -4764,6 +5251,16 @@ ground_spawns:
     description: Comment
     nullable: "NO"
     ordinal_position: 13
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 17
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 18
   heading:
     dataType: float
     description: Heading Coordinate
@@ -4784,6 +5281,11 @@ ground_spawns:
     description: Max Allowed
     nullable: "NO"
     ordinal_position: 12
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
   max_x:
     dataType: float
     description: Maximum X Coordinate
@@ -4799,6 +5301,11 @@ ground_spawns:
     description: Maximum Z Coordinate
     nullable: "NO"
     ordinal_position: 6
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
   min_x:
     dataType: float
     description: Minimum X Coordinate
@@ -7214,11 +7721,31 @@ logsys_categories:
     nullable: "YES"
     ordinal_position: 5
 lootdrop:
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
   id:
     dataType: int
     description: Unique Lootdrop Identifier
     nullable: "NO"
     ordinal_position: 1
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
   name:
     dataType: varchar
     description: Name
@@ -7268,12 +7795,42 @@ lootdrop_entries:
     description: Multiplier
     nullable: "NO"
     ordinal_position: 9
+  npc_max_level:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 11
+  npc_min_level:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
+  trivial_max_level:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  trivial_min_level:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
 loottable:
   avgcoin:
     dataType: int
     description: Average Coin in Copper
     nullable: "NO"
     ordinal_position: 5
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
   done:
     dataType: tinyint
     description: 'Done: 0 = False, 1 = True'
@@ -7284,11 +7841,21 @@ loottable:
     description: Unique Loottable Identifier
     nullable: "NO"
     ordinal_position: 1
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
   maxcash:
     dataType: int
     description: Maximum Cash in Copper
     nullable: "NO"
     ordinal_position: 4
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
   mincash:
     dataType: int
     description: Minimum Cash in Copper
@@ -7906,6 +8473,16 @@ merchantlist:
     description: '[Classes Required](../../../../categories/player/class-list)'
     nullable: "NO"
     ordinal_position: 7
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
   faction_required:
     dataType: smallint
     description: Faction Required
@@ -7921,11 +8498,21 @@ merchantlist:
     description: Level Required
     nullable: "NO"
     ordinal_position: 5
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
   merchantid:
     dataType: int
     description: Merchant Identifier
     nullable: "NO"
     ordinal_position: 1
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
   probability:
     dataType: int
     description: 'Probability: 0 = Never, 100 = Always'
@@ -8749,6 +9336,11 @@ npc_types:
     description: 'Exclude: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 80
+  exp_mod:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 123
   face:
     dataType: int
     description: Face
@@ -9291,6 +9883,16 @@ object:
     description: Charges
     nullable: "NO"
     ordinal_position: 9
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 29
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 30
   display_name:
     dataType: varchar
     description: Display Name
@@ -9316,6 +9918,16 @@ object:
     description: '[Item Identifier](../../../schema/categories/items/items.md)'
     nullable: "NO"
     ordinal_position: 8
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 28
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 27
   objectname:
     dataType: varchar
     description: Object Name
@@ -9635,6 +10247,42 @@ pets:
     description: '[NPC Type Name](../../../schema/categories/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 1
+pets_beastlord_data:
+  face:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  gender:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  helm_texture:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  pet_race:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  player_race:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  size_modifier:
+    dataType: float
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  texture:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
 pets_equipmentset:
   nested_set:
     dataType: int
@@ -10637,6 +11285,176 @@ saylink:
     description: Phrase
     nullable: "NO"
     ordinal_position: 2
+server_scheduled_events:
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 16
+  cron_expression:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 15
+  day_end:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  day_start:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  deleted_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 17
+  description:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  event_data:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  event_type:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  hour_end:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  hour_start:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  minute_end:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  minute_start:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  month_end:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
+  month_start:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  year_end:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 14
+  year_start:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+shared_task_activity_state:
+  activity_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  completed_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  done_count:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  shared_task_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  updated_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+shared_task_dynamic_zones:
+  dynamic_zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  shared_task_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+shared_task_members:
+  character_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  is_leader:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  shared_task_id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+shared_tasks:
+  accepted_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  completion_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  expire_time:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_locked:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  task_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
 sharedbank:
   acctid:
     dataType: int
@@ -10853,6 +11671,16 @@ spawn2:
     description: Condition Value
     nullable: "NO"
     ordinal_position: 14
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 19
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 20
   enabled:
     dataType: tinyint
     description: 'Enabled: 0 = False, 1 = True'
@@ -10868,6 +11696,21 @@ spawn2:
     description: Unique Spawn2 Entry Identifier
     nullable: "NO"
     ordinal_position: 1
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
+  path_when_zone_idle:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
   pathgrid:
     dataType: int
     description: '[Path Grid Identifier](../../../schema/categories/grids/grid.md)'
@@ -12086,6 +12929,16 @@ spells_new:
     description: Push Up
     nullable: "NO"
     ordinal_position: 13
+  pvp_duration:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 182
+  pvp_duration_cap:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 183
   pvpresistbase:
     dataType: int
     description: PVP Resist Base
@@ -12242,11 +13095,31 @@ start_zones:
     description: Bind Z Coordinate
     nullable: "NO"
     ordinal_position: 14
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 18
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 19
   heading:
     dataType: float
     description: Heading Coordinate
     nullable: "NO"
     ordinal_position: 4
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
   player_choice:
     dataType: int
     description: Player Choice
@@ -12303,6 +13176,16 @@ starting_items:
     description: '[Class](../../../../categories/player/class-list): 0 = All'
     nullable: "NO"
     ordinal_position: 3
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
   deityid:
     dataType: int
     description: '[Deity](../../../../categories/player/deity-list): 0 = Alll'
@@ -12328,6 +13211,16 @@ starting_items:
     description: '[Item Identifier](../../../schema/categories/items/items.md)'
     nullable: "NO"
     ordinal_position: 6
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 11
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
   race:
     dataType: int
     description: '[Race](../../../../categories/npc/race-list): 0 = All'
@@ -12455,11 +13348,26 @@ tasks:
     description: Unique Task Identifier
     nullable: "NO"
     ordinal_position: 1
+  level_spread:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
+  max_players:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
   maxlevel:
     dataType: tinyint
     description: Maximum Level
     nullable: "NO"
     ordinal_position: 15
+  min_players:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
   minlevel:
     dataType: tinyint
     description: Minimum Level
@@ -12470,11 +13378,31 @@ tasks:
     description: 'Repeatable: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 19
+  replay_timer_seconds:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 22
+  request_timer_seconds:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 23
   reward:
     dataType: varchar
     description: Reward Description
     nullable: "NO"
     ordinal_position: 7
+  reward_ebon_crystals:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
+  reward_radiant_crystals:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
   rewardid:
     dataType: int
     description: '[Reward Item Identifier](../../../schema/categories/items/items.md)'
@@ -12608,6 +13536,68 @@ titles:
     description: Title Set Identifier
     nullable: "NO"
     ordinal_position: 14
+tool_game_objects:
+  file_from:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_global:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  object_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  zoneid:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  zonesn:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+tool_gearup_armor_sets:
+  class:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 1
+  expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  item_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  level:
+    dataType: smallint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  score:
+    dataType: mediumint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  slot:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
 trader:
   char_id:
     dataType: int
@@ -12676,6 +13666,16 @@ trader_audit:
     nullable: "NO"
     ordinal_position: 7
 tradeskill_recipe:
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 14
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 15
   enabled:
     dataType: tinyint
     description: 'Enabled: 0 = False, 1 = True'
@@ -12686,6 +13686,16 @@ tradeskill_recipe:
     description: Unique Tradeskill Recipe Identifier
     nullable: "NO"
     ordinal_position: 1
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
   must_learn:
     dataType: tinyint
     description: 'Must Learn: 0 = False, 1 = True'
@@ -12778,6 +13788,16 @@ traps:
     description: 'Chance: 0 = None, 100 = Always'
     nullable: "NO"
     ordinal_position: 7
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 24
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 25
   despawn_when_triggered:
     dataType: tinyint
     description: 'Despawn When Triggered: 0 = False, 1 = True'
@@ -12813,6 +13833,11 @@ traps:
     description: Level
     nullable: "NO"
     ordinal_position: 15
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 23
   maxzdiff:
     dataType: float
     description: Max Z Difference
@@ -12823,6 +13848,11 @@ traps:
     description: Message
     nullable: "NO"
     ordinal_position: 13
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 22
   radius:
     dataType: float
     description: Trap Radius
@@ -12993,6 +14023,16 @@ zone:
     description: 'Cast Outdoors: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 57
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 90
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 91
   expansion:
     dataType: tinyint
     description: '[Expansion](../../../../categories/operation/expansion-list)'
@@ -13178,6 +14218,11 @@ zone:
     description: Instance Type
     nullable: "NO"
     ordinal_position: 59
+  lava_damage:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 93
   long_name:
     dataType: text
     description: Long Name
@@ -13188,6 +14233,11 @@ zone:
     description: Map File Name
     nullable: "YES"
     ordinal_position: 5
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 89
   max_movement_update_range:
     dataType: int
     description: Max Movement Update Range
@@ -13203,6 +14253,16 @@ zone:
     description: Maximum Clipping Distance
     nullable: "NO"
     ordinal_position: 21
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 88
+  min_lava_damage:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 94
   min_level:
     dataType: tinyint
     description: Minimum Level
@@ -13278,6 +14338,11 @@ zone:
     description: '[Ruleset Identifier](../../../schema/categories/rules/rule_sets.md)'
     nullable: "NO"
     ordinal_position: 17
+  safe_heading:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
   safe_x:
     dataType: float
     description: Safe X Coordinate
@@ -13378,6 +14443,11 @@ zone:
     description: Bottom Z to represent when the player is under the world
     nullable: "NO"
     ordinal_position: 19
+  underworld_teleport_index:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 92
   version:
     dataType: tinyint
     description: Version
@@ -13425,16 +14495,46 @@ zone_points:
     description: '[Client Version Mask](../../../../categories/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 17
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 20
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 21
   heading:
     dataType: float
     description: Heading Coordinate
     nullable: "NO"
     ordinal_position: 8
+  height:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 23
   id:
     dataType: int
     description: Unique Zone Point Identifier
     nullable: "NO"
     ordinal_position: 1
+  is_virtual:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 22
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 19
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
   number:
     dataType: smallint
     description: Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in \(during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp\).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin \(erudnext\).
@@ -13475,6 +14575,11 @@ zone_points:
     description: Version
     nullable: "NO"
     ordinal_position: 3
+  width:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 24
   x:
     dataType: float
     description: X Coordinate
