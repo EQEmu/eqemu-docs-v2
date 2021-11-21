@@ -1,4 +1,4 @@
-# faction\_list
+# faction_list
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

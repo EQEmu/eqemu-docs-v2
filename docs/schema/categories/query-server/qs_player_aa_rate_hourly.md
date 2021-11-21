@@ -1,8 +1,8 @@
-# qs\_player\_aa\_rate\_hourly
+# qs_player_aa_rate_hourly
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
-| hour\_time | int | Hour Time UNIX Timestamp |
-| aa\_count | varchar | AA Count |
+| char_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| hour_time | int | Hour Time UNIX Timestamp |
+| aa_count | varchar | AA Count |
 

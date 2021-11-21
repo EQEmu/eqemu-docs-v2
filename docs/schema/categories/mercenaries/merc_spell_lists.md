@@ -1,9 +1,9 @@
-# merc\_spell\_lists
+# merc_spell_lists
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_spell\_list\_id | int | Unique Mercenary Spell List Identifier |
-| class\_id | int | [Class Identifier](../../../../categories/player/class-list) |
-| proficiency\_id | tinyint | Proficiency Identifier |
+| merc_spell_list_id | int | Unique Mercenary Spell List Identifier |
+| class_id | int | [Class Identifier](../../../../categories/player/class-list) |
+| proficiency_id | tinyint | Proficiency Identifier |
 | name | varchar | Name |
 

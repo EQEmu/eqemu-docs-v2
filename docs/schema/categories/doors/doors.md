@@ -7,9 +7,9 @@
 | zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
 | version | smallint | Zone Version: -1 For All |
 | name | varchar | This is the name of the door, such as 'IT11161' or 'POPCREATE501', for names of objects you can see. |
-| pos\_y | float | Door Y Coordinate |
-| pos\_x | float | Door X Coordinate |
-| pos\_z | float | Door Z Coordinate |
+| pos_y | float | Door Y Coordinate |
+| pos_x | float | Door X Coordinate |
+| pos_z | float | Door Z Coordinate |
 | heading | float | Door Heading Coordinate |
 | opentype | smallint | [Door Open Type](../../../../categories/zones/door-open-types) |
 | guild | smallint | [Guild Identifier](../../../schema/categories/guilds/guilds.md) |
@@ -18,19 +18,19 @@
 | nokeyring | tinyint | No Key Ring: 0 = False, 1 = True |
 | triggerdoor | smallint | Trigger Door: 0 For Current Door or use a Unique Door Identifier |
 | triggertype | smallint | Trigger Type: 1 = Open a Type 255 door, 255 = Will Not Open |
-| disable\_timer | tinyint | Disable Timer |
+| disable_timer | tinyint | Disable Timer |
 | doorisopen | smallint | Door Is Open: 0 = False, 1 = True |
-| door\_param | int | Door Parameter |
-| dest\_zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| dest\_instance | int | [Destination Instance](../../../schema/categories/instances/instance_list.md) |
-| dest\_x | float | Destination X Coordinate |
-| dest\_y | float | Destination Y Coordinate |
-| dest\_z | float | Destination Z Coordinate |
-| dest\_heading | float | Destination Heading Coordinate |
-| invert\_state | int | This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](../../../../categories/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn. |
+| door_param | int | Door Parameter |
+| dest_zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
+| dest_instance | int | [Destination Instance](../../../schema/categories/instances/instance_list.md) |
+| dest_x | float | Destination X Coordinate |
+| dest_y | float | Destination Y Coordinate |
+| dest_z | float | Destination Z Coordinate |
+| dest_heading | float | Destination Heading Coordinate |
+| invert_state | int | This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](../../../../categories/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn. |
 | incline | int | Incline |
 | size | smallint | Size |
 | buffer | float | Unused |
-| client\_version\_mask | int | [Client Version Mask](../../../../categories/player/client-version-bitmasks) |
-| is\_ldon\_door | smallint | Is LDoN Door: 0 = False, 1 = True |
+| client_version_mask | int | [Client Version Mask](../../../../categories/player/client-version-bitmasks) |
+| is_ldon_door | smallint | Is LDoN Door: 0 = False, 1 = True |
 

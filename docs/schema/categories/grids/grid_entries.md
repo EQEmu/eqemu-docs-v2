@@ -1,4 +1,4 @@
-# grid\_entries
+# grid_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

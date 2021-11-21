@@ -1,38 +1,38 @@
-# adventure\_template
+# adventure_template
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Adventure Identifier](adventure_details.md) |
 | zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| zone\_version | tinyint | Zone Version |
-| is\_hard | tinyint | Hard: 0 = False, 1 = True |
-| is\_raid | tinyint | Raid: 0 = False, 1 = True |
-| min\_level | tinyint | Minimum Level |
-| max\_level | tinyint | Maximum Level |
+| zone_version | tinyint | Zone Version |
+| is_hard | tinyint | Hard: 0 = False, 1 = True |
+| is_raid | tinyint | Raid: 0 = False, 1 = True |
+| min_level | tinyint | Minimum Level |
+| max_level | tinyint | Maximum Level |
 | type | tinyint | Type |
-| type\_data | int | Type Data |
-| type\_count | smallint | Type Count |
-| assa\_x | float | Assassination X Coordinate |
-| assa\_y | float | Assassination Y Coordinate |
-| assa\_z | float | Assassination Z Coordinate |
-| assa\_h | float | Assassination Heading Coordinate |
+| type_data | int | Type Data |
+| type_count | smallint | Type Count |
+| assa_x | float | Assassination X Coordinate |
+| assa_y | float | Assassination Y Coordinate |
+| assa_z | float | Assassination Z Coordinate |
+| assa_h | float | Assassination Heading Coordinate |
 | text | varchar | Text |
 | duration | int | Duration |
-| zone\_in\_time | int | Zone In Duration |
-| win\_points | smallint | LDoN Points for Winning |
-| lose\_points | smallint | LDoN Points for Losing |
+| zone_in_time | int | Zone In Duration |
+| win_points | smallint | LDoN Points for Winning |
+| lose_points | smallint | LDoN Points for Losing |
 | theme | tinyint | [LDoN Theme](../../../../categories/zones/ldon-themes) |
-| zone\_in\_zone\_id | smallint | [Zone In Zone Identifier](../../../../categories/zones/zone-list) |
-| zone\_in\_x | float | Zone In X Coordinate |
-| zone\_in\_y | float | Zone In Y Coordinate |
-| zone\_in\_object\_id | smallint | Zone In Object Identifier |
-| dest\_x | float | Destination X Coordinate |
-| dest\_y | float | Destination Y Coordinate |
-| dest\_z | float | Destination Z Coordinate |
-| dest\_h | float | Destination Heading Coordinate |
-| graveyard\_zone\_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
-| graveyard\_x | float | Graveyard X Coordinate |
-| graveyard\_y | float | Graveyard Y Coordinate |
-| graveyard\_z | float | Graveyard Z Coordinate |
-| graveyard\_radius | float | Graveyard Radius |
+| zone_in_zone_id | smallint | [Zone In Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_in_x | float | Zone In X Coordinate |
+| zone_in_y | float | Zone In Y Coordinate |
+| zone_in_object_id | smallint | Zone In Object Identifier |
+| dest_x | float | Destination X Coordinate |
+| dest_y | float | Destination Y Coordinate |
+| dest_z | float | Destination Z Coordinate |
+| dest_h | float | Destination Heading Coordinate |
+| graveyard_zone_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| graveyard_x | float | Graveyard X Coordinate |
+| graveyard_y | float | Graveyard Y Coordinate |
+| graveyard_z | float | Graveyard Z Coordinate |
+| graveyard_radius | float | Graveyard Radius |
 

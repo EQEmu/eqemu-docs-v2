@@ -1,4 +1,4 @@
-# character\_currency
+# character_currency
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -7,16 +7,16 @@
 | gold | int | Gold |
 | silver | int | Silver |
 | copper | int | Copper |
-| platinum\_bank | int | Banked Platinum |
-| gold\_bank | int | Banked Gold |
-| silver\_bank | int | Banked Silver |
-| copper\_bank | int | Banked Copper |
-| platinum\_cursor | int | Cursor Platinum |
-| gold\_cursor | int | Cursor Gold |
-| silver\_cursor | int | Cursor Silver |
-| copper\_cursor | int | Cursor Copper |
-| radiant\_crystals | int | Radiant Crystals |
-| career\_radiant\_crystals | int | Career Radiant Crystals |
-| ebon\_crystals | int | Ebon Crystals |
-| career\_ebon\_crystals | int | Career Ebon Crystals |
+| platinum_bank | int | Banked Platinum |
+| gold_bank | int | Banked Gold |
+| silver_bank | int | Banked Silver |
+| copper_bank | int | Banked Copper |
+| platinum_cursor | int | Cursor Platinum |
+| gold_cursor | int | Cursor Gold |
+| silver_cursor | int | Cursor Silver |
+| copper_cursor | int | Cursor Copper |
+| radiant_crystals | int | Radiant Crystals |
+| career_radiant_crystals | int | Career Radiant Crystals |
+| ebon_crystals | int | Ebon Crystals |
+| career_ebon_crystals | int | Career Ebon Crystals |
 

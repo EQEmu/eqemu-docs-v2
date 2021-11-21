@@ -1,4 +1,4 @@
-# merchantlist\_temp
+# merchantlist_temp
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

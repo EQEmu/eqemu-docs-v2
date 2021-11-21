@@ -1,10 +1,10 @@
-# bot\_pet\_buffs
+# bot_pet_buffs
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| pet\_buffs\_index | int | Unique Bot Pet Buffs Identifier |
-| pets\_index | int | [Bot Pet Identifier](bot_pets.md) |
-| spell\_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
-| caster\_level | int | Caster Level |
+| pet_buffs_index | int | Unique Bot Pet Buffs Identifier |
+| pets_index | int | [Bot Pet Identifier](bot_pets.md) |
+| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| caster_level | int | Caster Level |
 | duration | int | Duration of buff |
 

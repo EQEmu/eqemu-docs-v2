@@ -1,4 +1,4 @@
-# merc\_buffs
+# merc_buffs
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -15,10 +15,10 @@
 | HitCount | int | Hit Count |
 | MeleeRune | int | Melee Rune |
 | MagicRune | int | Magic Rune |
-| dot\_rune | int | Damage Over Time Rune |
-| caston\_x | int | Cast On X Coordinate |
+| dot_rune | int | Damage Over Time Rune |
+| caston_x | int | Cast On X Coordinate |
 | Persistent | tinyint | Persistent: 0 = False, 1 = True |
-| caston\_y | int | Cast On Y Coordinate |
-| caston\_z | int | Cast On Z Coordinate |
+| caston_y | int | Cast On Y Coordinate |
+| caston_z | int | Cast On Z Coordinate |
 | ExtraDIChance | int | Extra DI Chance |
 

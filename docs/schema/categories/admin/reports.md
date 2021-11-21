@@ -5,5 +5,5 @@
 | id | int | Unique Report Identifier |
 | name | varchar | Name |
 | reported | varchar | Reported |
-| reported\_text | text | Reported Text |
+| reported_text | text | Reported Text |
 

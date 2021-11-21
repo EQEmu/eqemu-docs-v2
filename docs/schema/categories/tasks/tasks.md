@@ -5,7 +5,7 @@
 | id | int | Unique Task Identifier |
 | type | tinyint | [Task Type](../../../../categories/task-system-guide/task-types) |
 | duration | int | Duration |
-| duration\_code | tinyint | [Duration Code](../../../../categories/task-system-guide/task-duration-codes) |
+| duration_code | tinyint | [Duration Code](../../../../categories/task-system-guide/task-duration-codes) |
 | title | varchar | Title |
 | description | text | Description |
 | reward | varchar | Reward Description |
@@ -16,6 +16,6 @@
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |
 | repeatable | tinyint | Repeatable: 0 = False, 1 = True |
-| faction\_reward | int | Faction Reward |
-| completion\_emote | varchar | Completion Emote |
+| faction_reward | int | Faction Reward |
+| completion_emote | varchar | Completion Emote |
 

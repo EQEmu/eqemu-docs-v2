@@ -13,8 +13,8 @@
 | respawntime | int | Respawn Time in Seconds |
 | variance | int | Variance in Seconds |
 | pathgrid | int | [Path Grid Identifier](../../../schema/categories/grids/grid.md) |
-| \_condition | mediumint | Condition |
-| cond\_value | mediumint | Condition Value |
+| _condition | mediumint | Condition |
+| cond_value | mediumint | Condition Value |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
 | animation | tinyint | [Animation](../../../../categories/npc/npc-animation-types) |
 

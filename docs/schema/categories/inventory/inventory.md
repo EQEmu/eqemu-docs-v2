@@ -14,8 +14,8 @@
 | augslot5 | mediumint | Augment Slot 5 |
 | augslot6 | mediumint | Augment Slot 6 |
 | instnodrop | tinyint | No Drop: 0 = True, 1 = False |
-| custom\_data | text | Custom Data |
+| custom_data | text | Custom Data |
 | ornamenticon | int | Ornamentation Icon |
 | ornamentidfile | int | Ornamentation Texture |
-| ornament\_hero\_model | int | Ornamentation Hero's Forge Model |
+| ornament_hero_model | int | Ornamentation Hero's Forge Model |
 

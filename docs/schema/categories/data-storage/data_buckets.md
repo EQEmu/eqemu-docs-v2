@@ -1,4 +1,4 @@
-# data\_buckets
+# data_buckets
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

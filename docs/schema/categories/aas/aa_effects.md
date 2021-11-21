@@ -1,4 +1,4 @@
-# aa\_effects
+# aa_effects
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

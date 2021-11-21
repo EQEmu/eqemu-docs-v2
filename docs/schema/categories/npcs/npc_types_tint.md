@@ -1,9 +1,9 @@
-# npc\_types\_tint
+# npc_types_tint
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique NPC Type Tint Identifier |
-| tint\_set\_name | text | Tint Set Name |
+| tint_set_name | text | Tint Set Name |
 | red1h | tinyint | Red for Helmet: 0 = None, 255 = Max |
 | grn1h | tinyint | Green for Helmet: 0 = None, 255 = Max |
 | blu1h | tinyint | Blue for Helmet: 0 = None, 255 = Max |

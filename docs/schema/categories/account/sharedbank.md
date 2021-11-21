@@ -12,5 +12,5 @@
 | augslot4 | mediumint | Augment Slot 4 |
 | augslot5 | mediumint | Augment Slot 5 |
 | augslot6 | mediumint | Augment Slot 6 |
-| custom\_data | text | Custom Data |
+| custom_data | text | Custom Data |
 

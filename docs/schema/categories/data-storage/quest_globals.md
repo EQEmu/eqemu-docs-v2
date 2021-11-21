@@ -1,4 +1,4 @@
-# quest\_globals
+# quest_globals
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

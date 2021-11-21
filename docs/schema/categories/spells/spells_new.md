@@ -1,51 +1,51 @@
-# spells\_new
+# spells_new
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spell Identifier |
 | name | varchar | Name |
-| player\_1 | varchar | Player\_1 |
-| teleport\_zone | varchar | The zone you are teleporting to or the [NPC Name](../../../schema/categories/npcs/npc_types.md) you want to spawn. |
-| you\_cast | varchar | The message sent to others when you cast the spell. |
-| other\_casts | varchar | The message seen when someone around you casts the spell. |
-| cast\_on\_you | varchar | The message received when the spell is cast on you. |
-| cast\_on\_other | varchar | The message recieved when the spell is cast on another. |
-| spell\_fades | varchar | The message recieved when the spell fades. |
+| player_1 | varchar | Player_1 |
+| teleport_zone | varchar | The zone you are teleporting to or the [NPC Name](../../../schema/categories/npcs/npc_types.md) you want to spawn. |
+| you_cast | varchar | The message sent to others when you cast the spell. |
+| other_casts | varchar | The message seen when someone around you casts the spell. |
+| cast_on_you | varchar | The message received when the spell is cast on you. |
+| cast_on_other | varchar | The message recieved when the spell is cast on another. |
+| spell_fades | varchar | The message recieved when the spell fades. |
 | range | int | Range |
 | aoerange | int | Area of Effect Range |
 | pushback | int | Push Back |
 | pushup | int | Push Up |
-| cast\_time | int | Cast Time in Milliseconds |
-| recovery\_time | int | Recovery Time in Seconds |
-| recast\_time | int | Recast Time in Seconds |
+| cast_time | int | Cast Time in Milliseconds |
+| recovery_time | int | Recovery Time in Seconds |
+| recast_time | int | Recast Time in Seconds |
 | buffdurationformula | int | [Buff Duration Formula](../../../../categories/spells/buff-duration-formulas) |
 | buffduration | int | Buff Duration |
 | AEDuration | int | Area of Effect Duration |
 | mana | int | Mana Cost |
-| effect\_base\_value1 | int | Effect Base Value 1 |
-| effect\_base\_value2 | int | Effect Base Value 2 |
-| effect\_base\_value3 | int | Effect Base Value 3 |
-| effect\_base\_value4 | int | Effect Base Value 4 |
-| effect\_base\_value5 | int | Effect Base Value 5 |
-| effect\_base\_value6 | int | Effect Base Value 6 |
-| effect\_base\_value7 | int | Effect Base Value 7 |
-| effect\_base\_value8 | int | Effect Base Value 8 |
-| effect\_base\_value9 | int | Effect Base Value 9 |
-| effect\_base\_value10 | int | Effect Base Value 10 |
-| effect\_base\_value11 | int | Effect Base Value 11 |
-| effect\_base\_value12 | int | Effect Base Value 12 |
-| effect\_limit\_value1 | int | Effect Limit Value 1 |
-| effect\_limit\_value2 | int | Effect Limit Value 2 |
-| effect\_limit\_value3 | int | Effect Limit Value 3 |
-| effect\_limit\_value4 | int | Effect Limit Value 4 |
-| effect\_limit\_value5 | int | Effect Limit Value 5 |
-| effect\_limit\_value6 | int | Effect Limit Value 6 |
-| effect\_limit\_value7 | int | Effect Limit Value 7 |
-| effect\_limit\_value8 | int | Effect Limit Value 8 |
-| effect\_limit\_value9 | int | Effect Limit Value 9 |
-| effect\_limit\_value10 | int | Effect Limit Value 10 |
-| effect\_limit\_value11 | int | Effect Limit Value 11 |
-| effect\_limit\_value12 | int | Effect Limit Value 12 |
+| effect_base_value1 | int | Effect Base Value 1 |
+| effect_base_value2 | int | Effect Base Value 2 |
+| effect_base_value3 | int | Effect Base Value 3 |
+| effect_base_value4 | int | Effect Base Value 4 |
+| effect_base_value5 | int | Effect Base Value 5 |
+| effect_base_value6 | int | Effect Base Value 6 |
+| effect_base_value7 | int | Effect Base Value 7 |
+| effect_base_value8 | int | Effect Base Value 8 |
+| effect_base_value9 | int | Effect Base Value 9 |
+| effect_base_value10 | int | Effect Base Value 10 |
+| effect_base_value11 | int | Effect Base Value 11 |
+| effect_base_value12 | int | Effect Base Value 12 |
+| effect_limit_value1 | int | Effect Limit Value 1 |
+| effect_limit_value2 | int | Effect Limit Value 2 |
+| effect_limit_value3 | int | Effect Limit Value 3 |
+| effect_limit_value4 | int | Effect Limit Value 4 |
+| effect_limit_value5 | int | Effect Limit Value 5 |
+| effect_limit_value6 | int | Effect Limit Value 6 |
+| effect_limit_value7 | int | Effect Limit Value 7 |
+| effect_limit_value8 | int | Effect Limit Value 8 |
+| effect_limit_value9 | int | Effect Limit Value 9 |
+| effect_limit_value10 | int | Effect Limit Value 10 |
+| effect_limit_value11 | int | Effect Limit Value 11 |
+| effect_limit_value12 | int | Effect Limit Value 12 |
 | max1 | int | Max 1 |
 | max2 | int | Max 2 |
 | max3 | int | Max 3 |
@@ -64,10 +64,10 @@
 | components2 | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | components3 | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | components4 | int | [Item Identifier](../../../schema/categories/items/items.md) |
-| component\_counts1 | int | Component Count 1 |
-| component\_counts2 | int | Component Count 2 |
-| component\_counts3 | int | Component Count 3 |
-| component\_counts4 | int | Component Count 4 |
+| component_counts1 | int | Component Count 1 |
+| component_counts2 | int | Component Count 2 |
+| component_counts3 | int | Component Count 3 |
+| component_counts4 | int | Component Count 4 |
 | NoexpendReagent1 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent2 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent3 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
@@ -126,7 +126,7 @@
 | TargetAnim | int | Target Animation |
 | TravelType | int | Travel Type \(Unused\) |
 | SpellAffectIndex | int | Spell Affect Index |
-| disallow\_sit | int | Disallow Sit: 0 = False, 1 = True |
+| disallow_sit | int | Disallow Sit: 0 = False, 1 = True |
 | deities0 | int | [Deity List](../../../../categories/player/deity-list) |
 | deities1 | int | [Deity List](../../../../categories/player/deity-list) |
 | deities2 | int | [Deity List](../../../../categories/player/deity-list) |
@@ -146,28 +146,28 @@
 | deities16 | int | [Deity List](../../../../categories/player/deity-list) |
 | field142 | int | Unknown |
 | field143 | int | Unknown |
-| new\_icon | int | New Icon |
+| new_icon | int | New Icon |
 | spellanim | int | Spell Animation |
 | uninterruptable | int | Uninterruptable: 0 = False, 1 = True |
 | ResistDiff | int | Resist Difference |
-| dot\_stacking\_exempt | int | Damage Over Time Stacking Exempt: 0 = False, 1 = True |
+| dot_stacking_exempt | int | Damage Over Time Stacking Exempt: 0 = False, 1 = True |
 | deleteable | int | Deleteable: 0 = False, 1 = True |
 | RecourseLink | int | [Recourse Spell Identifier](spells_new.md) |
-| no\_partial\_resist | int | No Partial Resist: 0 = False, 1 = True |
+| no_partial_resist | int | No Partial Resist: 0 = False, 1 = True |
 | field152 | int | Unknown |
 | field153 | int | Unknown |
-| short\_buff\_box | int | Short Buff Box: 0 = False, 1 = True |
+| short_buff_box | int | Short Buff Box: 0 = False, 1 = True |
 | descnum | int | [Description Number](../../../schema/categories/client-files/db_str.md) |
 | typedescnum | int | [Type Description Number](../../../schema/categories/client-files/db_str.md) |
 | effectdescnum | int | [Effect Description Number](../../../schema/categories/client-files/db_str.md) |
 | effectdescnum2 | int | [Effect Description Number 2](../../../schema/categories/client-files/db_str.md) |
-| npc\_no\_los | int | NPC No Line of Sight: 0 = False, 1 = True |
+| npc_no_los | int | NPC No Line of Sight: 0 = False, 1 = True |
 | field160 | int | Unknown |
 | reflectable | int | Reflectable: 0 = False, 1 = True |
 | bonushate | int | Bonus Hate |
 | field163 | int | Unknown |
 | field164 | int | Unknown |
-| ldon\_trap | int | [LDoN Trap Identifier](../../../schema/categories/traps/traps.md) |
+| ldon_trap | int | [LDoN Trap Identifier](../../../schema/categories/traps/traps.md) |
 | EndurCost | int | Endurance Cost |
 | EndurTimerIndex | int | Endurance Timer |
 | IsDiscipline | int | Is Discipline: 0 = False, 1 = True |
@@ -182,32 +182,32 @@
 | pvpresistbase | int | PVP Resist Base |
 | pvpresistcalc | int | PVP Resist Calc |
 | pvpresistcap | int | PVP Resist Cap |
-| spell\_category | int | [Spell Category](../../../../categories/spells/spell-groups) |
+| spell_category | int | [Spell Category](../../../../categories/spells/spell-groups) |
 | field181 | int | Unknown |
 | field182 | int | Unknown |
-| pcnpc\_only\_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
-| cast\_not\_standing | int | Cast Not Standing: 0 = False, 1 = True |
-| can\_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |
+| pcnpc_only_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
+| cast_not_standing | int | Cast Not Standing: 0 = False, 1 = True |
+| can_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |
 | nodispell | int | No Dispell: 0 = False, 1 = True |
-| npc\_category | int | [NPC Spell Category Identifier](../../../../categories/spells/npc-spell-categories) |
-| npc\_usefulness | int | NPC Usefulness |
+| npc_category | int | [NPC Spell Category Identifier](../../../../categories/spells/npc-spell-categories) |
+| npc_usefulness | int | NPC Usefulness |
 | MinResist | int | Minimum Resistance |
 | MaxResist | int | Maximum Resistance |
-| viral\_targets | int | Viral Targets |
-| viral\_timer | int | Viral Timer |
+| viral_targets | int | Viral Targets |
+| viral_timer | int | Viral Timer |
 | nimbuseffect | int | Nimbus Effect |
 | ConeStartAngle | int | Cone Start Angle |
 | ConeStopAngle | int | Cone Stop Angle |
 | sneaking | int | Sneaking: 0 = False, 1 = True |
-| not\_extendable | int | Not Extendable: 0 = False, 1 = True |
+| not_extendable | int | Not Extendable: 0 = False, 1 = True |
 | field198 | int | Unknown |
 | field199 | int | Unknown |
 | suspendable | int | Suspendable: 0 = False, 1 = True |
-| viral\_range | int | Viral Range |
+| viral_range | int | Viral Range |
 | songcap | int | Song Cap |
 | field203 | int | Unknown |
 | field204 | int | Unknown |
-| no\_block | int | No Block: 0 = False, 1 = True |
+| no_block | int | No Block: 0 = False, 1 = True |
 | field206 | int | Unknown |
 | spellgroup | int | [Spell Group](../../../../categories/spells/spell-groups) |
 | rank | int | Rank |
@@ -229,11 +229,11 @@
 | persistdeath | int | Persist Death: 0 = False, 1 = True |
 | field225 | int | Unknown |
 | field226 | int | Unknown |
-| min\_dist | float | Minimum Distance |
-| min\_dist\_mod | float | Minimum Distance Modifier |
-| max\_dist | float | Maximum Distance |
-| max\_dist\_mod | float | Maximum Distance Modifier |
-| min\_range | int | Minimum Range |
+| min_dist | float | Minimum Distance |
+| min_dist_mod | float | Minimum Distance Modifier |
+| max_dist | float | Maximum Distance |
+| max_dist_mod | float | Maximum Distance Modifier |
+| min_range | int | Minimum Range |
 | field232 | int | Unknown |
 | field233 | int | Unknown |
 | field234 | int | Unknown |

@@ -1,8 +1,8 @@
-# level\_exp\_mods
+# level_exp_mods
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | level | int | Level |
-| exp\_mod | float | Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150% |
-| aa\_exp\_mod | float | AA Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150% |
+| exp_mod | float | Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150% |
+| aa_exp_mod | float | AA Experience Modifier: 0.5 = 50%, 1 = 100%, 1.5 = 150% |
 

@@ -1,7 +1,7 @@
-# bot\_stances
+# bot_stances
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| bot\_id | int | [Bot Identifier](bot_data.md) |
-| stance\_id | tinyint | [Stance Identifier](../../../../categories/bots/stance-types) |
+| bot_id | int | [Bot Identifier](bot_data.md) |
+| stance_id | tinyint | [Stance Identifier](../../../../categories/bots/stance-types) |
 

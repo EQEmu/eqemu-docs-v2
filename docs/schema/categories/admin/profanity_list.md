@@ -1,4 +1,4 @@
-# profanity\_list
+# profanity_list
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

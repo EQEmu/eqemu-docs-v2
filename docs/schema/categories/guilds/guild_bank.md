@@ -1,4 +1,4 @@
-# guild\_bank
+# guild_bank
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

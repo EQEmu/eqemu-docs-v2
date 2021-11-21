@@ -1,8 +1,8 @@
-# character\_languages
+# character_languages
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Character Identifier](character_data.md) |
-| lang\_id | smallint | [Language Identifier](../../../../categories/player/languages) |
+| lang_id | smallint | [Language Identifier](../../../../categories/player/languages) |
 | value | smallint | Skill Level |
 

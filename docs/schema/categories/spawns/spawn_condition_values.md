@@ -1,9 +1,9 @@
-# spawn\_condition\_values
+# spawn_condition_values
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Spawn Condition Identifier](spawn_conditions.md) |
 | value | tinyint | Value |
 | zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| instance\_id | int | [Instance Identifier](../../../schema/categories/instances/instance_list.md) |
+| instance_id | int | [Instance Identifier](../../../schema/categories/instances/instance_list.md) |
 

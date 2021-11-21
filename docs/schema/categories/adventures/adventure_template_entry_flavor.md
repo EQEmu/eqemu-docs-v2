@@ -1,4 +1,4 @@
-# adventure\_template\_entry\_flavor
+# adventure_template_entry_flavor
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

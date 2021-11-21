@@ -1,4 +1,4 @@
-# group\_id
+# group_id
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

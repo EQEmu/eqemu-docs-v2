@@ -5,9 +5,9 @@
 | merchantid | int | Merchant Identifier |
 | slot | int | Slot |
 | item | int | [Item Identifier](../../../schema/categories/items/items.md) |
-| faction\_required | smallint | Faction Required |
-| level\_required | tinyint | Level Required |
-| alt\_currency\_cost | smallint | [Alternate Currency Cost](../../../schema/categories/alternate-currency/alternate_currency.md) |
-| classes\_required | int | [Classes Required](../../../../categories/player/class-list) |
+| faction_required | smallint | Faction Required |
+| level_required | tinyint | Level Required |
+| alt_currency_cost | smallint | [Alternate Currency Cost](../../../schema/categories/alternate-currency/alternate_currency.md) |
+| classes_required | int | [Classes Required](../../../../categories/player/class-list) |
 | probability | int | Probability: 0 = Never, 100 = Always |
 

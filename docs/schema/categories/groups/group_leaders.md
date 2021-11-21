@@ -1,4 +1,4 @@
-# group\_leaders
+# group_leaders
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -10,5 +10,5 @@
 | assist | varchar | Assist: 0 = False, 1 = True |
 | puller | varchar | Puller: 0 = False, 1 = True |
 | mentoree | varchar | Mentoree: 0 = False, 1 = True |
-| mentor\_percent | int | Main Tank: 0 = None, 100 = Max |
+| mentor_percent | int | Main Tank: 0 = None, 100 = Max |
 

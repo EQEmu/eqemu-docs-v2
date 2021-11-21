@@ -1,15 +1,15 @@
-# character\_data
+# character_data
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Character Identifier |
-| account\_id | int | [Account Identifier](../../../schema/categories/account/account.md) |
+| account_id | int | [Account Identifier](../../../schema/categories/account/account.md) |
 | name | varchar | Name |
-| last\_name | varchar | Last Name |
+| last_name | varchar | Last Name |
 | title | varchar | Title |
 | suffix | varchar | Suffix |
-| zone\_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
-| zone\_instance | int | Zone Instance Identifier |
+| zone_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_instance | int | Zone Instance Identifier |
 | y | float | Y Coordinate |
 | x | float | X Coordinate |
 | z | float | Z Coordinate |
@@ -20,35 +20,35 @@
 | level | int | Level |
 | deity | int | [Deity](../../../../categories/player/deity-list) |
 | birthday | int | UNIX Timestamp of Birthday |
-| last\_login | int | UNIX Timestamp of Last Login |
-| time\_played | int | Time Played |
+| last_login | int | UNIX Timestamp of Last Login |
+| time_played | int | Time Played |
 | level2 | tinyint | Level 2 |
 | anon | tinyint | Anon: 0 = False, 1 = Anonymous, 2 = Roleplaying |
 | gm | tinyint | GM: 0 = False, 1 = True |
 | face | int | Face |
-| hair\_color | tinyint | Hair Color |
-| hair\_style | tinyint | Hair Style |
+| hair_color | tinyint | Hair Color |
+| hair_style | tinyint | Hair Style |
 | beard | tinyint | Beard |
-| beard\_color | tinyint | Beard Color |
-| eye\_color\_1 | tinyint | Eye Color 1 |
-| eye\_color\_2 | tinyint | Eye Color 2 |
-| drakkin\_heritage | int | Drakkin Heritage |
-| drakkin\_tattoo | int | Drakkin Tattoo |
-| drakkin\_details | int | Drakkin Details |
-| ability\_time\_seconds | tinyint | Ability Timer in Seconds |
-| ability\_number | tinyint | [Ability Number](../../../schema/categories/aas/aa_ability.md) |
-| ability\_time\_minutes | tinyint | Ability Timer in Minutes |
-| ability\_time\_hours | tinyint | Ability Timer in Hours |
+| beard_color | tinyint | Beard Color |
+| eye_color_1 | tinyint | Eye Color 1 |
+| eye_color_2 | tinyint | Eye Color 2 |
+| drakkin_heritage | int | Drakkin Heritage |
+| drakkin_tattoo | int | Drakkin Tattoo |
+| drakkin_details | int | Drakkin Details |
+| ability_time_seconds | tinyint | Ability Timer in Seconds |
+| ability_number | tinyint | [Ability Number](../../../schema/categories/aas/aa_ability.md) |
+| ability_time_minutes | tinyint | Ability Timer in Minutes |
+| ability_time_hours | tinyint | Ability Timer in Hours |
 | exp | int | Experience |
-| aa\_points\_spent | int | AA Points Spent |
-| aa\_exp | int | AA Experience |
-| aa\_points | int | AA Points |
-| group\_leadership\_exp | int | Group Leadership Experience |
-| raid\_leadership\_exp | int | Raid Leadership Experience |
-| group\_leadership\_points | int | Group Leadership Points |
-| raid\_leadership\_points | int | Raid Leadership Points |
+| aa_points_spent | int | AA Points Spent |
+| aa_exp | int | AA Experience |
+| aa_points | int | AA Points |
+| group_leadership_exp | int | Group Leadership Experience |
+| raid_leadership_exp | int | Raid Leadership Experience |
+| group_leadership_points | int | Group Leadership Points |
+| raid_leadership_points | int | Raid Leadership Points |
 | points | int | Points |
-| cur\_hp | int | Health |
+| cur_hp | int | Health |
 | mana | int | Mana |
 | endurance | int | Endurance |
 | intoxication | int | Intoxication |
@@ -59,49 +59,49 @@
 | int | int | Intelligence |
 | agi | int | Agility |
 | wis | int | Wisdom |
-| zone\_change\_count | int | Zone Change Count |
+| zone_change_count | int | Zone Change Count |
 | toxicity | int | Toxicity |
-| hunger\_level | int | Hunger Level |
-| thirst\_level | int | Thirst Level |
-| ability\_up | int | Ability Up |
-| ldon\_points\_guk | int | LDoN Points - [Deepest Guk](../../../../categories/zones/ldon-themes) |
-| ldon\_points\_mir | int | LDoN Points - [Miragul's Menagerie](../../../../categories/zones/ldon-themes) |
-| ldon\_points\_mmc | int | LDoN Points - [Mistmoore Catacombs](../../../../categories/zones/ldon-themes) |
-| ldon\_points\_ruj | int | LDoN Points - [Rujarkian Hills](../../../../categories/zones/ldon-themes) |
-| ldon\_points\_tak | int | LDoN Points - [Takish-Hiz](../../../../categories/zones/ldon-themes) |
-| ldon\_points\_available | int | LDoN Points Available |
-| tribute\_time\_remaining | int | Tribute Time Remaining |
-| career\_tribute\_points | int | Career Tribute Points |
-| tribute\_points | int | Tribute Points |
-| tribute\_active | int | Tribute Active: 0 = False, 1 = True |
-| pvp\_status | tinyint | PVP Status: 0 = False, 1 = True |
-| pvp\_kills | int | PVP Kills |
-| pvp\_deaths | int | PVP Deaths |
-| pvp\_current\_points | int | PVP Points |
-| pvp\_career\_points | int | Career PVP Points |
-| pvp\_best\_kill\_streak | int | Best Kill Streak |
-| pvp\_worst\_death\_streak | int | Worse Death Streak |
-| pvp\_current\_kill\_streak | int | Current Kill Streak |
+| hunger_level | int | Hunger Level |
+| thirst_level | int | Thirst Level |
+| ability_up | int | Ability Up |
+| ldon_points_guk | int | LDoN Points - [Deepest Guk](../../../../categories/zones/ldon-themes) |
+| ldon_points_mir | int | LDoN Points - [Miragul's Menagerie](../../../../categories/zones/ldon-themes) |
+| ldon_points_mmc | int | LDoN Points - [Mistmoore Catacombs](../../../../categories/zones/ldon-themes) |
+| ldon_points_ruj | int | LDoN Points - [Rujarkian Hills](../../../../categories/zones/ldon-themes) |
+| ldon_points_tak | int | LDoN Points - [Takish-Hiz](../../../../categories/zones/ldon-themes) |
+| ldon_points_available | int | LDoN Points Available |
+| tribute_time_remaining | int | Tribute Time Remaining |
+| career_tribute_points | int | Career Tribute Points |
+| tribute_points | int | Tribute Points |
+| tribute_active | int | Tribute Active: 0 = False, 1 = True |
+| pvp_status | tinyint | PVP Status: 0 = False, 1 = True |
+| pvp_kills | int | PVP Kills |
+| pvp_deaths | int | PVP Deaths |
+| pvp_current_points | int | PVP Points |
+| pvp_career_points | int | Career PVP Points |
+| pvp_best_kill_streak | int | Best Kill Streak |
+| pvp_worst_death_streak | int | Worse Death Streak |
+| pvp_current_kill_streak | int | Current Kill Streak |
 | pvp2 | int | PVP Status: 0 = False, 1 = True |
-| pvp\_type | int | PVP Type |
-| show\_helm | int | Show Helm: 0 = False, 1 = True |
-| group\_auto\_consent | tinyint | Group Auto Consent: 0 = False, 1 = True |
-| raid\_auto\_consent | tinyint | Raid Auto Consent: 0 = False, 1 = True |
-| guild\_auto\_consent | tinyint | Guild Auto Consent: 0 = False, 1 = True |
-| leadership\_exp\_on | tinyint | Leadership Experience On : 0 = False, 1 = True |
+| pvp_type | int | PVP Type |
+| show_helm | int | Show Helm: 0 = False, 1 = True |
+| group_auto_consent | tinyint | Group Auto Consent: 0 = False, 1 = True |
+| raid_auto_consent | tinyint | Raid Auto Consent: 0 = False, 1 = True |
+| guild_auto_consent | tinyint | Guild Auto Consent: 0 = False, 1 = True |
+| leadership_exp_on | tinyint | Leadership Experience On : 0 = False, 1 = True |
 | RestTimer | int | Rest Timer |
-| air\_remaining | int | Air Remaining |
-| autosplit\_enabled | int | Autosplit Enabled: 0 = False, 1 = True |
+| air_remaining | int | Air Remaining |
+| autosplit_enabled | int | Autosplit Enabled: 0 = False, 1 = True |
 | lfp | tinyint | Looking For Party: 0 = False, 1 = True |
 | lfg | tinyint | Looking For Guild: 0 = False, 1 = True |
 | mailkey | char | Mail Key |
 | xtargets | tinyint | XTargets |
 | firstlogon | tinyint | First Logon |
-| e\_aa\_effects | int | Experience AA Effects |
-| e\_percent\_to\_aa | int | Experience Percentage to AA Points |
-| e\_expended\_aa\_spent | int | Expended AA Points Spent |
-| aa\_points\_spent\_old | int | AA Points Spent Old |
-| aa\_points\_old | int | AA Points Old |
-| e\_last\_invsnapshot | int | Last Inventory Snapshot |
-| deleted\_at | datetime |  |
+| e_aa_effects | int | Experience AA Effects |
+| e_percent_to_aa | int | Experience Percentage to AA Points |
+| e_expended_aa_spent | int | Expended AA Points Spent |
+| aa_points_spent_old | int | AA Points Spent Old |
+| aa_points_old | int | AA Points Old |
+| e_last_invsnapshot | int | Last Inventory Snapshot |
+| deleted_at | datetime |  |
 

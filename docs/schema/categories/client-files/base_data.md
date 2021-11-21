@@ -1,4 +1,4 @@
-# base\_data
+# base_data
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -9,7 +9,7 @@
 | end | double | Endurance |
 | unk1 | double | Unknown |
 | unk2 | double | Unknown |
-| hp\_fac | double | Health Factor |
-| mana\_fac | double | Mana Factor |
-| end\_fac | double | Endurance Factor |
+| hp_fac | double | Health Factor |
+| mana_fac | double | Mana Factor |
+| end_fac | double | Endurance Factor |
 

@@ -1,4 +1,4 @@
-# character\_activities
+# character_activities
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

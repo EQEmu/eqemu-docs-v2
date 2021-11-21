@@ -1,7 +1,7 @@
-# ldon\_trap\_entries
+# ldon_trap_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique LDoN Trap Entry Identifier |
-| trap\_id | int | [Trap Identifier](ldon_trap_templates.md) |
+| trap_id | int | [Trap Identifier](ldon_trap_templates.md) |
 

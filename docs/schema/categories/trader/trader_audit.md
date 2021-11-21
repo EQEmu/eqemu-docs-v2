@@ -1,4 +1,4 @@
-# trader\_audit
+# trader_audit
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

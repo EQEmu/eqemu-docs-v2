@@ -1,8 +1,8 @@
-# npc\_spells\_effects
+# npc_spells_effects
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spell Effects Identifier |
 | name | tinytext | Name |
-| parent\_list | int | Parent List |
+| parent_list | int | Parent List |
 

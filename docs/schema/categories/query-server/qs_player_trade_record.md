@@ -1,19 +1,19 @@
-# qs\_player\_trade\_record
+# qs_player_trade_record
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| trade\_id | int | Unique Trade Identifier |
+| trade_id | int | Unique Trade Identifier |
 | time | timestamp | Time Timestamp |
-| char1\_id | int | [Character 1 Identifier](../../../schema/categories/characters/character_data.md) |
-| char1\_pp | int | Character 1 Platinum |
-| char1\_gp | int | Character 1 Gold |
-| char1\_sp | int | Character 1 Silver |
-| char1\_cp | int | Character 1 Copper |
-| char1\_items | mediumint | [Character 1 Item Identifier](../../../schema/categories/items/items.md) |
-| char2\_id | int | [Character 2 Identifier](../../../schema/categories/characters/character_data.md) |
-| char2\_pp | int | Character 2 Platinum |
-| char2\_gp | int | Character 2 Gold |
-| char2\_sp | int | Character 2 Silver |
-| char2\_cp | int | Character 2 Copper |
-| char2\_items | mediumint | [Character 2 Item Identifier](../../../schema/categories/items/items.md) |
+| char1_id | int | [Character 1 Identifier](../../../schema/categories/characters/character_data.md) |
+| char1_pp | int | Character 1 Platinum |
+| char1_gp | int | Character 1 Gold |
+| char1_sp | int | Character 1 Silver |
+| char1_cp | int | Character 1 Copper |
+| char1_items | mediumint | [Character 1 Item Identifier](../../../schema/categories/items/items.md) |
+| char2_id | int | [Character 2 Identifier](../../../schema/categories/characters/character_data.md) |
+| char2_pp | int | Character 2 Platinum |
+| char2_gp | int | Character 2 Gold |
+| char2_sp | int | Character 2 Silver |
+| char2_cp | int | Character 2 Copper |
+| char2_items | mediumint | [Character 2 Item Identifier](../../../schema/categories/items/items.md) |
 

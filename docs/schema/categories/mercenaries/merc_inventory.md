@@ -1,10 +1,10 @@
-# merc\_inventory
+# merc_inventory
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_inventory\_id | int | Unique Mercenary Inventory Identifier |
-| merc\_subtype\_id | int | [Mercenary Subtype Identifier](merc_subtypes.md) |
-| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
-| min\_level | int | Minimum Level |
-| max\_level | int | Maximum Level |
+| merc_inventory_id | int | Unique Mercenary Inventory Identifier |
+| merc_subtype_id | int | [Mercenary Subtype Identifier](merc_subtypes.md) |
+| item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| min_level | int | Minimum Level |
+| max_level | int | Maximum Level |
 

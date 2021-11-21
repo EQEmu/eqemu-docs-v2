@@ -1,4 +1,4 @@
-# completed\_tasks
+# completed_tasks
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

@@ -1,9 +1,9 @@
-# merc\_subtypes
+# merc_subtypes
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_subtype\_id | int | Unique Mercenary Subtype Identifier |
-| class\_id | int | [Class Identifier](../../../../categories/player/class-list) |
-| tier\_id | tinyint | Tier Identifier |
-| confidence\_id | tinyint | Confidence Identifier |
+| merc_subtype_id | int | Unique Mercenary Subtype Identifier |
+| class_id | int | [Class Identifier](../../../../categories/player/class-list) |
+| tier_id | tinyint | Tier Identifier |
+| confidence_id | tinyint | Confidence Identifier |
 

@@ -1,4 +1,4 @@
-# task\_activities
+# task_activities
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -6,11 +6,11 @@
 | activityid | int | Activity Identifier: Starts at 0 |
 | step | int | Step: 0 = Always Available, &gt;0 = Must Complete Previous |
 | activitytype | tinyint | [Activity Type](../../../../categories/task-system-guide/task-activity-types) |
-| target\_name | varchar | Target Name |
-| item\_list | varchar | [Item Identifier List](../../../schema/categories/items/items.md) |
-| skill\_list | varchar | [Skill Identifier List](../../../../categories/player/skills) |
-| spell\_list | varchar | [Spell Identifier List](../../../schema/categories/spells/spells_new.md) |
-| description\_override | varchar | Description Override |
+| target_name | varchar | Target Name |
+| item_list | varchar | [Item Identifier List](../../../schema/categories/items/items.md) |
+| skill_list | varchar | [Skill Identifier List](../../../../categories/player/skills) |
+| spell_list | varchar | [Spell Identifier List](../../../schema/categories/spells/spells_new.md) |
+| description_override | varchar | Description Override |
 | goalid | int | Goal Identifier or [Goal List Identifier](goallists.md) |
 | goalmethod | int | Goal Method: 0 = Single Value, 1 = List |
 | goalcount | int | Goal Count |

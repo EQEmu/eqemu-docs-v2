@@ -1,4 +1,4 @@
-# command\_settings
+# command_settings
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

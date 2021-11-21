@@ -1,7 +1,7 @@
-# qs\_player\_npc\_kill\_record\_entries
+# qs_player_npc_kill_record_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| event\_id | int | Unique Event Identifier |
-| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| event_id | int | Unique Event Identifier |
+| char_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 

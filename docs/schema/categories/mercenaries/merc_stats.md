@@ -1,8 +1,8 @@
-# merc\_stats
+# merc_stats
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_npc\_type\_id | int | [Mercenary NPC Type Identifier](merc_npc_types.md) |
+| merc_npc_type_id | int | [Mercenary NPC Type Identifier](merc_npc_types.md) |
 | clientlevel | tinyint | Client Level |
 | level | tinyint | Level |
 | hp | int | Health |
@@ -13,7 +13,7 @@
 | STA | mediumint | Stamina |
 | DEX | mediumint | Dexterity |
 | AGI | mediumint | Agility |
-| \_INT | mediumint | Intelligence |
+| _INT | mediumint | Intelligence |
 | WIS | mediumint | Wisdom |
 | CHA | mediumint | Charisma |
 | MR | smallint | Magic Resistance |
@@ -24,13 +24,13 @@
 | Corrup | smallint | Corruption Resistance |
 | mindmg | int | Minimum Damage |
 | maxdmg | int | Maximum Damage |
-| attack\_count | smallint | Attack Count |
-| attack\_speed | tinyint | Attack Speed: The lower the number, the faster the NPC hits. \(Deprecated\) |
-| attack\_delay | tinyint | Attack Delay: Delay between the attack arounds in 10ths of a second. |
-| special\_abilities | text | Special Abilities |
+| attack_count | smallint | Attack Count |
+| attack_speed | tinyint | Attack Speed: The lower the number, the faster the NPC hits. \(Deprecated\) |
+| attack_delay | tinyint | Attack Delay: Delay between the attack arounds in 10ths of a second. |
+| special_abilities | text | Special Abilities |
 | Accuracy | mediumint | Accuracy |
-| hp\_regen\_rate | int | Health Regeneration Rate |
-| mana\_regen\_rate | int | Mana Regeneration Rate |
+| hp_regen_rate | int | Health Regeneration Rate |
+| mana_regen_rate | int | Mana Regeneration Rate |
 | runspeed | float | Run Speed |
 | statscale | int | Stat Scale: 50 = 50%, 100 = 100%, 150 = 150% |
 | spellscale | float | Spell Scale: 50 = 50%, 100 = 100%, 150 = 150% |

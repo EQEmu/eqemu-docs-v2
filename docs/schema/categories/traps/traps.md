@@ -17,10 +17,10 @@
 | message | varchar | Message |
 | skill | int | [Skill Required](../../../../categories/player/skills) |
 | level | mediumint | Level |
-| respawn\_time | int | Respawn Timer in Seconds |
-| respawn\_var | int | Random Respawn Timer Variance in Seconds |
-| triggered\_number | tinyint | Triggered Member |
+| respawn_time | int | Respawn Timer in Seconds |
+| respawn_var | int | Random Respawn Timer Variance in Seconds |
+| triggered_number | tinyint | Triggered Member |
 | group | tinyint | Group |
-| despawn\_when\_triggered | tinyint | Despawn When Triggered: 0 = False, 1 = True |
+| despawn_when_triggered | tinyint | Despawn When Triggered: 0 = False, 1 = True |
 | undetectable | tinyint | Undetectable: 0 = False, 1= True |
 

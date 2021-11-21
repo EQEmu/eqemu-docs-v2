@@ -1,12 +1,12 @@
-# merc\_spell\_list\_entries
+# merc_spell_list_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_spell\_list\_entry\_id | int | Unique Mercenary Spell List Entry Identifier |
-| merc\_spell\_list\_id | int | [Mercenary Spell List Identifier](merc_spell_lists.md) |
-| spell\_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
-| spell\_type | int | [Spell Type](../../../../categories/spells/spell-types) |
-| stance\_id | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
+| merc_spell_list_entry_id | int | Unique Mercenary Spell List Entry Identifier |
+| merc_spell_list_id | int | [Mercenary Spell List Identifier](merc_spell_lists.md) |
+| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| spell_type | int | [Spell Type](../../../../categories/spells/spell-types) |
+| stance_id | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |
 | slot | tinyint | Slot |

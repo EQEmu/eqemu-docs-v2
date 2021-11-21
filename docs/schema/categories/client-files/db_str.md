@@ -1,4 +1,4 @@
-# db\_str
+# db_str
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

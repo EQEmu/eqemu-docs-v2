@@ -1,4 +1,4 @@
-# login\_server\_list\_types
+# login_server_list_types
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

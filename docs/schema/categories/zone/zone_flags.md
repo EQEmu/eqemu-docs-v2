@@ -1,4 +1,4 @@
-# zone\_flags
+# zone_flags
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

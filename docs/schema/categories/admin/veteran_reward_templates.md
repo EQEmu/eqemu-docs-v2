@@ -1,10 +1,10 @@
-# veteran\_reward\_templates
+# veteran_reward_templates
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| claim\_id | int | Unique Claim Identifier |
+| claim_id | int | Unique Claim Identifier |
 | name | varchar | Name |
-| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | charges | smallint | Charges |
-| reward\_slot | tinyint | Reward Slot |
+| reward_slot | tinyint | Reward Slot |
 

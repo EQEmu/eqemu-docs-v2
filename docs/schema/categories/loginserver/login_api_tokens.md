@@ -1,11 +1,11 @@
-# login\_api\_tokens
+# login_api_tokens
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Login API Token Identifier |
 | token | varchar | Token Identifier |
-| can\_write | int | Can Write: 0 = False, 1 = True |
-| can\_read | int | Can Read: 0 = False, 1 = True |
-| created\_at | datetime | Created At Date |
-| updated\_at | datetime | Updated At Date |
+| can_write | int | Can Write: 0 = False, 1 = True |
+| can_read | int | Can Read: 0 = False, 1 = True |
+| created_at | datetime | Created At Date |
+| updated_at | datetime | Updated At Date |
 

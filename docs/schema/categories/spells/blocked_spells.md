@@ -1,4 +1,4 @@
-# blocked\_spells
+# blocked_spells
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -9,9 +9,9 @@
 | x | float | X Coordinate |
 | y | float | Y Coordinate |
 | z | float | Z Coordinate |
-| x\_diff | float | X Radius |
-| y\_diff | float | Y Radius |
-| z\_diff | float | Z Radius |
+| x_diff | float | X Radius |
+| y_diff | float | Y Radius |
+| z_diff | float | Z Radius |
 | message | varchar | Message when blocked |
 | description | varchar | Blocked spells description |
 

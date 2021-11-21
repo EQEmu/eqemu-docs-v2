@@ -1,4 +1,4 @@
-# character\_tribute
+# character_tribute
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

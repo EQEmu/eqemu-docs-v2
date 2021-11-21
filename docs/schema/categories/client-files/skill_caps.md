@@ -1,4 +1,4 @@
-# skill\_caps
+# skill_caps
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -6,5 +6,5 @@
 | class | tinyint | [Class](../../../../categories/player/class-list) |
 | level | tinyint | Level |
 | cap | mediumint | Cap |
-| class\_ | tinyint | Unknown |
+| class_ | tinyint | Unknown |
 

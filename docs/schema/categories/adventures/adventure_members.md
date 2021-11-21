@@ -1,4 +1,4 @@
-# adventure\_members
+# adventure_members
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

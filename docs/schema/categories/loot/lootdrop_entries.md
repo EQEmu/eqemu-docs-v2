@@ -1,13 +1,13 @@
-# lootdrop\_entries
+# lootdrop_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| lootdrop\_id | int | [Lootdrop Identifier](lootdrop.md) |
-| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
-| item\_charges | smallint | Item Charges |
-| equip\_item | tinyint | Equip Item: 0 = False, 1 = True |
+| lootdrop_id | int | [Lootdrop Identifier](lootdrop.md) |
+| item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| item_charges | smallint | Item Charges |
+| equip_item | tinyint | Equip Item: 0 = False, 1 = True |
 | chance | float | Chance: 0 = Never, 100 = Always |
-| disabled\_chance | float | Disabled Chance: 0 = Never, 100 = Always |
+| disabled_chance | float | Disabled Chance: 0 = Never, 100 = Always |
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |
 | multiplier | tinyint | Multiplier |

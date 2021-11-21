@@ -11,5 +11,5 @@
 | time | timestamp | TIme Timestamp |
 | descriptiontype | varchar | Description Type |
 | description | text | Description |
-| event\_nid | int | Event Identifier |
+| event_nid | int | Event Identifier |
 

@@ -25,7 +25,7 @@
 | unknown76 | int | Unknown |
 | unknown84 | int | Unknown |
 | size | float | Size |
-| tilt\_x | float | Tilt X |
-| tilt\_y | float | Tilt Y |
-| display\_name | varchar | Display Name |
+| tilt_x | float | Tilt X |
+| tilt_y | float | Tilt Y |
+| display_name | varchar | Display Name |
 

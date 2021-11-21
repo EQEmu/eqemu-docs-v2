@@ -1,4 +1,4 @@
-# client\_faction\_names
+# client_faction_names
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

@@ -1,4 +1,4 @@
-# raid\_details
+# raid_details
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

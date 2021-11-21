@@ -1,4 +1,4 @@
-# npc\_scale\_global\_base
+# npc_scale_global_base
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -7,7 +7,7 @@
 | ac | int | Armor Class |
 | hp | int | Health |
 | accuracy | int | Accuracy |
-| slow\_mitigation | int | Slow Mitigation |
+| slow_mitigation | int | Slow Mitigation |
 | attack | int | Attack |
 | strength | int | Strength |
 | stamina | int | Stamina |
@@ -16,18 +16,18 @@
 | intelligence | int | Intelligence |
 | wisdom | int | Wisdom |
 | charisma | int | Charisma |
-| magic\_resist | int | Magic Resistance |
-| cold\_resist | int | Cold Resistance |
-| fire\_resist | int | Fire Resistance |
-| poison\_resist | int | Poison Resistance |
-| disease\_resist | int | Disease Resistance |
-| corruption\_resist | int | Corruption Resistance |
-| physical\_resist | int | Physical Resistance |
-| min\_dmg | int | Minimum Damage |
-| max\_dmg | int | Maximum Damage |
-| hp\_regen\_rate | int | Health Regeneration Rate |
-| attack\_delay | int | Attack Delay: Delay between the attack arounds in 10ths of a second. |
-| spell\_scale | int | Spell Scale: 50 = 50%, 100 = 100%, 150 = 150% |
-| heal\_scale | int | Heal Scale: 50 = 50%, 100 = 100%, 150 = 150% |
-| special\_abilities | text | Special Abilities |
+| magic_resist | int | Magic Resistance |
+| cold_resist | int | Cold Resistance |
+| fire_resist | int | Fire Resistance |
+| poison_resist | int | Poison Resistance |
+| disease_resist | int | Disease Resistance |
+| corruption_resist | int | Corruption Resistance |
+| physical_resist | int | Physical Resistance |
+| min_dmg | int | Minimum Damage |
+| max_dmg | int | Maximum Damage |
+| hp_regen_rate | int | Health Regeneration Rate |
+| attack_delay | int | Attack Delay: Delay between the attack arounds in 10ths of a second. |
+| spell_scale | int | Spell Scale: 50 = 50%, 100 = 100%, 150 = 150% |
+| heal_scale | int | Heal Scale: 50 = 50%, 100 = 100%, 150 = 150% |
+| special_abilities | text | Special Abilities |
 

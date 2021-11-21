@@ -1,4 +1,4 @@
-# guild\_relations
+# guild_relations
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

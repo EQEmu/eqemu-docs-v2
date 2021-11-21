@@ -1,8 +1,8 @@
-# merc\_merchant\_entries
+# merc_merchant_entries
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_merchant\_entry\_id | int | Unique Mercenary Merchant Entry Identifier |
-| merc\_merchant\_template\_id | int | [Mercenary Merchant Template Identifier](merc_merchant_templates.md) |
-| merchant\_id | int | [Merchant Identifier](../../../schema/categories/merchants/merchantlist.md) |
+| merc_merchant_entry_id | int | Unique Mercenary Merchant Entry Identifier |
+| merc_merchant_template_id | int | [Mercenary Merchant Template Identifier](merc_merchant_templates.md) |
+| merchant_id | int | [Merchant Identifier](../../../schema/categories/merchants/merchantlist.md) |
 

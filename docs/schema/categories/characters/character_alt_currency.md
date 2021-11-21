@@ -1,8 +1,8 @@
-# character\_alt\_currency
+# character_alt_currency
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Character Identifier](character_data.md) |
-| currency\_id | int | [Currency Identifier](../../../schema/categories/alternate-currency/alternate_currency.md) |
+| char_id | int | [Character Identifier](character_data.md) |
+| currency_id | int | [Currency Identifier](../../../schema/categories/alternate-currency/alternate_currency.md) |
 | amount | int | Amount |
 

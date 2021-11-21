@@ -2,10 +2,10 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Unique Character Identifier](../../../schema/categories/characters/character_data.md) |
-| item\_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| char_id | int | [Unique Character Identifier](../../../schema/categories/characters/character_data.md) |
+| item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
 | serialnumber | int | Serial Number |
 | charges | int | Charges |
-| item\_cost | int | Item Cost |
-| slot\_id | tinyint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| item_cost | int | Item Cost |
+| slot_id | tinyint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
 

@@ -1,4 +1,4 @@
-# launcher\_zones
+# launcher_zones
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

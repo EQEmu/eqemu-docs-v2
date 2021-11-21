@@ -1,4 +1,4 @@
-# fear\_hints
+# fear_hints
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

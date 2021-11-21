@@ -43,7 +43,7 @@
 | bardvalue | int | Bard Value |
 | book | int | [Book](../../../schema/categories/books/books.md) |
 | casttime | int | Cast Time in Seconds |
-| casttime\_ | int | Cast Time in Seconds |
+| casttime_ | int | Cast Time in Seconds |
 | charmfile | varchar | Charm File |
 | charmfileid | varchar | Charm File Identifier |
 | classes | int | [Classes](../../../../categories/player/class-list) |
@@ -228,19 +228,19 @@
 | focusname | varchar | Focus Name |
 | scrollname | varchar | Scroll Name |
 | dsmitigation | smallint | Damage Shield Mitigation |
-| heroic\_str | smallint | Heroic Strength |
-| heroic\_int | smallint | Heroic Intelligence |
-| heroic\_wis | smallint | Heroic Wisdom |
-| heroic\_agi | smallint | Heroic Agility |
-| heroic\_dex | smallint | Heroic Dexterity |
-| heroic\_sta | smallint | Heroic Stamina |
-| heroic\_cha | smallint | Heroic Charisma |
-| heroic\_pr | smallint | Heroic Poison Resistance |
-| heroic\_dr | smallint | Heroic Disease Resistance |
-| heroic\_fr | smallint | Heroic Fire Resistance |
-| heroic\_cr | smallint | Heroic Cold Resistance |
-| heroic\_mr | smallint | Heroic Magic Resistance |
-| heroic\_svcorrup | smallint | Heroic Corruption Resistance |
+| heroic_str | smallint | Heroic Strength |
+| heroic_int | smallint | Heroic Intelligence |
+| heroic_wis | smallint | Heroic Wisdom |
+| heroic_agi | smallint | Heroic Agility |
+| heroic_dex | smallint | Heroic Dexterity |
+| heroic_sta | smallint | Heroic Stamina |
+| heroic_cha | smallint | Heroic Charisma |
+| heroic_pr | smallint | Heroic Poison Resistance |
+| heroic_dr | smallint | Heroic Disease Resistance |
+| heroic_fr | smallint | Heroic Fire Resistance |
+| heroic_cr | smallint | Heroic Cold Resistance |
+| heroic_mr | smallint | Heroic Magic Resistance |
+| heroic_svcorrup | smallint | Heroic Corruption Resistance |
 | healamt | smallint | Heal Amount: 0 to 32767 |
 | spelldmg | smallint | Spell Damage: 0 to 32767 |
 | clairvoyance | smallint | Clairvoyance |

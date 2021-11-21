@@ -1,22 +1,22 @@
-# character\_buffs
+# character_buffs
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| character\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
-| slot\_id | tinyint | Buff Slot |
-| spell\_id | smallint | [Buff Spell Identifier](../../../schema/categories/spells/spells_new.md) |
-| caster\_level | tinyint | Caster Level |
-| caster\_name | varchar | Caster Name |
+| character_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| slot_id | tinyint | Buff Slot |
+| spell_id | smallint | [Buff Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| caster_level | tinyint | Caster Level |
+| caster_name | varchar | Caster Name |
 | ticsremaining | int | Tics Remaining |
 | counters | int | Counters |
 | numhits | int | Number of Hits |
-| melee\_rune | int | Melee Rune |
-| magic\_rune | int | Magic Rune |
+| melee_rune | int | Melee Rune |
+| magic_rune | int | Magic Rune |
 | persistent | tinyint | Persistent: 0 = False, 1 = True |
-| dot\_rune | int | Damage Over Time Rune |
-| caston\_x | int | X Coordinate |
-| caston\_y | int | Y Coordinate |
-| caston\_z | int | Z Coordinate |
+| dot_rune | int | Damage Over Time Rune |
+| caston_x | int | X Coordinate |
+| caston_y | int | Y Coordinate |
+| caston_z | int | Z Coordinate |
 | ExtraDIChance | int | Extra DI Chance |
-| instrument\_mod | int | Instrument Modifier |
+| instrument_mod | int | Instrument Modifier |
 

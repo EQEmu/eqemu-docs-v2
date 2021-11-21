@@ -1,8 +1,8 @@
-# inventory\_snapshots
+# inventory_snapshots
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| time\_index | int | Inventory Snapshot Time Identifier |
+| time_index | int | Inventory Snapshot Time Identifier |
 | charid | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
 | itemid | int | [Item Identifier](../../../schema/categories/items/items.md) |
@@ -15,8 +15,8 @@
 | augslot5 | mediumint | Augment Slot 5 |
 | augslot6 | mediumint | Augment Slot 6 |
 | instnodrop | tinyint | No Drop: 0 = False, 1 = True |
-| custom\_data | text | Custom Data |
+| custom_data | text | Custom Data |
 | ornamenticon | int | Ornamentation Icon |
 | ornamentidfile | int | Ornamentation Texture |
-| ornament\_hero\_model | int | Ornamentation Hero's Forge Model |
+| ornament_hero_model | int | Ornamentation Hero's Forge Model |
 

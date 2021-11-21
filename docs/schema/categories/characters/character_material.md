@@ -1,4 +1,4 @@
-# character\_material
+# character_material
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -7,6 +7,6 @@
 | blue | tinyint | Blue: 0 = None, 255 = Max |
 | green | tinyint | Green: 0 = None, 255 = Max |
 | red | tinyint | Red: 0 = None, 255 = Max |
-| use\_tint | tinyint | Tint: 0 = None, 255 = MAx |
+| use_tint | tinyint | Tint: 0 = None, 255 = MAx |
 | color | int | Color |
 

@@ -1,10 +1,10 @@
-# qs\_player\_events
+# qs_player_events
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Event Identifier |
-| char\_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| char_id | int | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | event | int | Event |
-| event\_desc | varchar | Event Description |
+| event_desc | varchar | Event Description |
 | time | int | Time UNIX Timestamp |
 

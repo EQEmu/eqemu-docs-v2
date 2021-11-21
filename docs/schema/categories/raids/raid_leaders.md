@@ -1,4 +1,4 @@
-# raid\_leaders
+# raid_leaders
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
@@ -10,5 +10,5 @@
 | puller | varchar | Puller: 0 = False, 1 = True |
 | leadershipaa | tinyblob | Leadership AA |
 | mentoree | varchar | Mentoree: 0 = False, 1 = True |
-| mentor\_percent | int | Mentore Percent: 0 = None, 100 = Max |
+| mentor_percent | int | Mentore Percent: 0 = None, 100 = Max |
 

@@ -8,7 +8,7 @@
 | minstatus | smallint | [Minimum Status](../../../../categories/player/status-levels) |
 | motd | text | Message of the Day |
 | tribute | int | Tribute |
-| motd\_setter | varchar | [Character Identifier](../../../schema/categories/characters/character_data.md) |
+| motd_setter | varchar | [Character Identifier](../../../schema/categories/characters/character_data.md) |
 | channel | varchar | Channel |
 | url | varchar | Website URL |
 

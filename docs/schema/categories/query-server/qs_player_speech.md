@@ -1,4 +1,4 @@
-# qs\_player\_speech
+# qs_player_speech
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

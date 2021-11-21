@@ -1,7 +1,7 @@
-# rule\_sets
+# rule_sets
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| ruleset\_id | tinyint | Unique Rule Set Identifier |
+| ruleset_id | tinyint | Unique Rule Set Identifier |
 | name | varchar | Name |
 

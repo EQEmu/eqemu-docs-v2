@@ -1,4 +1,4 @@
-# account\_ip
+# account_ip
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

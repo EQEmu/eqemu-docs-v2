@@ -1,8 +1,8 @@
-# char\_recipe\_list
+# char_recipe_list
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char\_id | int | [Character Identifier](character_data.md) |
-| recipe\_id | int | [Recipe Identifier](../../../schema/categories/tradeskills/tradeskill_recipe.md) |
+| char_id | int | [Character Identifier](character_data.md) |
+| recipe_id | int | [Recipe Identifier](../../../schema/categories/tradeskills/tradeskill_recipe.md) |
 | madecount | int | Made Count |
 

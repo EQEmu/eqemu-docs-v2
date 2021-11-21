@@ -1,4 +1,4 @@
-# client\_server\_faction\_map
+# client_server_faction_map
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

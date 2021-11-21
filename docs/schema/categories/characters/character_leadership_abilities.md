@@ -1,4 +1,4 @@
-# character\_leadership\_abilities
+# character_leadership_abilities
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |

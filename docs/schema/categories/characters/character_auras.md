@@ -1,8 +1,8 @@
-# character\_auras
+# character_auras
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Unique Character Identifier](character_data.md) |
 | slot | tinyint | Slot |
-| spell\_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 

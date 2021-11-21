@@ -1,8 +1,8 @@
-# bot\_groups
+# bot_groups
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| groups\_index | int | Unique Group Identifier |
-| group\_leader\_id | int | [Bot Identifier](bot_data.md) |
-| group\_name | varchar | Group Name |
+| groups_index | int | Unique Group Identifier |
+| group_leader_id | int | [Bot Identifier](bot_data.md) |
+| group_name | varchar | Group Name |
 

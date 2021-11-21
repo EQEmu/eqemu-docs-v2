@@ -1,10 +1,10 @@
-# merc\_npc\_types
+# merc_npc_types
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| merc\_npc\_type\_id | int | Mercenary NPC Type Identifier |
-| proficiency\_id | tinyint | Proficiency Identifier |
-| tier\_id | tinyint | Tier Identifier |
-| class\_id | int | [Class Identifier](../../../../categories/player/class-list) |
+| merc_npc_type_id | int | Mercenary NPC Type Identifier |
+| proficiency_id | tinyint | Proficiency Identifier |
+| tier_id | tinyint | Tier Identifier |
+| class_id | int | [Class Identifier](../../../../categories/player/class-list) |
 | name | varchar | Name |
 

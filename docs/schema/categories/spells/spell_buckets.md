@@ -1,4 +1,4 @@
-# spell\_buckets
+# spell_buckets
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
