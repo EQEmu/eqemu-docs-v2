@@ -172,7 +172,6 @@ nav:
           - Logging for Developers: server/logging-system/logging-for-developers.md
           - Logging Packets: server/logging-system/logging-packets.md
       - Login Server:
-          - server/login-server/README.md
           - Auto Create Login Accounts: server/login-server/auto-create-login-accounts.md
           - REST API: server/login-server/login-server-rest-api.md
           - Database Schema: server/login-server/database-schema.md
@@ -186,7 +185,6 @@ nav:
           - server/maps/README.md
           - Editing Maps: server/maps/editing-maps.md
       - NPC:
-          - server/npc/README.md
           - NPC Aggro: server/npc/npc-aggro.md
           - ModifyNPCStat Identifiers: server/npc/modifynpcstat-identifiers.md
           - Stuck Behavior: server/npc/stuck-behavior.md
