@@ -627,6 +627,33 @@ nav:
           - zone: schema/zone/zone.md
           - zone_flags: schema/zone/zone_flags.md
           - zone_points: schema/zone/zone_points.md
+  - Quest API:
+      - Methods:
+          - Bot: quest-api/methods/bot.md
+          - Client: quest-api/methods/client.md
+          - Corpse: quest-api/methods/corpse.md
+          - Door: quest-api/methods/door.md
+          - Doors: quest-api/methods/doors.md
+          - Entity: quest-api/methods/entity.md
+          - EntityList: quest-api/methods/entitylist.md
+          - Expedition: quest-api/methods/expedition.md
+          - Group: quest-api/methods/group.md
+          - HateEntry: quest-api/methods/hateentry.md
+          - Inventory: quest-api/methods/inventory.md
+          - Item: quest-api/methods/item.md
+          - ItemInst: quest-api/methods/iteminst.md
+          - Mob: quest-api/methods/mob.md
+          - NPC: quest-api/methods/npc.md
+          - Object: quest-api/methods/object.md
+          - Packet: quest-api/methods/packet.md
+          - PerlPacket: quest-api/methods/perlpacket.md
+          - QuestItem: quest-api/methods/questitem.md
+          - Raid: quest-api/methods/raid.md
+          - Spawn: quest-api/methods/spawn.md
+          - Spell: quest-api/methods/spell.md
+          - StatBonuses: quest-api/methods/statbonuses.md
+          - eq: quest-api/methods/eq.md
+          - quest: quest-api/methods/quest.md
   - Changelog:
       - "2021": changelog/server/2021.md
       - "2020": changelog/server/2020.md

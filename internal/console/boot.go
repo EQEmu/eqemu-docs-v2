@@ -10,6 +10,7 @@ func Run() error {
 	commands := []*cobra.Command{
 		NewTestCommand().Command(),
 		NewSyncDbSchemaConfigFromFilesCommand().Command(),
+		NewQuestApiDocGeneratorCommand().Command(),
 		NewDbGenerateDocsCommand().Command(),
 	}
 

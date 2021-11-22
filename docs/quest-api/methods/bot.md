@@ -1,0 +1,5 @@
+=== "Perl"
+
+    ``` perl
+    $bot->GetOwner();
+    ```

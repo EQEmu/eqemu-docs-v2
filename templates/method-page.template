@@ -1,0 +1,5 @@
+=== "{{language_label}}"
+
+    ``` {{language_syntax}}
+{{language_methods}}
+    ```

@@ -1,6 +1,7 @@
 package config
 
 import (
+	"bytes"
 	"fmt"
 	"gopkg.in/yaml.v3"
 	"log"
@@ -39,6 +40,7 @@ type MkDocsCfg struct {
 		PlayClient     []interface{}                    `yaml:"Play (Client),omitempty"`
 		Server         []interface{}                    `yaml:"Server,omitempty"`
 		DatabaseSchema []map[string][]map[string]string `yaml:"Database Schema,omitempty"`
+		QuestApi       []map[string][]map[string]string `yaml:"Quest API,omitempty"`
 		Changelog      []struct {
 			Num2003 string `yaml:"2003,omitempty"`
 			Num2004 string `yaml:"2004,omitempty"`
@@ -79,6 +81,25 @@ func GetMkdocsConfig() (MkDocsCfg, error) {
 	return configYaml, nil
 }
 
+func WriteMkdocsConfig(config MkDocsCfg) {
+	fmt.Printf("Writing [%v]\n", MkDocsConfigFile)
+
+	// yaml
+	var newConfig bytes.Buffer
+	yamlEncoder := yaml.NewEncoder(&newConfig)
+	yamlEncoder.SetIndent(2)
+	err := yamlEncoder.Encode(&config)
+	if err != nil {
+		log.Println(err)
+	}
+
+	// write
+	err = os.WriteFile(MkDocsConfigFile, newConfig.Bytes(), 755)
+	if err != nil {
+		log.Println(err)
+	}
+}
+
 func GetMkDocsDatabaseConfig() []map[string][]map[string]string {
 	mkdocsCfg, err := GetMkdocsConfig()
 	if err != nil {
@@ -89,6 +110,22 @@ func GetMkDocsDatabaseConfig() []map[string][]map[string]string {
 	for i, nav := range mkdocsCfg.Nav {
 		if len(nav.DatabaseSchema) > 0 {
 			return mkdocsCfg.Nav[i].DatabaseSchema
+		}
+	}
+
+	return nil
+}
+
+func GetMkDocsQuestApiConfig() []map[string][]map[string]string {
+	mkdocsCfg, err := GetMkdocsConfig()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// write nav block
+	for i, nav := range mkdocsCfg.Nav {
+		if len(nav.QuestApi) > 0 {
+			return mkdocsCfg.Nav[i].QuestApi
 		}
 	}
 
