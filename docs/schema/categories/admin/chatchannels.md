@@ -1,9 +1,0 @@
-# chatchannels
-
-| Column | Data Type | Description |
-| :--- | :--- | :--- |
-| name | varchar | Name |
-| owner | varchar | [Owner Character Identifier](../../../schema/categories/characters/character_data.md) |
-| password | varchar | Password |
-| minstatus | int | [Minimum Status](../../../../categories/player/status-levels) |
-
