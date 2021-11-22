@@ -6,16 +6,15 @@ description: Embedded Web REST API
 
 The login server has an embedded web server that servers an API on port 6000 unless otherwise specified in the config
 
-{% code title="login.json" %}
-```javascript
-{
-  "web_api": {
-    "enabled": true, // enable/disable embedded webserver api
-    "port": 6000 // the port you want the web api to serve on (recommended not to change)
-  },
-}
-```
-{% endcode %}
+=== "login.json"
+      ```json
+      {
+        "web_api": {
+          "enabled": true, // enable/disable embedded webserver api
+          "port": 6000 // the port you want the web api to serve on (recommended not to change)
+        },
+      }
+      ```
 
 You have the option to disable it, or change the port altogether
 
@@ -87,15 +86,13 @@ Authorization: Bearer <token>
 {% endswagger-response %}
 {% endswagger %}
 
-{% code title="Request Body" %}
-```
+```json
 {
     "username": "test",
     "password": "test",
     "email": "<optional>"
 }
 ```
-{% endcode %}
 
 {% swagger baseUrl="http://loginserver:6000" path="/v1/account/credentials/validate/local" method="post" summary="Validate Login Account Credentials" %}
 {% swagger-description %}
@@ -118,15 +115,13 @@ Authorization: Bearer <token>
 {% endswagger-response %}
 {% endswagger %}
 
-{% code title="Request Body" %}
-```javascript
+```json
 {
     "username": "test",
     "password": "test",
     "email": "<optional>"
 }
 ```
-{% endcode %}
 
 {% swagger baseUrl="http://loginserver:6000" path="/v1/account/credentials/update/local" method="post" summary="Update Login Account Credentials" %}
 {% swagger-description %}
