@@ -52,17 +52,15 @@ func (c *SyncDbSchemaConfigFromFilesCommand) Handle(_ *cobra.Command, _ []string
 	}
 
 	// walk existing files
-	err = filepath.Walk("docs/schema/categories",
+	err = filepath.Walk("docs/schema",
 		func(path string, info os.FileInfo, err error) error {
 			if err != nil {
 				return err
 			}
-			dir := filepath.Dir(path)
-			parent := filepath.Base(dir)
+			//dir := filepath.Dir(path)
+			//parent := filepath.Base(dir)
 			fileName := filepath.Base(path)
 			fileNameNoExt := strings.ReplaceAll(fileName, ".md", "")
-			categoryNameHuman := strings.ReplaceAll(parent, "-", " ")
-			categoryNameHuman = strings.Title(categoryNameHuman)
 
 			//fmt.Printf("dir [%v] file [%v] cat [%v]\n", parent, fileNameNoExt, categoryNameHuman)
 

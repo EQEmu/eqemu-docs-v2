@@ -233,7 +233,7 @@ aa_ranks:
     ordinal_position: 10
   spell:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 8
   spell_type:
@@ -431,7 +431,7 @@ account_rewards:
     ordinal_position: 3
   reward_id:
     dataType: int
-    description: '[Veteran Reward Identifier](../../../schema/categories/admin/veteran_reward_templates.md)'
+    description: '[Veteran Reward Identifier](../../schema/admin/veteran_reward_templates.md)'
     nullable: "NO"
     ordinal_position: 2
 adventure_details:
@@ -457,7 +457,7 @@ adventure_details:
     ordinal_position: 1
   instance_id:
     dataType: int
-    description: '[Instance Identifier](../../../schema/categories/instances/instance_list.md)'
+    description: '[Instance Identifier](../../schema/instances/instance_list.md)'
     nullable: "NO"
     ordinal_position: 3
   status:
@@ -483,7 +483,7 @@ adventure_details:
 adventure_members:
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   id:
@@ -524,7 +524,7 @@ adventure_stats:
     ordinal_position: 4
   player_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   ruj_losses:
@@ -860,7 +860,7 @@ alternate_currency:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 2
 auras:
@@ -901,7 +901,7 @@ auras:
     ordinal_position: 3
   npc_type:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 2
   spawn_type:
@@ -922,7 +922,7 @@ auras:
 banned_ips:
   ip_address:
     dataType: varchar
-    description: '[IP Address](../../../schema/categories/account/account_ip.md)'
+    description: '[IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 1
   notes:
@@ -1555,7 +1555,7 @@ bot_inventories:
     nullable: "NO"
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../items/items.md)'
     nullable: "YES"
   ornament_hero_model:
     dataType: int
@@ -1821,7 +1821,7 @@ bug_reports:
     ordinal_position: 25
   account_id:
     dataType: int
-    description: '[Account Identifier](../../../schema/categories/account/account.md)'
+    description: '[Account Identifier](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 5
   bug_report:
@@ -1846,12 +1846,12 @@ bug_reports:
     ordinal_position: 10
   character_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 6
   character_name:
     dataType: varchar
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 7
   client_version_id:
@@ -2028,17 +2028,17 @@ buyer:
     ordinal_position: 2
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   itemname:
     dataType: varchar
-    description: '[Item Name](../../../schema/categories/items/items.md)'
+    description: '[Item Name](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   price:
@@ -2171,13 +2171,13 @@ char_recipe_list:
     ordinal_position: 3
   recipe_id:
     dataType: int
-    description: '[Recipe Identifier](../../../schema/categories/tradeskills/tradeskill_recipe.md)'
+    description: '[Recipe Identifier](../../schema/tradeskills/tradeskill_recipe.md)'
     nullable: "NO"
     ordinal_position: 2
 character_activities:
   activityid:
     dataType: int
-    description: '[Activity Identifier](../../../schema/categories/tasks/task_activities.md)'
+    description: '[Activity Identifier](../../schema/tasks/task_activities.md)'
     nullable: "NO"
     ordinal_position: 3
   charid:
@@ -2197,7 +2197,7 @@ character_activities:
     ordinal_position: 4
   taskid:
     dataType: int
-    description: '[Task Identifier](../../../schema/categories/tasks/tasks.md)'
+    description: '[Task Identifier](../../schema/tasks/tasks.md)'
     nullable: "NO"
     ordinal_position: 2
 character_alt_currency:
@@ -2213,13 +2213,13 @@ character_alt_currency:
     ordinal_position: 1
   currency_id:
     dataType: int
-    description: '[Currency Identifier](../../../schema/categories/alternate-currency/alternate_currency.md)'
+    description: '[Currency Identifier](../../schema/alternate-currency/alternate_currency.md)'
     nullable: "NO"
     ordinal_position: 2
 character_alternate_abilities:
   aa_id:
     dataType: smallint
-    description: '[AA Identifier](../../../schema/categories/aas/aa_ability.md)'
+    description: '[AA Identifier](../../schema/aas/aa_ability.md)'
     nullable: "NO"
     ordinal_position: 2
   aa_value:
@@ -2250,7 +2250,7 @@ character_auras:
     ordinal_position: 2
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
 character_bandolier:
@@ -2281,7 +2281,7 @@ character_bandolier:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
 character_bind:
@@ -2358,7 +2358,7 @@ character_buffs:
     ordinal_position: 15
   character_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   counters:
@@ -2403,7 +2403,7 @@ character_buffs:
     ordinal_position: 2
   spell_id:
     dataType: smallint
-    description: '[Buff Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Buff Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   ticsremaining:
@@ -2464,7 +2464,7 @@ character_corpse_items:
     ordinal_position: 2
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 3
 character_corpses:
@@ -2822,7 +2822,7 @@ character_data:
     ordinal_position: 99
   ability_number:
     dataType: tinyint
-    description: '[Ability Number](../../../schema/categories/aas/aa_ability.md)'
+    description: '[Ability Number](../../schema/aas/aa_ability.md)'
     nullable: "NO"
     ordinal_position: 35
   ability_time_hours:
@@ -2847,7 +2847,7 @@ character_data:
     ordinal_position: 62
   account_id:
     dataType: int
-    description: '[Account Identifier](../../../schema/categories/account/account.md)'
+    description: '[Account Identifier](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   agi:
@@ -3303,7 +3303,7 @@ character_data:
 character_disciplines:
   disc_id:
     dataType: smallint
-    description: '[Discipline Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Discipline Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   id:
@@ -3324,7 +3324,7 @@ character_enabledtasks:
     ordinal_position: 1
   taskid:
     dataType: int
-    description: '[Task Identifier](../../../schema/categories/tasks/tasks.md)'
+    description: '[Task Identifier](../../schema/tasks/tasks.md)'
     nullable: "NO"
     ordinal_position: 2
 character_exp_modifiers:
@@ -3538,7 +3538,7 @@ character_memmed_spells:
     ordinal_position: 2
   spell_id:
     dataType: smallint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
 character_pet_buffs:
@@ -3589,7 +3589,7 @@ character_pet_buffs:
     ordinal_position: 3
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 4
   ticsremaining:
@@ -3635,7 +3635,7 @@ character_pet_info:
     ordinal_position: 8
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 5
   taunting:
@@ -3651,7 +3651,7 @@ character_pet_inventory:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   pet:
@@ -3677,7 +3677,7 @@ character_potionbelt:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   potion_id:
@@ -3714,7 +3714,7 @@ character_spells:
     ordinal_position: 2
   spell_id:
     dataType: smallint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
 character_task_timers:
@@ -3761,7 +3761,7 @@ character_tasks:
     ordinal_position: 3
   taskid:
     dataType: int
-    description: '[Task Identifier](../../../schema/categories/tasks/tasks.md)'
+    description: '[Task Identifier](../../schema/tasks/tasks.md)'
     nullable: "NO"
     ordinal_position: 2
   type:
@@ -3798,7 +3798,7 @@ chatchannels:
     ordinal_position: 1
   owner:
     dataType: varchar
-    description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Owner Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   password:
@@ -4239,7 +4239,7 @@ completed_tasks:
     ordinal_position: 4
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   completedtime:
@@ -4348,7 +4348,7 @@ discovered_items:
     ordinal_position: 4
   char_name:
     dataType: varchar
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   discovered_date:
@@ -4358,7 +4358,7 @@ discovered_items:
     ordinal_position: 3
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 1
 doors:
@@ -4389,7 +4389,7 @@ doors:
     ordinal_position: 25
   dest_instance:
     dataType: int
-    description: '[Destination Instance](../../../schema/categories/instances/instance_list.md)'
+    description: '[Destination Instance](../../schema/instances/instance_list.md)'
     nullable: "NO"
     ordinal_position: 21
   dest_x:
@@ -4434,7 +4434,7 @@ doors:
     ordinal_position: 18
   guild:
     dataType: smallint
-    description: '[Guild Identifier](../../../schema/categories/guilds/guilds.md)'
+    description: '[Guild Identifier](../../schema/guilds/guilds.md)'
     nullable: "NO"
     ordinal_position: 11
   heading:
@@ -4464,7 +4464,7 @@ doors:
     ordinal_position: 31
   keyitem:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 13
   lockpick:
@@ -4698,17 +4698,17 @@ eqtime:
 eventlog:
   accountid:
     dataType: int
-    description: '[Account Identifier](../../../schema/categories/account/account.md)'
+    description: '[Account Identifier](../../schema/account/account.md)'
     nullable: "YES"
     ordinal_position: 3
   accountname:
     dataType: varchar
-    description: '[Account Name](../../../schema/categories/account/account.md)'
+    description: '[Account Name](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   charname:
     dataType: varchar
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 5
   description:
@@ -4869,7 +4869,7 @@ faction_list_mod:
 faction_values:
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   current_value:
@@ -4919,7 +4919,7 @@ fear_hints:
 fishing:
   Itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   chance:
@@ -4959,7 +4959,7 @@ fishing:
     ordinal_position: 7
   npc_id:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 6
   skill_level:
@@ -4975,7 +4975,7 @@ fishing:
 forage:
   Itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   chance:
@@ -5123,17 +5123,17 @@ global_loot:
 gm_ips:
   account_id:
     dataType: int
-    description: '[Account Identifier](../../../schema/categories/account/account.md)'
+    description: '[Account Identifier](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   ip_address:
     dataType: varchar
-    description: '[IP Address](../../../schema/categories/account/account_ip.md)'
+    description: '[IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 3
   name:
     dataType: varchar
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
 goallists:
@@ -5273,7 +5273,7 @@ ground_spawns:
     ordinal_position: 1
   item:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 11
   max_allowed:
@@ -5339,7 +5339,7 @@ ground_spawns:
 group_id:
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   groupid:
@@ -5411,7 +5411,7 @@ guild_bank:
     ordinal_position: 2
   donator:
     dataType: varchar
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 6
   guildid:
@@ -5421,7 +5421,7 @@ guild_bank:
     ordinal_position: 1
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   permissions:
@@ -5457,7 +5457,7 @@ guild_members:
     ordinal_position: 7
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   guild_id:
@@ -5575,7 +5575,7 @@ guilds:
     ordinal_position: 1
   leader:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 3
   minstatus:
@@ -5590,7 +5590,7 @@ guilds:
     ordinal_position: 5
   motd_setter:
     dataType: varchar
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 7
   name:
@@ -5611,7 +5611,7 @@ guilds:
 hackers:
   account:
     dataType: text
-    description: '[Account Identifier](../../../schema/categories/account/account.md)'
+    description: '[Account Identifier](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   date:
@@ -5631,7 +5631,7 @@ hackers:
     ordinal_position: 1
   name:
     dataType: text
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 3
   zone:
@@ -5642,7 +5642,7 @@ hackers:
 horses:
   filename:
     dataType: varchar
-    description: '[NPC Type Name](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Name](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 1
   gender:
@@ -5709,7 +5709,7 @@ instance_list:
 instance_list_player:
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   id:
@@ -5755,7 +5755,7 @@ inventory:
     ordinal_position: 4
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   color:
@@ -5775,7 +5775,7 @@ inventory:
     ordinal_position: 12
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 3
   ornament_hero_model:
@@ -5836,7 +5836,7 @@ inventory_snapshots:
     ordinal_position: 5
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   color:
@@ -5856,7 +5856,7 @@ inventory_snapshots:
     ordinal_position: 13
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 4
   ornament_hero_model:
@@ -5913,7 +5913,7 @@ ip_exemptions:
     ordinal_position: 1
   exemption_ip:
     dataType: varchar
-    description: '[Exemption IP Address](../../../schema/categories/account/account_ip.md)'
+    description: '[Exemption IP Address](../../schema/account/account_ip.md)'
     nullable: "YES"
     ordinal_position: 2
 item_tick:
@@ -5929,7 +5929,7 @@ item_tick:
     ordinal_position: 2
   it_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 4
   it_itemid:
@@ -5944,7 +5944,7 @@ item_tick:
     ordinal_position: 3
   it_qglobal:
     dataType: varchar
-    description: '[Quest Global Identifier](../../../schema/categories/data-storage/quest_globals.md) \(Deprecated\)'
+    description: '[Quest Global Identifier](../../schema/data-storage/quest_globals.md) \(Deprecated\)'
     nullable: "NO"
     ordinal_position: 5
 items:
@@ -6379,7 +6379,7 @@ items:
     ordinal_position: 35
   bardeffect:
     dataType: smallint
-    description: '[Bard Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Bard Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 250
   bardeffecttype:
@@ -6449,7 +6449,7 @@ items:
     ordinal_position: 124
   book:
     dataType: int
-    description: '[Book](../../../schema/categories/books/books.md)'
+    description: '[Book](../../schema/books/books.md)'
     nullable: "NO"
     ordinal_position: 40
   booktype:
@@ -6489,7 +6489,7 @@ items:
     ordinal_position: 45
   clickeffect:
     dataType: int
-    description: '[Click Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Click Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 114
   clicklevel:
@@ -6704,7 +6704,7 @@ items:
     ordinal_position: 72
   focuseffect:
     dataType: int
-    description: '[Focus Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Focus Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 73
   focuslevel:
@@ -7029,7 +7029,7 @@ items:
     ordinal_position: 50
   proceffect:
     dataType: int
-    description: '[Proc Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Proc Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 146
   proclevel:
@@ -7144,7 +7144,7 @@ items:
     ordinal_position: 247
   scrolleffect:
     dataType: int
-    description: '[Scroll Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Scroll Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 160
   scrolllevel:
@@ -7319,7 +7319,7 @@ items:
     ordinal_position: 121
   worneffect:
     dataType: int
-    description: '[Worn Effect Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Worn Effect Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 151
   wornlevel:
@@ -7385,7 +7385,7 @@ keyring:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 2
 launcher:
@@ -7444,7 +7444,7 @@ ldon_trap_templates:
     ordinal_position: 4
   spell_id:
     dataType: smallint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   type:
@@ -7522,7 +7522,7 @@ login_accounts:
     ordinal_position: 4
   account_name:
     dataType: varchar
-    description: '[Account Name](../../../schema/categories/account/account.md)'
+    description: '[Account Name](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   account_password:
@@ -7542,7 +7542,7 @@ login_accounts:
     ordinal_position: 1
   last_ip_address:
     dataType: varchar
-    description: '[Last IP Address](../../../schema/categories/account/account_ip.md)'
+    description: '[Last IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 6
   last_login_date:
@@ -7629,7 +7629,7 @@ login_server_admins:
     ordinal_position: 7
   registration_ip_address:
     dataType: varchar
-    description: '[Registration IP Address](../../../schema/categories/account/account_ip.md)'
+    description: '[Registration IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 8
 login_server_list_types:
@@ -7774,7 +7774,7 @@ lootdrop_entries:
     ordinal_position: 3
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 2
   lootdrop_id:
@@ -8088,7 +8088,7 @@ merc_merchant_entries:
     nullable: "NO"
   merchant_id:
     dataType: int
-    description: '[Merchant Identifier](../../../schema/categories/merchants/merchantlist.md)'
+    description: '[Merchant Identifier](../merchants/merchantlist.md)'
     nullable: "NO"
 merc_merchant_template_entries:
   merc_merchant_template_entry_id:
@@ -8114,7 +8114,7 @@ merc_merchant_templates:
     nullable: "NO"
   qglobal:
     dataType: varchar
-    description: '[Quest Global](../../../schema/categories/data-storage/quest_globals.md) \(Deprecated\)'
+    description: '[Quest Global](../data-storage/quest_globals.md) \(Deprecated\)'
     nullable: "YES"
 merc_name_types:
   class_id:
@@ -8465,7 +8465,7 @@ merc_weaponinfo:
 merchantlist:
   alt_currency_cost:
     dataType: smallint
-    description: '[Alternate Currency Cost](../../../schema/categories/alternate-currency/alternate_currency.md)'
+    description: '[Alternate Currency Cost](../../schema/alternate-currency/alternate_currency.md)'
     nullable: "NO"
     ordinal_position: 6
   classes_required:
@@ -8490,7 +8490,7 @@ merchantlist:
     ordinal_position: 4
   item:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   level_required:
@@ -8531,12 +8531,12 @@ merchantlist_temp:
     ordinal_position: 4
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   npcid:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 1
   slot:
@@ -8696,13 +8696,13 @@ npc_faction:
     ordinal_position: 2
   primaryfaction:
     dataType: int
-    description: '[Primary Faction Identifier](../../../schema/categories/factions/faction_list.md)'
+    description: '[Primary Faction Identifier](../../schema/factions/faction_list.md)'
     nullable: "NO"
     ordinal_position: 3
 npc_faction_entries:
   faction_id:
     dataType: int
-    description: '[Faction Identifier](../../../schema/categories/factions/faction_list.md)'
+    description: '[Faction Identifier](../../schema/factions/faction_list.md)'
     nullable: "NO"
     ordinal_position: 2
   npc_faction_id:
@@ -8869,7 +8869,7 @@ npc_scale_global_base:
 npc_spells:
   attack_proc:
     dataType: smallint
-    description: The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](../../../schema/categories/spells/spells_new.md)
+    description: The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](../../schema/spells/spells_new.md)
     nullable: "NO"
     ordinal_position: 4
   defensive_proc:
@@ -9082,7 +9082,7 @@ npc_spells_entries:
     ordinal_position: 10
   spellid:
     dataType: smallint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   type:
@@ -9183,7 +9183,7 @@ npc_types:
     ordinal_position: 74
   adventure_template_id:
     dataType: int
-    description: '[Adventure Template Identifier](../../../schema/categories/adventures/adventure_template.md)'
+    description: '[Adventure Template Identifier](../../schema/adventures/adventure_template.md)'
     nullable: "NO"
     ordinal_position: 23
   aggroradius:
@@ -9193,7 +9193,7 @@ npc_types:
     ordinal_position: 30
   alt_currency_id:
     dataType: int
-    description: '[Alternate Currency Identifier](../../../schema/categories/alternate-currency/alternate_currency.md)'
+    description: '[Alternate Currency Identifier](../../schema/alternate-currency/alternate_currency.md)'
     nullable: "NO"
     ordinal_position: 19
   always_aggro:
@@ -9443,7 +9443,7 @@ npc_types:
     ordinal_position: 102
   loottable_id:
     dataType: int
-    description: '[Loottable Identifier](../../../schema/categories/loot/loottable.md)'
+    description: '[Loottable Identifier](../../schema/loot/loottable.md)'
     nullable: "NO"
     ordinal_position: 17
   luclin_beard:
@@ -9498,7 +9498,7 @@ npc_types:
     ordinal_position: 86
   merchant_id:
     dataType: int
-    description: '[Merchant Identifier](../../../schema/categories/merchants/merchantlist.md)'
+    description: '[Merchant Identifier](../../schema/merchants/merchantlist.md)'
     nullable: "NO"
     ordinal_position: 18
   mindmg:
@@ -9528,7 +9528,7 @@ npc_types:
     ordinal_position: 64
   npc_faction_id:
     dataType: int
-    description: '[NPC Faction Identifier](../../../schema/categories/factions/faction_list.md)'
+    description: '[NPC Faction Identifier](../../schema/factions/faction_list.md)'
     nullable: "NO"
     ordinal_position: 22
   npc_spells_effects_id:
@@ -9673,7 +9673,7 @@ npc_types:
     ordinal_position: 78
   trap_template:
     dataType: int
-    description: '[Trap Template Identifier](../../../schema/categories/traps/traps.md)'
+    description: '[Trap Template Identifier](../../schema/traps/traps.md)'
     nullable: "YES"
     ordinal_position: 24
   underwater:
@@ -9915,7 +9915,7 @@ object:
     ordinal_position: 1
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 8
   max_expansion:
@@ -10076,7 +10076,7 @@ object_contents:
     ordinal_position: 6
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   parentid:
@@ -10128,7 +10128,7 @@ perl_event_export_settings:
 petitions:
   accountname:
     dataType: varchar
-    description: '[Account Name](../../../schema/categories/account/account.md)'
+    description: '[Account Name](../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 4
   charclass:
@@ -10143,7 +10143,7 @@ petitions:
     ordinal_position: 12
   charname:
     dataType: varchar
-    description: '[Character Name](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Name](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 3
   charrace:
@@ -10209,7 +10209,7 @@ petitions:
 pets:
   equipmentset:
     dataType: int
-    description: '[Pet Equipment Set Identifier](../../../schema/categories/pets/pets_equipmentset.md)'
+    description: '[Pet Equipment Set Identifier](../../schema/pets/pets_equipmentset.md)'
     nullable: "NO"
     ordinal_position: 8
   monsterflag:
@@ -10219,7 +10219,7 @@ pets:
     ordinal_position: 7
   npcID:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 3
   petcontrol:
@@ -10244,7 +10244,7 @@ pets:
     ordinal_position: 4
   type:
     dataType: varchar
-    description: '[NPC Type Name](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Name](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 1
 pets_beastlord_data:
@@ -10302,7 +10302,7 @@ pets_equipmentset:
 pets_equipmentset_entries:
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   set_id:
@@ -10340,7 +10340,7 @@ profanity_list:
 proximities:
   exploreid:
     dataType: int
-    description: '[Explore Identifier](../../../schema/categories/tasks/goallists.md)'
+    description: '[Explore Identifier](../../schema/tasks/goallists.md)'
     nullable: "NO"
     ordinal_position: 2
   maxx:
@@ -10391,7 +10391,7 @@ qs_merchant_transaction_record:
     ordinal_position: 12
   char_id:
     dataType: int
-    description: '[Unique Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Unique Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 10
   char_items:
@@ -10421,7 +10421,7 @@ qs_merchant_transaction_record:
     ordinal_position: 6
   merchant_id:
     dataType: int
-    description: '[Merchant Identifier](../../../schema/categories/merchants/merchantlist.md)'
+    description: '[Merchant Identifier](../../schema/merchants/merchantlist.md)'
     nullable: "YES"
     ordinal_position: 4
   merchant_items:
@@ -10497,7 +10497,7 @@ qs_merchant_transaction_record_entries:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 3
 qs_player_aa_rate_hourly:
@@ -10508,7 +10508,7 @@ qs_player_aa_rate_hourly:
     ordinal_position: 3
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   hour_time:
@@ -10519,12 +10519,12 @@ qs_player_aa_rate_hourly:
 qs_player_delete_record:
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 3
   char_items:
     dataType: mediumint
-    description: '[Character Items Identifier](../../../schema/categories/items/items.md)'
+    description: '[Character Items Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 5
   delete_id:
@@ -10585,13 +10585,13 @@ qs_player_delete_record_entries:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 3
 qs_player_events:
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 2
   event:
@@ -10627,12 +10627,12 @@ qs_player_handin_record:
     ordinal_position: 6
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 4
   char_items:
     dataType: mediumint
-    description: '[Character Items Identifier](../../../schema/categories/items/items.md)'
+    description: '[Character Items Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 9
   char_pp:
@@ -10662,12 +10662,12 @@ qs_player_handin_record:
     ordinal_position: 12
   npc_id:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "YES"
     ordinal_position: 10
   npc_items:
     dataType: mediumint
-    description: '[NPC Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[NPC Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 15
   npc_pp:
@@ -10682,7 +10682,7 @@ qs_player_handin_record:
     ordinal_position: 13
   quest_id:
     dataType: int
-    description: '[Quest Identifier](../../../schema/categories/tasks/tasks.md)'
+    description: '[Quest Identifier](../../schema/tasks/tasks.md)'
     nullable: "YES"
     ordinal_position: 3
   time:
@@ -10738,18 +10738,18 @@ qs_player_handin_record_entries:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 4
 qs_player_move_record:
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 3
   char_items:
     dataType: mediumint
-    description: '[Character Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Character Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 7
   from_slot:
@@ -10825,7 +10825,7 @@ qs_player_move_record_entries:
     ordinal_position: 2
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 4
   to_slot:
@@ -10841,7 +10841,7 @@ qs_player_npc_kill_record:
     ordinal_position: 1
   npc_id:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "YES"
     ordinal_position: 2
   time:
@@ -10862,7 +10862,7 @@ qs_player_npc_kill_record:
 qs_player_npc_kill_record_entries:
   char_id:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 2
   event_id:
@@ -10873,12 +10873,12 @@ qs_player_npc_kill_record_entries:
 qs_player_speech:
   from:
     dataType: varchar
-    description: '[From Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[From Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   guilddbid:
     dataType: int
-    description: '[Guild Database Identifier](../../../schema/categories/guilds/guilds.md)'
+    description: '[Guild Database Identifier](../../schema/guilds/guilds.md)'
     nullable: "NO"
     ordinal_position: 6
   id:
@@ -10903,7 +10903,7 @@ qs_player_speech:
     ordinal_position: 8
   to:
     dataType: varchar
-    description: '[To Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[To Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 3
   type:
@@ -10924,12 +10924,12 @@ qs_player_trade_record:
     ordinal_position: 5
   char1_id:
     dataType: int
-    description: '[Character 1 Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character 1 Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 3
   char1_items:
     dataType: mediumint
-    description: '[Character 1 Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Character 1 Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 8
   char1_pp:
@@ -10954,12 +10954,12 @@ qs_player_trade_record:
     ordinal_position: 11
   char2_id:
     dataType: int
-    description: '[Character 2 Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character 2 Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 9
   char2_items:
     dataType: mediumint
-    description: '[Character 2 Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Character 2 Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 14
   char2_pp:
@@ -11020,7 +11020,7 @@ qs_player_trade_record_entries:
     ordinal_position: 1
   from_id:
     dataType: int
-    description: '[From Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[From Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 2
   from_slot:
@@ -11030,12 +11030,12 @@ qs_player_trade_record_entries:
     ordinal_position: 3
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 6
   to_id:
     dataType: int
-    description: '[To Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[To Character Identifier](../../schema/characters/character_data.md)'
     nullable: "YES"
     ordinal_position: 4
   to_slot:
@@ -11046,7 +11046,7 @@ qs_player_trade_record_entries:
 quest_globals:
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   expdate:
@@ -11061,7 +11061,7 @@ quest_globals:
     ordinal_position: 4
   npcid:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 2
   value:
@@ -11116,7 +11116,7 @@ raid_leaders:
     ordinal_position: 5
   gid:
     dataType: int
-    description: '[Group Identifier](../../../schema/categories/groups/group_id.md)'
+    description: '[Group Identifier](../../schema/groups/group_id.md)'
     nullable: "NO"
     ordinal_position: 1
   leadershipaa:
@@ -11162,12 +11162,12 @@ raid_members:
     ordinal_position: 4
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   groupid:
     dataType: int
-    description: '[Group Identifier](../../../schema/categories/groups/group_id.md)'
+    description: '[Group Identifier](../../schema/groups/group_id.md)'
     nullable: "NO"
     ordinal_position: 3
   isgroupleader:
@@ -11234,7 +11234,7 @@ respawn_times:
     ordinal_position: 1
   instance_id:
     dataType: smallint
-    description: '[Instance Identifier](../../../schema/categories/instances/instance_list.md)'
+    description: '[Instance Identifier](../../schema/instances/instance_list.md)'
     nullable: "NO"
     ordinal_position: 4
   start:
@@ -11503,7 +11503,7 @@ sharedbank:
     ordinal_position: 11
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "YES"
     ordinal_position: 3
   slotid:
@@ -11545,7 +11545,7 @@ spawn_condition_values:
     ordinal_position: 1
   instance_id:
     dataType: int
-    description: '[Instance Identifier](../../../schema/categories/instances/instance_list.md)'
+    description: '[Instance Identifier](../../schema/instances/instance_list.md)'
     nullable: "NO"
     ordinal_position: 4
   value:
@@ -11713,7 +11713,7 @@ spawn2:
     ordinal_position: 12
   pathgrid:
     dataType: int
-    description: '[Path Grid Identifier](../../../schema/categories/grids/grid.md)'
+    description: '[Path Grid Identifier](../../schema/grids/grid.md)'
     nullable: "NO"
     ordinal_position: 11
   respawntime:
@@ -11769,7 +11769,7 @@ spawnentry:
     ordinal_position: 4
   npcID:
     dataType: int
-    description: '[NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 2
   spawngroupID:
@@ -11846,7 +11846,7 @@ spawngroup:
 spell_buckets:
   key:
     dataType: varchar
-    description: '[Data Bucket Name](../../../schema/categories/data-storage/data_buckets.md)'
+    description: '[Data Bucket Name](../../schema/data-storage/data_buckets.md)'
     nullable: "YES"
     ordinal_position: 2
   spellid:
@@ -11862,7 +11862,7 @@ spell_buckets:
 spell_globals:
   qglobal:
     dataType: varchar
-    description: '[Quest Global Name](../../../schema/categories/data-storage/quest_globals.md)'
+    description: '[Quest Global Name](../../schema/data-storage/quest_globals.md)'
     nullable: "NO"
     ordinal_position: 3
   spell_name:
@@ -12178,22 +12178,22 @@ spells_new:
     ordinal_position: 66
   components1:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 59
   components2:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 60
   components3:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 61
   components4:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 62
   deities0:
@@ -12288,7 +12288,7 @@ spells_new:
     ordinal_position: 150
   descnum:
     dataType: int
-    description: '[Description Number](../../../schema/categories/client-files/db_str.md)'
+    description: '[Description Number](../../schema/client-files/db_str.md)'
     nullable: "NO"
     ordinal_position: 156
   disallow_sit:
@@ -12423,12 +12423,12 @@ spells_new:
     ordinal_position: 44
   effectdescnum:
     dataType: int
-    description: '[Effect Description Number](../../../schema/categories/client-files/db_str.md)'
+    description: '[Effect Description Number](../../schema/client-files/db_str.md)'
     nullable: "YES"
     ordinal_position: 158
   effectdescnum2:
     dataType: int
-    description: '[Effect Description Number 2](../../../schema/categories/client-files/db_str.md)'
+    description: '[Effect Description Number 2](../../schema/client-files/db_str.md)'
     nullable: "NO"
     ordinal_position: 159
   effectid1:
@@ -12736,7 +12736,7 @@ spells_new:
     ordinal_position: 1
   ldon_trap:
     dataType: int
-    description: '[LDoN Trap Identifier](../../../schema/categories/traps/traps.md)'
+    description: '[LDoN Trap Identifier](../../schema/traps/traps.md)'
     nullable: "NO"
     ordinal_position: 166
   mana:
@@ -13036,12 +13036,12 @@ spells_new:
     ordinal_position: 99
   teleport_zone:
     dataType: varchar
-    description: The zone you are teleporting to or the [NPC Name](../../../schema/categories/npcs/npc_types.md) you want to spawn.
+    description: The zone you are teleporting to or the [NPC Name](../../schema/npcs/npc_types.md) you want to spawn.
     nullable: "YES"
     ordinal_position: 4
   typedescnum:
     dataType: int
-    description: '[Type Description Number](../../../schema/categories/client-files/db_str.md)'
+    description: '[Type Description Number](../../schema/client-files/db_str.md)'
     nullable: "YES"
     ordinal_position: 157
   uninterruptable:
@@ -13208,7 +13208,7 @@ starting_items:
     ordinal_position: 7
   itemid:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 6
   max_expansion:
@@ -13249,7 +13249,7 @@ task_activities:
     ordinal_position: 4
   delivertonpc:
     dataType: int
-    description: 'Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../../schema/categories/npcs/npc_types.md)'
+    description: 'Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
     ordinal_position: 13
   description_override:
@@ -13274,7 +13274,7 @@ task_activities:
     ordinal_position: 11
   item_list:
     dataType: varchar
-    description: '[Item Identifier List](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier List](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 6
   optional:
@@ -13289,7 +13289,7 @@ task_activities:
     ordinal_position: 7
   spell_list:
     dataType: varchar
-    description: '[Spell Identifier List](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier List](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 8
   step:
@@ -13405,7 +13405,7 @@ tasks:
     ordinal_position: 12
   rewardid:
     dataType: int
-    description: '[Reward Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Reward Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 8
   rewardmethod:
@@ -13442,7 +13442,7 @@ tasksets:
 timers:
   char_id:
     dataType: int
-    description: '[Unique Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Unique Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   duration:
@@ -13468,7 +13468,7 @@ timers:
 titles:
   char_id:
     dataType: int
-    description: '[Unique Character Identifier](../../../../schema/categories/characters/character_data)'
+    description: '[Unique Character Identifier](../../../schema/characters/character_data)'
     nullable: "NO"
     ordinal_position: 9
   class:
@@ -13488,7 +13488,7 @@ titles:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../../schema/categories/items/items)'
+    description: '[Item Identifier](../../../schema/items/items)'
     nullable: "NO"
     ordinal_position: 11
   max_aa_points:
@@ -13601,7 +13601,7 @@ tool_gearup_armor_sets:
 trader:
   char_id:
     dataType: int
-    description: '[Unique Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Unique Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
   charges:
@@ -13616,7 +13616,7 @@ trader:
     ordinal_position: 5
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 2
   serialnumber:
@@ -13637,7 +13637,7 @@ trader_audit:
     ordinal_position: 3
   itemname:
     dataType: varchar
-    description: '[Item Name](../../../schema/categories/items/items.md)'
+    description: '[Item Name](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   quantity:
@@ -13764,7 +13764,7 @@ tradeskill_recipe_entries:
     ordinal_position: 8
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   recipe_id:
@@ -13810,7 +13810,7 @@ traps:
     ordinal_position: 10
   effectvalue:
     dataType: int
-    description: 'Effect Value: \(Based on Trap Type\) 0 = [Spell Identifier](../../../schema/categories/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../../schema/categories/npcs/npc_types.md), 3 = [NPC Type Identifier](../../../schema/categories/npcs/npc_types.md), 4 = Minimum Damage'
+    description: 'Effect Value: \(Based on Trap Type\) 0 = [Spell Identifier](../../schema/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 3 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 4 = Minimum Damage'
     nullable: "NO"
     ordinal_position: 11
   effectvalue2:
@@ -13916,7 +13916,7 @@ tribute_levels:
     ordinal_position: 3
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 4
   level:
@@ -13989,7 +13989,7 @@ veteran_reward_templates:
     ordinal_position: 1
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   name:
@@ -14195,7 +14195,7 @@ zone:
     ordinal_position: 47
   graveyard_id:
     dataType: float
-    description: '[Graveyard Identifier](../../../schema/categories/graveyards/graveyard.md)'
+    description: '[Graveyard Identifier](../../schema/graveyards/graveyard.md)'
     nullable: "NO"
     ordinal_position: 10
   gravity:
@@ -14335,7 +14335,7 @@ zone:
     ordinal_position: 71
   ruleset:
     dataType: int
-    description: '[Ruleset Identifier](../../../schema/categories/rules/rule_sets.md)'
+    description: '[Ruleset Identifier](../../schema/rules/rule_sets.md)'
     nullable: "NO"
     ordinal_position: 17
   safe_heading:
@@ -14476,7 +14476,7 @@ zone:
 zone_flags:
   charID:
     dataType: int
-    description: '[Unique Character Identifier](../../../../schema/categories/characters/character_data)'
+    description: '[Unique Character Identifier](../../../schema/characters/character_data)'
     nullable: "NO"
     ordinal_position: 1
   zoneID:
