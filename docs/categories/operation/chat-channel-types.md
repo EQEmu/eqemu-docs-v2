@@ -1,5 +1,7 @@
 # Chat Channel Types
 
+Also see [emote colors](../../../categories/scripting/emote-colors)
+
 | **ID** | **Code** | **Notes** |
 | :--- | :--- | :--- |
 | 0 | CC_WhiteSmoke | F0F0F0 |
