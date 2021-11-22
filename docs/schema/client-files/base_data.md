@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | level | int | Level |
-| class | int | [Class Identifier](../../../../categories/player/class-list) |
+| class | int | [Class Identifier](../../../../server/player/class-list) |
 | hp | double | Health |
 | mana | double | Mana |
 | end | double | Endurance |

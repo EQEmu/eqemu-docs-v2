@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Tradeskill Recipe Identifier |
 | name | varchar | Recipe Name |
-| tradeskill | smallint | [Tradeskill](../../../../categories/player/skills) |
+| tradeskill | smallint | [Tradeskill](../../../../server/player/skills) |
 | skillneeded | smallint | Skill Level Needed |
 | trivial | smallint | Trivial Skill Level |
 | nofail | tinyint | No Fail: 0 = False, 1 = True |

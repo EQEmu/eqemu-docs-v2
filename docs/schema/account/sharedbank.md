@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |
-| slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| slotid | mediumint | [Slot Identifier](../../../../server/inventory/inventory-slots) |
 | itemid | int | [Item Identifier](../../schema/items/items.md) |
 | charges | smallint | Charges |
 | augslot1 | mediumint | Augment Slot 1 |

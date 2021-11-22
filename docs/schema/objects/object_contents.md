@@ -2,7 +2,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | parentid | int | [Object Identifier](object.md) |
 | bagidx | int | Bag Index |
 | itemid | int | [Item Identifier](../../schema/items/items.md) |

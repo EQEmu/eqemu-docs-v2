@@ -3,9 +3,9 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Report Identifier |
-| zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
-| client_version_id | int | [Client Version Identifier](../../../../categories/player/client-version-bitmasks) |
-| client_version_name | varchar | [Client Version Name](../../../../categories/player/client-version-bitmasks) |
+| zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |
+| client_version_id | int | [Client Version Identifier](../../../../server/player/client-version-bitmasks) |
+| client_version_name | varchar | [Client Version Name](../../../../server/player/client-version-bitmasks) |
 | account_id | int | [Account Identifier](../../schema/account/account.md) |
 | character_id | int | [Character Identifier](../../schema/characters/character_data.md) |
 | character_name | varchar | [Character Name](../../schema/characters/character_data.md) |

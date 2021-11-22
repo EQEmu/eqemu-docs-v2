@@ -2,5 +2,5 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| prim_melee_type | tinyint | [Primary Melee Type](../../../../categories/player/skills) |
+| prim_melee_type | tinyint | [Primary Melee Type](../../../../server/player/skills) |
 

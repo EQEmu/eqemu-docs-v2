@@ -2,5 +2,5 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| texture | tinyint | [Texture](../../../../categories/npc/textures) |
+| texture | tinyint | [Texture](../../../../server/npc/textures) |
 

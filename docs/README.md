@@ -9,8 +9,8 @@ Welcome to the EQEmu Wiki.  The information presented on this wiki represents th
 
 | Page | Description |
 | :--- | :--- |
-| [Server Installation - Linux](categories/installation/server-installation-linux.md) | A guide for installing EQEmu Server on Linux |
-| [Server Installation - Windows](categories/installation/server-installation-windows.md) | A guide for installing EQEmu Server on Windows |
+| [Server Installation - Linux](server/installation/server-installation-linux.md) | A guide for installing EQEmu Server on Linux |
+| [Server Installation - Windows](server/installation/server-installation-windows.md) | A guide for installing EQEmu Server on Windows |
 
 ### Wiki Quick Reference
 
@@ -18,14 +18,14 @@ Welcome to the EQEmu Wiki.  The information presented on this wiki represents th
 | :--- | :--- |
 | [Changelog](https://docs.eqemu.io/server/changelog/serverhttps://docs.eqemu.io/server/changelog/server) | A listing of all of the changes made to the EQEmu Server code |
 | [Database Schema](https://eqemu.gitbook.io/database-schema/) | The blueprint of how the EQEmu database is constructed |
-| [Logging System](categories/logging-system/) | Documentation of the extensive logging capabilities in EQEmu |
-| [Loginserver](../../../../categories/login-server) | Information regarding your own login server |
-| [Maps](categories/maps/) | Utilities and information regarding zone map files  |
-| [NPC](categories/npc/) | Information regarding mob pathing, factions, scaling and attacks |
-| [Operation](categories/operation/) | Learn how to operate your EQEmu Server |
+| [Logging System](server/logging-system/) | Documentation of the extensive logging capabilities in EQEmu |
+| [Loginserver](../../../../server/login-server) | Information regarding your own login server |
+| [Maps](server/maps/) | Utilities and information regarding zone map files  |
+| [NPC](server/npc/) | Information regarding mob pathing, factions, scaling and attacks |
+| [Operation](server/operation/) | Learn how to operate your EQEmu Server |
 | [QuestAPI](https://eqemu.gitbook.io/quest-api/) | Documentation of the use of quest scripts in both Perl and Lua |
-| [Scripting](categories/scripting/) | Learn how to script quests and NPC interactions |
-| [Spells](categories/spells/) | Documentation of all things relating to spells |
+| [Scripting](server/scripting/) | Learn how to script quests and NPC interactions |
+| [Spells](server/spells/) | Documentation of all things relating to spells |
 
 ### Resource links
 

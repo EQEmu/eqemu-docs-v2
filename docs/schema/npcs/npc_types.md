@@ -6,14 +6,14 @@
 | name | text | Name |
 | lastname | varchar | Last Name |
 | level | tinyint | Level |
-| race | smallint | [Race](../../../../categories/npc/race-list) |
-| class | tinyint | [Class](../../../../categories/player/class-list) |
-| bodytype | int | [Body Type](../../../../categories/npc/body-types) |
+| race | smallint | [Race](../../../../server/npc/race-list) |
+| class | tinyint | [Class](../../../../server/player/class-list) |
+| bodytype | int | [Body Type](../../../../server/npc/body-types) |
 | hp | int | Health |
 | mana | int | Mana |
-| gender | tinyint | [Gender](../../../../categories/npc/genders) |
-| texture | tinyint | [Texture](../../../../categories/npc/textures) |
-| helmtexture | tinyint | [Helmet Texture](../../../../categories/npc/textures) |
+| gender | tinyint | [Gender](../../../../server/npc/genders) |
+| texture | tinyint | [Texture](../../../../server/npc/textures) |
+| helmtexture | tinyint | [Helmet Texture](../../../../server/npc/textures) |
 | herosforgemodel | int | Hero's Forge Model |
 | size | float | Size |
 | hp_regen_rate | int | Health Regeneration |
@@ -50,9 +50,9 @@
 | d_melee_texture1 | int | Primary Weapon Texture |
 | d_melee_texture2 | int | Secondary Weapon Texture |
 | ammo_idfile | varchar | Ammo Texture |
-| prim_melee_type | tinyint | [Primary Melee Type](../../../../categories/player/skills) |
-| sec_melee_type | tinyint | [Secondary Melee Type](../../../../categories/player/skills) |
-| ranged_type | tinyint | [Ranged Type](../../../../categories/player/skills) |
+| prim_melee_type | tinyint | [Primary Melee Type](../../../../server/player/skills) |
+| sec_melee_type | tinyint | [Secondary Melee Type](../../../../server/player/skills) |
+| ranged_type | tinyint | [Ranged Type](../../../../server/player/skills) |
 | runspeed | float | Run Speed |
 | MR | smallint | Magic Resistance |
 | CR | smallint | Cold Resistance |
@@ -98,11 +98,11 @@
 | healscale | float | Heal Scale: 25 = 25%, 50 = 50%, 100 = 100% |
 | no_target_hotkey | tinyint | No Target Hotkey: 0 = False, 1 = True |
 | raid_target | tinyint | Raid Target: 0 = False, 1 = True |
-| armtexture | tinyint | [Arm Texture](../../../../categories/npc/textures) |
-| bracertexture | tinyint | [Bracer Texture](../../../../categories/npc/textures) |
-| handtexture | tinyint | [Hand Texture](../../../../categories/npc/textures) |
-| legtexture | tinyint | [Leg Texture](../../../../categories/npc/textures) |
-| feettexture | tinyint | [Feet Texture](../../../../categories/npc/textures) |
+| armtexture | tinyint | [Arm Texture](../../../../server/npc/textures) |
+| bracertexture | tinyint | [Bracer Texture](../../../../server/npc/textures) |
+| handtexture | tinyint | [Hand Texture](../../../../server/npc/textures) |
+| legtexture | tinyint | [Leg Texture](../../../../server/npc/textures) |
+| feettexture | tinyint | [Feet Texture](../../../../server/npc/textures) |
 | light | tinyint | Light |
 | walkspeed | tinyint | Walk Speed |
 | peqid | int | PEQ Identifier |
@@ -122,7 +122,7 @@
 | rare_spawn | tinyint | Rare Spawn: 0 = False, 1 = True |
 | stuck_behavior | tinyint | Stuck Behavior |
 | model | smallint | Model |
-| flymode | tinyint | [Fly Mode](../../../../categories/npc/fly-modes) |
+| flymode | tinyint | [Fly Mode](../../../../server/npc/fly-modes) |
 | always_aggro | tinyint | Aggro regardless of _int or level : 0 = False, 1 = True |
 | exp_mod | int |  |
 

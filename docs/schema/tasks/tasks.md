@@ -3,9 +3,9 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Task Identifier |
-| type | tinyint | [Task Type](../../../../categories/task-system-guide/task-types) |
+| type | tinyint | [Task Type](../../../../server/task-system-guide/task-types) |
 | duration | int | Duration |
-| duration_code | tinyint | [Duration Code](../../../../categories/task-system-guide/task-duration-codes) |
+| duration_code | tinyint | [Duration Code](../../../../server/task-system-guide/task-duration-codes) |
 | title | varchar | Title |
 | description | text | Description |
 | reward | varchar | Reward Description |

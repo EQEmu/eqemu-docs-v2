@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Fishing Identifier |
-| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | Itemid | int | [Item Identifier](../../schema/items/items.md) |
 | skill_level | smallint | Skill Level |
 | chance | smallint | Chance: 0 = Never, 100 = Always |

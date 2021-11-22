@@ -13,8 +13,8 @@
 | safe_heading | float |  |
 | graveyard_id | float | [Graveyard Identifier](../../schema/graveyards/graveyard.md) |
 | min_level | tinyint | Minimum Level |
-| min_status | tinyint | [Minimum Status](../../../../categories/player/status-levels) |
-| zoneidnumber | int | [Unique Zone Identifier](../../../../categories/zones/zone-list) |
+| min_status | tinyint | [Minimum Status](../../../../server/player/status-levels) |
+| zoneidnumber | int | [Unique Zone Identifier](../../../../server/zones/zone-list) |
 | version | tinyint | Version |
 | timezone | int | Timezone |
 | maxclients | int | Maximum Clients |
@@ -63,7 +63,7 @@
 | insttype | tinyint | Instance Type |
 | shutdowndelay | bigint | Shutdown Delay |
 | peqzone | tinyint | \#peqzone: 0 = False, 1 = True |
-| expansion | tinyint | [Expansion](../../../../categories/operation/expansion-list) |
+| expansion | tinyint | [Expansion](../../../../server/operation/expansion-list) |
 | suspendbuffs | tinyint | Suspend Buffs: 0 = False, 1 = True |
 | rain_chance1 | int | Rain Chance 1 |
 | rain_chance2 | int | Rain Chance 2 |

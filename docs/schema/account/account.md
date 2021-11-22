@@ -7,7 +7,7 @@
 | charname | varchar | Character name last logged in on this account. |
 | sharedplat | int | Platinum in Shared Bank. |
 | password | varchar | Private loginserver password. |
-| status | int | [Status](../../../../categories/player/status-levels) |
+| status | int | [Status](../../../../server/player/status-levels) |
 | ls_id | varchar |  |
 | lsaccount_id | int | Loginserver Account Identifier |
 | gmspeed | tinyint | GM Speed: 0 = Disabled, 1 = Enabled |

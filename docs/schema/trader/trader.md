@@ -7,5 +7,5 @@
 | serialnumber | int | Serial Number |
 | charges | int | Charges |
 | item_cost | int | Item Cost |
-| slot_id | tinyint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| slot_id | tinyint | [Slot Identifier](../../../../server/inventory/inventory-slots) |
 

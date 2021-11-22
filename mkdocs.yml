@@ -70,277 +70,277 @@ markdown_extensions:
   - pymdownx.tilde
 nav:
   - Play (Client):
-      - categories/client-configuration/README.md
-      - macOS Client Configuration: categories/client-configuration/macos-mojave-client-configuration.md
-      - Windows Client Configuration: categories/client-configuration/windows-client-configuration.md
-      - Frequently Asked Questions: categories/client-configuration/frequently-asked-questions.md
-      - Play Guide: categories/client-configuration/play-guide.md
-      - Underfoot Missing Files: categories/client-configuration/underfoot-missing-files.md
+      - server/client-configuration/README.md
+      - macOS Client Configuration: server/client-configuration/macos-mojave-client-configuration.md
+      - Windows Client Configuration: server/client-configuration/windows-client-configuration.md
+      - Frequently Asked Questions: server/client-configuration/frequently-asked-questions.md
+      - Play Guide: server/client-configuration/play-guide.md
+      - Underfoot Missing Files: server/client-configuration/underfoot-missing-files.md
   - Server:
       - README.md
       - AAs:
-          - categories/aas/README.md
-          - AA Categories: categories/aas/aa-categories.md
-          - AA Nonspell Actions: categories/aas/aa-nonspell-actions.md
-          - AA Target Types: categories/aas/aa-target-types.md
-          - AA Types: categories/aas/aa-types.md
-          - Customizing AAs: categories/aas/customizing-aas.md
+          - server/aas/README.md
+          - AA Categories: server/aas/aa-categories.md
+          - AA Nonspell Actions: server/aas/aa-nonspell-actions.md
+          - AA Target Types: server/aas/aa-target-types.md
+          - AA Types: server/aas/aa-types.md
+          - Customizing AAs: server/aas/customizing-aas.md
       - Bots:
-          - categories/bots/README.md
-          - Stance Types: categories/bots/stance-types.md
-          - Bot Commands: categories/bots/bot-commands.md
-          - Bot Heal Rotations: categories/bots/bot-heal-rotations.md
-          - Bot Groups: categories/bots/bot-groups.md
+          - server/bots/README.md
+          - Stance Types: server/bots/stance-types.md
+          - Bot Commands: server/bots/bot-commands.md
+          - Bot Heal Rotations: server/bots/bot-heal-rotations.md
+          - Bot Groups: server/bots/bot-groups.md
       - Developer:
           - Project PEQ Expansions:
               - Classic:
-                  - in-development/project-peq-expansions/classic/README.md
-                  - Item Changes: in-development/project-peq-expansions/classic/item-changes.md
-                  - Zone Changes: in-development/project-peq-expansions/classic/zone-changes.md
-              - Zone Version Switching: in-development/project-peq-expansions/zone-version-switching.md
-              - Expansion and Content Filtering: in-development/project-peq-expansions/expansion-content-filtering.md
-              - Expansion List Reference: in-development/project-peq-expansions/expansion-list-reference.md
-              - Design Considerations: in-development/project-peq-expansions/design-considerations.md
+                  - developer/project-peq-expansions/classic/README.md
+                  - Item Changes: developer/project-peq-expansions/classic/item-changes.md
+                  - Zone Changes: developer/project-peq-expansions/classic/zone-changes.md
+              - Zone Version Switching: developer/project-peq-expansions/zone-version-switching.md
+              - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
+              - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
+              - Design Considerations: developer/project-peq-expansions/design-considerations.md
           - Developer Area:
-              - in-development/developer-area/README.md
-              - Repositories: in-development/developer-area/repositories.md
-              - EQDictionary: in-development/developer-area/eqdictionary.md
+              - developer/developer-area/README.md
+              - Repositories: developer/developer-area/repositories.md
+              - EQDictionary: developer/developer-area/eqdictionary.md
               - Inventory:
-                  - in-development/developer-area/inventory/README.md
-                  - Inventory Overhaul: in-development/developer-area/inventory/inventory-overhaul.md
-                  - Perl Inventory Slot Identifiers: in-development/developer-area/inventory/perl-inventory-slot-identifiers.md
+                  - developer/developer-area/inventory/README.md
+                  - Inventory Overhaul: developer/developer-area/inventory/inventory-overhaul.md
+                  - Perl Inventory Slot Identifiers: developer/developer-area/inventory/perl-inventory-slot-identifiers.md
               - Packet and OpCode Analysis:
-                  - in-development/developer-area/packet-and-opcode-analysis.md
+                  - developer/developer-area/packet-and-opcode-analysis.md
               - Tools:
-                  - in-development/developer-area/tools/README.md
-                  - Tools Cheat Sheet: in-development/developer-area/tools/tools-cheat-sheet.md
-                  - Lua for Windows: in-development/developer-area/tools/lua-for-windows.md
-                  - Notepad++: in-development/developer-area/tools/notepad++.md
-                  - TortoiseGit: in-development/developer-area/tools/tortoisegit.md
+                  - developer/developer-area/tools/README.md
+                  - Tools Cheat Sheet: developer/developer-area/tools/tools-cheat-sheet.md
+                  - Lua for Windows: developer/developer-area/tools/lua-for-windows.md
+                  - Notepad++: developer/developer-area/tools/notepad++.md
+                  - TortoiseGit: developer/developer-area/tools/tortoisegit.md
       - Database:
-          - Multi Tenancy: categories/database/multi-tenancy.md
-          - Database Backup Tool: categories/database/database-backup-tool.md
+          - Multi Tenancy: server/database/multi-tenancy.md
+          - Database Backup Tool: server/database/database-backup-tool.md
       - Expedition System:
-          - categories/expedition-system/README.md
-          - Database: categories/expedition-system/database.md
-          - Lockouts: categories/expedition-system/lockouts.md
+          - server/expedition-system/README.md
+          - Database: server/expedition-system/database.md
+          - Lockouts: server/expedition-system/lockouts.md
           - Quest API (Lua):
-              - categories/expedition-system/quest-api-lua/README.md
-              - Example: categories/expedition-system/quest-api-lua/example.md
-              - Client Methods: categories/expedition-system/quest-api-lua/client-methods.md
-              - Expedition Methods: categories/expedition-system/quest-api-lua/expedition-methods.md
-              - Global Methods: categories/expedition-system/quest-api-lua/global-methods.md
-              - Group/Raid Methods: categories/expedition-system/quest-api-lua/group-raid-methods.md
+              - server/expedition-system/quest-api-lua/README.md
+              - Example: server/expedition-system/quest-api-lua/example.md
+              - Client Methods: server/expedition-system/quest-api-lua/client-methods.md
+              - Expedition Methods: server/expedition-system/quest-api-lua/expedition-methods.md
+              - Global Methods: server/expedition-system/quest-api-lua/global-methods.md
+              - Group/Raid Methods: server/expedition-system/quest-api-lua/group-raid-methods.md
           - Quest API (Perl):
-              - categories/expedition-system/quest-api-perl/README.md
-              - Example: categories/expedition-system/quest-api-perl/example.md
-              - Client Methods: categories/expedition-system/quest-api-perl/client-methods.md
-              - Expedition Methods: categories/expedition-system/quest-api-perl/expedition-methods.md
-              - Global Methods: categories/expedition-system/quest-api-perl/global-methods.md
-              - Group/Raid Methods: categories/expedition-system/quest-api-perl/group-raid-methods.md
+              - server/expedition-system/quest-api-perl/README.md
+              - Example: server/expedition-system/quest-api-perl/example.md
+              - Client Methods: server/expedition-system/quest-api-perl/client-methods.md
+              - Expedition Methods: server/expedition-system/quest-api-perl/expedition-methods.md
+              - Global Methods: server/expedition-system/quest-api-perl/global-methods.md
+              - Group/Raid Methods: server/expedition-system/quest-api-perl/group-raid-methods.md
       - Factions:
-          - categories/factions/README.md
-          - Creating a New Faction: categories/factions/add-a-new-faction.md
-          - Customizing Factions: categories/factions/customizing-factions.md
-          - Faction Values: categories/factions/faction-values.md
+          - server/factions/README.md
+          - Creating a New Faction: server/factions/add-a-new-faction.md
+          - Customizing Factions: server/factions/customizing-factions.md
+          - Faction Values: server/factions/faction-values.md
       - Items:
-          - categories/items/README.md
-          - Alternate Currencies: categories/items/alternate-currencies.md
-          - Augment Restrictions: categories/items/augment-restrictions.md
-          - Augment Types: categories/items/augment-types.md
-          - Bard Types: categories/items/bard-types.md
-          - Click Types: categories/items/click-types.md
-          - Food and Drink: categories/items/food-and-drink.md
-          - GetItemStat Identifiers: categories/items/getitemstat-identifiers.md
-          - Item Class: categories/items/item-class.md
-          - Item Click Types: categories/items/item-click-types.md
-          - Item Element Types: categories/items/item-element-types.md
-          - Item Lore Groups: categories/items/item-lore-groups.md
-          - Item Sizes: categories/items/item-sizes.md
-          - Item Types: categories/items/item-types.md
-          - Ornament Types: categories/items/ornament-types.md
-          - Powersources: categories/items/powersources.md
+          - server/items/README.md
+          - Alternate Currencies: server/items/alternate-currencies.md
+          - Augment Restrictions: server/items/augment-restrictions.md
+          - Augment Types: server/items/augment-types.md
+          - Bard Types: server/items/bard-types.md
+          - Click Types: server/items/click-types.md
+          - Food and Drink: server/items/food-and-drink.md
+          - GetItemStat Identifiers: server/items/getitemstat-identifiers.md
+          - Item Class: server/items/item-class.md
+          - Item Click Types: server/items/item-click-types.md
+          - Item Element Types: server/items/item-element-types.md
+          - Item Lore Groups: server/items/item-lore-groups.md
+          - Item Sizes: server/items/item-sizes.md
+          - Item Types: server/items/item-types.md
+          - Ornament Types: server/items/ornament-types.md
+          - Powersources: server/items/powersources.md
       - Inventory:
-          - categories/inventory/README.md
-          - Inventory Slots: categories/inventory/inventory-slots.md
-          - Item Slots: categories/inventory/item-slots.md
-          - Bag Sizes: categories/inventory/bag-sizes.md
-          - Bag Types: categories/inventory/bag-types.md
+          - server/inventory/README.md
+          - Inventory Slots: server/inventory/inventory-slots.md
+          - Item Slots: server/inventory/item-slots.md
+          - Bag Sizes: server/inventory/bag-sizes.md
+          - Bag Types: server/inventory/bag-types.md
       - Logging System:
-          - categories/logging-system/README.md
-          - Logging Categories: categories/logging-system/logging-categories.md
-          - Logging for Developers: categories/logging-system/logging-for-developers.md
-          - Logging Packets: categories/logging-system/logging-packets.md
+          - server/logging-system/README.md
+          - Logging Categories: server/logging-system/logging-categories.md
+          - Logging for Developers: server/logging-system/logging-for-developers.md
+          - Logging Packets: server/logging-system/logging-packets.md
       - Login Server:
-          - categories/login-server/README.md
-          - Auto Create Login Accounts: categories/login-server/auto-create-login-accounts.md
-          - REST API: categories/login-server/login-server-rest-api.md
-          - Database Schema: categories/login-server/database-schema.md
-          - CLI Management Interface: categories/login-server/login-server-cli-management-interface.md
-          - Migrating from Legacy Login Server: categories/login-server/migrating-from-legacy-login-server.md
-          - Configuration: categories/login-server/login-server-configuration.md
-          - Commonly Asked Questions: categories/login-server/commonly-asked-questions.md
-          - World Registration: categories/login-server/world-registration.md
-          - World Servers with Same Names: categories/login-server/world-servers-with-same-names.md
+          - server/login-server/README.md
+          - Auto Create Login Accounts: server/login-server/auto-create-login-accounts.md
+          - REST API: server/login-server/login-server-rest-api.md
+          - Database Schema: server/login-server/database-schema.md
+          - CLI Management Interface: server/login-server/login-server-cli-management-interface.md
+          - Migrating from Legacy Login Server: server/login-server/migrating-from-legacy-login-server.md
+          - Configuration: server/login-server/login-server-configuration.md
+          - Commonly Asked Questions: server/login-server/commonly-asked-questions.md
+          - World Registration: server/login-server/world-registration.md
+          - World Servers with Same Names: server/login-server/world-servers-with-same-names.md
       - Maps:
-          - categories/maps/README.md
-          - Editing Maps: categories/maps/editing-maps.md
+          - server/maps/README.md
+          - Editing Maps: server/maps/editing-maps.md
       - NPC:
-          - categories/npc/README.md
-          - NPC Aggro: categories/npc/npc-aggro.md
-          - ModifyNPCStat Identifiers: categories/npc/modifynpcstat-identifiers.md
-          - Stuck Behavior: categories/npc/stuck-behavior.md
-          - Mob Version List: categories/npc/mob-version-list.md
-          - Race List: categories/npc/race-list.md
-          - NPC Models: categories/npc/npc-models.md
-          - Fly Modes: categories/npc/fly-modes.md
-          - Client Race Inventory: categories/npc/client-race-inventory.md
-          - Animations: categories/npc/animations.md
-          - Facial Features: categories/npc/facial-features.md
-          - Genders: categories/npc/genders.md
-          - Textures: categories/npc/textures.md
+          - server/npc/README.md
+          - NPC Aggro: server/npc/npc-aggro.md
+          - ModifyNPCStat Identifiers: server/npc/modifynpcstat-identifiers.md
+          - Stuck Behavior: server/npc/stuck-behavior.md
+          - Mob Version List: server/npc/mob-version-list.md
+          - Race List: server/npc/race-list.md
+          - NPC Models: server/npc/npc-models.md
+          - Fly Modes: server/npc/fly-modes.md
+          - Client Race Inventory: server/npc/client-race-inventory.md
+          - Animations: server/npc/animations.md
+          - Facial Features: server/npc/facial-features.md
+          - Genders: server/npc/genders.md
+          - Textures: server/npc/textures.md
           - Spawns:
-              - categories/npc/spawns/README.md
-              - On Change Types: categories/npc/spawns/on-change-types.md
-              - Pause Types: categories/npc/spawns/pause-types.md
-              - Wander Types: categories/npc/spawns/wander-types.md
-              - Action Types: categories/npc/spawns/action-types.md
-              - NPC Despawn Types: categories/npc/spawns/npc-despawn-types.md
-              - Grids: categories/npc/spawns/grids.md
-          - Body Types: categories/npc/body-types.md
-          - Emote Types: categories/npc/emote-types.md
-          - Emote Event Types: categories/npc/emote-event-types.md
+              - server/npc/spawns/README.md
+              - On Change Types: server/npc/spawns/on-change-types.md
+              - Pause Types: server/npc/spawns/pause-types.md
+              - Wander Types: server/npc/spawns/wander-types.md
+              - Action Types: server/npc/spawns/action-types.md
+              - NPC Despawn Types: server/npc/spawns/npc-despawn-types.md
+              - Grids: server/npc/spawns/grids.md
+          - Body Types: server/npc/body-types.md
+          - Emote Types: server/npc/emote-types.md
+          - Emote Event Types: server/npc/emote-event-types.md
           - Customizing NPCs:
-              - categories/npc/customizing-npcs/README.md
-              - Using the PEQ Database Editing Interface: categories/npc/customizing-npcs/using-the-peq-database-editing-interface.md
-          - NPC Animation Types: categories/npc/npc-animation-types.md
-          - NPC Scaling: categories/npc/npc-scaling.md
-          - Special Attacks: categories/npc/special-attacks.md
+              - server/npc/customizing-npcs/README.md
+              - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
+          - NPC Animation Types: server/npc/npc-animation-types.md
+          - NPC Scaling: server/npc/npc-scaling.md
+          - Special Attacks: server/npc/special-attacks.md
       - Operation:
-          - categories/operation/README.md
-          - Adjust Maximum Level: categories/operation/adjust-maximum-level.md
-          - Adjust World Date / Time: categories/operation/adjust-world-date-time.md
-          - Changing Start Zones: categories/operation/changing-start-zones.md
-          - Chat Channel Types: categories/operation/chat-channel-types.md
-          - Commands Reference: categories/operation/in-game-command-reference.md
-          - Database Schema Migrations: categories/operation/database-schema-migrations.md
-          - DBStr Types: categories/operation/dbstr-types.md
-          - Disabling Lootdrop Entries: categories/operation/disabling-lootdrops.md
-          - Disabling Merchantlist Entries: categories/operation/disabling-merchantlist-entries.md
-          - Expansion Bitmasks: categories/operation/expansion-bitmasks.md
-          - Expansion List: categories/operation/expansion-list.md
-          - Exporting Client Files: categories/operation/exporting-client-files.md
-          - First Time Running A Server: categories/operation/first-time-running-a-server.md
-          - Implement PvP: categories/operation/implement-pvp.md
-          - Loading Server Data: categories/operation/loading-server-data.md
-          - NATS Channels: categories/operation/nats-channels.md
-          - Server Rules: categories/operation/server-rules.md
-          - Server Variables: categories/operation/server-variables.md
-          - Updating Server Assets: categories/operation/updating-server-assets.md
+          - server/operation/README.md
+          - Adjust Maximum Level: server/operation/adjust-maximum-level.md
+          - Adjust World Date / Time: server/operation/adjust-world-date-time.md
+          - Changing Start Zones: server/operation/changing-start-zones.md
+          - Chat Channel Types: server/operation/chat-channel-types.md
+          - Commands Reference: server/operation/in-game-command-reference.md
+          - Database Schema Migrations: server/operation/database-schema-migrations.md
+          - DBStr Types: server/operation/dbstr-types.md
+          - Disabling Lootdrop Entries: server/operation/disabling-lootdrops.md
+          - Disabling Merchantlist Entries: server/operation/disabling-merchantlist-entries.md
+          - Expansion Bitmasks: server/operation/expansion-bitmasks.md
+          - Expansion List: server/operation/expansion-list.md
+          - Exporting Client Files: server/operation/exporting-client-files.md
+          - First Time Running A Server: server/operation/first-time-running-a-server.md
+          - Implement PvP: server/operation/implement-pvp.md
+          - Loading Server Data: server/operation/loading-server-data.md
+          - NATS Channels: server/operation/nats-channels.md
+          - Server Rules: server/operation/server-rules.md
+          - Server Variables: server/operation/server-variables.md
+          - Updating Server Assets: server/operation/updating-server-assets.md
       - Player:
-          - categories/player/README.md
-          - Class List: categories/player/class-list.md
-          - Client Version Bitmasks: categories/player/client-version-bitmasks.md
-          - Deity List: categories/player/deity-list.md
-          - Experience by Level: categories/player/experience-by-level.md
-          - Guild Ranks: categories/player/guild-ranks.md
-          - Languages: categories/player/languages.md
-          - Player Housing: categories/player/player-housing.md
-          - Race List: categories/npc/race-list.md
+          - server/player/README.md
+          - Class List: server/player/class-list.md
+          - Client Version Bitmasks: server/player/client-version-bitmasks.md
+          - Deity List: server/player/deity-list.md
+          - Experience by Level: server/player/experience-by-level.md
+          - Guild Ranks: server/player/guild-ranks.md
+          - Languages: server/player/languages.md
+          - Player Housing: server/player/player-housing.md
+          - Race List: server/npc/race-list.md
       - Skills:
-          - categories/player/skills.md
-          - Slash Commands: categories/player/slash-commands.md
-          - Status Levels: categories/player/status-levels.md
+          - server/player/skills.md
+          - Slash Commands: server/player/slash-commands.md
+          - Status Levels: server/player/status-levels.md
       - Server Installation:
-          - categories/installation/README.md
-          - Basic Server Install - Linux: categories/installation/server-installation-linux.md
-          - Basic Server Install - Windows: categories/installation/server-installation-windows.md
-          - Bot Installation: categories/installation/bot-installation.md
-          - Configure your eqemu_config: categories/installation/configure-your-eqemu_config.md
-          - Development Server Setup: categories/installation/development-server-setup.md
-          - Ground Up Linux Install: categories/installation/ground-up-linux-install.md
-          - Ground Up Windows Install: categories/installation/ground-up-windows-install.md
-          - Install PEQ Database Editor: categories/installation/install-peq-database-editor.md
-          - Troubleshooting: categories/installation/troubleshooting.md
-          - VSCode Dev Container Environment: categories/installation/vscode-dev-container-environment.md
+          - server/installation/README.md
+          - Basic Server Install - Linux: server/installation/server-installation-linux.md
+          - Basic Server Install - Windows: server/installation/server-installation-windows.md
+          - Bot Installation: server/installation/bot-installation.md
+          - Configure your eqemu_config: server/installation/configure-your-eqemu_config.md
+          - Development Server Setup: server/installation/development-server-setup.md
+          - Ground Up Linux Install: server/installation/ground-up-linux-install.md
+          - Ground Up Windows Install: server/installation/ground-up-windows-install.md
+          - Install PEQ Database Editor: server/installation/install-peq-database-editor.md
+          - Troubleshooting: server/installation/troubleshooting.md
+          - VSCode Dev Container Environment: server/installation/vscode-dev-container-environment.md
       - Scripting:
-          - categories/scripting/README.md
-          - Converting QGlobals: categories/scripting/converting-qglobals.md
-          - Emote Colors: categories/scripting/emote-colors.md
-          - Encounters (Lua): categories/scripting/encounters-lua.md
-          - Entity Lists: categories/scripting/entity-lists.md
-          - Entity Variables: categories/scripting/entity-variables.md
-          - GMSay: categories/scripting/gmsay.md
-          - Lua Mods: categories/scripting/lua-mods.md
-          - Player Buffer Scripts: categories/scripting/player-buffer-scripts.md
-          - Player Teleporter Scripts: categories/scripting/player-teleporter-scripts.md
-          - Using Data Buckets: categories/scripting/using-data-buckets.md
+          - server/scripting/README.md
+          - Converting QGlobals: server/scripting/converting-qglobals.md
+          - Emote Colors: server/scripting/emote-colors.md
+          - Encounters (Lua): server/scripting/encounters-lua.md
+          - Entity Lists: server/scripting/entity-lists.md
+          - Entity Variables: server/scripting/entity-variables.md
+          - GMSay: server/scripting/gmsay.md
+          - Lua Mods: server/scripting/lua-mods.md
+          - Player Buffer Scripts: server/scripting/player-buffer-scripts.md
+          - Player Teleporter Scripts: server/scripting/player-teleporter-scripts.md
+          - Using Data Buckets: server/scripting/using-data-buckets.md
       - Spells:
-          - categories/spells/README.md
-          - Aura Movement Types: categories/spells/aura-movement-types.md
-          - Aura Spawn Types: categories/spells/aura-spawn-types.md
-          - Aura Types: categories/spells/aura-types.md
-          - Base Value Formulas: categories/spells/base-value-formulas.md
-          - Blocked Spell Types: categories/spells/blocked-spell-types.md
-          - Bot Spell List IDs: categories/spells/bot-spell-list-ids.md
-          - Buff Duration Formulas: categories/spells/buff-duration-formulas.md
-          - Client Spell ID Limitations: categories/spells/client-spell-id-limitations.md
-          - Damage Shield Types: categories/spells/damage-shield-types-1.md
-          - Damage Shield Types: categories/spells/damage-shield-types.md
-          - Element Types: categories/spells/element-types.md
-          - Environment Types: categories/spells/environment-types.md
-          - GetSpellStat Identifiers: categories/spells/getspellstat-identifiers.md
-          - Illusion Spell Guidelines: categories/spells/illusion-spell-guidelines.md
-          - NPC Spell Categories: categories/spells/npc-spell-categories.md
-          - Numhit Types: categories/spells/numhit-types-1.md
-          - Numhit Types: categories/spells/numhit-types.md
-          - Resist Types: categories/spells/resist-types.md
-          - Spell Attack Speed: categories/spells/spell-attack-speed.md
-          - Spell Buff Stacking: categories/spells/spell-buff-stacking.md
-          - Spell Conditions: categories/spells/spell-conditions.md
-          - Spell Damage Modifiers: categories/spells/spell-damage-modifiers.md
-          - Spell Effect Fields: categories/spells/spell-effect-fields.md
-          - Spell Effect IDs: categories/spells/spell-effect-ids.md
-          - Spell Groups: categories/spells/spell-groups.md
-          - Spell Heal Modifiers: categories/spells/spell-heal-modifiers.md
-          - Spell Mechanics: categories/spells/spell-mechanics.md
-          - Spell Resist Types: categories/spells/spell-resist-types.md
-          - Spell Target Restrictions: categories/spells/spell-target-restrictions.md
-          - Spell Types: categories/spells/spell-types.md
-          - Target Types: categories/spells/target-types.md
-          - Time of Day Types: categories/spells/time-of-day-types.md
-          - Type Effect Description Number: categories/spells/type-effect-description-number.md
+          - server/spells/README.md
+          - Aura Movement Types: server/spells/aura-movement-types.md
+          - Aura Spawn Types: server/spells/aura-spawn-types.md
+          - Aura Types: server/spells/aura-types.md
+          - Base Value Formulas: server/spells/base-value-formulas.md
+          - Blocked Spell Types: server/spells/blocked-spell-types.md
+          - Bot Spell List IDs: server/spells/bot-spell-list-ids.md
+          - Buff Duration Formulas: server/spells/buff-duration-formulas.md
+          - Client Spell ID Limitations: server/spells/client-spell-id-limitations.md
+          - Damage Shield Types: server/spells/damage-shield-types-1.md
+          - Damage Shield Types: server/spells/damage-shield-types.md
+          - Element Types: server/spells/element-types.md
+          - Environment Types: server/spells/environment-types.md
+          - GetSpellStat Identifiers: server/spells/getspellstat-identifiers.md
+          - Illusion Spell Guidelines: server/spells/illusion-spell-guidelines.md
+          - NPC Spell Categories: server/spells/npc-spell-categories.md
+          - Numhit Types: server/spells/numhit-types-1.md
+          - Numhit Types: server/spells/numhit-types.md
+          - Resist Types: server/spells/resist-types.md
+          - Spell Attack Speed: server/spells/spell-attack-speed.md
+          - Spell Buff Stacking: server/spells/spell-buff-stacking.md
+          - Spell Conditions: server/spells/spell-conditions.md
+          - Spell Damage Modifiers: server/spells/spell-damage-modifiers.md
+          - Spell Effect Fields: server/spells/spell-effect-fields.md
+          - Spell Effect IDs: server/spells/spell-effect-ids.md
+          - Spell Groups: server/spells/spell-groups.md
+          - Spell Heal Modifiers: server/spells/spell-heal-modifiers.md
+          - Spell Mechanics: server/spells/spell-mechanics.md
+          - Spell Resist Types: server/spells/spell-resist-types.md
+          - Spell Target Restrictions: server/spells/spell-target-restrictions.md
+          - Spell Types: server/spells/spell-types.md
+          - Target Types: server/spells/target-types.md
+          - Time of Day Types: server/spells/time-of-day-types.md
+          - Type Effect Description Number: server/spells/type-effect-description-number.md
       - Task System:
-          - categories/task-system-guide/README.md
-          - Task Duration Codes: categories/task-system-guide/task-duration-codes.md
-          - Task Activity Types: categories/task-system-guide/task-activity-types.md
-          - Task Types: categories/task-system-guide/task-types.md
+          - server/task-system-guide/README.md
+          - Task Duration Codes: server/task-system-guide/task-duration-codes.md
+          - Task Activity Types: server/task-system-guide/task-activity-types.md
+          - Task Types: server/task-system-guide/task-types.md
           - Shared Tasks:
-              - categories/task-system-guide/shared-tasks/README.md
-              - Example: categories/task-system-guide/shared-tasks/example.md
+              - server/task-system-guide/shared-tasks/README.md
+              - Example: server/task-system-guide/shared-tasks/example.md
       - Zones:
-          - categories/zones/README.md
-          - Adjusting Zone Shutdown Delay: categories/zones/adjusting-zone-shutdown-delay.md
+          - server/zones/README.md
+          - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:
-              - categories/zones/customizing-zones/README.md
-              - Custom Zone Making: categories/zones/customizing-zones/custom-zone-making.md
-              - Fog System and Clip Plane: categories/zones/customizing-zones/fog-system-and-clip-plane.md
-              - GL Model Viewer: categories/zones/customizing-zones/gl-model-viewer.md
-              - List Objects Tool: categories/zones/customizing-zones/list-objects-tool.md
-              - Placing Objects: categories/zones/customizing-zones/placing-objects.md
-              - Sky System: categories/zones/customizing-zones/sky-system.md
-              - WLD Editor Suite: categories/zones/customizing-zones/wld-editor-suite.md
-              - WLD File Reference: categories/zones/customizing-zones/wld-file-reference.md
-              - XMI to MIDI Converter: categories/zones/customizing-zones/xmi-to-midi-converter.md
-              - Zone Utility Tools: categories/zones/customizing-zones/zone-utility-tools.md
-          - Door Open Types: categories/zones/door-open-types.md
-          - Environment Emitters: categories/zones/environment-emitters.md
-          - LDON Themes: categories/zones/ldon-themes.md
-          - Object Types: categories/zones/object-types.md
-          - Trap Types: categories/zones/trap-types.md
-          - Zone Header Identifiers: categories/zones/zone-header-identifiers.md
-          - Zone List: categories/zones/zone-list.md
-          - Zone Types: categories/zones/zone-types.md
+              - server/zones/customizing-zones/README.md
+              - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
+              - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
+              - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
+              - List Objects Tool: server/zones/customizing-zones/list-objects-tool.md
+              - Placing Objects: server/zones/customizing-zones/placing-objects.md
+              - Sky System: server/zones/customizing-zones/sky-system.md
+              - WLD Editor Suite: server/zones/customizing-zones/wld-editor-suite.md
+              - WLD File Reference: server/zones/customizing-zones/wld-file-reference.md
+              - XMI to MIDI Converter: server/zones/customizing-zones/xmi-to-midi-converter.md
+              - Zone Utility Tools: server/zones/customizing-zones/zone-utility-tools.md
+          - Door Open Types: server/zones/door-open-types.md
+          - Environment Emitters: server/zones/environment-emitters.md
+          - LDON Themes: server/zones/ldon-themes.md
+          - Object Types: server/zones/object-types.md
+          - Trap Types: server/zones/trap-types.md
+          - Zone Header Identifiers: server/zones/zone-header-identifiers.md
+          - Zone List: server/zones/zone-list.md
+          - Zone Types: server/zones/zone-types.md
   - Database Schema:
       - AAs:
           - aa_ability: schema/aas/aa_ability.md

@@ -2,5 +2,5 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| spell_type | int | [Spell Type](../../../../categories/spells/spell-types) |
+| spell_type | int | [Spell Type](../../../../server/spells/spell-types) |
 

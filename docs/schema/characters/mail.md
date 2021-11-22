@@ -9,5 +9,5 @@
 | subject | varchar | Subject |
 | body | text | Body |
 | to | text | [To Character Name](character_data.md) |
-| status | tinyint | [Status](../../../../categories/player/status-levels) |
+| status | tinyint | [Status](../../../../server/player/status-levels) |
 

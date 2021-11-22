@@ -12,7 +12,7 @@
 | min_y | float | Min Y Coordinate |
 | delay | int | Roaming Delay |
 | mindelay | int | Minimum Delay |
-| despawn | tinyint | [Despawn Type](../../../../categories/npc/spawns/npc-despawn-types) |
+| despawn | tinyint | [Despawn Type](../../../../server/npc/spawns/npc-despawn-types) |
 | despawn_timer | int | Despawn Timer in Seconds |
 | wp_spawns | tinyint |  |
 

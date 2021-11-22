@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Object Identifier |
-| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | version | smallint | Version: -1 For All |
 | xpos | float | X Coordinate |
 | ypos | float | Y Coordinate |
@@ -12,7 +12,7 @@
 | itemid | int | [Item Identifier](../../schema/items/items.md) |
 | charges | smallint | Charges |
 | objectname | varchar | Object Name |
-| type | int | [Type](../../../../categories/zones/object-types) |
+| type | int | [Type](../../../../server/zones/object-types) |
 | icon | int | Icon |
 | unknown08 | mediumint | Unknown |
 | unknown10 | mediumint | Unknown |

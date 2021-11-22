@@ -9,10 +9,10 @@
 | lastgm | varchar | Last GM |
 | petitiontext | text | Petition Text |
 | gmtext | text | GM Text |
-| zone | varchar | [Zone Short Name](../../../../categories/zones/zone-list) |
+| zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |
 | urgency | int | Urgency |
-| charclass | int | [Character Class](../../../../categories/player/class-list) |
-| charrace | int | [Character Race](../../../../categories/npc/race-list) |
+| charclass | int | [Character Class](../../../../server/player/class-list) |
+| charrace | int | [Character Race](../../../../server/npc/race-list) |
 | charlevel | int | Character Level |
 | checkouts | int | Checkouts |
 | unavailables | int | Unavailables |

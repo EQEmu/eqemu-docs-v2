@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | id | int | [Character Identifier](character_data.md) |
 | slot | int | Slot |
-| zone_id | smallint | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_id | smallint | [Zone Identifier](../../../../server/zones/zone-list) |
 | instance_id | mediumint | Instance Identifier |
 | x | float | X Coordinate |
 | y | float | Y Coordinate |

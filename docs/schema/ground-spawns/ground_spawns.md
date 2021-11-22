@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Ground Spawn Identifier |
-| zoneid | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | version | smallint | Version: -1 For All |
 | max_x | float | Maximum X Coordinate |
 | max_y | float | Maximum Y Coordinate |

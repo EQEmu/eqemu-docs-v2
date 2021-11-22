@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Item Identifier |
-| minstatus | smallint | [Minimum Status](../../../../categories/player/status-levels) |
+| minstatus | smallint | [Minimum Status](../../../../server/player/status-levels) |
 | Name | varchar | Name |
 | aagi | int | Agility: -128 to 127 |
 | ac | int | Armor Class |
@@ -15,54 +15,54 @@
 | asta | int | Stamina: -128 to 127 |
 | astr | int | Strenght: -128 to 127 |
 | attack | int | Attack |
-| augrestrict | int | [Augment Restriction](../../../../categories/items/augment-restrictions) |
-| augslot1type | tinyint | [Augment Slot 1 Type](../../../../categories/items/augment-types) |
+| augrestrict | int | [Augment Restriction](../../../../server/items/augment-restrictions) |
+| augslot1type | tinyint | [Augment Slot 1 Type](../../../../server/items/augment-types) |
 | augslot1visible | tinyint | Augment Slot 1 Visible: 0 = False, 1 = True |
-| augslot2type | tinyint | [Augment Slot 2 Type](../../../../categories/items/augment-types) |
+| augslot2type | tinyint | [Augment Slot 2 Type](../../../../server/items/augment-types) |
 | augslot2visible | tinyint | Augment Slot 2 Visible: 0 = False, 1 = True |
-| augslot3type | tinyint | [Augment Slot 3 Type](../../../../categories/items/augment-types) |
+| augslot3type | tinyint | [Augment Slot 3 Type](../../../../server/items/augment-types) |
 | augslot3visible | tinyint | Augment Slot 3 Visible: 0 = False, 1 = True |
-| augslot4type | tinyint | [Augment Slot 4 Type](../../../../categories/items/augment-types) |
+| augslot4type | tinyint | [Augment Slot 4 Type](../../../../server/items/augment-types) |
 | augslot4visible | tinyint | Augment Slot 4 Visible: 0 = False, 1 = True |
-| augslot5type | tinyint | [Augment Slot 5 Type](../../../../categories/items/augment-types) |
+| augslot5type | tinyint | [Augment Slot 5 Type](../../../../server/items/augment-types) |
 | augslot5visible | tinyint | Augment Slot 5 Visible: 0 = False, 1 = True |
-| augslot6type | tinyint | [Augment Slot 6 Type](../../../../categories/items/augment-types) |
+| augslot6type | tinyint | [Augment Slot 6 Type](../../../../server/items/augment-types) |
 | augslot6visible | tinyint | Augment Slot 6 Visible: 0 = False, 1 = True |
-| augtype | int | [Augment Type](../../../../categories/items/augment-types) |
+| augtype | int | [Augment Type](../../../../server/items/augment-types) |
 | avoidance | int | Avoidance |
 | awis | int | Wisdom: -128 to 127 |
-| bagsize | int | [Bag Size](../../../../categories/inventory/bag-sizes) |
+| bagsize | int | [Bag Size](../../../../server/inventory/bag-sizes) |
 | bagslots | int | Bag Slots: 1 = Minimum, 10 = Maximum |
-| bagtype | int | [Bag Type](../../../../categories/inventory/bag-types) |
+| bagtype | int | [Bag Type](../../../../server/inventory/bag-types) |
 | bagwr | int | Bag Weight Reduction: 0 = 0%, 100 = 100% |
 | banedmgamt | int | Bane Damage Amount |
 | banedmgraceamt | int | Bane Damage Race Amount |
-| banedmgbody | int | [Bane Damage Body Type](../../../../categories/npc/body-types) |
-| banedmgrace | int | [Bane Damage Race](../../../../categories/npc/race-list) |
-| bardtype | int | [Bard Type](../../../../categories/items/bard-types) |
+| banedmgbody | int | [Bane Damage Body Type](../../../../server/npc/body-types) |
+| banedmgrace | int | [Bane Damage Race](../../../../server/npc/race-list) |
+| bardtype | int | [Bard Type](../../../../server/items/bard-types) |
 | bardvalue | int | Bard Value |
 | book | int | [Book](../../schema/books/books.md) |
 | casttime | int | Cast Time in Seconds |
 | casttime_ | int | Cast Time in Seconds |
 | charmfile | varchar | Charm File |
 | charmfileid | varchar | Charm File Identifier |
-| classes | int | [Classes](../../../../categories/player/class-list) |
+| classes | int | [Classes](../../../../server/player/class-list) |
 | color | int | Color |
 | combateffects | varchar | Combat Effects |
-| extradmgskill | int | [Extra Damage Skill](../../../../categories/player/skills) |
+| extradmgskill | int | [Extra Damage Skill](../../../../server/player/skills) |
 | extradmgamt | int | Extra Damage Amount |
 | price | int | Price in Copper |
 | cr | int | Cold Resistance: -128 to 127 |
 | damage | int | Damage |
 | damageshield | int | Damage Shield |
-| deity | int | [Deity](../../../../categories/player/deity-list) |
+| deity | int | [Deity](../../../../server/player/deity-list) |
 | delay | int | Delay |
 | augdistiller | int | Augment Distiller Item Identifier |
 | dotshielding | int | Damage Over Time Shielding |
 | dr | int | Disease Resistance: -128 to 127 |
-| clicktype | int | [Click Type](../../../../categories/items/click-types) |
+| clicktype | int | [Click Type](../../../../server/items/click-types) |
 | clicklevel2 | int | Click Level 2 |
-| elemdmgtype | int | [Elemental Damage Type](../../../../categories/items/item-element-types) |
+| elemdmgtype | int | [Elemental Damage Type](../../../../server/items/item-element-types) |
 | elemdmgamt | int | Elemental Damage Amount |
 | endur | int | Endurance |
 | factionamt1 | int | Faction Amount 1 |
@@ -83,19 +83,19 @@
 | regen | int | Health Regeneration |
 | icon | int | Icon |
 | idfile | varchar | Item Texture |
-| itemclass | int | [Item Class](../../../../categories/items/item-class) |
-| itemtype | int | [Item Type](../../../../categories/items/item-types) |
+| itemclass | int | [Item Class](../../../../server/items/item-class) |
+| itemtype | int | [Item Type](../../../../server/items/item-types) |
 | ldonprice | int | LDoN Price |
-| ldontheme | int | [LDoN Theme](../../../../categories/zones/ldon-themes) |
+| ldontheme | int | [LDoN Theme](../../../../server/zones/ldon-themes) |
 | ldonsold | int | LDoN Sold: 0 = False, 1 = True |
 | light | int | Light |
 | lore | varchar | Lore Description |
-| loregroup | int | [Lore Group](../../../../categories/items/item-lore-groups) |
+| loregroup | int | [Lore Group](../../../../server/items/item-lore-groups) |
 | magic | int | Magic: 0 = False, 1 = True |
 | mana | int | Mana |
 | manaregen | int | Mana Regeneration |
 | enduranceregen | int | Endurance Regeneration |
-| material | int | [Material](../../../../categories/npc/textures) |
+| material | int | [Material](../../../../server/npc/textures) |
 | herosforgemodel | int | Hero's Forge Model |
 | maxcharges | int | Maximum Charges |
 | mr | int | Magic Resistance: -128 to 127 |
@@ -104,7 +104,7 @@
 | pendingloreflag | tinyint | Pending Lore Flag: 0 = False, 1 = True |
 | pr | int | Poison Resistance: -128 to 127 |
 | procrate | int | Proc Rate: 0 = 100%, 50 = 150%, 100 = 200% |
-| races | int | [Races](../../../../categories/npc/race-list) |
+| races | int | [Races](../../../../server/npc/race-list) |
 | range | int | Range: 0 to 255 |
 | reclevel | int | Recommended Level |
 | recskill | int | Recommended Skill Level |
@@ -112,9 +112,9 @@
 | sellrate | float | Sell Rate |
 | shielding | int | Shielding: 5 = 5%, 20 = 20%, 50 = 50% |
 | size | int | Size |
-| skillmodtype | int | [Skill Modifier Type](../../../../categories/player/skills) |
+| skillmodtype | int | [Skill Modifier Type](../../../../server/player/skills) |
 | skillmodvalue | int | Skill Modifier Value |
-| slots | int | [Slots](../../../../categories/inventory/item-slots) |
+| slots | int | [Slots](../../../../server/inventory/item-slots) |
 | clickeffect | int | [Click Effect Identifier](../../schema/spells/spells_new.md) |
 | spellshield | int | Spell Shielding |
 | strikethrough | int | Strikethrough |
@@ -128,7 +128,7 @@
 | benefitflag | int | Unknown |
 | UNK054 | int | Unknown |
 | UNK059 | int | Unknown |
-| booktype | int | [Book Language](../../../../categories/player/languages) |
+| booktype | int | [Book Language](../../../../server/player/languages) |
 | recastdelay | int | Recast Delay in Seconds |
 | recasttype | int | Recast Type: -1 = None, &gt;0 = Recast Type used across all items |
 | guildfavor | int | Guild Favor |
@@ -252,7 +252,7 @@
 | expendablearrow | smallint | Expendable Arrow: 0 = False, 1 = True |
 | powersourcecapacity | smallint | Powersource Capacity |
 | bardeffect | smallint | [Bard Effect Identifier](../../schema/spells/spells_new.md) |
-| bardeffecttype | smallint | [Bard Effect Type](../../../../categories/items/bard-types) |
+| bardeffecttype | smallint | [Bard Effect Type](../../../../server/items/bard-types) |
 | bardlevel2 | smallint | Bard Level 2 |
 | bardlevel | smallint | Bard Level |
 | bardunk1 | smallint | Unknown |

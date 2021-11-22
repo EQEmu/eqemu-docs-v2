@@ -5,7 +5,7 @@
 | id | int | Unique Corpse Identifier |
 | charid | int | [Character Identifier](character_data.md) |
 | charname | varchar | Character Name |
-| zone_id | smallint | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_id | smallint | [Zone Identifier](../../../../server/zones/zone-list) |
 | instance_id | smallint | Instance Identifier |
 | x | float | X Coordinate |
 | y | float | Y Coordinate |
@@ -20,12 +20,12 @@
 | exp | int | Experience |
 | size | int | Size |
 | level | int | Level |
-| race | int | [Race](../../../../categories/npc/race-list) |
-| gender | int | [Gender](../../../../categories/npc/genders) |
-| class | int | [Class](../../../../categories/player/class-list) |
-| deity | int | [Deity](../../../../categories/player/deity-list) |
-| texture | int | [Texture](../../../../categories/npc/textures) |
-| helm_texture | int | [Helm Texture](../../../../categories/npc/textures) |
+| race | int | [Race](../../../../server/npc/race-list) |
+| gender | int | [Gender](../../../../server/npc/genders) |
+| class | int | [Class](../../../../server/player/class-list) |
+| deity | int | [Deity](../../../../server/player/deity-list) |
+| texture | int | [Texture](../../../../server/npc/textures) |
+| helm_texture | int | [Helm Texture](../../../../server/npc/textures) |
 | copper | int | Copper |
 | silver | int | Silver |
 | gold | int | Gold |

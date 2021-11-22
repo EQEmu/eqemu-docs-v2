@@ -3,7 +3,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | charid | int | [Character Identifier](../../schema/characters/character_data.md) |
-| slotid | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
+| slotid | mediumint | [Slot Identifier](../../../../server/inventory/inventory-slots) |
 | itemid | int | [Item Identifier](../../schema/items/items.md) |
 | charges | smallint | Charges |
 | color | int | Color |

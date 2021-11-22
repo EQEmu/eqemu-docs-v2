@@ -2,5 +2,5 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| StanceID | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
+| StanceID | tinyint | [Stance Type Identifier](../../../../server/bots/stance-types) |
 

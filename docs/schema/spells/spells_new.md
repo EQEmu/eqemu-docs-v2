@@ -18,7 +18,7 @@
 | cast_time | int | Cast Time in Milliseconds |
 | recovery_time | int | Recovery Time in Seconds |
 | recast_time | int | Recast Time in Seconds |
-| buffdurationformula | int | [Buff Duration Formula](../../../../categories/spells/buff-duration-formulas) |
+| buffdurationformula | int | [Buff Duration Formula](../../../../server/spells/buff-duration-formulas) |
 | buffduration | int | Buff Duration |
 | AEDuration | int | Area of Effect Duration |
 | mana | int | Mana Cost |
@@ -72,40 +72,40 @@
 | NoexpendReagent2 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent3 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
 | NoexpendReagent4 | int | If it is a number between 1-4 it means component number 1-4 is a focus and not to expend it. If it is a valid item ID it means this item is a focus as well. |
-| formula1 | int | [Formula 1](../../../../categories/spells/base-value-formulas) |
-| formula2 | int | [Formula 2](../../../../categories/spells/base-value-formulas) |
-| formula3 | int | [Formula 3](../../../../categories/spells/base-value-formulas) |
-| formula4 | int | [Formula 4](../../../../categories/spells/base-value-formulas) |
-| formula5 | int | [Formula 5](../../../../categories/spells/base-value-formulas) |
-| formula6 | int | [Formula 6](../../../../categories/spells/base-value-formulas) |
-| formula7 | int | [Formula 7](../../../../categories/spells/base-value-formulas) |
-| formula8 | int | [Formula 8](../../../../categories/spells/base-value-formulas) |
-| formula9 | int | [Formula 9](../../../../categories/spells/base-value-formulas) |
-| formula10 | int | [Formula 10](../../../../categories/spells/base-value-formulas) |
-| formula11 | int | [Formula 11](../../../../categories/spells/base-value-formulas) |
-| formula12 | int | [Formula 12](../../../../categories/spells/base-value-formulas) |
+| formula1 | int | [Formula 1](../../../../server/spells/base-value-formulas) |
+| formula2 | int | [Formula 2](../../../../server/spells/base-value-formulas) |
+| formula3 | int | [Formula 3](../../../../server/spells/base-value-formulas) |
+| formula4 | int | [Formula 4](../../../../server/spells/base-value-formulas) |
+| formula5 | int | [Formula 5](../../../../server/spells/base-value-formulas) |
+| formula6 | int | [Formula 6](../../../../server/spells/base-value-formulas) |
+| formula7 | int | [Formula 7](../../../../server/spells/base-value-formulas) |
+| formula8 | int | [Formula 8](../../../../server/spells/base-value-formulas) |
+| formula9 | int | [Formula 9](../../../../server/spells/base-value-formulas) |
+| formula10 | int | [Formula 10](../../../../server/spells/base-value-formulas) |
+| formula11 | int | [Formula 11](../../../../server/spells/base-value-formulas) |
+| formula12 | int | [Formula 12](../../../../server/spells/base-value-formulas) |
 | LightType | int | Light Type |
 | goodEffect | int | Good Effect: 0 = Detrimental, 1 = Beneficial, 2 = Beneficial Group Only |
 | Activated | int | Activated |
-| resisttype | int | [Resist Type](../../../../categories/spells/resist-types) |
-| effectid1 | int | [Effect Identifier 1](../../../../categories/spells/spell-effect-ids) |
-| effectid2 | int | [Effect Identifier 2](../../../../categories/spells/spell-effect-ids) |
-| effectid3 | int | [Effect Identifier 3](../../../../categories/spells/spell-effect-ids) |
-| effectid4 | int | [Effect Identifier 4](../../../../categories/spells/spell-effect-ids) |
-| effectid5 | int | [Effect Identifier 5](../../../../categories/spells/spell-effect-ids) |
-| effectid6 | int | [Effect Identifier 6](../../../../categories/spells/spell-effect-ids) |
-| effectid7 | int | [Effect Identifier 7](../../../../categories/spells/spell-effect-ids) |
-| effectid8 | int | [Effect Identifier 8](../../../../categories/spells/spell-effect-ids) |
-| effectid9 | int | [Effect Identifier 9](../../../../categories/spells/spell-effect-ids) |
-| effectid10 | int | [Effect Identifier 10](../../../../categories/spells/spell-effect-ids) |
-| effectid11 | int | [Effect Identifier 11](../../../../categories/spells/spell-effect-ids) |
-| effectid12 | int | [Effect Identifier 12](../../../../categories/spells/spell-effect-ids) |
-| targettype | int | [Target Type](../../../../categories/spells/target-types) |
+| resisttype | int | [Resist Type](../../../../server/spells/resist-types) |
+| effectid1 | int | [Effect Identifier 1](../../../../server/spells/spell-effect-ids) |
+| effectid2 | int | [Effect Identifier 2](../../../../server/spells/spell-effect-ids) |
+| effectid3 | int | [Effect Identifier 3](../../../../server/spells/spell-effect-ids) |
+| effectid4 | int | [Effect Identifier 4](../../../../server/spells/spell-effect-ids) |
+| effectid5 | int | [Effect Identifier 5](../../../../server/spells/spell-effect-ids) |
+| effectid6 | int | [Effect Identifier 6](../../../../server/spells/spell-effect-ids) |
+| effectid7 | int | [Effect Identifier 7](../../../../server/spells/spell-effect-ids) |
+| effectid8 | int | [Effect Identifier 8](../../../../server/spells/spell-effect-ids) |
+| effectid9 | int | [Effect Identifier 9](../../../../server/spells/spell-effect-ids) |
+| effectid10 | int | [Effect Identifier 10](../../../../server/spells/spell-effect-ids) |
+| effectid11 | int | [Effect Identifier 11](../../../../server/spells/spell-effect-ids) |
+| effectid12 | int | [Effect Identifier 12](../../../../server/spells/spell-effect-ids) |
+| targettype | int | [Target Type](../../../../server/spells/target-types) |
 | basediff | int | Base Difficult Fizzle Adjustment |
-| skill | int | [Skill Identifier](../../../../categories/player/skills) |
-| zonetype | int | [Zone Type](../../../../categories/zones/zone-types) |
-| EnvironmentType | int | [Environment Type](../../../../categories/spells/environment-types) |
-| TimeOfDay | int | [Time of Day Type](../../../../categories/spells/time-of-day-types) |
+| skill | int | [Skill Identifier](../../../../server/player/skills) |
+| zonetype | int | [Zone Type](../../../../server/zones/zone-types) |
+| EnvironmentType | int | [Environment Type](../../../../server/spells/environment-types) |
+| TimeOfDay | int | [Time of Day Type](../../../../server/spells/time-of-day-types) |
 | classes1 | int | Required Level for Warrior |
 | classes2 | int | Required Level for Cleric |
 | classes3 | int | Required Level for Paladin |
@@ -127,23 +127,23 @@
 | TravelType | int | Travel Type \(Unused\) |
 | SpellAffectIndex | int | Spell Affect Index |
 | disallow_sit | int | Disallow Sit: 0 = False, 1 = True |
-| deities0 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities1 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities2 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities3 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities4 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities5 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities6 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities7 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities8 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities9 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities10 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities11 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities12 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities13 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities14 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities15 | int | [Deity List](../../../../categories/player/deity-list) |
-| deities16 | int | [Deity List](../../../../categories/player/deity-list) |
+| deities0 | int | [Deity List](../../../../server/player/deity-list) |
+| deities1 | int | [Deity List](../../../../server/player/deity-list) |
+| deities2 | int | [Deity List](../../../../server/player/deity-list) |
+| deities3 | int | [Deity List](../../../../server/player/deity-list) |
+| deities4 | int | [Deity List](../../../../server/player/deity-list) |
+| deities5 | int | [Deity List](../../../../server/player/deity-list) |
+| deities6 | int | [Deity List](../../../../server/player/deity-list) |
+| deities7 | int | [Deity List](../../../../server/player/deity-list) |
+| deities8 | int | [Deity List](../../../../server/player/deity-list) |
+| deities9 | int | [Deity List](../../../../server/player/deity-list) |
+| deities10 | int | [Deity List](../../../../server/player/deity-list) |
+| deities11 | int | [Deity List](../../../../server/player/deity-list) |
+| deities12 | int | [Deity List](../../../../server/player/deity-list) |
+| deities13 | int | [Deity List](../../../../server/player/deity-list) |
+| deities14 | int | [Deity List](../../../../server/player/deity-list) |
+| deities15 | int | [Deity List](../../../../server/player/deity-list) |
+| deities16 | int | [Deity List](../../../../server/player/deity-list) |
 | field142 | int | Unknown |
 | field143 | int | Unknown |
 | new_icon | int | New Icon |
@@ -177,19 +177,19 @@
 | field172 | int | Unknown |
 | HateAdded | int | Hate Added |
 | EndurUpkeep | int | Endurance Upkeep |
-| numhitstype | int | [Number of Hits Type](../../../../categories/spells/numhit-types) |
+| numhitstype | int | [Number of Hits Type](../../../../server/spells/numhit-types) |
 | numhits | int | Number of Hits |
 | pvpresistbase | int | PVP Resist Base |
 | pvpresistcalc | int | PVP Resist Calc |
 | pvpresistcap | int | PVP Resist Cap |
-| spell_category | int | [Spell Category](../../../../categories/spells/spell-groups) |
+| spell_category | int | [Spell Category](../../../../server/spells/spell-groups) |
 | pvp_duration | int |  |
 | pvp_duration_cap | int |  |
 | pcnpc_only_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
 | cast_not_standing | int | Cast Not Standing: 0 = False, 1 = True |
 | can_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |
 | nodispell | int | No Dispell: 0 = False, 1 = True |
-| npc_category | int | [NPC Spell Category Identifier](../../../../categories/spells/npc-spell-categories) |
+| npc_category | int | [NPC Spell Category Identifier](../../../../server/spells/npc-spell-categories) |
 | npc_usefulness | int | NPC Usefulness |
 | MinResist | int | Minimum Resistance |
 | MaxResist | int | Maximum Resistance |
@@ -209,11 +209,11 @@
 | field204 | int | Unknown |
 | no_block | int | No Block: 0 = False, 1 = True |
 | field206 | int | Unknown |
-| spellgroup | int | [Spell Group](../../../../categories/spells/spell-groups) |
+| spellgroup | int | [Spell Group](../../../../server/spells/spell-groups) |
 | rank | int | Rank |
 | field209 | int | Unknown |
 | field210 | int | Unknown |
-| CastRestriction | int | [Cast Restrictions](../../../../categories/spells/spell-target-restrictions) |
+| CastRestriction | int | [Cast Restrictions](../../../../server/spells/spell-target-restrictions) |
 | allowrest | int | Allow Rest: 0 = False, 1 = True |
 | InCombat | int | In Combat: 0 = False, 1 = True |
 | OutofCombat | int | Out Of Combat: 0 = False, 1 = True |

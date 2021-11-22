@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | transaction_id | int | Unique Transaction Identifier |
 | time | timestamp | Timestamp |
-| zone_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_id | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | merchant_id | int | [Merchant Identifier](../../schema/merchants/merchantlist.md) |
 | merchant_pp | int | Merchant Platinum |
 | merchant_gp | int | Merchant Gold |

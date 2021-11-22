@@ -5,7 +5,7 @@
 | id | int | Unique Guild Identifier |
 | name | varchar | Name |
 | leader | int | [Character Identifier](../../schema/characters/character_data.md) |
-| minstatus | smallint | [Minimum Status](../../../../categories/player/status-levels) |
+| minstatus | smallint | [Minimum Status](../../../../server/player/status-levels) |
 | motd | text | Message of the Day |
 | tribute | int | Tribute |
 | motd_setter | varchar | [Character Identifier](../../schema/characters/character_data.md) |

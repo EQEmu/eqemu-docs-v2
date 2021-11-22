@@ -8,17 +8,17 @@
 | last_name | varchar | Last Name |
 | title | varchar | Title |
 | suffix | varchar | Suffix |
-| zone_id | int | [Zone Identifier](../../../../categories/zones/zone-list) |
+| zone_id | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | zone_instance | int | Zone Instance Identifier |
 | y | float | Y Coordinate |
 | x | float | X Coordinate |
 | z | float | Z Coordinate |
 | heading | float | Heading Coordinate |
-| gender | tinyint | [Gender](../../../../categories/npc/genders) |
-| race | smallint | [Race](../../../../categories/npc/race-list) |
-| class | tinyint | [Class](../../../../categories/player/class-list) |
+| gender | tinyint | [Gender](../../../../server/npc/genders) |
+| race | smallint | [Race](../../../../server/npc/race-list) |
+| class | tinyint | [Class](../../../../server/player/class-list) |
 | level | int | Level |
-| deity | int | [Deity](../../../../categories/player/deity-list) |
+| deity | int | [Deity](../../../../server/player/deity-list) |
 | birthday | int | UNIX Timestamp of Birthday |
 | last_login | int | UNIX Timestamp of Last Login |
 | time_played | int | Time Played |
@@ -64,11 +64,11 @@
 | hunger_level | int | Hunger Level |
 | thirst_level | int | Thirst Level |
 | ability_up | int | Ability Up |
-| ldon_points_guk | int | LDoN Points - [Deepest Guk](../../../../categories/zones/ldon-themes) |
-| ldon_points_mir | int | LDoN Points - [Miragul's Menagerie](../../../../categories/zones/ldon-themes) |
-| ldon_points_mmc | int | LDoN Points - [Mistmoore Catacombs](../../../../categories/zones/ldon-themes) |
-| ldon_points_ruj | int | LDoN Points - [Rujarkian Hills](../../../../categories/zones/ldon-themes) |
-| ldon_points_tak | int | LDoN Points - [Takish-Hiz](../../../../categories/zones/ldon-themes) |
+| ldon_points_guk | int | LDoN Points - [Deepest Guk](../../../../server/zones/ldon-themes) |
+| ldon_points_mir | int | LDoN Points - [Miragul's Menagerie](../../../../server/zones/ldon-themes) |
+| ldon_points_mmc | int | LDoN Points - [Mistmoore Catacombs](../../../../server/zones/ldon-themes) |
+| ldon_points_ruj | int | LDoN Points - [Rujarkian Hills](../../../../server/zones/ldon-themes) |
+| ldon_points_tak | int | LDoN Points - [Takish-Hiz](../../../../server/zones/ldon-themes) |
 | ldon_points_available | int | LDoN Points Available |
 | tribute_time_remaining | int | Tribute Time Remaining |
 | career_tribute_points | int | Career Tribute Points |

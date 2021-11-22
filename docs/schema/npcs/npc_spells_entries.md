@@ -5,7 +5,7 @@
 | id | int | Unique NPC Spell Entry Identifier |
 | npc_spells_id | int | [Unique NPC Spell Set Identifier](npc_spells.md) |
 | spellid | smallint | [Spell Identifier](../../schema/spells/spells_new.md) |
-| type | int | [Spell Type Bitmask](../../../../categories/spells/spell-types) |
+| type | int | [Spell Type Bitmask](../../../../server/spells/spell-types) |
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |
 | manacost | smallint | Mana Cost |

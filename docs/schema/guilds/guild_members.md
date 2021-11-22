@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | char_id | int | [Character Identifier](../../schema/characters/character_data.md) |
 | guild_id | mediumint | [Guild Identifier](guilds.md) |
-| rank | tinyint | [Rank](../../../../categories/player/guild-ranks) |
+| rank | tinyint | [Rank](../../../../server/player/guild-ranks) |
 | tribute_enable | tinyint | Tribute Enable: 0 = False, 1 = True |
 | total_tribute | int | Total Tribute |
 | last_tribute | int | Last Tribute |
