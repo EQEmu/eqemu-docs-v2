@@ -86,7 +86,6 @@ nav:
           - AA Types: server/aas/aa-types.md
           - Customizing AAs: server/aas/customizing-aas.md
       - Bots:
-          - server/bots/README.md
           - Stance Types: server/bots/stance-types.md
           - Bot Commands: server/bots/bot-commands.md
           - Bot Heal Rotations: server/bots/bot-heal-rotations.md
