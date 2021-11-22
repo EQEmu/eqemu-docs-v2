@@ -27,8 +27,6 @@ With this, you can get really really creative as to how you pass variables aroun
 
 * In this simple example, we're looping the same timer every 3 seconds and an NPC is going to say something different every 3 seconds until it gets to the 4th passing of the timer and the NPC shuts his mouth.
 
-{% tabs %}
-{% tab title="Perl" %}
 ```perl
 sub EVENT_SAY {
     if($text=~/hail/i) {
@@ -55,5 +53,3 @@ sub EVENT_TIMER {
     }
 }
 ```
-{% endtab %}
-{% endtabs %}
