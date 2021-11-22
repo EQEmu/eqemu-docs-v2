@@ -43,36 +43,32 @@ The repository generator can be found in the source via the following path
 ./utils/scripts/generators/repository-generator.pl
 ```
 
-{% tabs %}
-{% tab title="Linux bash" %}
-```bash
-# Command Structure
-perl ~/code/utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
+=== "Linux Bash"
+      ```bash
+      # Command Structure
+      perl ~/code/utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
+      
+      # Generate everything
+      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ all
+      
+      # Only generate a repository for the account table
+      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
+      ```
 
-# Generate everything
-perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ all
-
-# Only generate a repository for the account table
-perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
-```
-{% endtab %}
-
-{% tab title="Windows cmd" %}
-```
-# Command Structure
-# Must be run from the root eqemu source folder
-# [server-location] is the full path to server's world.exe location
-E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
-
-# Generate everything
-E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ all
-
-# Only generate a repository for the account table
-E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ account
-
-```
-{% endtab %}
-{% endtabs %}
+=== "Windows CMD"
+      ```
+      # Command Structure
+      # Must be run from the root eqemu source folder
+      # [server-location] is the full path to server's world.exe location
+      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
+      
+      # Generate everything
+      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ all
+      
+      # Only generate a repository for the account table
+      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ account
+      
+      ```
 
 The generator works by examining your database tables found in the connection properties registered in the server config **eqemu_config** and will generate a **struct** object that tries to represent the database data types as close as possible
 
