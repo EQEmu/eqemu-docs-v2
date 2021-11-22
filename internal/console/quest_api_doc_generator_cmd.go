@@ -171,7 +171,7 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 	markdown := ``
 
 	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02 15:04:05")
+	generatedTime := currentTime.Format("2006.01.02")
 
 	if len(perlMethods) > 0 {
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{generated_time}}", generatedTime)

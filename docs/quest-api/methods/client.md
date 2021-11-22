@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Client){:target="Client"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:16:22
+        Last generated 2021.11.21
 
     ``` perl
     $client->AccountID();
@@ -315,7 +315,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Client){:target="Client"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:16:22
+        Last generated 2021.11.21
 
     ``` lua
     client:AccountID();
