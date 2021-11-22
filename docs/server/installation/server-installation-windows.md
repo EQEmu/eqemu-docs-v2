@@ -157,12 +157,10 @@ Many server operators choose to keep things simple by only using the public logi
       Remember that all **EverQuest Clients** on the local network will need to have a modified **eqhost.txt** (Client file) file that points at your Local Login Server
 
 
-{% code title="" %}
-```javascript
+```text
 [LoginServer]
 Host=192.168.0.1:5999
 ```
-{% endcode %}
 
 Be sure to adjust the IP address to the IP address of your login server on your local network.
 
