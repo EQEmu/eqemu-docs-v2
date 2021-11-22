@@ -628,6 +628,9 @@ nav:
           - zone_flags: schema/zone/zone_flags.md
           - zone_points: schema/zone/zone_points.md
   - Quest API:
+      - Resources:
+          - Introduction: quest-api/introduction.md
+          - Dialogue Window (DiaWind): quest-api/diawind.md
       - Methods:
           - Bot: quest-api/methods/bot.md
           - Client: quest-api/methods/client.md

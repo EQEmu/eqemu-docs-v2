@@ -76,9 +76,9 @@ type Method struct {
 }
 
 const (
-	NavPositionMethods   = 0
-	NavPositionEvents    = 1
-	NavPositionConstants = 2
+	NavPositionMethods   = 1
+	NavPositionEvents    = 2
+	NavPositionConstants = 3
 )
 
 func (c *QuestApiDocGeneratorCommand) Handle(_ *cobra.Command, _ []string) {
