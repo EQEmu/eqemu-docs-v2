@@ -17,29 +17,24 @@ To start off, an entity could be any of the following:
 
 In this simple example below you can always assume that the **client** is the player who **'triggered'** the script to occur, and the **NPC** who is bound to the script that has triggered:[?](http://wiki.eqemulator.org/p?Entity_Lists_-_How_to_Use_Them&frm=Ultimate_Perl_Reference#)
 
-{% tabs %}
-{% tab title="Perl" %}
-```perl
-sub EVENT_SAY {
-	if($text=~/hail/i) {
-		$client->Message(15, "This is a client message.");
-		$npc->Say("Hello there $name.");
-	}
-}
-```
-{% endtab %}
-
-{% tab title="Lua" %}
-```lua
-function event_say(e)
-	if (e.message:findi("hail")) then
-		e.other:Message(15, "This is a client message.");
-		e.self:Say("Hello there " .. e.other:GetCleanName() . ".");
-	end
-end
-```
-{% endtab %}
-{% endtabs %}
+=== "Perl"
+    ```perl
+    sub EVENT_SAY {
+        if($text=~/hail/i) {
+            $client->Message(15, "This is a client message.");
+            $npc->Say("Hello there $name.");
+        }
+    }
+    ```
+=== "Lua"
+    ```lua
+    function event_say(e)
+        if (e.message:findi("hail")) then
+            e.other:Message(15, "This is a client message.");
+            e.self:Say("Hello there " .. e.other:GetCleanName() . ".");
+        end
+    end
+    ```
 
 Some of you may already know this as common knowledge, but in order for this to cover everyone's knowledge levels I will preamble with the basics a bit.
 
@@ -61,8 +56,6 @@ This zone by default has 119 NPC's approximately. Most if not all of them are Or
 * Below is a list of NPC's in the zone, we're simply using this as a reference of what kind of NPC's are in the zone. There are other ways to get this information using plugins and handy tools but for now simply for illustration purposes we want to take a quick survery of what we have in the zone and how many NPC's of certain name types we have.
 * Below is simpy the spawn data, it does not mean that all of these NPC's are what is spawned at all times in the database, these are the unique entries that are in the database. Once again there are about 119 NPC's with the zone fully popped.
 
-{% tabs %}
-{% tab title="Query" %}
 ```sql
 SELECT npc_types.id, COUNT(npc_types.id) AS `npc_count`,
 npc_types.`name`, npc_types.lastname, npc_types.`level` FROM(spawn2 ,npc_types)
@@ -70,9 +63,7 @@ INNER JOIN spawnentry ON npc_types.id = spawnentry.npcID
 AND spawnentry.spawngroupID = spawn2.spawngroupID
 WHERE spawn2.zone = 'crushbone' GROUP BY `npc_types`.`name`;
 ```
-{% endtab %}
 
-{% tab title="Result" %}
 ```
 +-------+-----------+-----------------------------+----------+-------+
 | id    | npc_count | name                        | lastname | level |
@@ -106,15 +97,11 @@ WHERE spawn2.zone = 'crushbone' GROUP BY `npc_types`.`name`;
 +-------+-----------+-----------------------------+----------+-------+
 26 rows in set
 ```
-{% endtab %}
-{% endtabs %}
 
 ## Manipulating the Entity List
 
 Now, we can start getting to the real nuts and bolts of practical application here. Let's say I'm on a mission to liven up a custom version of my zone, and whenever Emperor Crush spawns, I want all of my Orc's in the zone to howl and beat their chest or swing their arm or do something provocative as well as make an emote we would use an example such as below.
 
-{% tabs %}
-{% tab title="Perl" %}
 ```perl
 sub EVENT_SPAWN {
 	quest::shout("Graghhhh! Who goes there!"); #:: Ruh roh, Emperor is pissed I think!
@@ -135,9 +122,7 @@ sub EVENT_TIMER {
 	}
 }
 ```
-{% endtab %}
 
-{% tab title="Lua" %}
 ```lua
 function event_spawn(e)
 	e.self:Shout("Graghhhh! Who goes there!"); --:: Ruh roh, Emperor is pissed I think!
@@ -158,8 +143,6 @@ function event_timer(e)
 	end
 end
 ```
-{% endtab %}
-{% endtabs %}
 
 * In this very quick example you can see that I used a timer as a delay to spawn the NPC's, and then I used a simply entity list iteration to have NPC's do what I want them to do
 
@@ -200,9 +183,7 @@ sub EVENT_TIMER {
 	}
 }
 ```
-{% endtab %}
 
-{% tab title="Lua" %}
 ```lua
 function event_spawn(e)
 	e.self:Shout("Graghhhh! Who goes there!");
@@ -226,8 +207,6 @@ function event_timer(e)
 	end
 end
 ```
-{% endtab %}
-{% endtabs %}
 
 *  Now, I see exactly what we would expect, the slaves shouting for help, of course you could just have the elven scripts shout in their script but we're using this simply as an example
 
@@ -237,35 +216,33 @@ end
 
 ## Client Example
 
-{% tabs %}
-{% tab title="Perl" %}
-```perl
-sub EVENT_COMBAT {
-	if($combat_state == 1) { #::: Attack state is on for NPC
-		my @clist = $entity_list->GetClientList();
-		foreach my $c (@clist) {
-			$c->Message(15, "You are frozen!");
-			$c->Freeze();
-		}
-	}
-}
-```
-{% endtab %}
+=== "Perl"
+  
+    ```perl
+    sub EVENT_COMBAT {
+        if($combat_state == 1) { #::: Attack state is on for NPC
+            my @clist = $entity_list->GetClientList();
+            foreach my $c (@clist) {
+                $c->Message(15, "You are frozen!");
+                $c->Freeze();
+            }
+        }
+    }
+    ```
 
-{% tab title="Lua" %}
-```lua
-function event_combat(e)
-	if (e.joined) then
-		local client_list = entity_list:GetClientList();
-		for i, client in ipairs(client_list) do
-			client:Message(15, "You are frozen!");
-			client:Freeze();
-		end
-	end
-end
-```
-{% endtab %}
-{% endtabs %}
+=== "Lua"
+
+    ```lua
+    function event_combat(e)
+        if (e.joined) then
+            local client_list = entity_list:GetClientList();
+            for i, client in ipairs(client_list) do
+                client:Message(15, "You are frozen!");
+                client:Freeze();
+            end
+        end
+    end
+    ```
 
 * And you can see below that when I attack **Emperor Crush,** I and every single other $client in the zone would be frozen until I did something to unfreeze the client. I literally had to force exit my game client because I lost complete control of my client and I could not do anything at this point. So it would be a good idea to set a timer for 5 seconds to also have all clients **$client->UnFreeze();** once again to gain control.You may not want to actually use this example in your quests as there are spells that can achieve the same effect, this is simply for demonstrational purposes only.
 
@@ -314,29 +291,27 @@ So let's say, I wanted to get something by any of these above? I use examples ve
 * **You would use this example if you are specifically trying to select a unique NPC in the zone that there is only one NPC ID of that NPC, to knock out two birds in one stone, I'm going to make this specific NPC attack a player by using a player selector.**
   * **In this example I will have Emperor Crush get Lord Darnish NPCID (58028) attack the player as well just incase the player hacked his way to the tower**
 
-{% tabs %}
-{% tab title="Perl" %}
-```perl
-sub EVENT_COMBAT {
-	if($combat_state == 1) { #::: Attack state is on for NPC
-		my $lord_darnish = $entity_list->GetNPCByNPCTypeID(58028); #::: Lord Darnish
-		$lord_darnish->Attack($client); #::: We use $client because it is implied in combat
-	}
-}
-```
-{% endtab %}
+=== "Perl"
 
-{% tab title="Lua" %}
-```lua
-function event_combat(e)
-	if (e.joined) then Attack state is on for NPC
-		local lord_darnish = entity_list:GetNPCByNPCTypeID(58028); -- Lord Darnish
-		lord_darnish:Attack(e.self);
-	end
-end
-```
-{% endtab %}
-{% endtabs %}
+    ```perl
+    sub EVENT_COMBAT {
+        if($combat_state == 1) { #::: Attack state is on for NPC
+            my $lord_darnish = $entity_list->GetNPCByNPCTypeID(58028); #::: Lord Darnish
+            $lord_darnish->Attack($client); #::: We use $client because it is implied in combat
+        }
+    }
+    ```
+
+=== "Lua"
+
+    ```lua
+    function event_combat(e)
+        if (e.joined) then Attack state is on for NPC
+            local lord_darnish = entity_list:GetNPCByNPCTypeID(58028); -- Lord Darnish
+            lord_darnish:Attack(e.self);
+        end
+    end
+    ```
 
 * **Once again if you are trying to select similar NPC's you need to use an entity list iteration (foreach loop) and then use entity objects to filter on their data, few one line examples below:**
   * **if($n->GetClass() == 1) #::: Get all NPC's that are warriors**
