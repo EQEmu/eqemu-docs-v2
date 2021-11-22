@@ -330,7 +330,6 @@ Another real use example is where we need some additional criteria to pull some 
 * static std::vector GetZoneGrids(int zone_id) 
 * static Grid GetGrid(const std::vector &grids, int grid_id)
 
-{% code title="grid_repository.h" %}
 ```cpp
 
 	// Custom extended repository methods here
@@ -375,18 +374,15 @@ Another real use example is where we need some additional criteria to pull some 
 		return NewEntity();
 	}
 ```
-{% endcode %}
 
 Since we want these records to be cached at the zone level; we create two properties to eventually load via data that is zone contextual
 
-{% code title="zone.h" %}
 ```cpp
 class Zone {
 ...
 	std::vector<GridRepository::Grid>             zone_grids;
 	std::vector<GridEntriesRepository::GridEntry> zone_grid_entries;
 ```
-{% endcode %}
 
 We created a function that during zone initialization we call **LoadGrids **so we can reuse it in other parts of the code if we wanted to reload grid data for any reason
 
@@ -400,7 +396,6 @@ void Zone::LoadGrids()
 
 Since we have this data in memory now using the structure directly mapped from the repositories, we also have this very nice way over iterating over the data in a vector when it comes to load the data into the grids / waypoints themselves
 
-{% code title="waypoints.cpp" %}
 ```cpp
 void NPC::AssignWaypoints ...
 ...
@@ -428,4 +423,3 @@ for (auto &entry : zone->zone_grid_entries) {
 		}
 	}
 ```
-{% endcode %}
