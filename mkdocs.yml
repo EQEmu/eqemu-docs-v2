@@ -217,7 +217,6 @@ nav:
           - NPC Scaling: server/npc/npc-scaling.md
           - Special Attacks: server/npc/special-attacks.md
       - Operation:
-          - server/operation/README.md
           - Adjust Maximum Level: server/operation/adjust-maximum-level.md
           - Adjust World Date / Time: server/operation/adjust-world-date-time.md
           - Changing Start Zones: server/operation/changing-start-zones.md
