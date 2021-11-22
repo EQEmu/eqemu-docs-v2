@@ -1,7 +1,5 @@
 ## EVENT_BOT_COMMAND
 
-=== "EVENT_BOT_COMMAND"
-
 ``` perl
 
 sub EVENT_BOT_COMMAND {
@@ -14,8 +12,6 @@ sub EVENT_BOT_COMMAND {
 ```
 ## EVENT_CAST
 
-=== "EVENT_CAST"
-
 ``` perl
 
 sub EVENT_CAST {
@@ -23,8 +19,6 @@ sub EVENT_CAST {
 }
 ```
 ## EVENT_CAST_BEGIN
-
-=== "EVENT_CAST_BEGIN"
 
 ``` perl
 
@@ -34,8 +28,6 @@ sub EVENT_CAST_BEGIN {
 ```
 ## EVENT_CAST_ON
 
-=== "EVENT_CAST_ON"
-
 ``` perl
 
 sub EVENT_CAST_ON {
@@ -43,8 +35,6 @@ sub EVENT_CAST_ON {
 }
 ```
 ## EVENT_CLICKDOOR
-
-=== "EVENT_CLICKDOOR"
 
 ``` perl
 
@@ -55,16 +45,12 @@ sub EVENT_CLICKDOOR {
 ```
 ## EVENT_CLICK_DOOR
 
-=== "EVENT_CLICK_DOOR"
-
 ``` perl
 
 sub EVENT_CLICK_DOOR {
 }
 ```
 ## EVENT_CLICK_OBJECT
-
-=== "EVENT_CLICK_OBJECT"
 
 ``` perl
 
@@ -75,8 +61,6 @@ sub EVENT_CLICK_OBJECT {
 ```
 ## EVENT_COMBINE
 
-=== "EVENT_COMBINE"
-
 ``` perl
 
 sub EVENT_COMBINE {
@@ -84,8 +68,6 @@ sub EVENT_COMBINE {
 }
 ```
 ## EVENT_COMBINE_FAILURE
-
-=== "EVENT_COMBINE_FAILURE"
 
 ``` perl
 
@@ -96,8 +78,6 @@ sub EVENT_COMBINE_FAILURE {
 ```
 ## EVENT_COMBINE_SUCCESS
 
-=== "EVENT_COMBINE_SUCCESS"
-
 ``` perl
 
 sub EVENT_COMBINE_SUCCESS {
@@ -106,8 +86,6 @@ sub EVENT_COMBINE_SUCCESS {
 }
 ```
 ## EVENT_COMBINE_VALIDATE
-
-=== "EVENT_COMBINE_VALIDATE"
 
 ``` perl
 
@@ -119,8 +97,6 @@ sub EVENT_COMBINE_VALIDATE {
 }
 ```
 ## EVENT_COMMAND
-
-=== "EVENT_COMMAND"
 
 ``` perl
 
@@ -134,16 +110,12 @@ sub EVENT_COMMAND {
 ```
 ## EVENT_CONNECT
 
-=== "EVENT_CONNECT"
-
 ``` perl
 
 sub EVENT_CONNECT {
 }
 ```
 ## EVENT_CONSIDER
-
-=== "EVENT_CONSIDER"
 
 ``` perl
 
@@ -153,8 +125,6 @@ sub EVENT_CONSIDER {
 ```
 ## EVENT_CONSIDER_CORPSE
 
-=== "EVENT_CONSIDER_CORPSE"
-
 ``` perl
 
 sub EVENT_CONSIDER_CORPSE {
@@ -162,8 +132,6 @@ sub EVENT_CONSIDER_CORPSE {
 }
 ```
 ## EVENT_DEATH
-
-=== "EVENT_DEATH"
 
 ``` perl
 
@@ -176,8 +144,6 @@ sub EVENT_DEATH {
 ```
 ## EVENT_DEATH_COMPLETE
 
-=== "EVENT_DEATH_COMPLETE"
-
 ``` perl
 
 sub EVENT_DEATH_COMPLETE {
@@ -189,16 +155,12 @@ sub EVENT_DEATH_COMPLETE {
 ```
 ## EVENT_DISCONNECT
 
-=== "EVENT_DISCONNECT"
-
 ``` perl
 
 sub EVENT_DISCONNECT {
 }
 ```
 ## EVENT_DISCOVER_ITEM
-
-=== "EVENT_DISCOVER_ITEM"
 
 ``` perl
 
@@ -208,16 +170,12 @@ sub EVENT_DISCOVER_ITEM {
 ```
 ## EVENT_DUEL_LOSE
 
-=== "EVENT_DUEL_LOSE"
-
 ``` perl
 
 sub EVENT_DUEL_LOSE {
 }
 ```
 ## EVENT_DUEL_WIN
-
-=== "EVENT_DUEL_WIN"
 
 ``` perl
 
@@ -226,16 +184,12 @@ sub EVENT_DUEL_WIN {
 ```
 ## EVENT_ENTER_ZONE
 
-=== "EVENT_ENTER_ZONE"
-
 ``` perl
 
 sub EVENT_ENTER_ZONE {
 }
 ```
 ## EVENT_ENVIRONMENTAL_DAMAGE
-
-=== "EVENT_ENVIRONMENTAL_DAMAGE"
 
 ``` perl
 
@@ -247,16 +201,12 @@ sub EVENT_ENVIRONMENTAL_DAMAGE {
 ```
 ## EVENT_FEIGN_DEATH
 
-=== "EVENT_FEIGN_DEATH"
-
 ``` perl
 
 sub EVENT_FEIGN_DEATH {
 }
 ```
 ## EVENT_FISH_FAILURE
-
-=== "EVENT_FISH_FAILURE"
 
 ``` perl
 
@@ -265,16 +215,12 @@ sub EVENT_FISH_FAILURE {
 ```
 ## EVENT_FISH_START
 
-=== "EVENT_FISH_START"
-
 ``` perl
 
 sub EVENT_FISH_START {
 }
 ```
 ## EVENT_FISH_SUCCESS
-
-=== "EVENT_FISH_SUCCESS"
 
 ``` perl
 
@@ -284,16 +230,12 @@ sub EVENT_FISH_SUCCESS {
 ```
 ## EVENT_FORAGE_FAILURE
 
-=== "EVENT_FORAGE_FAILURE"
-
 ``` perl
 
 sub EVENT_FORAGE_FAILURE {
 }
 ```
 ## EVENT_FORAGE_SUCCESS
-
-=== "EVENT_FORAGE_SUCCESS"
 
 ``` perl
 
@@ -302,8 +244,6 @@ sub EVENT_FORAGE_SUCCESS {
 }
 ```
 ## EVENT_GROUP_CHANGE
-
-=== "EVENT_GROUP_CHANGE"
 
 ``` perl
 
@@ -314,16 +254,12 @@ sub EVENT_GROUP_CHANGE {
 ```
 ## EVENT_LEVEL_UP
 
-=== "EVENT_LEVEL_UP"
-
 ``` perl
 
 sub EVENT_LEVEL_UP {
 }
 ```
 ## EVENT_LOOT
-
-=== "EVENT_LOOT"
 
 ``` perl
 
@@ -336,8 +272,6 @@ sub EVENT_LOOT {
 ```
 ## EVENT_PLAYER_PICKUP
 
-=== "EVENT_PLAYER_PICKUP"
-
 ``` perl
 
 sub EVENT_PLAYER_PICKUP {
@@ -347,8 +281,6 @@ sub EVENT_PLAYER_PICKUP {
 ```
 ## EVENT_POPUPRESPONSE
 
-=== "EVENT_POPUPRESPONSE"
-
 ``` perl
 
 sub EVENT_POPUPRESPONSE {
@@ -357,16 +289,12 @@ sub EVENT_POPUPRESPONSE {
 ```
 ## EVENT_POPUP_RESPONSE
 
-=== "EVENT_POPUP_RESPONSE"
-
 ``` perl
 
 sub EVENT_POPUP_RESPONSE {
 }
 ```
 ## EVENT_RESPAWN
-
-=== "EVENT_RESPAWN"
 
 ``` perl
 
@@ -376,8 +304,6 @@ sub EVENT_RESPAWN {
 }
 ```
 ## EVENT_SAY
-
-=== "EVENT_SAY"
 
 ``` perl
 
@@ -389,8 +315,6 @@ sub EVENT_SAY {
 ```
 ## EVENT_SIGNAL
 
-=== "EVENT_SIGNAL"
-
 ``` perl
 
 sub EVENT_SIGNAL {
@@ -399,16 +323,12 @@ sub EVENT_SIGNAL {
 ```
 ## EVENT_TARGET_CHANGE
 
-=== "EVENT_TARGET_CHANGE"
-
 ``` perl
 
 sub EVENT_TARGET_CHANGE {
 }
 ```
 ## EVENT_TASK_COMPLETE
-
-=== "EVENT_TASK_COMPLETE"
 
 ``` perl
 
@@ -420,8 +340,6 @@ sub EVENT_TASK_COMPLETE {
 ```
 ## EVENT_TASK_FAIL
 
-=== "EVENT_TASK_FAIL"
-
 ``` perl
 
 sub EVENT_TASK_FAIL {
@@ -429,8 +347,6 @@ sub EVENT_TASK_FAIL {
 }
 ```
 ## EVENT_TASK_STAGE_COMPLETE
-
-=== "EVENT_TASK_STAGE_COMPLETE"
 
 ``` perl
 
@@ -440,8 +356,6 @@ sub EVENT_TASK_STAGE_COMPLETE {
 }
 ```
 ## EVENT_TASK_UPDATE
-
-=== "EVENT_TASK_UPDATE"
 
 ``` perl
 
@@ -453,16 +367,12 @@ sub EVENT_TASK_UPDATE {
 ```
 ## EVENT_TEST_BUFF
 
-=== "EVENT_TEST_BUFF"
-
 ``` perl
 
 sub EVENT_TEST_BUFF {
 }
 ```
 ## EVENT_TIMER
-
-=== "EVENT_TIMER"
 
 ``` perl
 
@@ -472,16 +382,12 @@ sub EVENT_TIMER {
 ```
 ## EVENT_UNHANDLED_OPCODE
 
-=== "EVENT_UNHANDLED_OPCODE"
-
 ``` perl
 
 sub EVENT_UNHANDLED_OPCODE {
 }
 ```
 ## EVENT_USE_SKILL
-
-=== "EVENT_USE_SKILL"
 
 ``` perl
 
@@ -492,8 +398,6 @@ sub EVENT_USE_SKILL {
 ```
 ## EVENT_WARP
 
-=== "EVENT_WARP"
-
 ``` perl
 
 sub EVENT_WARP {
@@ -503,8 +407,6 @@ sub EVENT_WARP {
 }
 ```
 ## EVENT_ZONE
-
-=== "EVENT_ZONE"
 
 ``` perl
 

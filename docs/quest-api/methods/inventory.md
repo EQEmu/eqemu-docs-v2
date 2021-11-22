@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:14:50
+        Last generated 2021.11.21 22:16:22
 
     ``` perl
     $inventory->CanItemFitInContainer(ItemInstance item_to_check, ItemInstance container_to_check);
@@ -33,7 +33,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:14:50
+        Last generated 2021.11.21 22:16:22
 
     ``` lua
     inventory:CalcBagIdx(slot_id);

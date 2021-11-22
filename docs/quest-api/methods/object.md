@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:14:50
+        Last generated 2021.11.21 22:16:22
 
     ``` perl
     $object->ClearUser();
@@ -56,7 +56,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:14:50
+        Last generated 2021.11.21 22:16:22
 
     ``` lua
     object:ClearUser();

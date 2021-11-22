@@ -1,15 +1,11 @@
 ## EVENT_AUGMENT_INSERT
 
-=== "EVENT_AUGMENT_INSERT"
-
 ``` perl
 
 sub EVENT_AUGMENT_INSERT {
 }
 ```
 ## EVENT_AUGMENT_ITEM
-
-=== "EVENT_AUGMENT_ITEM"
 
 ``` perl
 
@@ -18,8 +14,6 @@ sub EVENT_AUGMENT_ITEM {
 ```
 ## EVENT_AUGMENT_REMOVE
 
-=== "EVENT_AUGMENT_REMOVE"
-
 ``` perl
 
 sub EVENT_AUGMENT_REMOVE {
@@ -27,16 +21,12 @@ sub EVENT_AUGMENT_REMOVE {
 ```
 ## EVENT_DESTROY_ITEM
 
-=== "EVENT_DESTROY_ITEM"
-
 ``` perl
 
 sub EVENT_DESTROY_ITEM {
 }
 ```
 ## EVENT_DROP_ITEM
-
-=== "EVENT_DROP_ITEM"
 
 ``` perl
 
@@ -50,16 +40,12 @@ sub EVENT_DROP_ITEM {
 ```
 ## EVENT_EQUIP_ITEM
 
-=== "EVENT_EQUIP_ITEM"
-
 ``` perl
 
 sub EVENT_EQUIP_ITEM {
 }
 ```
 ## EVENT_ITEM_CLICK
-
-=== "EVENT_ITEM_CLICK"
 
 ``` perl
 
@@ -72,8 +58,6 @@ sub EVENT_ITEM_CLICK {
 ```
 ## EVENT_ITEM_CLICK_CAST
 
-=== "EVENT_ITEM_CLICK_CAST"
-
 ``` perl
 
 sub EVENT_ITEM_CLICK_CAST {
@@ -85,8 +69,6 @@ sub EVENT_ITEM_CLICK_CAST {
 ```
 ## EVENT_ITEM_ENTER_ZONE
 
-=== "EVENT_ITEM_ENTER_ZONE"
-
 ``` perl
 
 sub EVENT_ITEM_ENTER_ZONE {
@@ -96,16 +78,12 @@ sub EVENT_ITEM_ENTER_ZONE {
 ```
 ## EVENT_ITEM_TICK
 
-=== "EVENT_ITEM_TICK"
-
 ``` perl
 
 sub EVENT_ITEM_TICK {
 }
 ```
 ## EVENT_LOOT
-
-=== "EVENT_LOOT"
 
 ``` perl
 
@@ -118,8 +96,6 @@ sub EVENT_LOOT {
 ```
 ## EVENT_SCALE_CALC
 
-=== "EVENT_SCALE_CALC"
-
 ``` perl
 
 sub EVENT_SCALE_CALC {
@@ -129,8 +105,6 @@ sub EVENT_SCALE_CALC {
 ```
 ## EVENT_TIMER
 
-=== "EVENT_TIMER"
-
 ``` perl
 
 sub EVENT_TIMER {
@@ -139,8 +113,6 @@ sub EVENT_TIMER {
 ```
 ## EVENT_UNAUGMENT_ITEM
 
-=== "EVENT_UNAUGMENT_ITEM"
-
 ``` perl
 
 sub EVENT_UNAUGMENT_ITEM {
@@ -148,16 +120,12 @@ sub EVENT_UNAUGMENT_ITEM {
 ```
 ## EVENT_UNEQUIP_ITEM
 
-=== "EVENT_UNEQUIP_ITEM"
-
 ``` perl
 
 sub EVENT_UNEQUIP_ITEM {
 }
 ```
 ## EVENT_WEAPON_PROC
-
-=== "EVENT_WEAPON_PROC"
 
 ``` perl
 

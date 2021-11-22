@@ -1,15 +1,11 @@
 ## EVENT_AGGRO
 
-=== "EVENT_AGGRO"
-
 ``` perl
 
 sub EVENT_AGGRO {
 }
 ```
 ## EVENT_AGGRO_SAY
-
-=== "EVENT_AGGRO_SAY"
 
 ``` perl
 
@@ -21,16 +17,12 @@ sub EVENT_AGGRO_SAY {
 ```
 ## EVENT_ATTACK
 
-=== "EVENT_ATTACK"
-
 ``` perl
 
 sub EVENT_ATTACK {
 }
 ```
 ## EVENT_CAST
-
-=== "EVENT_CAST"
 
 ``` perl
 
@@ -40,8 +32,6 @@ sub EVENT_CAST {
 ```
 ## EVENT_CAST_BEGIN
 
-=== "EVENT_CAST_BEGIN"
-
 ``` perl
 
 sub EVENT_CAST_BEGIN {
@@ -49,8 +39,6 @@ sub EVENT_CAST_BEGIN {
 }
 ```
 ## EVENT_CAST_ON
-
-=== "EVENT_CAST_ON"
 
 ``` perl
 
@@ -60,8 +48,6 @@ sub EVENT_CAST_ON {
 ```
 ## EVENT_COMBAT
 
-=== "EVENT_COMBAT"
-
 ``` perl
 
 sub EVENT_COMBAT {
@@ -69,8 +55,6 @@ sub EVENT_COMBAT {
 }
 ```
 ## EVENT_DEATH
-
-=== "EVENT_DEATH"
 
 ``` perl
 
@@ -83,8 +67,6 @@ sub EVENT_DEATH {
 ```
 ## EVENT_DEATH_COMPLETE
 
-=== "EVENT_DEATH_COMPLETE"
-
 ``` perl
 
 sub EVENT_DEATH_COMPLETE {
@@ -95,8 +77,6 @@ sub EVENT_DEATH_COMPLETE {
 }
 ```
 ## EVENT_DEATH_ZONE
-
-=== "EVENT_DEATH_ZONE"
 
 ``` perl
 
@@ -110,16 +90,12 @@ sub EVENT_DEATH_ZONE {
 ```
 ## EVENT_FEIGN_DEATH
 
-=== "EVENT_FEIGN_DEATH"
-
 ``` perl
 
 sub EVENT_FEIGN_DEATH {
 }
 ```
 ## EVENT_HATE_LIST
-
-=== "EVENT_HATE_LIST"
 
 ``` perl
 
@@ -128,8 +104,6 @@ sub EVENT_HATE_LIST {
 }
 ```
 ## EVENT_HP
-
-=== "EVENT_HP"
 
 ``` perl
 
@@ -142,8 +116,6 @@ sub EVENT_HP {
 ```
 ## EVENT_ITEM
 
-=== "EVENT_ITEM"
-
 ``` perl
 
 sub EVENT_ITEM {
@@ -155,16 +127,12 @@ sub EVENT_ITEM {
 ```
 ## EVENT_KILLED_MERIT
 
-=== "EVENT_KILLED_MERIT"
-
 ``` perl
 
 sub EVENT_KILLED_MERIT {
 }
 ```
 ## EVENT_LOOT_ZONE
-
-=== "EVENT_LOOT_ZONE"
 
 ``` perl
 
@@ -177,8 +145,6 @@ sub EVENT_LOOT_ZONE {
 ```
 ## EVENT_NPC_SLAY
 
-=== "EVENT_NPC_SLAY"
-
 ``` perl
 
 sub EVENT_NPC_SLAY {
@@ -186,8 +152,6 @@ sub EVENT_NPC_SLAY {
 }
 ```
 ## EVENT_POPUPRESPONSE
-
-=== "EVENT_POPUPRESPONSE"
 
 ``` perl
 
@@ -197,16 +161,12 @@ sub EVENT_POPUPRESPONSE {
 ```
 ## EVENT_POPUP_RESPONSE
 
-=== "EVENT_POPUP_RESPONSE"
-
 ``` perl
 
 sub EVENT_POPUP_RESPONSE {
 }
 ```
 ## EVENT_PROXIMITY_SAY
-
-=== "EVENT_PROXIMITY_SAY"
 
 ``` perl
 
@@ -218,8 +178,6 @@ sub EVENT_PROXIMITY_SAY {
 ```
 ## EVENT_SAY
 
-=== "EVENT_SAY"
-
 ``` perl
 
 sub EVENT_SAY {
@@ -230,8 +188,6 @@ sub EVENT_SAY {
 ```
 ## EVENT_SIGNAL
 
-=== "EVENT_SIGNAL"
-
 ``` perl
 
 sub EVENT_SIGNAL {
@@ -240,8 +196,6 @@ sub EVENT_SIGNAL {
 ```
 ## EVENT_SLAY
 
-=== "EVENT_SLAY"
-
 ``` perl
 
 sub EVENT_SLAY {
@@ -249,16 +203,12 @@ sub EVENT_SLAY {
 ```
 ## EVENT_SPAWN
 
-=== "EVENT_SPAWN"
-
 ``` perl
 
 sub EVENT_SPAWN {
 }
 ```
 ## EVENT_SPAWN_ZONE
-
-=== "EVENT_SPAWN_ZONE"
 
 ``` perl
 
@@ -269,16 +219,12 @@ sub EVENT_SPAWN_ZONE {
 ```
 ## EVENT_TARGET_CHANGE
 
-=== "EVENT_TARGET_CHANGE"
-
 ``` perl
 
 sub EVENT_TARGET_CHANGE {
 }
 ```
 ## EVENT_TASKACCEPTED
-
-=== "EVENT_TASKACCEPTED"
 
 ``` perl
 
@@ -288,8 +234,6 @@ sub EVENT_TASKACCEPTED {
 ```
 ## EVENT_TASK_ACCEPTED
 
-=== "EVENT_TASK_ACCEPTED"
-
 ``` perl
 
 sub EVENT_TASK_ACCEPTED {
@@ -297,16 +241,12 @@ sub EVENT_TASK_ACCEPTED {
 ```
 ## EVENT_TICK
 
-=== "EVENT_TICK"
-
 ``` perl
 
 sub EVENT_TICK {
 }
 ```
 ## EVENT_TIMER
-
-=== "EVENT_TIMER"
 
 ``` perl
 
@@ -316,16 +256,12 @@ sub EVENT_TIMER {
 ```
 ## EVENT_TRADE
 
-=== "EVENT_TRADE"
-
 ``` perl
 
 sub EVENT_TRADE {
 }
 ```
 ## EVENT_WAYPOINT_ARRIVE
-
-=== "EVENT_WAYPOINT_ARRIVE"
 
 ``` perl
 
@@ -334,8 +270,6 @@ sub EVENT_WAYPOINT_ARRIVE {
 }
 ```
 ## EVENT_WAYPOINT_DEPART
-
-=== "EVENT_WAYPOINT_DEPART"
 
 ``` perl
 
