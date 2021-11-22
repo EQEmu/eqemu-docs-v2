@@ -154,141 +154,139 @@ WHERE
 
 The Lua module necessary for using the Lua script (lua_modules/buckets.lua):
 
-{% tabs %}
-{% tab title="buckets.lua" %}
-```lua
+=== "buckets.lua"
 
-local data_buckets = {}
- 
-function data_buckets.SetData(npc, client, name, value, options, duration)
-    local npcid = 0;
-    local charid = 0;
-    local zoneid = eq.get_zone_id();
-    local bucket_name = "";
-    if (options > 7) then -- If somehow you put options above 7, it defaults to type 7
-        options = 7;
-    end
-    if (options == 0) then
-        if (npc ~= nil) then
-            npcid = npc:CastToNPC():GetNPCTypeID();
-        end
-       
-        if (client ~= nil) then
-            charid = client:CastToClient():CharacterID();
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options > 0 and options < 7) then
-        if (options == 1 or options == 3 or options == 5) then
-            if (client ~= nil) then
-                charid = client:CharacterID();
-            end
-        end
-       
-        if (options == 2 or options == 3 or options == 6) then
-            if (npc ~= nil) then
-                npcid = npc:GetNPCTypeID();
-            end
-        end
-       
-        if (options > 3) then
-            zoneid = 0;
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options == 7) then
-        bucket_name = name;
-    end
-    if (duration ~= nil) then
-        eq.set_data(bucket_name, tostring(value), tostring(duration));
-    else
-        eq.set_data(bucket_name, tostring(value));
-    end
-end
- 
-function data_buckets.GetData(npc, client, name, options)
-    local npcid = 0;
-    local zoneid = eq.get_zone_id();
-    local charid = 0;
-    local bucket_name = "";
-    if (options < 0 or options > 7) then
-        options = 7;
-    end
+  ```lua
+  
+  local data_buckets = {}
    
-    if (options == 0) then
-        if (npc ~= nil) then
-            npcid = npc:GetNPCTypeID();
-        end
-       
-        if (client ~= nil) then
-            charid = client:CharacterID();
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options > 0 and options < 7) then
-        if (options == 1 or options == 3 or options == 5) then
-            if (client ~= nil) then
-                charid = client:CharacterID();
-            end
-        end
-       
-        if (options == 2 or options == 3 or options == 6) then
-            if (npc ~= nil) then
-                npcid = npc:GetNPCTypeID();
-            end
-        end
-       
-        if (options > 3) then
-            zoneid = 0;
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options == 7) then
-        bucket_name = name;
-    end
-    return eq.get_data(bucket_name);
-end
- 
-function data_buckets.DeleteData(npc, client, name, options)
-    local npcid = 0;
-    local zoneid = eq.get_zone_id();
-    local charid = 0;
-    if (options < 0 or options > 7) then
-        options = 7;
-    end
+  function data_buckets.SetData(npc, client, name, value, options, duration)
+      local npcid = 0;
+      local charid = 0;
+      local zoneid = eq.get_zone_id();
+      local bucket_name = "";
+      if (options > 7) then -- If somehow you put options above 7, it defaults to type 7
+          options = 7;
+      end
+      if (options == 0) then
+          if (npc ~= nil) then
+              npcid = npc:CastToNPC():GetNPCTypeID();
+          end
+         
+          if (client ~= nil) then
+              charid = client:CastToClient():CharacterID();
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options > 0 and options < 7) then
+          if (options == 1 or options == 3 or options == 5) then
+              if (client ~= nil) then
+                  charid = client:CharacterID();
+              end
+          end
+         
+          if (options == 2 or options == 3 or options == 6) then
+              if (npc ~= nil) then
+                  npcid = npc:GetNPCTypeID();
+              end
+          end
+         
+          if (options > 3) then
+              zoneid = 0;
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options == 7) then
+          bucket_name = name;
+      end
+      if (duration ~= nil) then
+          eq.set_data(bucket_name, tostring(value), tostring(duration));
+      else
+          eq.set_data(bucket_name, tostring(value));
+      end
+  end
    
-    if (options == 0) then
-        if (npc ~= nil) then
-            npcid = npc:GetNPCTypeID();
-        end
-       
-        if (client ~= nil) then
-            charid = client:CharacterID();
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options > 0 and options < 7) then
-        if (options == 1 or options == 3 or options == 5) then
-            if (client ~= nil) then
-                charid = client:CharacterID();
-            end
-        end
-       
-        if (options == 2 or options == 3 or options == 6) then
-            if (npc ~= nil) then
-                npcid = npc:GetNPCTypeID();
-            end
-        end
-       
-        if (options > 3) then
-            zoneid = 0;
-        end
-        bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
-    elseif (options == 7) then
-        bucket_name = name;
-    end
-    eq.delete_data(bucket_name);
-end
- 
-return data_buckets;
-```
-{% endtab %}
-{% endtabs %}
+  function data_buckets.GetData(npc, client, name, options)
+      local npcid = 0;
+      local zoneid = eq.get_zone_id();
+      local charid = 0;
+      local bucket_name = "";
+      if (options < 0 or options > 7) then
+          options = 7;
+      end
+     
+      if (options == 0) then
+          if (npc ~= nil) then
+              npcid = npc:GetNPCTypeID();
+          end
+         
+          if (client ~= nil) then
+              charid = client:CharacterID();
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options > 0 and options < 7) then
+          if (options == 1 or options == 3 or options == 5) then
+              if (client ~= nil) then
+                  charid = client:CharacterID();
+              end
+          end
+         
+          if (options == 2 or options == 3 or options == 6) then
+              if (npc ~= nil) then
+                  npcid = npc:GetNPCTypeID();
+              end
+          end
+         
+          if (options > 3) then
+              zoneid = 0;
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options == 7) then
+          bucket_name = name;
+      end
+      return eq.get_data(bucket_name);
+  end
+   
+  function data_buckets.DeleteData(npc, client, name, options)
+      local npcid = 0;
+      local zoneid = eq.get_zone_id();
+      local charid = 0;
+      if (options < 0 or options > 7) then
+          options = 7;
+      end
+     
+      if (options == 0) then
+          if (npc ~= nil) then
+              npcid = npc:GetNPCTypeID();
+          end
+         
+          if (client ~= nil) then
+              charid = client:CharacterID();
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options > 0 and options < 7) then
+          if (options == 1 or options == 3 or options == 5) then
+              if (client ~= nil) then
+                  charid = client:CharacterID();
+              end
+          end
+         
+          if (options == 2 or options == 3 or options == 6) then
+              if (npc ~= nil) then
+                  npcid = npc:GetNPCTypeID();
+              end
+          end
+         
+          if (options > 3) then
+              zoneid = 0;
+          end
+          bucket_name = npcid .. "-" .. charid .. "-" .. zoneid .. "-" .. name;
+      elseif (options == 7) then
+          bucket_name = name;
+      end
+      eq.delete_data(bucket_name);
+  end
+   
+  return data_buckets;
+  ```
 
 **Example**
 
@@ -315,8 +313,6 @@ end
 
 The Perl plugin necessary for using the Perl script (plugins/buckets.pl):
 
-{% tabs %}
-{% tab title="buckets.pl" %}
 ```perl
 #Type    ID      Player      Zone
 #0      Current     Current     Current
@@ -418,8 +414,6 @@ sub DeleteData {
     }
 }
 ```
-{% endtab %}
-{% endtabs %}
 
 **Example:**
 
