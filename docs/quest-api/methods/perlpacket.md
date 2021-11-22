@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=PerlPacket){:target="PerlPacket"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21
+        Last generated 2021.11.22
 
     ``` perl
     $perlpacket->DESTROY();

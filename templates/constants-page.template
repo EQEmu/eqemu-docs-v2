@@ -1,0 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang={{language_syntax}}&constant={{constant_type}}){:target="{{constant_type}}"} for latest definitions and Quest examples
+
+    Last generated {{generated_time}}
+
+``` {{language_syntax}}
+{{constants}}
+```

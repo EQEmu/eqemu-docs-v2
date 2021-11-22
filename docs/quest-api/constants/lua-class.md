@@ -1,0 +1,55 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Class){:target="Class"} for latest definitions and Quest examples
+
+    Last generated 2021.11.22
+
+``` lua
+Class.ADVENTUREMERCHANT
+Class.ADVENTURERECRUITER
+Class.ALT_CURRENCY_MERCHANT
+Class.BANKER
+Class.BARD
+Class.BARDGM
+Class.BEASTLORD
+Class.BEASTLORDGM
+Class.BERSERKER
+Class.BERSERKERGM
+Class.CLERIC
+Class.CLERICGM
+Class.CORPSE_CLASS
+Class.DARK_REIGN_MERCHANT
+Class.DISCORD_MERCHANT
+Class.DRUID
+Class.DRUIDGM
+Class.ENCHANTER
+Class.ENCHANTERGM
+Class.FELLOWSHIP_MASTER
+Class.GUILD_TRIBUTE_MASTER
+Class.LDON_TREASURE
+Class.MAGICIAN
+Class.MAGICIANGM
+Class.MERCERNARY_MASTER
+Class.MERCHANT
+Class.MONK
+Class.MONKGM
+Class.NECROMANCER
+Class.NECROMANCERGM
+Class.NORRATHS_KEEPERS_MERCHANT
+Class.PALADIN
+Class.PALADINGM
+Class.RANGER
+Class.RANGERGM
+Class.ROGUE
+Class.ROGUEGM
+Class.SHADOWKNIGHT
+Class.SHADOWKNIGHTGM
+Class.SHAMAN
+Class.SHAMANGM
+Class.TRIBUTE_MASTER
+Class.WARRIOR
+Class.WARRIORGM
+Class.WIZARD
+Class.WIZARDGM
+
+```

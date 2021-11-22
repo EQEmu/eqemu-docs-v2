@@ -75,12 +75,19 @@ type Method struct {
 	Categories []string `json:"categories"`
 }
 
+const (
+	NavPositionMethods   = 0
+	NavPositionEvents    = 1
+	NavPositionConstants = 2
+)
+
 func (c *QuestApiDocGeneratorCommand) Handle(_ *cobra.Command, _ []string) {
 	response := c.GetSpireDefinitions()
 	section := config.GetMkDocsQuestApiConfig()
 
 	c.WriteMethodDocs(response, section)
 	c.WriteEventDocs(response, section)
+	c.WriteConstantsDocs(response, section)
 }
 
 func (c *QuestApiDocGeneratorCommand) Validate(_ *cobra.Command, _ []string) error {
@@ -200,8 +207,10 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 }
 
 func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse, section []map[string][]map[string]string) {
+	fmt.Println("> Writing methods docs")
+
 	// zero out first
-	section[0]["Methods"] = []map[string]string{}
+	section[NavPositionMethods]["Methods"] = []map[string]string{}
 
 	methodTypes := map[string]bool{}
 	for _, methods := range response.Data.PerlApi.PerlMethods {
@@ -229,6 +238,8 @@ func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse,
 		"EntityListDeprecated",
 	}
 
+	docsWritten := 0
+
 	// loop through sorted
 	for _, methodType := range keys {
 		if contains(ignoreMethods, methodType) {
@@ -244,10 +255,13 @@ func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse,
 			log.Println(err)
 		}
 
+		docsWritten++
+		fmt.Printf(" Wrote [%v]\n", pagePath)
+
 		// pop docs off for mkdocs link
 		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
 		m := map[string]string{methodType: pagePath}
-		section[0]["Methods"] = append(section[0]["Methods"], m)
+		section[NavPositionMethods]["Methods"] = append(section[NavPositionMethods]["Methods"], m)
 	}
 
 	mkdocsCfg, err := config.GetMkdocsConfig()
@@ -258,11 +272,13 @@ func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse,
 	// write nav block
 	for i, nav := range mkdocsCfg.Nav {
 		if len(nav.QuestApi) > 0 {
-			mkdocsCfg.Nav[i].QuestApi[0]["Methods"] = section[0]["Methods"]
+			mkdocsCfg.Nav[i].QuestApi[NavPositionMethods]["Methods"] = section[NavPositionMethods]["Methods"]
 		}
 	}
 
 	config.WriteMkdocsConfig(mkdocsCfg)
+
+	fmt.Printf("> Wrote method docs [%v]\n", docsWritten)
 }
 
 func (c *QuestApiDocGeneratorCommand) FormatMethodType(methodType string) string {
@@ -271,8 +287,12 @@ func (c *QuestApiDocGeneratorCommand) FormatMethodType(methodType string) string
 }
 
 func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, section []map[string][]map[string]string) {
+	fmt.Println("> Writing event docs")
+
+	docsWritten := 0
+
 	// zero out first
-	section[1]["Events"] = []map[string]string{}
+	section[NavPositionEvents]["Events"] = []map[string]string{}
 
 	// perl
 	eventTypes := map[string]bool{}
@@ -299,10 +319,13 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 			log.Println(err)
 		}
 
+		docsWritten++
+		fmt.Printf(" Wrote [%v]\n", pagePath)
+
 		// pop docs off for mkdocs link
 		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
 		m := map[string]string{pageLabel: pagePath}
-		section[1]["Events"] = append(section[1]["Events"], m)
+		section[NavPositionEvents]["Events"] = append(section[NavPositionEvents]["Events"], m)
 	}
 
 	// lua
@@ -330,10 +353,13 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 			log.Println(err)
 		}
 
+		docsWritten++
+		fmt.Printf(" Wrote [%v]\n", pagePath)
+
 		// pop docs off for mkdocs link
 		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
 		m := map[string]string{pageLabel: pagePath}
-		section[1]["Events"] = append(section[1]["Events"], m)
+		section[NavPositionEvents]["Events"] = append(section[NavPositionEvents]["Events"], m)
 	}
 
 	mkdocsCfg, err := config.GetMkdocsConfig()
@@ -344,11 +370,13 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 	// write nav block
 	for i, nav := range mkdocsCfg.Nav {
 		if len(nav.QuestApi) > 0 {
-			mkdocsCfg.Nav[i].QuestApi[1]["Events"] = section[1]["Events"]
+			mkdocsCfg.Nav[i].QuestApi[NavPositionEvents]["Events"] = section[NavPositionEvents]["Events"]
 		}
 	}
 
 	config.WriteMkdocsConfig(mkdocsCfg)
+
+	fmt.Printf("> Wrote event docs [%v]\n", docsWritten)
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildEventPagePerl(eventType string, events []Event) string {
@@ -420,4 +448,130 @@ function {{event_name}}(e) {
 	}
 
 	return markdown
+}
+
+func (c *QuestApiDocGeneratorCommand) WriteConstantsDocs(response QuestApiResponse, section []map[string][]map[string]string) {
+	fmt.Println("> Writing constants docs")
+
+	docsWritten := 0
+
+	// zero out first
+	section[NavPositionConstants]["Constants"] = []map[string]string{}
+
+	// perl
+	constantTypes := map[string]bool{}
+	for category, _ := range response.Data.PerlApi.PerlConstants {
+		constantTypes[category] = true
+	}
+
+	// sort alpha
+	keys := make([]string, 0, len(constantTypes))
+	for k := range constantTypes {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	// perl
+	for _, constantType := range keys {
+		pageLabel := fmt.Sprintf("Perl [%v]", constantType)
+		markdown := c.BuildConstantPage("perl", constantType, response.Data.PerlApi.PerlConstants)
+		pagePath := fmt.Sprintf("./docs/quest-api/constants/perl-%v.md", strings.ToLower(constantType))
+
+		// write
+		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+
+		docsWritten++
+
+		fmt.Printf(" Wrote [%v]\n", pagePath)
+
+		// pop docs off for mkdocs link
+		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
+		m := map[string]string{pageLabel: pagePath}
+		section[NavPositionConstants]["Constants"] = append(section[NavPositionConstants]["Constants"], m)
+	}
+
+	// lua
+	constantTypes = map[string]bool{}
+	for category, _ := range response.Data.LuaApi.LuaConstants {
+		constantTypes[category] = true
+	}
+
+	// sort alpha
+	keys = make([]string, 0, len(constantTypes))
+	for k := range constantTypes {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	// lua
+	for _, constantType := range keys {
+		pageLabel := fmt.Sprintf("Lua [%v]", constantType)
+		markdown := c.BuildConstantPage("lua", constantType, response.Data.LuaApi.LuaConstants)
+		pagePath := fmt.Sprintf("./docs/quest-api/constants/lua-%v.md", strings.ToLower(constantType))
+
+		// write
+		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+
+		fmt.Printf(" Wrote [%v]\n", pagePath)
+
+		docsWritten++
+
+		// pop docs off for mkdocs link
+		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
+		m := map[string]string{pageLabel: pagePath}
+		section[NavPositionConstants]["Constants"] = append(section[NavPositionConstants]["Constants"], m)
+	}
+
+	mkdocsCfg, err := config.GetMkdocsConfig()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// write nav block
+	for i, nav := range mkdocsCfg.Nav {
+		if len(nav.QuestApi) > 0 {
+			mkdocsCfg.Nav[i].QuestApi[NavPositionConstants]["Constants"] = section[NavPositionConstants]["Constants"]
+		}
+	}
+
+	config.WriteMkdocsConfig(mkdocsCfg)
+
+	fmt.Printf("> Wrote constants docs [%v]\n", docsWritten)
+}
+
+func (c *QuestApiDocGeneratorCommand) BuildConstantPage(language string, constantType string, constants map[string][]Constant) string {
+	b, err := ioutil.ReadFile("./templates/constants-page.template")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	template := string(b)
+	currentTime := time.Now()
+	generatedTime := currentTime.Format("2006.01.02")
+	template = strings.ReplaceAll(template, "{{generated_time}}", generatedTime)
+	constantsString := ""
+	for category, constants := range constants {
+		if category == constantType {
+			for _, constant := range constants {
+				if language == "perl" {
+					constantsString += fmt.Sprintf("%v\n", constant.Constant)
+				}
+				if language == "lua" {
+					constantsString += fmt.Sprintf("%v.%v\n", constantType, constant.Constant)
+				}
+			}
+		}
+	}
+
+	template = strings.ReplaceAll(template, "{{constant_type}}", constantType)
+	template = strings.ReplaceAll(template, "{{language_syntax}}", language)
+	template = strings.ReplaceAll(template, "{{constants}}", constantsString)
+
+	return template
 }

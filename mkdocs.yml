@@ -664,6 +664,27 @@ nav:
           - Lua [NPC]: quest-api/events/lua-npc.md
           - Lua [Player]: quest-api/events/lua-player.md
           - Lua [Spell]: quest-api/events/lua-spell.md
+      - Constants:
+          - Perl [Mob]: quest-api/constants/perl-mob.md
+          - Perl [Zone]: quest-api/constants/perl-zone.md
+          - Lua [Appearance]: quest-api/constants/lua-appearance.md
+          - Lua [BT]: quest-api/constants/lua-bt.md
+          - Lua [Class]: quest-api/constants/lua-class.md
+          - Lua [ClientVersion]: quest-api/constants/lua-clientversion.md
+          - Lua [Event]: quest-api/constants/lua-event.md
+          - Lua [ExpeditionLockMessage]: quest-api/constants/lua-expeditionlockmessage.md
+          - Lua [Faction]: quest-api/constants/lua-faction.md
+          - Lua [Filter]: quest-api/constants/lua-filter.md
+          - Lua [InventoryWhere]: quest-api/constants/lua-inventorywhere.md
+          - Lua [JournalMode]: quest-api/constants/lua-journalmode.md
+          - Lua [MT]: quest-api/constants/lua-mt.md
+          - Lua [Material]: quest-api/constants/lua-material.md
+          - Lua [Opcode]: quest-api/constants/lua-opcode.md
+          - Lua [Rule]: quest-api/constants/lua-rule.md
+          - Lua [Skill]: quest-api/constants/lua-skill.md
+          - Lua [Slot]: quest-api/constants/lua-slot.md
+          - Lua [SpeakMode]: quest-api/constants/lua-speakmode.md
+          - Lua [SpecialAbility]: quest-api/constants/lua-specialability.md
   - Changelog:
       - "2021": changelog/server/2021.md
       - "2020": changelog/server/2020.md

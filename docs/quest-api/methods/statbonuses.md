@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=StatBonuses){:target="StatBonuses"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21
+        Last generated 2021.11.22
 
     ``` lua
     statbonuses:AC();
