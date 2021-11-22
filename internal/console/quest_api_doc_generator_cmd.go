@@ -77,10 +77,10 @@ type Method struct {
 
 func (c *QuestApiDocGeneratorCommand) Handle(_ *cobra.Command, _ []string) {
 	response := c.GetSpireDefinitions()
-
 	section := config.GetMkDocsQuestApiConfig()
 
 	c.WriteMethodDocs(response, section)
+	c.WriteEventDocs(response, section)
 }
 
 func (c *QuestApiDocGeneratorCommand) Validate(_ *cobra.Command, _ []string) error {
@@ -111,7 +111,6 @@ func (c *QuestApiDocGeneratorCommand) GetSpireDefinitions() QuestApiResponse {
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, response QuestApiResponse) string {
-
 	b, err := ioutil.ReadFile("./templates/method-page.template")
 	if err != nil {
 		log.Fatal(err)
@@ -269,4 +268,156 @@ func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse,
 func (c *QuestApiDocGeneratorCommand) FormatMethodType(methodType string) string {
 	methodType = strings.ReplaceAll(methodType, "Doors", "Door")
 	return methodType
+}
+
+func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, section []map[string][]map[string]string) {
+	// zero out first
+	section[1]["Events"] = []map[string]string{}
+
+	// perl
+	eventTypes := map[string]bool{}
+	for _, event := range response.Data.PerlApi.PerlEvents {
+		eventTypes[event.EntityType] = true
+	}
+
+	// sort alpha
+	keys := make([]string, 0, len(eventTypes))
+	for k := range eventTypes {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	// perl
+	for _, eventType := range keys {
+		pageLabel := fmt.Sprintf("Perl [%v]", eventType)
+		markdown := c.BuildEventPagePerl(eventType, response.Data.PerlApi.PerlEvents)
+		pagePath := fmt.Sprintf("./docs/quest-api/events/%v.md", strings.ToLower(eventType))
+
+		// write
+		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+
+		// pop docs off for mkdocs link
+		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
+		m := map[string]string{pageLabel: pagePath}
+		section[1]["Events"] = append(section[1]["Events"], m)
+	}
+
+	// lua
+	eventTypes = map[string]bool{}
+	for _, event := range response.Data.LuaApi.LuaEvents {
+		eventTypes[event.EntityType] = true
+	}
+
+	// sort alpha
+	keys = make([]string, 0, len(eventTypes))
+	for k := range eventTypes {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	// perl
+	for _, eventType := range keys {
+		pageLabel := fmt.Sprintf("Lua [%v]", eventType)
+		markdown := c.BuildEventPageLua(eventType, response.Data.LuaApi.LuaEvents)
+		pagePath := fmt.Sprintf("./docs/quest-api/events/%v.md", strings.ToLower(eventType))
+
+		// write
+		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
+		if err != nil {
+			log.Println(err)
+		}
+
+		// pop docs off for mkdocs link
+		pagePath = strings.ReplaceAll(pagePath, "./docs/", "")
+		m := map[string]string{pageLabel: pagePath}
+		section[1]["Events"] = append(section[1]["Events"], m)
+	}
+
+	mkdocsCfg, err := config.GetMkdocsConfig()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// write nav block
+	for i, nav := range mkdocsCfg.Nav {
+		if len(nav.QuestApi) > 0 {
+			mkdocsCfg.Nav[i].QuestApi[1]["Events"] = section[1]["Events"]
+		}
+	}
+
+	config.WriteMkdocsConfig(mkdocsCfg)
+}
+
+func (c *QuestApiDocGeneratorCommand) BuildEventPagePerl(eventType string, events []Event) string {
+	markdown := ""
+
+	b, err := ioutil.ReadFile("./templates/event-block-perl.template")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, event := range events {
+		if eventType == event.EntityType {
+
+			eventBlock := string(b)
+			eventMarkdown := `
+	sub {{event_name}} {
+{{exported_vars}}	}`
+
+			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{event_name}}", event.EventName)
+
+			exportedVars := ""
+			for _, eventVar := range event.EventVars {
+				exportedVars += fmt.Sprintf("\t\tquest::debug(\"%v \" . $%v);\n", eventVar, eventVar)
+			}
+
+			// pop vars onto event string
+			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{exported_vars}}", exportedVars)
+
+			// write event block into code block
+			eventBlock = strings.ReplaceAll(eventBlock, "{{event_name}}", event.EventName)
+			eventBlock = strings.ReplaceAll(eventBlock, "{{event}}", eventMarkdown)
+			markdown += eventBlock
+		}
+	}
+
+	return markdown
+}
+
+func (c *QuestApiDocGeneratorCommand) BuildEventPageLua(eventType string, events []Event) string {
+	markdown := ""
+
+	b, err := ioutil.ReadFile("./templates/event-block-lua.template")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	for _, event := range events {
+		if eventType == event.EntityType {
+			eventBlock := string(b)
+			eventMarkdown := `
+	function {{event_name}}(e) {
+{{exported_vars}}	}`
+
+			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{event_name}}", event.EventName)
+
+			exportedVars := ""
+			for _, eventVar := range event.EventVars {
+				exportedVars += fmt.Sprintf("\t\teq.debug(\"%v \" .. %v);\n", eventVar, eventVar)
+			}
+
+			// pop vars onto event string
+			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{exported_vars}}", exportedVars)
+
+			// write event block into code block
+			eventBlock = strings.ReplaceAll(eventBlock, "{{event_name}}", event.EventName)
+			eventBlock = strings.ReplaceAll(eventBlock, "{{event}}", eventMarkdown)
+			markdown += eventBlock
+		}
+	}
+
+	return markdown
 }

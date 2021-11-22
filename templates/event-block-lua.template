@@ -1,0 +1,7 @@
+## {{event_name}}
+
+=== "{{event_name}}"
+
+    ``` lua
+{{event}}
+    ```
