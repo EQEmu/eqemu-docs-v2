@@ -1,12 +1,12 @@
 # Editing Maps
 
-**Download**
+**Tool Download**
 
-* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
+[https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
 
 **Source**
 
-* [https://github.com/EQEmu/zone-utilities](https://github.com/EQEmu/zone-utilities)
+[https://github.com/EQEmu/zone-utilities](https://github.com/EQEmu/zone-utilities)
 
 #### What is Navmesh?
 
