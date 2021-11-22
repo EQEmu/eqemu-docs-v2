@@ -144,7 +144,6 @@ nav:
           - Customizing Factions: server/factions/customizing-factions.md
           - Faction Values: server/factions/faction-values.md
       - Items:
-          - server/items/README.md
           - Alternate Currencies: server/items/alternate-currencies.md
           - Augment Restrictions: server/items/augment-restrictions.md
           - Augment Types: server/items/augment-types.md
