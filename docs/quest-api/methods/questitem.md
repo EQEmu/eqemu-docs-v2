@@ -4,6 +4,8 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=QuestItem){:target="QuestItem"} for latest definitions and Quest examples
 
+        Last generated 2021.11.21 21:00:04
+
     ``` perl
     $questitem->GetAugment(int16 slot_id);
     $questitem->GetCharges();

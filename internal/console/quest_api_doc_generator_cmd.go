@@ -171,7 +171,11 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 
 	markdown := ``
 
+	currentTime := time.Now()
+	generatedTime := currentTime.Format("2006.01.02 15:04:05")
+
 	if len(perlMethods) > 0 {
+		perlTemplate = strings.ReplaceAll(perlTemplate, "{{generated_time}}", generatedTime)
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{method_type}}", methodType)
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_label}}", "Perl")
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_syntax}}", "perl")
@@ -182,6 +186,7 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 		markdown += perlTemplate
 	}
 	if len(luaMethods) > 0 {
+		luaTemplate = strings.ReplaceAll(luaTemplate, "{{generated_time}}", generatedTime)
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{method_type}}", methodType)
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_label}}", "Lua")
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_syntax}}", "lua")

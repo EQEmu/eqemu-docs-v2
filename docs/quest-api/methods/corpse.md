@@ -4,6 +4,8 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
 
+        Last generated 2021.11.21 21:00:04
+
     ``` perl
     $corpse->AddItem(uint32 item_id, uint16 charges, [unt16 slot = 0]);
     $corpse->AddLooter(Mob* who);
@@ -45,6 +47,8 @@
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
+
+        Last generated 2021.11.21 21:00:04
 
     ``` lua
     corpse:AddItem(uint32 itemnum, uint16 charges, int16 slot, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);

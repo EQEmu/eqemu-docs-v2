@@ -4,6 +4,8 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Doors){:target="Doors"} for latest definitions and Quest examples
 
+        Last generated 2021.11.21 21:00:04
+
     ``` perl
     $doors->GetDoorDBID();
     $doors->GetDoorID();

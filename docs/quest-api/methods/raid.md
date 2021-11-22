@@ -4,6 +4,8 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
+        Last generated 2021.11.21 21:00:04
+
     ``` perl
     $raid->BalanceHP(int32 penalty, uint32 group_id);
     $raid->CastGroupSpell(Mob* caster, uint16 spell_id, uint32 group_id);
@@ -30,6 +32,8 @@
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Raid){:target="Raid"} for latest definitions and Quest examples
+
+        Last generated 2021.11.21 21:00:04
 
     ``` lua
     raid:BalanceHP(int penalty, uint32 group_id);

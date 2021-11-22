@@ -4,6 +4,8 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
 
+        Last generated 2021.11.21 21:00:04
+
     ``` perl
     $expedition->AddLockout(string event_name, uint32 seconds);
     $expedition->AddLockout(string event_name, int seconds, [bool members_only = true]);
@@ -44,6 +46,8 @@
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
+
+        Last generated 2021.11.21 21:00:04
 
     ``` lua
     expedition:AddLockout(string event_name, uint32_t seconds);
