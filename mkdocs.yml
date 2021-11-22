@@ -2,6 +2,7 @@ site_name: EQEmulator Docs
 plugins:
   - search
 repo_url: https://github.com/EQEmu/eqemu-docs-v2
+site_url: http://docsv2.eqemu.io/
 repo_name: EQEmu Docs
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
 extra_css:
