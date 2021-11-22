@@ -153,81 +153,80 @@ Create a new file with your favorite editor:  `nano Salutation_Model_XIV.pl `
 
 Paste in the following code (fill in the blanks!) and save:
 
-{% code title="Salutation_Model_XIV.pl" %}
-```perl
-#:: Zone: The Mines of Gloomingdeep (tutorialb) >> Salutation_Model_XIV (189490)
-
-sub EVENT_SPAWN {
-	quest::emote("whirs to life.");
-}
-
-sub EVENT_SAY {
-	if ($text=~/hail/i) {
-		quest::say("Hello $name, and welcome to the ______ server!  I'm here to make your life easy, so let me know if you have any [" . quest::saylink("questions") . "], or if you'd like to [" . quest::saylink("leave") . "] the tutorial.");
-	}
-	elsif ($text=~/questions/i) {
-		quest::say("A lot of people wonder about [" . quest::saylink("max level") . "], [" . quest::saylink("expansions") . "], [" . quest::saylink("customizations") . "], [" . quest::saylink("community") . "], [" . quest::saylink("raiding") . "], [" . quest::saylink("server difficulty") . "], [" . quest::saylink("bots") . "], [" . quest::saylink("mercs") . "], [" . quest::saylink("macroquest") . "], and [" . quest::saylink("hot zones") . "].");
-	}
-	elsif ($text=~/max level/i) {
-		quest::say("The maximum level for the server is level ______.");
-	}
-	elsif ($text=~/expansions/i) {
-		quest::say("All zones through the ______ expansion are available.  If a zone requires a key, flag, or reagent to access it, you will have to obtain those on your own.");
-	}
-	elsif ($text=~/customizations/i) {
-		quest::say("We have added a custom item vendor in the Planes of Knowledge--he will sell items for Chronobines to community members who [" . quest::saylink("support the server") . "].  We have included quality of life features such as autocombine for tradeskills, Guild Hall for easy travel, Shadowrest and Guild Lobby for easy corpse recovery, suspended buff timers in non-combat zones, and more!");
-	}
-	elsif ($text=~/support the server/i) {
-		quest::say("Please take a look at our forums and our wiki for more information on contributing to the community.  We reward players with Chronobines for their contributions on bug reports, wiki pages, helping others, and having a great attitude.  We're also happy to accept donations to help offset the cost of server hosting.");
-	}
-	elsif ($text=~/community/) {
-		quest::say("______ has a great community--many people here will help you to adventure, provide you with buffs, give you items, or even just take the time to give you help if you have a question.  OOC is a global channel, so please feel free to use /ooc if you have a question.");
-	}
-	elsif ($text=~/raiding/i) {
-		quest::say("Raid content is 'legit' and will require raid forces to defeat.  We promote a healthy and competitive raid environment and will instance content as needed so that everyone can enjoy the end-game content equally.");
-	}
-	elsif ($text=~/server difficulty/i) {
-		quest::say("There is a server xp bonus to make leveling easier.  We often offer periods of double-loot and/or double-xp.  Please check our forums for the most up to date information.  You can also adventure in [" . quest::saylink("hot zones") . "] if you'd like to progress at even faster rates!");
-	}
-	elsif ($text=~/hot zones/i) {
-		quest::say("Each month (or so) our hot zones rotate.  Please pay a visit to my friend, Franklin Teek, in the Plane of Knowledge for the most up to date information.  You'll find him by the port in area.");
-	}
-	elsif ($text=~/bots/i) {
-		quest::say("We do not use bots on this server.  You are allowed to box three characters at the same time.");
-	}
-	elsif ($text=~/mercs/i) {
-		quest::say("We do not use mercs on this server.  You are allowed to box three characters at the same time.");
-	}
-	elsif ($text=~/macroquest/i) {
-		quest::say("We do not allow the use of MacroQuest on this server.  Please do not make us ask you to stop using it!  We ask that one input from you leads to one output from your character.  There are many EQEmu servers that encourage and allow the use of MacroQuest, so please explore them if you find that you cannot play without it.");
-	}
-	elsif ($text=~/leave/i) {
-		quest::say("I have been programmed to help you leave if you wish to [" . quest::saylink("exit the tutorial") . "].  I will transport you to the Plane of Knowledge.  Please note that you will not be able to re-enter the tutorial once you have reached level 16.  Also, there are some custom items that can be found here--don't rush to leave!");
-	}
-	elsif ($text=~/exit the tutorial/i) {
- 		#:: Teleport player to the succor point in the Plane of Knowledge (202 - poknowledge)
-  		quest::movepc(202,-285,-148,-159);
-	}
-}
-
-sub EVENT_WAYPOINT_ARRIVE {
-	if ($wp == 2) {
-		quest::emote("clicks and whirs");
-	}
-	elsif ($wp == 5) {
-		quest::say("Initiate buff and heal program XI.");
-		quest::emote("begins to glow.");
-		#:: Cast 2087 - Greater Infusion, 189490 == self
-		$npc->CastSpell(2087, 189490);
-	}
-	elsif ($wp == 10) {
-		quest::emote("whirs and clicks");
-	}
-}
-
-#:: Zone: The Mines of Gloomingdeep (tutorialb) >> Salutation_Model_XIV (189490)
-```
-{% endcode %}
+=== "Salutation_Model_XIV.pl"
+  ```perl
+  #:: Zone: The Mines of Gloomingdeep (tutorialb) >> Salutation_Model_XIV (189490)
+  
+  sub EVENT_SPAWN {
+      quest::emote("whirs to life.");
+  }
+  
+  sub EVENT_SAY {
+      if ($text=~/hail/i) {
+          quest::say("Hello $name, and welcome to the ______ server!  I'm here to make your life easy, so let me know if you have any [" . quest::saylink("questions") . "], or if you'd like to [" . quest::saylink("leave") . "] the tutorial.");
+      }
+      elsif ($text=~/questions/i) {
+          quest::say("A lot of people wonder about [" . quest::saylink("max level") . "], [" . quest::saylink("expansions") . "], [" . quest::saylink("customizations") . "], [" . quest::saylink("community") . "], [" . quest::saylink("raiding") . "], [" . quest::saylink("server difficulty") . "], [" . quest::saylink("bots") . "], [" . quest::saylink("mercs") . "], [" . quest::saylink("macroquest") . "], and [" . quest::saylink("hot zones") . "].");
+      }
+      elsif ($text=~/max level/i) {
+          quest::say("The maximum level for the server is level ______.");
+      }
+      elsif ($text=~/expansions/i) {
+          quest::say("All zones through the ______ expansion are available.  If a zone requires a key, flag, or reagent to access it, you will have to obtain those on your own.");
+      }
+      elsif ($text=~/customizations/i) {
+          quest::say("We have added a custom item vendor in the Planes of Knowledge--he will sell items for Chronobines to community members who [" . quest::saylink("support the server") . "].  We have included quality of life features such as autocombine for tradeskills, Guild Hall for easy travel, Shadowrest and Guild Lobby for easy corpse recovery, suspended buff timers in non-combat zones, and more!");
+      }
+      elsif ($text=~/support the server/i) {
+          quest::say("Please take a look at our forums and our wiki for more information on contributing to the community.  We reward players with Chronobines for their contributions on bug reports, wiki pages, helping others, and having a great attitude.  We're also happy to accept donations to help offset the cost of server hosting.");
+      }
+      elsif ($text=~/community/) {
+          quest::say("______ has a great community--many people here will help you to adventure, provide you with buffs, give you items, or even just take the time to give you help if you have a question.  OOC is a global channel, so please feel free to use /ooc if you have a question.");
+      }
+      elsif ($text=~/raiding/i) {
+          quest::say("Raid content is 'legit' and will require raid forces to defeat.  We promote a healthy and competitive raid environment and will instance content as needed so that everyone can enjoy the end-game content equally.");
+      }
+      elsif ($text=~/server difficulty/i) {
+          quest::say("There is a server xp bonus to make leveling easier.  We often offer periods of double-loot and/or double-xp.  Please check our forums for the most up to date information.  You can also adventure in [" . quest::saylink("hot zones") . "] if you'd like to progress at even faster rates!");
+      }
+      elsif ($text=~/hot zones/i) {
+          quest::say("Each month (or so) our hot zones rotate.  Please pay a visit to my friend, Franklin Teek, in the Plane of Knowledge for the most up to date information.  You'll find him by the port in area.");
+      }
+      elsif ($text=~/bots/i) {
+          quest::say("We do not use bots on this server.  You are allowed to box three characters at the same time.");
+      }
+      elsif ($text=~/mercs/i) {
+          quest::say("We do not use mercs on this server.  You are allowed to box three characters at the same time.");
+      }
+      elsif ($text=~/macroquest/i) {
+          quest::say("We do not allow the use of MacroQuest on this server.  Please do not make us ask you to stop using it!  We ask that one input from you leads to one output from your character.  There are many EQEmu servers that encourage and allow the use of MacroQuest, so please explore them if you find that you cannot play without it.");
+      }
+      elsif ($text=~/leave/i) {
+          quest::say("I have been programmed to help you leave if you wish to [" . quest::saylink("exit the tutorial") . "].  I will transport you to the Plane of Knowledge.  Please note that you will not be able to re-enter the tutorial once you have reached level 16.  Also, there are some custom items that can be found here--don't rush to leave!");
+      }
+      elsif ($text=~/exit the tutorial/i) {
+          #:: Teleport player to the succor point in the Plane of Knowledge (202 - poknowledge)
+          quest::movepc(202,-285,-148,-159);
+      }
+  }
+  
+  sub EVENT_WAYPOINT_ARRIVE {
+      if ($wp == 2) {
+          quest::emote("clicks and whirs");
+      }
+      elsif ($wp == 5) {
+          quest::say("Initiate buff and heal program XI.");
+          quest::emote("begins to glow.");
+          #:: Cast 2087 - Greater Infusion, 189490 == self
+          $npc->CastSpell(2087, 189490);
+      }
+      elsif ($wp == 10) {
+          quest::emote("whirs and clicks");
+      }
+  }
+  
+  #:: Zone: The Mines of Gloomingdeep (tutorialb) >> Salutation_Model_XIV (189490)
+  ```
 
 Congratulations!  You have added your first quest script to your first NPC!  The next step is to get into the world and see this bot in action.
 
@@ -235,11 +234,11 @@ Congratulations!  You have added your first quest script to your first NPC!  The
 
 If you're hanging out in The Mines of Gloomingdeep, you can issue three commands to get your bot to spawn.  Be sure to review the [In Game Command Reference](../../../../server/reference-lists/in-game-command-reference) (opens new window) if you're not sure what all of these do.
 
-> #hotfix
->
-> #reloadquest
->
-> #repop
+```
+#hotfix
+#reloadquest
+#repop
+```
 
 This will bring over all of your NPC settings, reload your quest files and repop the zone.  At this point your should see your new NPC!
 
