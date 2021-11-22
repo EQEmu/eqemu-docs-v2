@@ -4,19 +4,14 @@ The zone header contains the zone type, fog data, safe coordinates, max Z, gravi
 
 To modify these values you can use the following method.
 
-{% tabs %}
-{% tab title="Perl" %}
-```perl
-quest::UpdateZoneHeader(identifier, value);
-```
-{% endtab %}
-
-{% tab title="Lua" %}
-```lua
-eq.update_zone_header(identifier, value);
-```
-{% endtab %}
-{% endtabs %}
+=== "Perl"
+    ```perl
+    quest::UpdateZoneHeader(identifier, value);
+    ```
+=== "Lua"
+    ```lua
+    eq.update_zone_header(identifier, value);
+    ```
 
 The values are as follows.
 
