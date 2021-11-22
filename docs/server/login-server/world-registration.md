@@ -10,7 +10,6 @@ One of the options in the configuration is to be able to set whether or not worl
 
 The below snippet is part of the current options that drive registration functionality
 
-{% code title="login.json snippet" %}
 ```javascript
  { 
   "worldservers": {
@@ -19,7 +18,6 @@ The below snippet is part of the current options that drive registration functio
   }
 }
 ```
-{% endcode %}
 
 ## Unregistered World Servers
 
