@@ -312,7 +312,6 @@ nav:
               - server/task-system-guide/shared-tasks/README.md
               - Example: server/task-system-guide/shared-tasks/example.md
       - Zones:
-          - server/zones/README.md
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:
               - server/zones/customizing-zones/README.md
