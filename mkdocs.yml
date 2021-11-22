@@ -232,7 +232,6 @@ nav:
           - Server Variables: server/operation/server-variables.md
           - Updating Server Assets: server/operation/updating-server-assets.md
       - Player:
-          - server/player/README.md
           - Class List: server/player/class-list.md
           - Client Version Bitmasks: server/player/client-version-bitmasks.md
           - Deity List: server/player/deity-list.md
