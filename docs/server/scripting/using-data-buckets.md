@@ -233,89 +233,85 @@ sub EVENT_SAY {
 }
 ```
 
-### Practical Example
+## Practical Example
 
 In South Qeynos, you will find an NPC named Vicus Nonad.  Vicus is a tax collector, but because of his terrible cold, he needs a player to help make the rounds to collect taxes.  The early implementation of this quest script utilized quest globals, and below is an example of replacing the quest global functionality with Data Buckets.
 
-{% tabs %}
-{% tab title="Vicus_Nonad.pl" %}
-```perl
-sub EVENT_SPAWN {
-	#:: Set a timer "cough" to repeat every 350 seconds (5 min 50 sec)
-	quest::settimer("cough",350);
-}
-
-sub EVENT_TIMER {
-	#:: Match the "cough" timer
-	if ($timer eq "cough") {
-		quest::emote("coughs and wheezes.");
-	}
-}
-
-sub EVENT_SAY {
-	if ($text=~/hail/i) {
-		quest::say("Greetings, $name.  My name is Vicus Nonad. <cough>  I am the official tax collector for the fine city of Qeynos. <cough>  I serve the will of Antonius Bayle, our glorious leader.  <cough>  <cough>  Please excuse my [" . quest::saylink("cough") . "].  <cough>");
-	}
-	elsif ($text=~/cough/i) {
-		quest::say("Oh, <cough> I am sorry, but it seems I have fallen a bit ill.  I was caught out in the rain the other day and my chills have gotten the best of me. <cough>  If only someone would [" . quest::saylink("help with today's collections") . "]..  <cough>");
-	}
-	elsif ($text=~/help with today's collections/i) {
-		#:: Data bucket to verify quest has been started appropriately
-		$key = $client->CharacterID() . "-tax-collection";
-		#:: Set a data bucket, quest started
-		quest::set_data($key, 1);
-		quest::say("Oh thank <cough> you so <cough> <cough> much <cough>..  Here is the official collection box.  Please collect from each merchant on the <cough> [" . quest::saylink("list") . "].  Then bring me back the combined total of all your collections.");
-		#:: Give a 17012 - Tax Collection Box
-		quest::summonitem(17012);
-	}
-	elsif ($text=~/list/i) {
-		quest::say("Oh.  <cough>  I am sorry..  I forgot to give it to you.  Here you go.  Be sure to give that back when your job is finished.  <cough>");
-		#:: Give a 18009 - List of Debtors
-		quest::summonitem(18009);
-	}
-}
-
-sub EVENT_ITEM {
-	#:: Match a 18009 - List of Debtors and 13181 - Full Tax Collection Box
-	if (plugin::takeItems(13181 => 1, 18009 => 1)) {
-		quest::say("<cough> Great! Thank you so much. Here is a small gratuity for a job well done. Thank you again. <cough> Antonius Bayle and the People of Qeynos appreciate all yo have done.");
-		#:: Delete the data bucket
-		$key = $client->CharacterID() . "-tax-collection";
-		quest::delete_data($key);
-		#:: Give a random reward: 13053 - Brass Ring, 10010 - Copper Amulet, 10018 - Hematite, 10017 - Turquoise
-		quest::summonitem(quest::ChooseRandom(13053, 10010, 10018, 10017));
-		#:: Ding!
-		quest::ding();
-		#:: Set factions
-		quest::faction(219,10);		#:: + Antonius Bayle
-		quest::faction(262,4);		#:: + Guards of Qeynos
-		quest::faction(304,-5);		#:: - Ring of Scale
-		quest::faction(273,-10);	#:: - Kane Bayle
-		quest::faction(291,10);		#:: + Merchants of Qeynos
-		#:: Grant a small amount of experience
-		quest::exp(500);
-		#:: Create a hash for storing cash - 200 to 300cp
-		my %cash = plugin::RandomCash(200,300);
-		#:: Grant a random cash reward
-		quest::givecash($cash{copper},$cash{silver},$cash{gold},$cash{platinum});
-	}
-	#:: Match a 13181 - Full Tax Collection Box
-	elsif (plugin::takeItems(13181 => 1)) {
-		quest::say("Very good <cough> work. But I need both the full tax collection box and the list of debtors. You did get the [" . quest::saylink("list") . "] from me before you left, right? <cough>");
-		#:: Return a 13181 - Full Tax Collection Box
-		quest::summonitem(13181);
-	}
-	#:: Match a 18009 - List of Debtors
-	elsif (plugin::takeItems(18009 => 1)) {
-		quest::say("Very good <cough> work. But I need both the full tax collection box and the list of debtors. You did get the [" . quest::saylink("list") . "] from me before you left, right? <cough>");
-	}
-	#:: Return unused items
-	plugin::returnUnusedItems();
-}
-
-```
-{% endtab %}
-{% endtabs %}
+=== "Vicus_Nonad.pl"
+  ```perl
+  sub EVENT_SPAWN {
+      #:: Set a timer "cough" to repeat every 350 seconds (5 min 50 sec)
+      quest::settimer("cough",350);
+  }
+  
+  sub EVENT_TIMER {
+      #:: Match the "cough" timer
+      if ($timer eq "cough") {
+          quest::emote("coughs and wheezes.");
+      }
+  }
+  
+  sub EVENT_SAY {
+      if ($text=~/hail/i) {
+          quest::say("Greetings, $name.  My name is Vicus Nonad. <cough>  I am the official tax collector for the fine city of Qeynos. <cough>  I serve the will of Antonius Bayle, our glorious leader.  <cough>  <cough>  Please excuse my [" . quest::saylink("cough") . "].  <cough>");
+      }
+      elsif ($text=~/cough/i) {
+          quest::say("Oh, <cough> I am sorry, but it seems I have fallen a bit ill.  I was caught out in the rain the other day and my chills have gotten the best of me. <cough>  If only someone would [" . quest::saylink("help with today's collections") . "]..  <cough>");
+      }
+      elsif ($text=~/help with today's collections/i) {
+          #:: Data bucket to verify quest has been started appropriately
+          $key = $client->CharacterID() . "-tax-collection";
+          #:: Set a data bucket, quest started
+          quest::set_data($key, 1);
+          quest::say("Oh thank <cough> you so <cough> <cough> much <cough>..  Here is the official collection box.  Please collect from each merchant on the <cough> [" . quest::saylink("list") . "].  Then bring me back the combined total of all your collections.");
+          #:: Give a 17012 - Tax Collection Box
+          quest::summonitem(17012);
+      }
+      elsif ($text=~/list/i) {
+          quest::say("Oh.  <cough>  I am sorry..  I forgot to give it to you.  Here you go.  Be sure to give that back when your job is finished.  <cough>");
+          #:: Give a 18009 - List of Debtors
+          quest::summonitem(18009);
+      }
+  }
+  
+  sub EVENT_ITEM {
+      #:: Match a 18009 - List of Debtors and 13181 - Full Tax Collection Box
+      if (plugin::takeItems(13181 => 1, 18009 => 1)) {
+          quest::say("<cough> Great! Thank you so much. Here is a small gratuity for a job well done. Thank you again. <cough> Antonius Bayle and the People of Qeynos appreciate all yo have done.");
+          #:: Delete the data bucket
+          $key = $client->CharacterID() . "-tax-collection";
+          quest::delete_data($key);
+          #:: Give a random reward: 13053 - Brass Ring, 10010 - Copper Amulet, 10018 - Hematite, 10017 - Turquoise
+          quest::summonitem(quest::ChooseRandom(13053, 10010, 10018, 10017));
+          #:: Ding!
+          quest::ding();
+          #:: Set factions
+          quest::faction(219,10);		#:: + Antonius Bayle
+          quest::faction(262,4);		#:: + Guards of Qeynos
+          quest::faction(304,-5);		#:: - Ring of Scale
+          quest::faction(273,-10);	#:: - Kane Bayle
+          quest::faction(291,10);		#:: + Merchants of Qeynos
+          #:: Grant a small amount of experience
+          quest::exp(500);
+          #:: Create a hash for storing cash - 200 to 300cp
+          my %cash = plugin::RandomCash(200,300);
+          #:: Grant a random cash reward
+          quest::givecash($cash{copper},$cash{silver},$cash{gold},$cash{platinum});
+      }
+      #:: Match a 13181 - Full Tax Collection Box
+      elsif (plugin::takeItems(13181 => 1)) {
+          quest::say("Very good <cough> work. But I need both the full tax collection box and the list of debtors. You did get the [" . quest::saylink("list") . "] from me before you left, right? <cough>");
+          #:: Return a 13181 - Full Tax Collection Box
+          quest::summonitem(13181);
+      }
+      #:: Match a 18009 - List of Debtors
+      elsif (plugin::takeItems(18009 => 1)) {
+          quest::say("Very good <cough> work. But I need both the full tax collection box and the list of debtors. You did get the [" . quest::saylink("list") . "] from me before you left, right? <cough>");
+      }
+      #:: Return unused items
+      plugin::returnUnusedItems();
+  }
+  ```
 
 At line 22 above, we see the implementation of the Data Bucket Key.  This replaces the use of `quest::setglobal`.  In the Database, we see the corresponding key:
 
@@ -324,8 +320,8 @@ At line 22 above, we see the implementation of the Data Bucket Key.  This replac
 Note that we clean up the key upon handing in the requisite tax money and list with the following (line 41 above):
 
 ```perl
-		$key = $client->CharacterID() . "-tax-collection";
-		quest::delete_data($key);
+  $key = $client->CharacterID() . "-tax-collection";
+  quest::delete_data($key);
 ```
 
 The original portion of the script for the Quest Global would have been as follows:
@@ -333,11 +329,11 @@ The original portion of the script for the Quest Global would have been as follo
 ```perl
 #:: Match for "help", case insensitive
 elsif ($text=~/help/i) {
-			quest::say("Oh thank <cough> you so <cough> <cough> much <cough>..  Here is the official collection box.  Please collect from each merchant on the <cough> [list].  Then bring me back the combined total of all your collections.");
-			#:: Give a 17012 - Tax Collection Box
-			quest::summonitem(17012);
-			#:: Set the qglobal "tax_collection", to a value of "0", for all NPCs and Zones, and last forever
-			quest::setglobal("tax_collection", 0, 5, "F");
+    quest::say("Oh thank <cough> you so <cough> <cough> much <cough>..  Here is the official collection box.  Please collect from each merchant on the <cough> [list].  Then bring me back the combined total of all your collections.");
+    #:: Give a 17012 - Tax Collection Box
+    quest::summonitem(17012);
+    #:: Set the qglobal "tax_collection", to a value of "0", for all NPCs and Zones, and last forever
+    quest::setglobal("tax_collection", 0, 5, "F");
 }
 ```
 
@@ -345,32 +341,29 @@ While this implementation may seem to be easier, it should be noted that on a se
 
 Our intrepid adventurer is required to do this quest in order, by speaking with Vicus prior to the merchants in Qeynos who have to pay taxes.  To enforce this, we verify that the user has the appropriate data bucket key set (line 9) before offering the dialogue that results in the tax payment:
 
-{% tabs %}
-{% tab title="Mar_Sedder.pl" %}
-```perl
-sub EVENT_SAY {
-	if ($text=~/hail/i) {
-		quest::say("Hail, $name.  What brings you to the Tin Soldier?  We have the finest in previously owned weapons and armor.  Feel free to browse.");
-	}
-	elsif ($text=~/tax collection/i) {
-		#:: Data bucket to verify quest has been started appropriately
-		$key = $client->CharacterID() . "-tax-collection";
-		#:: Match if the key exists
-		if (quest::get_data($key)) {
-			quest::say("Here are the taxes, $name. Boy, you call the guards and they take their time to show up but be a few days late on your taxes and they send the goons after you. Sheesh!");
-			#:: Give a 13171 - Sedder's Tax Payment
-			quest::summonitem(13171);
-			#:: Set faction
-			quest::faction(291,-1);		#:: - Merchants of Qeynos
-		}
-	}
-}
-
-sub EVENT_ITEM {
-	#:: Return unused items
-	plugin::returnUnusedItems();
-}
-```
-{% endtab %}
-{% endtabs %}
+=== "Mar_Sedder.pl"
+  ```perl
+  sub EVENT_SAY {
+      if ($text=~/hail/i) {
+          quest::say("Hail, $name.  What brings you to the Tin Soldier?  We have the finest in previously owned weapons and armor.  Feel free to browse.");
+      }
+      elsif ($text=~/tax collection/i) {
+          #:: Data bucket to verify quest has been started appropriately
+          $key = $client->CharacterID() . "-tax-collection";
+          #:: Match if the key exists
+          if (quest::get_data($key)) {
+              quest::say("Here are the taxes, $name. Boy, you call the guards and they take their time to show up but be a few days late on your taxes and they send the goons after you. Sheesh!");
+              #:: Give a 13171 - Sedder's Tax Payment
+              quest::summonitem(13171);
+              #:: Set faction
+              quest::faction(291,-1);		#:: - Merchants of Qeynos
+          }
+      }
+  }
+  
+  sub EVENT_ITEM {
+      #:: Return unused items
+      plugin::returnUnusedItems();
+  }
+  ```
 
