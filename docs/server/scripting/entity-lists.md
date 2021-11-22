@@ -158,8 +158,6 @@ You also see orcs nearby you are saying **'Yargghh''**
 
 * **Now, lets say I want to use the same iteration loop to do stuff to other NPC's. Let's say I want to have the slaves shout 'HELP!' - this is getting a bit ridiculous isn't it? Who cares!**
 
-{% tabs %}
-{% tab title="Perl" %}
 ```perl
 sub EVENT_SPAWN {
 	quest::shout("Graghhhh! Who goes there!");
