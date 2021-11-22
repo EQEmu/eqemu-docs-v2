@@ -291,7 +291,7 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 	for _, eventType := range keys {
 		pageLabel := fmt.Sprintf("Perl [%v]", eventType)
 		markdown := c.BuildEventPagePerl(eventType, response.Data.PerlApi.PerlEvents)
-		pagePath := fmt.Sprintf("./docs/quest-api/events/%v.md", strings.ToLower(eventType))
+		pagePath := fmt.Sprintf("./docs/quest-api/events/perl-%v.md", strings.ToLower(eventType))
 
 		// write
 		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
@@ -318,11 +318,11 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 	}
 	sort.Strings(keys)
 
-	// perl
+	// lua
 	for _, eventType := range keys {
 		pageLabel := fmt.Sprintf("Lua [%v]", eventType)
 		markdown := c.BuildEventPageLua(eventType, response.Data.LuaApi.LuaEvents)
-		pagePath := fmt.Sprintf("./docs/quest-api/events/%v.md", strings.ToLower(eventType))
+		pagePath := fmt.Sprintf("./docs/quest-api/events/lua-%v.md", strings.ToLower(eventType))
 
 		// write
 		err := os.WriteFile(pagePath, []byte(markdown), os.ModePerm)
@@ -364,14 +364,14 @@ func (c *QuestApiDocGeneratorCommand) BuildEventPagePerl(eventType string, event
 
 			eventBlock := string(b)
 			eventMarkdown := `
-	sub {{event_name}} {
-{{exported_vars}}	}`
+sub {{event_name}} {
+{{exported_vars}}}`
 
 			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{event_name}}", event.EventName)
 
 			exportedVars := ""
 			for _, eventVar := range event.EventVars {
-				exportedVars += fmt.Sprintf("\t\tquest::debug(\"%v \" . $%v);\n", eventVar, eventVar)
+				exportedVars += fmt.Sprintf("\tquest::debug(\"%v \" . $%v);\n", eventVar, eventVar)
 			}
 
 			// pop vars onto event string
@@ -399,14 +399,14 @@ func (c *QuestApiDocGeneratorCommand) BuildEventPageLua(eventType string, events
 		if eventType == event.EntityType {
 			eventBlock := string(b)
 			eventMarkdown := `
-	function {{event_name}}(e) {
-{{exported_vars}}	}`
+function {{event_name}}(e) {
+{{exported_vars}}}`
 
 			eventMarkdown = strings.ReplaceAll(eventMarkdown, "{{event_name}}", event.EventName)
 
 			exportedVars := ""
 			for _, eventVar := range event.EventVars {
-				exportedVars += fmt.Sprintf("\t\teq.debug(\"%v \" .. %v);\n", eventVar, eventVar)
+				exportedVars += fmt.Sprintf("\teq.debug(\"%v \" .. e.%v);\n", eventVar, eventVar)
 			}
 
 			// pop vars onto event string

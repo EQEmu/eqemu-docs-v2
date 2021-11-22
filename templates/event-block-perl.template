@@ -2,6 +2,6 @@
 
 === "{{event_name}}"
 
-    ``` perl
+``` perl
 {{event}}
-    ```
+```

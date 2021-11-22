@@ -655,15 +655,15 @@ nav:
           - eq: quest-api/methods/eq.md
           - quest: quest-api/methods/quest.md
       - Events:
-          - Perl [Item]: quest-api/events/item.md
-          - Perl [NPC]: quest-api/events/npc.md
-          - Perl [Player]: quest-api/events/player.md
-          - Perl [Spell]: quest-api/events/spell.md
-          - Lua [Encounter]: quest-api/events/encounter.md
-          - Lua [Item]: quest-api/events/item.md
-          - Lua [NPC]: quest-api/events/npc.md
-          - Lua [Player]: quest-api/events/player.md
-          - Lua [Spell]: quest-api/events/spell.md
+          - Perl [Item]: quest-api/events/perl-item.md
+          - Perl [NPC]: quest-api/events/perl-npc.md
+          - Perl [Player]: quest-api/events/perl-player.md
+          - Perl [Spell]: quest-api/events/perl-spell.md
+          - Lua [Encounter]: quest-api/events/lua-encounter.md
+          - Lua [Item]: quest-api/events/lua-item.md
+          - Lua [NPC]: quest-api/events/lua-npc.md
+          - Lua [Player]: quest-api/events/lua-player.md
+          - Lua [Spell]: quest-api/events/lua-spell.md
   - Changelog:
       - "2021": changelog/server/2021.md
       - "2020": changelog/server/2020.md

@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:07:34
+        Last generated 2021.11.21 22:14:50
 
     ``` perl
     $hateentry->GetDamage();
@@ -17,7 +17,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:07:34
+        Last generated 2021.11.21 22:14:50
 
     ``` lua
     hateentry:GetDamage();

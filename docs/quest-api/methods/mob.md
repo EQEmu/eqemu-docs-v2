@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:07:34
+        Last generated 2021.11.21 22:14:50
 
     ``` perl
     $mob->AddFeignMemory(Client* attacker);
@@ -346,7 +346,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2021.11.21 22:07:34
+        Last generated 2021.11.21 22:14:50
 
     ``` lua
     mob:AddNimbusEffect(int effect_id);
