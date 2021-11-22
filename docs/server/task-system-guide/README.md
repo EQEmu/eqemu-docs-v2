@@ -803,29 +803,26 @@ sub EVENT_SAY {
 
 * In this example, when a player completes a task, it triggers the event and tries to match with task ID 212; if it matches, a yellow message is displayed to the client.
 
-{% tabs %}
-{% tab title="Perl" %}
-```perl
-sub EVENT_TASK_STAGE_COMPLETE {
-    #:: Match task id 212
-    if ($task_id == 212) {
-        $client->Message(15,"The zombie presence seems somewhat lessened, and perhaps they have been quelled...for the time being.");
-    }
-}
-```
-{% endtab %}
+=== "Perl"
+      ```perl
+      sub EVENT_TASK_STAGE_COMPLETE {
+          #:: Match task id 212
+          if ($task_id == 212) {
+              $client->Message(15,"The zombie presence seems somewhat lessened, and perhaps they have been quelled...for the time being.");
+          }
+      }
+      ```   
 
-{% tab title="Lua" %}
-```lua
-function event_task_stage_complete(e)
-    --:: Match task id 212
-    if (e.task_id == 212) then
-        e.self:Message(15, "The zombie presence seems somewhat lessened, and perhaps they have been quelled...for the time being.");
-    end
-end
-```
-{% endtab %}
-{% endtabs %}
+=== "Lua"
+
+      ```lua
+      function event_task_stage_complete(e)
+          --:: Match task id 212
+          if (e.task_id == 212) then
+              e.self:Message(15, "The zombie presence seems somewhat lessened, and perhaps they have been quelled...for the time being.");
+          end
+      end
+      ```
 
 ### EVENT_TASK_UPDATE
 
