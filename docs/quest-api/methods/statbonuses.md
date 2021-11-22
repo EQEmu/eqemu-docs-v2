@@ -1,4 +1,8 @@
-=== "Lua"
+=== "Lua (256)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=StatBonuses){:target="StatBonuses"} for latest definitions and Quest examples
 
     ``` lua
     statbonuses:AC();

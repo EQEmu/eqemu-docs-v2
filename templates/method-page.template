@@ -1,4 +1,8 @@
-=== "{{language_label}}"
+=== "{{language_label}} ({{method_count}})"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang={{language_syntax}}&type={{method_type}}){:target="{{method_type}}"} for latest definitions and Quest examples
 
     ``` {{language_syntax}}
 {{language_methods}}

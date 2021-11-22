@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (34)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
 
     ``` perl
     $corpse->AddItem(uint32 item_id, uint16 charges, [unt16 slot = 0]);
@@ -36,7 +40,11 @@
     $corpse->Summon(Client* client, bool is_spell);
     $corpse->UnLock();
     ```
-=== "Lua"
+=== "Lua (36)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
 
     ``` lua
     corpse:AddItem(uint32 itemnum, uint16 charges, int16 slot, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);

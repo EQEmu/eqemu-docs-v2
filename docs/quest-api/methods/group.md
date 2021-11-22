@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (19)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Group){:target="Group"} for latest definitions and Quest examples
 
     ``` perl
     $group->CastGroupSpell(Mob* caster, uint16 spell_id);
@@ -21,7 +25,11 @@
     $group->SplitMoney(uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
     $group->TeleportGroup(Mob* sender, uint32 zone_id, float x, float y, float z, float heading);
     ```
-=== "Lua"
+=== "Lua (20)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Group){:target="Group"} for latest definitions and Quest examples
 
     ``` lua
     group:CastGroupSpell(Mob caster, int spell_id);

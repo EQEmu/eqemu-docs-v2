@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (18)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=PerlPacket){:target="PerlPacket"} for latest definitions and Quest examples
 
     ``` perl
     $perlpacket->DESTROY();

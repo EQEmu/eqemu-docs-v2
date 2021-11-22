@@ -1,11 +1,19 @@
-=== "Perl"
+=== "Perl (3)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
     ``` perl
     $hateentry->GetDamage();
     $hateentry->GetData();
     $hateentry->GetHate();
     ```
-=== "Lua"
+=== "Lua (16)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
     ``` lua
     hateentry:GetDamage();

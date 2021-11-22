@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (332)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
     ``` perl
     $mob->AddFeignMemory(Client* attacker);
@@ -334,7 +338,11 @@
     $mob->WearChange(uint8 material_slot, uint16 texture, [uint32 color = 0, uint32 hero_forge_model = 0]);
     $mob->WipeHateList();
     ```
-=== "Lua"
+=== "Lua (410)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
     ``` lua
     mob:AddNimbusEffect(int effect_id);

@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (8)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=QuestItem){:target="QuestItem"} for latest definitions and Quest examples
 
     ``` perl
     $questitem->GetAugment(int16 slot_id);

@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (42)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Object){:target="Object"} for latest definitions and Quest examples
 
     ``` perl
     $object->ClearUser();
@@ -44,7 +48,11 @@
     $object->StartDecay();
     $object->VarSave();
     ```
-=== "Lua"
+=== "Lua (34)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Object){:target="Object"} for latest definitions and Quest examples
 
     ``` lua
     object:ClearUser();

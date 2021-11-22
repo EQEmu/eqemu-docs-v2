@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (75)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
     ``` perl
     $entitylist->CanAddHateForMob(Mob* target);
@@ -77,7 +81,11 @@
     $entitylist->SignalAllClients(uint32 data);
     $entitylist->SignalMobsByNPCID(uint32 npc_type_id, int signal_id);
     ```
-=== "Lua"
+=== "Lua (66)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
     ``` lua
     entitylist:CanAddHateForMob(Mob p);

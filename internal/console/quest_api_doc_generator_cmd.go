@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"os"
 	"sort"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -168,18 +169,26 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 		}
 	}
 
-	markdown := ""
+	markdown := ``
 
 	if len(perlMethods) > 0 {
+		perlTemplate = strings.ReplaceAll(perlTemplate, "{{method_type}}", methodType)
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_label}}", "Perl")
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_syntax}}", "perl")
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_methods}}", strings.Join(perlMethods, "\n"))
+
+		count := strconv.Itoa(len(perlMethods))
+		perlTemplate = strings.ReplaceAll(perlTemplate, "{{method_count}}", count)
 		markdown += perlTemplate
 	}
 	if len(luaMethods) > 0 {
+		luaTemplate = strings.ReplaceAll(luaTemplate, "{{method_type}}", methodType)
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_label}}", "Lua")
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_syntax}}", "lua")
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_methods}}", strings.Join(luaMethods, "\n"))
+
+		count := strconv.Itoa(len(luaMethods))
+		luaTemplate = strings.ReplaceAll(luaTemplate, "{{method_count}}", count)
 		markdown += luaTemplate
 	}
 

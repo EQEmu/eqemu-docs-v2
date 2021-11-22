@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (33)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
 
     ``` perl
     $expedition->AddLockout(string event_name, uint32 seconds);
@@ -35,7 +39,11 @@
     $expedition->SetZoneInLocation(float x, float y, float z, float heading);
     $expedition->UpdateLockoutDuration(string event_name, uint32 seconds, [bool members_only = true]);
     ```
-=== "Lua"
+=== "Lua (38)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
 
     ``` lua
     expedition:AddLockout(string event_name, uint32_t seconds);

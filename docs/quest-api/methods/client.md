@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (301)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Client){:target="Client"} for latest definitions and Quest examples
 
     ``` perl
     $client->AccountID();
@@ -303,7 +307,11 @@
     $client->UseDiscipline(int32 spell_id, int32 target);
     $client->WorldKick();
     ```
-=== "Lua"
+=== "Lua (369)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Client){:target="Client"} for latest definitions and Quest examples
 
     ``` lua
     client:AccountID();

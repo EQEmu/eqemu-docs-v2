@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (474)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=quest){:target="quest"} for latest definitions and Quest examples
 
     ``` perl
     quest::AssignGroupToInstance(uint16 instance_id);

@@ -1,4 +1,8 @@
-=== "Lua"
+=== "Lua (175)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Item){:target="Item"} for latest definitions and Quest examples
 
     ``` lua
     item:AAgi();

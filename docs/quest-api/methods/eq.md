@@ -1,4 +1,8 @@
-=== "Lua"
+=== "Lua (516)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=eq){:target="eq"} for latest definitions and Quest examples
 
     ``` lua
     eq.active_speak_activity(task_id);

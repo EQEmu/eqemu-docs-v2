@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (19)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
     ``` perl
     $raid->BalanceHP(int32 penalty, uint32 group_id);
@@ -21,7 +25,11 @@
     $raid->TeleportGroup(Mob* sender, uint32 zone_id, float x, float y, float z, float heading, uint32 group_id);
     $raid->TeleportRaid(Mob* sender, uint32 zone_id, float x, float y, float z, float heading);
     ```
-=== "Lua"
+=== "Lua (24)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
     ``` lua
     raid:BalanceHP(int penalty, uint32 group_id);

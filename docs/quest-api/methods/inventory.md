@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (19)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
     ``` perl
     $inventory->CanItemFitInContainer(ItemInstance item_to_check, ItemInstance container_to_check);
@@ -21,7 +25,11 @@
     $inventory->SupportsContainers(int16 slot_id);
     $inventory->SwapItem(int16 source_slot_id, int16 destination_slot_id);
     ```
-=== "Lua"
+=== "Lua (29)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
     ``` lua
     inventory:CalcBagIdx(slot_id);

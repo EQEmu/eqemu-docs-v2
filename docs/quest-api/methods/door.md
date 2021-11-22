@@ -1,4 +1,8 @@
-=== "Lua"
+=== "Lua (32)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Door){:target="Door"} for latest definitions and Quest examples
 
     ``` lua
     door:CreateDatabaseEntry();

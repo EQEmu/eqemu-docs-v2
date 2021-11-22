@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (27)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Doors){:target="Doors"} for latest definitions and Quest examples
 
     ``` perl
     $doors->GetDoorDBID();

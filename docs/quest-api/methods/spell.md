@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (109)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
     ``` perl
     $spell->GetAOEDuration();
@@ -111,7 +115,11 @@
     $spell->GetYouCast();
     $spell->GetZoneType();
     ```
-=== "Lua"
+=== "Lua (85)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
     ``` lua
     spell:AEDuration();

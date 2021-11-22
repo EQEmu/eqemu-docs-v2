@@ -1,4 +1,8 @@
-=== "Lua"
+=== "Lua (46)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=ItemInst){:target="ItemInst"} for latest definitions and Quest examples
 
     ``` lua
     iteminst:AddExp(uint32 exp);

@@ -1,4 +1,8 @@
-=== "Perl"
+=== "Perl (107)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
     ``` perl
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, [uint32 max_delay = 2500], [uint32 min_delay = 2500]);
@@ -109,7 +113,11 @@
     $npc->StopWandering();
     $npc->UpdateWaypoint(int wp_index);
     ```
-=== "Lua"
+=== "Lua (120)"
+
+    !!! info end
+
+        Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
     ``` lua
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
