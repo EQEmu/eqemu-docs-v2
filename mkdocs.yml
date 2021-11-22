@@ -161,7 +161,6 @@ nav:
           - Ornament Types: server/items/ornament-types.md
           - Powersources: server/items/powersources.md
       - Inventory:
-          - server/inventory/README.md
           - Inventory Slots: server/inventory/inventory-slots.md
           - Item Slots: server/inventory/item-slots.md
           - Bag Sizes: server/inventory/bag-sizes.md
