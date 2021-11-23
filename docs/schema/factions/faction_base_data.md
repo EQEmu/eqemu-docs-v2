@@ -4,6 +4,7 @@
 	This page was last generated 2021.11.23
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | client_faction_id | smallint | [Client Faction Identifier](faction_list.md) |

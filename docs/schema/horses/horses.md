@@ -4,6 +4,7 @@
 	This page was last generated 2021.11.23
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | filename | varchar | [NPC Type Name](../../schema/npcs/npc_types.md) |

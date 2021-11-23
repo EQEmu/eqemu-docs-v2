@@ -5,9 +5,12 @@
 
 ## Relationship Diagram
 
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICB0YXNrX2FjdGl2aXRpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgaW50dW5zaWduZWQgZGVsaXZlcnRvbnBjXG4gICAgICAgIGludHVuc2lnbmVkIGdvYWxpZFxuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICB0YXNrcyB8fC0tb3sgdGFza19hY3Rpdml0aWVzIDogSGFzLU1hbnlcbiAgICB0YXNrcyB8fC0tb3sgdGFza3NldHMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
+
 [![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICB0YXNrX2FjdGl2aXRpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgaW50dW5zaWduZWQgZGVsaXZlcnRvbnBjXG4gICAgICAgIGludHVuc2lnbmVkIGdvYWxpZFxuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICB0YXNrcyB8fC0tb3sgdGFza19hY3Rpdml0aWVzIDogSGFzLU1hbnlcbiAgICB0YXNrcyB8fC0tb3sgdGFza3NldHMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICB0YXNrX2FjdGl2aXRpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgaW50dW5zaWduZWQgZGVsaXZlcnRvbnBjXG4gICAgICAgIGludHVuc2lnbmVkIGdvYWxpZFxuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICB0YXNrcyB8fC0tb3sgdGFza19hY3Rpdml0aWVzIDogSGFzLU1hbnlcbiAgICB0YXNrcyB8fC0tb3sgdGFza3NldHMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
 
 ## Relationships
+
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | Has-Many | id | [task_activities](../../schema/tasks/task_activities.md) | taskid |
@@ -15,6 +18,7 @@
 
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Task Identifier |

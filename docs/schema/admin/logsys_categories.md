@@ -4,6 +4,7 @@
 	This page was last generated 2021.11.23
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | log_category_id | int | Unique Log Category Identifier |

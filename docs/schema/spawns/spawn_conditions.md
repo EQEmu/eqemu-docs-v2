@@ -4,6 +4,7 @@
 	This page was last generated 2021.11.23
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |

@@ -4,6 +4,7 @@
 	This page was last generated 2021.11.23
 
 ## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | int | Type: 0 = Trash, 1 = Named, 2 = Raid |

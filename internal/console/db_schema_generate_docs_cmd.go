@@ -255,6 +255,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	diagram := c.buildMermaidDiagram(table)
 	imageLink := ""
+	diagramLink := ""
 	if len(diagram) > 0 {
 		mermaid := MermaidLiveJsDiagram{
 			Code: diagram,
@@ -274,7 +275,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 		encoded := base64.StdEncoding.EncodeToString(b)
 		imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagram}", encoded, encoded)
 		//imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.live/edit#%v){target=diagram}", encoded, encoded)
-		//imageLink = fmt.Sprintf("![erd](https://mermaid.ink/img/%v)(https://mermaid.ink/img/%v)", encoded, encoded)
+		diagramLink = fmt.Sprintf("[Diagram Edit](https://mermaid.live/edit#%v){target=diagram-edit}", encoded)
 	}
 
 	// build table
@@ -290,8 +291,8 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	// if we have a diagram, we have relationships
 	if len(imageLink) > 0 {
-		markdown += fmt.Sprintf("\n## Relationship Diagram\n\n%v\n", imageLink)
-		markdown += fmt.Sprintf("\n## Relationships\n")
+		markdown += fmt.Sprintf("\n## Relationship Diagram\n\n%v\n\n%v\n", diagramLink, imageLink)
+		markdown += fmt.Sprintf("\n## Relationships\n\n")
 		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 `
@@ -320,7 +321,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	}
 
-	markdown += fmt.Sprintf("\n## Schema\n%v", tableHeader)
+	markdown += fmt.Sprintf("\n## Schema\n\n%v", tableHeader)
 
 	entries := 0
 	for i := 0; i <= 1000; i++ {
