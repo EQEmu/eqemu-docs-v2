@@ -444,7 +444,11 @@ func (c *DbGenerateDocsCommand) getRelationshipKeysForTable(table string) []stri
 
 	for _, t := range c.tables {
 		if t.Name == table {
-			keys = append(keys, t.Keys...)
+			for _, key := range t.Keys {
+				if !containsStringSlice(keys, key) {
+					keys = append(keys, key)
+				}
+			}
 		}
 		for _, relationship := range t.Relationships {
 			if relationship.RemoteTable == table {
