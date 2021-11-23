@@ -156,7 +156,7 @@ aa_rank_effects:
     ordinal_position: 5
   effect_id:
     dataType: int
-    description: '[Spell Effect Identifier](../../../../categories/spells/spell-effect-ids)'
+    description: '[Spell Effect Identifier](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 3
   rank_id:
@@ -198,7 +198,7 @@ aa_ranks:
     ordinal_position: 5
   expansion:
     dataType: int
-    description: '[Expansion Identifier](../../../../categories/operation/expansion-list)'
+    description: '[Expansion Identifier](../../../../server/operation/expansion-list)'
     nullable: "NO"
     ordinal_position: 11
   id:
@@ -238,7 +238,7 @@ aa_ranks:
     ordinal_position: 8
   spell_type:
     dataType: int
-    description: '[Spell Type](../../../../categories/spells/spell-types)'
+    description: '[Spell Type](../../../../server/spells/spell-types)'
     nullable: "NO"
     ordinal_position: 9
   title_sid:
@@ -363,7 +363,7 @@ account:
     ordinal_position: 4
   status:
     dataType: int
-    description: '[Status](../../../../categories/player/status-levels)'
+    description: '[Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 6
   suspend_reason:
@@ -615,7 +615,7 @@ adventure_template:
     ordinal_position: 32
   graveyard_zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 29
   id:
@@ -655,7 +655,7 @@ adventure_template:
     ordinal_position: 15
   theme:
     dataType: tinyint
-    description: '[LDoN Theme](../../../../categories/zones/ldon-themes)'
+    description: '[LDoN Theme](../../../../server/zones/ldon-themes)'
     nullable: "NO"
     ordinal_position: 20
   type:
@@ -680,7 +680,7 @@ adventure_template:
     ordinal_position: 18
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
   zone_in_object_id:
@@ -705,7 +705,7 @@ adventure_template:
     ordinal_position: 23
   zone_in_zone_id:
     dataType: smallint
-    description: '[Zone In Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone In Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 21
   zone_version:
@@ -855,7 +855,7 @@ altadv_vars:
 alternate_currency:
   id:
     dataType: int
-    description: '[Alternate Currency Identifier](../../../../categories/items/alternate-currencies)'
+    description: '[Alternate Currency Identifier](../../../../server/items/alternate-currencies)'
     nullable: "NO"
     ordinal_position: 1
   item_id:
@@ -866,7 +866,7 @@ alternate_currency:
 auras:
   aura_type:
     dataType: int
-    description: '[Aura Type](../../../../categories/spells/aura-types)'
+    description: '[Aura Type](../../../../server/spells/aura-types)'
     nullable: "NO"
     ordinal_position: 6
   cast_time:
@@ -891,7 +891,7 @@ auras:
     ordinal_position: 10
   movement:
     dataType: int
-    description: '[Aura Movement Type](../../../../categories/spells/aura-movement-types)'
+    description: '[Aura Movement Type](../../../../server/spells/aura-movement-types)'
     nullable: "NO"
     ordinal_position: 8
   name:
@@ -906,7 +906,7 @@ auras:
     ordinal_position: 2
   spawn_type:
     dataType: int
-    description: '[Aura Spawn Type](../../../../categories/spells/aura-spawn-types)'
+    description: '[Aura Spawn Type](../../../../server/spells/aura-spawn-types)'
     nullable: "NO"
     ordinal_position: 7
   spell_id:
@@ -933,7 +933,7 @@ banned_ips:
 base_data:
   class:
     dataType: int
-    description: '[Class Identifier](../../../../categories/player/class-list)'
+    description: '[Class Identifier](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 2
   end:
@@ -1004,7 +1004,7 @@ blocked_spells:
     ordinal_position: 2
   type:
     dataType: tinyint
-    description: '[Blocked Spell Type](../../../../categories/spells/blocked-spell-types)'
+    description: '[Blocked Spell Type](../../../../server/spells/blocked-spell-types)'
     nullable: "NO"
     ordinal_position: 3
   x:
@@ -1039,13 +1039,13 @@ blocked_spells:
     ordinal_position: 10
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 4
 books:
   language:
     dataType: int
-    description: '[Language](../../../../categories/player/languages)'
+    description: '[Language](../../../../server/player/languages)'
     nullable: "NO"
     ordinal_position: 3
   name:
@@ -1778,7 +1778,7 @@ bot_stances:
     nullable: "NO"
   stance_id:
     dataType: tinyint
-    description: '[Stance Identifier](../../../../categories/bots/stance-types)'
+    description: '[Stance Identifier](../../../../server/bots/stance-types)'
     nullable: "NO"
 bot_timers:
   bot_id:
@@ -1856,12 +1856,12 @@ bug_reports:
     ordinal_position: 7
   client_version_id:
     dataType: int
-    description: '[Client Version Identifier](../../../../categories/player/client-version-bitmasks)'
+    description: '[Client Version Identifier](../../../../server/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 3
   client_version_name:
     dataType: varchar
-    description: '[Client Version Name](../../../../categories/player/client-version-bitmasks)'
+    description: '[Client Version Name](../../../../server/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 4
   heading:
@@ -1951,7 +1951,7 @@ bug_reports:
     ordinal_position: 12
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 bugs:
@@ -1982,7 +1982,7 @@ bugs:
     ordinal_position: 3
   status:
     dataType: tinyint
-    description: \[Account Status of Reporter\]\([../../../../categories/player/status-levels](../../../../categories/player/status-levels)
+    description: \[Account Status of Reporter\]\([../../../../server/player/status-levels](../../../../server/player/status-levels)
     nullable: "NO"
     ordinal_position: 13
   target:
@@ -2017,7 +2017,7 @@ bugs:
     ordinal_position: 7
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 buyer:
@@ -2059,27 +2059,27 @@ char_create_combinations:
     ordinal_position: 1
   class:
     dataType: int
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 3
   deity:
     dataType: int
-    description: '[Deity](../../../../categories/player/deity-list)'
+    description: '[Deity](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 4
   expansions_req:
     dataType: int
-    description: '[Expansions Required](../../../../categories/operation/expansion-bitmasks)'
+    description: '[Expansions Required](../../../../server/operation/expansion-bitmasks)'
     nullable: "NO"
     ordinal_position: 6
   race:
     dataType: int
-    description: '[Race](../../../../categories/npc/race-list)'
+    description: '[Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 2
   start_zone:
     dataType: int
-    description: '[Start Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Start Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 5
 char_create_point_allocations:
@@ -2322,7 +2322,7 @@ character_bind:
     ordinal_position: 7
   zone_id:
     dataType: smallint
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 3
 character_buffs:
@@ -2490,7 +2490,7 @@ character_corpses:
     ordinal_position: 3
   class:
     dataType: int
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "YES"
     ordinal_position: 21
   copper:
@@ -2500,7 +2500,7 @@ character_corpses:
     ordinal_position: 25
   deity:
     dataType: int
-    description: '[Deity](../../../../categories/player/deity-list)'
+    description: '[Deity](../../../../server/player/deity-list)'
     nullable: "YES"
     ordinal_position: 22
   drakkin_details:
@@ -2540,7 +2540,7 @@ character_corpses:
     ordinal_position: 34
   gender:
     dataType: int
-    description: '[Gender](../../../../categories/npc/genders)'
+    description: '[Gender](../../../../server/npc/genders)'
     nullable: "YES"
     ordinal_position: 20
   gold:
@@ -2570,7 +2570,7 @@ character_corpses:
     ordinal_position: 9
   helm_texture:
     dataType: int
-    description: '[Helm Texture](../../../../categories/npc/textures)'
+    description: '[Helm Texture](../../../../server/npc/textures)'
     nullable: "YES"
     ordinal_position: 24
   id:
@@ -2610,7 +2610,7 @@ character_corpses:
     ordinal_position: 28
   race:
     dataType: int
-    description: '[Race](../../../../categories/npc/race-list)'
+    description: '[Race](../../../../server/npc/race-list)'
     nullable: "YES"
     ordinal_position: 19
   silver:
@@ -2625,7 +2625,7 @@ character_corpses:
     ordinal_position: 17
   texture:
     dataType: int
-    description: '[Texture](../../../../categories/npc/textures)'
+    description: '[Texture](../../../../server/npc/textures)'
     nullable: "YES"
     ordinal_position: 23
   time_of_death:
@@ -2700,7 +2700,7 @@ character_corpses:
     ordinal_position: 8
   zone_id:
     dataType: smallint
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 4
 character_currency:
@@ -2897,7 +2897,7 @@ character_data:
     ordinal_position: 53
   class:
     dataType: tinyint
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 15
   cur_hp:
@@ -2907,7 +2907,7 @@ character_data:
     ordinal_position: 47
   deity:
     dataType: int
-    description: '[Deity](../../../../categories/player/deity-list)'
+    description: '[Deity](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 17
   deleted_at:
@@ -2987,7 +2987,7 @@ character_data:
     ordinal_position: 95
   gender:
     dataType: tinyint
-    description: '[Gender](../../../../categories/npc/genders)'
+    description: '[Gender](../../../../server/npc/genders)'
     nullable: "NO"
     ordinal_position: 13
   gm:
@@ -3067,27 +3067,27 @@ character_data:
     ordinal_position: 68
   ldon_points_guk:
     dataType: int
-    description: LDoN Points - [Deepest Guk](../../../../categories/zones/ldon-themes)
+    description: LDoN Points - [Deepest Guk](../../../../server/zones/ldon-themes)
     nullable: "NO"
     ordinal_position: 63
   ldon_points_mir:
     dataType: int
-    description: LDoN Points - [Miragul's Menagerie](../../../../categories/zones/ldon-themes)
+    description: LDoN Points - [Miragul's Menagerie](../../../../server/zones/ldon-themes)
     nullable: "NO"
     ordinal_position: 64
   ldon_points_mmc:
     dataType: int
-    description: LDoN Points - [Mistmoore Catacombs](../../../../categories/zones/ldon-themes)
+    description: LDoN Points - [Mistmoore Catacombs](../../../../server/zones/ldon-themes)
     nullable: "NO"
     ordinal_position: 65
   ldon_points_ruj:
     dataType: int
-    description: LDoN Points - [Rujarkian Hills](../../../../categories/zones/ldon-themes)
+    description: LDoN Points - [Rujarkian Hills](../../../../server/zones/ldon-themes)
     nullable: "NO"
     ordinal_position: 66
   ldon_points_tak:
     dataType: int
-    description: LDoN Points - [Takish-Hiz](../../../../categories/zones/ldon-themes)
+    description: LDoN Points - [Takish-Hiz](../../../../server/zones/ldon-themes)
     nullable: "NO"
     ordinal_position: 67
   leadership_exp_on:
@@ -3187,7 +3187,7 @@ character_data:
     ordinal_position: 81
   race:
     dataType: smallint
-    description: '[Race](../../../../categories/npc/race-list)'
+    description: '[Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 14
   raid_auto_consent:
@@ -3292,7 +3292,7 @@ character_data:
     ordinal_position: 58
   zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 7
   zone_instance:
@@ -3465,7 +3465,7 @@ character_languages:
     ordinal_position: 1
   lang_id:
     dataType: smallint
-    description: '[Language Identifier](../../../../categories/player/languages)'
+    description: '[Language Identifier](../../../../server/player/languages)'
     nullable: "NO"
     ordinal_position: 2
   value:
@@ -3693,7 +3693,7 @@ character_skills:
     ordinal_position: 1
   skill_id:
     dataType: smallint
-    description: '[Skill Identifier](../../../../categories/player/skills)'
+    description: '[Skill Identifier](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 2
   value:
@@ -3766,7 +3766,7 @@ character_tasks:
     ordinal_position: 2
   type:
     dataType: tinyint
-    description: '[Task Type](../../../../categories/task-system-guide/task-types)'
+    description: '[Task Type](../../../../server/task-system-guide/task-types)'
     nullable: "NO"
     ordinal_position: 4
 character_tribute:
@@ -3788,7 +3788,7 @@ character_tribute:
 chatchannels:
   minstatus:
     dataType: int
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 4
   name:
@@ -4145,7 +4145,7 @@ client_server_faction_map:
 command_settings:
   access:
     dataType: int
-    description: '[Required Status](../../../../categories/player/status-levels)'
+    description: '[Required Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 2
   aliases:
@@ -4290,7 +4290,7 @@ damageshieldtypes:
     ordinal_position: 1
   type:
     dataType: tinyint
-    description: '[Damage Shield Type](../../../../categories/spells/damage-shield-types)'
+    description: '[Damage Shield Type](../../../../server/spells/damage-shield-types)'
     nullable: "NO"
     ordinal_position: 2
 data_buckets:
@@ -4343,7 +4343,7 @@ db_version:
 discovered_items:
   account_status:
     dataType: int
-    description: '[Account Status](../../../../categories/player/status-levels)'
+    description: '[Account Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 4
   char_name:
@@ -4369,7 +4369,7 @@ doors:
     ordinal_position: 29
   client_version_mask:
     dataType: int
-    description: '[Client Version Mask](../../../../categories/player/client-version-bitmasks)'
+    description: '[Client Version Mask](../../../../server/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 30
   content_flags:
@@ -4409,7 +4409,7 @@ doors:
     ordinal_position: 24
   dest_zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 20
   disable_timer:
@@ -4454,7 +4454,7 @@ doors:
     ordinal_position: 27
   invert_state:
     dataType: int
-    description: 'This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](../../../../categories/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn.'
+    description: 'This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](../../../../server/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn.'
     nullable: "NO"
     ordinal_position: 26
   is_ldon_door:
@@ -4494,7 +4494,7 @@ doors:
     ordinal_position: 14
   opentype:
     dataType: smallint
-    description: '[Door Open Type](../../../../categories/zones/door-open-types)'
+    description: '[Door Open Type](../../../../server/zones/door-open-types)'
     nullable: "NO"
     ordinal_position: 10
   pos_x:
@@ -4534,7 +4534,7 @@ doors:
     ordinal_position: 4
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 3
 dynamic_zone_members:
@@ -4733,7 +4733,7 @@ eventlog:
     ordinal_position: 1
   status:
     dataType: int
-    description: '[Status](../../../../categories/player/status-levels)'
+    description: '[Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 4
   target:
@@ -4863,7 +4863,7 @@ faction_list_mod:
     ordinal_position: 3
   mod_name:
     dataType: varchar
-    description: 'Modifier Name: r\# = [Race Identifier](../../../../categories/npc/race-list), c\# = [Class Identifier](../../../../categories/player/class-list), d\# = [Deity Identifier](../../../../categories/player/deity-list)'
+    description: 'Modifier Name: r\# = [Race Identifier](../../../../server/npc/race-list), c\# = [Class Identifier](../../../../server/player/class-list), d\# = [Deity Identifier](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 4
 faction_values:
@@ -4969,7 +4969,7 @@ fishing:
     ordinal_position: 4
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 forage:
@@ -5015,7 +5015,7 @@ forage:
     ordinal_position: 6
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 friends:
@@ -5037,12 +5037,12 @@ friends:
 global_loot:
   bodytype:
     dataType: mediumtext
-    description: '[Body Type](../../../../categories/npc/body-types), multiple body types supported if \'
+    description: '[Body Type](../../../../server/npc/body-types), multiple body types supported if \'
     nullable: "YES"
     ordinal_position: 11
   class:
     dataType: mediumtext
-    description: '[Class](../../../../categories/player/class-list), multiple classes supported if \'
+    description: '[Class](../../../../server/player/class-list), multiple classes supported if \'
     nullable: "YES"
     ordinal_position: 10
   content_flags:
@@ -5102,7 +5102,7 @@ global_loot:
     ordinal_position: 5
   race:
     dataType: mediumtext
-    description: '[Race](../../../../categories/npc/race-list), multiple races supported if \'
+    description: '[Race](../../../../server/npc/race-list), multiple races supported if \'
     nullable: "YES"
     ordinal_position: 9
   raid:
@@ -5117,7 +5117,7 @@ global_loot:
     ordinal_position: 7
   zone:
     dataType: mediumtext
-    description: '[Zone Short Name](../../../../categories/zones/zone-list),, multiple zones supported if \'
+    description: '[Zone Short Name](../../../../server/zones/zone-list),, multiple zones supported if \'
     nullable: "YES"
     ordinal_position: 12
 gm_ips:
@@ -5175,7 +5175,7 @@ graveyard:
     ordinal_position: 5
   zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 grid:
@@ -5186,17 +5186,17 @@ grid:
     ordinal_position: 1
   type:
     dataType: int
-    description: '[Wander Type](../../../../categories/npc/spawns/wander-types)'
+    description: '[Wander Type](../../../../server/npc/spawns/wander-types)'
     nullable: "NO"
     ordinal_position: 3
   type2:
     dataType: int
-    description: '[Pause Type](../../../../categories/npc/spawns/pause-types)'
+    description: '[Pause Type](../../../../server/npc/spawns/pause-types)'
     nullable: "NO"
     ordinal_position: 4
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 grid_entries:
@@ -5242,7 +5242,7 @@ grid_entries:
     ordinal_position: 6
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 ground_spawns:
@@ -5333,7 +5333,7 @@ ground_spawns:
     ordinal_position: 3
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 group_id:
@@ -5477,7 +5477,7 @@ guild_members:
     ordinal_position: 8
   rank:
     dataType: tinyint
-    description: '[Rank](../../../../categories/player/guild-ranks)'
+    description: '[Rank](../../../../server/player/guild-ranks)'
     nullable: "NO"
     ordinal_position: 3
   total_tribute:
@@ -5580,7 +5580,7 @@ guilds:
     ordinal_position: 3
   minstatus:
     dataType: smallint
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 4
   motd:
@@ -5636,7 +5636,7 @@ hackers:
     ordinal_position: 3
   zone:
     dataType: text
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 5
 horses:
@@ -5647,7 +5647,7 @@ horses:
     ordinal_position: 1
   gender:
     dataType: tinyint
-    description: '[Gender](../../../../categories/npc/genders)'
+    description: '[Gender](../../../../server/npc/genders)'
     nullable: "NO"
     ordinal_position: 3
   mountspeed:
@@ -5662,12 +5662,12 @@ horses:
     ordinal_position: 6
   race:
     dataType: smallint
-    description: '[Race](../../../../categories/npc/race-list)'
+    description: '[Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 2
   texture:
     dataType: tinyint
-    description: '[Texture](../../../../categories/npc/textures)'
+    description: '[Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 4
 instance_list:
@@ -5703,7 +5703,7 @@ instance_list:
     ordinal_position: 3
   zone:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 instance_list_player:
@@ -5795,7 +5795,7 @@ inventory:
     ordinal_position: 15
   slotid:
     dataType: mediumint
-    description: '[Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "NO"
     ordinal_position: 2
 inventory_snapshots:
@@ -5876,7 +5876,7 @@ inventory_snapshots:
     ordinal_position: 16
   slotid:
     dataType: mediumint
-    description: '[Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "NO"
     ordinal_position: 3
   time_index:
@@ -5919,7 +5919,7 @@ ip_exemptions:
 item_tick:
   it_bagslot:
     dataType: tinyint
-    description: '[Bag Slot](../../../../categories/inventory/inventory-slots)'
+    description: '[Bag Slot](../../../../server/inventory/inventory-slots)'
     nullable: "NO"
     ordinal_position: 6
   it_chance:
@@ -6224,12 +6224,12 @@ items:
     ordinal_position: 56
   augrestrict:
     dataType: int
-    description: '[Augment Restriction](../../../../categories/items/augment-restrictions)'
+    description: '[Augment Restriction](../../../../server/items/augment-restrictions)'
     nullable: "NO"
     ordinal_position: 14
   augslot1type:
     dataType: tinyint
-    description: '[Augment Slot 1 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 1 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 15
   augslot1unk2:
@@ -6244,7 +6244,7 @@ items:
     ordinal_position: 16
   augslot2type:
     dataType: tinyint
-    description: '[Augment Slot 2 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 2 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 17
   augslot2unk2:
@@ -6259,7 +6259,7 @@ items:
     ordinal_position: 18
   augslot3type:
     dataType: tinyint
-    description: '[Augment Slot 3 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 3 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 19
   augslot3unk2:
@@ -6274,7 +6274,7 @@ items:
     ordinal_position: 20
   augslot4type:
     dataType: tinyint
-    description: '[Augment Slot 4 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 4 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 21
   augslot4unk2:
@@ -6289,7 +6289,7 @@ items:
     ordinal_position: 22
   augslot5type:
     dataType: tinyint
-    description: '[Augment Slot 5 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 5 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 23
   augslot5unk2:
@@ -6304,7 +6304,7 @@ items:
     ordinal_position: 24
   augslot6type:
     dataType: tinyint
-    description: '[Augment Slot 6 Type](../../../../categories/items/augment-types)'
+    description: '[Augment Slot 6 Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 25
   augslot6unk2:
@@ -6319,7 +6319,7 @@ items:
     ordinal_position: 26
   augtype:
     dataType: int
-    description: '[Augment Type](../../../../categories/items/augment-types)'
+    description: '[Augment Type](../../../../server/items/augment-types)'
     nullable: "NO"
     ordinal_position: 27
   avoidance:
@@ -6339,7 +6339,7 @@ items:
     ordinal_position: 243
   bagsize:
     dataType: int
-    description: '[Bag Size](../../../../categories/inventory/bag-sizes)'
+    description: '[Bag Size](../../../../server/inventory/bag-sizes)'
     nullable: "NO"
     ordinal_position: 30
   bagslots:
@@ -6349,7 +6349,7 @@ items:
     ordinal_position: 31
   bagtype:
     dataType: int
-    description: '[Bag Type](../../../../categories/inventory/bag-types)'
+    description: '[Bag Type](../../../../server/inventory/bag-types)'
     nullable: "NO"
     ordinal_position: 32
   bagwr:
@@ -6364,12 +6364,12 @@ items:
     ordinal_position: 34
   banedmgbody:
     dataType: int
-    description: '[Bane Damage Body Type](../../../../categories/npc/body-types)'
+    description: '[Bane Damage Body Type](../../../../server/npc/body-types)'
     nullable: "NO"
     ordinal_position: 36
   banedmgrace:
     dataType: int
-    description: '[Bane Damage Race](../../../../categories/npc/race-list)'
+    description: '[Bane Damage Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 37
   banedmgraceamt:
@@ -6384,7 +6384,7 @@ items:
     ordinal_position: 250
   bardeffecttype:
     dataType: smallint
-    description: '[Bard Effect Type](../../../../categories/items/bard-types)'
+    description: '[Bard Effect Type](../../../../server/items/bard-types)'
     nullable: "NO"
     ordinal_position: 251
   bardlevel:
@@ -6404,7 +6404,7 @@ items:
     ordinal_position: 259
   bardtype:
     dataType: int
-    description: '[Bard Type](../../../../categories/items/bard-types)'
+    description: '[Bard Type](../../../../server/items/bard-types)'
     nullable: "NO"
     ordinal_position: 38
   bardunk1:
@@ -6454,7 +6454,7 @@ items:
     ordinal_position: 40
   booktype:
     dataType: int
-    description: '[Book Language](../../../../categories/player/languages)'
+    description: '[Book Language](../../../../server/player/languages)'
     nullable: "NO"
     ordinal_position: 127
   casttime:
@@ -6484,7 +6484,7 @@ items:
     ordinal_position: 242
   classes:
     dataType: int
-    description: '[Classes](../../../../categories/player/class-list)'
+    description: '[Classes](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 45
   clickeffect:
@@ -6509,7 +6509,7 @@ items:
     ordinal_position: 221
   clicktype:
     dataType: int
-    description: '[Click Type](../../../../categories/items/click-types)'
+    description: '[Click Type](../../../../server/items/click-types)'
     nullable: "NO"
     ordinal_position: 59
   clickunk5:
@@ -6564,7 +6564,7 @@ items:
     ordinal_position: 53
   deity:
     dataType: int
-    description: '[Deity](../../../../categories/player/deity-list)'
+    description: '[Deity](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 54
   delay:
@@ -6594,7 +6594,7 @@ items:
     ordinal_position: 62
   elemdmgtype:
     dataType: int
-    description: '[Elemental Damage Type](../../../../categories/items/item-element-types)'
+    description: '[Elemental Damage Type](../../../../server/items/item-element-types)'
     nullable: "NO"
     ordinal_position: 61
   elitematerial:
@@ -6649,7 +6649,7 @@ items:
     ordinal_position: 49
   extradmgskill:
     dataType: int
-    description: '[Extra Damage Skill](../../../../categories/player/skills)'
+    description: '[Extra Damage Skill](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 48
   factionamt1:
@@ -6884,12 +6884,12 @@ items:
     ordinal_position: 81
   itemclass:
     dataType: int
-    description: '[Item Class](../../../../categories/items/item-class)'
+    description: '[Item Class](../../../../server/items/item-class)'
     nullable: "NO"
     ordinal_position: 82
   itemtype:
     dataType: int
-    description: '[Item Type](../../../../categories/items/item-types)'
+    description: '[Item Type](../../../../server/items/item-types)'
     nullable: "NO"
     ordinal_position: 83
   ldonprice:
@@ -6909,7 +6909,7 @@ items:
     ordinal_position: 86
   ldontheme:
     dataType: int
-    description: '[LDoN Theme](../../../../categories/zones/ldon-themes)'
+    description: '[LDoN Theme](../../../../server/zones/ldon-themes)'
     nullable: "NO"
     ordinal_position: 85
   light:
@@ -6929,7 +6929,7 @@ items:
     ordinal_position: 170
   loregroup:
     dataType: int
-    description: '[Lore Group](../../../../categories/items/item-lore-groups)'
+    description: '[Lore Group](../../../../server/items/item-lore-groups)'
     nullable: "NO"
     ordinal_position: 89
   magic:
@@ -6949,7 +6949,7 @@ items:
     ordinal_position: 92
   material:
     dataType: int
-    description: '[Material](../../../../categories/npc/textures)'
+    description: '[Material](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 94
   maxcharges:
@@ -6959,7 +6959,7 @@ items:
     ordinal_position: 96
   minstatus:
     dataType: smallint
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 2
   mr:
@@ -7099,7 +7099,7 @@ items:
     ordinal_position: 183
   races:
     dataType: int
-    description: '[Races](../../../../categories/npc/race-list)'
+    description: '[Races](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 103
   range:
@@ -7234,7 +7234,7 @@ items:
     ordinal_position: 173
   skillmodtype:
     dataType: int
-    description: '[Skill Modifier Type](../../../../categories/player/skills)'
+    description: '[Skill Modifier Type](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 111
   skillmodvalue:
@@ -7244,7 +7244,7 @@ items:
     ordinal_position: 112
   slots:
     dataType: int
-    description: '[Slots](../../../../categories/inventory/item-slots)'
+    description: '[Slots](../../../../server/inventory/item-slots)'
     nullable: "NO"
     ordinal_position: 113
   source:
@@ -7412,7 +7412,7 @@ launcher_zones:
     ordinal_position: 3
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 ldon_trap_entries:
@@ -7439,7 +7439,7 @@ ldon_trap_templates:
     ordinal_position: 5
   skill:
     dataType: smallint
-    description: '[Skill](../../../../categories/player/skills)'
+    description: '[Skill](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 4
   spell_id:
@@ -7449,7 +7449,7 @@ ldon_trap_templates:
     ordinal_position: 3
   type:
     dataType: tinyint
-    description: '[Trap Type](../../../../categories/zones/trap-types)'
+    description: '[Trap Type](../../../../server/zones/trap-types)'
     nullable: "NO"
     ordinal_position: 2
 level_exp_mods:
@@ -7476,7 +7476,7 @@ lfguild:
     ordinal_position: 7
   classes:
     dataType: int
-    description: '[Classes](../../../../categories/player/class-list)'
+    description: '[Classes](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 6
   comment:
@@ -7920,7 +7920,7 @@ mail:
     ordinal_position: 1
   status:
     dataType: tinyint
-    description: '[Status](../../../../categories/player/status-levels)'
+    description: '[Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 8
   subject:
@@ -7977,7 +7977,7 @@ merc_armorinfo:
     nullable: "NO"
   texture:
     dataType: tinyint
-    description: '[Texture](../../../../categories/npc/textures)'
+    description: '[Texture](../../../../server/npc/textures)'
     nullable: "NO"
 merc_buffs:
   CasterLevel:
@@ -8185,7 +8185,7 @@ merc_spell_list_entries:
     nullable: "NO"
   spell_type:
     dataType: int
-    description: '[Spell Type](../../../../categories/spells/spell-types)'
+    description: '[Spell Type](../../../../server/spells/spell-types)'
     nullable: "NO"
   stance_id:
     dataType: tinyint
@@ -8227,7 +8227,7 @@ merc_stance_entries:
     nullable: "NO"
   stance_id:
     dataType: tinyint
-    description: '[Stance Type Identifier](../../../../categories/bots/stance-types)'
+    description: '[Stance Type Identifier](../../../../server/bots/stance-types)'
     nullable: "NO"
 merc_stats:
   _INT:
@@ -8456,7 +8456,7 @@ merc_weaponinfo:
     nullable: "NO"
   prim_melee_type:
     dataType: tinyint
-    description: '[Primary Melee Type](../../../../categories/player/skills)'
+    description: '[Primary Melee Type](../../../../server/player/skills)'
     nullable: "NO"
   sec_melee_type:
     dataType: tinyint
@@ -8470,7 +8470,7 @@ merchantlist:
     ordinal_position: 6
   classes_required:
     dataType: int
-    description: '[Classes Required](../../../../categories/player/class-list)'
+    description: '[Classes Required](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 7
   content_flags:
@@ -8627,7 +8627,7 @@ mercs:
     nullable: "NO"
   StanceID:
     dataType: tinyint
-    description: '[Stance Type Identifier](../../../../categories/bots/stance-types)'
+    description: '[Stance Type Identifier](../../../../server/bots/stance-types)'
     nullable: "NO"
   SuspendedTime:
     dataType: int
@@ -8660,7 +8660,7 @@ npc_emotes:
     ordinal_position: 2
   event_:
     dataType: tinyint
-    description: '[Emote Event Type Identifier](../../../../categories/npc/emote-event-types)'
+    description: '[Emote Event Type Identifier](../../../../server/npc/emote-event-types)'
     nullable: "NO"
     ordinal_position: 3
   id:
@@ -8675,7 +8675,7 @@ npc_emotes:
     ordinal_position: 5
   type:
     dataType: tinyint
-    description: '[Emote Type Identifier](../../../../categories/npc/emote-types)'
+    description: '[Emote Type Identifier](../../../../server/npc/emote-types)'
     nullable: "NO"
     ordinal_position: 4
 npc_faction:
@@ -9026,7 +9026,7 @@ npc_spells_effects_entries:
     ordinal_position: 8
   spell_effect_id:
     dataType: smallint
-    description: '[Spell Effect Identifier](../../../../categories/spells/spell-effect-ids)'
+    description: '[Spell Effect Identifier](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 3
 npc_spells_entries:
@@ -9087,7 +9087,7 @@ npc_spells_entries:
     ordinal_position: 3
   type:
     dataType: int
-    description: '[Spell Type Bitmask](../../../../categories/spells/spell-types)'
+    description: '[Spell Type Bitmask](../../../../server/spells/spell-types)'
     nullable: "NO"
     ordinal_position: 4
 npc_types:
@@ -9228,7 +9228,7 @@ npc_types:
     ordinal_position: 43
   armtexture:
     dataType: tinyint
-    description: '[Arm Texture](../../../../categories/npc/textures)'
+    description: '[Arm Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 97
   assistradius:
@@ -9253,12 +9253,12 @@ npc_types:
     ordinal_position: 66
   bodytype:
     dataType: int
-    description: '[Body Type](../../../../categories/npc/body-types)'
+    description: '[Body Type](../../../../server/npc/body-types)'
     nullable: "NO"
     ordinal_position: 7
   bracertexture:
     dataType: tinyint
-    description: '[Bracer Texture](../../../../categories/npc/textures)'
+    description: '[Bracer Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 98
   charm_ac:
@@ -9298,7 +9298,7 @@ npc_types:
     ordinal_position: 111
   class:
     dataType: tinyint
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 6
   d_melee_texture1:
@@ -9348,7 +9348,7 @@ npc_types:
     ordinal_position: 32
   feettexture:
     dataType: tinyint
-    description: '[Feet Texture](../../../../categories/npc/textures)'
+    description: '[Feet Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 101
   findable:
@@ -9363,17 +9363,17 @@ npc_types:
     ordinal_position: 106
   flymode:
     dataType: tinyint
-    description: '[Fly Mode](../../../../categories/npc/fly-modes)'
+    description: '[Fly Mode](../../../../server/npc/fly-modes)'
     nullable: "NO"
     ordinal_position: 121
   gender:
     dataType: tinyint
-    description: '[Gender](../../../../categories/npc/genders)'
+    description: '[Gender](../../../../server/npc/genders)'
     nullable: "NO"
     ordinal_position: 10
   handtexture:
     dataType: tinyint
-    description: '[Hand Texture](../../../../categories/npc/textures)'
+    description: '[Hand Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 99
   healscale:
@@ -9383,7 +9383,7 @@ npc_types:
     ordinal_position: 94
   helmtexture:
     dataType: tinyint
-    description: '[Helmet Texture](../../../../categories/npc/textures)'
+    description: '[Helmet Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 12
   herosforgemodel:
@@ -9428,7 +9428,7 @@ npc_types:
     ordinal_position: 3
   legtexture:
     dataType: tinyint
-    description: '[Leg Texture](../../../../categories/npc/textures)'
+    description: '[Leg Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 100
   level:
@@ -9553,7 +9553,7 @@ npc_types:
     ordinal_position: 104
   prim_melee_type:
     dataType: tinyint
-    description: '[Primary Melee Type](../../../../categories/player/skills)'
+    description: '[Primary Melee Type](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 49
   private_corpse:
@@ -9568,7 +9568,7 @@ npc_types:
     ordinal_position: 62
   race:
     dataType: smallint
-    description: '[Race](../../../../categories/npc/race-list)'
+    description: '[Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 5
   raid_target:
@@ -9578,7 +9578,7 @@ npc_types:
     ordinal_position: 96
   ranged_type:
     dataType: tinyint
-    description: '[Ranged Type](../../../../categories/player/skills)'
+    description: '[Ranged Type](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 51
   rare_spawn:
@@ -9598,7 +9598,7 @@ npc_types:
     ordinal_position: 87
   sec_melee_type:
     dataType: tinyint
-    description: '[Secondary Melee Type](../../../../categories/player/skills)'
+    description: '[Secondary Melee Type](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 50
   see_hide:
@@ -9663,7 +9663,7 @@ npc_types:
     ordinal_position: 119
   texture:
     dataType: tinyint
-    description: '[Texture](../../../../categories/npc/textures)'
+    description: '[Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 11
   trackable:
@@ -9950,7 +9950,7 @@ object:
     ordinal_position: 25
   type:
     dataType: int
-    description: '[Type](../../../../categories/zones/object-types)'
+    description: '[Type](../../../../server/zones/object-types)'
     nullable: "NO"
     ordinal_position: 11
   unknown08:
@@ -10020,7 +10020,7 @@ object:
     ordinal_position: 5
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
   zpos:
@@ -10086,7 +10086,7 @@ object_contents:
     ordinal_position: 2
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 1
 perl_event_export_settings:
@@ -10133,7 +10133,7 @@ petitions:
     ordinal_position: 4
   charclass:
     dataType: int
-    description: '[Character Class](../../../../categories/player/class-list)'
+    description: '[Character Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 10
   charlevel:
@@ -10148,7 +10148,7 @@ petitions:
     ordinal_position: 3
   charrace:
     dataType: int
-    description: '[Character Race](../../../../categories/npc/race-list)'
+    description: '[Character Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 11
   checkouts:
@@ -10203,7 +10203,7 @@ petitions:
     ordinal_position: 9
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 8
 pets:
@@ -10375,7 +10375,7 @@ proximities:
     ordinal_position: 7
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 1
 qs_merchant_transaction_record:
@@ -10451,7 +10451,7 @@ qs_merchant_transaction_record:
     ordinal_position: 1
   zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 3
 qs_merchant_transaction_record_entries:
@@ -10482,7 +10482,7 @@ qs_merchant_transaction_record_entries:
     ordinal_position: 9
   char_slot:
     dataType: mediumint
-    description: '[Character Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Character Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 2
   charges:
@@ -10570,7 +10570,7 @@ qs_player_delete_record_entries:
     ordinal_position: 9
   char_slot:
     dataType: mediumint
-    description: '[Character Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Character Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 2
   charges:
@@ -10723,7 +10723,7 @@ qs_player_handin_record_entries:
     ordinal_position: 10
   char_slot:
     dataType: mediumint
-    description: '[Character Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Character Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 3
   charges:
@@ -10754,7 +10754,7 @@ qs_player_move_record:
     ordinal_position: 7
   from_slot:
     dataType: mediumint
-    description: '[From Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[From Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 4
   move_id:
@@ -10779,7 +10779,7 @@ qs_player_move_record:
     ordinal_position: 2
   to_slot:
     dataType: mediumint
-    description: '[To Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[To Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 5
 qs_player_move_record_entries:
@@ -10820,7 +10820,7 @@ qs_player_move_record_entries:
     ordinal_position: 1
   from_slot:
     dataType: mediumint
-    description: '[From Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[From Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 2
   item_id:
@@ -10830,7 +10830,7 @@ qs_player_move_record_entries:
     ordinal_position: 4
   to_slot:
     dataType: mediumint
-    description: '[To Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[To Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 3
 qs_player_npc_kill_record:
@@ -10856,7 +10856,7 @@ qs_player_npc_kill_record:
     ordinal_position: 3
   zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 4
 qs_player_npc_kill_record_entries:
@@ -10893,7 +10893,7 @@ qs_player_speech:
     ordinal_position: 4
   minstatus:
     dataType: smallint
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 5
   timerecorded:
@@ -11025,7 +11025,7 @@ qs_player_trade_record_entries:
     ordinal_position: 2
   from_slot:
     dataType: mediumint
-    description: '[From Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[From Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 3
   item_id:
@@ -11040,7 +11040,7 @@ qs_player_trade_record_entries:
     ordinal_position: 4
   to_slot:
     dataType: mediumint
-    description: '[To Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[To Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 5
 quest_globals:
@@ -11071,7 +11071,7 @@ quest_globals:
     ordinal_position: 5
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 3
 races:
@@ -11157,7 +11157,7 @@ raid_leaders:
 raid_members:
   _class:
     dataType: tinyint
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 4
   charid:
@@ -11508,7 +11508,7 @@ sharedbank:
     ordinal_position: 3
   slotid:
     dataType: mediumint
-    description: '[Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "YES"
     ordinal_position: 2
 skill_caps:
@@ -11519,7 +11519,7 @@ skill_caps:
     ordinal_position: 4
   class:
     dataType: tinyint
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 2
   class_:
@@ -11534,7 +11534,7 @@ skill_caps:
     ordinal_position: 3
   skillID:
     dataType: tinyint
-    description: '[Skill Identifier](../../../../categories/player/skills)'
+    description: '[Skill Identifier](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 1
 spawn_condition_values:
@@ -11555,7 +11555,7 @@ spawn_condition_values:
     ordinal_position: 2
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 3
 spawn_conditions:
@@ -11571,7 +11571,7 @@ spawn_conditions:
     ordinal_position: 5
   onchange:
     dataType: tinyint
-    description: '[On Change Type](../../../../categories/npc/spawns/on-change-types)'
+    description: '[On Change Type](../../../../server/npc/spawns/on-change-types)'
     nullable: "NO"
     ordinal_position: 4
   value:
@@ -11581,13 +11581,13 @@ spawn_conditions:
     ordinal_position: 3
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 1
 spawn_events:
   action:
     dataType: tinyint
-    description: '[Action Type](../../../../categories/npc/spawns/action-types)'
+    description: '[Action Type](../../../../server/npc/spawns/action-types)'
     nullable: "NO"
     ordinal_position: 12
   argument:
@@ -11652,7 +11652,7 @@ spawn_events:
     ordinal_position: 14
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 2
 spawn2:
@@ -11663,7 +11663,7 @@ spawn2:
     ordinal_position: 13
   animation:
     dataType: tinyint
-    description: '[Animation](../../../../categories/npc/npc-animation-types)'
+    description: '[Animation](../../../../server/npc/npc-animation-types)'
     nullable: "NO"
     ordinal_position: 16
   cond_value:
@@ -11753,7 +11753,7 @@ spawn2:
     ordinal_position: 7
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 3
 spawnentry:
@@ -11785,7 +11785,7 @@ spawngroup:
     ordinal_position: 9
   despawn:
     dataType: tinyint
-    description: '[Despawn Type](../../../../categories/npc/spawns/npc-despawn-types)'
+    description: '[Despawn Type](../../../../server/npc/spawns/npc-despawn-types)'
     nullable: "NO"
     ordinal_position: 11
   despawn_timer:
@@ -11893,7 +11893,7 @@ spells_new:
     ordinal_position: 85
   CastRestriction:
     dataType: int
-    description: '[Cast Restrictions](../../../../categories/spells/spell-target-restrictions)'
+    description: '[Cast Restrictions](../../../../server/spells/spell-target-restrictions)'
     nullable: "NO"
     ordinal_position: 212
   CastingAnim:
@@ -11928,7 +11928,7 @@ spells_new:
     ordinal_position: 175
   EnvironmentType:
     dataType: int
-    description: '[Environment Type](../../../../categories/spells/environment-types)'
+    description: '[Environment Type](../../../../server/spells/environment-types)'
     nullable: "NO"
     ordinal_position: 103
   HateAdded:
@@ -12008,7 +12008,7 @@ spells_new:
     ordinal_position: 122
   TimeOfDay:
     dataType: int
-    description: '[Time of Day Type](../../../../categories/spells/time-of-day-types)'
+    description: '[Time of Day Type](../../../../server/spells/time-of-day-types)'
     nullable: "NO"
     ordinal_position: 104
   TravelType:
@@ -12048,7 +12048,7 @@ spells_new:
     ordinal_position: 18
   buffdurationformula:
     dataType: int
-    description: '[Buff Duration Formula](../../../../categories/spells/buff-duration-formulas)'
+    description: '[Buff Duration Formula](../../../../server/spells/buff-duration-formulas)'
     nullable: "NO"
     ordinal_position: 17
   can_mgb:
@@ -12198,87 +12198,87 @@ spells_new:
     ordinal_position: 62
   deities0:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 126
   deities1:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 127
   deities2:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 128
   deities3:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 129
   deities4:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 130
   deities5:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 131
   deities6:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 132
   deities7:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 133
   deities8:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 134
   deities9:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 135
   deities10:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 136
   deities11:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 137
   deities12:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 138
   deities13:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 139
   deities14:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 140
   deities15:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 141
   deities16:
     dataType: int
-    description: '[Deity List](../../../../categories/player/deity-list)'
+    description: '[Deity List](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 142
   deleteable:
@@ -12433,62 +12433,62 @@ spells_new:
     ordinal_position: 159
   effectid1:
     dataType: int
-    description: '[Effect Identifier 1](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 1](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 87
   effectid2:
     dataType: int
-    description: '[Effect Identifier 2](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 2](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 88
   effectid3:
     dataType: int
-    description: '[Effect Identifier 3](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 3](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 89
   effectid4:
     dataType: int
-    description: '[Effect Identifier 4](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 4](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 90
   effectid5:
     dataType: int
-    description: '[Effect Identifier 5](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 5](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 91
   effectid6:
     dataType: int
-    description: '[Effect Identifier 6](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 6](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 92
   effectid7:
     dataType: int
-    description: '[Effect Identifier 7](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 7](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 93
   effectid8:
     dataType: int
-    description: '[Effect Identifier 8](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 8](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 94
   effectid9:
     dataType: int
-    description: '[Effect Identifier 9](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 9](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 95
   effectid10:
     dataType: int
-    description: '[Effect Identifier 10](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 10](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 96
   effectid11:
     dataType: int
-    description: '[Effect Identifier 11](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 11](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 97
   effectid12:
     dataType: int
-    description: '[Effect Identifier 12](../../../../categories/spells/spell-effect-ids)'
+    description: '[Effect Identifier 12](../../../../server/spells/spell-effect-ids)'
     nullable: "NO"
     ordinal_position: 98
   field142:
@@ -12661,62 +12661,62 @@ spells_new:
     ordinal_position: 237
   formula1:
     dataType: int
-    description: '[Formula 1](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 1](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 71
   formula2:
     dataType: int
-    description: '[Formula 2](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 2](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 72
   formula3:
     dataType: int
-    description: '[Formula 3](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 3](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 73
   formula4:
     dataType: int
-    description: '[Formula 4](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 4](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 74
   formula5:
     dataType: int
-    description: '[Formula 5](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 5](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 75
   formula6:
     dataType: int
-    description: '[Formula 6](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 6](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 76
   formula7:
     dataType: int
-    description: '[Formula 7](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 7](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 77
   formula8:
     dataType: int
-    description: '[Formula 8](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 8](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 78
   formula9:
     dataType: int
-    description: '[Formula 9](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 9](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 79
   formula10:
     dataType: int
-    description: '[Formula 10](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 10](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 80
   formula11:
     dataType: int
-    description: '[Formula 11](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 11](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 81
   formula12:
     dataType: int
-    description: '[Formula 12](../../../../categories/spells/base-value-formulas)'
+    description: '[Formula 12](../../../../server/spells/base-value-formulas)'
     nullable: "NO"
     ordinal_position: 82
   goodEffect:
@@ -12876,7 +12876,7 @@ spells_new:
     ordinal_position: 198
   npc_category:
     dataType: int
-    description: '[NPC Spell Category Identifier](../../../../categories/spells/npc-spell-categories)'
+    description: '[NPC Spell Category Identifier](../../../../server/spells/npc-spell-categories)'
     nullable: "NO"
     ordinal_position: 188
   npc_no_los:
@@ -12896,7 +12896,7 @@ spells_new:
     ordinal_position: 177
   numhitstype:
     dataType: int
-    description: '[Number of Hits Type](../../../../categories/spells/numhit-types)'
+    description: '[Number of Hits Type](../../../../server/spells/numhit-types)'
     nullable: "NO"
     ordinal_position: 176
   other_casts:
@@ -12981,7 +12981,7 @@ spells_new:
     ordinal_position: 162
   resisttype:
     dataType: int
-    description: '[Resist Type](../../../../categories/spells/resist-types)'
+    description: '[Resist Type](../../../../server/spells/resist-types)'
     nullable: "NO"
     ordinal_position: 86
   short_buff_box:
@@ -12991,7 +12991,7 @@ spells_new:
     ordinal_position: 155
   skill:
     dataType: int
-    description: '[Skill Identifier](../../../../categories/player/skills)'
+    description: '[Skill Identifier](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 101
   sneaking:
@@ -13006,7 +13006,7 @@ spells_new:
     ordinal_position: 203
   spell_category:
     dataType: int
-    description: '[Spell Category](../../../../categories/spells/spell-groups)'
+    description: '[Spell Category](../../../../server/spells/spell-groups)'
     nullable: "NO"
     ordinal_position: 181
   spell_fades:
@@ -13021,7 +13021,7 @@ spells_new:
     ordinal_position: 146
   spellgroup:
     dataType: int
-    description: '[Spell Group](../../../../categories/spells/spell-groups)'
+    description: '[Spell Group](../../../../server/spells/spell-groups)'
     nullable: "YES"
     ordinal_position: 208
   suspendable:
@@ -13031,7 +13031,7 @@ spells_new:
     ordinal_position: 201
   targettype:
     dataType: int
-    description: '[Target Type](../../../../categories/spells/target-types)'
+    description: '[Target Type](../../../../server/spells/target-types)'
     nullable: "NO"
     ordinal_position: 99
   teleport_zone:
@@ -13071,7 +13071,7 @@ spells_new:
     ordinal_position: 5
   zonetype:
     dataType: int
-    description: '[Zone Type](../../../../categories/zones/zone-types)'
+    description: '[Zone Type](../../../../server/zones/zone-types)'
     nullable: "NO"
     ordinal_position: 102
 start_zones:
@@ -13127,17 +13127,17 @@ start_zones:
     ordinal_position: 7
   player_class:
     dataType: int
-    description: '[Player Class](../../../../categories/player/class-list)'
+    description: '[Player Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 8
   player_deity:
     dataType: int
-    description: '[Player Deity](../../../../categories/player/deity-list)'
+    description: '[Player Deity](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 9
   player_race:
     dataType: int
-    description: '[Player Race](../../../../categories/npc/race-list)'
+    description: '[Player Race](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 10
   select_rank:
@@ -13147,7 +13147,7 @@ start_zones:
     ordinal_position: 15
   start_zone:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 11
   x:
@@ -13167,13 +13167,13 @@ start_zones:
     ordinal_position: 3
   zone_id:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 5
 starting_items:
   class:
     dataType: int
-    description: '[Class](../../../../categories/player/class-list): 0 = All'
+    description: '[Class](../../../../server/player/class-list): 0 = All'
     nullable: "NO"
     ordinal_position: 3
   content_flags:
@@ -13188,7 +13188,7 @@ starting_items:
     ordinal_position: 13
   deityid:
     dataType: int
-    description: '[Deity](../../../../categories/player/deity-list): 0 = Alll'
+    description: '[Deity](../../../../server/player/deity-list): 0 = Alll'
     nullable: "NO"
     ordinal_position: 4
   gm:
@@ -13223,17 +13223,17 @@ starting_items:
     ordinal_position: 10
   race:
     dataType: int
-    description: '[Race](../../../../categories/npc/race-list): 0 = All'
+    description: '[Race](../../../../server/npc/race-list): 0 = All'
     nullable: "NO"
     ordinal_position: 2
   slot:
     dataType: mediumint
-    description: '[Slot](../../../../categories/inventory/inventory-slots)'
+    description: '[Slot](../../../../server/inventory/inventory-slots)'
     nullable: "NO"
     ordinal_position: 9
   zoneid:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 5
 task_activities:
@@ -13244,7 +13244,7 @@ task_activities:
     ordinal_position: 2
   activitytype:
     dataType: tinyint
-    description: '[Activity Type](../../../../categories/task-system-guide/task-activity-types)'
+    description: '[Activity Type](../../../../server/task-system-guide/task-activity-types)'
     nullable: "NO"
     ordinal_position: 4
   delivertonpc:
@@ -13284,7 +13284,7 @@ task_activities:
     ordinal_position: 15
   skill_list:
     dataType: varchar
-    description: '[Skill Identifier List](../../../../categories/player/skills)'
+    description: '[Skill Identifier List](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 7
   spell_list:
@@ -13309,7 +13309,7 @@ task_activities:
     ordinal_position: 1
   zones:
     dataType: varchar
-    description: '[Zones List](../../../../categories/zones/zone-list)'
+    description: '[Zones List](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 14
 tasks:
@@ -13335,7 +13335,7 @@ tasks:
     ordinal_position: 3
   duration_code:
     dataType: tinyint
-    description: '[Duration Code](../../../../categories/task-system-guide/task-duration-codes)'
+    description: '[Duration Code](../../../../server/task-system-guide/task-duration-codes)'
     nullable: "NO"
     ordinal_position: 4
   faction_reward:
@@ -13420,7 +13420,7 @@ tasks:
     ordinal_position: 5
   type:
     dataType: tinyint
-    description: '[Task Type](../../../../categories/task-system-guide/task-types)'
+    description: '[Task Type](../../../../server/task-system-guide/task-types)'
     nullable: "NO"
     ordinal_position: 2
   xpreward:
@@ -13473,12 +13473,12 @@ titles:
     ordinal_position: 9
   class:
     dataType: tinyint
-    description: '[Class](../../../../categories/player/class-list)'
+    description: '[Class](../../../../server/player/class-list)'
     nullable: "NO"
     ordinal_position: 7
   gender:
     dataType: tinyint
-    description: '[Gender](../../../../categories/npc/genders)'
+    description: '[Gender](../../../../server/npc/genders)'
     nullable: "NO"
     ordinal_position: 8
   id:
@@ -13518,12 +13518,12 @@ titles:
     ordinal_position: 12
   skill_id:
     dataType: tinyint
-    description: '[Skill Identifier](../../../../categories/player/skills)'
+    description: '[Skill Identifier](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 2
   status:
     dataType: int
-    description: '[Required Status](../../../../categories/player/status-levels)'
+    description: '[Required Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 10
   suffix:
@@ -13626,7 +13626,7 @@ trader:
     ordinal_position: 3
   slot_id:
     dataType: tinyint
-    description: '[Slot Identifier](../../../../categories/inventory/inventory-slots)'
+    description: '[Slot Identifier](../../../../server/inventory/inventory-slots)'
     nullable: "NO"
     ordinal_position: 6
 trader_audit:
@@ -13733,7 +13733,7 @@ tradeskill_recipe:
     ordinal_position: 4
   tradeskill:
     dataType: smallint
-    description: '[Tradeskill](../../../../categories/player/skills)'
+    description: '[Tradeskill](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 3
   trivial:
@@ -13805,7 +13805,7 @@ traps:
     ordinal_position: 20
   effect:
     dataType: int
-    description: '[Trap Type](../../../../categories/zones/trap-types)'
+    description: '[Trap Type](../../../../server/zones/trap-types)'
     nullable: "NO"
     ordinal_position: 10
   effectvalue:
@@ -13870,7 +13870,7 @@ traps:
     ordinal_position: 17
   skill:
     dataType: int
-    description: '[Skill Required](../../../../categories/player/skills)'
+    description: '[Skill Required](../../../../server/player/skills)'
     nullable: "NO"
     ordinal_position: 14
   triggered_number:
@@ -13905,7 +13905,7 @@ traps:
     ordinal_position: 6
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 tribute_levels:
@@ -14035,7 +14035,7 @@ zone:
     ordinal_position: 91
   expansion:
     dataType: tinyint
-    description: '[Expansion](../../../../categories/operation/expansion-list)'
+    description: '[Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
     ordinal_position: 62
   fast_regen_endurance:
@@ -14270,7 +14270,7 @@ zone:
     ordinal_position: 11
   min_status:
     dataType: tinyint
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 12
   minclip:
@@ -14465,7 +14465,7 @@ zone:
     ordinal_position: 29
   zoneidnumber:
     dataType: int
-    description: '[Unique Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Unique Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 13
   ztype:
@@ -14481,7 +14481,7 @@ zone_flags:
     ordinal_position: 1
   zoneID:
     dataType: int
-    description: '[Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 2
 zone_points:
@@ -14492,7 +14492,7 @@ zone_points:
     ordinal_position: 16
   client_version_mask:
     dataType: int
-    description: '[Client Version Mask](../../../../categories/player/client-version-bitmasks)'
+    description: '[Client Version Mask](../../../../server/player/client-version-bitmasks)'
     nullable: "NO"
     ordinal_position: 17
   content_flags:
@@ -14567,7 +14567,7 @@ zone_points:
     ordinal_position: 11
   target_zone_id:
     dataType: int
-    description: '[Target Zone Identifier](../../../../categories/zones/zone-list)'
+    description: '[Target Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 14
   version:
@@ -14597,12 +14597,12 @@ zone_points:
     ordinal_position: 7
   zone:
     dataType: varchar
-    description: '[Zone Short Name](../../../../categories/zones/zone-list)'
+    description: '[Zone Short Name](../../../../server/zones/zone-list)'
     nullable: "YES"
     ordinal_position: 2
   zoneinst:
     dataType: smallint
-    description: '[Instance Identifier](../../../categories/instances/instance_list)'
+    description: '[Instance Identifier](../../../server/instances/instance_list)'
     nullable: "YES"
     ordinal_position: 13
 zone_server:
