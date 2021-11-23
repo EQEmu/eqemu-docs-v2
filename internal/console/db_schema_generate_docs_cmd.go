@@ -290,7 +290,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	// if we have a diagram, we have relationships
 	if len(imageLink) > 0 {
-		markdown += fmt.Sprintf("\n## Relationship Diagram\n%v\n", imageLink)
+		markdown += fmt.Sprintf("\n## Relationship Diagram\n\n%v\n", imageLink)
 		markdown += fmt.Sprintf("\n## Relationships\n")
 		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
