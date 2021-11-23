@@ -1,7 +1,7 @@
 aa_ability:
   category:
     dataType: int
-    description: '[AA Category](../../../../categories/aas/aa-categories)'
+    description: '[AA Category](../../../../server/aas/aa-categories)'
     nullable: "NO"
     ordinal_position: 3
   charges:
@@ -11,12 +11,12 @@ aa_ability:
     ordinal_position: 10
   classes:
     dataType: int
-    description: '[Classes](../../../../categories/player/class-list) Bitmasks'
+    description: '[Classes](../../../../server/player/class-list) Bitmasks'
     nullable: "NO"
     ordinal_position: 4
   deities:
     dataType: int
-    description: '[Deities](../../../../categories/player/deity-list)'
+    description: '[Deities](../../../../server/player/deity-list)'
     nullable: "NO"
     ordinal_position: 7
   drakkin_heritage:
@@ -51,7 +51,7 @@ aa_ability:
     ordinal_position: 2
   races:
     dataType: int
-    description: '[Races](../../../../categories/npc/race-list)'
+    description: '[Races](../../../../server/npc/race-list)'
     nullable: "NO"
     ordinal_position: 5
   reset_on_death:
@@ -61,12 +61,12 @@ aa_ability:
     ordinal_position: 14
   status:
     dataType: int
-    description: '[Minimum Status](../../../../categories/player/status-levels)'
+    description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 8
   type:
     dataType: int
-    description: '[AA Type](../../../../categories/aas/aa-types)'
+    description: '[AA Type](../../../../server/aas/aa-types)'
     nullable: "NO"
     ordinal_position: 9
 aa_actions:
