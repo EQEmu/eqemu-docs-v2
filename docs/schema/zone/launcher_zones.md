@@ -1,5 +1,6 @@
 # launcher_zones
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | launcher | varchar | Launcher |

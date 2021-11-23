@@ -1,5 +1,6 @@
 # grid_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | gridid | int | [Grid Identifier](grid.md) |

@@ -1,5 +1,6 @@
 # dynamic_zone_members
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

@@ -1,5 +1,6 @@
 # character_corpses
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Corpse Identifier |

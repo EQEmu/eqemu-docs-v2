@@ -1,5 +1,6 @@
 # server_scheduled_events
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

@@ -1,5 +1,6 @@
 # ip_exemptions
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | exemption_id | int | Exemption Identifier |

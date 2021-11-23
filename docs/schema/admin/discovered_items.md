@@ -1,5 +1,6 @@
 # discovered_items
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | item_id | int | [Item Identifier](../../schema/items/items.md) |

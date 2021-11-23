@@ -1,5 +1,15 @@
 # npc_spells
 
+## Relationship Diagram
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbnBjX3NwZWxscyB7XG4gICAgICAgIGludHVuc2lnbmVkIGlkXG4gICAgfVxuICAgIG5wY19zcGVsbHNfZW50cmllcyB7XG4gICAgICAgIGludCBucGNfc3BlbGxzX2lkXG4gICAgfVxuICAgIG5wY19zcGVsbHMgfHwtLW97IG5wY19zcGVsbHNfZW50cmllcyA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbnBjX3NwZWxscyB7XG4gICAgICAgIGludHVuc2lnbmVkIGlkXG4gICAgfVxuICAgIG5wY19zcGVsbHNfZW50cmllcyB7XG4gICAgICAgIGludCBucGNfc3BlbGxzX2lkXG4gICAgfVxuICAgIG5wY19zcGVsbHMgfHwtLW97IG5wY19zcGVsbHNfZW50cmllcyA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| Has-Many | id | npc_spells_entries | npc_spells_id |
+
+
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique NPC Spell Set Identifier |

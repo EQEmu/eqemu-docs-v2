@@ -1,5 +1,6 @@
 # tradeskill_recipe
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Tradeskill Recipe Identifier |

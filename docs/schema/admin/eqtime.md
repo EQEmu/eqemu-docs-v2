@@ -1,5 +1,6 @@
 # eqtime
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | minute | tinyint | Minute |

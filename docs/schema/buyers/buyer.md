@@ -1,5 +1,6 @@
 # buyer
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | charid | int | [Character Identifier](../../schema/characters/character_data.md) |

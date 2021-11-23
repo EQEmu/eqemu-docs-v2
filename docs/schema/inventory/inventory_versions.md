@@ -1,5 +1,6 @@
 # inventory_versions
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | version | int | Inventory Version Identifier |

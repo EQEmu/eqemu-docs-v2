@@ -1,5 +1,6 @@
 # guild_relations
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | guild1 | mediumint | [Unique Guild Identifier 1](guilds.md) |

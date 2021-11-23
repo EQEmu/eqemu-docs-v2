@@ -1,5 +1,6 @@
 # completed_shared_tasks
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | bigint |  |

@@ -1,5 +1,6 @@
 # character_instance_safereturns
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

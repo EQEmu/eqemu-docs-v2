@@ -1,5 +1,6 @@
 # raid_leaders
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | gid | int | [Group Identifier](../../schema/groups/group_id.md) |

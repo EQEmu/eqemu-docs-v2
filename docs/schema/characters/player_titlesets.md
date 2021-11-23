@@ -1,5 +1,6 @@
 # player_titlesets
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Title Set Identifier |

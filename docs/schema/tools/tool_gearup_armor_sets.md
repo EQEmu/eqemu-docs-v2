@@ -1,5 +1,6 @@
 # tool_gearup_armor_sets
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | class | tinyint |  |

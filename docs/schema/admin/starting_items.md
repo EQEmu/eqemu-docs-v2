@@ -1,5 +1,6 @@
 # starting_items
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Starting Items Entry Identifier |

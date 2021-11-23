@@ -1,5 +1,6 @@
 # group_leaders
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | gid | int | [Group Identifier](group_id.md) |

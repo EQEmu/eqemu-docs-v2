@@ -1,5 +1,6 @@
 # aa_ranks
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [AA Identifier](aa_ability.md) |

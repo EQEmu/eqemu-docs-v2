@@ -1,5 +1,6 @@
 # npc_types_tint
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique NPC Type Tint Identifier |

@@ -1,5 +1,6 @@
 # mail
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | msgid | int | Unique Message Identifier |

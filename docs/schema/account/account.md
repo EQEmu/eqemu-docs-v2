@@ -1,5 +1,19 @@
 # account
 
+## Relationship Diagram
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYWNjb3VudCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBhY2NvdW50X2ZsYWdzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcF9hY2NpZFxuICAgIH1cbiAgICBhY2NvdW50X3Jld2FyZHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2NvdW50X2lkXG4gICAgfVxuICAgIHNoYXJlZGJhbmsge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2N0aWRcbiAgICB9XG4gICAgYnVnX3JlcG9ydHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2NvdW50X2lkXG4gICAgfVxuICAgIGFjY291bnRfaXAge1xuICAgICAgICBpbnQgYWNjaWRcbiAgICB9XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9mbGFncyA6IEhhcy1NYW55XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9yZXdhcmRzIDogSGFzLU1hbnlcbiAgICBhY2NvdW50IHx8LS1veyBzaGFyZWRiYW5rIDogSGFzLU1hbnlcbiAgICBhY2NvdW50IHx8LS1veyBidWdfcmVwb3J0cyA6IEhhcy1NYW55XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9pcCA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYWNjb3VudCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBhY2NvdW50X2ZsYWdzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcF9hY2NpZFxuICAgIH1cbiAgICBhY2NvdW50X3Jld2FyZHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2NvdW50X2lkXG4gICAgfVxuICAgIHNoYXJlZGJhbmsge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2N0aWRcbiAgICB9XG4gICAgYnVnX3JlcG9ydHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBhY2NvdW50X2lkXG4gICAgfVxuICAgIGFjY291bnRfaXAge1xuICAgICAgICBpbnQgYWNjaWRcbiAgICB9XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9mbGFncyA6IEhhcy1NYW55XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9yZXdhcmRzIDogSGFzLU1hbnlcbiAgICBhY2NvdW50IHx8LS1veyBzaGFyZWRiYW5rIDogSGFzLU1hbnlcbiAgICBhY2NvdW50IHx8LS1veyBidWdfcmVwb3J0cyA6IEhhcy1NYW55XG4gICAgYWNjb3VudCB8fC0tb3sgYWNjb3VudF9pcCA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| Has-Many | id | account_flags | p_accid |
+| Has-Many | id | account_rewards | account_id |
+| Has-Many | id | sharedbank | acctid |
+| Has-Many | id | bug_reports | account_id |
+| Has-Many | id | account_ip | accid |
+
+
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Account Identifier |

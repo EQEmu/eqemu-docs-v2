@@ -1,5 +1,6 @@
 # character_auras
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Unique Character Identifier](character_data.md) |

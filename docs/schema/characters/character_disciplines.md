@@ -1,5 +1,6 @@
 # character_disciplines
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Character Identifier](character_data.md) |

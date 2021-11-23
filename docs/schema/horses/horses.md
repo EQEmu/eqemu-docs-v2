@@ -1,5 +1,6 @@
 # horses
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | filename | varchar | [NPC Type Name](../../schema/npcs/npc_types.md) |

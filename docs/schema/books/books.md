@@ -1,5 +1,6 @@
 # books
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | name | varchar | Unique Book Identifier |

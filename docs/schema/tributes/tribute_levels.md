@@ -1,5 +1,6 @@
 # tribute_levels
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | tribute_id | int | [Unique Tribute Identifier](tributes.md) |

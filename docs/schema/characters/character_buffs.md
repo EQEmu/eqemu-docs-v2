@@ -1,5 +1,6 @@
 # character_buffs
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | character_id | int | [Character Identifier](../../schema/characters/character_data.md) |

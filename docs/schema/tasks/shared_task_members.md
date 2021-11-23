@@ -1,5 +1,6 @@
 # shared_task_members
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | shared_task_id | bigint |  |

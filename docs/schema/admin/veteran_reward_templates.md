@@ -1,5 +1,6 @@
 # veteran_reward_templates
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | claim_id | int | Unique Claim Identifier |

@@ -1,5 +1,6 @@
 # guild_bank
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | guildid | int | [Guild Identifier](guilds.md) |

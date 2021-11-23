@@ -1,5 +1,6 @@
 # account_rewards
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | account_id | int | [Account Identifier](account.md) |

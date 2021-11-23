@@ -1,5 +1,6 @@
 # bugs
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Identifier |

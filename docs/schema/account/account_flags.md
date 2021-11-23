@@ -1,5 +1,6 @@
 # account_flags
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | p_accid | int | [Account Identifier](account.md) |

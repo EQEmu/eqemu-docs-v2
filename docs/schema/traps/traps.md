@@ -1,5 +1,6 @@
 # traps
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Trap Identifier |

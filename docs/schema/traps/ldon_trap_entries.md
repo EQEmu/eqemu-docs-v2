@@ -1,5 +1,6 @@
 # ldon_trap_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique LDoN Trap Entry Identifier |

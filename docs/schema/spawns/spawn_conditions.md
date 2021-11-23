@@ -1,5 +1,6 @@
 # spawn_conditions
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |

@@ -1,5 +1,6 @@
 # spell_globals
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | spellid | int | [Unique Spell Identifier](spells_new.md) |

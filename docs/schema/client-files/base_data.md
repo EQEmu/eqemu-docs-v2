@@ -1,5 +1,6 @@
 # base_data
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | level | int | Level |

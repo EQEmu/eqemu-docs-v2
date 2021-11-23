@@ -1,5 +1,6 @@
 # rule_values
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | ruleset_id | tinyint | [Rule Set Identifier](rule_sets.md) |

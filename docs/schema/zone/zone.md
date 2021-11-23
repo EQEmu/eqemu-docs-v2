@@ -1,5 +1,6 @@
 # zone
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | short_name | varchar | Short Name |

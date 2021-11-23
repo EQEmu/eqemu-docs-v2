@@ -1,5 +1,6 @@
 # spell_buckets
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | spellid | bigint | [Unique Spell Identifier](spells_new.md) |

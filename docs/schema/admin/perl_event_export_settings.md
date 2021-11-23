@@ -1,5 +1,6 @@
 # perl_event_export_settings
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | event_id | int | [Unique Perl Event Identifier](https://eqemu.gitbook.io/quest-api/events) |

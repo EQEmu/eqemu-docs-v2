@@ -1,5 +1,6 @@
 # inventory_snapshots
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | time_index | int | Inventory Snapshot Time Identifier |

@@ -1,5 +1,17 @@
 # guilds
 
+## Relationship Diagram
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3VpbGRzIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIGd1aWxkX2Jhbmsge1xuICAgICAgICBpbnR1bnNpZ25lZCBndWlsZGlkXG4gICAgfVxuICAgIGd1aWxkX3JhbmtzIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgZ3VpbGRfaWRcbiAgICB9XG4gICAgZ3VpbGRfbWVtYmVycyB7XG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGd1aWxkX2lkXG4gICAgICAgIGludCBjaGFyX2lkXG4gICAgfVxuICAgIGd1aWxkcyB8fC0tb3sgZ3VpbGRfYmFuayA6IEhhcy1NYW55XG4gICAgZ3VpbGRzIHx8LS1veyBndWlsZF9yYW5rcyA6IEhhcy1NYW55XG4gICAgZ3VpbGRzIHx8LS1veyBndWlsZF9tZW1iZXJzIDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3VpbGRzIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIGd1aWxkX2Jhbmsge1xuICAgICAgICBpbnR1bnNpZ25lZCBndWlsZGlkXG4gICAgfVxuICAgIGd1aWxkX3JhbmtzIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgZ3VpbGRfaWRcbiAgICB9XG4gICAgZ3VpbGRfbWVtYmVycyB7XG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGd1aWxkX2lkXG4gICAgICAgIGludCBjaGFyX2lkXG4gICAgfVxuICAgIGd1aWxkcyB8fC0tb3sgZ3VpbGRfYmFuayA6IEhhcy1NYW55XG4gICAgZ3VpbGRzIHx8LS1veyBndWlsZF9yYW5rcyA6IEhhcy1NYW55XG4gICAgZ3VpbGRzIHx8LS1veyBndWlsZF9tZW1iZXJzIDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+
+## Relationships
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| Has-Many | id | guild_bank | guildid |
+| Has-Many | id | guild_ranks | guild_id |
+| Has-Many | id | guild_members | guild_id |
+
+
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Guild Identifier |

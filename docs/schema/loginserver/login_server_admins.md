@@ -1,5 +1,6 @@
 # login_server_admins
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Account Identifier |

@@ -1,5 +1,6 @@
 # damageshieldtypes
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | spellid | int | [Spell Identifier](spells_new.md) |

@@ -1,5 +1,6 @@
 # npc_faction_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | npc_faction_id | int | [NPC Faction Identifier](npc_faction.md) |

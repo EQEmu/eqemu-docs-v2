@@ -1,5 +1,6 @@
 # trader_audit
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | time | datetime | Time |

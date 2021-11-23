@@ -1,5 +1,6 @@
 # forage
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Forage Identifier |

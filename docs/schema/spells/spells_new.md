@@ -1,5 +1,19 @@
 # spells_new
 
+## Relationship Diagram
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3BlbGxzX25ldyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBhdXJhcyB7XG4gICAgICAgIGludCBzcGVsbF9pZFxuICAgIH1cbiAgICBkYW1hZ2VzaGllbGR0eXBlcyB7XG4gICAgICAgIGludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxfYnVja2V0cyB7XG4gICAgICAgIGJpZ2ludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxfZ2xvYmFscyB7XG4gICAgICAgIGludCBzcGVsbGlkXG4gICAgfVxuICAgIGJsb2NrZWRfc3BlbGxzIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgc3BlbGxpZFxuICAgIH1cbiAgICBzcGVsbHNfbmV3IHx8LS1veyBhdXJhcyA6IE9uZS10by1PbmVcbiAgICBzcGVsbHNfbmV3IHx8LS1veyBkYW1hZ2VzaGllbGR0eXBlcyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgc3BlbGxfYnVja2V0cyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgc3BlbGxfZ2xvYmFscyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgYmxvY2tlZF9zcGVsbHMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3BlbGxzX25ldyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBhdXJhcyB7XG4gICAgICAgIGludCBzcGVsbF9pZFxuICAgIH1cbiAgICBkYW1hZ2VzaGllbGR0eXBlcyB7XG4gICAgICAgIGludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxfYnVja2V0cyB7XG4gICAgICAgIGJpZ2ludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxfZ2xvYmFscyB7XG4gICAgICAgIGludCBzcGVsbGlkXG4gICAgfVxuICAgIGJsb2NrZWRfc3BlbGxzIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgc3BlbGxpZFxuICAgIH1cbiAgICBzcGVsbHNfbmV3IHx8LS1veyBhdXJhcyA6IE9uZS10by1PbmVcbiAgICBzcGVsbHNfbmV3IHx8LS1veyBkYW1hZ2VzaGllbGR0eXBlcyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgc3BlbGxfYnVja2V0cyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgc3BlbGxfZ2xvYmFscyA6IEhhcy1NYW55XG4gICAgc3BlbGxzX25ldyB8fC0tb3sgYmxvY2tlZF9zcGVsbHMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+
+## Relationships
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | id | auras | spell_id |
+| Has-Many | id | damageshieldtypes | spellid |
+| Has-Many | id | spell_buckets | spellid |
+| Has-Many | id | spell_globals | spellid |
+| Has-Many | id | blocked_spells | spellid |
+
+
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spell Identifier |

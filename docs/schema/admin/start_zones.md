@@ -1,5 +1,6 @@
 # start_zones
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | x | float | X Coordinate |

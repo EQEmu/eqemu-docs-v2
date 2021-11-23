@@ -2,6 +2,8 @@ package console
 
 import (
 	"bytes"
+	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"github.com/EQEmu/eqemu-docs-v2/config"
 	"github.com/EQEmu/eqemu-docs-v2/internal/database"
@@ -10,12 +12,15 @@ import (
 	"log"
 	"os"
 	"path"
+	"regexp"
 	"strconv"
 	"strings"
 )
 
 type DbGenerateDocsCommand struct {
 	command *cobra.Command
+	tables  []database.TableRelationships
+	schema  map[string][]database.DbSchemaRowResult
 }
 
 func (c *DbGenerateDocsCommand) Command() *cobra.Command {
@@ -37,6 +42,11 @@ func NewDbGenerateDocsCommand() *DbGenerateDocsCommand {
 }
 
 func (c *DbGenerateDocsCommand) Handle(_ *cobra.Command, _ []string) {
+	c.tables = database.NewRelationshipService().GetTables()
+	// schema
+	db := database.NewInstance()
+	c.schema, _ = db.GetSchema()
+
 	c.WriteDbSchema()
 	c.WriteNav()
 	c.WriteDbDocs()
@@ -90,17 +100,13 @@ func (c *DbGenerateDocsCommand) WriteNav() {
 func (c *DbGenerateDocsCommand) WriteDbSchema() {
 	fmt.Println("> Writing database schema")
 
-	// schema
-	db := database.NewInstance()
-	schema, _ := db.GetSchema()
-
 	// yaml
 	configYaml, err := config.GetDbSchemaConfig()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	for _, row := range schema {
+	for _, row := range c.schema {
 		for _, entry := range row {
 			if _, ok := configYaml[entry.Table]; !ok {
 				configYaml[entry.Table] = make(map[interface{}]map[interface{}]interface{}, 0)
@@ -245,11 +251,70 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 		}
 	}
 
+	diagram := c.buildMermaidDiagram(table)
+	imageLink := ""
+	if len(diagram) > 0 {
+		mermaid := MermaidLiveJsDiagram{
+			Code: diagram,
+			Mermaid: struct {
+				Theme string `json:"theme"`
+			}{Theme: "default"},
+			UpdateEditor:  true,
+			AutoSync:      true,
+			UpdateDiagram: true,
+		}
+
+		b, err := json.Marshal(mermaid)
+		if err != nil {
+			fmt.Println("error:", err)
+		}
+
+		encoded := base64.StdEncoding.EncodeToString(b)
+		imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagram}", encoded, encoded)
+		//imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.live/edit#%v){target=diagram}", encoded, encoded)
+		//imageLink = fmt.Sprintf("![erd](https://mermaid.ink/img/%v)(https://mermaid.ink/img/%v)", encoded, encoded)
+	}
+
 	// build table
 	tableHeader := `| Column | Data Type | Description |
 | :--- | :--- | :--- |`
 
-	markdown := fmt.Sprintf("# %v\n\n%v", table, tableHeader)
+	markdown := fmt.Sprintf("# %v\n", table)
+
+	// if we have a diagram, we have relationships
+	if len(imageLink) > 0 {
+		markdown += fmt.Sprintf("\n## Relationship Diagram\n%v\n", imageLink)
+
+		markdown += fmt.Sprintf("\n## Relationships\n")
+		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+`
+		for _, t := range c.tables {
+			if t.Name == table {
+				for _, relationship := range t.Relationships {
+					relationshipTypeString := "relates"
+					if relationship.RelationshipType == "1-*" {
+						relationshipTypeString = "Has-Many"
+					}
+					if relationship.RelationshipType == "1-1" {
+						relationshipTypeString = "One-to-One"
+					}
+
+					markdown += fmt.Sprintf(
+						"| %v | %v | %v | %v |\n",
+						relationshipTypeString,
+						relationship.LocalKey,
+						relationship.RemoteTable,
+						relationship.RemoteKey,
+					)
+				}
+			}
+		}
+		markdown += "\n"
+
+	}
+
+	markdown += fmt.Sprintf("\n## Schema\n%v", tableHeader)
 
 	entries := 0
 	for i := 0; i <= 1000; i++ {
@@ -272,4 +337,132 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 	markdown = fmt.Sprintf("%v\n\n", markdown)
 
 	return markdown
+}
+
+type MermaidLiveJsDiagram struct {
+	Code    string `json:"code"`
+	Mermaid struct {
+		Theme string `json:"theme"`
+	} `json:"mermaid"`
+	UpdateEditor  bool `json:"updateEditor"`
+	AutoSync      bool `json:"autoSync"`
+	UpdateDiagram bool `json:"updateDiagram"`
+}
+
+func (c *DbGenerateDocsCommand) buildMermaidDiagram(table string) string {
+	//    npc_types ||--o{ PERSON : has-many
+	//    npc_types {
+	//        string registrationNumber
+	//        string make
+	//        string model
+	//    }
+	//    PERSON
+	//    PERSON {
+	//        string firstName
+	//        string lastName
+	//        int age
+	//    }
+
+	for _, t := range c.tables {
+
+		if t.Name == table {
+
+			// build remote tables
+			remoteTables := []string{}
+			for _, relationship := range t.Relationships {
+				remoteTables = append(remoteTables, relationship.RemoteTable)
+			}
+
+			tableDefinitions := ""
+
+			// add self table
+
+			keys := c.getRelationshipKeysForTable(table)
+			keysString := ""
+			if len(keys) > 0 {
+				for _, key := range keys {
+					keysString += fmt.Sprintf(
+						"        %v %v\n",
+						c.getDataTypeForTableField(table, key),
+						key,
+					)
+				}
+			}
+			tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", table, strings.TrimSuffix(keysString, "\n"))
+
+			// add remote tables
+			for _, remoteTable := range remoteTables {
+				keys := c.getRelationshipKeysForTable(remoteTable)
+				keysString := ""
+				if len(keys) > 0 {
+					for _, key := range keys {
+						keysString += fmt.Sprintf(
+							"        %v %v\n",
+							c.getDataTypeForTableField(remoteTable, key),
+							key,
+						)
+					}
+				}
+
+				tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", remoteTable, strings.TrimSuffix(keysString, "\n"))
+			}
+
+			// add relationships
+			relationshipsString := ""
+			for _, relationship := range t.Relationships {
+				relationshipTypeString := "relates"
+				if relationship.RelationshipType == "1-*" {
+					relationshipTypeString = "Has-Many"
+				}
+				if relationship.RelationshipType == "1-1" {
+					relationshipTypeString = "One-to-One"
+				}
+
+				relationshipsString += fmt.Sprintf(
+					"    %v ||--o{ %v : %v\n",
+					table,
+					relationship.RemoteTable,
+					relationshipTypeString,
+				)
+			}
+
+			return fmt.Sprintf("erDiagram\n%v%v\n", tableDefinitions, relationshipsString)
+		}
+	}
+	return ""
+}
+
+func (c *DbGenerateDocsCommand) getRelationshipKeysForTable(table string) []string {
+	keys := []string{}
+
+	for _, t := range c.tables {
+		if t.Name == table {
+			keys = append(keys, t.Keys...)
+		}
+		for _, relationship := range t.Relationships {
+			if relationship.RemoteTable == table {
+				if !containsStringSlice(keys, relationship.RemoteKey) {
+					keys = append(keys, relationship.RemoteKey)
+				}
+			}
+		}
+	}
+
+	return keys
+}
+
+func (c *DbGenerateDocsCommand) getDataTypeForTableField(table string, key string) string {
+	for _, row := range c.schema {
+		for _, entry := range row {
+			if entry.Table == table && entry.Column == key {
+				reg, err := regexp.Compile("[^a-zA-Z]+")
+				if err != nil {
+					log.Fatal(err)
+				}
+				return reg.ReplaceAllString(entry.ColumnType, "")
+			}
+		}
+	}
+
+	return ""
 }

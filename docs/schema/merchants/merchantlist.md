@@ -1,5 +1,6 @@
 # merchantlist
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | merchantid | int | Merchant Identifier |

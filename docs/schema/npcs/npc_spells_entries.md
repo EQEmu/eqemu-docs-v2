@@ -1,5 +1,6 @@
 # npc_spells_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique NPC Spell Entry Identifier |

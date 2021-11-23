@@ -1,5 +1,6 @@
 # auras
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | int | Unique Aura Identifier |

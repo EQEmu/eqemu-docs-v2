@@ -14,6 +14,7 @@ type MkDocsCfg struct {
 	SiteName string   `yaml:"site_name"`
 	Plugins  []string `yaml:"plugins"`
 	RepoURL  string   `yaml:"repo_url"`
+	SiteUrl  string   `yaml:"site_url"`
 	RepoName string   `yaml:"repo_name"`
 	EditURI  string   `yaml:"edit_uri"`
 	ExtraCSS []string `yaml:"extra_css"`

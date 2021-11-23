@@ -1,5 +1,6 @@
 # respawn_times
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Respawn Time Identifier |

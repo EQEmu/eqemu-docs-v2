@@ -1,5 +1,6 @@
 # proximities
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |

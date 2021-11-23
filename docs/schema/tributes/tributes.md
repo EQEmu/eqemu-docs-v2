@@ -1,5 +1,6 @@
 # tributes
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Tribute Identifier |

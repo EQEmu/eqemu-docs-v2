@@ -1,5 +1,6 @@
 # command_settings
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | command | varchar | Unique Command Identifier |

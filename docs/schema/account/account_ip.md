@@ -1,5 +1,6 @@
 # account_ip
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | accid | int | [Account Identifier](account.md) |

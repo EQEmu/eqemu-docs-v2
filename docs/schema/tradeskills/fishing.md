@@ -1,5 +1,6 @@
 # fishing
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Fishing Identifier |

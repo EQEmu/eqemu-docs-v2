@@ -1,5 +1,6 @@
 # group_id
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | groupid | int | Unique Group Identifier |

@@ -1,5 +1,6 @@
 # qs_player_handin_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | handin_id | int | Unique Handin Identifier |

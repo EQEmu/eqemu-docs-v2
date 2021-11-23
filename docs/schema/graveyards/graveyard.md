@@ -1,5 +1,6 @@
 # graveyard
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Graveyard Identifier |

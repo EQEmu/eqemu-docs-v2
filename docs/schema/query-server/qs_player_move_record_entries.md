@@ -1,5 +1,6 @@
 # qs_player_move_record_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | event_id | int | Unique Event Identifier |

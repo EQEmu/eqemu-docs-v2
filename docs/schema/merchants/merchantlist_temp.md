@@ -1,5 +1,6 @@
 # merchantlist_temp
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | npcid | int | [NPC Type Identifier](../../schema/npcs/npc_types.md) |

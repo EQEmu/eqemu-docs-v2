@@ -1,5 +1,6 @@
 # character_tasks
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | charid | int | [Character Identifier](character_data.md) |

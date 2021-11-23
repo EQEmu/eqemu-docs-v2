@@ -1,5 +1,6 @@
 # raid_members
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | raidid | int | [Raid Identifier](raid_details.md) |

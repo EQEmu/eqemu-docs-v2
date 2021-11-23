@@ -1,5 +1,6 @@
 # blocked_spells
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Blocked Spells Identifier |

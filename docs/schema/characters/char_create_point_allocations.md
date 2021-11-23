@@ -1,5 +1,6 @@
 # char_create_point_allocations
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Allocation Identifier |

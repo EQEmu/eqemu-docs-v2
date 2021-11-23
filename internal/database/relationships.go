@@ -13,44 +13,44 @@ func NewRelationshipService() *RelationshipService {
 	return &RelationshipService{}
 }
 
-// TableRelationships - represents tables from relationships
+// TableRelationships - represents tables from Relationships
 type TableRelationships struct {
-	name          string
-	keys          []string
-	relationships []Relationship
+	Name          string
+	Keys          []string
+	Relationships []Relationship
 }
 
-// Relationship single key relationships
+// Relationship single key Relationships
 type Relationship struct {
-	relationshipType string
-	localTable       string
-	localKey         string
-	remoteTable      string
-	remoteKey        string
+	RelationshipType string
+	LocalTable       string
+	LocalKey         string
+	RemoteTable      string
+	RemoteKey        string
 }
 
 // GetTables returns a slice of table objects
 // @example
 //   database.TableRelationships{
-//    name: "task_activities",
-//    keys: []string{
+//    Name: "task_activities",
+//    Keys: []string{
 //      "delivertonpc",
 //      "goalid",
 //    },
-//    relationships: []database.Relationship{
+//    Relationships: []database.Relationship{
 //      database.Relationship{
-//        relationshipType: "1-1",
-//        localTable:       "task_activities",
-//        localKey:         "delivertonpc",
-//        remoteTable:      "npc_types",
-//        remoteKey:        "id",
+//        RelationshipType: "1-1",
+//        LocalTable:       "task_activities",
+//        LocalKey:         "delivertonpc",
+//        RemoteTable:      "npc_types",
+//        RemoteKey:        "id",
 //      },
 //      database.Relationship{
-//        relationshipType: "1-*",
-//        localTable:       "task_activities",
-//        localKey:         "goalid",
-//        remoteTable:      "goallists",
-//        remoteKey:        "listid",
+//        RelationshipType: "1-*",
+//        LocalTable:       "task_activities",
+//        LocalKey:         "goalid",
+//        RemoteTable:      "goallists",
+//        RemoteKey:        "listid",
 //      },
 //    },
 //  },
@@ -85,10 +85,10 @@ func (r *RelationshipService) GetTables() []TableRelationships {
 						remoteKey := strings.TrimSpace(remoteTableKeySplit[1])
 
 						//fmt.Printf("type [%v] local key [%v] remote table [%v] remote key [%v]\n",
-						//	relationshipType,
-						//	localKey,
-						//	remoteTable,
-						//	remoteKey,
+						//	RelationshipType,
+						//	LocalKey,
+						//	RemoteTable,
+						//	RemoteKey,
 						//)
 
 						// only add key if not already added
@@ -97,11 +97,11 @@ func (r *RelationshipService) GetTables() []TableRelationships {
 						}
 
 						relationships = append(relationships, Relationship{
-							relationshipType: relationshipType,
-							localTable:       table,
-							localKey:         localKey,
-							remoteTable:      remoteTable,
-							remoteKey:        remoteKey,
+							RelationshipType: relationshipType,
+							LocalTable:       table,
+							LocalKey:         localKey,
+							RemoteTable:      remoteTable,
+							RemoteKey:        remoteKey,
 						})
 					}
 				}
@@ -109,9 +109,9 @@ func (r *RelationshipService) GetTables() []TableRelationships {
 		}
 
 		tables = append(tables, TableRelationships{
-			name:          table,
-			keys:          keys,
-			relationships: relationships,
+			Name:          table,
+			Keys:          keys,
+			Relationships: relationships,
 		})
 	}
 

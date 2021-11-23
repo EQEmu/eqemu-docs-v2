@@ -1,5 +1,6 @@
 # gm_ips
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | name | varchar | [Character Name](../../schema/characters/character_data.md) |

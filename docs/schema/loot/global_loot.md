@@ -1,5 +1,6 @@
 # global_loot
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Global Loot Identifier |

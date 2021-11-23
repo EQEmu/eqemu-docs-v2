@@ -1,5 +1,6 @@
 # login_world_servers
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique World Server Identifier |

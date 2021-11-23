@@ -1,5 +1,6 @@
 # qs_player_trade_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | trade_id | int | Unique Trade Identifier |

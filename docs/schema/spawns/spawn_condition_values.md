@@ -1,5 +1,6 @@
 # spawn_condition_values
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Spawn Condition Identifier](spawn_conditions.md) |

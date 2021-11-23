@@ -1,5 +1,6 @@
 # tool_game_objects
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

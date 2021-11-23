@@ -1,5 +1,6 @@
 # zone_points
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Zone Point Identifier |

@@ -1,5 +1,6 @@
 # alternate_currency
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Alternate Currency Identifier](../../../../server/items/alternate-currencies) |

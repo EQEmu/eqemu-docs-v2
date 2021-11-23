@@ -1,5 +1,6 @@
 # login_accounts
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Account Identifier |

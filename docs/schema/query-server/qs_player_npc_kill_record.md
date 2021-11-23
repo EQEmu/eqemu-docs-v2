@@ -1,5 +1,6 @@
 # qs_player_npc_kill_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | fight_id | int | Unique Fight Identifier |

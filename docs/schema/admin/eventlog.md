@@ -1,5 +1,6 @@
 # eventlog
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Event Identifier |

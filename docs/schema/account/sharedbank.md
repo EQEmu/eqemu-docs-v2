@@ -1,5 +1,6 @@
 # sharedbank
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | acctid | int | [Unique Account Identifier](account.md) |

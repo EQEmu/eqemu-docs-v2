@@ -1,5 +1,6 @@
 # skill_caps
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | skillID | tinyint | [Skill Identifier](../../../../server/player/skills) |

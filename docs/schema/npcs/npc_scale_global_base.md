@@ -1,5 +1,6 @@
 # npc_scale_global_base
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | int | Type: 0 = Trash, 1 = Named, 2 = Raid |

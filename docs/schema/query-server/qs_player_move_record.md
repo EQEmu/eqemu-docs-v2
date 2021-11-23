@@ -1,5 +1,6 @@
 # qs_player_move_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | move_id | int | Unique Move Identifier |

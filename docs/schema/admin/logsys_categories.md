@@ -1,5 +1,6 @@
 # logsys_categories
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | log_category_id | int | Unique Log Category Identifier |

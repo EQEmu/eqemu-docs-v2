@@ -1,5 +1,6 @@
 # trader
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | char_id | int | [Unique Character Identifier](../../schema/characters/character_data.md) |

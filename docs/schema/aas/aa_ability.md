@@ -1,5 +1,6 @@
 # aa_ability
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique AA Identifier |

@@ -1,5 +1,6 @@
 # qs_player_delete_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | delete_id | int | Unique Delete Identifier |

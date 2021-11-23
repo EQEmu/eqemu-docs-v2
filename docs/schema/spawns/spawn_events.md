@@ -1,5 +1,6 @@
 # spawn_events
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spawn Event Entry Identifier |

@@ -1,5 +1,6 @@
 # adventure_stats
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | player_id | int | [Character Identifier](../../schema/characters/character_data.md) |

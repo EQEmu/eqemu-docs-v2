@@ -1,5 +1,6 @@
 # character_exp_modifiers
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | character_id | int |  |

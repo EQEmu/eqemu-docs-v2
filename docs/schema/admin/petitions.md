@@ -1,5 +1,6 @@
 # petitions
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | dib | int | Unknown |

@@ -1,5 +1,6 @@
 # character_expedition_lockouts
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

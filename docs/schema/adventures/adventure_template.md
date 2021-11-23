@@ -1,5 +1,6 @@
 # adventure_template
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Adventure Identifier](adventure_details.md) |

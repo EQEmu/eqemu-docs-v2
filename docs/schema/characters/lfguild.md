@@ -1,5 +1,6 @@
 # lfguild
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | tinyint | Type |

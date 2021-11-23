@@ -1,5 +1,6 @@
 # expeditions
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int |  |

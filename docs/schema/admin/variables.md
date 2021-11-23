@@ -1,5 +1,6 @@
 # variables
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | varname | varchar | Variable Name |

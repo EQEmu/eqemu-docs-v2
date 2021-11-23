@@ -1,5 +1,6 @@
 # bug_reports
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Bug Report Identifier |

@@ -1,5 +1,6 @@
 # character_corpse_items
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | corpse_id | int | [Corpse Identifier](character_corpses.md) |

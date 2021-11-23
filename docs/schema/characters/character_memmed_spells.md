@@ -1,5 +1,6 @@
 # character_memmed_spells
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | [Character Identifier](character_data.md) |

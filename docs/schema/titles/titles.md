@@ -1,5 +1,6 @@
 # titles
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Title Identifier |

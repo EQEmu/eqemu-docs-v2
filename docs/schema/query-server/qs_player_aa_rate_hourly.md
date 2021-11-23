@@ -1,5 +1,6 @@
 # qs_player_aa_rate_hourly
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | char_id | int | [Character Identifier](../../schema/characters/character_data.md) |

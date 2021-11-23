@@ -1,5 +1,6 @@
 # guild_ranks
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | guild_id | mediumint | [Guild Identifier](guilds.md) |

@@ -1,5 +1,6 @@
 # char_create_combinations
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | allocation_id | int | [Allocation Identifier](char_create_point_allocations.md) |

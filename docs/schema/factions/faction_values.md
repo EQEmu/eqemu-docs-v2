@@ -1,5 +1,6 @@
 # faction_values
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | char_id | int | [Character Identifier](../../schema/characters/character_data.md) |

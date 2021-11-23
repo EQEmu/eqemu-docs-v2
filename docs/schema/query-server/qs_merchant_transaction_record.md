@@ -1,5 +1,6 @@
 # qs_merchant_transaction_record
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | transaction_id | int | Unique Transaction Identifier |

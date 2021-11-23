@@ -1,5 +1,6 @@
 # pets_beastlord_data
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | player_race | int |  |

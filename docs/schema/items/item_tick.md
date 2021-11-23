@@ -1,5 +1,6 @@
 # item_tick
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | it_itemid | int | [Item Identifier](items.md) |

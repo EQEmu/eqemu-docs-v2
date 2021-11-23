@@ -1,5 +1,6 @@
 # npc_spells_effects_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Spell Effect Entry Identifier |

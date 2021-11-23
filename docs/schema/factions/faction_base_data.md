@@ -1,5 +1,6 @@
 # faction_base_data
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | client_faction_id | smallint | [Client Faction Identifier](faction_list.md) |

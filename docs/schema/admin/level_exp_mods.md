@@ -1,5 +1,6 @@
 # level_exp_mods
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | level | int | Level |

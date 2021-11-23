@@ -1,5 +1,6 @@
 # pets_equipmentset_entries
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | set_id | int | [Pet Equipment Set Identifier](pets_equipmentset.md) |

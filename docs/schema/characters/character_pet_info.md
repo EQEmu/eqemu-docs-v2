@@ -1,5 +1,6 @@
 # character_pet_info
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | char_id | int | [Character Identifier](character_data.md) |

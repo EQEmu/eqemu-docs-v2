@@ -1,5 +1,15 @@
 # items
 
+## Relationship Diagram
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgZGlzY292ZXJlZF9pdGVtcyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1faWRcbiAgICB9XG4gICAgaXRlbXMgfHwtLW97IGRpc2NvdmVyZWRfaXRlbXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgZGlzY292ZXJlZF9pdGVtcyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1faWRcbiAgICB9XG4gICAgaXRlbXMgfHwtLW97IGRpc2NvdmVyZWRfaXRlbXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+
+## Relationships
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| Has-Many | id | discovered_items | item_id |
+
+
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Item Identifier |

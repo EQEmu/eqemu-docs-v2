@@ -1,5 +1,6 @@
 # npc_emotes
 
+## Schema
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique NPC Emote Identifier |
