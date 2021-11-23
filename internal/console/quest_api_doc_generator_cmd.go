@@ -242,7 +242,7 @@ func (c *QuestApiDocGeneratorCommand) WriteMethodDocs(response QuestApiResponse,
 
 	// loop through sorted
 	for _, methodType := range keys {
-		if contains(ignoreMethods, methodType) {
+		if containsStringSlice(ignoreMethods, methodType) {
 			continue
 		}
 

@@ -1,4 +1,4 @@
-package console
+package database
 
 func containsStringSlice(s []string, e string) bool {
 	for _, a := range s {
