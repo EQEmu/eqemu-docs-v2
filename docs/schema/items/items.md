@@ -1,12 +1,15 @@
 # items
 
+!!! info
+	This page was last generated 2021.11.23
+
 ## Relationship Diagram
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgZGlzY292ZXJlZF9pdGVtcyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1faWRcbiAgICB9XG4gICAgaXRlbXMgfHwtLW97IGRpc2NvdmVyZWRfaXRlbXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgZGlzY292ZXJlZF9pdGVtcyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1faWRcbiAgICB9XG4gICAgaXRlbXMgfHwtLW97IGRpc2NvdmVyZWRfaXRlbXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIGRpc2NvdmVyZWRfaXRlbXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBpdGVtX2lkXG4gICAgfVxuICAgIGl0ZW1zIHx8LS1veyBkaXNjb3ZlcmVkX2l0ZW1zIDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIGRpc2NvdmVyZWRfaXRlbXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBpdGVtX2lkXG4gICAgfVxuICAgIGl0ZW1zIHx8LS1veyBkaXNjb3ZlcmVkX2l0ZW1zIDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
 
 ## Relationships
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
-| Has-Many | id | discovered_items | item_id |
+| Has-Many | id | [discovered_items](../../schema/admin/discovered_items.md) | item_id |
 
 
 ## Schema

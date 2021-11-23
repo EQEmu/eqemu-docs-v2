@@ -12,9 +12,11 @@ import (
 	"log"
 	"os"
 	"path"
+	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 )
 
 type DbGenerateDocsCommand struct {
@@ -281,10 +283,14 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	markdown := fmt.Sprintf("# %v\n", table)
 
+	currentTime := time.Now()
+	generatedTime := currentTime.Format("2006.01.02")
+
+	markdown += fmt.Sprintf("\n!!! info\n\tThis page was last generated %v\n", generatedTime)
+
 	// if we have a diagram, we have relationships
 	if len(imageLink) > 0 {
 		markdown += fmt.Sprintf("\n## Relationship Diagram\n%v\n", imageLink)
-
 		markdown += fmt.Sprintf("\n## Relationships\n")
 		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
@@ -304,7 +310,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 						"| %v | %v | %v | %v |\n",
 						relationshipTypeString,
 						relationship.LocalKey,
-						relationship.RemoteTable,
+						c.buildLinkToTablePage(relationship.RemoteTable),
 						relationship.RemoteKey,
 					)
 				}
@@ -465,4 +471,29 @@ func (c *DbGenerateDocsCommand) getDataTypeForTableField(table string, key strin
 	}
 
 	return ""
+}
+
+func (c *DbGenerateDocsCommand) buildLinkToTablePage(table string) string {
+	link := table
+
+	err := filepath.Walk(
+		"./docs/schema/",
+		func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+
+			if strings.Contains(path, fmt.Sprintf("%v.md", table)) {
+				newPath := strings.ReplaceAll(path, "docs/", "")
+				link = fmt.Sprintf("[%v](../../%v)", table, newPath)
+			}
+
+			return nil
+		},
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return link
 }
