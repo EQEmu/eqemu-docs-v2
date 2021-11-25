@@ -130,13 +130,13 @@ Navigate to your EverQuest client directory and right-click on the eqgame.exe ap
 
     Choose the **Send To** option, and choose **Desktop (create shortcut)**.
 
-    ![image](../../gitbook/assets/something.jpg){: style="height:300px; width: auto;"}
+    ![image](../gitbook/assets/something.jpg){: style="height:300px; width: auto;"}
 
 !!! Properties
 
     Right-click on the shortcut you created on your desktop, and select the _**Properties**_ option.
 
-    ![](../../gitbook/assets/screenshot_10_2_19__9_39_am.png){: style="height:300px; width: auto;"}
+    ![](../gitbook/assets/screenshot_10_2_19__9_39_am.png){: style="height:300px; width: auto;"}
 
     In the **Target** field, add ` patchme`, to the end of the line
 
@@ -150,10 +150,15 @@ Navigate to your EverQuest client directory and right-click on the eqgame.exe ap
 
 That's it! You're ready to play now. Double-click that shortcut you just created, and login using the Login Server Account that you created in Step 3.
 
-
 !!! info 
 
     If there are any issues or questions after completing the steps in this guide, please review the Troubleshooting FAQ below and the [Frequently Asked Questions](frequently-asked-questions.md) page. You should also search the Forums for answers before posting any questions. Another option for support is to join the EQEmulator IRC Support Channel and ask a question, and then stay logged in there and wait for a response (which can take a while).
+
+## Custom Server Files
+
+!!! note
+
+    Some servers have custom files to download so make sure you check in with the server that you are playing with. Normally they will post instructions on their site or their message of the day when you log in. Most servers at least have a spells text file to download in order for spells to work properly.
 
 ## Community
 

@@ -102,7 +102,6 @@ nav:
           - EQDictionary: developer/eqdictionary.md
           - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
           - Tools:
-              - developer/tools/README.md
               - Lua for Windows: developer/tools/lua-for-windows.md
               - Notepad++: developer/tools/notepad++.md
               - TortoiseGit: developer/tools/tortoisegit.md
@@ -304,6 +303,7 @@ nav:
               - server/task-system-guide/shared-tasks/README.md
               - Example: server/task-system-guide/shared-tasks/example.md
       - Tools:
+          - server/tools/README.md
           - Cheat Sheet: ./server/tools/tools-cheat-sheet.md
       - Zones:
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md

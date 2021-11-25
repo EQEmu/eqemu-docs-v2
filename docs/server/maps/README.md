@@ -28,7 +28,7 @@ Navmesh is modern navigation mesh technology, we use it server side to determine
 
 #### Example of this in game
 
-{% embed url="https://www.youtube.com/watch?v=ujtqipXAP1E" %}
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/ujtqipXAP1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Another explanation of Navmesh on [Stack Overflow](https://gamedev.stackexchange.com/a/15395)
 
