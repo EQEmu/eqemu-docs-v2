@@ -12,7 +12,7 @@ What makes me qualified to give advice on this topic? I've been running MySQL se
 
 ## Server Operators
 
-Make sure in your MySQL config you've allocated enough `innodb_buffer_pool_size` to hold your dataset in memory. There are ways to calculate this in more usage oriented ways but for literally most people just set it to 1GB
+Make sure in your MySQL config `my.cnf` you've allocated enough `innodb_buffer_pool_size` to hold your dataset in memory. There are ways to calculate this in more usage oriented ways but for literally most people just set it to 1GB
 
 ```text
 innodb_buffer_pool_size=1G
@@ -21,6 +21,15 @@ innodb_buffer_pool_size=1G
 Done. Move on, no need to look at any other knobs you just covered a majority of your ground and you can move on with your life.
 
 If you want to know why you're setting this variable, it is one of the most important settings for modern InnoDB storage engines. This buffer pool is memory allocated in which table caches, table indexes are stored and keep all of your table operations fast.
+
+## MariaDB Config Location
+
+The location of your MySQL config varies on your operating system
+
+| OS      | Location |
+| ----------- | ----------- |
+| **Linux**      | /etc/mysql/my.cnf	       |
+| **Windows**   | INSTALLDIR\data\my.cnf or my.ini        |
 
 ## Hardware
 
