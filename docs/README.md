@@ -1,43 +1,67 @@
 # Welcome
 
-Welcome to the EQEmu Wiki.  The information presented on this wiki represents the commitment of countless hours of coding and documentation by a large, passionate, open-source community.  The purpose of this wiki is to allow a scalable transfer of knowledge and information regarding this massive project.  Please feel free to utilize this resource, and help us to improve it along your journey.
+Welcome to the **EverQuest Emulator Server** community docs! 
+
+Everything you need can be found by using **search** as well as the left and top nav menus!
 
 !!! info
-        This wiki is a living document that is intended to replace earlier knowledge-bases.  If you see anything that is missing or could be improved, please feel free to contribute!   If you do not have permission to edit, please get in touch on [Discord](https://discord.gg/QHsm7CD).
 
-### Getting Started
+    If you see anything that is missing or could be improved, please feel free to [contribute](https://github.com/EQEmu/eqemu-docs-v2) and feel free to submit pull requests! Merged pull requests immediately publish to these docs.
 
-| Page | Description |
-| :--- | :--- |
-| [Server Installation - Linux](server/installation/server-installation-linux.md) | A guide for installing EQEmu Server on Linux |
-| [Server Installation - Windows](server/installation/server-installation-windows.md) | A guide for installing EQEmu Server on Windows |
+    The information presented represents the commitment of countless hours of coding and documentation by a large, passionate, open-source community.
 
-### Wiki Quick Reference
+    The breadth of information compiled in the documentation is the accumulation of open source community members dating back to early 2000's.
 
-| Area | Description of Content |
-| :--- | :--- |
-| [Changelog](https://docs.eqemu.io/server/changelog/serverhttps://docs.eqemu.io/server/changelog/server) | A listing of all of the changes made to the EQEmu Server code |
-| [Database Schema](https://eqemu.gitbook.io/database-schema/) | The blueprint of how the EQEmu database is constructed |
-| [Logging System](server/logging-system/) | Documentation of the extensive logging capabilities in EQEmu |
-| [Loginserver](../../../../server/login-server) | Information regarding your own login server |
-| [Maps](server/maps/) | Utilities and information regarding zone map files  |
-| [NPC](server/npc/) | Information regarding mob pathing, factions, scaling and attacks |
-| [Operation](server/operation/) | Learn how to operate your EQEmu Server |
-| [QuestAPI](https://eqemu.gitbook.io/quest-api/) | Documentation of the use of quest scripts in both Perl and Lua |
-| [Scripting](server/scripting/) | Learn how to script quests and NPC interactions |
-| [Spells](server/spells/) | Documentation of all things relating to spells |
+    The purpose of this platform is to allow a scalable transfer of knowledge and information regarding this massive project.
 
-### Resource links
+
+## EverQuest Emulator Server
+
+**EverQuest Emulator Server is a custom, completely from-scratch reverse-engineered open source server implementation for EverQuest built mostly on C / C++**
+
+!!! features
+
+    **Storage Engine** MySQL / MariaDB is used as the database engine (over 200+ tables)
+    
+    **Scripting Engine(s)** Perl and LUA are both supported scripting languages for NPC/Player/Quest oriented events
+    
+    **Game Content** Open source database (Project EQ) has content up to expansion OoW (included in server installs)
+    
+    Game server environments and databases can be heavily customized to create all new experiences
+    
+    Hundreds of [Quests and events](https://github.com/ProjectEQ/projecteqquests) created and maintained by Project EQ
+
+### Server Installation
+
+| Page | Platform | Description | Install Count |
+| :--- | :--- | :--- | :--- |
+| [Server Installation (Windows)](server/installation/server-installation-windows.md) | Windows | A guide for installing EQEmu Server on Windows | ![](https://camo.githubusercontent.com/befd841ddd0bcfee4679b37f84b78523866d252093acee36b459ca23df7886ca/687474703a2f2f616e616c79746963732e616b6b61646975732e636f6d2f3f696e7374616c6c5f636f756e742677696e646f77735f636f756e74)
+| [Server Installation (Linux)](server/installation/server-installation-linux.md) | Linux (Debian / Ubuntu) Preferred (Redhat / CentOS / Fedora supported) | A guide for installing EQEmu Server on Linux | ![](https://camo.githubusercontent.com/99ffa002a4caeb201449be7df0d88324b197f5cb287ae5bb3678b43fcf1441b4/687474703a2f2f616e616c79746963732e616b6b61646975732e636f6d2f3f696e7374616c6c5f636f756e74266c696e75785f636f756e74) |
+| [AkkStack (Docker)](https://github.com/Akkadius/akk-stack) (Advanced) | Docker (Compose) | Containerized EverQuest Emulator Server Environment | - |
+
+## Supported Clients
+
+|Titanium Edition|Secrets of Faydwer|Seeds of Destruction|Underfoot|Rain of Fear (Most used)|
+|:---:|:---:|:---:|:---:|:---:|
+| ![](https://user-images.githubusercontent.com/3319450/143334304-4faf5cf8-6ed9-4b47-a0e2-938cc3f68e57.png){: style="height:150px; width: 150px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334432-e6e9eaef-b141-4b05-9607-ceb38dcf717d.png){: style="height:150px; width: 150px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334455-420ee97d-ed5e-4f21-a824-48371831c604.png){: style="height:150px; width: 150px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334476-4b699dec-6a1b-4690-be7f-64eec22cd60c.png){: style="height:150px; width: 150px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334498-810f76b6-7f18-4723-a02a-d50e11af96d1.png){: style="height:150px; width: 250px;"} |
+
+### External Resource links
 
 | Page | Link |
 | :--- | :--- |
-| EQEmulator Website | [http://www.eqemulator.org](http://www.eqemulator.org) |
-| EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server) |
-| Quest Scripts | [https://github.com/ProjectEQ/projecteqquests](https://github.com/ProjectEQ/projecteqquests) |
-| Plugins | [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins) |
-| Maps | [https://github.com/Akkadius/EQEmuMaps](https://github.com/Akkadius/EQEmuMaps) |
-| Installer Resources | [https://github.com/Akkadius/EQEmuInstall](https://github.com/Akkadius/EQEmuInstall) |
-| ProjectEQ (PEQ) Database | [http://db.projecteq.net](http://db.projecteq.net) |
+| EQEmulator Website | [http://www.eqemulator.org](http://www.eqemulator.org){target=_blank} |
+| EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server){target=_blank} |
+| Quest Scripts | [https://github.com/ProjectEQ/projecteqquests](https://github.com/ProjectEQ/projecteqquests){target=_blank} |
+| Plugins | [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins){target=_blank} |
+| Maps | [https://github.com/Akkadius/EQEmuMaps](https://github.com/Akkadius/EQEmuMaps){target=_blank} |
+| Installer Resources | [https://github.com/Akkadius/EQEmuInstall](https://github.com/Akkadius/EQEmuInstall){target=_blank} |
+| ProjectEQ (PEQ) Database | [http://db.projecteq.net](http://db.projecteq.net){target=_blank} |
+
+## Bug Reports
+
+* Please use the [issue tracker](https://github.com/EQEmu/Server/issues) provided by GitHub to send us bug reports or feature requests.
+* [Discord](https://discord.gg/QHsm7CD) is also a place to get more immediate help from community members on troubleshooting
+
 
 ### Additional / Alternative Quest Script Repositories
 
