@@ -14,8 +14,6 @@ While there is standard markdown syntax, we have a variety of **markdown extensi
 
 You will see on most pages in the upper right corner of the page there is an **Edit This Page** which will bring you straight to Github
 
-![image](https://user-images.githubusercontent.com/3319450/143396991-605220e2-80db-46eb-a80d-2fa343417dd1.png)
-
 When you click edit, it will bring you to Github
 
 ![image](https://user-images.githubusercontent.com/3319450/143397077-3ece1596-3dad-49af-8c62-51a3b3315f4f.png)
