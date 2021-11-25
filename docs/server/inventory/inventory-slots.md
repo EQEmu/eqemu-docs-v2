@@ -1,163 +1,241 @@
 # Inventory Slots
 
+### Equipment Slots (Worn)
 
+!!! example
 
-### Server-recognized slots
+    !!! Slots inline
 
-#### Equipment slots (worn)
+        | Slot      | # |
+        | ----------- | ----------- |
+        | Charm|  0 |
+        | Ear1|  1 |
+        | Head|  2 |
+        | Face|  3 |
+        | Ear2|  4 |
+        | Neck|  5 |
+        | Shoulders|  6 |
+        | Arms|  7 |
+        | Back|  8 |
+        | Wrist1|  9 |
+        | Wrist2 | 10 |
+        | Range | 11 |
+        | Hands | 12 |
+        | Primary | 13 |
+        | Secondary | 14 |
+        | Finger1 | 15 |
+        | Finger2 | 16 |
+        | Chest | 17 |
+        | Legs | 18 |
+        | Feet | 19 |
+        | Waist | 20 |
+        | PowerSource | 21 |
+        | Ammo | 22 |
 
-* Charm = 0
-* Ear1 = 1
-* Head = 2
-* Face = 3
-* Ear2 = 4
-* Neck = 5
-* Shoulders = 6
-* Arms = 7
-* Back = 8
-* Wrist1 = 9
-* Wrist2 = 10
-* Range = 11
-* Hands = 12
-* Primary = 13
-* Secondary = 14
-* Finger1 = 15
-* Finger2 = 16
-* Chest = 17
-* Legs = 18
-* Feet = 19
-* Waist = 20
-* PowerSource = 21
-* Ammo = 22
+    ![Equipment Slots](../../gitbook/assets/image.png)
 
-![Equipment Slots](../../gitbook/assets/image.png)
+### General Slots (Personal)
 
-#### General slots (personal)
+!!! example
 
-* General1 = 23
-* General2 = 24
-* General3 = 25
-* General4 = 26
-* General5 = 27
-* General6 = 28
-* General7 = 29
-* General8 = 30
-* General9 = 31
-* General10 = 32
+        !!! Slots inline
 
-![General Slots](../../gitbook/assets/image%20%288%29.png)
+            Bag slots in general inventory are
 
-Bag slots in general inventory are:
+            | Slot      | # |
+            | ----------- | ----------- |
+            | General1 | 23 |
+            | General2 | 24 |
+            | General3 | 25 |
+            | General4 | 26 |
+            | General5 | 27 |
+            | General6 | 28 |
+            | General7 | 29 |
+            | General8 | 30 |
+            | General9 | 31 |
+            | General10 | 32 |
 
-* General1 : 251 -&gt; 260
-* General2 : 261 -&gt; 270
-* General3 : 271 -&gt; 280
-* General4 : 281 -&gt; 290
-* General5 : 291 -&gt; 300
-* General6 : 301 -&gt; 310
-* General7 : 311 -&gt; 320
-* General8 : 321 -&gt; 330
-* General9 : 331 -&gt; 340
-* General10 : 341 -&gt; 350
+    ![General Slots](../../gitbook/assets/image%20%288%29.png)
 
-#### Cursor slot
+### Cursor Slot(s)
 
-* Cursor = 33
+| Slot      | # |
+| ----------- | ----------- |
+| Cursor | 33 |
+| Cursor Bag Slots | 351 -> 360 |
 
-Bag slots in cursor inventory are:
+### Tribute
 
-* Cursor : 351 -&gt; 360
-
-#### Tribute
+| Slot      | # |
+| ----------- | ----------- |
+| Cursor Bag Slots | 400 -> 404 |
 
 Tribute items are slots 400 -&gt; 404, these items are not visible, but are counted for stats/effects.
 
-#### Bank
+### Bank
 
-Bank slots are 2000 -&gt; 2023
+Bank slots are 2000 -> 2023
 
-Bags in the bank are:
+Bags in the bank are
 
-* 2000 : 2031 -&gt; 2040
-* 2001 : 2041 -&gt; 2050
-* 2002 : 2051 -&gt; 2060
-* 2003 : 2061 -&gt; 2070
-* 2004 : 2071 -&gt; 2080
-* 2005 : 2081 -&gt; 2090
-* 2006 : 2091 -&gt; 2100
-* 2007 : 2101 -&gt; 2110
-* 2008 : 2111 -&gt; 2120
-* 2009 : 2121 -&gt; 2130
-* 2010 : 2131 -&gt; 2140
-* 2011 : 2141 -&gt; 2150
-* 2012 : 2151 -&gt; 2160
-* 2013 : 2161 -&gt; 2170
-* 2014 : 2171 -&gt; 2180
-* 2015 : 2181 -&gt; 2190
-* 2016 : 2191 -&gt; 2200
-* 2017 : 2201 -&gt; 2210
-* 2018 : 2211 -&gt; 2220
-* 2019 : 2221 -&gt; 2230
-* 2020 : 2231 -&gt; 2240
-* 2021 : 2241 -&gt; 2250
-* 2022 : 2251 -&gt; 2260
-* 2023 : 2261 -&gt; 2270
+![](../../gitbook/assets/image%20%286%29.png)
+
+| Base Slot      | Range |
+| ----------- | ----------- |
+| 2000 | 2031 -> 2040 |
+| 2001 | 2041 -> 2050 |
+| 2002 | 2051 -> 2060 |
+| 2003 | 2061 -> 2070 |
+| 2004 | 2071 -> 2080 |
+| 2005 | 2081 -> 2090 |
+| 2006 | 2091 -> 2100 |
+| 2007 | 2101 -> 2110 |
+| 2008 | 2111 -> 2120 |
+| 2009 | 2121 -> 2130 |
+| 2010 | 2131 -> 2140 |
+| 2011 | 2141 -> 2150 |
+| 2012 | 2151 -> 2160 |
+| 2013 | 2161 -> 2170 |
+| 2014 | 2171 -> 2180 |
+| 2015 | 2181 -> 2190 |
+| 2016 | 2191 -> 2200 |
+| 2017 | 2201 -> 2210 |
+| 2018 | 2211 -> 2220 |
+| 2019 | 2221 -> 2230 |
+| 2020 | 2231 -> 2240 |
+| 2021 | 2241 -> 2250 |
+| 2022 | 2251 -> 2260 |
+| 2023 | 2261 -> 2270 |
 
 #### Shared Bank
 
 Shared bank slots are 2500 and 2501
 
-Note: These are stored in the sharedbank table, not the inventory table.
+!!! note
 
-Bags in the shared bank are:
+    These are stored in the sharedbank table, not the inventory table.
 
-* 2500 : 2531 -&gt; 2540
-* 2501 : 2541 -&gt; 2550
+Bags in the shared bank are
 
-![](../../gitbook/assets/image%20%286%29.png)
+| Base Slot      | Range |
+| ----------- | ----------- |
+| 2500 | 2531 -> 2540 |
+| 2501 | 2541 -> 2550 |
 
-**Note: Not all clients support all of the server-recognized slots. Care should be taken when attempting to hard-code slot values over the use of server-based free slot requests.**
 
-#### Quest use references
+!!! note
 
-* [Perl](https://github.com/EQEmu/Server/wiki/Perl-Inventory-Slot-Identifiers)
-* [Lua](https://github.com/EQEmu/Server/wiki/Lua-Constants)
+    Not all clients support all of the server-recognized slots. Care should be taken when attempting to hard-code slot values over the use of server-based free slot requests.
 
-### Developer information on client-specific slot support
+#### Quest-Use Reference
 
-(in-work)
+!!! info
 
-**SoF Slots**
+    === "Perl"
 
-#### Equipped slots
+        ### Examples
+        
+        ```perl
+        quest::getinventoryslotid("cursor"); # returns current cursor slot definition
+        quest::getinventoryslotid("general.begin"); # returns current general slot beginning definition
+        quest::getinventoryslotid("augsocket.end"); # returns current augment socket end definition
+        ```
 
-(somebody should make this prettier some day)
+        ### Identifier tokens <a id="user-content-identifier-tokens"></a>
+        
+        ```text
+        "charm"
+        "ear1"
+        "head"
+        "face"
+        "ear2"
+        "neck"
+        "shoulders"
+        "arms"
+        "back"
+        "wrist1"
+        "wrist2"
+        "range"
+        "hands"
+        "primary"
+        "secondary"
+        "finger1"
+        "finger2"
+        "chest"
+        "legs"
+        "feet"
+        "waist"
+        "powersource"
+        "ammo"
+        "general1"
+        "general2"
+        "general3"
+        "general4"
+        "general5"
+        "general6"
+        "general7"
+        "general8"
+        "general9"
+        "general10"
+        "cursor"
+        "possessions.begin"
+        "possessions.end"
+        "equipment.begin"
+        "equipment.end"
+        "general.begin"
+        "general.end"
+        "generalbags.begin"
+        "generalbags.end"
+        "cursorbag.begin"
+        "cursorbag.end"
+        ~"tradeskill" (not implemented in perl)
+        ~"augment" (not implemented in perl)
+        "bank.begin"
+        "bank.end"
+        "bankbags.begin"
+        "bankbags.end"
+        "sharedbank.begin"
+        "sharedbank.end"
+        "sharedbankbags.begin"
+        "sharedbankbags.end"
+        "bagslot.begin"
+        "bagslot.end"
+        "augsocket.begin"
+        "augsocket.end"
+        "invalid"
+        ```
 
-* SLOT_CHARM= 0
-* SLOT_EAR01= 1
-* SLOT_HEAD= 2
-* SLOT_FACE= 3
-* SLOT_EAR02= 4
-* SLOT_NECK= 5
-* SLOT_SHOULDER= 6
-* SLOT_ARMS= 7
-* SLOT_BACK= 8
-* SLOT_BRACER01= 9
-* SLOT_BRACER02= 10
-* SLOT_RANGE= 11
-* SLOT_HANDS= 12
-* SLOT_PRIMARY= 13
-* SLOT_SECONDARY= 14
-* SLOT_RING01= 15
-* SLOT_RING02= 16
-* SLOT_CHEST= 17
-* SLOT_LEGS= 18
-* SLOT_FEET= 19
-* SLOT_WAIST= 20
-* SLOT_POWERSOURCE= 21
-* SLOT_AMMO= 22
+## Developer Information on Client-Specific Slot Support
 
-#### Inventory Slots
+### SoF Slots Equipped slots
+
+| Slot      | # |
+| ----------- | ----------- |
+| SLOT_CHARM |  0 |
+| SLOT_EAR01 |  1 |
+| SLOT_HEAD |  2 |
+| SLOT_FACE |  3 |
+| SLOT_EAR02 |  4 |
+| SLOT_NECK |  5 |
+| SLOT_SHOULDER |  6 |
+| SLOT_ARMS |  7 |
+| SLOT_BACK |  8 |
+| SLOT_BRACER01 |  9 |
+| SLOT_BRACER02 | 10 |
+| SLOT_RANGE | 11 |
+| SLOT_HANDS | 12 |
+| SLOT_PRIMARY | 13 |
+| SLOT_SECONDARY | 14 |
+| SLOT_RING01 | 15 |
+| SLOT_RING02 | 16 |
+| SLOT_CHEST | 17 |
+| SLOT_LEGS | 18 |
+| SLOT_FEET | 19 |
+| SLOT_WAIST | 20 |
+| SLOT_POWERSOURCE | 21 |
+| SLOT_AMMO | 22 |
+
+## Inventory Slots
 
 NOTE: Numbering for personal inventory goes top to bottom, then left to right
 
