@@ -100,8 +100,7 @@ nav:
               - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
               - Design Considerations: developer/project-peq-expansions/design-considerations.md
           - EQDictionary: developer/eqdictionary.md
-          - Packet and OpCode Analysis:
-              - developer/packet-and-opcode-analysis.md
+          - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
           - Tools:
               - developer/tools/README.md
               - Lua for Windows: developer/tools/lua-for-windows.md

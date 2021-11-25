@@ -19,5 +19,5 @@
 | target | varchar | Target when reported |
 | bug | varchar | Bug reported |
 | date | date | Date when reported |
-| status | tinyint | [Account Status of Reporter\]([../../../../server/player/status-levels](../../../../server/player/status-levels) |
+| status | tinyint | [Account Status of Reporter]([../../../../server/player/status-levels](../../../../server/player/status-levels) |
 

@@ -23,7 +23,7 @@ Please do not submit pull requests modifying the .md files directly, as they wil
 ## Table Names
 
 * lowercase
-* snake\_case
+* snake_case
 * Plural
 
 Table names should be **lowercase**, `snake_case` and should clearly describe the purpose of the table itself.
@@ -63,7 +63,7 @@ character_id - int(11)
 item_id - int(11)
 ```
 
-We easily know that we have a loose foreign key relationship to the `character_data` table (Which currently breaks convention and should be called `characters`\).
+We easily know that we have a loose foreign key relationship to the `character_data` table (Which currently breaks convention and should be called `characters`).
 
 We also know that we have a loose relationship to the `items` table and we resolve to `items:id`
 
@@ -79,7 +79,7 @@ We can easily convert to and from unix using datetime, use this as a standard pr
 
 A simple index can go a long way for performance if you have data that is being looked up frequently especially in the case of strings.
 
-For example, we have a table called `saylink` (should be plural\) that contains `phrase` which gets looked up frequently when a saylink is clicked or when saylinks are being parsed inside of a `quest::say` context, this lookup and scan gets expensive when there is no index on the column itself. 
+For example, we have a table called `saylink` (should be plural) that contains `phrase` which gets looked up frequently when a saylink is clicked or when saylinks are being parsed inside of a `quest::say` context, this lookup and scan gets expensive when there is no index on the column itself. 
 
 What ends up happening is that the MySQL engine ends up having to do full table scans to find the phrase corresponding to the requested record to see if it exists or lookup and ID associated to said saylink.
 
@@ -91,5 +91,5 @@ Only use what you intend to use for your integer space, if you don't plan on hav
 
 ## Soft Deletes
 
-If your table or feature uses the concept of soft deleting an object, please use `deleted_at` in a `datetime` field to mark that entity as deleted and then make sure you use queries that take into consideration where `deleted_at` is null (An index may be appropriate on this field\).
+If your table or feature uses the concept of soft deleting an object, please use `deleted_at` in a `datetime` field to mark that entity as deleted and then make sure you use queries that take into consideration where `deleted_at` is null (An index may be appropriate on this field).
 

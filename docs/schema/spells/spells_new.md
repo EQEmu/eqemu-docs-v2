@@ -146,7 +146,7 @@
 | classes16 | int | Required Level for Berserker |
 | CastingAnim | int | Casting Animation |
 | TargetAnim | int | Target Animation |
-| TravelType | int | Travel Type (Unused\) |
+| TravelType | int | Travel Type (Unused) |
 | SpellAffectIndex | int | Spell Affect Index |
 | disallow_sit | int | Disallow Sit: 0 = False, 1 = True |
 | deities0 | int | [Deity List](../../../../server/player/deity-list) |

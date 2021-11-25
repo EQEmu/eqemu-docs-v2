@@ -101,7 +101,7 @@
     quest::crosszoneassigntaskbyexpeditionid(uint32 expedition_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
     quest::crosszoneassigntaskbygroupid(int group_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
     quest::crosszoneassigntaskbyguildid(int guild_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
-    quest::crosszoneassigntaskbyraidid(int raid_id, uint32 task_identifier, [bool enforce_level_requirement = false]\);
+    quest::crosszoneassigntaskbyraidid(int raid_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
     quest::crosszonecastspellbycharid(int character_id, uint32 spell_id);
     quest::crosszonecastspellbyclientname(const char* client_name, uint32 spell_id);
     quest::crosszonecastspellbyexpeditionid(uint32 expedition_id, uint32 spell_id);

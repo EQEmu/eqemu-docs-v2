@@ -10,7 +10,7 @@
 | id | int | Unique Zone Point Identifier |
 | zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |
 | version | int | Version |
-| number | smallint | Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in (during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp\).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin (erudnext\). |
+| number | smallint | Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in (during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin (erudnext). |
 | y | float | Y Coordinate |
 | x | float | X Coordinate |
 | z | float | Z Coordinate |

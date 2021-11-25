@@ -53,7 +53,7 @@
 | mindmg | int | Minimum Damage |
 | maxdmg | int | Maximum Damage |
 | attack_count | smallint | Attack Count |
-| npcspecialattks | varchar | NPC Special Attacks (Deprecated\) |
+| npcspecialattks | varchar | NPC Special Attacks (Deprecated) |
 | special_abilities | text | NPC Special Abilities |
 | aggroradius | int | Aggro Radius |
 | assistradius | int | Assist Radius |
@@ -87,11 +87,11 @@
 | PhR | smallint | Physical Resistance |
 | see_invis | smallint | See Invisible: 0 = False, 1 = True |
 | see_invis_undead | smallint | See Invisible vs. Undread: 0 = False, 1 = True |
-| qglobal | int | Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated\) |
+| qglobal | int | Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated) |
 | AC | smallint | Armor Class |
 | npc_aggro | tinyint | NPC Aggro: 0 = False, 1 = True |
 | spawn_limit | tinyint | Spawn Limit |
-| attack_speed | float | Attack Speed: The lower the number, the faster the NPC hits. (Deprecated\) |
+| attack_speed | float | Attack Speed: The lower the number, the faster the NPC hits. (Deprecated) |
 | attack_delay | tinyint | Attack Delay: Delay between the attack arounds in 10ths of a second. |
 | findable | tinyint | Findable: 0 = False, 1 = True |
 | STR | mediumint | Strength |

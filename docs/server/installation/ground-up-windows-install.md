@@ -92,7 +92,7 @@ If you selected Visual Studio 2017 Community Edition, you will need to update to
 
 This installation is self-explanatory.
 
-_Note: It is recommended that you install in the root folder (_`c:\_) to avoid possible issues._
+_Note: It is recommended that you install in the root folder (_`c:_) to avoid possible issues._
 
 ### Install CMake
 

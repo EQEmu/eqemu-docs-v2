@@ -121,16 +121,16 @@ The example below demonstrates the output for Race 1 - Human.
 **Model availability:**
 
 * Via Source: globalhum_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
 
     * **All Zones** (**Global**)
 * Via Source: globalhuf_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
 
     * **All Zones** (**Global**)
 * Via Source: global_chr.s3d (Loaded via GlobalLoad.txt)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
 
     * **All Zones** (**Global**)
 
@@ -154,16 +154,16 @@ all forms of study and this gives them a great range of options when choosing a 
 **Model availability:**
 
 * Via Source: globalhum_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
 
     * **All Zones** (**Global**)
 * Via Source: globalhuf_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
 
     * **All Zones** (**Global**)
 * Via Source: global_chr.s3d (Loaded via GlobalLoad.txt)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
 
     * **All Zones** (**Global**)
 
@@ -187,16 +187,16 @@ all forms of study and this gives them a great range of options when choosing a 
 **Model availability:**
 
 * Via Source: globalhum_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**, Beards: **00-05**\
 
     * **All Zones** (**Global**)
 * Via Source: globalhuf_chr.s3d (Loaded with Luclin models)\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**, Hair: **00-03**\
 
     * **All Zones** (**Global**)
 * Via Source: global_chr.s3d (Loaded via GlobalLoad.txt)\
-  \- Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
-  \- Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUM** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
+  - Model **HUF** - Textures: **00-04, 10-16**, Heads: **00-03**, Faces: **00-07**\
 
     * **All Zones** (**Global**)
 
