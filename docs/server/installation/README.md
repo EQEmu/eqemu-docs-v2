@@ -52,7 +52,7 @@ Consider this your first step in customizing your world once you've run the inst
 | [Operation](../../../../server/operation) | Learn the ins-and-outs of operating your new world |
 | [PEQ DB Editor](../../../../server/installation/install-peq-database-editor) | How to install the PEQ DB editor (so you can customize your world). |
 | [Scripting](../../../../server/scripting) | Learn to customize NPC interactions through scripts |
-| [Client Config](../client-configuration/) | You'll have to configure your client to connect to your world |
+| [Client Config](../../play/) | You'll have to configure your client to connect to your world |
 | [Custom NPCs](../npc/customizing-npcs/) | Learn to create a custom NPC |
 | [Help!](https://discord.gg/QHsm7CD) | Join the discussion on Discord--look for **#support server** |
 

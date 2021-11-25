@@ -171,7 +171,7 @@ Mac OS Mavericks introduced a power-saving feature called "App Nap" to save batt
 3. Choose the _Get Info_ option on the contextual menu
 4. Check the box that says _Prevent App Nap_
 
-![Check the box to Prevent App Nap](../../gitbook/assets/app-nap.png)
+![Check the box to Prevent App Nap](../gitbook/assets/app-nap.png)
 
 ### Excessive GPU usage with MacOS Mojave
 
@@ -184,5 +184,5 @@ Mac OS Mavericks introduced a power-saving feature called "App Nap" to save batt
       If you do not find Direct3D in Wine, locate your installation and make the same modification.
 
 
-![](../../gitbook/assets/regedit-mojave.png)
+![](../gitbook/assets/regedit-mojave.png)
 
