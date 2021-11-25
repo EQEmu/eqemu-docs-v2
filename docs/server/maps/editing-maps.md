@@ -13,16 +13,20 @@
 From [Maps Introduction](./)
 
 * Navmesh is modern navigation mesh technology, we use it server side to determine shortest path to a target in NPC AI decision making processes, it's what the server uses to determine what NPC's can walk on and they will strictly adhere to this mesh when making pathing decisions. The end result is a very smooth path-making decisions
-* Example of this in game: [https://www.youtube.com/watch?v=ujtqipXAP1E](https://www.youtube.com/watch?v=ujtqipXAP1E)
 * Another explanation of Navmesh on [Stack Overflow](https://gamedev.stackexchange.com/a/15395)
+
+## Example Used In Game
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ujtqipXAP1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## File Structure
 
-* maps/base/zoneshortname.map
-* **maps/nav/zoneshortname.nav**
-* maps/water/zoneshortname.wtr
-* maps/volume/zoneshortname.wtr
-* maps/project/zoneshortname.navprj
+| File | Description  |
+|---|---|
+| maps/base/zoneshortname.map | Represents the zones geometry, used to determine line of sight, out of bounds and other assets such as navmesh are built on top |
+| maps/nav/zoneshortname.nav | Navmesh file. Navigation mesh is painted on top of the map geometry and is responsible for AI pathfinding. [See this video for an explanation of navmesh in unity](https://www.youtube.com/watch?v=NGGoOa4BpmY) |
+| maps/water/zoneshortname.wtr | Water file, contains information around water types, lava etc. |
+| maps/project/zoneshortname.navprj | A project file for the navigation editor for loading / saving manual edits made to meshes |
 
 ## Creation Example
 
