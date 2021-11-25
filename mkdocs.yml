@@ -101,7 +101,6 @@ nav:
               - Design Considerations: developer/project-peq-expansions/design-considerations.md
           - Developer Area:
               - developer/developer-area/README.md
-              - Repositories: developer/developer-area/repositories.md
               - EQDictionary: developer/developer-area/eqdictionary.md
               - Inventory:
                   - developer/developer-area/inventory/README.md
@@ -111,13 +110,13 @@ nav:
                   - developer/developer-area/packet-and-opcode-analysis.md
               - Tools:
                   - developer/developer-area/tools/README.md
-                  - Tools Cheat Sheet: developer/developer-area/tools/tools-cheat-sheet.md
                   - Lua for Windows: developer/developer-area/tools/lua-for-windows.md
                   - Notepad++: developer/developer-area/tools/notepad++.md
                   - TortoiseGit: developer/developer-area/tools/tortoisegit.md
       - Database:
           - Multi Tenancy: server/database/multi-tenancy.md
           - Database Backup Tool: server/database/database-backup-tool.md
+          - Repositories: server/database/repositories.md
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md
@@ -310,6 +309,8 @@ nav:
           - Shared Tasks:
               - server/task-system-guide/shared-tasks/README.md
               - Example: server/task-system-guide/shared-tasks/example.md
+      - Tools:
+          - Cheat Sheet: ./server/tools/tools-cheat-sheet.md
       - Zones:
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:

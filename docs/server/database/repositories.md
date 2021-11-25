@@ -2,6 +2,10 @@
 
 The purpose of this guide to serve as a reference for our source generated repositories and our use of the repository pattern in the server codebase
 
+!!! info 
+
+      The audience of this page is for EQEmulator developers
+
 ## What is the Repository Pattern?
 
 "The simplest approach, especially with an existing system, is to create a new Repository implementation for each business object you need to store to or retrieve from your persistence layer. Further, you should only implement the specific methods you are calling in your application."
