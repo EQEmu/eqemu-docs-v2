@@ -78,4 +78,14 @@ Logging categories have their settings stored in the [logsys_categories](https:/
 | 64 | Flee | 0 | 0 | 0 |  |
 | 65 | Aura | 0 | 0 | 0 |  |
 | 66 | HotReload | 1 | 0 | 1 |  |
-
+| 67 | Merchants | 0 | 0 | 0 | |
+| 68 | ZonePoints | 0 | 0 | 0 | |
+| 69 | Loot | 0 | 0 | 0 | |
+| 70 | Expeditions | 0 | 0 | 0 | |
+| 71 | DynamicZones | 0 | 0 | 0 | |
+| 72 | Scheduler | 0 | 0 | 0 | |
+| 73 | Cheat | 0 | 0 | 0 | |
+| 74 | ClientList | 0 | 0 | 0 | |
+| 75 | DialogueWindow | 0 | 0 | 0 | |
+| 76 | HTTP | 0 | 0 | 0 | |
+| 77 | Saylink | 0 | 0 | 0 | |
