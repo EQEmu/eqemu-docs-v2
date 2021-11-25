@@ -6,7 +6,7 @@ Let's create a new faction. For this example, the NPCs on this faction will be K
 
 Create a new entry in faction_list.  Since we want them to start out KOS to everyone except Erudites, set their base value to -1000.  This is barely KOS, so if you want to force more faction work to get above KOS, set is that much lower. 
 
-See table below:\
+See table below:
 
 
 | Faction Value | Faction CON  |

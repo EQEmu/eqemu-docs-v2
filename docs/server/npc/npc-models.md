@@ -379,7 +379,7 @@ Below is a list of NPC Race Models that are used in the _chr text files in the c
 | 395 | icy | icy_chr | Aneuk |
 | 396 | ihu | ihu_chr | Kyv |
 | 397 | isb | isb_chr | Noc |
-| 398 | ibr | ibr_chr | Ra\tuk |
+| 398 | ibr | ibr_chr | Ratuk |
 | 399 | ifc | ifc_chr | Taneth |
 | 400 | ilb | ilb_chr | Huvul |
 | 401 | iwb |  | Mutna |

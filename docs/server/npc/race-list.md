@@ -420,7 +420,7 @@ This list contains all Race IDs and bitmasks.
 | 395 | Aneuk |
 | 396 | Kyv |
 | 397 | Noc |
-| 398 | Ra\tuk |
+| 398 | Ratuk |
 | 399 | Taneth |
 | 400 | Huvul |
 | 401 | Mutna |

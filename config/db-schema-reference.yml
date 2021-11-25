@@ -1055,7 +1055,7 @@ books:
     ordinal_position: 1
   txtfile:
     dataType: text
-    description: The text in the book. \` Represents line spaces, \`\` is two line spaces, \`\`\` is three line spaces, etc. (13 lines per book page\)
+    description: The text in the book. ` Represents line spaces, `` is two line spaces, ``` is three line spaces, etc. (13 lines per book page\)
     nullable: "NO"
     ordinal_position: 2
 bot_buffs:
@@ -1982,7 +1982,7 @@ bugs:
     ordinal_position: 3
   status:
     dataType: tinyint
-    description: \[Account Status of Reporter\]([../../../../server/player/status-levels](../../../../server/player/status-levels)
+    description: [Account Status of Reporter\]([../../../../server/player/status-levels](../../../../server/player/status-levels)
     nullable: "NO"
     ordinal_position: 13
   target:
@@ -8095,7 +8095,7 @@ merc_merchant_template_entries:
 merc_merchant_templates:
   merc_merchant_template_id:
     dataType: int
-    description: \[Unique Mercenary Merchant Template Identifier
+    description: [Unique Mercenary Merchant Template Identifier
     nullable: "NO"
   name:
     dataType: varchar

@@ -11,7 +11,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | Command | Description |
 | :--- | :--- |
 | #acceptrules | [acceptrules] - Accept the EQEmu Agreement |
-| #advnpcspawn | [maketype.|makegroup\|addgroupentry\|addgroupspawn][removegroupspawn\|movespawn\|editgroupbox\|cleargroupbox] |
+| #advnpcspawn | [maketype.|makegroup|addgroupentry|addgroupspawn][removegroupspawn|movespawn|editgroupbox|cleargroupbox] |
 | #aggro | (range) [-v] - Display aggro information for all mobs 'range' distance from your target. -v is verbose faction info. |
 | #aggrozone | [aggro] - Aggro every mob in the zone with X aggro. Default is 0. Not recommend if you are not invulnerable. |
 | #ai | [factionid/spellslist/con/guard/roambox/stop/start] - Modify AI on NPC target |
@@ -35,7 +35,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #crashtest | Crash the zoneserver |
 | #cvs | Summary of client versions currently online. |
 | #damage | [amount] - Damage your target |
-| #databuckets | [view\|delete][key][limit = 50] - View or delete data bucket by key |
+| #databuckets | [view|delete][key][limit = 50] - View or delete data bucket by key |
 | #date | [yyyy] [mm] [dd] [HH] [MM] - Set EQ time |
 | #dbspawn2 | [spawngroup] [respawn] [variance] - Spawn an NPC from a predefined row in the spawn2 table |
 | #delacct | [accountname] - Delete an account |
@@ -59,17 +59,17 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #endurance | Restores your or your target's endurance |
 | #equipitem | [slotid(0-22)] - Equip the item on your cursor into the specified slot |
 | #face | [number of face] - Sets you or your target's face to face number, temporarily. |
-| #faction | [find (criteria\|all) \| review (criteria\|all) \| reset (id)] - Resets player's faction |
+| #faction | [find (criteria|all) | review (criteria|all) | reset (id)] - Resets player's faction |
 | #findaliases | [search criteria] - Searches for available command aliases by alias or command |
 | #findnpctype | [search criteria] - Search database NPC types |
 | #findrace | [search criteria] - Search for a race |
 | #findspell | [search criteria] - Search for a spell |
 | #findzone | [search criteria] - Search database for zone |
-| #fixmob | [nextrace\|prevrace\|gender\|nexttexture\|prevtexture\|nexthelm\|prevhelm] - Manipulate appearance of your NPC target |
+| #fixmob | [nextrace|prevrace|gender|nexttexture|prevtexture|nexthelm|prevhelm] - Manipulate appearance of your NPC target |
 | #flag | [status] [acctname] - Refresh your admin status, or set an account's admin status if arguments provided |
 | #flagedit | Edit zone flags on your target |
 | #flags | Displays the flags of you or your target |
-| #flymode | [0\|1\|2\|3\|4\|5] - Set your or your player target's flymode to ground\|flying\|levitate\|water\|floating\|levitate running |
+| #flymode | [0|1|2|3|4|5] - Set your or your player target's flymode to ground|flying|levitate|water|floating|levitate running |
 | #fov | Check whether you are behind or in your target's field of view |
 | #freeze | Freeze your target |
 | #gassign | [id] - Assign targetted NPC to predefined wandering grid id |
@@ -117,7 +117,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #killallnpcs | [npc name] - Kills all NPCs by search name. Leave blank for all attackable NPCs |
 | #lastname | [new lastname] - Set your or your player target's lastname |
 | #level | [level] - Set your or your target's level |
-| #list | [npcs\|players\|corpses\|doors\|objects] [search] - Search entities |
+| #list | [npcs|players|corpses|doors|objects] [search] - Search entities |
 | #listnpcs | [name/range] - Search NPCs |
 | #listpetition | List petitions |
 | #load shared memory | [shared memory name] - Reloads shared memory and uses the input as output |
@@ -152,12 +152,12 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #npcspawn | [create/add/update/remove/delete] - Manipulate spawn DB |
 | #npcspecialattk | [flagchar] [perm] - Set NPC special attack flags. Flags are E(nrage) F(lurry) R(ampage) S(ummon). |
 | #npcstats | Show stats about target NPC |
-| #npctype cache | [id\|all] - Clears the NPC type cache for either the ID or ALL NPCs |
+| #npctype cache | [id|all] - Clears the NPC type cache for either the ID or ALL NPCs |
 | #npctypespawn | [npctypeid] [factionid] - Spawn an NPC from the db |
 | #nudge | Nudge your target's current position by specific values |
 | #nukebuffs | Strip all buffs on you or your target |
 | #nukeitem | [itemid] - Remove itemid from your player target's inventory |
-| #object | List\|Add\|Edit\|Move\|Rotate\|Copy\|Save\|Undo\|Delete - Manipulate static and tradeskill objects within the zone |
+| #object | List|Add|Edit|Move|Rotate|Copy|Save|Undo|Delete - Manipulate static and tradeskill objects within the zone |
 | #oocmute | [1/0] - Mutes OOC chat |
 | #opcode | OPCODE management |
 | #path | View and edit pathing |
@@ -179,7 +179,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #qglobal | [on/off/view] - Toggles qglobal functionality on an NPC |
 | #questerrors | Shows quest errors |
 | #race | [racenum] - Change you or your target's race. Use #race 0 to return to normal. This is temporary, you revert back to normal upon zoning. |
-| #raidloot | [Leader\|Groupleader\|Selected\|All] - Sets your raid loot settings if you have permission to do so |
+| #raidloot | [Leader|Groupleader|Selected|All] - Sets your raid loot settings if you have permission to do so |
 | #randomfeatures | Randomly changes the Facial Features of your target |
 | #refreshgroup | Refreshes Group. |
 | #reloadaa | Reloads AA data |
@@ -224,7 +224,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #setstartzone | [zoneid] - Set target's starting zone. Set to zero to allow the player to use /setstartcity |
 | #setstat | Sets the stats to a specific value. |
 | #setxp | [value] - Set your or your player target's experience |
-| #showbonusstats | [item\|spell\|all] - Shows bonus stats for target from items or spells. Shows both by default. |
+| #showbonusstats | [item|spell|all] - Shows bonus stats for target from items or spells. Shows both by default. |
 | #showbuffs | List buffs active on your target or you if no target |
 | #shownpcgloballoot | Show GlobalLoot entries on this NPC |
 | #shownumhits | Shows buffs numhits for yourself |
