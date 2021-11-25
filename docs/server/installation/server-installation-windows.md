@@ -14,18 +14,18 @@ This installer assumes you have a **clean **install of Windows and an Internet C
 
 ## What's in the Installer
 
-* **Perl 5.24.4 x64**
-* **MariaDB x64 10.x**
-* **Latest PEQ Database**
-* **Latest PEQ Quests**
-* **Latest Plugins repository**
-* **Visual Studio** Runtimes
-* **Automatically added firewall rules**
-* **V2 Server Side Maps**
-* **Path Files**
-* **LUA**
-* **Optimized and latest server binaries (Stable)**
-* **Loginserver**
+- [x] **Perl 5.24.4 x64**
+- [x] **MariaDB x64 10.x**
+- [x] **Latest PEQ Database**
+- [x] **Latest PEQ Quests**
+- [x] **Latest Plugins repository**
+- [x] **Visual Studio** Runtimes
+- [x] **Automatically added firewall rules**
+- [x] **V2 Server Side Maps**
+- [x] **Path Files**
+- [x] **LUA**
+- [x] **Optimized and latest server binaries (Stable)**
+- [x] **Loginserver**
 
 !!! info
       More installer info found in the installation details
