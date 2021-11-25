@@ -8,10 +8,6 @@ description: >-
 
 In the latest overhaul of the login server, an enhanced command-line management interface was introduced to easily interface with basic management functionality needs. If you want to do more enhanced functionality such as integrating with the HTTP API, you can reference [API Endpoints](broken-reference)
 
-## CLI Menu
-
-![](<../../gitbook/assets/image (17).png>)
-
 ### Help Menu
 
 The login server command line help menu can be accessed by simply running the server binary from the command line with the option `--help`
