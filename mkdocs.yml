@@ -73,7 +73,6 @@ nav:
   - Play:
       - Play Guide: play/play-guide.md
       - macOS Client Configuration: play/macos-mojave-client-configuration.md
-      - Windows Client Configuration: play/windows-client-configuration.md
       - Frequently Asked Questions: play/frequently-asked-questions.md
       - Underfoot Missing Files: play/underfoot-missing-files.md
   - Server:
