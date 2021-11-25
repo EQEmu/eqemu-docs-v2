@@ -1,36 +1,44 @@
 # Play Guide
 
-## Description
+!!! info
+  
+    This guide will take you through the steps necessary to play on an EQEmulator Server. <a href="ac_this-guide-will-take-you-through-the-steps-necessary-to-play-on-an-eqemulator-server" id="ac_this-guide-will-take-you-through-the-steps-necessary-to-play-on-an-eqemulator-server"></a>
 
-#### This guide will take you through the steps necessary to play on an EQEmulator Server. <a href="ac_this-guide-will-take-you-through-the-steps-necessary-to-play-on-an-eqemulator-server" id="ac_this-guide-will-take-you-through-the-steps-necessary-to-play-on-an-eqemulator-server"></a>
+## Supported Clients
 
-* **Please note: As of this time you MUST have one of the follow versions of Everquest**
+|Titanium Edition|Secrets of Faydwer|Seeds of Destruction|Underfoot|Rain of Fear (Most used)|
+|:---:|:---:|:---:|:---:|:---:|
+| ![](https://user-images.githubusercontent.com/3319450/143334304-4faf5cf8-6ed9-4b47-a0e2-938cc3f68e57.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334432-e6e9eaef-b141-4b05-9607-ceb38dcf717d.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334455-420ee97d-ed5e-4f21-a824-48371831c604.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334476-4b699dec-6a1b-4690-be7f-64eec22cd60c.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334498-810f76b6-7f18-4723-a02a-d50e11af96d1.png){: style="height:150px; width: 250px;"} |
 
-| <p><img src="http://wiki.eqemulator.org/l/wa/images/exp_box_art/Titanium.jpg" alt=""></p><p><strong>Everquest: Titanium Edition (Retail from</strong></p><p><strong>the CDs)</strong></p>                                                         | <p><img src="http://wiki.eqemulator.org/l/wa/images/expansions/secrets_of_faydwer.png" alt=""></p><p><strong>Everquest: Secrets of Faydwer (Retail from the CDs/DVDs)</strong></p>                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p><img src="http://wiki.eqemulator.org/l/wa/images/expansions/seeds_of_destruction.jpg" alt=""></p><p><strong>Everquest: Seeds of Destruction (No longer available by legal means)</strong></p>                                                  | <p><img src="http://wiki.eqemulator.org/l/wa/images/expansions/underfoot.jpg" alt=""></p><p><strong>Everquest: Underfoot (No longer available by legal means)</strong></p>                                                                                           |
-| <p><img src="http://wiki.eqemulator.org/l/wa/images/expansions/eqroflogo.png" alt=""></p><p><strong>Everquest: Rain of Fear (RoF - Build Date of Dec 10 2012 17:35:44) Download-Only from Steam (No longer available by legal means)</strong></p> | <p><img src="http://wiki.eqemulator.org/l/wa/images/expansions/eqroflogo.png" alt=""></p><p><strong>Everquest: Rain of Fear (RoF2 - Build Date</strong> <strong>of May 10 2013 23:30:08) Download-Only from Steam  (No longer available by legal means)</strong></p> |
+- [x] **Everquest** Titanium Edition (Retail from the CDs)
+- [x] **Everquest** Secrets of Faydwer (Retail from the CDs/DVDs)
+- [x] **Everquest** Seeds of Destruction (No longer available by legal means)
+- [x] **Everquest** Underfoot (No longer available by legal means)
+- [x] **Everquest** Rain of Fear (RoF - Build Date of Dec 10 2012 17:35:44) Download-Only from Steam (No longer available by legal means)
+- [x] **Everquest** Rain of Fear (RoF2 - Build Date of May 10 2013 23:30:08) Download-Only from Steam (No longer available by legal means)
 
-* Some servers may only allow earlier version of clients (Left earliest, right latest)
-* Most servers will allow most clients simultaneously, the earlier clients may not have the features or zone capabilities that later clients do, however.
+!!! note
+  
+    Some servers may only allow earlier version of clients (Left earliest, right latest)
 
-See the ClientFeatures page to view some of the differences between the clients. Also see the [Client Versions](../player/client-version-bitmasks.md) page for details on determining if the client you have is compatible with EQEmu or not.
-
-* Note: If using the Underfoot client, some files may need to be copied from another EQ install as mentioned in the[ ](http://wiki.eqemulator.org/p?UFMissingFilesList&frm=Frequently_Asked_Questions--Play_Guide%3A_Getting_Started)[Underfoot Missing Files](underfoot-missing-files.md) page and discussed [here](http://www.eqemulator.org/forums/showthread.php?t=31635)
-* Note: Do not download the Rain of Fear client from anyplace other than Steam, or you may get an incompatible version of the client!
-  * The Rain of Fear client is no longer available from Steam.
+!!! info
+  
+    Most servers will allow most clients simultaneously, the earlier clients may not have the features or zone capabilities that later clients do, however.
 
 ## Step 1 - Installing 
 
-### **Tit | SoF**
+### Titanium & Secrets of Faydwer
 
-* Install Titanium or Secrets of Faydwer from the disks or Seeds of Destruction/Underfoot from your local copy the Steam download. Do NOT patch to live. Do not patch at all.
+* Install Titanium or Secrets of Faydwer from the disks or Seeds of Destruction/Underfoot from your local copy the Steam download. **Do NOT patch live**.
 * Titanium/SoF Note Some users with AMD Athlon(tm) 64 X2 Dual Core Processors have reported a speed issue with the client.
 * If you still have Dual Core CPU issues or other issues with starting Everquest, see the[ Frequently Asked Questions](frequently-asked-questions.md). Note that the SoD and later clients do not have Multi-CPU issues like previous clients.
 
-### **SoD | UF | RoF | RoF2**
+### Seeds of Destruction, Underfoot, Rain of Fear
 
-* Note It is HIGHLY recommended that you make a backup copy of your SoD/UF/RoF/RoF2 download folder before taking any further actions in the case that your download gets corrupted or patched by mistake.  Do not attempt to run Everquest using the shortcut on your Desktop before making a backup or it will patch your client and break it for EQEmu!
+!!! note
+
+    It is HIGHLY recommended that you make a backup copy of your SoD/UF/RoF/RoF2 download folder before taking any further actions in the case that your download gets corrupted or patched by mistake. Do not attempt to run Everquest using the shortcut on your Desktop before making a backup or it will patch your client and break it for EQEmu!
+
 * To make a backup, simply copy the installed Everquest folder to some other place on your hard drive. Naming it something like C:\Everquest_SoD or C:\Everquest_RoF2 would make it easy to identify.
 * Note: If using the SoD, UF, RoF, or RoF2 client from Steam, it will get installed into one of the following folders by default:
 * **On 32bit Windows:**
@@ -40,7 +48,7 @@ See the ClientFeatures page to view some of the differences between the clients.
 
 ## Step 2 - Forum Account
 
-* If you have not already done so, you will need to register an account with the EQEmulator Forums∞. Click the "Register" link at the top left of the page. Follow the prompts that are displayed and enter the required information: username, password, email address, etc. Make sure you use a valid email address as your new account needs to be verified. Check your email and validate your account. If you do not receive a validation code, please PM an Administrator in the IRC channel.
+If you have not already done so, you will need to register an account with the EQEmulator Forums∞. Click the "Register" link at the top left of the page. Follow the prompts that are displayed and enter the required information: username, password, email address, etc. Make sure you use a valid email address as your new account needs to be verified. Check your email and validate your account. If you do not receive a validation code, please PM an Administrator in the IRC channel.
 
 ## Step 3 - Login Server Account
 
@@ -54,21 +62,29 @@ See the ClientFeatures page to view some of the differences between the clients.
 
 ## Step 4 - EQHost File
 
-* In order for your client to connect to the EQEmulator Login Server (and not SOE's EQLive Login Server), you will need to change your eqhost.txt file to point at the correct location. Go into your EverQuest directory and locate the eqhost.txt file. Replace the contents of the file with the following (Remove any trailing spaces):
+!!! info
 
-### **Tit | SoF**
+    In order for your client to connect to the EQEmulator Login Server (and not SOE's EQLive Login Server), you will need to change your eqhost.txt file to point at the correct location. 
 
-```
-[LoginServer]
-Host=login.eqemulator.net:5998
-```
+    Go into your EverQuest directory and locate the eqhost.txt file. 
 
-### **SoD| UF | RoF | RoF2**
+    Replace the contents of the file with the following (Remove any trailing spaces)
 
-```
-[LoginServer]
-Host=login.eqemulator.net:5999
-```
+!!! eqhost
+  
+    === "Titanium & Secrets of Faydwer"
+
+    ```text
+    [LoginServer]
+    Host=login.eqemulator.net:5998
+    ```
+
+    === "Seeds of Destruction, Underfoot, Rain of Fear"
+
+    ```text
+    [LoginServer]
+    Host=login.eqemulator.net:5999
+    ```
 
 ## Step 5 - Creating Shortcut
 
