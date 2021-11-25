@@ -161,7 +161,6 @@
     - login_accounts: schema/loginserver/login_accounts.md
     - login_api_tokens: schema/loginserver/login_api_tokens.md
     - login_server_admins: schema/loginserver/login_server_admins.md
-    - login_server_list_types: schema/loginserver/login_server_list_types.md
     - login_world_servers: schema/loginserver/login_world_servers.md
 - Loot:
     - global_loot: schema/loot/global_loot.md
