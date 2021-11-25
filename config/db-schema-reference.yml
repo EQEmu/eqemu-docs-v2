@@ -7632,17 +7632,6 @@ login_server_admins:
     description: '[Registration IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 8
-login_server_list_types:
-  description:
-    dataType: varchar
-    description: Description
-    nullable: "NO"
-    ordinal_position: 2
-  id:
-    dataType: int
-    description: Unique List Type Identifier
-    nullable: "NO"
-    ordinal_position: 1
 login_world_servers:
   id:
     dataType: int
@@ -7671,7 +7660,7 @@ login_world_servers:
     ordinal_position: 8
   login_server_list_type_id:
     dataType: int
-    description: '[List Type Identifier](login_server_list_types.md)'
+    description: 'List Type Identifier (1 Legends, 2 Preferred, 3 Standard)'
     nullable: "NO"
     ordinal_position: 5
   long_name:
