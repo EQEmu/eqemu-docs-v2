@@ -1,10 +1,12 @@
----
-description: Embedded Web REST API
----
-
 # REST API
 
-The login server has an embedded web server that servers an API on port 6000 unless otherwise specified in the config
+The login server has an embedded web server that servers an API on port 6000 unless otherwise specified in the config.
+
+The API is very basic in its current form but serves very simple use cases.
+
+!!! warning
+
+    For security reasons, its recommended that this port is exposed behind a secure HTTP proxy as the API surface itself is not encrypted and credentials are sent over the wire. Use responsibily.
 
 === "login.json"
       ```json
@@ -22,7 +24,7 @@ You have the option to disable it, or change the port altogether
 
 The login server requires API tokens to interact with the API, they can be generated via the CLI
 
-### Using the CLI Interface
+## Using the CLI Interface
 
 ```bash
 eqemu@dc25a75287d7:~/server$ ./loginserver web-api-token:create --write --read
@@ -40,11 +42,11 @@ MariaDB [peq]> select * from login_api_tokens;
 ```
 
 !!! warning
-      To create read only users, simply specify **only** the **--read **flag when creating users
+      To create read only users, simply specify **only** the --read flag when creating users
 
 
 !!! info
-      **Note **As a general rule, API calls that are **GET **are going to require **--read **while **POST** HTTP calls will require **--write**
+      As a general rule, API calls that are GET are going to require --read while **POST** HTTP calls will require **--write**
 
 
 ## API Endpoints
@@ -55,132 +57,149 @@ The login server has a small handful of endpoints which have been created, it is
 
 There is an example of a PHP client that interacts with this API located here
 
-{% embed url="https://github.com/Akkadius/eqemu-loginserver-php-api-client" %}
+[https://github.com/Akkadius/eqemu-loginserver-php-api-client](https://github.com/Akkadius/eqemu-loginserver-php-api-client)
 
-## Login Accounts
+## Accounts
 
-{% swagger baseUrl="http://loginserver:6000" path="/v1/account/create" method="post" summary="Login Account Create" %}
-{% swagger-description %}
+!!! example
 
-{% endswagger-description %}
+    BaseURL http://loginserver:6000
 
-{% swagger-parameter in="path" name="Authorization" type="string" %}
-Authorization: Bearer <token>
-{% endswagger-parameter %}
+    Header **Authorization**: Bearer <token\>
 
-{% swagger-response status="200" description="" %}
-```
-[
-	{
-		"local_ip" : "127.0.0.1",
-		"players_online" : 0,
-		"remote_ip" : "",
-		"server_list_id" : 3,
-		"server_long_name" : "Akkas Docker PEQ Installer (L)",
-		"server_short_name" : "Akkas Docker PEQ Installer (L)",
-		"server_status" : -2,
-		"zones_booted" : 0
-	}
-]
-```
-{% endswagger-response %}
-{% endswagger %}
+    === "POST /v1/account/create"
 
-```json
-{
-    "username": "test",
-    "password": "test",
-    "email": "<optional>"
-}
-```
+        Create local loginserver account
 
-{% swagger baseUrl="http://loginserver:6000" path="/v1/account/credentials/validate/local" method="post" summary="Validate Login Account Credentials" %}
-{% swagger-description %}
+        **Request Body**
 
-{% endswagger-description %}
+        ```json
+        {
+            "username": "test",
+            "password": "test",
+            "email": "<optional>"
+        }
+        ```
 
-{% swagger-parameter in="path" name="Authorization" type="string" %}
-Authorization: Bearer <token>
-{% endswagger-parameter %}
+        !!! responses
 
-{% swagger-response status="200" description="" %}
-```
-{
-    "data": {
-        "account_id": 3,
-    },
-    "message": "Credentials valid!"
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+            === "200"
 
-```json
-{
-    "username": "test",
-    "password": "test",
-    "email": "<optional>"
-}
-```
+                ```json
+                {
+                    "data": {
+                        "account_id": 1,
+                    },
+                    "message": "Account created successfully!"
+                }
+                ```
+    
+            === "400"
+    
+                ```json
+                {
+                    "error": "Account failed to create!"
+                }
+                ```
 
-{% swagger baseUrl="http://loginserver:6000" path="/v1/account/credentials/update/local" method="post" summary="Update Login Account Credentials" %}
-{% swagger-description %}
+    === "POST /v1/accounts/credentials/validate/local"
 
-{% endswagger-description %}
+        Validate local Loginserver account credentials
 
-{% swagger-parameter in="path" name="Authorization" type="string" %}
-Authorization: Bearer <token>
-{% endswagger-parameter %}
+        **Request Body**
 
-{% swagger-response status="200" description="" %}
-```
-{
-    "message": "Loginserver account credentials updated!"
-}
-```
-{% endswagger-response %}
+        ```json
+        {
+            "username": "test",
+            "password": "test",
+            "email": "<optional>"
+        }
+        ```
 
-{% swagger-response status="400" description="" %}
-```
-{
-    "error": "Failed to update loginserver account credentials!"
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+        !!! responses
 
-```javascript
-{
-    "username": "test",
-    "password": "newpassword"
-}
-```
+            === "200"
+
+                ```json
+                {
+                    "data": {
+                        "account_id": 3,
+                    },
+                    "message": "Credentials valid!"
+                }
+                ```
+
+            === "400"
+
+                ```json
+                {
+                    "error": "Credentials invalid!"
+                }
+                ```
+
+    === "POST /v1/account/credentials/update/local"
+
+        Update local Loginserver account credentials
+
+        **Request Body**
+
+        ```json
+        {
+            "username": "test",
+            "password": "test",
+        }
+        ```
+
+        !!! responses
+
+            === "200"
+
+                ```json
+                {
+                    "message": "Loginserver account credentials updated!"
+                }
+                ```
+
+            === "400"
+
+                ```json
+                {
+                    "error": "Failed to find associated loginserver account!"
+                }
+                ```
+
+                ```json
+                {
+                    "error": "Failed to update loginserver account credentials!"
+                }
+                ```
+
 
 ## World Servers
 
-{% swagger baseUrl="http://loginserver:6000" path="/v1/servers/list" method="get" summary="Get World Server List" %}
-{% swagger-description %}
+!!! example
+    
+    BaseURL http://loginserver:6000
 
-{% endswagger-description %}
+    Header **Authorization**: Bearer <token\>
 
-{% swagger-parameter in="path" name="Authorization" type="string" %}
-Authorization: Bearer <token>
-{% endswagger-parameter %}
+    === "GET /v1/servers/list"
 
-{% swagger-response status="200" description="" %}
-```
-[
-	{
-		"local_ip" : "127.0.0.1",
-		"players_online" : 0,
-		"remote_ip" : "",
-		"server_list_id" : 3,
-		"server_long_name" : "Akkas Docker PEQ Installer (L)",
-		"server_short_name" : "Akkas Docker PEQ Installer (L)",
-		"server_status" : -2,
-		"zones_booted" : 0
-	}
-]
-```
-{% endswagger-response %}
-{% endswagger %}
+        Lists connected worldservers (memory)
+
+        **Result**
+
+        ```json
+        [
+            {
+                "local_ip" : "127.0.0.1",
+                "players_online" : 0,
+                "remote_ip" : "",
+                "server_list_id" : 3,
+                "server_long_name" : "Akkas Docker PEQ Installer (L)",
+                "server_short_name" : "Akkas Docker PEQ Installer (L)",
+                "server_status" : -2,
+                "zones_booted" : 0
+            }
+        ]
+        ```
