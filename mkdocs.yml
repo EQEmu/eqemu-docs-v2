@@ -109,6 +109,7 @@ nav:
           - Conventions & Guidlines: server/database/conventions-guidelines.md
           - Multi Tenancy: server/database/multi-tenancy.md
           - Database Backup Tool: server/database/database-backup-tool.md
+          - Performance Tuning: server/database/performance-tuning.md
           - Repositories: server/database/repositories.md
       - Expedition System:
           - server/expedition-system/README.md
