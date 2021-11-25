@@ -70,12 +70,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 nav:
-  - Play (Client):
-      - server/client-configuration/README.md
+  - Play:
+      - Play Guide: server/client-configuration/play-guide.md
       - macOS Client Configuration: server/client-configuration/macos-mojave-client-configuration.md
       - Windows Client Configuration: server/client-configuration/windows-client-configuration.md
       - Frequently Asked Questions: server/client-configuration/frequently-asked-questions.md
-      - Play Guide: server/client-configuration/play-guide.md
       - Underfoot Missing Files: server/client-configuration/underfoot-missing-files.md
   - Server:
       - README.md

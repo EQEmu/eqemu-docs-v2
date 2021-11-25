@@ -6,6 +6,11 @@
 
 ## Supported Clients
 
+!!! warning
+    
+    **EverQuest clients are the intellectual property of the Daybreak Game Company, LLC.** Copies of Daybreak Game Company intellectual property are not sourced through the EQEmulator project, nor should you provide unlicensed copies through any EQEmulator asset.
+
+
 |Titanium Edition|Secrets of Faydwer|Seeds of Destruction|Underfoot|Rain of Fear (Most used)|
 |:---:|:---:|:---:|:---:|:---:|
 | ![](https://user-images.githubusercontent.com/3319450/143334304-4faf5cf8-6ed9-4b47-a0e2-938cc3f68e57.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334432-e6e9eaef-b141-4b05-9607-ceb38dcf717d.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334455-420ee97d-ed5e-4f21-a824-48371831c604.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334476-4b699dec-6a1b-4690-be7f-64eec22cd60c.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334498-810f76b6-7f18-4723-a02a-d50e11af96d1.png){: style="height:150px; width: 250px;"} |
