@@ -1,21 +1,27 @@
 # Logging System
 
-EQEmu used to have many different logging systems in its past. They all were configured differently, all had different configuration formats. In 2015 - a much needed massive overhaul to our logging was made and it has been one of the most valuable things to our project to date.
+!!! info
+
+    EQEmu used to have many different logging systems in its past. 
+
+    They all were configured differently, all had different configuration formats. 
+
+    In 2015 - a much needed massive overhaul to our logging was made and it has been one of the most valuable things to our project to date.
 
 ## Features
 
-* Log levels
-* Hot-Reload of log settings
-* In game, real time server logs
-* Debug levels
-* Categories (Spells, Merchants, Loot etc.)
+* [x] Logging levels (General, Moderate, Detail)
+* [x] Hot-Reload of log settings
+* [x] In game, real time server logs
+* [x] Categories (Spells, Merchants, Loot etc.)
 
 ## Output Formats
 
-* Console
-* File
-* In game (gmsay)
-* Can easily be extended to be implemented with other output sinks
+* [x] Console
+* [x] File
+* [x] In game (gmsay)
+
+Can easily be extended to be implemented with other output sinks
 
 ## Debug Levels
 
@@ -34,7 +40,10 @@ All settings are managed in **logsys_categories** database table
 When a process boots up, such as **zone/world/ucs/queryserv/etc**. These settings will load and whatever applies to the server category wise is what it will use as **rules** to understand where to send output, as well as what level of information (high or low) to display
 
 !!! info
+
       Please note that **log_to_gmsay** is only available for zone-level debugging
+
+      As of 2021 it is available in world as well if you have rule **WorldGMSayLogging** enabled (enabled by default)
 
 
 ## In-Game Commands
