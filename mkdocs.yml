@@ -108,6 +108,7 @@ nav:
               - Notepad++: developer/tools/notepad++.md
               - TortoiseGit: developer/tools/tortoisegit.md
       - Database:
+          - Conventions & Guidlines: server/database/conventions-guidelines.md
           - Multi Tenancy: server/database/multi-tenancy.md
           - Database Backup Tool: server/database/database-backup-tool.md
           - Repositories: server/database/repositories.md
