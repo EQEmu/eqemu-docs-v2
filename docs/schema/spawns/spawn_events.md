@@ -19,6 +19,6 @@
 | next_year | int | Next Year |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
 | action | tinyint | [Action Type](../../../../server/npc/spawns/action-types) |
-| argument | mediumint | Argument: \(Based on Action\) 0 = Argument Value |
+| argument | mediumint | Argument: (Based on Action\) 0 = Argument Value |
 | strict | tinyint | Strict Date Criteria: 0 = False, 1 = True |
 

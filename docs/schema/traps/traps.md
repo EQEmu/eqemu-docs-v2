@@ -17,8 +17,8 @@
 | maxzdiff | float | Max Z Difference |
 | radius | float | Trap Radius |
 | effect | int | [Trap Type](../../../../server/zones/trap-types) |
-| effectvalue | int | Effect Value: \(Based on Trap Type\) 0 = [Spell Identifier](../../schema/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 3 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 4 = Minimum Damage |
-| effectvalue2 | int | Effect Value 2: \(Based on Trap Type\) 0 = Unused, 1 = \(0 = Everything Will Aggro, 1 = Only KoS Will Agro\), 2 = Number of NPCs, 3 = Number of NPCs, 4 = Maximum Damage |
+| effectvalue | int | Effect Value: (Based on Trap Type\) 0 = [Spell Identifier](../../schema/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 3 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 4 = Minimum Damage |
+| effectvalue2 | int | Effect Value 2: (Based on Trap Type\) 0 = Unused, 1 = (0 = Everything Will Aggro, 1 = Only KoS Will Agro\), 2 = Number of NPCs, 3 = Number of NPCs, 4 = Maximum Damage |
 | message | varchar | Message |
 | skill | int | [Skill Required](../../../../server/player/skills) |
 | level | mediumint | Level |

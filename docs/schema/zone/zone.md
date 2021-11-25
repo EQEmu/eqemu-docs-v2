@@ -35,9 +35,9 @@
 | fog_green | tinyint | Fog Green Level: 0 = None, 255 = Max |
 | sky | tinyint | Sky type the client will present as the backdrop |
 | ztype | tinyint | This field is sent directly to the client on zone-in, most zones are set to 0, 1 or 255. |
-| zone_exp_multiplier | decimal | This will multiply the XP to this percentage value \(decimal based, 100% = 1.0\) |
+| zone_exp_multiplier | decimal | This will multiply the XP to this percentage value (decimal based, 100% = 1.0\) |
 | walkspeed | float | Walkspeed in this zone |
-| time_type | tinyint | This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, \(akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.\) |
+| time_type | tinyint | This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, (akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.\) |
 | fog_red1 | tinyint | Fog Red Level 1: 0 = None, 255 = Max |
 | fog_green1 | tinyint | Fog Green Level 1: 0 = None, 255 = Max |
 | fog_blue1 | tinyint | Fog Blue Level 1: 0 = None, 255 = Max |
@@ -60,14 +60,14 @@
 | fog_maxclip4 | float | Fog Maximum Clipping Distance 4 |
 | fog_density | float | This is the intensity of the fog, this should be a number between 0-1, most commonly used is .1 or .33 |
 | flag_needed | varchar | [Flag Required](zone_flags.md) |
-| canbind | tinyint | Can Bind: 0 = False, 1 = True \(for Caster\), 2 = True \(for All\) |
+| canbind | tinyint | Can Bind: 0 = False, 1 = True (for Caster\), 2 = True (for All\) |
 | cancombat | tinyint | Can Combat: 0 = False, 1 = True |
-| canlevitate | tinyint | Can Levitate: 0 = False, 1 = True \(Does not affect those with \#gm on\) |
+| canlevitate | tinyint | Can Levitate: 0 = False, 1 = True (Does not affect those with #gm on\) |
 | castoutdoor | tinyint | Cast Outdoors: 0 = False, 1 = True |
 | hotzone | tinyint | Hotzone: 0 = False, 1 = True |
 | insttype | tinyint | Instance Type |
 | shutdowndelay | bigint | Shutdown Delay |
-| peqzone | tinyint | \#peqzone: 0 = False, 1 = True |
+| peqzone | tinyint | #peqzone: 0 = False, 1 = True |
 | expansion | tinyint | [Expansion](../../../../server/operation/expansion-list) |
 | suspendbuffs | tinyint | Suspend Buffs: 0 = False, 1 = True |
 | rain_chance1 | int | Rain Chance 1 |
@@ -87,7 +87,7 @@
 | snow_duration3 | int | Snow Duration 3 |
 | snow_duration4 | int | Snow Duration 4 |
 | gravity | float | Gravity |
-| type | int | Type \(0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City\) |
+| type | int | Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City\) |
 | skylock | tinyint | Sky Lock |
 | fast_regen_hp | int | Fast Regen Health |
 | fast_regen_mana | int | Fast Regen Mana |

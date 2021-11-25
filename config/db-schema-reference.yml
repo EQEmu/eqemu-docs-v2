@@ -1055,7 +1055,7 @@ books:
     ordinal_position: 1
   txtfile:
     dataType: text
-    description: The text in the book. \` Represents line spaces, \`\` is two line spaces, \`\`\` is three line spaces, etc. \(13 lines per book page\)
+    description: The text in the book. \` Represents line spaces, \`\` is two line spaces, \`\`\` is three line spaces, etc. (13 lines per book page\)
     nullable: "NO"
     ordinal_position: 2
 bot_buffs:
@@ -1982,7 +1982,7 @@ bugs:
     ordinal_position: 3
   status:
     dataType: tinyint
-    description: \[Account Status of Reporter\]\([../../../../server/player/status-levels](../../../../server/player/status-levels)
+    description: \[Account Status of Reporter\]([../../../../server/player/status-levels](../../../../server/player/status-levels)
     nullable: "NO"
     ordinal_position: 13
   target:
@@ -5944,7 +5944,7 @@ item_tick:
     ordinal_position: 3
   it_qglobal:
     dataType: varchar
-    description: '[Quest Global Identifier](../../schema/data-storage/quest_globals.md) \(Deprecated\)'
+    description: '[Quest Global Identifier](../../schema/data-storage/quest_globals.md) (Deprecated\)'
     nullable: "NO"
     ordinal_position: 5
 items:
@@ -8103,7 +8103,7 @@ merc_merchant_templates:
     nullable: "NO"
   qglobal:
     dataType: varchar
-    description: '[Quest Global](../data-storage/quest_globals.md) \(Deprecated\)'
+    description: '[Quest Global](../data-storage/quest_globals.md) (Deprecated\)'
     nullable: "YES"
 merc_name_types:
   class_id:
@@ -8293,7 +8293,7 @@ merc_stats:
     nullable: "NO"
   attack_speed:
     dataType: tinyint
-    description: 'Attack Speed: The lower the number, the faster the NPC hits. \(Deprecated\)'
+    description: 'Attack Speed: The lower the number, the faster the NPC hits. (Deprecated\)'
     nullable: "NO"
   clientlevel:
     dataType: tinyint
@@ -9237,7 +9237,7 @@ npc_types:
     ordinal_position: 67
   attack_speed:
     dataType: float
-    description: 'Attack Speed: The lower the number, the faster the NPC hits. \(Deprecated\)'
+    description: 'Attack Speed: The lower the number, the faster the NPC hits. (Deprecated\)'
     nullable: "NO"
     ordinal_position: 66
   bodytype:
@@ -9532,7 +9532,7 @@ npc_types:
     ordinal_position: 20
   npcspecialattks:
     dataType: varchar
-    description: NPC Special Attacks \(Deprecated\)
+    description: NPC Special Attacks (Deprecated\)
     nullable: "NO"
     ordinal_position: 28
   peqid:
@@ -9552,7 +9552,7 @@ npc_types:
     ordinal_position: 88
   qglobal:
     dataType: int
-    description: 'Quest Globals: 0 = Disabled, 1 = Enabled \(Deprecated\)'
+    description: 'Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated\)'
     nullable: "NO"
     ordinal_position: 62
   race:
@@ -10218,7 +10218,7 @@ pets:
     ordinal_position: 5
   petnaming:
     dataType: tinyint
-    description: 'Pet Naming: 0 = Soandsos Pet, 1 = Soandsos Familiar, 2 = Soandsos Warder, 3 = Random Naming \(i.e. Gobaner\), 4 = Keeps name from npc_types table'
+    description: 'Pet Naming: 0 = Soandsos Pet, 1 = Soandsos Familiar, 2 = Soandsos Warder, 3 = Random Naming (i.e. Gobaner\), 4 = Keeps name from npc_types table'
     nullable: "NO"
     ordinal_position: 6
   petpower:
@@ -11581,7 +11581,7 @@ spawn_events:
     ordinal_position: 12
   argument:
     dataType: mediumint
-    description: 'Argument: \(Based on Action\) 0 = Argument Value'
+    description: 'Argument: (Based on Action\) 0 = Argument Value'
     nullable: "NO"
     ordinal_position: 13
   cond_id:
@@ -12002,7 +12002,7 @@ spells_new:
     ordinal_position: 104
   TravelType:
     dataType: int
-    description: Travel Type \(Unused\)
+    description: Travel Type (Unused\)
     nullable: "NO"
     ordinal_position: 123
   aemaxtargets:
@@ -13799,12 +13799,12 @@ traps:
     ordinal_position: 10
   effectvalue:
     dataType: int
-    description: 'Effect Value: \(Based on Trap Type\) 0 = [Spell Identifier](../../schema/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 3 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 4 = Minimum Damage'
+    description: 'Effect Value: (Based on Trap Type\) 0 = [Spell Identifier](../../schema/spells/spells_new.md), 1 = Radius, 2 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 3 = [NPC Type Identifier](../../schema/npcs/npc_types.md), 4 = Minimum Damage'
     nullable: "NO"
     ordinal_position: 11
   effectvalue2:
     dataType: int
-    description: 'Effect Value 2: \(Based on Trap Type\) 0 = Unused, 1 = \(0 = Everything Will Aggro, 1 = Only KoS Will Agro\), 2 = Number of NPCs, 3 = Number of NPCs, 4 = Maximum Damage'
+    description: 'Effect Value 2: (Based on Trap Type\) 0 = Unused, 1 = (0 = Everything Will Aggro, 1 = Only KoS Will Agro\), 2 = Number of NPCs, 3 = Number of NPCs, 4 = Maximum Damage'
     nullable: "NO"
     ordinal_position: 12
   group:
@@ -13994,7 +13994,7 @@ veteran_reward_templates:
 zone:
   canbind:
     dataType: tinyint
-    description: 'Can Bind: 0 = False, 1 = True \(for Caster\), 2 = True \(for All\)'
+    description: 'Can Bind: 0 = False, 1 = True (for Caster\), 2 = True (for All\)'
     nullable: "NO"
     ordinal_position: 54
   cancombat:
@@ -14004,7 +14004,7 @@ zone:
     ordinal_position: 55
   canlevitate:
     dataType: tinyint
-    description: 'Can Levitate: 0 = False, 1 = True \(Does not affect those with \#gm on\)'
+    description: 'Can Levitate: 0 = False, 1 = True (Does not affect those with \#gm on\)'
     nullable: "NO"
     ordinal_position: 56
   castoutdoor:
@@ -14414,7 +14414,7 @@ zone:
     ordinal_position: 63
   time_type:
     dataType: tinyint
-    description: This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, \(akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.\)
+    description: This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, (akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.\)
     nullable: "NO"
     ordinal_position: 31
   timezone:
@@ -14424,7 +14424,7 @@ zone:
     ordinal_position: 15
   type:
     dataType: int
-    description: Type \(0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City\)
+    description: Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City\)
     nullable: "NO"
     ordinal_position: 81
   underworld:
@@ -14449,7 +14449,7 @@ zone:
     ordinal_position: 30
   zone_exp_multiplier:
     dataType: decimal
-    description: This will multiply the XP to this percentage value \(decimal based, 100% = 1.0\)
+    description: This will multiply the XP to this percentage value (decimal based, 100% = 1.0\)
     nullable: "NO"
     ordinal_position: 29
   zoneidnumber:
@@ -14526,7 +14526,7 @@ zone_points:
     ordinal_position: 18
   number:
     dataType: smallint
-    description: Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in \(during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp\).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin \(erudnext\).
+    description: Represents the iterator field sent in the struct ZonePoint_Entry, zone points for the current zone are sent when client zones in (during Client::Handle_Connect_OP_ReqClientSpawn in client_packet.cpp\).  This number field must be unique and also could have a hardcoded equivalent in the client, eg. client is expecting a specific number value for a zone point or teleport/object pad, such as in Erudin (erudnext\).
     nullable: "NO"
     ordinal_position: 4
   target_heading:
