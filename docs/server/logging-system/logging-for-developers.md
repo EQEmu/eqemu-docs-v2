@@ -123,9 +123,9 @@ Logging aliases are maintained in **eqemu_logsys_log_aliases.h**
 
 For development purposes, you may want to add a new category, this is very simple to do 
 
-An example of a category being added can be seen at this commit: [How to add a category](https://github.com/EQEmu/Server/commit/a46c0ee7e2dcf094c4b0e4d9cb91525443c19c5b). Once you've added the code to the mentioned sections, the next time world boots world will inject the logging categories if they don't exist in the table.
+An example of a category being added can be seen at this commit: [How to add a category](https://github.com/EQEmu/Server/commit/a46c0ee7e2dcf094c4b0e4d9cb91525443c19c5b). 
 
-An entry needs to be added to the enum and the constant to add a new category - and a database update is not required for it to be functional, but it is required for folks to be able to set the default settings in their server
+Once you've added the code to the mentioned sections, the next time world boots world will inject the logging categories if they don't exist in the table.
 
 ## Adding Default Values
 
