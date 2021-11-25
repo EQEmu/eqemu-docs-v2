@@ -99,15 +99,14 @@ nav:
               - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
               - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
               - Design Considerations: developer/project-peq-expansions/design-considerations.md
-          - Developer Area:
-              - EQDictionary: developer/eqdictionary.md
-              - Packet and OpCode Analysis:
-                  - developer/packet-and-opcode-analysis.md
-              - Tools:
-                  - developer/tools/README.md
-                  - Lua for Windows: developer/tools/lua-for-windows.md
-                  - Notepad++: developer/tools/notepad++.md
-                  - TortoiseGit: developer/tools/tortoisegit.md
+          - EQDictionary: developer/eqdictionary.md
+          - Packet and OpCode Analysis:
+              - developer/packet-and-opcode-analysis.md
+          - Tools:
+              - developer/tools/README.md
+              - Lua for Windows: developer/tools/lua-for-windows.md
+              - Notepad++: developer/tools/notepad++.md
+              - TortoiseGit: developer/tools/tortoisegit.md
       - Database:
           - Multi Tenancy: server/database/multi-tenancy.md
           - Database Backup Tool: server/database/database-backup-tool.md
