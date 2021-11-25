@@ -2,12 +2,12 @@
 
 ### Supported Distributions
 
-* Debian
+* **Debian (Preferred)**
 * Ubuntu
 * CentOS
 * Fedora
 
-Note for Ubuntu 18.04.1:
+Note for Ubuntu 18.04.1
 
 If you're using Ubuntu `18.04.1`, before Starting the Linux Installer, add the following apt repository:
 
