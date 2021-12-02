@@ -21,4 +21,4 @@
 | 50 | 5 Days |
 | 51 | Permanent |
 | 3600 | Duration if not 0, else 3600 |
-
+TODO: Add more formulas.
