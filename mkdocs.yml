@@ -310,6 +310,10 @@ nav:
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:
               - server/zones/customizing-zones/README.md
+                - EQGZI: 
+                    - server/zones/customizing-zones/eqgzi/README.md
+                    - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
+                    - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
               - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
               - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
               - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
