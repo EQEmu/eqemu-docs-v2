@@ -314,7 +314,7 @@ nav:
                 - server/zones/customizing-zones/eqgzi/README.md
                 - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
                 - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
-                - Sound How to: server/zones/customizing-zones/sound-howto.md
+                - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md
               - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
               - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
               - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
