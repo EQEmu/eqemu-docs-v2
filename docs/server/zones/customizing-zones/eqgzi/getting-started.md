@@ -56,6 +56,7 @@ To convert a zone, I recommend using the [convert.bat](https://raw.githubusercon
 If successful, your zone/out/ folder will have an eqg file generated.
 
 To break down the process a conversion does:
+
 - `blender --background %zone%.blend --python C:\src\eqgzi\out\convert.py || goto :error` will take a provided .blend file and export it and all data to the cache\ subfolder.
 - `eqgzi import %zone% || goto :error` will look for the cache\ subfolder and process data found within it, spitting out results into the out\ subfolder
 - `azone %zone% || goto :error` generates a .map file, that then gets placed into the map\ subfolder
