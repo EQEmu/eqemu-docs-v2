@@ -7,19 +7,20 @@ As of **01/01/2022**, EQGZI is a program that turns a 3d modeled project into an
 ### Folder structure
 
 Each zone should have it's own unique folder for eqgzi to operate properly. It expects a folder structure similar to:
-zone/ - root folder eqgzi is ran from
-zone/sql/ - folder created during convert.py execution, contains any .sql files that can optinally be ran on a server database to inject data
-zone/cache/ - temporary folder convert.py places .obj, .mtl, textures (.dds), and definitions (zone_light.txt, etc)
-zone/out/ - output folder with files to copy to your eqgame directory
+
+- zone/ - root folder eqgzi is ran from
+- zone/sql/ - folder created during convert.py execution, contains any .sql files that can optinally be ran on a server database to inject data
+- zone/cache/ - temporary folder convert.py places .obj, .mtl, textures (.dds), and definitions (zone_light.txt, etc)
+- zone/out/ - output folder with files to copy to your eqgame directory
 
 ## Requirements
 
   
-- [EQGZI](https://github.com/xackery/eqgzi/releases). If you get a report about a virus, you'll need to set it as a safelist. Xackery is still investigating the root cause of why there's a virus, but you can [see the VirusTotal results here](https://www.virustotal.com/gui/file-analysis/MTk1MGE1MWQ1ZTEwNzY3MzQwYTJmZjkyZDEyYzc0Nzc6MTY0MTA3NDAzNQ==), a Fugrafa variant is reported.
+- [EQGZI](https://github.com/xackery/eqgzi/releases). If you get a report about a virus, you'll need to ignore it. Xackery is still investigating the root cause of why there's a virus being reported, but you can [see the VirusTotal results here](https://www.virustotal.com/gui/file-analysis/MTk1MGE1MWQ1ZTEwNzY3MzQwYTJmZjkyZDEyYzc0Nzc6MTY0MTA3NDAzNQ==), a Fugrafa variant is reported. Interestingly, only eqgzi.exe only reports this. The eqgzi-gui.exe file, which runs nearly the exact same code, just a gui version, does not.
 
 - [Zone Utilities](https://github.com/Akkadius/EQEmuMaps). This is used for navmesh and water map generation. This can vary on setup, but when you use Akka's installer, it'll download maps to the EQEMU path under maps. You'll see a tools subfolder in there, with awater.exe and azone.exe. Or, you can download the entire maps and grab the contents in the tools subdir.
 
-- **Any 3D Modeling program that can export to OBJ**. The best support and recommended program is [Blender v2.8 or above](https://www.blender.org/download/). It is free. If you don't use blender, you will lose automation support, but can still do most steps by hand.
+- **Any 3D Modeling program that can export to OBJ**. The best support and recommended program is [Blender v2.8 or above](https://www.blender.org/download/). It is free. If you don't use blender, you will lose out a lot of convienences, but can still do all operations manually during the /cache/ step.
 
 ## Environment Setup
 
@@ -50,49 +51,20 @@ First, you need to create a zone file. This depends on your 3d modeling program.
 
 ## Converting your zone
 
-Below is a bat file you can save inside your zone's folder. Edit any :: change field to reflect your setup.
-```bat
-@echo off
-set last=blender
-
-:: change soldungb to your zone name
-set zone=soldungb
-
-:: change C:\src\eqgzi\out\convert.py to your eqgzi's path with the file
-blender --background %zone%.blend --python C:\src\eqgzi\out\convert.py || goto :error
-
-set last=eqgzi
-eqgzi import %zone% || goto :error
-
-set last=azone
-cd out 
-azone %zone% || goto :error 
-cd ..
-del out\azone.log
-rmdir /s /q map\
-mkdir map\
-move out\%zone%.map map\
-
-set last=awater
-cd out 
-awater %zone% || goto :error
-cd ..
-del out\awater.log
-move out\%zone%.wtr map\
-
-set last=copy
-
-:: change c:\src\demoncia\client\rof\ to your eq directory
-copy out\* c:\src\demoncia\client\rof\ || goto :error
-goto :EOF
-
-:error
-echo failed during %last% with signal #%errorlevel%
-exit /b %errorlevel%
-```
+To convert a zone, I recommend using the [convert.bat](https://raw.githubusercontent.com/demoncia/zone/main/convert.bat) file. Read through it and modify any `:: change` notes to match your environment. Currently it is built for blender on the first step, in the future we hope to add support for other tools.
 
 If successful, your zone/out/ folder will have an eqg file generated.
+
+To break down the process a conversion does:
+- `blender --background %zone%.blend --python C:\src\eqgzi\out\convert.py || goto :error` will take a provided .blend file and export it and all data to the cache\ subfolder.
+- `eqgzi import %zone% || goto :error` will look for the cache\ subfolder and process data found within it, spitting out results into the out\ subfolder
+- `azone %zone% || goto :error` generates a .map file, that then gets placed into the map\ subfolder
+- `awater %zone% || goto :error` generates a .wtr file, that then gets placed into the map\ subfolder
+- `copy out\* c:\src\demoncia\client\rof\ || goto :error` copies the out\ subfolder to your eqgame directory
+
+If you aren't using blender, you'll need to skip the blender step, and export and edit files found inside the cache\ folder by hand.
 
 ## Further reading and configuration
 
 - [Shader List](shader-list.md) - A list of shaders
+- [Blender Custom Properties](custom-properties.md) - A list of custom properties supported by EQGZI inside Blender
