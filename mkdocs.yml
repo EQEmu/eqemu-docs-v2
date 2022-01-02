@@ -5,11 +5,10 @@ repo_url: https://github.com/EQEmu/eqemu-docs-v2
 site_url: http://docs.eqemu.io/
 repo_name: EQEmu Docs
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
-copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 extra_css:
   - stylesheets/extra.css
+copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
-  include_sidebar: true
   font:
     text: Roboto
     code: Roboto Mono
@@ -35,6 +34,7 @@ theme:
         name: Switch to light mode
     - media: '(prefers-color-scheme: light)'
       scheme: default
+      primary: ""
       accent: deep purple
       toggle:
         icon: material/weather-night
@@ -714,4 +714,3 @@ nav:
       - "2003": changelog/server/2003.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
-
