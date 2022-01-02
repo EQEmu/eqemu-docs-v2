@@ -1982,7 +1982,7 @@ bugs:
     ordinal_position: 3
   status:
     dataType: tinyint
-    description: [Account Status of Reporter]([../../../../server/player/status-levels](../../../../server/player/status-levels)
+    description: '[Account Status of Reporter]([../../../../server/player/status-levels](../../../../server/player/status-levels)'
     nullable: "NO"
     ordinal_position: 13
   target:
@@ -7632,6 +7632,17 @@ login_server_admins:
     description: '[Registration IP Address](../../schema/account/account_ip.md)'
     nullable: "NO"
     ordinal_position: 8
+login_server_list_types:
+  description:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
 login_world_servers:
   id:
     dataType: int
@@ -7660,7 +7671,7 @@ login_world_servers:
     ordinal_position: 8
   login_server_list_type_id:
     dataType: int
-    description: 'List Type Identifier (1 Legends, 2 Preferred, 3 Standard)'
+    description: List Type Identifier (1 Legends, 2 Preferred, 3 Standard)
     nullable: "NO"
     ordinal_position: 5
   long_name:
@@ -8095,7 +8106,7 @@ merc_merchant_template_entries:
 merc_merchant_templates:
   merc_merchant_template_id:
     dataType: int
-    description: [Unique Mercenary Merchant Template Identifier
+    description: Unique Mercenary Merchant Template Identifier
     nullable: "NO"
   name:
     dataType: varchar

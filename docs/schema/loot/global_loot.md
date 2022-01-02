@@ -1,7 +1,7 @@
 # global_loot
 
 !!! info
-	This page was last generated 2021.11.23
+	This page was last generated 2022.01.01
 
 ## Schema
 
@@ -15,10 +15,10 @@
 | max_level | int | Maximum Level |
 | rare | tinyint | Rare: 0 = False, 1 = True |
 | raid | tinyint | Raid: 0 = False, 1 = True |
-| race | mediumtext | [Race](../../../../server/npc/race-list), multiple races supported if \ |
-| class | mediumtext | [Class](../../../../server/player/class-list), multiple classes supported if \ |
-| bodytype | mediumtext | [Body Type](../../../../server/npc/body-types), multiple body types supported if \ |
-| zone | mediumtext | [Zone Short Name](../../../../server/zones/zone-list),, multiple zones supported if \ |
+| race | mediumtext | [Race](../../../../server/npc/race-list), multiple races supported if  |
+| class | mediumtext | [Class](../../../../server/player/class-list), multiple classes supported if  |
+| bodytype | mediumtext | [Body Type](../../../../server/npc/body-types), multiple body types supported if  |
+| zone | mediumtext | [Zone Short Name](../../../../server/zones/zone-list),, multiple zones supported if  |
 | hot_zone | tinyint |  |
 | min_expansion | tinyint |  |
 | max_expansion | tinyint |  |
