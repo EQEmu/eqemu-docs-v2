@@ -17,7 +17,6 @@ Note that all regions MUST have a prefix inside their object's name, the object 
 
 Note also that all regions MUST be an empty cube. (Add, Empty -> Cube)
 
-For ATP_, a index 
 - **unknowna**: TODO: identify
 - **unknownb**: TODO: identify
 - **unknownc**: TODO: identify
