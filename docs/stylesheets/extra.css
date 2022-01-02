@@ -12,3 +12,26 @@
         transform: none;
     }
 }
+
+.md-container {
+    opacity: 1 !important;
+}
+
+.md-main::before {
+    content: "";
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    position: absolute;
+    z-index: -99999;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(/assets/kelethin-render.png) var(--md-default-bg-color);
+    /*background: url(http://spire.akkadius.com/\/eq-asset-preview-master\/assets\/wallpaper\/lavastorm\.png) var(--md-default-bg-color);*/
+    /*background: url(https://cdn.staticneo.com/n/7/eq_hot_fanfaire_5_.jpg) var(--md-default-bg-color);*/
+    /*background: url(https://images3.alphacoders.com/278/thumb-1920-278779.jpg) var(--md-default-bg-color);*/
+    /*background: url(https://www.wallpaperup.com/uploads/wallpapers/2014/01/04/214433/dc7e2c509b79b6345193393115b74a84-700.jpg) var(--md-default-bg-color);*/
+    opacity: .1
+}

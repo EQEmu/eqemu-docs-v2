@@ -29,20 +29,9 @@ theme:
     - search.suggest
   name: material
   palette:
-    - media: '(prefers-color-scheme: dark)'
-      scheme: slate
+    - scheme: slate
       primary: red
       accent: deep orange
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-    - media: '(prefers-color-scheme: light)'
-      scheme: default
-      primary: ""
-      accent: deep purple
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
 markdown_extensions:
   - admonition
   - abbr
