@@ -48,6 +48,36 @@ Sound custom properties impact the zone.emt file that tells the zone how to emit
 - **sound_echo**: echo level, default 0, range 0 to 1.0
 - **sound_env_toggle**: set whether playback can be controlled with environment sounds in options window, default 1
 
+## Object Door Custom Properties
+
+- **door_id**: Index of door in the zone
+- **door_opentype**: [Door Open Types](/server/zones/door-open-types)
+- **door_guild**: Guild ID that can interact with door [Guild Schema](/schema/guilds/guilds)
+- **door_lockpick**: Lockpicking Skill Required: -1 = Unpickable
+- **door_keyitem**: Normal item ID, used as a key ([Item Schema](/schema/items/items))
+- **door_nokeyring**: No Key Ring (default 0): 0 = False, 1 = True 
+- **door_triggerdoor**: Default 0, 0 For Current Door or use a Unique Door Identifier
+- **door_triggertype**: Default 0, 1 = Open a Type 255 door, 255 = Will Not Open
+- **door_disable_timer**: 
+- **door_doorisopen**: Is door open? (default 0): 0 = false, 1 true
+- **door_param**: 
+- **dest_zone**: Default NONE: Zone shortname clicking door takes you to ([Zone List](/server/zones/zone-list))
+- **dest_instance**: Zone Instance ID clicking door takes you to ([Instance List Schema](/schema/instances/instance_list)
+- **door_dest_x**: Destination X coordinate
+- **door_dest_y**: Destination Y coordinate
+- **door_dest_z**: Destination Z coordinate
+- **door_dest_heading**: Destination heading direction
+- **door_invert_state**: This column will basically behave like such: if the door has a click type and it is to raise up like a door, it will be raised on spawn of the door. Meaning it is inverted. Another example: If a [Door Open Type](/server/zones/door-open-types) is set to a spinning object on click, you could set this to 1 to have the door be spinning on spawn.
+- **door_incline**: 
+- **door_size**: Default 100, scale of object
+- **door_buffer**: 
+- **door_client_version_mask**: Default 4294967295: [Client Version Mask](/server/player/client-version-bitmasks)
+- **door_is_ldon_door**: Is LDoN Door: 0 = False, 1 = True
+- **door_min_expansion**: 
+- **door_max_expansion**: 
+
+
+
 ### Object Spawn Custom Properties
 
 This is an optional feature added to assist with zone generation. When you define these custom properties on any object, inside your sql\ subfolder sql files will generate based on defined information below. Each field is what you'd expect in a database perspective
