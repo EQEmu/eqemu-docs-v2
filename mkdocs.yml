@@ -31,7 +31,7 @@ theme:
   name: material
   palette:
     - scheme: slate
-      primary: red
+      primary: deep orange
       accent: deep orange
 markdown_extensions:
   - admonition
