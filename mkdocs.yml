@@ -5,6 +5,10 @@ repo_url: https://github.com/EQEmu/eqemu-docs-v2
 site_url: http://docs.eqemu.io/
 repo_name: EQEmu Docs
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
+extra:
+  analytics:
+    provider: google
+    property: G-98Y234QYH3
 extra_css:
   - stylesheets/extra.css
 copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.

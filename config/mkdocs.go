@@ -11,12 +11,18 @@ import (
 )
 
 type MkDocsCfg struct {
-	SiteName  string   `yaml:"site_name"`
-	Plugins   []string `yaml:"plugins"`
-	RepoURL   string   `yaml:"repo_url"`
-	SiteUrl   string   `yaml:"site_url"`
-	RepoName  string   `yaml:"repo_name"`
-	EditURI   string   `yaml:"edit_uri"`
+	SiteName string   `yaml:"site_name"`
+	Plugins  []string `yaml:"plugins"`
+	RepoURL  string   `yaml:"repo_url"`
+	SiteUrl  string   `yaml:"site_url"`
+	RepoName string   `yaml:"repo_name"`
+	EditURI  string   `yaml:"edit_uri"`
+	Extra struct {
+		Analytics struct {
+			Provider string `yaml:"provider"`
+			Property string `yaml:"property"`
+		} `yaml:"analytics"`
+	} `yaml:"extra"`
 	ExtraCSS  []string `yaml:"extra_css"`
 	CopyRight string   `yaml:"copyright"`
 	Theme     struct {
@@ -96,8 +102,12 @@ func WriteMkdocsConfig(config MkDocsCfg) {
 		log.Println(err)
 	}
 
+	// post processing for any special yaml objects since go can't marshal / unmarshal properly
+	configString := newConfig.String()
+	configString += ``
+
 	// write
-	err = os.WriteFile(MkDocsConfigFile, newConfig.Bytes(), 755)
+	err = os.WriteFile(MkDocsConfigFile, []byte(configString), 755)
 	if err != nil {
 		log.Println(err)
 	}

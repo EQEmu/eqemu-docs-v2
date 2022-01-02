@@ -55,3 +55,7 @@ watch: ##@dev Run mkdocs watch
 
 install: ##@dev Install
 	pip install mkdocs-material
+
+generate: ##dev Generate docs
+	go run main.go doc:quest-api-doc-generate
+	go run main.go doc:db-schema-generate
