@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` perl
     $spell->GetAOEDuration();
@@ -123,7 +123,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` lua
     spell:AEDuration();

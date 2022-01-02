@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2021.11.22
+    Last generated 2022.01.01
 
 ``` lua
 Rule.AAExpMultiplier
@@ -71,6 +71,7 @@ Rule.AvgDefProcsPerMinute
 Rule.AvgProcsPerMinute
 Rule.AvgSpellProcsPerMinute
 Rule.AvoidanceCap
+Rule.BardTrackingDistanceMultiplier
 Rule.BaseCritChance
 Rule.BaseCritRatio
 Rule.BaseHPRegenBonusRaces
@@ -79,9 +80,11 @@ Rule.BaseImmunityLevel
 Rule.BaseInstrumentSoftCap
 Rule.BaseProcChance
 Rule.BaseRunSpeedCap
+Rule.BeastlordTrackingDistanceMultiplier
 Rule.BeginCast
 Rule.BerserkerFrenzyEnd
 Rule.BerserkerFrenzyStart
+Rule.BerserkerTrackingDistanceMultiplier
 Rule.BindAnywhere
 Rule.BlueModifier
 Rule.BotCharacterLevel
@@ -114,6 +117,7 @@ Rule.ClassicMasterWu
 Rule.ClassicNPCBackstab
 Rule.ClearTempMerchantlist
 Rule.ClericInnateHealFocus
+Rule.ClericTrackingDistanceMultiplier
 Rule.ClientAggroCheckIdleInterval
 Rule.ClientAggroCheckMovingInterval
 Rule.ClientDataRate
@@ -153,6 +157,7 @@ Rule.DistanceForRescueComplete
 Rule.DivineInterventionHeal
 Rule.DragCorpseDistance
 Rule.DruNecWizEncMagACSoftcapReturn
+Rule.DruidTrackingDistanceMultiplier
 Rule.DubiouslyFactionMinimum
 Rule.DumpTargetEntity
 Rule.DyeCommandRequiresDyes
@@ -201,6 +206,7 @@ Rule.EnableVoiceMacros
 Rule.EnableWarpToTrader
 Rule.EnableXTargetting
 Rule.EnableZoneControllerGlobals
+Rule.EnchanterTrackingDistanceMultiplier
 Rule.EnduranceRegenMultiplier
 Rule.EnforceAugmentRestriction
 Rule.EnforceAugmentUsability
@@ -267,6 +273,7 @@ Rule.HotZoneBonus
 Rule.IPLimitDisconnectAll
 Rule.IgnoreSpellDmgLvlRestriction
 Rule.IksarCommonTongue
+Rule.ImmuneToEnrageFromRiposteSpellEffect
 Rule.IndifferentlyFactionMinimum
 Rule.IntAggroThreshold
 Rule.IntervalDurationMS
@@ -331,6 +338,7 @@ Rule.MQGhostExemptStatus
 Rule.MQWarpDetectionDistanceFactor
 Rule.MQWarpExemptStatus
 Rule.MQZoneExemptStatus
+Rule.MagicianTrackingDistanceMultiplier
 Rule.MaintainIntoxicationAcrossZones
 Rule.MajorNPCCorpseDecayTimeMS
 Rule.ManaRegen
@@ -395,6 +403,7 @@ Rule.ModernAAScalingEnabled
 Rule.ModernAAScalingStartPercent
 Rule.MonkACBonusWeight
 Rule.MonkACSoftcap
+Rule.MonkTrackingDistanceMultiplier
 Rule.NPCACFactor
 Rule.NPCAggroMaxDistanceEnabled
 Rule.NPCAssistCap
@@ -417,6 +426,7 @@ Rule.NPCToNPCAggroTimerMin
 Rule.NPC_UseFocusFromItems
 Rule.NPC_UseFocusFromSpells
 Rule.NavmeshStepSize
+Rule.NecromancerTrackingDistanceMultiplier
 Rule.NewLevelScaling
 Rule.NormalizedAAEnabled
 Rule.NormalizedAANumberOfWhiteConPerAA
@@ -440,6 +450,7 @@ Rule.PVPEnableGuardFactionAssist
 Rule.PVPMinLevel
 Rule.PVPSettings
 Rule.PalShdACSoftcapReturn
+Rule.PaladinTrackingDistanceMultiplier
 Rule.PerCharacterBucketMaxLevel
 Rule.PerCharacterQglobalMaxLevel
 Rule.PeriodicCheckTimer
@@ -494,6 +505,7 @@ Rule.QuiverHasteCap
 Rule.RadiantCrystalItemID
 Rule.RaidExpMultiplier
 Rule.RampageHitsTarget
+Rule.RangerTrackingDistanceMultiplier
 Rule.RecordBuyFromMerchant
 Rule.RecordCompletedOptionalActivities
 Rule.RecordCompletedTasks
@@ -504,6 +516,7 @@ Rule.ReflectMessagesClose
 Rule.ReflectType
 Rule.ReportingSystemActive
 Rule.RequestCooldownTimerSeconds
+Rule.RequireKeyOnCursor
 Rule.RequireTomeHandin
 Rule.RequiredStatusAdmin
 Rule.RequiredStatusListAll
@@ -526,6 +539,7 @@ Rule.ResurrectionSicknessSpell
 Rule.ResurrectionSicknessSpellID
 Rule.ReturnNonQuestNoDropItems
 Rule.RogShmBstBerACSoftcapReturn
+Rule.RogueTrackingDistanceMultiplier
 Rule.RootBreakCheckChance
 Rule.RootBreakFromSpells
 Rule.SHDProcIDOffByOne
@@ -542,6 +556,8 @@ Rule.SenseHeadingStartValue
 Rule.ServerWideAuction
 Rule.ServerWideOOC
 Rule.SessionTimeOut
+Rule.ShadowKnightTrackingDistanceMultiplier
+Rule.ShamanTrackingDistanceMultiplier
 Rule.SharedBankPlat
 Rule.ShortMovementUpdateRange
 Rule.ShowExpValues
@@ -641,12 +657,14 @@ Rule.VirusSpreadDistance
 Rule.WarACSoftcapReturn
 Rule.WarmlyFactionMinimum
 Rule.WarriorACSoftcapReturn
+Rule.WarriorTrackingDistanceMultiplier
 Rule.WeaponSkillFalloff
 Rule.WeatherTimer
 Rule.WhiteModifier
 Rule.WizCritChance
 Rule.WizCritLevel
 Rule.WizCritRatio
+Rule.WizardTrackingDistanceMultiplier
 Rule.WorldGMSayLogging
 Rule.WorldProcessRate
 Rule.YellowModifier
