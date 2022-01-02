@@ -77,6 +77,32 @@ Sound custom properties impact the zone.emt file that tells the zone how to emit
 - **door_max_expansion**: 
 
 
+## Object Object Custom Properties
+
+- **object_zoneid**: 
+- **object_version**:
+- **object_heading**: 
+- **object_itemid**: 
+- **object_charges**: 
+- **object_objectname**: 
+- **object_type**: 
+- **object_icon**: 
+- **object_unknown08**: 
+- **object_unknown10**: 
+- **object_unknown20**: 
+- **object_unknown24**: 
+- **object_unknown60**: 
+- **object_unknown64**: 
+- **object_unknown68**: 
+- **object_unknown72**: 
+- **object_unknown76**: 
+- **object_unknown84**: 
+- **object_size**: 
+- **object_tilt_x**: 
+- **object_tilt_y**: 
+- **object_display_name**: 
+- **object_min_expansion**: 
+- **object_max_expansion**: 
 
 ### Object Spawn Custom Properties
 
