@@ -639,6 +639,7 @@ nav:
       - Resources:
           - Introduction: quest-api/introduction.md
           - Dialogue Window (DiaWind): quest-api/diawind.md
+          - Quest Loading: quest-api/quest-loading.md
       - Methods:
           - Bot: quest-api/methods/bot.md
           - Client: quest-api/methods/client.md
