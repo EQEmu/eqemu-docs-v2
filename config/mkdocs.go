@@ -17,8 +17,15 @@ type MkDocsCfg struct {
 	SiteUrl  string   `yaml:"site_url"`
 	RepoName string   `yaml:"repo_name"`
 	EditURI  string   `yaml:"edit_uri"`
-	ExtraCSS []string `yaml:"extra_css"`
-	Theme    struct {
+	Extra struct {
+		Analytics struct {
+			Provider string `yaml:"provider"`
+			Property string `yaml:"property"`
+		} `yaml:"analytics"`
+	} `yaml:"extra"`
+	ExtraCSS  []string `yaml:"extra_css"`
+	CopyRight string   `yaml:"copyright"`
+	Theme     struct {
 		Font struct {
 			Text string `yaml:"text"`
 			Code string `yaml:"code"`
@@ -38,7 +45,7 @@ type MkDocsCfg struct {
 	} `yaml:"theme"`
 	MarkdownExtensions []interface{} `yaml:"markdown_extensions"`
 	Nav                []struct {
-		PlayClient     []interface{}                    `yaml:"Play (Client),omitempty"`
+		Play           []interface{}                    `yaml:"Play,omitempty"`
 		Server         []interface{}                    `yaml:"Server,omitempty"`
 		DatabaseSchema []map[string][]map[string]string `yaml:"Database Schema,omitempty"`
 		QuestApi       []map[string][]map[string]string `yaml:"Quest API,omitempty"`
@@ -63,6 +70,7 @@ type MkDocsCfg struct {
 			Num2020 string `yaml:"2020,omitempty"`
 			Num2021 string `yaml:"2021,omitempty"`
 		} `yaml:"Changelog,omitempty"`
+		Contributing []interface{} `yaml:"Contributing,omitempty"`
 	} `yaml:"nav"`
 }
 
@@ -94,8 +102,12 @@ func WriteMkdocsConfig(config MkDocsCfg) {
 		log.Println(err)
 	}
 
+	// post processing for any special yaml objects since go can't marshal / unmarshal properly
+	configString := newConfig.String()
+	configString += ``
+
 	// write
-	err = os.WriteFile(MkDocsConfigFile, newConfig.Bytes(), 755)
+	err = os.WriteFile(MkDocsConfigFile, []byte(configString), 755)
 	if err != nil {
 		log.Println(err)
 	}

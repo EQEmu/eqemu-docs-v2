@@ -1,7 +1,7 @@
 # raid_details
 
 !!! info
-	This page was last generated 2021.11.23
+	This page was last generated 2022.01.01
 
 ## Relationship Diagram
 

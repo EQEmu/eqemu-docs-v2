@@ -1,7 +1,7 @@
 # character_corpse_items
 
 !!! info
-	This page was last generated 2021.11.23
+	This page was last generated 2022.01.01
 
 ## Schema
 

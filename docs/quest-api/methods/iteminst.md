@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=ItemInst){:target="ItemInst"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` lua
     iteminst:AddExp(uint32 exp);

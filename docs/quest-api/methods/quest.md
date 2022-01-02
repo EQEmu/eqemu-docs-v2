@@ -1,10 +1,10 @@
-=== "Perl (474)"
+=== "Perl (478)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=quest){:target="quest"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` perl
     quest::AssignGroupToInstance(uint16 instance_id);
@@ -101,7 +101,7 @@
     quest::crosszoneassigntaskbyexpeditionid(uint32 expedition_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
     quest::crosszoneassigntaskbygroupid(int group_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
     quest::crosszoneassigntaskbyguildid(int guild_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
-    quest::crosszoneassigntaskbyraidid(int raid_id, uint32 task_identifier, [bool enforce_level_requirement = false]);
+    quest::crosszoneassigntaskbyraidid(int raid_id, uint32 task_identifier, [bool enforce_level_requirement = false]\);
     quest::crosszonecastspellbycharid(int character_id, uint32 spell_id);
     quest::crosszonecastspellbyclientname(const char* client_name, uint32 spell_id);
     quest::crosszonecastspellbyexpeditionid(uint32 expedition_id, uint32 spell_id);
@@ -247,6 +247,7 @@
     quest::get_spawn_condition(string zone_short, [int instance_id], int condition_id);
     quest::get_spell_level(uint16 spell_id, uint8 class_id);
     quest::getaaexpmodifierbycharid(uint32 character_id, uint32 zone_id);
+    quest::getbodytypename(uint32 bodytype_id);
     quest::getcharidbyname(string name);
     quest::getcharnamebyid(uint32 char_id);
     quest::getclassname(uint8 class_id, [uint8 level = 0]);
@@ -255,6 +256,7 @@
     quest::getcurrencyitemid(int currency_id);
     quest::getdeityname(uint32 deity_id);
     quest::getexpmodifierbycharid(uint32 character_id, uint32 zone_id);
+    quest::getfactionname(int faction_id);
     quest::getgendername(uint32 gender_id);
     quest::getgroupidbycharid(uint32 char_id);
     quest::getguildidbycharid(uint32 char_id);
@@ -264,6 +266,8 @@
     quest::getinventoryslotname(int16 slot_id);
     quest::getitemname(uint32 item_id);
     quest::getitemstat(uint32 item_id, string stat_identifier);
+    quest::getlanguagename(int language_id);
+    quest::getldonthemename(uint32 theme_id);
     quest::getlevel(int type);
     quest::getnpcnamebyid(uint32 npc_id);
     quest::getplayerburiedcorpsecount(int character_id);

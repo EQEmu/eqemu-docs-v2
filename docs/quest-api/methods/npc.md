@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` perl
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, [uint32 max_delay = 2500], [uint32 min_delay = 2500]);
@@ -23,7 +23,7 @@
     $npc->ClearLastName();
     $npc->CountItem(uint32 item_id);
     $npc->CountLoot();
-    $npc->DisplayWaypointInfo(Client* target);
+    $npc->DisplayWaypointInfo(Client* client);
     $npc->DoClassAttacks(Mob* target);
     $npc->GetAccuracyRating();
     $npc->GetAttackDelay();
@@ -121,7 +121,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` lua
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
@@ -147,7 +147,7 @@
     npc:ClearLastName();
     npc:CountItem(uint32 item_id);
     npc:CountLoot();
-    npc:DisplayWaypointInfo(Client to);
+    npc:DisplayWaypointInfo(Client client);
     npc:DoClassAttacks(Mob target);
     npc:GetAccuracyRating();
     npc:GetAttackDelay();

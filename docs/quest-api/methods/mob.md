@@ -1,10 +1,10 @@
-=== "Perl (332)"
+=== "Perl (335)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` perl
     $mob->AddFeignMemory(Client* attacker);
@@ -46,7 +46,7 @@
     $mob->ClearSpecialAbilities();
     $mob->CombatRange(Mob* target);
     $mob->Damage(Mob* from, int32 damage, uint16 spell_id, int attack_skill, [bool avoidable = true], [int8 buffslot = -1], [bool buff_tic = false]);
-    $mob->DeleteBucket(std);
+    $mob->DeleteBucket(string bucket_name);
     $mob->Depop(StartSpawnTimer = true);
     $mob->DivineAura();
     $mob->DoAnim(int animation_number, [int type = 0]);
@@ -92,10 +92,10 @@
     $mob->GetBeard();
     $mob->GetBeardColor();
     $mob->GetBodyType();
-    $mob->GetBucket(std);
-    $mob->GetBucketExpires(std);
+    $mob->GetBucket(string bucket_name);
+    $mob->GetBucketExpires(string bucket_name);
     $mob->GetBucketKey();
-    $mob->GetBucketRemaining(std);
+    $mob->GetBucketRemaining(string bucket_name);
     $mob->GetBuffSlotFromType(uint16 type);
     $mob->GetCHA();
     $mob->GetCR();
@@ -272,6 +272,7 @@
     $mob->ProjectileAnim(Mob* mob, int item_id, [bool is_arrow = false], [float speed = 0], [float angle = 0], [float tilt = 0], [float arc = 0]);
     $mob->RandomizeFeatures(bool send_illusion, set_variables);
     $mob->RangedAttack(Mob* other);
+    $mob->RemoveAllAppearanceEffects();
     $mob->RemoveAllNimbusEffects();
     $mob->RemoveFromFeignMemory(Client* attacker);
     $mob->RemoveNimbusEffect(int32 effect_id);
@@ -283,7 +284,9 @@
     $mob->SeeImprovedHide();
     $mob->SeeInvisible();
     $mob->SeeInvisibleUndead();
-    $mob->SendAppearanceEffect(int32 param_1, [int32 param_2 = 0], [int32 param_3 = 0], [int32 param_4 = 0], [int32 param_5 = 0], [Client* single_client_to_send_to = null]);
+    $mob->SendAppearanceEffect(int32 effect1, [int32 effect2 = 0], [int32 effect3 = 0], [int32 effect4 = 0], [int32 effect5 = 0], [Client* single_client_to_send_to = null], [uint32 slot1 = 1], [uint32 ground1 = 1], [uint32 slot2 = 1], [uint32 ground2 = 1], [uint32 slot3 = 1], [uint32 ground2 = 1], [uint32 slot4 = 1], [uint32 ground4 = 1], [uint32 slot5 = 1], [uint32 ground5 = 1]);
+    $mob->SendAppearanceEffectActor(int32 effect1, uint32 slot1 = 0, [int32 effect2 = 0], [uint32 slot2 = 0], [int32 effect3 = 0], [uint32 slot3 = 0], [int32 effect4 = 0], [uint32 slot4 = 0], [int32 effect5 = 0], [uint32 slot5 = 0], [Client* single_client_to_send_to = null]);
+    $mob->SendAppearanceEffectGround(int32 effect1, [int32 effect2 = 0], [int32 effect3 = 0], [int32 effect4 = 0], [int32 effect5 = 0], [Client* single_client_to_send_to = null]);
     $mob->SendIllusion(uint16 race, [uint8 gender = 0xFF], [uint8 texture  face = 0xFF], [uint8 hairstyle = 0xFF], [uint8 hair_color = 0xFF], [uint8 beard = 0xFF], [uint8 beard_color =FF], [uint32 drakkin_tattoo = 0xFFFFFFFF], [uint32 drakkin_details = 0xFFFFFFFF], [float size = -1]);
     $mob->SendTo(float new_x, float new_y, float new_z);
     $mob->SendToFixZ(float new_x, float new_y, float new_z);
@@ -292,7 +295,7 @@
     $mob->SetAllowBeneficial(bool value);
     $mob->SetAppearance(int appearance [0|1|2|3|4], [ignore_self = true]);
     $mob->SetBodyType(int32 type, [bool overwrite_orig = false]);
-    $mob->SetBucket(std);
+    $mob->SetBucket(string bucket_name, string bucket_value, [string expiration]);
     $mob->SetCurrentWP(waypoint);
     $mob->SetDeltas(float delta_x, float delta_y, float delta_z, float delta_h);
     $mob->SetDisableMelee(bool value);
@@ -328,7 +331,7 @@
     $mob->ShieldAbility(uint32 target_id, [int32 shielder__max_distance = 15], [int32 shield_duration = 12000], [int32 shield_target_mitigation= 50], [int32 shielder_mitigation = 50], [bool use_aa = false], bool [can_shield_npc = true]);
     $mob->Shout(string message);
     $mob->SignalClient(Client* client, uint32 data);
-    $mob->SpellEffect(uint32 effect, [uint32 duration = 5000], [uint32 finish_delay = 0], [bool zone_wide = false], [uint32 unk20 = 3000], [bool perm_effect = false], [Client* single_client]);
+    $mob->SpellEffect(uint32 effect, [uint32 duration = 5000], [uint32 finish_delay = 0], [bool zone_wide = false], [uint32 unk20 = 3000], [bool perm_effect = false], [Client* single_client], [caster_id = 0], [target_id = 0]);
     $mob->SpellFinished(uint16 spell_id, [Mob* spell_target = this], [uint16 mana_cost = 0], [uint16 resist_diff = 0]);
     $mob->Spin();
     $mob->StartEnrage();
@@ -346,7 +349,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2021.11.22
+        Last generated 2022.01.01
 
     ``` lua
     mob:AddNimbusEffect(int effect_id);
@@ -513,7 +516,7 @@
     mob:GetEyeColor1();
     mob:GetEyeColor2();
     mob:GetFR();
-    mob:GetFcDamageAmtIncoming(Mob caster, uint32 spell_id, bool use_skill, uint16 skill);
+    mob:GetFcDamageAmtIncoming(Mob caster, int32 spell_id);
     mob:GetFlurryChance();
     mob:GetGender();
     mob:GetGlobal(string varname);

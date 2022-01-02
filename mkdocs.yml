@@ -2,12 +2,18 @@ site_name: EQEmulator Docs
 plugins:
   - search
 repo_url: https://github.com/EQEmu/eqemu-docs-v2
-site_url: http://docsv2.eqemu.io/
+site_url: http://docs.eqemu.io/
 repo_name: EQEmu Docs
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
+extra:
+  analytics:
+    provider: google
+    property: G-98Y234QYH3
 extra_css:
   - stylesheets/extra.css
+copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
+  favicon: assets/favicon-32x32.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -24,19 +30,9 @@ theme:
     - search.suggest
   name: material
   palette:
-    - media: '(prefers-color-scheme: dark)'
-      scheme: slate
-      primary: deep orange
-      accent: red
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-    - media: '(prefers-color-scheme: light)'
-      scheme: default
-      primary: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: deep orange
 markdown_extensions:
   - admonition
   - abbr
@@ -310,14 +306,14 @@ nav:
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:
               - server/zones/customizing-zones/README.md
-              - EQGZI: 
-                - server/zones/customizing-zones/eqgzi/README.md
-                - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
-                - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
-                - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md                
-                - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
-                - Blender Zone Making: server/zones/customizing-zones/eqgzi/blender-first-zone.md
-                - Blender Custom Properties: server/zones/customizing-zones/eqgzi/blender-custom-properties.md
+              - EQGZI:
+                  - server/zones/customizing-zones/eqgzi/README.md
+                  - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
+                  - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
+                  - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md
+                  - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
+                  - Blender Zone Making: server/zones/customizing-zones/eqgzi/blender-first-zone.md
+                  - Blender Custom Properties: server/zones/customizing-zones/eqgzi/blender-custom-properties.md
               - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
               - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
               - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
@@ -633,6 +629,8 @@ nav:
       - Resources:
           - Introduction: quest-api/introduction.md
           - Dialogue Window (DiaWind): quest-api/diawind.md
+          - Events: quest-api/events.md
+          - Quest Loading: quest-api/quest-loading.md
       - Methods:
           - Bot: quest-api/methods/bot.md
           - Client: quest-api/methods/client.md
@@ -711,4 +709,4 @@ nav:
       - "2004": changelog/server/2004.md
       - "2003": changelog/server/2003.md
   - Contributing:
-    - How to Doc: contributing/how-to-doc.md
+      - How to Doc: contributing/how-to-doc.md
