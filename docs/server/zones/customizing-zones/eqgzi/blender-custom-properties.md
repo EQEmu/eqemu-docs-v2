@@ -13,11 +13,12 @@ Custom Properties are defined inside Blender. It is a way to convey custom EverQ
 
 A region is a cubic area that creates unique behavior within it. A classic region example is water or lava.
 
-Note that all regions MUST have a prefix inside their object's name, the object name prefixes are: AWT_: water, ALV_: lava, APK_: pvp, ATP_: zoneline, ASL_: ice, APV_: generic
+Note that all regions MUST have a prefix inside their object's name, the object name prefixes are: `AWT_`: water, `ALV_`: lava, `APK_`: pvp, `ATP_##_`: zoneline ## correlates with zone_points index, `ASL_`: ice, `APV_`: generic
 
 Note also that all regions MUST be an empty cube. (Add, Empty -> Cube)
 
-- **unknowna**: with ATP_: zoneidnumber (unverified)
+For ATP_, a index 
+- **unknowna**: TODO: identify
 - **unknownb**: TODO: identify
 - **unknownc**: TODO: identify
 
