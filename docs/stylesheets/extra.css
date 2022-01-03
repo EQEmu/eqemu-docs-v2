@@ -33,7 +33,7 @@
     /*background: url(https://cdn.staticneo.com/n/7/eq_hot_fanfaire_5_.jpg) var(--md-default-bg-color);*/
     /*background: url(https://images3.alphacoders.com/278/thumb-1920-278779.jpg) var(--md-default-bg-color);*/
     /*background: url(https://www.wallpaperup.com/uploads/wallpapers/2014/01/04/214433/dc7e2c509b79b6345193393115b74a84-700.jpg) var(--md-default-bg-color);*/
-    opacity: .2
+    opacity: .1
 }
 
 .md-header { background-color: rgba(14, 20, 24, 0.8) !important; }
