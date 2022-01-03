@@ -2,7 +2,7 @@
 
 New to EQEmulator? New to scripting? No worries - many people have started their Quest learning how to program in this community through building scripts.
 
-Scripts can be leveraged to build and endless amount customization. 
+Scripts can be leveraged to build an endless amount customization. 
 
 Some examples might be custom boss events, NPC dialogue, custom spell behavior, custom tradeskills and so many more.
 
