@@ -708,5 +708,6 @@ nav:
       - "2005": changelog/server/2005.md
       - "2004": changelog/server/2004.md
       - "2003": changelog/server/2003.md
+      - "Changelog Contributions": changelog/server/changelog-contributions.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
