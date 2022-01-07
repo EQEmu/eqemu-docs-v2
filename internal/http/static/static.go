@@ -125,8 +125,6 @@ func StaticWithConfig(config StaticConfig) echo.MiddlewareFunc {
 
 				he, ok := err.(*echo.HTTPError)
 				if !(ok && config.HTML5 && he.Code == http.StatusNotFound) {
-					fmt.Println("hello")
-
 					file, err = openFile(config.Filesystem, filepath.Join(config.Root, "404.html"))
 					if err != nil {
 						fmt.Println(err)
