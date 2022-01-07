@@ -7,6 +7,7 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	copyo "github.com/otiai10/copy"
+	"github.com/EQEmu/eqemu-docs-v2/internal/http/static"
 	"log"
 	"net/http"
 	"os"
@@ -16,9 +17,13 @@ import (
 
 func Run() {
 	e := echo.New()
-	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
-		Level: 5,
-	}))
+	e.Use(
+		middleware.GzipWithConfig(
+			middleware.GzipConfig{
+				Level: 5,
+			},
+		),
+	)
 	e.Use(middleware.Logger())
 	e.POST(
 		"/deploy", func(c echo.Context) error {
@@ -61,12 +66,16 @@ func Run() {
 		},
 	)
 
-	e.Use(middleware.StaticWithConfig(middleware.StaticConfig{
-		Root:   "public",
-		Index:  "index.html",
-		Browse: false,
-		HTML5:  true,
-	}))
+	e.Use(
+		static.StaticWithConfig(
+			static.StaticConfig{
+				Root:   "public",
+				Index:  "index.html",
+				Browse: false,
+				HTML5:  false,
+			},
+		),
+	)
 
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%v", os.Getenv("HTTP_PORT"))))
 }
