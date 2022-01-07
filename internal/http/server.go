@@ -19,6 +19,7 @@ func Run() {
 	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
 		Level: 5,
 	}))
+	e.Use(middleware.Logger())
 	e.POST(
 		"/deploy", func(c echo.Context) error {
 			if c.Request().Header.Get("X-Github-Event") != "" &&
