@@ -135,7 +135,7 @@ func StaticWithConfig(config StaticConfig) echo.MiddlewareFunc {
 						return err
 					}
 
-					fmt.Println("serving file")
+					c.Response().WriteHeader(http.StatusNotFound)
 
 					return serveFile(c, file, info)
 				}
