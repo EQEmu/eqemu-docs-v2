@@ -21,6 +21,8 @@ Note also that all regions MUST be an empty cube. (Add, Empty -> Cube)
 - **unknownb**: TODO: identify
 - **unknownc**: TODO: identify
 
+Notes regarding regions after testing every combination [A-Z][A-Z][A-Z]: [B-Z][A-Z]P always results in a PVP region.  The 4th character doesn't seem to matter, but it existing is important to make the region work.  AVW and VW[A-Z] = Icy Lava, Damage type 246, with VWP resulting in Icy Lava PVP!  ALV, LA[A-Z] = Lava, Damage type 250, with LAP resulting in Lava PVP.   SL[A-Z] and WT[A-Z] were all water regions, with SLP and WTP resulting in Water PVP.
+
 ### Object Emitter Custom Properties
 
 Particle effects are called emitters in EQ, and are defined by a zone_EnvironmentEmitter.txt file.
