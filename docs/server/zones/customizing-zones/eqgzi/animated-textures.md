@@ -3,6 +3,7 @@
 Let's take this blender scenario:
 
 Material: test
+
 color image texture: test_c.dds
 
 When you set color image inside blender, you're setting the e_Diffuse0 property (you can view this inside eqgzi-gui). 
