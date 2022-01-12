@@ -315,6 +315,7 @@ nav:
                   - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
                   - Blender Zone Making: server/zones/customizing-zones/eqgzi/blender-first-zone.md
                   - Blender Custom Properties: server/zones/customizing-zones/eqgzi/blender-custom-properties.md
+                  - Animated Textures: server/zones/customizing-zones/eqgzi/animated-textures.md
               - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
               - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
               - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
