@@ -25,8 +25,8 @@ Connection Page:  [Input your server information](http://eoc.akkadius.com/EOC2/l
 
 #### Wiki Quest API
 
-Link:  [https://eqemu.gitbook.io/quest-api/](https://eqemu.gitbook.io/quest-api/)  
-Description:  a GitBook space that details the set of functions and procedures allowing the access of the features or data of the EQEmu Server.
+Link:  [http://docs.eqemu.io/quest-api/introduction/](http://docs.eqemu.io/quest-api/introduction/)  
+Description:  details the set of functions and procedures allowing the access of the features or data of the EQEmu Server.
 
 #### Spire Quest API Explorer
 
