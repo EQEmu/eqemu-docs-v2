@@ -32,6 +32,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #copycharacter | [source character name] [dest character name] [dest account name] - Create a copy of a character |
 | #corpse | Manipulate corpses, use with no arguments for help |
 | #corpsefix | Attempts to bring corpses from underneath the ground within close proximity of the player |
+| #countitem | [Item ID] - count an item by ID on yourself or your player/NPC target |
 | #crashtest | Crash the zoneserver |
 | #cvs | Summary of client versions currently online. |
 | #damage | [amount] - Damage your target |
@@ -49,21 +50,27 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #disarmtrap | Analog for LDoN disarm trap for the newer clients since we still don't have it working |
 | #distance | Reports the distance between you and your target. |
 | #doanim | [animnum] [type] - Send an EmoteAnim for you or your target |
+| #dye | Adds dye command for going beyond darkness limits that client has when using the Dye UI Window |
 | #dz | Manage expeditions and dynamic zone instances |
 | #dzkickplayers | Removes all players from current expedition (/kick players alternative for pre-RoF clients) |
 | #editmassrespawn | [name search][second value] - Mass (zone-wide) NPC respawn timer editing command |
 | #emote | ['name'/'world'/'zone'] [type] [message] - Send an emote message |
 | #emotesearch | Searches loaded NPC emotes |
 | #emoteview | Lists all of a NPCs loaded emotes |
+| #emptyinventory | Allows you to empty you or your target's inventory completely. (Equipment, General, Bank, and Shared Bank) |
 | #enablerecipe | [recipe id] - Enables the specified recipe ID. |
 | #endurance | Restores your or your target's endurance |
 | #equipitem | [slotid(0-22)] - Equip the item on your cursor into the specified slot |
 | #face | [number of face] - Sets you or your target's face to face number, temporarily. |
 | #faction | [find (criteria|all) | review (criteria|all) | reset (id)] - Resets player's faction |
 | #findaliases | [search criteria] - Searches for available command aliases by alias or command |
+| #findclass | [search criteria] - Displays class id and name for [search criteria] |
+| #findfaction | [search criteria] - Searches name of faction for [search criteria] |
 | #findnpctype | [search criteria] - Search database NPC types |
 | #findrace | [search criteria] - Search for a race |
+| #findskill | [search criteria] - Allows you to search for skills by ID or partial name |
 | #findspell | [search criteria] - Search for a spell |
+| #findtask | [search critera] - Allows you to search for Tasks by ID or partial name |
 | #findzone | [search criteria] - Search database for zone |
 | #fixmob | [nextrace|prevrace|gender|nexttexture|prevtexture|nexthelm|prevhelm] - Manipulate appearance of your NPC target |
 | #flag | [status] [acctname] - Refresh your admin status, or set an account's admin status if arguments provided |
@@ -128,7 +135,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #makepet | [level] [class] [race] [texture] - Make a pet |
 | #mana | Fill your or your target's mana |
 | #maxskills | Maxes skills for you |
-| #memspell | [slotid] [spellid] - Memorize spellid in the specified slot |
+| #memspell | [spellid] [spell gem] - Memorize spellid in the specified spell gem - empty [spell gem] will memorize [spellid] to first available gem |
 | #merchant close shop | Closes a merchant's shop |
 | #merchant open shop | Opens a merchant's shop |
 | #modifynpcstat | Modifys a NPC's stats |
@@ -166,6 +173,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #permaclass | [classnum] - Change your or your player target's class (target is disconnected) |
 | #permagender | [gendernum] - Change your or your player target's gender (zone to take effect) |
 | #permarace | [racenum] - Change your or your player target's race (zone to take effect) |
+| #petitems | Show a person's pet items if they have access to the command |
 | #petitioninfo | [petition number] - Get info about a petition |
 | #petname | [newname] - Temporarilyrenames your pet. Leave name blank to restore the original name. |
 | #pf | Useless information. |
@@ -194,6 +202,7 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #reloadtitles | Reload player titles from the database |
 | #reloadtraps | Repops all traps in the current zone |
 | #reloadworld | Reloads all scripts and repops all NPC's globally. |
+| #removeitem | [Item ID], [Amount] - Remove items by amount versus nuking them all, removes all if amount is greater than what you or your target have |
 | #repop | Repop the zone with optional delay. Using #repop force forcefully resets spawn timers. |
 | #resetaa | Resets a Player's AA in their profile. |
 | #resetaa timer | Command to reset AA cooldown timers |
@@ -211,12 +220,16 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #setaapts | Set your or your player target's available AA points |
 | #setaaxp | [amount] - Adds the amount of AA experience you specified to you or your target. |
 | #setadventurepoints | Set you or your player target's available adventure points |
+| #setaltcurrency | [Currency ID], [Amount] - Set a specific alternate currency to a value |
 | #setanim | [animnum] - Set target's appearance to animnum |
 | #setcrystals | Set your or your player targets available radiant or ebon crystals |
+| #setendurance | [Endurance] - Set an NPC or player's endurance to a specified amount, or to max if the amount is greater than their max |
 | #setfaction | [faction number] - Sets targeted NPC's faction in the database |
 | #setgraveyard | [zone name] - Creates a graveyard for the specified zone based on your target's LOC. |
+| #sethp | [Health] - Set an NPC or player's health to a specified amount, or to max if the amount is greater than their max |
 | #setlanguage | [language ID] [value] - Set your target's language skillnum to value |
 | #setlsinfo | [email] [password] - Set login server email address and password. |
+| #setmana | [Mana] - Set an NPC or player's mana to a specified amount, or to max if the amount is greater than their max |
 | #setpass | [accountname] [password] - Set local password for accountname |
 | #setpvppoints | Set your or your player targets PVP points |
 | #setskill | [skillnum] [value] - Set your target's skill skillnum to value |
@@ -263,14 +276,18 @@ Often referred to as "GM Commands", the following commands can be allowed based 
 | #undyeme | Remove dye from all of your armor slots |
 | #unfreeze | Unfreeze your target |
 | #unlock | Unlock the worldserver |
+| #unmemspell | [Spell ID] - Unmemorize a spell by ID from you or your target |
+| #unmemspells | Unmemorize all spells from you or your target |
 | #unscribespell | [spellid] - Unscribe specified spell from your target's spell book. |
 | #unscribespells | Clear out your or your player target's spell book. |
 | #untraindisc | [spellid] - Untrain specified discipline from your target |
 | #untraindiscs | Untrains all disciplines from your target |
 | #uptime | [zone server id] - Get uptime of worldserver, or zone server if argument provided |
 | #version | Display current version of EQEmu server |
+| #viewcurrencies | View your or your target's currencies (Money, Crystals, Alternate Currency, LDoN, and PVP) |
 | #viewnpctype | [npctype id] - Show info about an npctype |
 | #viewpetition | [petition number] - View a petition |
+| #viewzoneloot | [item id] - Displays all loot on currently spawned npc's - leave blank for all items |
 | #wc | [wear slot] [material] - Sends an OP_WearChange for your target |
 | #weather | [0/1/2/3] (Off/Rain/Snow/Manual) - Change the weather |
 | #who | [search] |
