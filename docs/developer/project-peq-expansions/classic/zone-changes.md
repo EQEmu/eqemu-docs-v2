@@ -1,6 +1,16 @@
 ---
 description: Changes to Zones in the Classic EQ Era
 ---
+| Zone Name | Short Name | Era | Patch Date (ISO 8601) | Notes |
+| ------ | ------ | ------ | ------ | ------ |
+| Plane of Fear | fearplane | Classic | 1999-07-26 | Initial Release |
+| The Temple of Solusek Ro | soltemple | Classic | 1999-10-13 | Initial release. Available via the newly implemented optional patch system. |
+| Kedge Keep | kedge | Classic | 1999-10-28 | Enhanced with new items and creatures |
+| Plane of Hate | hateplane | Classic | 1999-11-03 | Initial release. Patch message is released on Wednesday but states actual opening occurred 4 days prior on Sunday (1999-10-31) after the Halloween event. Must be 46th level or greater to enter. |
+| Plane of Sky | airplane | Classic | 2000-01-20 | Initial release |
+| Paineel | paineel | Classic | 2000-02-17 | Initial release |
+| Kerra Ridge | kerraridge | Classic | 2000-04-10 | Initial release |
+| The Lair of the Splitpaw| paw | Classic | 2000-04-10 | 1st revamp |
 
 # Zone Changes
 
