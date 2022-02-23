@@ -1,7 +1,20 @@
 # global_loot
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ2xvYmFsX2xvb3Qge1xuICAgICAgICBpbnQgbG9vdHRhYmxlX2lkXG4gICAgfVxuICAgIGxvb3R0YWJsZSB7XG4gICAgICAgIGludHVuc2lnbmVkIGlkXG4gICAgfVxuICAgIGdsb2JhbF9sb290IHx8LS1veyBsb290dGFibGUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ2xvYmFsX2xvb3Qge1xuICAgICAgICBpbnQgbG9vdHRhYmxlX2lkXG4gICAgfVxuICAgIGxvb3R0YWJsZSB7XG4gICAgICAgIGludHVuc2lnbmVkIGlkXG4gICAgfVxuICAgIGdsb2JhbF9sb290IHx8LS1veyBsb290dGFibGUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ2xvYmFsX2xvb3Qge1xuICAgICAgICBpbnQgbG9vdHRhYmxlX2lkXG4gICAgfVxuICAgIGxvb3R0YWJsZSB7XG4gICAgICAgIGludHVuc2lnbmVkIGlkXG4gICAgfVxuICAgIGdsb2JhbF9sb290IHx8LS1veyBsb290dGFibGUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | loottable_id | [loottable](../../schema/loot/loottable.md) | id |
+
 
 ## Schema
 

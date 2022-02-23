@@ -1,7 +1,20 @@
 # merchantlist
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY2hhbnRsaXN0IHtcbiAgICAgICAgaW50IGl0ZW1cbiAgICAgICAgaW50IG1lcmNoYW50aWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbWVyY2hhbnRsaXN0IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY2hhbnRsaXN0IHtcbiAgICAgICAgaW50IGl0ZW1cbiAgICAgICAgaW50IG1lcmNoYW50aWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbWVyY2hhbnRsaXN0IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY2hhbnRsaXN0IHtcbiAgICAgICAgaW50IGl0ZW1cbiAgICAgICAgaW50IG1lcmNoYW50aWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbWVyY2hhbnRsaXN0IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | item | [items](../../schema/items/items.md) | id |
+
 
 ## Schema
 

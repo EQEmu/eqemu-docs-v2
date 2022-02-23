@@ -1043,21 +1043,26 @@ blocked_spells:
     nullable: "NO"
     ordinal_position: 4
 books:
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
   language:
     dataType: int
     description: '[Language](../../../../server/player/languages)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
   name:
     dataType: varchar
     description: Unique Book Identifier
     nullable: "NO"
-    ordinal_position: 1
+    ordinal_position: 2
   txtfile:
     dataType: text
     description: The text in the book. ` Represents line spaces, `` is two line spaces, ``` is three line spaces, etc. (13 lines per book page)
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 3
 bot_buffs:
   bot_id:
     dataType: int
@@ -5644,32 +5649,37 @@ horses:
     dataType: varchar
     description: '[NPC Type Name](../../schema/npcs/npc_types.md)'
     nullable: "NO"
-    ordinal_position: 1
+    ordinal_position: 2
   gender:
     dataType: tinyint
     description: '[Gender](../../../../server/npc/genders)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
   mountspeed:
     dataType: float
     description: Mount Run Speed
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 6
   notes:
     dataType: varchar
     description: Notes
     nullable: "YES"
-    ordinal_position: 6
+    ordinal_position: 7
   race:
     dataType: smallint
     description: '[Race](../../../../server/npc/race-list)'
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 3
   texture:
     dataType: tinyint
     description: '[Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 5
 instance_list:
   duration:
     dataType: int
@@ -10211,42 +10221,47 @@ pets:
     dataType: int
     description: '[Pet Equipment Set Identifier](../../schema/pets/pets_equipmentset.md)'
     nullable: "NO"
-    ordinal_position: 8
+    ordinal_position: 9
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
   monsterflag:
     dataType: tinyint
     description: 'Monster Flag: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 7
+    ordinal_position: 8
   npcID:
     dataType: int
     description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
   petcontrol:
     dataType: tinyint
     description: 'Pet Control: 0 = No Control, 1 = No Attack Control, 2 = Full Control'
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 6
   petnaming:
     dataType: tinyint
     description: 'Pet Naming: 0 = Soandsos Pet, 1 = Soandsos Familiar, 2 = Soandsos Warder, 3 = Random Naming (i.e. Gobaner), 4 = Keeps name from npc_types table'
     nullable: "NO"
-    ordinal_position: 6
+    ordinal_position: 7
   petpower:
     dataType: int
     description: Pet Power
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 3
   temp:
     dataType: tinyint
     description: 'Temporary: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 5
   type:
     dataType: varchar
     description: '[NPC Type Name](../../schema/npcs/npc_types.md)'
     nullable: "NO"
-    ordinal_position: 1
+    ordinal_position: 2
 pets_beastlord_data:
   face:
     dataType: tinyint

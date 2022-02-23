@@ -1,7 +1,7 @@
 # tool_game_objects
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
 
 ## Schema
 

@@ -1,7 +1,7 @@
 # npc_spells
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
 
 ## Relationship Diagram
 

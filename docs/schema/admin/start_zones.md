@@ -1,7 +1,20 @@
 # start_zones
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | zone_id | [zone](../../schema/zone/zone.md) | zoneidnumber |
+
 
 ## Schema
 

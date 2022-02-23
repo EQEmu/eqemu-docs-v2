@@ -1,7 +1,7 @@
 # shared_task_dynamic_zones
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
 
 ## Schema
 

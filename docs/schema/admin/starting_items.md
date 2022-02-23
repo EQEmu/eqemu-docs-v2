@@ -1,7 +1,21 @@
 # starting_items
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgICB6b25lX2lkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgaXRlbXMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgICB6b25lX2lkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgaXRlbXMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgICB6b25lX2lkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgaXRlbXMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | zone_id | [zone](../../schema/zone/zone.md) | zoneidnumber |
+| One-to-One | itemid | [items](../../schema/items/items.md) | id |
+
 
 ## Schema
 

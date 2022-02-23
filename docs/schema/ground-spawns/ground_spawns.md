@@ -1,7 +1,21 @@
 # ground_spawns
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3JvdW5kX3NwYXducyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1cbiAgICAgICAgaW50dW5zaWduZWQgem9uZWlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBncm91bmRfc3Bhd25zIHx8LS1veyB6b25lIDogT25lLXRvLU9uZVxuICAgIGdyb3VuZF9zcGF3bnMgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3JvdW5kX3NwYXducyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1cbiAgICAgICAgaW50dW5zaWduZWQgem9uZWlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBncm91bmRfc3Bhd25zIHx8LS1veyB6b25lIDogT25lLXRvLU9uZVxuICAgIGdyb3VuZF9zcGF3bnMgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3JvdW5kX3NwYXducyB7XG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1cbiAgICAgICAgaW50dW5zaWduZWQgem9uZWlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBncm91bmRfc3Bhd25zIHx8LS1veyB6b25lIDogT25lLXRvLU9uZVxuICAgIGdyb3VuZF9zcGF3bnMgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | zoneid | [zone](../../schema/zone/zone.md) | zoneidnumber |
+| One-to-One | item | [items](../../schema/items/items.md) | id |
+
 
 ## Schema
 

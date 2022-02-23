@@ -1,7 +1,21 @@
 # doors
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICAgem9uZWlkdW51bWJlclxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICAgem9uZWlkdW51bWJlclxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICAgem9uZWlkdW51bWJlclxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | keyitem | [items](../../schema/items/items.md) | id |
+| One-to-One | zone | [zone](../../schema/zone/zone.md) | short_name |
+
 
 ## Schema
 

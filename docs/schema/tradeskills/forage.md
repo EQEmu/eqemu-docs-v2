@@ -1,7 +1,21 @@
 # forage
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZm9yYWdlIHtcbiAgICAgICAgaW50IEl0ZW1pZFxuICAgICAgICBpbnQgem9uZWlkXG4gICAgfVxuICAgIGl0ZW1zIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBmb3JhZ2UgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuICAgIGZvcmFnZSB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZm9yYWdlIHtcbiAgICAgICAgaW50IEl0ZW1pZFxuICAgICAgICBpbnQgem9uZWlkXG4gICAgfVxuICAgIGl0ZW1zIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBmb3JhZ2UgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuICAgIGZvcmFnZSB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZm9yYWdlIHtcbiAgICAgICAgaW50IEl0ZW1pZFxuICAgICAgICBpbnQgem9uZWlkXG4gICAgfVxuICAgIGl0ZW1zIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHpvbmUge1xuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgIH1cbiAgICBmb3JhZ2UgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuICAgIGZvcmFnZSB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | Itemid | [items](../../schema/items/items.md) | id |
+| One-to-One | zoneid | [zone](../../schema/zone/zone.md) | zoneidnumber |
+
 
 ## Schema
 

@@ -1,12 +1,13 @@
 # horses
 
 !!! info
-	This page was last generated 2022.01.01
+	This page was last generated 2022.02.23
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
+| id | int |  |
 | filename | varchar | [NPC Type Name](../../schema/npcs/npc_types.md) |
 | race | smallint | [Race](../../../../server/npc/race-list) |
 | gender | tinyint | [Gender](../../../../server/npc/genders) |
