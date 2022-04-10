@@ -237,7 +237,7 @@ nav:
           - server/installation/README.md
           - Basic Server Install - Linux: server/installation/server-installation-linux.md
           - Basic Server Install - Windows: server/installation/server-installation-windows.md
-          - Basic Server Install - Unraid: server/installation/server-installation-unraid.md
+          - Basic Server Install - AkkStack on Unraid: server/installation/server-installation-unraid.md
           - Bot Installation: server/installation/bot-installation.md
           - Configure your eqemu_config: server/installation/configure-your-eqemu_config.md
           - Development Server Setup: server/installation/development-server-setup.md
