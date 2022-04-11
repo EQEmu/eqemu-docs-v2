@@ -1,6 +1,8 @@
-# Basic Server Install - Unraid
+# AkkStack on Unraid Guide by oper8r00
 
-This guide is intended for advanced users who wish to setup a private EQEmu server within Unraid including the login server using the AkkStack. 
+This guide is intended for advanced users who wish to setup a private EQEmulator server within **Unraid** including the login server using the AkkStack. AkkStack is a wonderful dockerized setup provided by *Akkadius* for EQEmu with a few handy other docker tools such as Occulus, phpAdmin, etc. This guide uses some excerpts from the official documentation.
+
+Unraid is commercial NAS+ software that allows users to run docker containers, plugins, and VMs all from a single machine. 
 
 ## Prerequisites
 
