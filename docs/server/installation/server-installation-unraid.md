@@ -1,4 +1,4 @@
-# AkkStack on Unraid Guide by oper8r00
+# AkkStack on Unraid guide by oper8r00
 
 This guide is intended for advanced users who wish to setup a private EQEmulator server within **Unraid** including the login server using the AkkStack. AkkStack is a wonderful dockerized setup provided by *Akkadius* for EQEmu with a few handy other docker tools such as Occulus, phpAdmin, etc. This guide uses some excerpts from the official documentation.
 
