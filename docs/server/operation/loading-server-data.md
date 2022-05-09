@@ -22,7 +22,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Doors
 
-* **#reload static** will reload doors from the `doors` table globally
+* **#reload static** will reload Doors data from the `doors` table globally
 
 ## Factions
 
@@ -44,7 +44,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Horses
 
-* Horse data is queried immediately from the `horses` table on request of creating horse from Spell cast
+* Horse data is queried direclty from the `horses` table on request of creating horse from Spell cast
 
 ## Items
 
@@ -71,8 +71,8 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Merchants
 
+* **#reload merchants** will reload Merchants data from the `merchantlist` table globally.
 * Merchant data is loaded and cached the first time the request is made to a merchant if it wasn't already loaded on zone bootup
-* Merchants can be hot reloaded using **#reload merchants**
 
 ## NPC Data
 
@@ -80,8 +80,8 @@ This page explains how different assets on the server are loaded and by what met
 
 ## NPC Emotes
 
-* While emotes don't HAVE to be database driven (most custom servers will just use scripts) - there is an option to reload the database driven emotes
 * **#reload npc_emotes** will reload NPC Emotes from the `npc_emotes` table globally.
+* While emotes don't HAVE to be database driven (most custom servers will just use scripts) - there is an option to reload the database driven emotes
 
 ## Objects
 
@@ -96,7 +96,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Perl Event Exports
 
-* **#reload perl_export** will reload all Perl Event Export Settings data from the `perl_event_export_settings` table globally
+* **#reload perl_export** will reload Perl Event Export Settings data from the `perl_event_export_settings` table globally
 
 ## Quests
 
@@ -137,7 +137,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Tradeskills
 
-* Tradeskills query the database direct and do not require reload to take affect
+* Tradeskills query the database directly and do not require reload to take affect
 
 ## Variables
 
