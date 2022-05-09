@@ -2,22 +2,26 @@
 
 This page explains how different assets on the server are loaded and by what methods can they be refreshed and/or reloaded
 
+## AA Data
+* **#reload aa** will reload Alternate Advancement data from the `aa_ability` table globally
+
 ## Alternate Currency Data
 * **#reload static** will reload Alternate Currency data from the `alternate_currency` table globally
+* **#reload alt_currencies** will also reload Alternate Currency data from the `alternate_currency` table globally without reloading everything else that **#reload static** does
 
 ## Base Data
 * Base Data uses shared memory - you most likely aren't editing this
 * Base Data is recommended to be ran from server boot-up for drastic changes, however editing existing data can be reloaded server-wide using **#hotfix**
 
 ## Blocked Spells
-* Blocked spells data is loaded from the `blocked_spells` table on zone init
-* There is no current way to hot reload this data
+* **#reload blocked_spells** will reload Blocked Spells data from the `blocked_spells` table globally
 
 ## Content Flags
 * **#reload content_flags** will reload Content Flags data from the `content_flags` table globally
 
 ## Doors
 * **#reload static** will reload Doors data from the `doors` table globally
+* **#reload doors** will also reload Doors data from the `doors` table globally without reloading everything else that **#reload static** does
 
 ## Factions
 * Factions uses shared memory
@@ -32,6 +36,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Ground Spawns
 * **#reload static** will reload Ground Spawns data from the `ground_spawns` table globally
+* **#reload ground_spawns** will also reload Ground Spawns data from the `ground_spawns` table globally without reloading everything else that **#reload static** does
 
 ## Horses
 * Horse data is queried directly from the `horses` table on request of creating horse from Spell cast
@@ -47,13 +52,14 @@ This page explains how different assets on the server are loaded and by what met
 * **#reload level_mods** will reload Level Based Experience Modifiers data from the `level_exp_mods` table globally
 * Note: Must be enabled with the `Zone:LevelBasedEXPMods` rule to be used.
 
+## Logging
+* **#reload logs** will reload Log Settings data from the `logsys_categories` table globally
+* **#logs reload_all** will also reload Log Settings data from the `logsys_categories` table globally
+
 ## Loot
 * Loot uses shared memory
 * Loot can be hot reloaded in game using **#hotfix** - keep in mind that this uses shared memory files produced from **shared_memory** binary located in the **./shared** folder
 * Note: Loot assigned in a script/quest does not rely on the database system or to be reloaded from shared memory
-
-## Logging
-* **#logs reload_all** or **#reload logs** will reload Log Settings data from the `logsys_categories` table globally
 
 ## Merchants
 * **#reload merchants** will reload Merchants data from the `merchantlist` table globally.
@@ -68,6 +74,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Objects
 * **#reload static** will reload Objects data from the `object` table globally
+* **#reload objects** will also reload Objects data from the `object` table globally without reloading everything else that **#reload static** does
 
 !!! info
       Note that you will likely have to zone for your client to update.
@@ -83,8 +90,8 @@ This page explains how different assets on the server are loaded and by what met
 * **#reload quest** or **#reload quest 0** will reload all quest scripts for the zone you are in.
     - **#reload quest 1** will reload all quests for the zone you're in and stop quest timers.
 * **#reload world** or **#reload world 0** will reload Quests globally.
-    - **#reload world 1** will reload Quests and repop globally.
-    - **#reload world 2** will reload Quests and forcefully repop globally.
+    - **#reload world 1** will reload Quests and repop globally
+    - **#reload world 2** will reload Quests and forcefully repop globally
 
 ## Reload Static Command
 * **#reload static** reloads the following globally.
@@ -118,19 +125,24 @@ This page explains how different assets on the server are loaded and by what met
 ## Titles
 * **#reload titles** will reload Titles data from `titles` table globally
 
+## Tradeskills
+* Tradeskills query the database directly and do not require reload to take affect
+
 ## Traps
 * **#reload static** will reload Traps data from the `traps` table globally
 * **#reload traps 1** will also reload Traps globally without reloading everything else that **#reload static** does
 
-## Tradeskills
-* Tradeskills query the database directly and do not require reload to take affect
-
 ## Variables
 * **#reload variables** will reload Variables data from the `variables` table globally
+
+## Veteran Rewards
+* **#reload static** will reload Veteran Rewards data from the `veteran_reward_templates` table globally
+* **#reload veteran_rewards** will also reload Veteran Rewards data from the `veteran_reward_templates` table globally without reloading everything else that **#reload static** does
+
+## Zone Data
+* **#reload zone [Zone ID|Zone Short Name]** will reload the Zone data from the `zone` table for your current zone.
+* **#zheader [Zone Short Name]** will also reload the Zone data from the `zone` table for your current zone.
 
 ## Zone Points
 * **#reload static** will reload Zone Points data from the `zone_points` table globally
 * **#reload zone_points** will also reload Zone Points data globally without reloading everything else that **#reload static** does
-
-## Zone Data
-* **#zheader [Zone Short Name]** will reload the Zone data from the 'zone' table for your current zone.
