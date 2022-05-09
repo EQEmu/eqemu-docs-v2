@@ -4,7 +4,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Alternate Currency Data
 
-* In game command **#reloadstatic** - will reload alternate currency data from the `alternate_currency` table for just the zone the command was executed in
+* **#reload static** will reload Alternate Currency data from the `alternate_currency` table globally
 
 ## Base Data
 
@@ -16,9 +16,13 @@ This page explains how different assets on the server are loaded and by what met
 * Blocked spells data is loaded from the `blocked_spells` table on zone init
 * There is no current way to hot reload this data
 
+## Content Flags
+
+* **#reload content_flags** will reload Content Flags data from the `content_flags` table globally
+
 ## Doors
 
-* In game command **#reloadstatic** - will reload doors from the `doors` table for the respective zone and instance
+* **#reload static** will reload doors from the `doors` table globally
 
 ## Factions
 
@@ -26,21 +30,17 @@ This page explains how different assets on the server are loaded and by what met
 * Factions can be hot reloaded in game using **#hotfix** - keep in mind that this uses shared memory files produced from **shared_memory** binary located in the **./shared** folder
 * New factions need a server reboot, existing factions can use **#hotfix**, you can use placeholder data to add new factions and safely reload like other shared memory data
 
-## Fishing
+## Fishing and Foraging
 
-* Fishing data is live once entered into the database, no reloading is required
+* Fishing and Foraging data are live once entered into the database, no reloading is required
 
-## Foraging
-
-* Forage data is live once entered into the database, no reloading is required
-
-## Grids / Pathing Data
+## Grids and Pathing Data
 
 * All grid data is loaded at zone boot-up and any new data is simply reloaded during a **#repop**
 
 ## Ground Spawns
 
-* In game command **#reloadstatic** - will reload ground spawns from the `ground_spawns` table for the respective zone and instance
+* **#reload static** will reload ground spawns from the `ground_spawns` table globally
 
 ## Horses
 
@@ -56,7 +56,8 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Level EXP Mods
 
-* If you are using the `level_exp_mods` table for customizing percentage difficulty modifiers - these can be hot reloaded using in game command **#reloadlevelmods**
+* **#reload level_mods** will reload Level Based Experience Modifiers data from the `level_exp_mods` table globally
+* Note: Must be enabled with the `Zone:LevelBasedEXPMods` rule to be used.
 
 ## Loot
 
@@ -66,12 +67,12 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Logging
 
-* Server logging settings can be reloaded in game using **#logs reload_all** from the `logsys_categories` table - this takes affect server wide for all processes
+* **#logs reload_all** or **#reload logs** will reload Log Settings from the `logsys_categories` table globally
 
 ## Merchants
 
 * Merchant data is loaded and cached the first time the request is made to a merchant if it wasn't already loaded on zone bootup
-* Merchants can be hot reloaded using **#reloadmerchants**
+* Merchants can be hot reloaded using **#reload merchants**
 
 ## NPC Data
 
@@ -80,15 +81,14 @@ This page explains how different assets on the server are loaded and by what met
 ## NPC Emotes
 
 * While emotes don't HAVE to be database driven (most custom servers will just use scripts) - there is an option to reload the database driven emotes
-* In game command **#reloadstatic** - will reload database driven emote data from the `npc_emotes` table for just the zone the command was executed in
+* **#reload npc_emotes** will reload NPC Emotes from the `npc_emotes` table globally.
 
 ## Objects
 
-* In game command **#reloadstatic** - will reload objects from the `objects` table for the respective zone and instance
+* **#reload static** will reload Objects data from the `object` table globally
 
 !!! info
       Note that you will likely have to zone for your client to update.
-
 
 ## Pets
 
@@ -96,16 +96,19 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Perl Event Exports
 
-* In game command **#reloadperlexportsettings** will reload all export settings from the `perl_event_export_settings` table and this will take affect for **all current running zones**
+* **#reload perl_export** will reload all Perl Event Export Settings data from the `perl_event_export_settings` table globally
 
 ## Quests
 
-* In game command **#rq** or **#reloadquest** will reload all quest scripts for the zone you are in, LUA or Perl
-* Server-wide in game command **#reloadworld** will perform a quest reload for all zones, however keep in mind this does a repop as well
+* **#reload quest** or **#reload quest 0** will reload all quest scripts for the zone you are in.
+    - **#reload quest 1** will reload all quests for the zone you're in and stop quest timers.
+* **#reload world** or **#reload world 0** will reload Quests globally.
+    - **#reload world 1** will reload Quests and repop globally.
+    - **#reload world 2** will reload Quests and forcefully repop globally.
 
 ## Rules
 
-* In game command **#reloadallrules** will reload rules from the `rule_values` table for all running zone processes and the world process
+* **#reload rules** will reload Rules data from the `rule_values` table globally
 
 ## Skill Caps
 
@@ -121,25 +124,45 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Tasks
 
-* All new Task data requires **#task reloadall** to be executed to reload data from the `tasks` table and the `activities` table.
+* **#task reloadall** or **#reload tasks** will reload Tasks data from the `tasks` table and the `activities` table globally
 * Note: If a character has a task that you are testing/building and you add new steps, the server will remove it from your task window
+
+## Titles
+* **#reload titles** will reload Titles data from `titles` table globally
 
 ## Traps
 
-* In game command **#reloadstatic** - will reload traps from the `traps` table for the respective zone and instance
-* In game comand **#reloadtraps** will also reload traps without reloading everything else that **#reloadstatic** does
+* **#reload static** will reload Traps data from the `traps` table globally
+* **#reload traps 1** will also reload traps globally without reloading everything else that **#reload static** does
 
 ## Tradeskills
 
 * Tradeskills query the database direct and do not require reload to take affect
 
+## Variables
+
+* **#reload variables** will reload Variables data from the `variables` table globally
+
 ## Zone Points
 
-* In game command **#reloadstatic** - will zone points from the `zone_points` table for the respective zone and instance - note this may not work for all clients
-* In game comand **#reloadzps** will also reload zone points without reloading everything else that **#reloadstatic** does
+* **#reload static** will reload Zone Points data from the `zone_points` table globally
+* **#reload zone_points** will also reload Zone Points data globally without reloading everything else that **#reload static** does
 
 ## Zone Data
 
 * Sometimes you want to reload the `zone` table data, this is done via using #zheader [zoneshortname]. If you're in Nexus, use **#zheader nexus**
 * This will resend the zone header packet to the client to update fog / sky / gravity / data / etc.
+
+## Reload Static Command
+
+* **#reload static** reloads the following globally.
+    - Alternate Currencies
+    - Doors
+    - Objects
+    - Ground Spawns
+    - NPC Emotes
+    - Traps
+    - Veteran Rewards
+    - Zone Configurations
+    - Zone Points
 
