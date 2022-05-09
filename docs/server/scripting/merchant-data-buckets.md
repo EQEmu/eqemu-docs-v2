@@ -15,17 +15,17 @@
 
 ## Standard Comparison Types
 * There are six standard comparison types.
-    - Type `0 (==)` checks your value and the Merchant value for equality
-    - Type `1 (!=)` checks your value and the Merchant value for inequality
-    - Type `2 (>=)` checks if your value is greater than or equal to the Merchant value
-    - Type `3 (<=)` checks if your value is lesser than or equal to the Merchant value
-    - Type `4 (>)` checks if your value is greater than the Merchant value
-    - Type `5 (<)` checks if your value is lesser than the Merchant value
+    - `0 (==)` checks your value and the Merchant value for equality
+    - `1 (!=)` checks your value and the Merchant value for inequality
+    - `2 (>=)` checks if your value is greater than or equal to the Merchant value
+    - `3 (<=)` checks if your value is lesser than or equal to the Merchant value
+    - `4 (>)` checks if your value is greater than the Merchant value
+    - `5 (<)` checks if your value is lesser than the Merchant value
 
 ## Special Comparsion Types
 * There are four special comparison types.
 * These values are pipe `|` separated.
-    - Type `6 (Any)` checks if your value is any of the pipe-separated Merchant values `(Example: 1|2|3)`
-    - Type `7 (Not Any)` checks if your value is not any of the pipe-separated Merchant values `(Example: 4|5|6)`
-    - Type `8 (Between)` checks if your value is between two pipe-separated Merchant values `(Example: 1|3)`
-    - Type `9 (Not Between)` checks if your value is not between two pipe-separated Merchant values `(Example: 4|6)`
+    - `6 (Any)` checks if your value is any of the pipe-separated Merchant values `(Example: 1|2|3)`
+    - `7 (Not Any)` checks if your value is not any of the pipe-separated Merchant values `(Example: 4|5|6)`
+    - `8 (Between)` checks if your value is between two pipe-separated Merchant values `(Example: 1|3)`
+    - `9 (Not Between)` checks if your value is not between two pipe-separated Merchant values `(Example: 4|6)`
