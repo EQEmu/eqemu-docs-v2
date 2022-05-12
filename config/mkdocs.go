@@ -17,7 +17,7 @@ type MkDocsCfg struct {
 	SiteUrl  string   `yaml:"site_url"`
 	RepoName string   `yaml:"repo_name"`
 	EditURI  string   `yaml:"edit_uri"`
-	Extra struct {
+	Extra    struct {
 		Analytics struct {
 			Provider string `yaml:"provider"`
 			Property string `yaml:"property"`
@@ -50,25 +50,27 @@ type MkDocsCfg struct {
 		DatabaseSchema []map[string][]map[string]string `yaml:"Database Schema,omitempty"`
 		QuestApi       []map[string][]map[string]string `yaml:"Quest API,omitempty"`
 		Changelog      []struct {
-			Num2003 string `yaml:"2003,omitempty"`
-			Num2004 string `yaml:"2004,omitempty"`
-			Num2005 string `yaml:"2005,omitempty"`
-			Num2006 string `yaml:"2006,omitempty"`
-			Num2007 string `yaml:"2007,omitempty"`
-			Num2008 string `yaml:"2008,omitempty"`
-			Num2009 string `yaml:"2009,omitempty"`
-			Num2010 string `yaml:"2010,omitempty"`
-			Num2011 string `yaml:"2011,omitempty"`
-			Num2012 string `yaml:"2012,omitempty"`
-			Num2013 string `yaml:"2013,omitempty"`
-			Num2014 string `yaml:"2014,omitempty"`
-			Num2015 string `yaml:"2015,omitempty"`
-			Num2016 string `yaml:"2016,omitempty"`
-			Num2017 string `yaml:"2017,omitempty"`
-			Num2018 string `yaml:"2018,omitempty"`
-			Num2019 string `yaml:"2019,omitempty"`
-			Num2020 string `yaml:"2020,omitempty"`
-			Num2021 string `yaml:"2021,omitempty"`
+			Num2022                string `yaml:"2022,omitempty"`
+			Num2021                string `yaml:"2021,omitempty"`
+			Num2020                string `yaml:"2020,omitempty"`
+			Num2019                string `yaml:"2019,omitempty"`
+			Num2018                string `yaml:"2018,omitempty"`
+			Num2017                string `yaml:"2017,omitempty"`
+			Num2016                string `yaml:"2016,omitempty"`
+			Num2015                string `yaml:"2015,omitempty"`
+			Num2014                string `yaml:"2014,omitempty"`
+			Num2013                string `yaml:"2013,omitempty"`
+			Num2012                string `yaml:"2012,omitempty"`
+			Num2011                string `yaml:"2011,omitempty"`
+			Num2010                string `yaml:"2010,omitempty"`
+			Num2009                string `yaml:"2009,omitempty"`
+			Num2008                string `yaml:"2008,omitempty"`
+			Num2007                string `yaml:"2007,omitempty"`
+			Num2006                string `yaml:"2006,omitempty"`
+			Num2005                string `yaml:"2005,omitempty"`
+			Num2004                string `yaml:"2004,omitempty"`
+			Num2003                string `yaml:"2003,omitempty"`
+			ChangelogContributions string `yaml:"Changelog Contributions,omitempty"`
 		} `yaml:"Changelog,omitempty"`
 		Contributing []interface{} `yaml:"Contributing,omitempty"`
 	} `yaml:"nav"`

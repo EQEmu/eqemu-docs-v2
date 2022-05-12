@@ -13,6 +13,8 @@ extra_css:
   - stylesheets/extra.css
 copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
+  favicon: assets/eqemu-text.png
+  logo: assets/eqemu-text.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -29,13 +31,9 @@ theme:
     - search.suggest
   name: material
   palette:
-    - media: ""
-      scheme: slate
+    - scheme: slate
       primary: deep orange
       accent: deep orange
-      toggle:
-        icon: ""
-        name: ""
 markdown_extensions:
   - admonition
   - abbr
@@ -694,7 +692,7 @@ nav:
           - Lua [SpeakMode]: quest-api/constants/lua-speakmode.md
           - Lua [SpecialAbility]: quest-api/constants/lua-specialability.md
   - Changelog:
-      - {}
+      - "2022": changelog/server/2022.md
       - "2021": changelog/server/2021.md
       - "2020": changelog/server/2020.md
       - "2019": changelog/server/2019.md
@@ -714,6 +712,6 @@ nav:
       - "2005": changelog/server/2005.md
       - "2004": changelog/server/2004.md
       - "2003": changelog/server/2003.md
-      - {}
+      - "Changelog Contributions": changelog/server/changelog-contributions.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
