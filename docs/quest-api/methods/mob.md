@@ -1,15 +1,16 @@
-=== "Perl (335)"
+=== "Perl (343)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $mob->AddFeignMemory(Client* attacker);
     $mob->AddNimbusEffect(int effect_id);
-    $mob->AddToHateList(Mob* other, [int32 hate = 0], [int32 damage = 0], [bool yell_for_help = true], [bool frenzy = false], [bool buff_tic = false]);
+    $mob->AddToHateList(Mob* other, [int64 hate = 0], [int64 damage = 0], [bool yell_for_help = true], [bool frenzy = false], [bool buff_tic = false]);
+    $mob->ApplySpellBuff(spell_id, [int duration = 0]);
     $mob->Attack(Mob* other, [int hand = 13 [prim|sec]], [bool from_riposte = false]);
     $mob->BehindMob(Mob* other = 0, [float x = 0.0f], [float y= 0.0f]);
     $mob->BuffCount();
@@ -45,7 +46,7 @@
     $mob->ClearFeignMemory();
     $mob->ClearSpecialAbilities();
     $mob->CombatRange(Mob* target);
-    $mob->Damage(Mob* from, int32 damage, uint16 spell_id, int attack_skill, [bool avoidable = true], [int8 buffslot = -1], [bool buff_tic = false]);
+    $mob->Damage(Mob* from, int64 damage, uint16 spell_id, int attack_skill, [bool avoidable = true], [int8 buffslot = -1], [bool buff_tic = false]);
     $mob->DeleteBucket(string bucket_name);
     $mob->Depop(StartSpawnTimer = true);
     $mob->DivineAura();
@@ -77,9 +78,9 @@
     $mob->GetATK();
     $mob->GetActSpellCasttime(uint16 spell_id, uint32 cast_time);
     $mob->GetActSpellCost(uint16 spell_id, int32 cost);
-    $mob->GetActSpellDamage(uint16 spell_id, int32 value);
+    $mob->GetActSpellDamage(uint16 spell_id, int64 value);
     $mob->GetActSpellDuration(uint16 spell_id, int32 duration);
-    $mob->GetActSpellHealing(uint16 spell_id, int32 value);
+    $mob->GetActSpellHealing(uint16 spell_id, int64 value);
     $mob->GetActSpellRange(uint16 spell_id, float range);
     $mob->GetAggroRange();
     $mob->GetAllowBeneficial();
@@ -97,6 +98,8 @@
     $mob->GetBucketKey();
     $mob->GetBucketRemaining(string bucket_name);
     $mob->GetBuffSlotFromType(uint16 type);
+    $mob->GetBuffStatValueBySlot(uint8 slot, string stat);
+    $mob->GetBuffStatValueBySpell(int32 spell_id, string stat);
     $mob->GetCHA();
     $mob->GetCR();
     $mob->GetCasterLevel(spell_id);
@@ -145,6 +148,8 @@
     $mob->GetHerosForgeModel(uint8 material_slot);
     $mob->GetID();
     $mob->GetINT();
+    $mob->GetInvisibleLevel();
+    $mob->GetInvisibleUndeadLevel();
     $mob->GetInvul();
     $mob->GetItemHPBonuses();
     $mob->GetItemStat(uint32 item_id, string stat);
@@ -221,7 +226,7 @@
     $mob->HasTwoHanderEquipped();
     $mob->HateSummon();
     $mob->Heal();
-    $mob->HealDamage(int32 amount, [Mob* caster = 0]);
+    $mob->HealDamage(int64 amount, [Mob* caster = 0]);
     $mob->InterruptSpell([uint16 spell_id = 0xFFFF]);
     $mob->IsAIControlled();
     $mob->IsAmnesiad();
@@ -296,6 +301,7 @@
     $mob->SetAppearance(int appearance [0|1|2|3|4], [ignore_self = true]);
     $mob->SetBodyType(int32 type, [bool overwrite_orig = false]);
     $mob->SetBucket(string bucket_name, string bucket_value, [string expiration]);
+    $mob->SetBuffDuration(spell_id, [int duration = 0]);
     $mob->SetCurrentWP(waypoint);
     $mob->SetDeltas(float delta_x, float delta_y, float delta_z, float delta_h);
     $mob->SetDisableMelee(bool value);
@@ -305,8 +311,8 @@
     $mob->SetFlyMode(uint8 flymode[0|1|2|3|4|5]);
     $mob->SetFollowID(id);
     $mob->SetGender(int32 gender);
-    $mob->SetHP(int32 hp);
-    $mob->SetHate(Mob* other, [int32 hate = 0], [int32 damage = 0]);
+    $mob->SetHP(int64 hp);
+    $mob->SetHate(Mob* other, [int64 hate = 0], [int64 damage = 0]);
     $mob->SetHeading(float heading);
     $mob->SetInvisible(uint8 state);
     $mob->SetInvul(bool set_invulnerable);
@@ -322,6 +328,8 @@
     $mob->SetRace(int32 race);
     $mob->SetRunAnimSpeed(int8 speed);
     $mob->SetRunning(bool value);
+    $mob->SetSeeInvisibleLevel(uint8 see_invis_level);
+    $mob->SetSeeInvisibleUndeadLevel(uint8 see_invis_undead_level);
     $mob->SetSlotTint(uint8 material_slot, uint8 red_tint, uint8 green_tint, uint8 blue_tint);
     $mob->SetSpecialAbility(int ability, int value);
     $mob->SetSpecialAbilityParam(int ability, int param, int value);
@@ -343,45 +351,47 @@
     $mob->WearChange(uint8 material_slot, uint16 texture, [uint32 color = 0, uint32 hero_forge_model = 0]);
     $mob->WipeHateList();
     ```
-=== "Lua (410)"
+=== "Lua (419)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Mob){:target="Mob"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     mob:AddNimbusEffect(int effect_id);
-    mob:AddToHateList(Mob other, int hate, int damage, bool yell_for_help, bool frenzy);
-    mob:AddToHateList(Mob other, int hate, int damage);
-    mob:AddToHateList(Mob other, int hate, int damage, bool yell_for_help);
-    mob:AddToHateList(Mob other, int hate, int damage, bool yell_for_help, bool frenzy, bool buff_tic);
-    mob:AddToHateList(Mob other, int hate);
+    mob:AddToHateList(Mob other, int64 hate, int64 damage);
+    mob:AddToHateList(Mob other, int64 hate);
+    mob:AddToHateList(Mob other, int64 hate, int64 damage, bool yell_for_help, bool frenzy);
+    mob:AddToHateList(Mob other, int64 hate, int64 damage, bool yell_for_help);
     mob:AddToHateList(Mob other);
-    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough, is_from_spell, object opts);
-    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough);
-    mob:Attack(Mob other, int hand, from_riposte);
-    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough, is_from_spell);
+    mob:AddToHateList(Mob other, int64 hate, int64 damage, bool yell_for_help, bool frenzy, bool buff_tic);
+    mob:ApplySpellBuff(int spell_id);
+    mob:ApplySpellBuff(int spell_id, int duration);
     mob:Attack(Mob other, int hand);
+    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough, is_from_spell);
+    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough, is_from_spell, object opts);
+    mob:Attack(Mob other, int hand, from_riposte);
     mob:Attack(Mob other);
+    mob:Attack(Mob other, int hand, from_riposte, is_strikethrough);
     mob:AttackAnimation(Hand, ItemInst weapon);
     mob:BehindMob();
-    mob:BehindMob(Mob other);
-    mob:BehindMob(Mob other, float x);
     mob:BehindMob(Mob other, float x, float y);
+    mob:BehindMob(Mob other, float x);
+    mob:BehindMob(Mob other);
     mob:BuffCount();
     mob:BuffFadeAll();
-    mob:BuffFadeByEffect(int effect_id);
     mob:BuffFadeByEffect(int effect_id, int skipslot);
+    mob:BuffFadeByEffect(int effect_id);
     mob:BuffFadeBySlot(int slot);
     mob:BuffFadeBySlot(int slot, bool recalc_bonuses);
     mob:BuffFadeBySpellID(int spell_id);
     mob:CalculateDistance(double x, double y, double z);
     mob:CalculateHeadingToTarget(in_x, in_y);
+    mob:CameraEffect(uint32 duration, uint32 intensity, Client c, bool global);
     mob:CameraEffect(uint32 duration, uint32 intensity);
     mob:CameraEffect(uint32 duration, uint32 intensity, Client c);
-    mob:CameraEffect(uint32 duration, uint32 intensity, Client c, bool global);
     mob:CanBuffStack(spell_id, caster_level, bool fail_if_overwrite);
     mob:CanBuffStack(spell_id, caster_level);
     mob:CanClassEquipItem(uint32 item_id);
@@ -392,13 +402,13 @@
     mob:CanThisClassDualWield();
     mob:CanThisClassParry();
     mob:CanThisClassRiposte();
+    mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, );
+    mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot);
     mob:CastSpell(int spell_id, int target_id, int slot, int cast_time);
+    mob:CastSpell(int spell_id, int target_id, int slot);
     mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, );
     mob:CastSpell(int spell_id, int target_id);
-    mob:CastSpell(int spell_id, int target_id, int slot);
     mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost);
-    mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot);
-    mob:CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, );
     mob:ChangeBeard(int in);
     mob:ChangeBeardColor(int in);
     mob:ChangeDrakkinDetails(int in);
@@ -412,8 +422,8 @@
     mob:ChangeHelmTexture(int in);
     mob:ChangeLuclinFace(int in);
     mob:ChangeRace(int in);
-    mob:ChangeSize(double in_size);
     mob:ChangeSize(double in_size, bool no_restriction);
+    mob:ChangeSize(double in_size);
     mob:ChangeTexture(int in);
     mob:Charmed();
     mob:CheckAggro(Mob other);
@@ -422,45 +432,45 @@
     mob:CheckHealAggroAmount(spell_id);
     mob:CheckHealAggroAmount(spell_id, uint32 heal_possible);
     mob:CheckLoS(Mob other);
-    mob:CheckLoSToLoc(double x, double y, double z, double mob_size);
     mob:CheckLoSToLoc(double x, double y, double z);
+    mob:CheckLoSToLoc(double x, double y, double z, double mob_size);
     mob:CheckNumHitsRemaining(int type, int32 buff_slot, uint16 spell_id);
     mob:ClearSpecialAbilities();
     mob:CombatRange(Mob other);
-    mob:Damage(Mob from, int damage, int spell_id, int attack_skill, bool avoidable, int buffslot, bool buff_tic);
-    mob:Damage(Mob from, int damage, int spell_id, int attack_skill);
-    mob:Damage(Mob from, int damage, int spell_id, int attack_skill, bool avoidable, int buffslot);
-    mob:Damage(Mob from, int damage, int spell_id, int attack_skill, bool avoidable);
+    mob:Damage(Mob from, int64 damage, int spell_id, int attack_skill, bool avoidable, int buffslot);
+    mob:Damage(Mob from, int64 damage, int spell_id, int attack_skill, bool avoidable);
+    mob:Damage(Mob from, int64 damage, int spell_id, int attack_skill);
+    mob:Damage(Mob from, int64 damage, int spell_id, int attack_skill, bool avoidable, int buffslot, bool buff_tic);
     mob:DelGlobal(string varname);
     mob:DeleteBucket(string bucket_name);
     mob:Depop(bool start_spawn_timer);
     mob:Depop();
     mob:DivineAura();
+    mob:DoAnim(int anim_num);
+    mob:DoAnim(int anim_num, int type);
     mob:DoAnim(int anim_num, int type, bool ackreq, int filter);
     mob:DoAnim(int anim_num, int type, bool ackreq);
-    mob:DoAnim(int anim_num, int type);
-    mob:DoAnim(int anim_num);
+    mob:DoArcheryAttackDmg(Mob other);
     mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon);
     mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon, ItemInst ammo, int weapon_damage);
-    mob:DoArcheryAttackDmg(Mob other);
-    mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon, ItemInst ammo, int weapon_damage, int chance_mod);
     mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon, ItemInst ammo);
+    mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon, ItemInst ammo, int weapon_damage, int chance_mod);
     mob:DoArcheryAttackDmg(Mob other, ItemInst range_weapon, ItemInst ammo, int weapon_damage, int chance_mod, );
     mob:DoKnockback(Mob caster, uint32 push_back, uint32 push_up);
     mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill, int chance_mod, int focus, bool can_riposte);
-    mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill);
-    mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill, int chance_mod, int focus);
     mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill, int chance_mod);
-    mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage);
+    mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill, int chance_mod, int focus);
+    mob:DoMeleeSkillAttackDmg(Mob other, int weapon_damage, int skill);
     mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage, int min_damage, int hate_override, int reuse_time);
-    mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage, int min_damage);
+    mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage);
     mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage, int min_damage, int hate_override);
-    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item);
-    mob:DoThrowingAttackDmg(Mob other);
-    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon);
-    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item, int weapon_damage, int chance_mod);
-    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item, int weapon_damage, int chance_mod, );
+    mob:DoSpecialAttackDamage(Mob other, int skill, int max_damage, int min_damage);
     mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item, int weapon_damage);
+    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon);
+    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item);
+    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item, int weapon_damage, int chance_mod, );
+    mob:DoThrowingAttackDmg(Mob other, ItemInst range_weapon, Item item, int weapon_damage, int chance_mod);
+    mob:DoThrowingAttackDmg(Mob other);
     mob:DoubleAggro(Mob other);
     mob:Emote(string message);
     mob:EntityVariableExists(string name);
@@ -469,12 +479,11 @@
     mob:FindBuffBySlot(int slot);
     mob:FindGroundZ(x, y);
     mob:FindGroundZ(x, y, z);
+    mob:FindType(int type);
     mob:FindType(int type, offensive, int threshold);
     mob:FindType(int type, offensive);
-    mob:FindType(int type);
-    mob:GMMove(double x, double y, double z, double heading);
-    mob:GMMove(double x, double y, double z, double heading, bool send_update);
     mob:GMMove(double x, double y, double z);
+    mob:GMMove(double x, double y, double z, double heading);
     mob:Gate();
     mob:GetAA(id);
     mob:GetAABonuses();
@@ -497,6 +506,8 @@
     mob:GetBucketKey();
     mob:GetBucketRemaining(bucket_name);
     mob:GetBuffSlotFromType(slot);
+    mob:GetBuffStatValueBySlot(uint8 slot, string* identifier);
+    mob:GetBuffStatValueBySpell(spell_id, string* identifier);
     mob:GetCHA();
     mob:GetCR();
     mob:GetCasterLevel(spell_id);
@@ -527,13 +538,13 @@
     mob:GetHandToHandDamage();
     mob:GetHandToHandDelay();
     mob:GetHaste();
-    mob:GetHateAmount(Mob target);
     mob:GetHateAmount(Mob target, bool is_damage);
+    mob:GetHateAmount(Mob target);
     mob:GetHateClosest();
     mob:GetHateDamageTop(other);
     mob:GetHateList();
-    mob:GetHateListByDistance(int distance);
     mob:GetHateListByDistance();
+    mob:GetHateListByDistance(int distance);
     mob:GetHateRandom();
     mob:GetHateRandomBot();
     mob:GetHateRandomClient();
@@ -543,14 +554,16 @@
     mob:GetHelmTexture();
     mob:GetHerosForgeModel(uint8 material_slot);
     mob:GetINT();
+    mob:GetInvisibleLevel();
+    mob:GetInvisibleUndeadLevel();
     mob:GetInvul();
     mob:GetItemBonuses();
     mob:GetItemHPBonuses();
     mob:GetItemStat(uint32 itemid, string* identifier);
     mob:GetLastName();
     mob:GetLevel();
-    mob:GetLevelCon(int other);
     mob:GetLevelCon(int my, int other);
+    mob:GetLevelCon(int other);
     mob:GetLuclinFace();
     mob:GetMR();
     mob:GetMana();
@@ -622,8 +635,8 @@
     mob:HasTwoHandBluntEquiped();
     mob:HasTwoHanderEquipped();
     mob:Heal();
-    mob:HealDamage(uint32 amount, Mob other);
-    mob:HealDamage(uint32 amount);
+    mob:HealDamage(uint64 amount, Mob other);
+    mob:HealDamage(uint64 amount);
     mob:InterruptSpell(int spell_id);
     mob:InterruptSpell();
     mob:IsAIControlled();
@@ -639,8 +652,8 @@
     mob:IsFeared();
     mob:IsHorse();
     mob:IsImmuneToSpell(int spell_id, Mob caster);
-    mob:IsInvisible(Mob other);
     mob:IsInvisible();
+    mob:IsInvisible(Mob other);
     mob:IsMeleeDisabled();
     mob:IsMezzed();
     mob:IsMoving();
@@ -659,31 +672,31 @@
     mob:Message_StringID(int type, int string_id, uint32 distance);
     mob:ModSkillDmgTaken(int skill, int value);
     mob:ModVulnerability(int resist, int value);
+    mob:NPCSpecialAttacks(string parse, int perm);
     mob:NPCSpecialAttacks(string parse, int perm, bool reset);
     mob:NPCSpecialAttacks(string parse, int perm, bool reset, bool remove);
-    mob:NPCSpecialAttacks(string parse, int perm);
     mob:NavigateTo(double x, double y, double z);
     mob:ProcessSpecialAbilities(string str);
-    mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed, double angle);
     mob:ProjectileAnimation(Mob to, int item_id);
     mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow);
     mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed);
-    mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed, double angle, double tilt, double arc);
+    mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed, double angle);
     mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed, double angle, double tilt);
-    mob:QuestSay(Client client, string message);
+    mob:ProjectileAnimation(Mob to, int item_id, bool is_arrow, double speed, double angle, double tilt, double arc);
     mob:QuestSay(Client client, string message, object opts);
+    mob:QuestSay(Client client, string message);
     mob:RandomizeFeatures(bool send_illusion, bool save_variables);
     mob:RangedAttack(Mob other);
     mob:RemoveAllNimbusEffects();
     mob:RemoveNimbusEffect(int effect_id);
     mob:RemovePet();
-    mob:ResistSpell(int resist_type, int spell_id, Mob caster, bool use_resist_override, int resist_override, );
     mob:ResistSpell(int resist_type, int spell_id, Mob caster, bool use_resist_override, int resist_override);
     mob:ResistSpell(int resist_type, int spell_id, Mob caster, bool use_resist_override);
+    mob:ResistSpell(int resist_type, int spell_id, Mob caster, bool use_resist_override, int resist_override, );
     mob:ResistSpell(int resist_type, int spell_id, Mob caster);
     mob:RunTo(double x, double y, double z);
-    mob:Say(string* message, int language);
     mob:Say(string message);
+    mob:Say(string* message, int language);
     mob:SeeHide();
     mob:SeeImprovedHide();
     mob:SeeInvisible();
@@ -692,20 +705,22 @@
     mob:SendAppearanceEffect(uint32 parm1, uint32 parm2, uint32 parm3, uint32 parm4, uint32 parm5);
     mob:SendBeginCast(int spell_id, int cast_time);
     mob:SendIllusionPacket(object illusion);
-    mob:SendSpellEffect(uint32 effect_id, uint32 duration, uint32 finish_delay, bool zone_wide, uint32 unk020, bool perm_effect, );
-    mob:SendSpellEffect(uint32 effect_id, uint32 duration, uint32 finish_delay, bool zone_wide, uint32 unk020, bool perm_effect);
     mob:SendSpellEffect(uint32 effect_id, uint32 duration, uint32 finish_delay, bool zone_wide, uint32 unk020);
+    mob:SendSpellEffect(uint32 effect_id, uint32 duration, uint32 finish_delay, bool zone_wide, uint32 unk020, bool perm_effect);
+    mob:SendSpellEffect(uint32 effect_id, uint32 duration, uint32 finish_delay, bool zone_wide, uint32 unk020, bool perm_effect, );
     mob:SendTo(double x, double y, double z);
     mob:SendToFixZ(double x, double y, double z);
     mob:SendWearChange(int material_slot);
     mob:SetAA(int rank_id, int new_value, int charges);
     mob:SetAA(int rank_id, int new_value);
     mob:SetAllowBeneficial(bool value);
-    mob:SetAppearance(int app);
     mob:SetAppearance(int app, bool ignore_self);
+    mob:SetAppearance(int app);
     mob:SetBodyType(int new_body, bool overwrite_orig);
-    mob:SetBucket(string bucket_name, string bucket_value, string expiration);
     mob:SetBucket(string bucket_name, string bucket_value);
+    mob:SetBucket(string bucket_name, string bucket_value, string expiration);
+    mob:SetBuffDuration(int spell_id);
+    mob:SetBuffDuration(int spell_id, int duration);
     mob:SetCurrentWP(int wp);
     mob:SetDestructibleObject(bool set);
     mob:SetDisableMelee(bool disable);
@@ -716,15 +731,15 @@
     mob:SetGender(int in);
     mob:SetGlobal(string varname, string newvalue, int options, string duration);
     mob:SetGlobal(string varname, string newvalue, int options, string duration, Mob other);
-    mob:SetHP(int hp);
-    mob:SetHate(Mob other, int hate, int damage);
-    mob:SetHate(Mob other, int hate);
+    mob:SetHP(int64 hp);
     mob:SetHate(Mob other);
+    mob:SetHate(Mob other, int64 hate);
+    mob:SetHate(Mob other, int64 hate, int64 damage);
     mob:SetHeading(double in);
     mob:SetInvisible(int state);
     mob:SetInvul(bool value);
-    mob:SetLevel(int level);
     mob:SetLevel(int level, bool command);
+    mob:SetLevel(int level);
     mob:SetMana(mana);
     mob:SetOOCRegen(int regen);
     mob:SetPet(Mob new_pet);
@@ -732,22 +747,24 @@
     mob:SetPseudoRoot(bool in);
     mob:SetRace(int in);
     mob:SetRunning(bool running);
+    mob:SetSeeInvisibleLevel(uint8 invisible_level);
+    mob:SetSeeInvisibleUndeadLevel(uint8 invisible_level);
     mob:SetSlotTint(int material_slot, int red_tint, int green_tint, int blue_tint);
     mob:SetSpecialAbility(int ability, int level);
     mob:SetSpecialAbilityParam(int ability, int param, int value);
     mob:SetTarget(Mob t);
     mob:SetTargetable(bool on);
     mob:SetTexture(int in);
-    mob:Shout(string message);
     mob:Shout(string* message, int language);
+    mob:Shout(string message);
     mob:Signal(uint32 id);
     mob:SpellEffect(Mob caster, int spell_id, double partial);
-    mob:SpellFinished(int spell_id, Mob target, int slot);
-    mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used, uint32 inventory_slot);
-    mob:SpellFinished(int spell_id, Mob target);
-    mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used);
     mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust);
     mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust, proc);
+    mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used, uint32 inventory_slot);
+    mob:SpellFinished(int spell_id, Mob target);
+    mob:SpellFinished(int spell_id, Mob target, int slot);
+    mob:SpellFinished(int spell_id, Mob target, int slot, int mana_used);
     mob:Spin();
     mob:StopNavigation();
     mob:Stun(int duration);
@@ -755,9 +772,9 @@
     mob:TempName(string newname);
     mob:TempName();
     mob:ThrowingAttack(Mob other);
-    mob:TryFinishingBlow(Mob defender, int &damage);
-    mob:TryMoveAlong(float distance, float angle);
+    mob:TryFinishingBlow(Mob defender, int64 &damage);
     mob:TryMoveAlong(float distance, float angle, bool send);
+    mob:TryMoveAlong(float distance, float angle);
     mob:UnStun();
     mob:WalkTo(double x, double y, double z);
     mob:WearChange(int material_slot, int texture, uint32 color);

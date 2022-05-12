@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2022.01.01
+    Last generated 2022.05.11
 
 ``` lua
 Rule.AAExpMultiplier
@@ -44,6 +44,7 @@ Rule.AllowItemTGB
 Rule.AllowMQTarget
 Rule.AllowMercSuspendInCombat
 Rule.AllowMercs
+Rule.AllowMultipleOfSameAugment
 Rule.AllowOwnerOptionAltCombat
 Rule.AllowOwnerOptionAutoDefend
 Rule.AllowSpellMemorizeFromItem
@@ -174,6 +175,7 @@ Rule.EnableAvoidanceCap
 Rule.EnableBardMelody
 Rule.EnableBlockedBuffs
 Rule.EnableCharacterEXPMods
+Rule.EnableChecksumVerification
 Rule.EnableDevTools
 Rule.EnableDiscoveredItems
 Rule.EnableFearPathing
@@ -234,6 +236,7 @@ Rule.FinishBuffing
 Rule.FishingLineLength
 Rule.FishingLineStepSize
 Rule.FishingRodLength
+Rule.FixBeaconHeading
 Rule.FixPathingZMaxDeltaSendTo
 Rule.FixPathingZOnSendTo
 Rule.FixZWhenPathing
@@ -273,7 +276,6 @@ Rule.HotZoneBonus
 Rule.IPLimitDisconnectAll
 Rule.IgnoreSpellDmgLvlRestriction
 Rule.IksarCommonTongue
-Rule.ImmuneToEnrageFromRiposteSpellEffect
 Rule.IndifferentlyFactionMinimum
 Rule.IntAggroThreshold
 Rule.IntervalDurationMS
@@ -293,6 +295,7 @@ Rule.ItemDamageShieldCap
 Rule.ItemDoTShieldingCap
 Rule.ItemEnduranceRegenCap
 Rule.ItemExtraDmgCap
+Rule.ItemExtraSpellAmtCalcAsPercent
 Rule.ItemHealAmtCap
 Rule.ItemHealthRegenCap
 Rule.ItemIDToEnablePorts
@@ -387,6 +390,7 @@ Rule.MinOfflineTimeToReturnHome
 Rule.MinRangedAttackDist
 Rule.MinStatusForNoDropExemptions
 Rule.MinStatusToBypassAntiSpam
+Rule.MinStatusToBypassCheckSumVerification
 Rule.MinStatusToBypassLockedServer
 Rule.MinStatusToBypassPlayerCountRequirements
 Rule.MinStatusToLevelTarget
@@ -440,6 +444,7 @@ Rule.OldRaceRezEffects
 Rule.OldRainTargets
 Rule.OldResurrectionSicknessSpell
 Rule.OldResurrectionSicknessSpellID
+Rule.OnInviteReceiveAlreadyinGroupMessage
 Rule.OneProcPerWeapon
 Rule.OrnamentationAugmentType
 Rule.PEQZoneDebuff1
@@ -564,6 +569,8 @@ Rule.ShowExpValues
 Rule.SittingAggroMod
 Rule.SkillCapMaxLevel
 Rule.SkillUpFromItems
+Rule.SkillUpMaximumChancePercentage
+Rule.SkillUpMinimumChancePercentage
 Rule.SkillUpModifier
 Rule.SmartAggroList
 Rule.SmartLastFightingDelayMoving
@@ -625,6 +632,7 @@ Rule.UseClientBasedExpansionSettings
 Rule.UseCurrentExpansionAAOnly
 Rule.UseDeathExpLossMult
 Rule.UseExtendedPoisonProcs
+Rule.UseFadingMemoriesMaxLevel
 Rule.UseIntervalAC
 Rule.UseItemBonusesForNonPets
 Rule.UseLevelAggro
@@ -632,6 +640,7 @@ Rule.UseLimitTradeskillSearchSkillDiff
 Rule.UseLiveBlockedMessage
 Rule.UseLiveCombatRounds
 Rule.UseLiveFactionMessage
+Rule.UseLiveRiposteMechanics
 Rule.UseLiveSpellProjectileGFX
 Rule.UseMeditateBasedManaRegen
 Rule.UseNPCDamageClassLevelMods
@@ -650,6 +659,7 @@ Rule.UseRaceClassExpBonuses
 Rule.UseResurrectionSickness
 Rule.UseRevampHandToHand
 Rule.UseSpellFileSongCap
+Rule.UseSpellImpliedTargeting
 Rule.UseStackablePickPocketing
 Rule.UseXPConScaling
 Rule.UseZoneController

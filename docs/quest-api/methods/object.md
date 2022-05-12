@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $object->ClearUser();
@@ -21,9 +21,9 @@
     $object->GetItemID();
     $object->GetModelName();
     $object->GetSize();
-    $object->GetSize();
-    $object->GetSize();
     $object->GetSolidType();
+    $object->GetTiltX();
+    $object->GetTiltY();
     $object->GetType();
     $object->GetX();
     $object->GetY();
@@ -56,7 +56,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     object:ClearUser();

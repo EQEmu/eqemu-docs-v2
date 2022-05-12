@@ -1,20 +1,20 @@
 # Information relevant to sound emitters in zone in .emt files.
 
-  - sound: file name of a sound, default none.wav
-  - sound_active: when the sound should be played, default 0 (always). Other options: 1 (daytime), 2 (nighttime)
-  - sound_volume: loudness of a sound, default 1.0 (max volume), range of 0.0 to 1.0
-  - sound_fade_in: fade in in ms for a sound, default 0 (never fade)
-  - sound_fade_out: fade out in ms for a sound, default 0 (never fade)
-  - sound_type: loop parameter, default 0 (constantly), Other options: 1 (delayed repeat)
-  - sound_radius: when person is this radius from the origin play at full sound, default 15.0 (15m range)
-  - sound_distance: max distance from origin the sound can be heard, default 50.0 (50m range)
-  - sound_rand_distance: distance in meters the sound can be played at randomly, default 0
-  - sound_trigger_range: distance from origin for a player to trigger the sound being played, default 50.0 (50m range)
-  - sound_min_repeat_delay: minimum delay before the sound repeats playback in ms, default 0
-  - sound_max_repeat_delay: maximum delay before the sound repeats playback in ms, default 0
-  - sound_xmi_index: xmi is a classic playback system, typically just use, default 0
-  - sound_echo: echo level, default 0, range 0 to 1.0
-  - sound_env_toggle: set whether playback can be controlled with environment sounds in options window, default 1
+- sound: file name of a sound, default none.wav
+- sound_active: when the sound should be played, default 0 (always). Other options: 1 (daytime), 2 (nighttime)
+- sound_volume: loudness of a sound, default 1.0 (max volume), range of 0.0 to 1.0
+- sound_fade_in: fade in in ms for a sound, default 0 (never fade)
+- sound_fade_out: fade out in ms for a sound, default 0 (never fade)
+- sound_type: loop parameter, default 0 (constantly), Other options: 1 (delayed repeat)
+- sound_radius: when person is this radius from the origin play at full sound, default 15.0 (15m range)
+- sound_distance: max distance from origin the sound can be heard, default 50.0 (50m range)
+- sound_rand_distance: distance in meters the sound can be played at randomly, default 0
+- sound_trigger_range: distance from origin for a player to trigger the sound being played, default 50.0 (50m range)
+- sound_min_repeat_delay: minimum delay before the sound repeats playback in ms, default 0
+- sound_max_repeat_delay: maximum delay before the sound repeats playback in ms, default 0
+- sound_xmi_index: xmi is a classic playback system, typically just use, default 0
+- sound_echo: echo level, default 0, range 0 to 1.0
+- sound_env_toggle: set whether playback can be controlled with environment sounds in options window, default 1
 
 How these varying fields go in is something like:
 

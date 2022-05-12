@@ -1,14 +1,15 @@
-=== "Perl (107)"
+=== "Perl (111)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, [uint32 max_delay = 2500], [uint32 min_delay = 2500]);
     $npc->AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
+    $npc->AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     $npc->AddCash(uint16 copper, uint16 silver, uint16 gold, uint16 platinum);
     $npc->AddDefensiveProc(int spell_id, int chance);
     $npc->AddItem(uint32 item_id, [uint16 charges = 0], [bool equip_item = true], [uint32 aug1 = 0], [uint32 aug2 = 0], [uint32 aug3 = 0], [uint32 aug4 = 0], [uint32 aug5 = 0], [uint32 aug6 = 0]);
@@ -48,6 +49,7 @@
     $npc->GetNPCFactionID();
     $npc->GetNPCHate(Mob* entity);
     $npc->GetNPCSpellsID();
+    $npc->GetNPCStat(string key);
     $npc->GetPetSpellID();
     $npc->GetPlatinum();
     $npc->GetPrimSkill();
@@ -69,6 +71,7 @@
     $npc->GetSwarmOwner();
     $npc->GetSwarmTarget();
     $npc->GetWaypointMax();
+    $npc->HasAISpellEffect(int spell_effect_id);
     $npc->HasItem(uint32 item_id);
     $npc->IsAnimal();
     $npc->IsGuarding();
@@ -84,6 +87,7 @@
     $npc->PickPocket(Client* thief);
     $npc->RecalculateSkills();
     $npc->RemoveAISpell(int spell_id);
+    $npc->RemoveAISpellEffect(int spell_effect_id);
     $npc->RemoveCash();
     $npc->RemoveDefensiveProc(int spell_id);
     $npc->RemoveFromHateList(Mob* target);
@@ -115,30 +119,31 @@
     $npc->StopWandering();
     $npc->UpdateWaypoint(int wp_index);
     ```
-=== "Lua (120)"
+=== "Lua (124)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y, uint32 delay, uint32 mindelay);
     npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust, int min_hp, int max_hp);
     npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
+    npc:AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     npc:AddCash(int copper, int silver, int gold, int platinum);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5, int aug6);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5);
     npc:AddItem(int item_id, int charges, bool equip);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1);
     npc:AddItem(int item_id, int charges);
-    npc:AddLootTable(int id);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2);
     npc:AddLootTable();
+    npc:AddLootTable(int id);
     npc:AssignWaypoints(int grid);
     npc:CalculateNewWaypoint();
     npc:ChangeLastName(string lastname);
@@ -174,6 +179,7 @@
     npc:GetNPCFactionID();
     npc:GetNPCHate(Mob ent);
     npc:GetNPCSpellsID();
+    npc:GetNPCStat(string* identifier);
     npc:GetPetSpellID();
     npc:GetPlatinum();
     npc:GetPrimSkill();
@@ -196,6 +202,7 @@
     npc:GetSwarmOwner();
     npc:GetSwarmTarget();
     npc:GetWaypointMax();
+    npc:HasAISpellEffect(int spell_effect_id);
     npc:HasItem(uint32 item_id);
     npc:IsAnimal();
     npc:IsGuarding();
@@ -211,6 +218,7 @@
     npc:PickPocket(Client thief);
     npc:RecalculateSkills();
     npc:RemoveAISpell(int spell_id);
+    npc:RemoveAISpellEffect(int spell_effect_id);
     npc:RemoveCash();
     npc:RemoveItem(int item_id, int quantity, int slot);
     npc:RemoveItem(int item_id, int quantity);
@@ -231,8 +239,8 @@
     npc:SetSaveWaypoint(int wp);
     npc:SetSecSkill(int skill_id);
     npc:SetSilver(uint32 amt);
-    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     npc:SetSimpleRoamBox(float box_size);
+    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     npc:SetSimpleRoamBox(float box_size, float move_distance);
     npc:SetSp2(int sg2);
     npc:SetSpellFocusDMG(int focus);

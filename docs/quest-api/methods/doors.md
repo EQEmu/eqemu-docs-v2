@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Doors){:target="Doors"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $doors->GetDoorDBID();
@@ -12,12 +12,12 @@
     $doors->GetHeading();
     $doors->GetID();
     $doors->GetIncline();
-    $doors->GetIncline();
     $doors->GetKeyItem();
     $doors->GetLockpick();
     $doors->GetModelName();
     $doors->GetNoKeyring(uint8 type);
     $doors->GetOpenType();
+    $doors->GetSize();
     $doors->GetX();
     $doors->GetY();
     $doors->GetZ();

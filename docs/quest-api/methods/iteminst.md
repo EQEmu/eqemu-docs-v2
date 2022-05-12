@@ -1,15 +1,17 @@
-=== "Lua (46)"
+=== "Lua (48)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=ItemInst){:target="ItemInst"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     iteminst:AddExp(uint32 exp);
     iteminst:ClearTimers();
     iteminst:Clone();
+    iteminst:ContainsAugmentByID(uint32 item_id);
+    iteminst:CountAugmentByID(uint32 item_id);
     iteminst:DeleteCustomData(string identifier);
     iteminst:GetAugment(int slot);
     iteminst:GetAugmentItemID(int slot);
@@ -41,8 +43,8 @@
     iteminst:IsWeapon();
     iteminst:SetCharges(int charges);
     iteminst:SetColor(uint32 color);
-    iteminst:SetCustomData(string identifier, float value);
     iteminst:SetCustomData(string identifier, string value);
+    iteminst:SetCustomData(string identifier, float value);
     iteminst:SetCustomData(string identifier, int value);
     iteminst:SetCustomData(string identifier, bool value);
     iteminst:SetExp(uint32 exp);

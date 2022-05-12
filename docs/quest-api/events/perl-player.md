@@ -16,6 +16,8 @@ sub EVENT_BOT_COMMAND {
 
 sub EVENT_CAST {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -24,6 +26,8 @@ sub EVENT_CAST {
 
 sub EVENT_CAST_BEGIN {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_CAST_ON
@@ -32,6 +36,8 @@ sub EVENT_CAST_BEGIN {
 
 sub EVENT_CAST_ON {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_CLICKDOOR
@@ -199,6 +205,16 @@ sub EVENT_ENVIRONMENTAL_DAMAGE {
 	quest::debug("env_final_damage " . $env_final_damage);
 }
 ```
+## EVENT_EQUIP_ITEM_CLIENT
+
+``` perl
+
+sub EVENT_EQUIP_ITEM_CLIENT {
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_quantity " . $item_quantity);
+	quest::debug("slot_id " . $slot_id);
+}
+```
 ## EVENT_FEIGN_DEATH
 
 ``` perl
@@ -250,6 +266,16 @@ sub EVENT_FORAGE_SUCCESS {
 sub EVENT_GROUP_CHANGE {
 	quest::debug("grouped " . $grouped);
 	quest::debug("raided " . $raided);
+}
+```
+## EVENT_LANGUAGE_SKILL_UP
+
+``` perl
+
+sub EVENT_LANGUAGE_SKILL_UP {
+	quest::debug("skill_id " . $skill_id);
+	quest::debug("skill_value " . $skill_value);
+	quest::debug("skill_max " . $skill_max);
 }
 ```
 ## EVENT_LEVEL_UP
@@ -321,6 +347,17 @@ sub EVENT_SIGNAL {
 	quest::debug("signal " . $signal);
 }
 ```
+## EVENT_SKILL_UP
+
+``` perl
+
+sub EVENT_SKILL_UP {
+	quest::debug("skill_id " . $skill_id);
+	quest::debug("skill_value " . $skill_value);
+	quest::debug("skill_max " . $skill_max);
+	quest::debug("is_tradeskill " . $is_tradeskill);
+}
+```
 ## EVENT_TARGET_CHANGE
 
 ``` perl
@@ -380,6 +417,16 @@ sub EVENT_TIMER {
 	quest::debug("timer " . $timer);
 }
 ```
+## EVENT_UNEQUIP_ITEM_CLIENT
+
+``` perl
+
+sub EVENT_UNEQUIP_ITEM_CLIENT {
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_quantity " . $item_quantity);
+	quest::debug("slot_id " . $slot_id);
+}
+```
 ## EVENT_UNHANDLED_OPCODE
 
 ``` perl
@@ -411,6 +458,7 @@ sub EVENT_WARP {
 ``` perl
 
 sub EVENT_ZONE {
+	quest::debug("from_zone_id " . $from_zone_id);
 	quest::debug("target_zone_id " . $target_zone_id);
 }
 ```

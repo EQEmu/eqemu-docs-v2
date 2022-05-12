@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Opcode){:target="Opcode"} for latest definitions and Quest examples
 
-    Last generated 2022.01.01
+    Last generated 2022.05.11
 
 ``` lua
 Opcode.0x0193
@@ -126,8 +126,8 @@ Opcode.DisciplineTimer
 Opcode.DisciplineUpdate
 Opcode.DiscordMerchantInventory
 Opcode.DoGroupLeadershipAbility
-Opcode.DuelResponse
-Opcode.DuelResponse2
+Opcode.DuelAccept
+Opcode.DuelDecline
 Opcode.DumpName
 Opcode.Dye
 Opcode.DynamicWall

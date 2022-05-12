@@ -13,6 +13,8 @@ function EVENT_BOT_COMMAND(e) {
 
 function EVENT_CAST(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -21,6 +23,8 @@ function EVENT_CAST(e) {
 
 function EVENT_CAST_BEGIN(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
 }
 ```
 ## EVENT_CAST_ON
@@ -29,6 +33,8 @@ function EVENT_CAST_BEGIN(e) {
 
 function EVENT_CAST_ON(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
 }
 ```
 ## EVENT_CLICK_DOOR
@@ -195,6 +201,17 @@ function EVENT_ENVIRONMENTAL_DAMAGE(e) {
 	eq.debug("env_final_damage " .. e.env_final_damage);
 }
 ```
+## EVENT_EQUIP_ITEM_CLIENT
+
+``` lua
+
+function EVENT_EQUIP_ITEM_CLIENT(e) {
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_FEIGN_DEATH
 
 ``` lua
@@ -245,6 +262,17 @@ function EVENT_FORAGE_SUCCESS(e) {
 ``` lua
 
 function EVENT_GROUP_CHANGE(e) {
+}
+```
+## EVENT_LANGUAGE_SKILL_UP
+
+``` lua
+
+function EVENT_LANGUAGE_SKILL_UP(e) {
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("skill_value " .. e.skill_value);
+	eq.debug("skill_max " .. e.skill_max);
+	eq.debug("is_tradeskill " .. e.is_tradeskill);
 }
 ```
 ## EVENT_LEAVE_AREA
@@ -314,6 +342,17 @@ function EVENT_SIGNAL(e) {
 	eq.debug("signal " .. e.signal);
 }
 ```
+## EVENT_SKILL_UP
+
+``` lua
+
+function EVENT_SKILL_UP(e) {
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("skill_value " .. e.skill_value);
+	eq.debug("skill_max " .. e.skill_max);
+	eq.debug("is_tradeskill " .. e.is_tradeskill);
+}
+```
 ## EVENT_TARGET_CHANGE
 
 ``` lua
@@ -373,6 +412,17 @@ function EVENT_TIMER(e) {
 	eq.debug("timer " .. e.timer);
 }
 ```
+## EVENT_UNEQUIP_ITEM_CLIENT
+
+``` lua
+
+function EVENT_UNEQUIP_ITEM_CLIENT(e) {
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_UNHANDLED_OPCODE
 
 ``` lua
@@ -406,6 +456,7 @@ function EVENT_WARP(e) {
 ``` lua
 
 function EVENT_ZONE(e) {
+	eq.debug("from_zone_id " .. e.from_zone_id);
 	eq.debug("zone_id " .. e.zone_id);
 }
 ```

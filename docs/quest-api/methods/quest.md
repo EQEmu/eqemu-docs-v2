@@ -1,10 +1,10 @@
-=== "Perl (478)"
+=== "Perl (484)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=quest){:target="quest"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     quest::AssignGroupToInstance(uint16 instance_id);
@@ -44,7 +44,6 @@
     quest::SendMail(stirng to, string from, string subject, string message);
     quest::SetRunning(bool is_running);
     quest::UpdateInstanceTimer(int16 instance_id, uint32 duration);
-    quest::UpdateSpawnTimer(uint32 spawn2_id, uint32 updated_time_till_repop);
     quest::UpdateZoneHeader(string key, string value);
     quest::activespeakactivity(int task_id);
     quest::activespeaktask();
@@ -69,6 +68,7 @@
     quest::clear_zone_flag(uint32 zone_id);
     quest::clearspawntimers();
     quest::collectitems(int item_id, [bool remove_item = true]);
+    quest::commify(std);
     quest::completedtasksinset(int task_set);
     quest::countitem(int item_id);
     quest::countspawnednpcs(npc_id_one, npc_id_two, npc_idthree, npc_id_four, npc_id_five...[no limit]);
@@ -252,9 +252,11 @@
     quest::getcharnamebyid(uint32 char_id);
     quest::getclassname(uint8 class_id, [uint8 level = 0]);
     quest::getcleannpcnamebyid(uint32 npc_id);
+    quest::getconsiderlevelname(uint8 consider_level);
     quest::getcurrencyid(uint32 item_id);
     quest::getcurrencyitemid(int currency_id);
     quest::getdeityname(uint32 deity_id);
+    quest::getenvironmentaldamagename(uint8 damage_type);
     quest::getexpmodifierbycharid(uint32 character_id, uint32 zone_id);
     quest::getfactionname(int faction_id);
     quest::getgendername(uint32 gender_id);
@@ -275,16 +277,19 @@
     quest::getplayercorpsecountbyzoneid(uint32 char_id, uint32 zone_id);
     quest::getracename(uint16 race_id);
     quest::getraididbycharid(uint32 char_id);
+    quest::getremainingtimeMS(string timer_name);
     quest::getskillname(int skill_id);
     quest::getspell(uint32 spell_id);
     quest::getspellname(uint32 spell_id);
     quest::getspellstat(uint32 spell_id, string stat_identifier, uint8 slot);
     quest::gettaskactivitydonecount(int task_id, int activity_id);
     quest::gettaskname(uint32 task_id);
+    quest::gettimerdurationMS(string timer_name);
     quest::givecash(int copper, int silver, int gold, int platinum);
     quest::gmmove(float x, float y, float z);
     quest::gmsay(string message, [int color_id], [bool send_to_world = 0]);
     quest::has_zone_flag(uint32 zone_id);
+    quest::hastimer(string timer_name);
     quest::incstat(int stat_id, int value);
     quest::is_call_of_the_forsaken_enabled();
     quest::is_classic_enabled();
@@ -382,8 +387,8 @@
     quest::qs_send_query(string query);
     quest::rain(int weather);
     quest::rebind(int zone_id, float x, float y, float z, [float heading]);
-    quest::remove_expedition_lockout_by_char_id(uint32 character_id, string expedition_name, string event_name);
     quest::remove_expedition_lockout_by_char_id(uint32 character_id, [string expedition_name]);
+    quest::remove_expedition_lockout_by_char_id(uint32 character_id, string expedition_name, string event_name);
     quest::removeitem(int item_id, [int quantity = 1]);
     quest::removetitle(int title_set_id);
     quest::rename(string name);
@@ -451,6 +456,7 @@
     quest::unique_spawn(int npc_type_id, int grid_id, int int_unused, float x, float y, float z, [float heading]);
     quest::unscribespells();
     quest::untraindiscs();
+    quest::updatespawntimer(uint32 spawn2_id, uint32 updated_time_till_repop);
     quest::updatetaskactivity(int task_id, int activity_id, [int count], [bool ignore_quest_update = false]);
     quest::varlink(uint32 item_id);
     quest::voicetell(string client_name, int macro_id, int ace_id, int gender_id);

@@ -1,10 +1,10 @@
-=== "Perl (306)"
+=== "Perl (326)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Client){:target="Client"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $client->AccountID();
@@ -15,11 +15,13 @@
     $client->AddEXP(uint32 experience_points);
     $client->AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds, [string uuid]);
     $client->AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds, [string uuid]);
+    $client->AddItem(HASHREF item_table);
     $client->AddLDoNLoss(uint32 theme_id);
     $client->AddLDoNWin(uint32 theme_id);
     $client->AddLevelBasedExp(uint8 exp_percentage, uint8 max_level = 0, bool ignore_mods = false);
-    $client->AddMoneyToPP(uint32 copper, uint32 silver, uint32 gold, uint32 platinum, bool update_client);
+    $client->AddMoneyToPP(uint32 copper, uint32 silver, uint32 gold, uint32 platinum, [bool update_client = false]);
     $client->AddPVPPoints(uint32 points);
+    $client->AddPlatinum(uint32 platinum, [bool update_client = false]);
     $client->AddSkill(int skill_id, uint16 value);
     $client->Admin();
     $client->AssignTask(int task_id, int npc_id, [bool enforce_level_requirement = false]);
@@ -33,9 +35,12 @@
     $client->CheckIncreaseSkill(int skill_id, int chance_modifier = 0);
     $client->CheckSpecializeIncrease(uint16 spell_id);
     $client->ClearCompassMark();
+    $client->ClearPEQZoneFlag(uint32 zone_id);
     $client->ClearZoneFlag(uint32 zone_id);
     $client->Connected();
+    $client->CountAugmentEquippedByID(uint32 item_id);
     $client->CountItem(uint32 item_id);
+    $client->CountItemEquippedByID(uint32 item_id);
     $client->CreateExpedition(HASHREF expedition_info | string zone_name, uint32 zone_version, uint32 duration, string expedition_name, uint32 min_players, uint32 max_players, [bool disable_messages = false]);
     $client->CreateTaskDynamicZone(int task_id, HASHREF dz_info);
     $client->DecreaseByID(uint32 type, int16 quantity);
@@ -84,6 +89,7 @@
     $client->GetBindZ(int index = 0);
     $client->GetBindZoneID(int index = 0);
     $client->GetCarriedMoney();
+    $client->GetCarriedPlatinum();
     $client->GetCharacterFactionLevel(int32 faction_id);
     $client->GetClassBitmask();
     $client->GetClientMaxLevel();
@@ -101,6 +107,7 @@
     $client->GetEbonCrystals();
     $client->GetEndurance();
     $client->GetEnduranceRatio();
+    $client->GetEnvironmentDamageModifier();
     $client->GetExpedition();
     $client->GetExpeditionLockouts([string expedition_name]);
     $client->GetFace();
@@ -111,6 +118,7 @@
     $client->GetGM();
     $client->GetGroup();
     $client->GetGroupPoints();
+    $client->GetHealAmount();
     $client->GetHorseId();
     $client->GetHunger();
     $client->GetIP();
@@ -146,6 +154,7 @@
     $client->GetScribedSpells();
     $client->GetSkillPoints();
     $client->GetSpellBookSlotBySpellID(uint32 spell_id);
+    $client->GetSpellDamage();
     $client->GetSpellIDByBookSlot(int slot_id);
     $client->GetSpentAA();
     $client->GetStartZone();
@@ -160,8 +169,11 @@
     $client->GrantAlternateAdvancementAbility(int aa_id, int points, [bool ignore_cost = false]);
     $client->GuildID();
     $client->GuildRank();
+    $client->HasAugmentEquippedByID(uint32 item_id);
     $client->HasDisciplineLearned(uint16 spell_id);
     $client->HasExpeditionLockout(string expedition_name, string event_name);
+    $client->HasItemEquippedByID(uint32 item_id);
+    $client->HasPEQZoneFlag(uint32 zone_id);
     $client->HasSkill(int skill_id);
     $client->HasSpellScribed(int spell_id);
     $client->HasZoneFlag(uint32 zone_id);
@@ -171,6 +183,7 @@
     $client->IncreaseLanguageSkill(int skill_id, int value = 1);
     $client->IncreaseSkill(int skill_id, int value = 1);
     $client->IncrementAA(uint32 aa_skill_id);
+    $client->InvulnerableEnvironmentDamage();
     $client->IsBecomeNPC();
     $client->IsCrouching();
     $client->IsDueling();
@@ -189,6 +202,7 @@
     $client->LearnDisciplines(uint8 min_level, uint8 max_level);
     $client->LearnRecipe(uint32 recipe_id);
     $client->LeaveGroup();
+    $client->LoadPEQZoneFlags();
     $client->LoadZoneFlags();
     $client->MarkCompassLoc(float x, float y, float z);
     $client->MaxSkill(uint16 skill_id, uint16 class_id, uint16 level);
@@ -234,6 +248,7 @@
     $client->SendColoredText(uint32 color, string message);
     $client->SendMarqueeMessage(uint32 type, uint32 priority, uint32 fade_in, uint32 fade_out, uint32 duration, string msg);
     $client->SendOPTranslocateConfirm(Mob* caster, int32 spell_id);
+    $client->SendPEQZoneFlagInfo(Client* to);
     $client->SendSound();
     $client->SendTargetCommand(int32 entity_id);
     $client->SendToGuildHall();
@@ -262,6 +277,7 @@
     $client->SetEXPModifier(uint32 zone_id, float exp_modifier);
     $client->SetEbonCrystals(uint32 value);
     $client->SetEndurance(Endurance);
+    $client->SetEnvironmentDamageModifier(int32 modifier);
     $client->SetFactionLevel(uint32 character_id, uint32 npc_id, uint8 character_class, uint8 character_race, uint8 character_deity);
     $client->SetFactionLevel2(uint32 character_id, int32 faction_id, uint8 character_class, uint8 character_race, uint8 character_deity, int32 value, uint8 temp);
     $client->SetFeigned(in_feigned);
@@ -272,8 +288,10 @@
     $client->SetHunger(in_hunger);
     $client->SetHunger(int32 hunger_amount, int32 thirst_amount);
     $client->SetIPExemption(int exemption_amount);
+    $client->SetInvulnerableEnvironmentDamage(bool invulnerable);
     $client->SetLanguageSkill(int language_id, int value);
     $client->SetMaterial(int16 slot_id, uint32 item_id);
+    $client->SetPEQZoneFlag(uint32 zone_id);
     $client->SetPVP(bool toggle);
     $client->SetPrimaryWeaponOrnamentation(model_id);
     $client->SetRadiantCrystals(uint32 value);
@@ -293,7 +311,8 @@
     $client->SummonBaggedItems(uint32 bag_item_id, ARRAYREF bag_items_array);
     $client->SummonItem(uint32 item_id, [int16 charges = -1], [bool attune = false], [uint32 aug1 = 0], [uint32 aug2 = 0], [uint32 aug3 = 0], [uint32 aug4 = 0], [uint32 aug5 = 0], [uint16 slot_id = cursor]);
     $client->TGB();
-    $client->TakeMoneyFromPP(uint32 copper, bool update_client = false);
+    $client->TakeMoneyFromPP(uint32 copper, [bool update_client = false]);
+    $client->TakePlatinum(uint32 platinum, [bool update_client = false]);
     $client->Thirsty();
     $client->TrainDiscBySpellID(int32 spell_id);
     $client->UnFreeze();
@@ -303,6 +322,7 @@
     $client->UnmemSpellBySpellID(int32 spell_id);
     $client->UnscribeSpell(int slot, [bool update_client = true]);
     $client->UnscribeSpellAll([bool update_client = true]);
+    $client->UnscribeSpellBySpellID(uint16 spell_id, [bool update_client = true]);
     $client->UntrainDisc(int slot, [bool update_client = true]);
     $client->UntrainDiscAll([update_client = true]);
     $client->UntrainDiscBySpellID(uint16 spell_id, [bool update_client = true]);
@@ -314,13 +334,13 @@
     $client->UseDiscipline(int32 spell_id, int32 target);
     $client->WorldKick();
     ```
-=== "Lua (374)"
+=== "Lua (398)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Client){:target="Client"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     client:AccountID();
@@ -331,17 +351,20 @@
     client:AddEXP(uint32 add_exp);
     client:AddEXP(uint32 add_exp, int conlevel);
     client:AddEXP(uint32 add_exp, int conlevel, bool resexp);
-    client:AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds);
     client:AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds, string uuid);
-    client:AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds);
+    client:AddExpeditionLockout(string expedition_name, string event_name, uint32 seconds);
     client:AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds, string uuid);
+    client:AddExpeditionLockoutDuration(string expedition_name, string event_name, int seconds);
     client:AddLDoNLoss(uint32 theme_id);
     client:AddLDoNWin(uint32 theme_id);
-    client:AddLevelBasedExp(int exp_pct, int max_level, bool ignore_mods);
-    client:AddLevelBasedExp(int exp_pct);
     client:AddLevelBasedExp(int exp_pct, int max_level);
+    client:AddLevelBasedExp(int exp_pct);
+    client:AddLevelBasedExp(int exp_pct, int max_level, bool ignore_mods);
     client:AddMoneyToPP(uint32 copper, uint32 silver, uint32 gold, uint32 platinum, bool update_client);
+    client:AddMoneyToPP(uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
     client:AddPVPPoints(uint32 points);
+    client:AddPlatinum(uint32 platinum);
+    client:AddPlatinum(uint32 platinum, bool update_client);
     client:AddSkill(int skill_id, int value);
     client:Admin();
     client:AssignTask(int task, int npc_id);
@@ -359,14 +382,17 @@
     client:CheckIncreaseSkill(int skill_id, Mob target);
     client:CheckSpecializeIncrease(int spell_id);
     client:ClearCompassMark();
-    client:ClearZoneFlag(int zone_id);
+    client:ClearPEQZoneFlag(uint32 zone_id);
+    client:ClearZoneFlag(uint32 zone_id);
     client:Connected();
+    client:CountAugmentEquippedByID(uint32 item_id);
     client:CountItem(uint32 item_id);
-    client:CreateExpedition(string zone_name, uint32 version, uint32 duration, string expedition_name, uint32 min_players, uint32 max_players, bool disable_messages);
+    client:CountItemEquippedByID(uint32 item_id);
     client:CreateExpedition(string zone_name, uint32 version, uint32 duration, string expedition_name, uint32 min_players, uint32 max_players);
+    client:CreateExpedition(string zone_name, uint32 version, uint32 duration, string expedition_name, uint32 min_players, uint32 max_players, bool disable_messages);
     client:DecreaseByID(uint32 type, int amt);
-    client:DeleteItemInInventory(int slot_id, int quantity);
     client:DeleteItemInInventory(int slot_id, int quantity, bool update_client);
+    client:DeleteItemInInventory(int slot_id, int quantity);
     client:DialogueWindow(string markdown);
     client:DisableAreaEndRegen();
     client:DisableAreaHPRegen();
@@ -375,8 +401,8 @@
     client:Disconnect();
     client:DropItem(int slot_id);
     client:Duck();
-    client:DyeArmorBySlot(uint8 slot, uint8 red, uint8 green, uint8 blue);
     client:DyeArmorBySlot(uint8 slot, uint8 red, uint8 green, uint8 blue, uint8 use_tint);
+    client:DyeArmorBySlot(uint8 slot, uint8 red, uint8 green, uint8 blue);
     client:EnableAreaEndRegen(int value);
     client:EnableAreaHPRegen(int value);
     client:EnableAreaManaRegen(int value);
@@ -391,8 +417,8 @@
     client:Fling(float value, float target_x, float target_y, float target_z);
     client:Fling(float value, float target_x, float target_y, float target_z, bool ignore_los, bool clipping);
     client:Fling(float value, float target_x, float target_y, float target_z, bool ignore_los);
-    client:ForageItem();
     client:ForageItem(bool guarantee);
+    client:ForageItem();
     client:Freeze();
     client:GetAAEXPModifier(uint32 zone_id);
     client:GetAAExp();
@@ -416,15 +442,16 @@
     client:GetBaseWIS();
     client:GetBindHeading(int index);
     client:GetBindHeading();
-    client:GetBindX();
     client:GetBindX(int index);
+    client:GetBindX();
     client:GetBindY(int index);
     client:GetBindY();
-    client:GetBindZ(int index);
     client:GetBindZ();
-    client:GetBindZoneID();
+    client:GetBindZ(int index);
     client:GetBindZoneID(int index);
+    client:GetBindZoneID();
     client:GetCarriedMoney();
+    client:GetCarriedPlatinum();
     client:GetCharacterFactionLevel(faction_id);
     client:GetClassBitmask();
     client:GetClientMaxLevel();
@@ -441,6 +468,7 @@
     client:GetEbonCrystals();
     client:GetEndurance();
     client:GetEndurancePercent();
+    client:GetEnvironmentDamageModifier();
     client:GetExpedition();
     client:GetFace();
     client:GetFactionLevel(uint32 char_id, uint32 npc_id, uint32 race, uint32 class_, uint32 deity, uint32 faction, NPC npc);
@@ -448,6 +476,7 @@
     client:GetGM();
     client:GetGroup();
     client:GetGroupPoints();
+    client:GetHealAmount();
     client:GetHorseId();
     client:GetHunger();
     client:GetIP();
@@ -455,6 +484,7 @@
     client:GetIPString();
     client:GetInstrumentMod(spell_id);
     client:GetInventory();
+    client:GetInvulnerableEnvironmentDamage();
     client:GetItemIDAt(slot_id);
     client:GetLDoNLosses();
     client:GetLDoNLossesTheme(theme);
@@ -479,6 +509,7 @@
     client:GetRawItemAC();
     client:GetRawSkill(skill_id);
     client:GetSkillPoints();
+    client:GetSpellDamage();
     client:GetSpellIDByBookSlot(int slot_id);
     client:GetSpentAA();
     client:GetStartZone();
@@ -493,11 +524,14 @@
     client:GrantAlternateAdvancementAbility(int aa_id, int points);
     client:GuildID();
     client:GuildRank();
+    client:HasAugmentEquippedByID(uint32 item_id);
     client:HasDisciplineLearned(uint16 spell_id);
     client:HasExpeditionLockout(string expedition_name, string event_name);
+    client:HasItemEquippedByID(uint32 item_id);
+    client:HasPEQZoneFlag(uint32 zone_id);
     client:HasSkill(int skill_id);
     client:HasSpellScribed(int spell_id);
-    client:HasZoneFlag(int zone_id);
+    client:HasZoneFlag(uint32 zone_id);
     client:Hungry();
     client:InZone();
     client:IncStats(int type, int value);
@@ -524,19 +558,21 @@
     client:LearnDisciplines(uint8 min_level, uint8 max_level);
     client:LearnRecipe(uint32 recipe);
     client:LeaveGroup();
+    client:LoadPEQZoneFlags();
+    client:LoadZoneFlags();
     client:MarkSingleCompassLoc(float in_x, float in_y, float in_z, int count);
     client:MarkSingleCompassLoc(float in_x, float in_y, float in_z);
     client:MaxSkill(skill_id);
-    client:MemSpell(int spell_id, int slot, bool update_client);
     client:MemSpell(int spell_id, int slot);
+    client:MemSpell(int spell_id, int slot, bool update_client);
     client:MemmedCount();
     client:MovePC(int zone, float x, float y, float z, float heading);
-    client:MovePCDynamicZone(uint32 zone_id);
-    client:MovePCDynamicZone(string zone_name, int zone_version, bool msg_if_invalid);
     client:MovePCDynamicZone(string zone_name, int zone_version);
+    client:MovePCDynamicZone(string zone_name, int zone_version, bool msg_if_invalid);
+    client:MovePCDynamicZone(string zone_name);
     client:MovePCDynamicZone(uint32 zone_id, int zone_version);
     client:MovePCDynamicZone(uint32 zone_id, int zone_version, bool msg_if_invalid);
-    client:MovePCDynamicZone(string zone_name);
+    client:MovePCDynamicZone(uint32 zone_id);
     client:MovePCInstance(int zone, int instance, float x, float y, float z, float heading);
     client:MoveZone(string zone_short_name);
     client:MoveZoneGroup(string zone_short_name);
@@ -550,35 +586,35 @@
     client:OpenLFGuildWindow();
     client:PlayMP3(string file);
     client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id, uint32 button_type, uint32 duration);
-    client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id);
-    client:Popup(string* title, string* text, uint32 popup_id);
+    client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id, uint32 button_type, uint32 duration, string* button_name_one, string* button_name_two, uint32 sound_controls);
     client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id, uint32 button_type);
     client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id, uint32 button_type, uint32 duration, string* button_name_one, string* button_name_two);
     client:Popup(string* title, string* text);
-    client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id, uint32 button_type, uint32 duration, string* button_name_one, string* button_name_two, uint32 sound_controls);
+    client:Popup(string* title, string* text, uint32 popup_id);
+    client:Popup(string* title, string* text, uint32 popup_id, uint32 negative_id);
     client:PushItemOnCursor(ItemInst inst);
     client:PutItemInInventory(int slot_id, ItemInst inst);
     client:QuestReadBook(string text, int type);
-    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid, uint32 exp, bool faction);
-    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold);
-    client:QuestReward(Mob target, uint32 copper, uint32 silver);
-    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid, uint32 exp);
-    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid);
-    client:QuestReward(Mob target, uint32 copper);
     client:QuestReward(Mob target);
+    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid, uint32 exp, bool faction);
+    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid);
+    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, uint32 itemid, uint32 exp);
     client:QuestReward(Mob target, object reward);
     client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
+    client:QuestReward(Mob target, uint32 copper, uint32 silver, uint32 gold);
+    client:QuestReward(Mob target, uint32 copper, uint32 silver);
+    client:QuestReward(Mob target, uint32 copper);
+    client:QueuePacket(Packet app, bool ack_req, int client_connection_status);
     client:QueuePacket(Packet app, bool ack_req, int client_connection_status, int filter);
     client:QueuePacket(Packet app, bool ack_req);
-    client:QueuePacket(Packet app, bool ack_req, int client_connection_status);
     client:QueuePacket(Packet app);
     client:ReadBookByName(string book_name, uint8 book_type);
     client:RefundAA();
-    client:RemoveAllExpeditionLockouts(string expedition_name);
     client:RemoveAllExpeditionLockouts();
+    client:RemoveAllExpeditionLockouts(string expedition_name);
     client:RemoveExpeditionLockout(string expedition_name, string event_name);
-    client:RemoveItem(uint32 item_id, uint32 quantity);
     client:RemoveItem(uint32 item_id);
+    client:RemoveItem(uint32 item_id, uint32 quantity);
     client:RemoveLDoNLoss(uint32 theme_id);
     client:RemoveLDoNWin(uint32 theme_id);
     client:ResetAA();
@@ -588,8 +624,8 @@
     client:ResetCastbarCooldownBySpellID(uint32 spell_id);
     client:ResetDisciplineTimer(uint32 timer_id);
     client:ResetTrade();
-    client:Save();
     client:Save(int commit_now);
+    client:Save();
     client:SaveBackup();
     client:ScribeSpell(int spell_id, int slot, bool update_client);
     client:ScribeSpell(int spell_id, int slot);
@@ -598,6 +634,7 @@
     client:SendItemScale(ItemInst inst);
     client:SendMarqueeMessage(uint32 type, uint32 priority, uint32 fade_in, uint32 fade_out, uint32 duration, string msg);
     client:SendOPTranslocateConfirm(Mob caster, int spell_id);
+    client:SendPEQZoneFlagInfo(Client to);
     client:SendSound();
     client:SendToGuildHall();
     client:SendToInstance(string instance_type, string zone_short_name, uint32 instance_version, float x, float y, float z, float heading, string instance_identifier, uint32 duration);
@@ -613,23 +650,24 @@
     client:SetBaseClass(int v);
     client:SetBaseGender(int v);
     client:SetBaseRace(int v);
-    client:SetBindPoint(int to_zone, int to_instance, float new_x, float new_y, float new_z);
     client:SetBindPoint(int to_zone, int to_instance, float new_x, float new_y);
-    client:SetBindPoint(int to_zone, int to_instance, float new_x, float new_y, float new_z, float new_heading);
-    client:SetBindPoint(int to_zone, int to_instance, float new_x);
-    client:SetBindPoint(int to_zone, int to_instance);
     client:SetBindPoint();
+    client:SetBindPoint(int to_zone, int to_instance, float new_x, float new_y, float new_z);
+    client:SetBindPoint(int to_zone, int to_instance, float new_x, float new_y, float new_z, float new_heading);
     client:SetBindPoint(int to_zone);
+    client:SetBindPoint(int to_zone, int to_instance);
+    client:SetBindPoint(int to_zone, int to_instance, float new_x);
     client:SetClientMaxLevel(int value);
     client:SetConsumption(int in_hunger, int in_thirst);
     client:SetDeity(int v);
     client:SetDuelTarget(int c);
     client:SetDueling(bool v);
-    client:SetEXP(uint32 set_exp, uint32 set_aaxp, bool resexp);
     client:SetEXP(uint32 set_exp, uint32 set_aaxp);
+    client:SetEXP(uint32 set_exp, uint32 set_aaxp, bool resexp);
     client:SetEXPModifier(uint32 zone_id, double exp_modifier);
     client:SetEbonCrystals(uint32 value);
     client:SetEndurance(int endur);
+    client:SetEnvironmentDamageModifier(int value);
     client:SetFactionLevel(uint32 char_id, uint32 npc_id, int char_class, int char_race, int char_deity);
     client:SetFactionLevel2(uint32 char_id, int faction_id, int char_class, int char_race, int char_deity, int value, int temp);
     client:SetFeigned(bool v);
@@ -639,53 +677,59 @@
     client:SetHorseId(int id);
     client:SetHunger(int in_hunger);
     client:SetIPExemption(int exemption_amount);
+    client:SetInvulnerableEnvironmentDamage(bool value);
     client:SetLanguageSkill(int language, int value);
     client:SetMaterial(int slot_id, uint32 item_id);
+    client:SetPEQZoneFlag(uint32 zone_id);
     client:SetPVP(bool v);
     client:SetPrimaryWeaponOrnamentation(uint32 model_id);
     client:SetRadiantCrystals(uint32 value);
     client:SetSecondaryWeaponOrnamentation(uint32 model_id);
     client:SetSkill(int skill_id, int value);
     client:SetSkillPoints(int skill);
+    client:SetStartZone(int zone_id, float x);
+    client:SetStartZone(int zone_id);
     client:SetStartZone(int zone_id, float x, float y, float z);
     client:SetStartZone(int zone_id, float x, float y);
-    client:SetStartZone(int zone_id);
-    client:SetStartZone(int zone_id, float x);
     client:SetStats(int type, int value);
     client:SetThirst(int in_thirst);
     client:SetTint(int slot_id, uint32 color);
     client:SetTitleSuffix(string text);
-    client:SetZoneFlag(int zone_id);
+    client:SetZoneFlag(uint32 zone_id);
     client:Signal(uint32 id);
     client:Sit();
     client:Stand();
     client:SummonBaggedItems(uint32 bag_item_id, object bag_items_table);
-    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, bool attuned);
-    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3);
-    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2);
     client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, bool attuned, int to_slot);
-    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4);
-    client:SummonItem(uint32 item_id);
-    client:SummonItem(uint32 item_id, int charges);
     client:SummonItem(uint32 item_id, int charges, uint32 aug1);
+    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3);
+    client:SummonItem(uint32 item_id);
+    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2);
+    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, bool attuned);
+    client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4);
     client:SummonItem(uint32 item_id, int charges, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);
+    client:SummonItem(uint32 item_id, int charges);
     client:TGB();
-    client:TakeMoneyFromPP(uint64 copper);
     client:TakeMoneyFromPP(uint64 copper, update_client);
+    client:TakeMoneyFromPP(uint64 copper);
+    client:TakePlatinum(uint32 platinum);
+    client:TakePlatinum(uint32 platinum, update_client);
     client:Thirsty();
     client:TrainDisc(int itemid);
     client:TrainDiscBySpellID(int32 spell_id);
     client:UnFreeze();
     client:Undye();
-    client:UnmemSpell(int slot, bool update_client);
     client:UnmemSpell(int slot);
+    client:UnmemSpell(int slot, bool update_client);
     client:UnmemSpellAll();
     client:UnmemSpellAll(bool update_client);
     client:UnmemSpellBySpellID(int32 spell_id);
     client:UnscribeSpell(int slot);
     client:UnscribeSpell(int slot, bool update_client);
-    client:UnscribeSpellAll(bool update_client);
     client:UnscribeSpellAll();
+    client:UnscribeSpellAll(bool update_client);
+    client:UnscribeSpellBySpellID(uint16 spell_id, bool update_client);
+    client:UnscribeSpellBySpellID(uint16 spell_id);
     client:UntrainDisc(int slot, bool update_client);
     client:UntrainDisc(int slot);
     client:UntrainDiscAll();

@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2022.01.01
+    Last generated 2022.05.11
 
 ``` lua
 Event.aggro_say
@@ -37,6 +37,7 @@ Event.enter_area
 Event.enter_zone
 Event.environmental_damage
 Event.equip_item
+Event.equip_item_client
 Event.exit
 Event.feign_death
 Event.fish_failure
@@ -52,6 +53,7 @@ Event.item_click_cast
 Event.item_enter_zone
 Event.item_tick
 Event.killed_merit
+Event.language_skill_up
 Event.leave_area
 Event.level_up
 Event.loot
@@ -62,6 +64,7 @@ Event.proximity_say
 Event.say
 Event.scale_calc
 Event.signal
+Event.skill_up
 Event.slay
 Event.spawn
 Event.spawn_zone
@@ -81,6 +84,7 @@ Event.timer
 Event.trade
 Event.unaugment_item
 Event.unequip_item
+Event.unequip_item_client
 Event.unhandled_opcode
 Event.use_skill
 Event.warp

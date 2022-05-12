@@ -1,10 +1,10 @@
-=== "Perl (75)"
+=== "Perl (79)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` perl
     $entitylist->CanAddHateForMob(Mob* target);
@@ -19,6 +19,8 @@
     $entitylist->GetBotByID(uint32 bot_id);
     $entitylist->GetBotByName(string bot_name);
     $entitylist->GetBotList();
+    $entitylist->GetBotListByCharacterID(uint32 character_id);
+    $entitylist->GetBotListByClientName(string client_name);
     $entitylist->GetClientByAccID(uint32 account_id);
     $entitylist->GetClientByCharID(uint32 character_id);
     $entitylist->GetClientByID(uint16 client_id);
@@ -52,6 +54,8 @@
     $entitylist->GetRaidByClient(client);
     $entitylist->GetRaidByID(id);
     $entitylist->GetRandomClient(float x, float y, float z, float distance, [Client* exclude_client = nullptr]);
+    $entitylist->GetRandomMob(float x, float y, float z, float distance, [Mob* exclude_mob = nullptr]);
+    $entitylist->GetRandomNPC(float x, float y, float z, float distance, [NPC* exclude_npc = nullptr]);
     $entitylist->HalveAggro(Mob* target);
     $entitylist->IsMobSpawnedByNpcTypeID(get_id);
     $entitylist->MakeNameUnique(string name);
@@ -83,13 +87,13 @@
     $entitylist->SignalAllClients(uint32 data);
     $entitylist->SignalMobsByNPCID(uint32 npc_type_id, int signal_id);
     ```
-=== "Lua (66)"
+=== "Lua (72)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2022.01.01
+        Last generated 2022.05.11
 
     ``` lua
     entitylist:CanAddHateForMob(Mob p);
@@ -105,6 +109,8 @@
     entitylist:GetBotByID(uint32 bot_id);
     entitylist:GetBotByName(string bot_name);
     entitylist:GetBotList();
+    entitylist:GetBotListByCharacterID(uint32 character_id);
+    entitylist:GetBotListByClientName(string client_name);
     entitylist:GetClientByAccID(uint32 acct_id);
     entitylist:GetClientByCharID(uint32 char_id);
     entitylist:GetClientByID(int id);
@@ -123,8 +129,8 @@
     entitylist:GetGroupByID(int id);
     entitylist:GetGroupByLeaderName(string name);
     entitylist:GetGroupByMob(Mob mob);
-    entitylist:GetMob(string name);
     entitylist:GetMob(int id);
+    entitylist:GetMob(string name);
     entitylist:GetMobByNpcTypeID(int npc_type);
     entitylist:GetMobID(int id);
     entitylist:GetMobList();
@@ -137,8 +143,12 @@
     entitylist:GetObjectList();
     entitylist:GetRaidByClient(Client client);
     entitylist:GetRaidByID(int id);
-    entitylist:GetRandomClient(float x, float y, float z, float dist);
-    entitylist:GetRandomClient(float x, float y, float z, float dist, exclude);
+    entitylist:GetRandomClient(float x, float y, float z, float distance);
+    entitylist:GetRandomClient(float x, float y, float z, float distance, exclude_client);
+    entitylist:GetRandomMob(float x, float y, float z, float distance, exclude_mob);
+    entitylist:GetRandomMob(float x, float y, float z, float distance);
+    entitylist:GetRandomNPC(float x, float y, float z, float distance, exclude_npc);
+    entitylist:GetRandomNPC(float x, float y, float z, float distance);
     entitylist:GetShuffledClientList();
     entitylist:GetSpawnByID(uint32 id);
     entitylist:GetSpawnList();
@@ -150,8 +160,8 @@
     entitylist:MessageGroup(Mob who, bool skip_close, uint32 type, string message);
     entitylist:MessageStatus(uint32 guild_dbid, int min_status, uint32 type, string message);
     entitylist:OpenDoorsNear(Mob opener);
-    entitylist:RemoveFromHateLists(Mob who);
     entitylist:RemoveFromHateLists(Mob who, bool set_to_one);
+    entitylist:RemoveFromHateLists(Mob who);
     entitylist:RemoveFromTargets(Mob mob, bool RemoveFromXTargets);
     entitylist:RemoveFromTargets(Mob mob);
     entitylist:RemoveNumbers(string name);

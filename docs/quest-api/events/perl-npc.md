@@ -28,6 +28,8 @@ sub EVENT_ATTACK {
 
 sub EVENT_CAST {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -36,6 +38,8 @@ sub EVENT_CAST {
 
 sub EVENT_CAST_BEGIN {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_CAST_ON
@@ -44,6 +48,8 @@ sub EVENT_CAST_BEGIN {
 
 sub EVENT_CAST_ON {
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("caster_id " . $caster_id);
+	quest::debug("caster_level " . $caster_level);
 }
 ```
 ## EVENT_COMBAT
@@ -86,6 +92,10 @@ sub EVENT_DEATH_ZONE {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_x " . $killed_x);
+	quest::debug("killed_y " . $killed_y);
+	quest::debug("killed_z " . $killed_z);
+	quest::debug("killed_h " . $killed_h);
 }
 ```
 ## EVENT_FEIGN_DEATH
