@@ -1,7 +1,7 @@
 # rule_sets
 
 !!! info
-	This page was last generated 2022.02.23
+	This page was last generated 2022.05.11
 
 ## Relationship Diagram
 

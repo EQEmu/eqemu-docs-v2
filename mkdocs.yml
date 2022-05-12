@@ -13,8 +13,6 @@ extra_css:
   - stylesheets/extra.css
 copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
-  favicon: assets/eqemu-text.png
-  logo: assets/eqemu-text.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -31,9 +29,13 @@ theme:
     - search.suggest
   name: material
   palette:
-    - scheme: slate
+    - media: ""
+      scheme: slate
       primary: deep orange
       accent: deep orange
+      toggle:
+        icon: ""
+        name: ""
 markdown_extensions:
   - admonition
   - abbr
@@ -355,6 +357,7 @@ nav:
           - command_settings: schema/admin/command_settings.md
           - db_version: schema/admin/db_version.md
           - discovered_items: schema/admin/discovered_items.md
+          - discord_webhooks: schema/admin/discord_webhooks.md
           - eqtime: schema/admin/eqtime.md
           - eventlog: schema/admin/eventlog.md
           - gm_ips: schema/admin/gm_ips.md
@@ -712,6 +715,6 @@ nav:
       - "2005": changelog/server/2005.md
       - "2004": changelog/server/2004.md
       - "2003": changelog/server/2003.md
-      - "Changelog Contributions": changelog/server/changelog-contributions.md
+      - Changelog Contributions: changelog/server/changelog-contributions.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md

@@ -296,6 +296,21 @@ account:
     description: Character name last logged in on this account.
     nullable: "NO"
     ordinal_position: 3
+  crc_basedata:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 22
+  crc_eqgame:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 20
+  crc_skillcaps:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 21
   expansion:
     dataType: tinyint
     description: Expansion
@@ -374,7 +389,7 @@ account:
   suspendeduntil:
     dataType: datetime
     description: Time Suspension of the Account ends
-    nullable: "NO"
+    nullable: "YES"
     ordinal_position: 15
   time_creation:
     dataType: int
@@ -1068,736 +1083,935 @@ bot_buffs:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 2
   buffs_index:
     dataType: int
     description: Unique Entry Identifier
     nullable: "NO"
+    ordinal_position: 1
   caster_level:
     dataType: tinyint
     description: Caster level
     nullable: "NO"
+    ordinal_position: 4
   caston_x:
     dataType: int
     description: X Coordinate
     nullable: "NO"
+    ordinal_position: 16
   caston_y:
     dataType: int
     description: Y Coordinate
     nullable: "NO"
+    ordinal_position: 17
   caston_z:
     dataType: int
     description: Z Coordinate
     nullable: "NO"
+    ordinal_position: 18
   corruption_counters:
     dataType: int
     description: Corruption Counter
     nullable: "NO"
+    ordinal_position: 10
   curse_counters:
     dataType: int
     description: Curse Counter
     nullable: "NO"
+    ordinal_position: 9
   disease_counters:
     dataType: int
     description: Disease Counter
     nullable: "NO"
+    ordinal_position: 8
   dot_rune:
     dataType: int
     description: Damage Over Time Rune
     nullable: "NO"
+    ordinal_position: 14
   duration_formula:
     dataType: int
     description: Duration Formula
     nullable: "NO"
+    ordinal_position: 5
   extra_di_chance:
     dataType: int
     description: Extra DI Chance
     nullable: "NO"
+    ordinal_position: 19
   instrument_mod:
     dataType: int
     description: Instrument Modifier
     nullable: "NO"
+    ordinal_position: 20
   magic_rune:
     dataType: int
     description: Magic Rune
     nullable: "NO"
+    ordinal_position: 13
   melee_rune:
     dataType: int
     description: Melee Rune
     nullable: "NO"
+    ordinal_position: 12
   numhits:
     dataType: int
     description: Number of Hits
     nullable: "NO"
+    ordinal_position: 11
   persistent:
     dataType: tinyint
     description: 'Persistent: 0 = False, 1 = True'
     nullable: "NO"
+    ordinal_position: 15
   poison_counters:
     dataType: int
     description: Poison Counter
     nullable: "NO"
+    ordinal_position: 7
   spell_id:
     dataType: int
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
+    ordinal_position: 3
   tics_remaining:
     dataType: int
     description: Tics Remaining
     nullable: "NO"
+    ordinal_position: 6
 bot_command_settings:
   access:
     dataType: int
     description: '[Required Status](../../../schema/categories/account/account.md)'
     nullable: "NO"
+    ordinal_position: 2
   aliases:
     dataType: varchar
     description: Aliases
     nullable: "NO"
+    ordinal_position: 3
   bot_command:
     dataType: varchar
     description: Unique Bot Command Identifier
     nullable: "NO"
+    ordinal_position: 1
+bot_create_combinations:
+  classes:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  race:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
 bot_data:
   ac:
     dataType: smallint
     description: Armor Class
     nullable: "NO"
+    ordinal_position: 28
   agi:
     dataType: mediumint
     description: Agility
     nullable: "NO"
+    ordinal_position: 37
   atk:
     dataType: mediumint
     description: Attack
     nullable: "NO"
+    ordinal_position: 29
   beard:
     dataType: int
     description: Beard
     nullable: "NO"
+    ordinal_position: 21
   beard_color:
     dataType: int
     description: Beard Color
     nullable: "NO"
+    ordinal_position: 22
   bot_id:
     dataType: int
     description: Unique Bot Identifier
     nullable: "NO"
+    ordinal_position: 1
   cha:
     dataType: mediumint
     description: Charisma
     nullable: "NO"
+    ordinal_position: 34
   class:
     dataType: tinyint
     description: '[Class](../../../../categories/player/class-list)'
     nullable: "NO"
+    ordinal_position: 11
   cold:
     dataType: smallint
     description: Cold Resistance
     nullable: "NO"
+    ordinal_position: 40
   corruption:
     dataType: smallint
     description: Corruption Resistance
     nullable: "NO"
+    ordinal_position: 44
   creation_day:
     dataType: int
     description: UNIX Timestamp of creation date
     nullable: "NO"
+    ordinal_position: 14
   deity:
     dataType: int
     description: '[Deity](../../../../categories/player/deity-list)'
     nullable: "NO"
+    ordinal_position: 13
   dex:
     dataType: mediumint
     description: Dexterity
     nullable: "NO"
+    ordinal_position: 35
   disease:
     dataType: smallint
     description: Disease Resistance
     nullable: "NO"
+    ordinal_position: 43
   drakkin_details:
     dataType: int
     description: Drakkin Details
     nullable: "NO"
+    ordinal_position: 27
   drakkin_heritage:
     dataType: int
     description: Drakkin Heritage
     nullable: "NO"
+    ordinal_position: 25
   drakkin_tattoo:
     dataType: int
     description: Drakkin Tattoo
     nullable: "NO"
+    ordinal_position: 26
   eye_color_1:
     dataType: int
     description: Eye Color 1
     nullable: "NO"
+    ordinal_position: 23
   eye_color_2:
     dataType: int
     description: Eye Color 2
     nullable: "NO"
+    ordinal_position: 24
   face:
     dataType: int
     description: Face
     nullable: "NO"
+    ordinal_position: 18
   fire:
     dataType: smallint
     description: Fire Resistance
     nullable: "NO"
+    ordinal_position: 39
   follow_distance:
     dataType: int
     description: Follow Distance
     nullable: "NO"
+    ordinal_position: 46
   gender:
     dataType: tinyint
     description: '[Gender](../../../../categories/npc/genders)'
     nullable: "NO"
+    ordinal_position: 9
   hair_color:
     dataType: int
     description: Hair Color
     nullable: "NO"
+    ordinal_position: 19
   hair_style:
     dataType: int
     description: Hair Style
     nullable: "NO"
+    ordinal_position: 20
   hp:
     dataType: int
     description: Health
     nullable: "NO"
+    ordinal_position: 30
   int:
     dataType: mediumint
     description: Intelligence
     nullable: "NO"
+    ordinal_position: 36
   last_name:
     dataType: varchar
     description: Last Name
     nullable: "NO"
+    ordinal_position: 5
   last_spawn:
     dataType: int
     description: UNIX Timestamp of last spawn_conditions
     nullable: "NO"
+    ordinal_position: 15
   level:
     dataType: tinyint
     description: Level
     nullable: "NO"
+    ordinal_position: 12
   magic:
     dataType: smallint
     description: Magic Resistance
     nullable: "NO"
+    ordinal_position: 41
   mana:
     dataType: int
     description: Mana
     nullable: "NO"
+    ordinal_position: 31
   name:
     dataType: varchar
     description: Name
     nullable: "NO"
+    ordinal_position: 4
   owner_id:
     dataType: int
     description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
     nullable: "NO"
+    ordinal_position: 2
   poison:
     dataType: smallint
     description: Poison Resistance
     nullable: "NO"
+    ordinal_position: 42
   race:
     dataType: smallint
     description: '[Race](../../../../categories/npc/race-list)'
     nullable: "NO"
+    ordinal_position: 10
   show_helm:
     dataType: int
     description: 'Show Helm: 0 = False, 1= True'
     nullable: "NO"
+    ordinal_position: 45
   size:
     dataType: float
     description: Size
     nullable: "NO"
+    ordinal_position: 17
   spells_id:
     dataType: int
     description: '[Bot Spell List Identifier](../../../../categories/spells/bot-spell-list-ids)'
     nullable: "NO"
+    ordinal_position: 3
   sta:
     dataType: mediumint
     description: Stamina
     nullable: "NO"
+    ordinal_position: 33
   stop_melee_level:
     dataType: tinyint
     description: Stop Melee Level
     nullable: "NO"
+    ordinal_position: 47
   str:
     dataType: mediumint
     description: Strength
     nullable: "NO"
+    ordinal_position: 32
   suffix:
     dataType: varchar
     description: Suffix
     nullable: "NO"
+    ordinal_position: 7
   time_spawned:
     dataType: int
     description: Time spawned
     nullable: "NO"
+    ordinal_position: 16
   title:
     dataType: varchar
     description: Title
     nullable: "NO"
+    ordinal_position: 6
   wis:
     dataType: mediumint
     description: Wisdom
     nullable: "NO"
+    ordinal_position: 38
   zone_id:
     dataType: smallint
     description: '[Zone Identifier](../../../../categories/zones/zone-list)'
     nullable: "NO"
+    ordinal_position: 8
 bot_group_members:
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 3
   group_members_index:
     dataType: int
     description: Unique Group Member Identifier
     nullable: "NO"
+    ordinal_position: 1
   groups_index:
     dataType: int
     description: '[Group Identifier](bot_groups.md)'
     nullable: "NO"
+    ordinal_position: 2
 bot_groups:
   group_leader_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 2
   group_name:
     dataType: varchar
     description: Group Name
     nullable: "NO"
+    ordinal_position: 3
   groups_index:
     dataType: int
     description: Unique Group Identifier
     nullable: "NO"
+    ordinal_position: 1
 bot_guild_members:
   alt:
     dataType: tinyint
     description: 'Alt: 0 = False, 1 = True'
     nullable: "NO"
+    ordinal_position: 9
   banker:
     dataType: tinyint
     description: 'Banker: 0 = False, 1 = True'
     nullable: "NO"
+    ordinal_position: 7
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 1
   guild_id:
     dataType: mediumint
     description: '[Guild Identifier](../../../schema/categories/guilds/guilds.md)'
     nullable: "NO"
+    ordinal_position: 2
   last_tribute:
     dataType: int
     description: Last Tribute
     nullable: "NO"
+    ordinal_position: 6
   public_note:
     dataType: text
     description: Public Note
     nullable: "YES"
+    ordinal_position: 8
   rank:
     dataType: tinyint
     description: '[Guild Rank](../../../../categories/player/guild-ranks)'
     nullable: "NO"
+    ordinal_position: 3
   total_tribute:
     dataType: int
     description: Total Tribute
     nullable: "NO"
+    ordinal_position: 5
   tribute_enable:
     dataType: tinyint
     description: 'Tribute Enabled: 0 = False, 1= True'
     nullable: "NO"
+    ordinal_position: 4
 bot_heal_rotation_members:
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 3
   heal_rotation_index:
     dataType: int
     description: '[Heal Rotation Identifier](bot_heal_rotations.md)'
     nullable: "NO"
+    ordinal_position: 2
   member_index:
     dataType: int
     description: Unique Bot Heal Rotation Member Identifier
     nullable: "NO"
+    ordinal_position: 1
 bot_heal_rotation_targets:
   heal_rotation_index:
     dataType: int
     description: '[Heal Rotation Identifier](bot_heal_rotations.md)'
     nullable: "NO"
+    ordinal_position: 2
   target_index:
     dataType: int
     description: Unique Bot Heal Rotation Target Identifier
     nullable: "NO"
+    ordinal_position: 1
   target_name:
     dataType: varchar
     description: Target Name
     nullable: "NO"
+    ordinal_position: 3
 bot_heal_rotations:
   adaptive_targeting:
     dataType: int
     description: Adaptive Targeting
     nullable: "NO"
+    ordinal_position: 5
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 2
   casting_override:
     dataType: int
     description: Casting Override
     nullable: "NO"
+    ordinal_position: 6
   critical_hp_base:
     dataType: float
     description: Critical Health Base
     nullable: "NO"
+    ordinal_position: 12
   critical_hp_chain:
     dataType: float
     description: Critical Health Chain
     nullable: "NO"
+    ordinal_position: 15
   critical_hp_cloth:
     dataType: float
     description: Critical Health Cloth
     nullable: "NO"
+    ordinal_position: 13
   critical_hp_leather:
     dataType: float
     description: Critical Health Leather
     nullable: "NO"
+    ordinal_position: 14
   critical_hp_plate:
     dataType: float
     description: Critical Health Plate
     nullable: "NO"
+    ordinal_position: 16
   fast_heals:
     dataType: int
     description: Fast Heals
     nullable: "NO"
+    ordinal_position: 4
   heal_rotation_index:
     dataType: int
     description: Unique Heal Rotation Identifier
     nullable: "NO"
+    ordinal_position: 1
   interval:
     dataType: int
     description: Interval
     nullable: "NO"
+    ordinal_position: 3
   safe_hp_base:
     dataType: float
     description: Safe Health Base
     nullable: "NO"
+    ordinal_position: 7
   safe_hp_chain:
     dataType: float
     description: Safe Health Chain
     nullable: "NO"
+    ordinal_position: 10
   safe_hp_cloth:
     dataType: float
     description: Safe Health Cloth
     nullable: "NO"
+    ordinal_position: 8
   safe_hp_leather:
     dataType: float
     description: Safe Health Leather
     nullable: "NO"
+    ordinal_position: 9
   safe_hp_plate:
     dataType: float
     description: Safe Health Plate
     nullable: "NO"
+    ordinal_position: 11
 bot_inspect_messages:
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 1
   inspect_message:
     dataType: varchar
     description: Inspect Message
     nullable: "NO"
+    ordinal_position: 2
 bot_inventories:
   augment_1:
     dataType: mediumint
     description: Augment Slot 1
     nullable: "NO"
+    ordinal_position: 12
   augment_2:
     dataType: mediumint
     description: Augment Slot 2
     nullable: "NO"
+    ordinal_position: 13
   augment_3:
     dataType: mediumint
     description: Augment Slot 3
     nullable: "NO"
+    ordinal_position: 14
   augment_4:
     dataType: mediumint
     description: Augment Slot 4
     nullable: "NO"
+    ordinal_position: 15
   augment_5:
     dataType: mediumint
     description: Augment Slot 5
     nullable: "NO"
+    ordinal_position: 16
   augment_6:
     dataType: mediumint
     description: Augment Slot 6
     nullable: "NO"
+    ordinal_position: 17
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 2
   inst_charges:
     dataType: smallint
     description: Charges
     nullable: "YES"
+    ordinal_position: 5
   inst_color:
     dataType: int
     description: Color
     nullable: "NO"
+    ordinal_position: 6
   inst_custom_data:
     dataType: text
     description: Custom Data
     nullable: "YES"
+    ordinal_position: 8
   inst_no_drop:
     dataType: tinyint
     description: 'No Drop: 0 = False, 1=  True'
     nullable: "NO"
+    ordinal_position: 7
   inventories_index:
     dataType: int
     description: Unique Bot Inventory Identifier
     nullable: "NO"
+    ordinal_position: 1
   item_id:
     dataType: int
     description: '[Item Identifier](../items/items.md)'
     nullable: "YES"
+    ordinal_position: 4
   ornament_hero_model:
     dataType: int
     description: Ornamentation Hero's Forge Model
     nullable: "NO"
+    ordinal_position: 11
   ornament_icon:
     dataType: int
     description: Ornamentation Icon
     nullable: "NO"
+    ordinal_position: 9
   ornament_id_file:
     dataType: int
     description: Ornamentation Item Texture
     nullable: "NO"
+    ordinal_position: 10
   slot_id:
     dataType: mediumint
     description: '[Slot Identifier](../../../../categories/inventory/inventory-slots)'
     nullable: "NO"
+    ordinal_position: 3
 bot_owner_options:
   death_marquee:
     dataType: smallint
     description: 'Death Marquee Message: 0 = False, 1 = True'
     nullable: "YES"
+  option_type:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  option_value:
+    dataType: smallint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
   owner_id:
     dataType: int
     description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
     nullable: "NO"
+    ordinal_position: 1
 bot_pet_buffs:
   caster_level:
     dataType: int
     description: Caster Level
     nullable: "NO"
+    ordinal_position: 4
   duration:
     dataType: int
     description: Duration of buff
     nullable: "NO"
+    ordinal_position: 5
   pet_buffs_index:
     dataType: int
     description: Unique Bot Pet Buffs Identifier
     nullable: "NO"
+    ordinal_position: 1
   pets_index:
     dataType: int
     description: '[Bot Pet Identifier](bot_pets.md)'
     nullable: "NO"
+    ordinal_position: 2
   spell_id:
     dataType: int
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
+    ordinal_position: 3
 bot_pet_inventories:
   item_id:
     dataType: int
     description: '[Item Identifier](../../../schema/categories/items/items.md)'
     nullable: "NO"
+    ordinal_position: 3
   pet_inventories_index:
     dataType: int
     description: Unique Bot Pet Inventory Identifier
     nullable: "NO"
+    ordinal_position: 1
   pets_index:
     dataType: int
     description: '[Bot Pet Identifier](bot_pets.md)'
     nullable: "NO"
+    ordinal_position: 2
 bot_pets:
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 3
   hp:
     dataType: int
     description: Health
     nullable: "NO"
+    ordinal_position: 6
   mana:
     dataType: int
     description: Mana
     nullable: "NO"
+    ordinal_position: 5
   name:
     dataType: varchar
     description: Name
     nullable: "YES"
+    ordinal_position: 4
   pets_index:
     dataType: int
     description: Unique Bot Pet Identifier
     nullable: "NO"
+    ordinal_position: 1
   spell_id:
     dataType: int
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
+    ordinal_position: 2
 bot_spell_casting_chances:
   class_id:
     dataType: tinyint
     description: '[Class Identifier](../../../../categories/player/class-list)'
     nullable: "NO"
+    ordinal_position: 3
   id:
     dataType: int
     description: Unique Bot Spell Casting Chance Identifier
     nullable: "NO"
+    ordinal_position: 1
   nHSND_value:
     dataType: tinyint
     description: nHSND Value
     nullable: "NO"
+    ordinal_position: 5
   pD_value:
     dataType: tinyint
     description: pD Value
     nullable: "NO"
+    ordinal_position: 13
   pH_value:
     dataType: tinyint
     description: pH Value
     nullable: "NO"
+    ordinal_position: 6
   pHD_value:
     dataType: tinyint
     description: pHD Value
     nullable: "NO"
+    ordinal_position: 14
   pHN_value:
     dataType: tinyint
     description: pHN Value
     nullable: "NO"
+    ordinal_position: 10
   pHND_value:
     dataType: tinyint
     description: pHND Value
     nullable: "NO"
+    ordinal_position: 18
   pHS_value:
     dataType: tinyint
     description: pHS Value
     nullable: "NO"
+    ordinal_position: 8
   pHSD_value:
     dataType: tinyint
     description: pHSD Value
     nullable: "NO"
+    ordinal_position: 16
   pHSN_value:
     dataType: tinyint
     description: pHSN Value
     nullable: "NO"
+    ordinal_position: 12
   pHSND_value:
     dataType: tinyint
     description: pHSND Value
     nullable: "NO"
+    ordinal_position: 20
   pN_value:
     dataType: tinyint
     description: pN Value
     nullable: "NO"
+    ordinal_position: 9
   pND_value:
     dataType: tinyint
     description: pND Value
     nullable: "NO"
+    ordinal_position: 17
   pS_value:
     dataType: tinyint
     description: pS Value
     nullable: "NO"
+    ordinal_position: 7
   pSD_value:
     dataType: tinyint
     description: pSD Value
     nullable: "NO"
+    ordinal_position: 15
   pSN_value:
     dataType: tinyint
     description: pSN Value
     nullable: "NO"
+    ordinal_position: 11
   pSND_value:
     dataType: tinyint
     description: pSND Value
     nullable: "NO"
+    ordinal_position: 19
   spell_type_index:
     dataType: tinyint
     description: '[Spell Type Identifier](../../../../categories/spells/spell-types)'
     nullable: "NO"
+    ordinal_position: 2
   stance_index:
     dataType: tinyint
     description: '[Stance Type Identifier](../../../../categories/bots/stance-types)'
     nullable: "NO"
+    ordinal_position: 4
 bot_spells_entries:
   id:
     dataType: int
     description: Unique Bot Spell Entry Identifier
     nullable: "NO"
+    ordinal_position: 1
   manacost:
     dataType: smallint
     description: Mana Cost
     nullable: "NO"
+    ordinal_position: 7
   max_hp:
     dataType: smallint
     description: Maximum Health Percentage
     nullable: "YES"
+    ordinal_position: 12
   maxlevel:
     dataType: tinyint
     description: Maximum Level
     nullable: "NO"
+    ordinal_position: 6
   min_hp:
     dataType: smallint
     description: Minimum Health Percentage
     nullable: "YES"
+    ordinal_position: 11
   minlevel:
     dataType: tinyint
     description: Minimum Level
     nullable: "NO"
+    ordinal_position: 5
   npc_spells_id:
     dataType: int
     description: '[Bot Spell List Identifier](../../../../categories/spells/bot-spell-list-ids)'
     nullable: "NO"
+    ordinal_position: 2
   priority:
     dataType: smallint
     description: 'Bot Spell Priority: Lower is better'
     nullable: "NO"
+    ordinal_position: 9
   recast_delay:
     dataType: int
     description: Recast Delay
     nullable: "NO"
+    ordinal_position: 8
   resist_adjust:
     dataType: int
     description: Resist Adjustment
     nullable: "YES"
+    ordinal_position: 10
   spellid:
     dataType: smallint
     description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
     nullable: "NO"
+    ordinal_position: 3
   type:
     dataType: int
     description: '[Spell Type](../../../../categories/spells/spell-types)'
     nullable: "NO"
+    ordinal_position: 4
 bot_stances:
   bot_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 1
   stance_id:
     dataType: tinyint
     description: '[Stance Identifier](../../../../server/bots/stance-types)'
     nullable: "NO"
+    ordinal_position: 2
 bot_timers:
   bot_id:
     dataType: int
     description: '[Unique Bot Identifier](bot_data.md)'
     nullable: "NO"
+    ordinal_position: 1
   timer_id:
     dataType: int
     description: Timer Identifier
     nullable: "NO"
+    ordinal_position: 2
   timer_value:
     dataType: int
     description: Timer Expiration
     nullable: "NO"
+    ordinal_position: 3
 bug_reports:
   _can_duplicate:
     dataType: tinyint
@@ -3546,6 +3760,17 @@ character_memmed_spells:
     description: '[Spell Identifier](../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
+character_peqzone_flags:
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  zone_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
 character_pet_buffs:
   caster_level:
     dataType: tinyint
@@ -4340,11 +4565,38 @@ db_version:
     dataType: int
     description: Bots Version
     nullable: "YES"
+    ordinal_position: 2
   version:
     dataType: int
     description: Database Version
     nullable: "YES"
     ordinal_position: 1
+discord_webhooks:
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  deleted_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  webhook_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  webhook_url:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
 discovered_items:
   account_status:
     dataType: int
@@ -7705,6 +7957,11 @@ login_world_servers:
     nullable: "NO"
     ordinal_position: 4
 logsys_categories:
+  discord_webhook_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
   log_category_description:
     dataType: varchar
     description: Log Category Description
@@ -7720,6 +7977,11 @@ logsys_categories:
     description: 'Log to Console: 0 = False, 1 = True'
     nullable: "YES"
     ordinal_position: 3
+  log_to_discord:
+    dataType: smallint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
   log_to_file:
     dataType: smallint
     description: 'Log to File: 0 = False, 1 = True'
@@ -9105,162 +9367,162 @@ npc_types:
     dataType: mediumint
     description: Intelligence
     nullable: "NO"
-    ordinal_position: 73
+    ordinal_position: 74
   AC:
     dataType: smallint
     description: Armor Class
     nullable: "NO"
-    ordinal_position: 63
+    ordinal_position: 64
   AGI:
     dataType: mediumint
     description: Agility
     nullable: "NO"
-    ordinal_position: 72
+    ordinal_position: 73
   ATK:
     dataType: mediumint
     description: Attack
     nullable: "NO"
-    ordinal_position: 81
+    ordinal_position: 82
   Accuracy:
     dataType: mediumint
     description: Accuracy
     nullable: "NO"
-    ordinal_position: 82
+    ordinal_position: 83
   Avoidance:
     dataType: mediumint
     description: Avoidance
     nullable: "NO"
-    ordinal_position: 83
+    ordinal_position: 84
   CHA:
     dataType: mediumint
     description: Charisma
     nullable: "NO"
-    ordinal_position: 75
+    ordinal_position: 76
   CR:
     dataType: smallint
     description: Cold Resistance
     nullable: "NO"
-    ordinal_position: 54
+    ordinal_position: 55
   Corrup:
     dataType: smallint
     description: Corruption Resistance
     nullable: "NO"
-    ordinal_position: 58
+    ordinal_position: 59
   DEX:
     dataType: mediumint
     description: Dexterity
     nullable: "NO"
-    ordinal_position: 71
+    ordinal_position: 72
   DR:
     dataType: smallint
     description: Disease Resistance
     nullable: "NO"
-    ordinal_position: 55
+    ordinal_position: 56
   FR:
     dataType: smallint
     description: Fire Resistance
     nullable: "NO"
-    ordinal_position: 56
+    ordinal_position: 57
   MR:
     dataType: smallint
     description: Magic Resistance
     nullable: "NO"
-    ordinal_position: 53
+    ordinal_position: 54
   PR:
     dataType: smallint
     description: Poison Resistance
     nullable: "NO"
-    ordinal_position: 57
+    ordinal_position: 58
   PhR:
     dataType: smallint
     description: Physical Resistance
     nullable: "NO"
-    ordinal_position: 59
+    ordinal_position: 60
   STA:
     dataType: mediumint
     description: Stamina
     nullable: "NO"
-    ordinal_position: 70
+    ordinal_position: 71
   STR:
     dataType: mediumint
     description: Strength
     nullable: "NO"
-    ordinal_position: 69
+    ordinal_position: 70
   WIS:
     dataType: mediumint
     description: Wisdom
     nullable: "NO"
-    ordinal_position: 74
+    ordinal_position: 75
   adventure_template_id:
     dataType: int
     description: '[Adventure Template Identifier](../../schema/adventures/adventure_template.md)'
     nullable: "NO"
-    ordinal_position: 23
+    ordinal_position: 24
   aggroradius:
     dataType: int
     description: Aggro Radius
     nullable: "NO"
-    ordinal_position: 30
+    ordinal_position: 31
   alt_currency_id:
     dataType: int
     description: '[Alternate Currency Identifier](../../schema/alternate-currency/alternate_currency.md)'
     nullable: "NO"
-    ordinal_position: 19
+    ordinal_position: 20
   always_aggro:
     dataType: tinyint
     description: 'Aggro regardless of _int or level : 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 122
+    ordinal_position: 123
   ammo_idfile:
     dataType: varchar
     description: Ammo Texture
     nullable: "NO"
-    ordinal_position: 48
+    ordinal_position: 49
   armortint_blue:
     dataType: tinyint
     description: 'Armor Tint Blue: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 45
+    ordinal_position: 46
   armortint_green:
     dataType: tinyint
     description: 'Armor Tint Green: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 44
+    ordinal_position: 45
   armortint_id:
     dataType: int
     description: '[Armor Tint Identifier](npc_types_tint.md)'
     nullable: "NO"
-    ordinal_position: 42
+    ordinal_position: 43
   armortint_red:
     dataType: tinyint
     description: 'Armor Tint Red: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 43
+    ordinal_position: 44
   armtexture:
     dataType: tinyint
     description: '[Arm Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 97
+    ordinal_position: 98
   assistradius:
     dataType: int
     description: Assist Radius
     nullable: "NO"
-    ordinal_position: 31
+    ordinal_position: 32
   attack_count:
     dataType: smallint
     description: Attack Count
     nullable: "NO"
-    ordinal_position: 27
+    ordinal_position: 28
   attack_delay:
     dataType: tinyint
     description: 'Attack Delay: Delay between the attack arounds in 10ths of a second.'
     nullable: "NO"
-    ordinal_position: 67
+    ordinal_position: 68
   attack_speed:
     dataType: float
     description: 'Attack Speed: The lower the number, the faster the NPC hits. (Deprecated)'
     nullable: "NO"
-    ordinal_position: 66
+    ordinal_position: 67
   bodytype:
     dataType: int
     description: '[Body Type](../../../../server/npc/body-types)'
@@ -9270,42 +9532,42 @@ npc_types:
     dataType: tinyint
     description: '[Bracer Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 98
+    ordinal_position: 99
   charm_ac:
     dataType: smallint
     description: Charmed Armor Class
     nullable: "YES"
-    ordinal_position: 110
+    ordinal_position: 111
   charm_accuracy_rating:
     dataType: mediumint
     description: Charmed Accuracy
     nullable: "YES"
-    ordinal_position: 114
+    ordinal_position: 115
   charm_atk:
     dataType: mediumint
     description: Charmed Attack
     nullable: "YES"
-    ordinal_position: 116
+    ordinal_position: 117
   charm_attack_delay:
     dataType: tinyint
     description: Charmed Attack Delay
     nullable: "YES"
-    ordinal_position: 113
+    ordinal_position: 114
   charm_avoidance_rating:
     dataType: mediumint
     description: Charmed Avoidance
     nullable: "YES"
-    ordinal_position: 115
+    ordinal_position: 116
   charm_max_dmg:
     dataType: int
     description: Charmed Maximum Damage
     nullable: "YES"
-    ordinal_position: 112
+    ordinal_position: 113
   charm_min_dmg:
     dataType: int
     description: Charmed Minimum Damage
     nullable: "YES"
-    ordinal_position: 111
+    ordinal_position: 112
   class:
     dataType: tinyint
     description: '[Class](../../../../server/player/class-list)'
@@ -9315,67 +9577,67 @@ npc_types:
     dataType: int
     description: Primary Weapon Texture
     nullable: "NO"
-    ordinal_position: 46
+    ordinal_position: 47
   d_melee_texture2:
     dataType: int
     description: Secondary Weapon Texture
     nullable: "NO"
-    ordinal_position: 47
+    ordinal_position: 48
   drakkin_details:
     dataType: int
     description: Drakkin Details
     nullable: "NO"
-    ordinal_position: 41
+    ordinal_position: 42
   drakkin_heritage:
     dataType: int
     description: Drakkin Heritage
     nullable: "NO"
-    ordinal_position: 39
+    ordinal_position: 40
   drakkin_tattoo:
     dataType: int
     description: Drakkin Tattoo
     nullable: "NO"
-    ordinal_position: 40
+    ordinal_position: 41
   emoteid:
     dataType: int
     description: '[Emote Identifier](npc_emotes.md)'
     nullable: "NO"
-    ordinal_position: 92
+    ordinal_position: 93
   exclude:
     dataType: tinyint
     description: 'Exclude: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 80
+    ordinal_position: 81
   exp_mod:
     dataType: int
     description: ""
     nullable: "NO"
-    ordinal_position: 123
+    ordinal_position: 124
   face:
     dataType: int
     description: Face
     nullable: "NO"
-    ordinal_position: 32
+    ordinal_position: 33
   feettexture:
     dataType: tinyint
     description: '[Feet Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 101
+    ordinal_position: 102
   findable:
     dataType: tinyint
     description: 'Findable: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 68
+    ordinal_position: 69
   fixed:
     dataType: tinyint
     description: Fixed
     nullable: "NO"
-    ordinal_position: 106
+    ordinal_position: 107
   flymode:
     dataType: tinyint
     description: '[Fly Mode](../../../../server/npc/fly-modes)'
     nullable: "NO"
-    ordinal_position: 121
+    ordinal_position: 122
   gender:
     dataType: tinyint
     description: '[Gender](../../../../server/npc/genders)'
@@ -9385,12 +9647,12 @@ npc_types:
     dataType: tinyint
     description: '[Hand Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 99
+    ordinal_position: 100
   healscale:
     dataType: float
     description: 'Heal Scale: 25 = 25%, 50 = 50%, 100 = 100%'
     nullable: "NO"
-    ordinal_position: 94
+    ordinal_position: 95
   helmtexture:
     dataType: tinyint
     description: '[Helmet Texture](../../../../server/npc/textures)'
@@ -9402,14 +9664,19 @@ npc_types:
     nullable: "NO"
     ordinal_position: 13
   hp:
-    dataType: int
+    dataType: bigint
     description: Health
-    nullable: "NO"
+    nullable: "YES"
     ordinal_position: 8
+  hp_regen_per_second:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 16
   hp_regen_rate:
-    dataType: int
+    dataType: bigint
     description: Health Regeneration
-    nullable: "NO"
+    nullable: "YES"
     ordinal_position: 15
   id:
     dataType: int
@@ -9420,17 +9687,17 @@ npc_types:
     dataType: tinyint
     description: 'Ignore Despawn: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 107
+    ordinal_position: 108
   isbot:
     dataType: tinyint
     description: 'Is Bot: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 79
+    ordinal_position: 80
   isquest:
     dataType: tinyint
     description: 'Is Quest: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 91
+    ordinal_position: 92
   lastname:
     dataType: varchar
     description: Last Name
@@ -9440,7 +9707,7 @@ npc_types:
     dataType: tinyint
     description: '[Leg Texture](../../../../server/npc/textures)'
     nullable: "NO"
-    ordinal_position: 100
+    ordinal_position: 101
   level:
     dataType: tinyint
     description: Level
@@ -9450,77 +9717,77 @@ npc_types:
     dataType: tinyint
     description: Light
     nullable: "NO"
-    ordinal_position: 102
+    ordinal_position: 103
   loottable_id:
     dataType: int
     description: '[Loottable Identifier](../../schema/loot/loottable.md)'
     nullable: "NO"
-    ordinal_position: 17
+    ordinal_position: 18
   luclin_beard:
     dataType: int
     description: Beard
     nullable: "NO"
-    ordinal_position: 38
+    ordinal_position: 39
   luclin_beardcolor:
     dataType: int
     description: Beard Color
     nullable: "NO"
-    ordinal_position: 37
+    ordinal_position: 38
   luclin_eyecolor:
     dataType: int
     description: Eye Color 1
     nullable: "NO"
-    ordinal_position: 35
+    ordinal_position: 36
   luclin_eyecolor2:
     dataType: int
     description: Eye Color 2
     nullable: "NO"
-    ordinal_position: 36
+    ordinal_position: 37
   luclin_haircolor:
     dataType: int
     description: Hair Color
     nullable: "NO"
-    ordinal_position: 34
+    ordinal_position: 35
   luclin_hairstyle:
     dataType: int
     description: Hair Style
     nullable: "NO"
-    ordinal_position: 33
+    ordinal_position: 34
   mana:
-    dataType: int
+    dataType: bigint
     description: Mana
-    nullable: "NO"
+    nullable: "YES"
     ordinal_position: 9
   mana_regen_rate:
-    dataType: int
+    dataType: bigint
     description: Mana Regeneration
-    nullable: "NO"
-    ordinal_position: 16
+    nullable: "YES"
+    ordinal_position: 17
   maxdmg:
     dataType: int
     description: Maximum Damage
     nullable: "NO"
-    ordinal_position: 26
+    ordinal_position: 27
   maxlevel:
     dataType: tinyint
     description: Maximum Level
     nullable: "NO"
-    ordinal_position: 86
+    ordinal_position: 87
   merchant_id:
     dataType: int
     description: '[Merchant Identifier](../../schema/merchants/merchantlist.md)'
     nullable: "NO"
-    ordinal_position: 18
+    ordinal_position: 19
   mindmg:
     dataType: int
     description: Minimum Damage
     nullable: "NO"
-    ordinal_position: 25
+    ordinal_position: 26
   model:
     dataType: smallint
     description: Model
     nullable: "NO"
-    ordinal_position: 120
+    ordinal_position: 121
   name:
     dataType: text
     description: Name
@@ -9530,52 +9797,52 @@ npc_types:
     dataType: tinyint
     description: 'No Target Hotkey: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 95
+    ordinal_position: 96
   npc_aggro:
     dataType: tinyint
     description: 'NPC Aggro: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 64
+    ordinal_position: 65
   npc_faction_id:
     dataType: int
     description: '[NPC Faction Identifier](../../schema/factions/faction_list.md)'
     nullable: "NO"
-    ordinal_position: 22
+    ordinal_position: 23
   npc_spells_effects_id:
     dataType: int
     description: '[NPC Spell Effects Identifier](npc_spells_effects.md)'
     nullable: "NO"
-    ordinal_position: 21
+    ordinal_position: 22
   npc_spells_id:
     dataType: int
     description: '[NPC Spell Set Identifier](npc_spells.md)'
     nullable: "NO"
-    ordinal_position: 20
+    ordinal_position: 21
   npcspecialattks:
     dataType: varchar
     description: NPC Special Attacks (Deprecated)
     nullable: "NO"
-    ordinal_position: 28
+    ordinal_position: 29
   peqid:
     dataType: int
     description: PEQ Identifier
     nullable: "NO"
-    ordinal_position: 104
+    ordinal_position: 105
   prim_melee_type:
     dataType: tinyint
     description: '[Primary Melee Type](../../../../server/player/skills)'
     nullable: "NO"
-    ordinal_position: 49
+    ordinal_position: 50
   private_corpse:
     dataType: tinyint
     description: 'Private Corpse: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 88
+    ordinal_position: 89
   qglobal:
     dataType: int
     description: 'Quest Globals: 0 = Disabled, 1 = Enabled (Deprecated)'
     nullable: "NO"
-    ordinal_position: 62
+    ordinal_position: 63
   race:
     dataType: smallint
     description: '[Race](../../../../server/npc/race-list)'
@@ -9585,57 +9852,57 @@ npc_types:
     dataType: tinyint
     description: 'Raid Target: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 96
+    ordinal_position: 97
   ranged_type:
     dataType: tinyint
     description: '[Ranged Type](../../../../server/player/skills)'
     nullable: "NO"
-    ordinal_position: 51
+    ordinal_position: 52
   rare_spawn:
     dataType: tinyint
     description: 'Rare Spawn: 0 = False, 1 = True'
     nullable: "YES"
-    ordinal_position: 118
+    ordinal_position: 119
   runspeed:
     dataType: float
     description: Run Speed
     nullable: "NO"
-    ordinal_position: 52
+    ordinal_position: 53
   scalerate:
     dataType: int
     description: Scale Rate
     nullable: "NO"
-    ordinal_position: 87
+    ordinal_position: 88
   sec_melee_type:
     dataType: tinyint
     description: '[Secondary Melee Type](../../../../server/player/skills)'
     nullable: "NO"
-    ordinal_position: 50
+    ordinal_position: 51
   see_hide:
     dataType: tinyint
     description: 'See Hide: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 76
+    ordinal_position: 77
   see_improved_hide:
     dataType: tinyint
     description: 'See Improved Hide: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 77
+    ordinal_position: 78
   see_invis:
     dataType: smallint
     description: 'See Invisible: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 60
+    ordinal_position: 61
   see_invis_undead:
     dataType: smallint
     description: 'See Invisible vs. Undread: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 61
+    ordinal_position: 62
   show_name:
     dataType: tinyint
     description: 'Show Name: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 108
+    ordinal_position: 109
   size:
     dataType: float
     description: Size
@@ -9645,32 +9912,32 @@ npc_types:
     dataType: tinyint
     description: 'Skip Global Loot: 0 = False, 1 = True'
     nullable: "YES"
-    ordinal_position: 117
+    ordinal_position: 118
   slow_mitigation:
     dataType: smallint
     description: Slow Mitigation
     nullable: "NO"
-    ordinal_position: 84
+    ordinal_position: 85
   spawn_limit:
     dataType: tinyint
     description: Spawn Limit
     nullable: "NO"
-    ordinal_position: 65
+    ordinal_position: 66
   special_abilities:
     dataType: text
     description: NPC Special Abilities
     nullable: "YES"
-    ordinal_position: 29
+    ordinal_position: 30
   spellscale:
     dataType: float
     description: 'Spell Scale: 25 = 25%, 50 = 50%, 100 = 100%'
     nullable: "NO"
-    ordinal_position: 93
+    ordinal_position: 94
   stuck_behavior:
     dataType: tinyint
     description: Stuck Behavior
     nullable: "NO"
-    ordinal_position: 119
+    ordinal_position: 120
   texture:
     dataType: tinyint
     description: '[Texture](../../../../server/npc/textures)'
@@ -9680,42 +9947,42 @@ npc_types:
     dataType: tinyint
     description: 'Trackable: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 78
+    ordinal_position: 79
   trap_template:
     dataType: int
     description: '[Trap Template Identifier](../../schema/traps/traps.md)'
     nullable: "YES"
-    ordinal_position: 24
+    ordinal_position: 25
   underwater:
     dataType: tinyint
     description: 'Underwater: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 90
+    ordinal_position: 91
   unique_:
     dataType: tinyint
     description: Unique
     nullable: "NO"
-    ordinal_position: 105
+    ordinal_position: 106
   unique_spawn_by_name:
     dataType: tinyint
     description: 'Unique Spawn By Name: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 89
+    ordinal_position: 90
   untargetable:
     dataType: tinyint
     description: 'Untargetable: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 109
+    ordinal_position: 110
   version:
     dataType: smallint
     description: Version
     nullable: "NO"
-    ordinal_position: 85
+    ordinal_position: 86
   walkspeed:
     dataType: tinyint
     description: Walk Speed
     nullable: "NO"
-    ordinal_position: 103
+    ordinal_position: 104
 npc_types_metadata:
   isCreatedMob:
     dataType: tinyint
@@ -10099,6 +10366,27 @@ object_contents:
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 1
+peq_admin:
+  administrator:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  login:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  password:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
 perl_event_export_settings:
   event_description:
     dataType: varchar
@@ -11782,6 +12070,26 @@ spawnentry:
     description: ""
     nullable: "NO"
     ordinal_position: 4
+  content_flags:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  content_flags_disabled:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  max_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  min_expansion:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
   npcID:
     dataType: int
     description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
@@ -13266,17 +13574,22 @@ task_activities:
     dataType: int
     description: 'Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
-    ordinal_position: 13
+    ordinal_position: 14
   description_override:
     dataType: varchar
     description: Description Override
     nullable: "NO"
     ordinal_position: 9
+  goal_match_list:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
   goalcount:
     dataType: int
     description: Goal Count
     nullable: "YES"
-    ordinal_position: 12
+    ordinal_position: 13
   goalid:
     dataType: int
     description: Goal Identifier or [Goal List Identifier](goallists.md)
@@ -13286,7 +13599,7 @@ task_activities:
     dataType: int
     description: 'Goal Method: 0 = Single Value, 1 = List'
     nullable: "NO"
-    ordinal_position: 11
+    ordinal_position: 12
   item_list:
     dataType: varchar
     description: '[Item Identifier List](../../schema/items/items.md)'
@@ -13296,7 +13609,7 @@ task_activities:
     dataType: tinyint
     description: 'Optional: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 15
+    ordinal_position: 16
   skill_list:
     dataType: varchar
     description: '[Skill Identifier List](../../../../server/player/skills)'
@@ -13326,7 +13639,7 @@ task_activities:
     dataType: varchar
     description: '[Zones List](../../../../server/zones/zone-list)'
     nullable: "NO"
-    ordinal_position: 14
+    ordinal_position: 15
 tasks:
   cashreward:
     dataType: int
@@ -14015,6 +14328,129 @@ veteran_reward_templates:
   reward_slot:
     dataType: tinyint
     description: Reward Slot
+    nullable: "NO"
+    ordinal_position: 5
+vw_bot_character_mobs:
+  class:
+    dataType: decimal
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  deleted_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  last_login:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  level:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  mob_type:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  zone_id:
+    dataType: decimal
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+vw_bot_groups:
+  group_leader_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  group_leader_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  group_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  groups_index:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  owner_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  owner_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+vw_guild_members:
+  alt:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
+  banker:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  char_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  guild_id:
+    dataType: mediumint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  last_tribute:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  mob_type:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  public_note:
+    dataType: mediumtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  rank:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  total_tribute:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  tribute_enable:
+    dataType: tinyint
+    description: ""
     nullable: "NO"
     ordinal_position: 5
 zone:

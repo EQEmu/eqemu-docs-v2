@@ -1,7 +1,7 @@
 # account
 
 !!! info
-	This page was last generated 2022.02.23
+	This page was last generated 2022.05.11
 
 ## Relationship Diagram
 
@@ -43,4 +43,7 @@
 | expansion | tinyint | Expansion |
 | ban_reason | text | Ban Reason |
 | suspend_reason | text | Suspension Reason |
+| crc_eqgame | text |  |
+| crc_skillcaps | text |  |
+| crc_basedata | text |  |
 

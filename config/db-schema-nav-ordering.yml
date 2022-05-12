@@ -17,6 +17,7 @@
     - command_settings: schema/admin/command_settings.md
     - db_version: schema/admin/db_version.md
     - discovered_items: schema/admin/discovered_items.md
+    - discord_webhooks: schema/admin/discord_webhooks.md
     - eqtime: schema/admin/eqtime.md
     - eventlog: schema/admin/eventlog.md
     - gm_ips: schema/admin/gm_ips.md
