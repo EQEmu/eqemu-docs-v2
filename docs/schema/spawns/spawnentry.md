@@ -25,4 +25,7 @@
 | npcID | int | [NPC Type Identifier](../../schema/npcs/npc_types.md) |
 | chance | smallint | Chance: 0 = Never, 100 = Always |
 | condition_value_filter | mediumint |  |
-
+| min_expansion | tinyint | [Expansion Identifier](https://docs.eqemu.io/developer/project-peq-expansions/expansion-list-reference/), Default: -1 (Enabled for All) |
+| max_expansion | tinyint | [Expansion Identifier](https://docs.eqemu.io/developer/project-peq-expansions/expansion-list-reference/), Default: -1 (Enabled for All) |
+| content_flags | varchar | See [Expansion and Content Filtering](https://docs.eqemu.io/developer/project-peq-expansions/expansion-content-filtering/), Default: NULL (Loaded in all scenarios)  |
+| content_flags_disabled | varchar | See [Expansion and Content Filtering](https://docs.eqemu.io/developer/project-peq-expansions/expansion-content-filtering/), Default: NULL (Loaded in all scenarios)  |
