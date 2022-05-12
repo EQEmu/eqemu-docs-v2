@@ -33,14 +33,9 @@ type MkDocsCfg struct {
 		Features []string `yaml:"features"`
 		Name     string   `yaml:"name"`
 		Palette  []struct {
-			Media   string `yaml:"media"`
 			Scheme  string `yaml:"scheme"`
 			Primary string `yaml:"primary"`
 			Accent  string `yaml:"accent,omitempty"`
-			Toggle  struct {
-				Icon string `yaml:"icon"`
-				Name string `yaml:"name"`
-			} `yaml:"toggle"`
 		} `yaml:"palette"`
 	} `yaml:"theme"`
 	MarkdownExtensions []interface{} `yaml:"markdown_extensions"`
