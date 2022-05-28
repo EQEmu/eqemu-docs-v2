@@ -967,7 +967,7 @@
 | Parameter 3 | Flat negative percent modifier to Block skill | 0 |
 | Parameter 4 | Flat negative percent modifier to Dodge skill | 0 |
 
-### **Examples:****
+### **Examples:**
 
 ```text
 44,1,50
@@ -1125,7 +1125,7 @@
 | Parameter 3 | Flat percent modifier to Block skill | 0 |
 | Parameter 4 | Flat percent modifier to Dodge skill | 0 |
 
-### **Examples:****
+### **Examples:**
 
 ```text
 51,1,50
