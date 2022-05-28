@@ -1095,3 +1095,75 @@
 | 50 | Special Attack "Immune NPC Aggro" |
 | 1 | Special Attack "Immune NPC Aggro" enabled |
 
+## Immune NPC Aggro (50)
+
+!!! info
+      Immune NPC Aggro, denoted by special attack 50, makes the NPC immune to aggro by NPCs.
+
+
+### **Example:**
+
+```text
+50,1
+```
+
+|  |  |
+| :--- | :--- |
+| 50 | Special Attack "Immune NPC Aggro" |
+| 1 | Special Attack "Immune NPC Aggro" enabled |
+
+## Modify Avoid Damage (51)
+
+!!! info
+      Modify Avoid Damage, denoted by special attack 51, allows you to modify specific avoidances for an NPC.
+
+| Settings |  | Defaults |
+| :--- | :--- | :--- |
+| Parameter 0 | Flat percent modifier to ALL avoidance skills | 0 |
+| Parameter 1 | Flat percent modifier to Riposte skill | 0 |
+| Parameter 2 | Flat percent modifier to Parry skill | 0 |
+| Parameter 3 | Flat percent modifier to Block skill | 0 |
+| Parameter 4 | Flat percent modifier to Dodge skill | 0 |
+
+### **Examples:****
+
+```text
+51,1,50
+```
+
+|  |  |
+| :--- | :--- |
+| 51 | Special Attack "Modify Avoid Damage" |
+| 1 | Special Attack "Modify Avoid Damage" enabled |
+| 50 | 50 percent increase to ALL avoidance skills |
+
+```text
+51,1,0,0,0,0,50
+```
+
+|  |  |
+| :--- | :--- |
+| 51 | Special Attack "Modify Avoid Damage" |
+| 1 | Special Attack "Modify Avoid Damage" enabled |
+| 0 | 0 percent increase to ALL avoidance skills |
+| 0 | 0 percent increase to Riposte avoidance skill |
+| 0 | 0 percent increase to Parry avoidance skill |
+| 0 | 0 percent increase to Block avoidance skill |
+| 50 | 50 percent increase to Dodge avoidance skill |
+
+## Immune Fading Memories (52)
+
+!!! info
+      Immune Fading Memories, denoted by special attack 52, makes the NPC immune to memory fades.
+
+
+### **Example:**
+
+```text
+52,1
+```
+
+|  |  |
+| :--- | :--- |
+| 52 | Special Attack "Immune Fading Memories" |
+| 1 | Special Attack "Immune Fading Memories" enabled |
