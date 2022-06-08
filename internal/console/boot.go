@@ -13,6 +13,7 @@ func Run() error {
 		NewQuestApiDocGeneratorCommand().Command(),
 		NewDbGenerateDocsCommand().Command(),
 		NewGMCommandsDocsGenerateCommand().Command(),
+		NewServerRulesDocsGenerateCommand().Command(),
 	}
 
 	cmd.AddCommand(commands...)
