@@ -59,38 +59,27 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 	generatedTime := currentTime.Format("2006.01.02")
 	template = strings.ReplaceAll(template, "{{generated_time}}", generatedTime)
 
-	commandData := template + "\n"
+	commandData := fmt.Sprintf("%v\n", template)
 
 	commandData += "| Command | Description | Status Level |\n"
 
-	commandData = fmt.Sprintf("%v| :--- | :--- | :--- |\n", commandData)
+	commandData += "| :--- | :--- | :--- |\n"
 
 	for _, line := range strings.Split(string(body), "\n") {
 		if strings.Contains(line, "command_add(\"") {
-
-			//pp.Println(line)
-
 			line = strings.ReplaceAll(line, "command_add(", "")
 			line = strings.ReplaceAll(line, "\t", "")
 
 			lineData := strings.Split(line, "\", ")
 
-			// command
 			command := strings.TrimSpace(lineData[0])
 			command = strings.ReplaceAll(command, "\"", "")
 
-			// help
 			help := strings.TrimSpace(lineData[1])
 			help = strings.ReplaceAll(help, "\"", "")
 			help = strings.ReplaceAll(help, "|", "&#124;")
 
-			// account status
 			accountStatus := getStringInBetween(line, "AccountStatus::", ",")
-
-			//pp.Println(lineData)
-			//pp.Println(command)
-			//pp.Println(help)
-			//pp.Println(accountStatus)
 
 			statusValue := GetStatusValue(accountStatus)
 
