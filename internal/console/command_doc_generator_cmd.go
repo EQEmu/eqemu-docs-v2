@@ -59,41 +59,41 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 	generatedTime := currentTime.Format("2006.01.02")
 	template = strings.ReplaceAll(template, "{{generated_time}}", generatedTime)
 
-	CommandData := template + "\n"
+	commandData := template + "\n"
 
-	CommandData += "| Command | Description | Status Level |\n"
+	commandData += "| Command | Description | Status Level |\n"
 
-	CommandData = fmt.Sprintf("%v| :--- | :--- |\n", CommandData)
+	commandData = fmt.Sprintf("%v| :--- | :--- |\n", commandData)
 
 	for _, line := range strings.Split(string(body), "\n") {
 		if strings.Contains(line, "command_add(\"") {
-			CurrentLine := strings.ReplaceAll(line, "\t", "")
-			CurrentLine = strings.ReplaceAll(CurrentLine, "command_add", "")
-			CurrentLine = strings.ReplaceAll(CurrentLine, "(", "")
-			CurrentLine = strings.ReplaceAll(CurrentLine, ")", "")
-			CurrentLine = strings.ReplaceAll(CurrentLine, " ||", "")
-			CurrentLine = strings.ReplaceAll(CurrentLine, "\",  \"", "||")
-			CurrentLine = strings.ReplaceAll(CurrentLine, "\", \"", "||")
-			CurrentLine = strings.ReplaceAll(CurrentLine, ", Account", "||Account")
-			CurrentLine = strings.ReplaceAll(CurrentLine, ", command", "||command")
-			CurrentLine = strings.ReplaceAll(CurrentLine, "\"", "")
+			currentLine := strings.ReplaceAll(line, "\t", "")
+			currentLine = strings.ReplaceAll(currentLine, "command_add", "")
+			currentLine = strings.ReplaceAll(currentLine, "(", "")
+			currentLine = strings.ReplaceAll(currentLine, ")", "")
+			currentLine = strings.ReplaceAll(currentLine, " ||", "")
+			currentLine = strings.ReplaceAll(currentLine, "\",  \"", "||")
+			currentLine = strings.ReplaceAll(currentLine, "\", \"", "||")
+			currentLine = strings.ReplaceAll(currentLine, ", Account", "||Account")
+			currentLine = strings.ReplaceAll(currentLine, ", command", "||command")
+			currentLine = strings.ReplaceAll(currentLine, "\"", "")
 
-			LineData := strings.Split(CurrentLine, "||")
+			lineData := strings.Split(currentLine, "||")
 
-			StatusValue := GetStatusValue(LineData[2])
-			StatusName := strings.ReplaceAll(LineData[2], "AccountStatus::", "")
+			statusValue := GetstatusValue(lineData[2])
+			statusName := strings.ReplaceAll(lineData[2], "AccountStatus::", "")
 
-			CommandData += fmt.Sprintf("| #%v | %v | %v (%v) |\n", LineData[0], LineData[1], StatusName, StatusValue)
+			commandData += fmt.Sprintf("| #%v | %v | %v (%v) |\n", lineData[0], lineData[1], statusName, statusValue)
 		}
 	}
 
-	err = os.WriteFile("./docs/server/operation/in-game-command-reference.md", []byte(CommandData), os.ModePerm)
+	err = os.WriteFile("./docs/server/operation/in-game-command-reference.md", []byte(commandData), os.ModePerm)
 	if err != nil {
 		fmt.Println(err)
 	}
 }
 
-func GetStatusValue(StatusLevel string) int {
+func GetstatusValue(StatusLevel string) int {
 	m := map[string]int{
 		"AccountStatus::Player":          0,
 		"AccountStatus::Steward":         10,
