@@ -82,6 +82,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 			// help
 			help := strings.TrimSpace(lineData[1])
 			help = strings.ReplaceAll(help, "\"", "")
+			help = strings.ReplaceAll(help, "|", "&#124;")
 
 			// account status
 			accountStatus := getStringInBetween(line, "AccountStatus::", ",")
