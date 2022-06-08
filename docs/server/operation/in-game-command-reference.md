@@ -1,317 +1,282 @@
----
-description: >-
-  This page lists the commands that are available in-game, based on assigned
-  Account Status, for your EQEmu Server.
----
+!!! info end
 
-# Commands Reference
+    This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-Often referred to as "GM Commands", the following commands can be allowed based on the player's Account Status.
+    Last Generated: 2022.06.08
 
-| Command | Description |
+{{command_data}}
+
+| Command | Description | Status Level |
 | :--- | :--- |
-| #acceptrules | [acceptrules] - Accept the EQEmu Agreement |
-| #advnpcspawn | [maketype.|makegroup|addgroupentry|addgroupspawn][removegroupspawn|movespawn|editgroupbox|cleargroupbox] |
-| #aggro | (range) [-v] - Display aggro information for all mobs 'range' distance from your target. -v is verbose faction info. |
-| #aggrozone | [aggro] - Aggro every mob in the zone with X aggro. Default is 0. Not recommend if you are not invulnerable. |
-| #ai | [factionid/spellslist/con/guard/roambox/stop/start] - Modify AI on NPC target |
-| #appearance | [type] [value] - Send an appearance packet for you or your target |
-| #apply shared memory | [shared memory name] Tells every zone and world to apply a specific shared memory segment by name |
-| #attack | [targetname] - Make your NPC target attack targetname |
-| #augmentitem | Force augments an item. Must have the augment item window open. |
-| #ban | [name] - Ban by character name |
-| #beard | Change the beard of your target |
-| #beardcolor | Change the beard color of your target |
-| #bestz | Ask map for a good Z coord for your x,y coords. |
-| #bind | Sets your targets bind spot to their current location |
-| #bot | Type "#bot help" to the see the list of available commands for bots. |
-| #camerashake | Shakes the camera on everyone's screen globally |
-| #castspell | [spellid] - Cast a spell |
-| #chat | [channel num] [message] - Send a channel message to all zones |
-| #checklos | Check for line of sight to your target |
-| #copycharacter | [source character name] [dest character name] [dest account name] - Create a copy of a character |
-| #corpse | Manipulate corpses, use with no arguments for help |
-| #corpsefix | Attempts to bring corpses from underneath the ground within close proximity of the player |
-| #countitem | [Item ID] - count an item by ID on yourself or your player/NPC target |
-| #crashtest | Crash the zoneserver |
-| #cvs | Summary of client versions currently online. |
-| #damage | [amount] - Damage your target |
-| #databuckets | [view|delete][key][limit = 50] - View or delete data bucket by key |
-| #date | [yyyy] [mm] [dd] [HH] [MM] - Set EQ time |
-| #dbspawn2 | [spawngroup] [respawn] [variance] - Spawn an NPC from a predefined row in the spawn2 table |
-| #delacct | [accountname] - Delete an account |
-| #deletegraveyard | [zone name] - Deletes the graveyard for the specified zone. |
-| #delpetition | [petition number] - Delete a petition |
-| #depop | Depop your NPC target |
-| #depopzone | Depop the zone |
-| #details | Change the details of your target (Drakkin only) |
-| #devtools | Manages devtools |
-| #disablerecipe | [recipe id] - Disabled the specified recipe ID. |
-| #disarmtrap | Analog for LDoN disarm trap for the newer clients since we still don't have it working |
-| #distance | Reports the distance between you and your target. |
-| #doanim | [animnum] [type] - Send an EmoteAnim for you or your target |
-| #dye | Adds dye command for going beyond darkness limits that client has when using the Dye UI Window |
-| #dz | Manage expeditions and dynamic zone instances |
-| #dzkickplayers | Removes all players from current expedition (/kick players alternative for pre-RoF clients) |
-| #editmassrespawn | [name search][second value] - Mass (zone-wide) NPC respawn timer editing command |
-| #emote | ['name'/'world'/'zone'] [type] [message] - Send an emote message |
-| #emotesearch | Searches loaded NPC emotes |
-| #emoteview | Lists all of a NPCs loaded emotes |
-| #emptyinventory | Allows you to empty you or your target's inventory completely. (Equipment, General, Bank, and Shared Bank) |
-| #enablerecipe | [recipe id] - Enables the specified recipe ID. |
-| #endurance | Restores your or your target's endurance |
-| #equipitem | [slotid(0-22)] - Equip the item on your cursor into the specified slot |
-| #face | [number of face] - Sets you or your target's face to face number, temporarily. |
-| #faction | [find (criteria|all) | review (criteria|all) | reset (id)] - Resets player's faction |
-| #findaliases | [search criteria] - Searches for available command aliases by alias or command |
-| #findclass | [search criteria] - Displays class id and name for [search criteria] |
-| #findfaction | [search criteria] - Searches name of faction for [search criteria] |
-| #findnpctype | [search criteria] - Search database NPC types |
-| #findrace | [search criteria] - Search for a race |
-| #findskill | [search criteria] - Allows you to search for skills by ID or partial name |
-| #findspell | [search criteria] - Search for a spell |
-| #findtask | [search critera] - Allows you to search for Tasks by ID or partial name |
-| #findzone | [search criteria] - Search database for zone |
-| #fixmob | [nextrace|prevrace|gender|nexttexture|prevtexture|nexthelm|prevhelm] - Manipulate appearance of your NPC target |
-| #flag | [status] [acctname] - Refresh your admin status, or set an account's admin status if arguments provided |
-| #flagedit | Edit zone flags on your target |
-| #flags | Displays the flags of you or your target |
-| #flymode | [0|1|2|3|4|5] - Set your or your player target's flymode to ground|flying|levitate|water|floating|levitate running |
-| #fov | Check whether you are behind or in your target's field of view |
-| #freeze | Freeze your target |
-| #gassign | [id] - Assign targetted NPC to predefined wandering grid id |
-| #gearup | Developer tool to quickly equip a character |
-| #gender | [0/1/2] - Change your or your target's gender to male/female/neuter |
-| #getplayerburriedcorp | Get the target's total number of buried player corpses. |
-| #getvariable | [varname] - Get the value of a variable from the database |
-| #ginfo | Get group info on target. |
-| #giveitem | [itemid] [charges] - Summon an item onto your target's cursor. Charges are optional. |
-| #givemoney | [pp] [gp] [sp] [cp] - Gives specified amount of money to the target player. |
-| #globalview | Lists all qglobals in cache if you were to do a quest with this target. |
-| #gm | Turn player target's or your GM flag on or off |
-| #gmspeed | [on/off] - Turn GM speed hack on/off for you or your player target |
-| #gmzone | [zone short name][zone version = 0][identifier = gmzone] - Zones to a private GM instance |
-| #goto | [x] [y] [z] - Teleport to the provided coordinates or to your target |
-| #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid |
-| #guild | Guild manipulation commands. Use argument help for more info. |
-| #guildapprove | [guildapproveid] - Approve a guild with specified ID (guild creator receives the id) |
-| #guildcreate | [guildname] - Creates an approval setup for guild name specified |
-| #guildlist | [guildapproveid] - Lists character names who have approved the guild specified by the approve id |
-| #hair | Change the hair style of your target |
-| #haircolor | Change the hair color of your target |
-| #haste | [percentage] - Set your haste percentage |
-| #hatelist | Display hate list for target. |
-| #heal | Completely heal your target |
-| #helm | Change the helm of your target |
-| #help | [search term] - List available commands and their description, specify partial command as argument to search |
-| #heritage | Change the heritage of your target (Drakkin only) |
-| #heromodel | [hero model][slot] - Full set of Hero's Forge Armor appearance. If slot is set, sends exact model just to slot. |
-| #hideme | [on/off] - Hide yourself from spawn lists. |
-| #hotfix | [hotfix name] - Reloads shared memory into a hotfix. Equivalent to load shared memory followed by apply shared memory |
-| #hp | Refresh your HP bar from the server. |
-| #incstat | Increases or Decreases a client's stats permanently. |
-| #instance | Modify Instances |
-| #interrogateinv | use [help] argument for available options |
-| #interrupt | [message id] [color] - Interrupt your casting. Arguments are optional. |
-| #invsnapshot | Manipulates inventory snapshots for your current target |
-| #invul | [on/off] - Turn player target's or your invulnerable flag on or off |
-| #ipban | [IP address] - Ban IP by character name |
-| #iplookup | [charname] - Look up IP address of charname |
-| #iteminfo | Get information about the item on your cursor |
-| #itemsearch | [search criteria] - Search for an item |
-| #kick | [charname] - Disconnect charname |
-| #kill | Kill your target |
-| #killallnpcs | [npc name] - Kills all NPCs by search name. Leave blank for all attackable NPCs |
-| #lastname | [new lastname] - Set your or your player target's lastname |
-| #level | [level] - Set your or your target's level |
-| #list | [npcs|players|corpses|doors|objects] [search] - Search entities |
-| #listnpcs | [name/range] - Search NPCs |
-| #listpetition | List petitions |
-| #load shared memory | [shared memory name] - Reloads shared memory and uses the input as output |
-| #loc | Print out your or your target's current location and heading |
-| #lock | Lock the worldserver |
-| #logs | Manage anything to do with logs |
-| #logtest | Performs log performance testing |
-| #makepet | [level] [class] [race] [texture] - Make a pet |
-| #mana | Fill your or your target's mana |
-| #maxskills | Maxes skills for you |
-| #memspell | [spellid] [spell gem] - Memorize spellid in the specified spell gem - empty [spell gem] will memorize [spellid] to first available gem |
-| #merchant close shop | Closes a merchant's shop |
-| #merchant open shop | Opens a merchant's shop |
-| #modifynpcstat | Modifys a NPC's stats |
-| #motd | [new motd] - Set message of the day |
-| #movechar | [charname] [zonename] - Move charname to zonename |
-| #movement | Various movement commands |
-| #myskills | Show details about your current skill levels |
-| #mysql | Mysql CLI, see 'help' for options. |
-| #mysqltest | MySQL bench test |
-| #mystats | Show details about you or your pet. |
-| #name | [newname] - Rename your player target |
-| #netstats | Gets the network stats for a stream |
-| #network | Admin commands for the UDP network interface |
-| #npccast | [targetname/entityid] [spellid] - Causes NPC target to cast spellid on targetname/entityid |
-| #npcedit | [column] [value] - Mega NPC editing command |
-| #npceditmass | [name-search][column][value] - Mass (zone-wide) NPC data editing command |
-| #npcemote | [message] - Make your NPC target emote a message. |
-| #npcloot | [show/money/add/remove] [itemid/all/money: pp gp sp cp] - Manipulate the loot an NPC is carrying |
-| #npcsay | [message] - Make your NPC target say a message. |
-| #npcshout | [message] - Make your NPC target shout a message. |
-| #npcspawn | [create/add/update/remove/delete] - Manipulate spawn DB |
-| #npcspecialattk | [flagchar] [perm] - Set NPC special attack flags. Flags are E(nrage) F(lurry) R(ampage) S(ummon). |
-| #npcstats | Show stats about target NPC |
-| #npctype cache | [id|all] - Clears the NPC type cache for either the ID or ALL NPCs |
-| #npctypespawn | [npctypeid] [factionid] - Spawn an NPC from the db |
-| #nudge | Nudge your target's current position by specific values |
-| #nukebuffs | Strip all buffs on you or your target |
-| #nukeitem | [itemid] - Remove itemid from your player target's inventory |
-| #object | List|Add|Edit|Move|Rotate|Copy|Save|Undo|Delete - Manipulate static and tradeskill objects within the zone |
-| #oocmute | [1/0] - Mutes OOC chat |
-| #opcode | OPCODE management |
-| #path | View and edit pathing |
-| #peekinv | [worn/cursor/inv/bank/trade/all] - Print out contents of your player target's inventory |
-| #peqzone | [zonename] - Go to specified zone, if you have &gt; 75% health |
-| #permaclass | [classnum] - Change your or your player target's class (target is disconnected) |
-| #permagender | [gendernum] - Change your or your player target's gender (zone to take effect) |
-| #permarace | [racenum] - Change your or your player target's race (zone to take effect) |
-| #petitems | Show a person's pet items if they have access to the command |
-| #petitioninfo | [petition number] - Get info about a petition |
-| #petname | [newname] - Temporarilyrenames your pet. Leave name blank to restore the original name. |
-| #pf | Useless information. |
-| #picklock | Used to pick locks. |
-| #profanity | Manage censored language |
-| #profiledump | Dump profiling info to logs |
-| #profilereset | Reset profiling info |
-| #proximity | Shows NPC proximity |
-| #push | Lets you do spell push |
-| #pvp | [on/off] - Set your or your player target's PVP status |
-| #qglobal | [on/off/view] - Toggles qglobal functionality on an NPC |
-| #questerrors | Shows quest errors |
-| #race | [racenum] - Change you or your target's race. Use #race 0 to return to normal. This is temporary, you revert back to normal upon zoning. |
-| #raidloot | [Leader|Groupleader|Selected|All] - Sets your raid loot settings if you have permission to do so |
-| #randomfeatures | Randomly changes the Facial Features of your target |
-| #refreshgroup | Refreshes Group. |
-| #reloadaa | Reloads AA data |
-| #reloadallrules | Executes a reload of all rules |
-| #reloademote | Reloads NPC emotes |
-| #reloadlevelmods |  |
-| #reloadmerchants |  |
-| #reloadperlexportsettings |  |
-| #reloadqst | Clear quest cache |
-| #reloadrulesworld | Executes a reload of all rules in world specifically |
-| #reloadstatic | Reload Static Zone Data |
-| #reloadtitles | Reload player titles from the database |
-| #reloadtraps | Repops all traps in the current zone |
-| #reloadworld | Reloads all scripts and repops all NPC's globally. |
-| #removeitem | [Item ID], [Amount] - Remove items by amount versus nuking them all, removes all if amount is greater than what you or your target have |
-| #repop | Repop the zone with optional delay. Using #repop force forcefully resets spawn timers. |
-| #resetaa | Resets a Player's AA in their profile. |
-| #resetaa timer | Command to reset AA cooldown timers |
-| #revoke | [charname] [1/0] - Makes charname unable to talk on OOC and unable to use /tell. |
-| #roambox | Manages roambox settings for an NPC |
-| #rules | (subcommand) - Manage server rules |
-| #save | Force your player or player corpse target to be saved to the database |
-| #scale | Handles NPC scaling |
-| #scribespell | [spellid] - Scribe specified spell in your target's spell book. |
-| #scribespells | [maxlevel], [minlevel] - Scribe all spells for you or your player target that are usable by them, up to level specified. |
-| #sendzonespawns | Refresh spawn list for all clients in zone |
-| #sensetrap | Analog for LDoN sense trap for the newer clients since we still don't have it working |
-| #serverinfo | Get OS info about server host |
-| #serverrules | Read this server's rules |
-| #setaapts | Set your or your player target's available AA points |
-| #setaaxp | [amount] - Adds the amount of AA experience you specified to you or your target. |
-| #setadventurepoints | Set you or your player target's available adventure points |
-| #setaltcurrency | [Currency ID], [Amount] - Set a specific alternate currency to a value |
-| #setanim | [animnum] - Set target's appearance to animnum |
-| #setcrystals | Set your or your player targets available radiant or ebon crystals |
-| #setendurance | [Endurance] - Set an NPC or player's endurance to a specified amount, or to max if the amount is greater than their max |
-| #setfaction | [faction number] - Sets targeted NPC's faction in the database |
-| #setgraveyard | [zone name] - Creates a graveyard for the specified zone based on your target's LOC. |
-| #sethp | [Health] - Set an NPC or player's health to a specified amount, or to max if the amount is greater than their max |
-| #setlanguage | [language ID] [value] - Set your target's language skillnum to value |
-| #setlsinfo | [email] [password] - Set login server email address and password. |
-| #setmana | [Mana] - Set an NPC or player's mana to a specified amount, or to max if the amount is greater than their max |
-| #setpass | [accountname] [password] - Set local password for accountname |
-| #setpvppoints | Set your or your player targets PVP points |
-| #setskill | [skillnum] [value] - Set your target's skill skillnum to value |
-| #setskillall | [value] - Set all of your target's skills to value |
-| #setstartzone | [zoneid] - Set target's starting zone. Set to zero to allow the player to use /setstartcity |
-| #setstat | Sets the stats to a specific value. |
-| #setxp | [value] - Set your or your player target's experience |
-| #showbonusstats | [item|spell|all] - Shows bonus stats for target from items or spells. Shows both by default. |
-| #showbuffs | List buffs active on your target or you if no target |
-| #shownpcgloballoot | Show GlobalLoot entries on this NPC |
-| #shownumhits | Shows buffs numhits for yourself |
-| #showskills | Show the values of your or your player target's skills |
-| #showstats | Show details about you or your target |
-| #showzonegloballoot | Show GlobalLoot entries on this zone |
-| #showzonepoints | Show zone points for current zone |
-| #shutdown | Shut this zone process down |
-| #size | [size] - Change size of you or your target |
-| #spawn | [name] [race] [level] [material] [hp] [gender] [class] [priweapon] [secweapon] [merchantid] - Spawn an NPC |
-| #spawneditmass | Mass editing spawn command |
-| #spawnfix | Find targeted NPC in database based on its X/Y/heading and update the database to make it spawn at your current location/heading. |
-| #spawnstatus | Show respawn timer status |
-| #spellinfo | [spellid] - Get detailed info about a spell |
-| #spoff | Sends OP_ManaChange |
-| #spon | Sends OP_MemorizeSpell |
-| #stun | [duration] - Stuns you or your target for duration |
-| #summon | [charname] - Summons your player/npc/corpse target, or charname if specified |
-| #summonburriedplayerc | Summons the target's oldest buried corpse, if any exist. |
-| #summonitem | [itemid] [charges] - Summon an item onto your cursor. Charges are optional. |
-| #suspend | Suspend by character name and for specified number of days |
-| #task | (subcommand) - Task system commands |
-| #tattoo | Change the tattoo of your target (Drakkin only) |
-| #tempname | [newname] - Temporarily renames your target. Leave name blank to restore the original name. |
-| #test | Test command |
-| #texture | [texture] [helmtexture] - Change your or your target's appearance, use 255 to show equipment |
-| #time | [HH] [MM] - Set EQ time |
-| #timers | Display persisten timers for target |
-| #timezone | [HH] [MM] - Set timezone. Minutes are optional |
-| #title | [text] - Set your or your player target's title |
-| #titlesuffix | [text] [1 = create title table row] - Set your or your player target's title suffix |
-| #traindisc | [level] - Trains all the disciplines usable by the target, up to level specified. (may freeze client for a few seconds) |
-| #trapinfo | Gets information about the traps currently spawned in the zone |
-| #tune | Calculate ideal statistical values related to combat |
-| #ucs | Attempts to reconnect to the UCS server |
-| #undyeme | Remove dye from all of your armor slots |
-| #unfreeze | Unfreeze your target |
-| #unlock | Unlock the worldserver |
-| #unmemspell | [Spell ID] - Unmemorize a spell by ID from you or your target |
-| #unmemspells | Unmemorize all spells from you or your target |
-| #unscribespell | [spellid] - Unscribe specified spell from your target's spell book. |
-| #unscribespells | Clear out your or your player target's spell book. |
-| #untraindisc | [spellid] - Untrain specified discipline from your target |
-| #untraindiscs | Untrains all disciplines from your target |
-| #uptime | [zone server id] - Get uptime of worldserver, or zone server if argument provided |
-| #version | Display current version of EQEmu server |
-| #viewcurrencies | View your or your target's currencies (Money, Crystals, Alternate Currency, LDoN, and PVP) |
-| #viewnpctype | [npctype id] - Show info about an npctype |
-| #viewpetition | [petition number] - View a petition |
-| #viewzoneloot | [item id] - Displays all loot on currently spawned npc's - leave blank for all items |
-| #wc | [wear slot] [material] - Sends an OP_WearChange for your target |
-| #weather | [0/1/2/3] (Off/Rain/Snow/Manual) - Change the weather |
-| #who | [search] |
-| #worldshutdown | Shut down world and all zones |
-| #worldwide | Performs world-wide GM functions such as cast (can be extended for other commands). Use caution. |
-| #wp | [add/delete] [grid_num] [pause] [wp_num] - Add/delete a waypoint to/from a wandering grid |
-| #wpadd | [pause] - Add your current location as a waypoint to your NPC targets AI path |
-| #wpinfo | Show waypoint info about your NPC target |
-| #xtargets | Show your targets Extended Targets and optionally set how many xtargets they can have |
-| #zclip | [min] [max] - modifies and resends zhdr packet |
-| #zcolor | [red] [green] [blue] - Change sky color |
-| #zheader | [zonename] - Load zheader for zonename from the database |
-| #zone | [zonename] [x] [y] [z] - Go to specified zone (co-ordinates optional) |
-| #zonebootup | [ZoneServerID] [shortname] - Make a zone server boot a specific zone |
-| #zoneinstance | [instanceid] [x] [y] [z] - Go to specified instance zone (co-ordinates optional) |
-| #zonelock | [list/lock/unlock] - Set/query lock flag for zoneservers |
-| #zoneshutdown | [shortname] - Shut down a zone server |
-| #zonespawn | Not implemented |
-| #zonestatus | Show connected zoneservers, synonymous with /servers |
-| #zopp | Troubleshooting command. Sends a fake item packet to you. No server reference is created. |
-| #zsafecoords | [x] [y] [z] - Set safe co-ordinates |
-| #zsave | Saves zheader to the database |
-| #zsky | [skytype] - Change zone sky type |
-| #zstats | Show info about zone header |
-| #zunderworld | [zcoord] - Sets the underworld using zcoord |
-| #zuwcoords | [zcoord] - Set underworld zcoord |
-
+| #acceptrules | [acceptrules] - Accept the EQEmu Agreement | Player (0) |
+| #advnpcspawn | [maketype|makegroup|addgroupentry|addgroupspawn][removegroupspawn|movespawn|editgroupbox|cleargroupbox] | GMLeadAdmin (150) |
+| #aggro | [Distance] [-v] - Display aggro information for all mobs 'Distance' distance from your target. -v is verbose Faction Information | QuestTroupe (80) |
+| #aggrozone | [aggro] - Aggro every mob in the zone with X aggro. Default is 0. Not recommend if you're not invulnerable. | GMAdmin (100) |
+| #ai | [factionid/spellslist/con/guard/roambox/stop/start] - Modify AI on NPC target | GMAdmin (100) |
+| #appearance | [type] [value] - Send an appearance packet for you or your target | GMLeadAdmin (150) |
+| #appearanceeffects | [view] [set] [remove] appearance effects. | GMAdmin (100) |
+| #apply_shared_memory | [shared_memory_name] - Tells every zone and world to apply a specific shared memory segment by name. | GMImpossible (250) |
+| #attack | [Entity Name] - Make your NPC target attack an entity by name | GMLeadAdmin (150) |
+| #augmentitem | Force augments an item. Must have the augment item window open. | GMImpossible (250) |
+| #ban | [Character Name] [Reason] - Ban by character name | GMLeadAdmin (150) |
+| #bind | Sets your targets bind spot to their current location | GMMgmt (200) |
+| #bot | Type \#bot help\ or \^help\ to the see the list of available commands for bots. | Player (0) |
+| #camerashake | [Duration Milliseconds] [Intensity 1-10] - Shakes the camera on everyone's screen globally. | QuestTroupe (80) |
+| #castspell | [Spell ID] [Instant 0 = False, 1 = True, Default is 1 if Unused] - Cast a spell | Guide (50) |
+| #chat | [channel num] [message] - Send a channel message to all zones | GMMgmt (200) |
+| #checklos | Check for line of sight to your target | Guide (50) |
+| #copycharacter | [source_char_name] [dest_char_name] [dest_account_name] - Copies character to destination account | GMImpossible (250) |
+| #corpse | Manipulate corpses, use with no arguments for help | Guide (50) |
+| #corpsefix | Attempts to bring corpses from underneath the ground within close proximity of the player | Player (0) |
+| #countitem | [Item ID] - Counts the specified Item ID in your or your target's inventory | GMLeadAdmin (150) |
+| #cvs | Summary of client versions currently online. | GMMgmt (200) |
+| #damage | [Amount] - Damage yourself or your target | GMAdmin (100) |
+| #databuckets | View|Delete [key] [limit]- View data buckets, limit 50 default or Delete databucket by key | QuestTroupe (80) |
+| #date | [Year] [Month] [Day] [Hour] [Minute] - Set EQ time Hour and Minute are optional | EQSupport (90) |
+| #dbspawn2 | [spawngroup] [respawn] [variance] - Spawn an NPC from a predefined row in the spawn2 table | GMAdmin (100) |
+| #delacct | [accountname] - Delete an account | GMLeadAdmin (150) |
+| #delpetition | [petition number] - Delete a petition | ApprenticeGuide (20) |
+| #depop | Depop your NPC target | Guide (50) |
+| #depopzone | Depop the zone | GMAdmin (100) |
+| #devtools | Manages devtools | GMMgmt (200) |
+| #disablerecipe | [Recipe ID] - Disables a Recipe | QuestTroupe (80) |
+| #disarmtrap | Analog for ldon disarm trap for the newer clients since we still don't have it working. | QuestTroupe (80) |
+| #distance | Reports the distance between you and your target. | QuestTroupe (80) |
+| #door | Door editing command | QuestTroupe (80) |
+| #doanim | [animnum] [type] - Send an EmoteAnim for you or your target | Guide (50) |
+| #dye | [slot|'help'] [red] [green] [blue] [use_tint] - Dyes the specified armor slot to Red, Green, and Blue provided, allows you to bypass darkness limits. | ApprenticeGuide (20) |
+| #dz | Manage expeditions and dynamic zone instances | QuestTroupe (80) |
+| #dzkickplayers | Removes all players from current expedition. /kickplayers alternative for pre-RoF clients | Player (0) |
+| #editmassrespawn | [name-search] [second-value] - Mass Zone wide NPC respawn timer editing command | GMAdmin (100) |
+| #emote | ['name'/'world'/'zone'] [type] [message] - Send an emote message | QuestTroupe (80) |
+| #emotesearch | Searches NPC Emotes | QuestTroupe (80) |
+| #emoteview | Lists all NPC Emotes | QuestTroupe (80) |
+| #emptyinventory | Clears your or your target's entire inventory Equipment, General, Bank, and Shared Bank | GMImpossible (250) |
+| #enablerecipe | [Recipe ID] - Enables a Recipe | QuestTroupe (80) |
+| #endurance | Restores your or your target's endurance. | Guide (50) |
+| #equipitem | [slotid0-21] - Equip the item on your cursor into the specified slot | Guide (50) |
+| #faction | [Find criteria | all  | Review criteria | all | Reset id] - Resets Player's Faction | QuestTroupe (80) |
+| #feature | Change your or your target's feature's temporarily | QuestTroupe (80) |
+| #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
+| #findclass | [Search Criteria] - Search for a class | Guide (50) |
+| #findfaction | [Search Criteria] - Search for a faction | Guide (50) |
+| #findnpctype | [Search Criteria] - Search database NPC types | GMAdmin (100) |
+| #findrace | [Search Criteria] - Search for a race | Guide (50) |
+| #findskill | [Search Criteria] - Search for a skill | Guide (50) |
+| #findspell | [Search Criteria] - Search for a spell | Guide (50) |
+| #findtask | [Search Criteria] - Search for a task | Guide (50) |
+| #findzone | [Search Criteria] - Search database zones | GMAdmin (100) |
+| #fixmob | [race|gender|texture|helm|face|hair|haircolor|beard|beardcolor|heritage|tattoo|detail] [next|prev] - Manipulate appearance of your target | QuestTroupe (80) |
+| #flag | [Status] [Account Name] - Refresh your admin status, or set an account's Admin status if arguments provided | Player (0) |
+| #flagedit | Edit zone flags on your target. Use #flagedit help for more info. | GMAdmin (100) |
+| #flags | displays the Zone Flags of you or your target | Player (0) |
+| #flymode | [0/1/2/3/4/5] - Set your or your player target's flymode to ground/flying/levitate/water/floating/levitate_running | Guide (50) |
+| #fov | Check wether you're behind or in your target's field of view | QuestTroupe (80) |
+| #freeze | Freeze your target | QuestTroupe (80) |
+| #gassign | [Grid ID] - Assign targetted NPC to predefined wandering grid id | GMAdmin (100) |
+| #gearup | Developer tool to quickly equip a character | GMMgmt (200) |
+| #gender | [0/1/2] - Change your or your target's gender to male/female/neuter | Guide (50) |
+| #getplayerburiedcorpsecount | Get your or your target's total number of buried player corpses. | GMAdmin (100) |
+| #getvariable | [Variable Name] - Get the value of a variable from the database | GMMgmt (200) |
+| #ginfo | get group info on target. | ApprenticeGuide (20) |
+| #giveitem | [itemid] [charges] - Summon an item onto your target's cursor. Charges are optional. | GMMgmt (200) |
+| #givemoney | [Platinum] [Gold] [Silver] [Copper] - Gives specified amount of money to you or your player target | GMMgmt (200) |
+| #globalview | Lists all qglobals in cache if you were to do a quest with this target. | QuestTroupe (80) |
+| #gm | [On|Off] - Modify your or your target's GM Flag | QuestTroupe (80) |
+| #gmspeed | [On|Off] - Turn GM Speed On or Off for you or your player target | GMAdmin (100) |
+| #gmzone | [Zone ID|Zone Short Name] [Version] [Instance Identifier] - Zones to a private GM instance Version defaults to 0 and Instance Identifier defaults to 'gmzone' if not used | GMAdmin (100) |
+| #goto | [playername] or [x y z] [h] - Teleport to the provided coordinates or to your target | Steward (10) |
+| #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid | GMAreas (170) |
+| #guild | Guild manipulation commands. Use argument help for more info. | Steward (10) |
+| #guildapprove | [guildapproveid] - Approve a guild with specified ID guild creator receives the id | Player (0) |
+| #guildcreate | [guildname] - Creates an approval setup for guild name specified | Player (0) |
+| #guildlist | [guildapproveid] - Lists character names who have approved the guild specified by the approve id | Player (0) |
+| #haste | [percentage] - Set your haste percentage | GMAdmin (100) |
+| #hatelist | Display hate list for NPC. | QuestTroupe (80) |
+| #heal | Completely heal your target | Steward (10) |
+| #help | [Search Criteria] - List available commands and their description, specify partial command as argument to search | Player (0) |
+| #heromodel | [hero model] [slot] - Full set of Hero's Forge Armor appearance. If slot is set, sends exact model just to slot. | GMMgmt (200) |
+| #hideme | [on/off] - Hide yourself from spawn lists. | QuestTroupe (80) |
+| #hotfix | [hotfix_name] - Reloads shared memory into a hotfix, equiv to load_shared_memory followed by apply_shared_memory | GMImpossible (250) |
+| #hp | Refresh your HP bar from the server. | Player (0) |
+| #incstat | Increases or Decreases a client's stats permanently. | GMMgmt (200) |
+| #instance | Modify Instances | GMMgmt (200) |
+| #interrogateinv | use [help] argument for available options | Player (0) |
+| #interrupt | [message id] [color] - Interrupt your casting. Arguments are optional. | Guide (50) |
+| #invsnapshot | Manipulates inventory snapshots for your current target | QuestTroupe (80) |
+| #invul | [On|Off]] - Turn player target's or your invulnerable flag on or off | QuestTroupe (80) |
+| #ipban | [IP] - Ban IP | GMMgmt (200) |
+| #iplookup | [charname] - Look up IP address of charname | GMMgmt (200) |
+| #iteminfo | Get information about the item on your cursor | Steward (10) |
+| #itemsearch | [Search Criteria] - Search for an item | Steward (10) |
+| #kick | [Character Name] - Disconnect a player by name | GMLeadAdmin (150) |
+| #kill | Kill your target | GMAdmin (100) |
+| #killallnpcs | [npc_name] - Kills all npcs by search name, leave blank for all attackable NPC's | GMMgmt (200) |
+| #lastname | [Last Name] - Set your or your player target's last name use \-1\ to remove last name | Guide (50) |
+| #level | [Level] - Set your target's level | Steward (10) |
+| #list | [npcs|players|corpses|doors|objects] [search] - Search entities | ApprenticeGuide (20) |
+| #listpetition | List petitions | Guide (50) |
+| #load_shared_memory | [shared_memory_name] - Reloads shared memory and uses the input as output | GMImpossible (250) |
+| #loc | Print out your or your target's current location and heading | Player (0) |
+| #logs | Manage anything to do with logs | GMImpossible (250) |
+| #makepet | [Pet Name] - Make a pet | Guide (50) |
+| #mana | Fill your or your target's mana | Guide (50) |
+| #maxskills | Maxes skills for you. | GMMgmt (200) |
+| #memspell | [Spell ID] [Spell Gem] - Memorize a Spell by ID to the specified Spell Gem for you or your target | Guide (50) |
+| #merchant_close_shop | Closes a merchant shop | GMAdmin (100) |
+| #merchant_open_shop | Opens a merchants shop | GMAdmin (100) |
+| #modifynpcstat | Modifies an NPC's stats | GMLeadAdmin (150) |
+| #motd | [Message of the Day] - Set Message of the Day leave empty to have no Message of the Day | GMLeadAdmin (150) |
+| #movechar | [Character ID|Character Name] [Zone ID|Zone Short Name] - Move an offline character to the specified zone | Guide (50) |
+| #movement | Various movement commands | GMMgmt (200) |
+| #myskills | Show details about your current skill levels | Player (0) |
+| #mysql | [Help|Query] [SQL Query] - Mysql CLI, see 'Help' for options. | GMImpossible (250) |
+| #mystats | Show details about you or your pet | Guide (50) |
+| #name | [New Name] - Rename your player target | GMLeadAdmin (150) |
+| #netstats | Gets the network stats for a stream. | GMMgmt (200) |
+| #network | Admin commands for the udp network interface. | GMImpossible (250) |
+| #npccast | [targetname/entityid] [spellid] - Causes NPC target to cast spellid on targetname/entityid | QuestTroupe (80) |
+| #npcedit | [column] [value] - Mega NPC editing command | GMAdmin (100) |
+| #npceditmass | [name-search] [column] [value] - Mass Zone wide NPC data editing command | GMAdmin (100) |
+| #npcemote | [Message] - Make your NPC target emote a message. | GMLeadAdmin (150) |
+| #npcloot | Manipulate the loot an NPC is carrying. Use #npcloot help for more information. | QuestTroupe (80) |
+| #npcsay | [Message] - Make your NPC target say a message. | GMLeadAdmin (150) |
+| #npcshout | [Message] - Make your NPC target shout a message. | GMLeadAdmin (150) |
+| #npcspawn | [create/add/update/remove/delete] - Manipulate spawn DB | GMAreas (170) |
+| #npcstats | Show stats about target NPC | QuestTroupe (80) |
+| #npctypespawn | [NPC ID] [Faction ID] - Spawn an NPC by ID from the database with an option of setting its Faction ID | Steward (10) |
+| #nudge | Nudge your target's current position by specific values | QuestTroupe (80) |
+| #nukebuffs | [Beneficial|Detrimental|Help] - Strip all buffs by type on you or your target no argument to remove all buffs | Guide (50) |
+| #nukeitem | [Item ID] - Removes the specified Item ID from you or your player target's inventory | GMLeadAdmin (150) |
+| #object | List|Add|Edit|Move|Rotate|Copy|Save|Undo|Delete - Manipulate static and tradeskill objects within the zone | GMAdmin (100) |
+| #oocmute | [0|1] - Enable or Disable Server OOC | GMMgmt (200) |
+| #opcode | opcode management | GMImpossible (250) |
+| #path | view and edit pathing | GMMgmt (200) |
+| #peekinv | [equip/gen/cursor/poss/limbo/curlim/trib/bank/shbank/allbank/trade/world/all] - Print out contents of your player target's inventory | GMAdmin (100) |
+| #peqzone | [Zone ID|Zone Short Name] - Teleports you to the specified zone if you meet the requirements. | Player (0) |
+| #peqzone_flags | displays the PEQZone Flags of you or your target | Player (0) |
+| #permaclass | [Class ID] - Change your or your player target's class, changed client is disconnected | QuestTroupe (80) |
+| #permagender | [Gender ID] - Change your or your player target's gender | QuestTroupe (80) |
+| #permarace | [Race ID] - Change your or your player target's race | QuestTroupe (80) |
+| #petitems | View your pet's items if you have one | ApprenticeGuide (20) |
+| #petitioninfo | [petition number] - Get info about a petition | ApprenticeGuide (20) |
+| #picklock | Analog for ldon pick lock for the newer clients since we still don't have it working. | Player (0) |
+| #profanity | Manage censored language. | GMLeadAdmin (150) |
+| #push | [Back Push] [Up Push] - Lets you do spell push on an NPC | GMLeadAdmin (150) |
+| #proximity | Shows NPC proximity | GMLeadAdmin (150) |
+| #pvp | [On|Off] - Set you or your player target's PVP status | GMAdmin (100) |
+| #qglobal | [On|Off|View] - Toggles quest global functionality for your NPC target | GMAdmin (100) |
+| #questerrors | Shows quest errors. | GMAdmin (100) |
+| #race | [racenum] - Change your or your target's race. Use racenum 0 to return to normal | Guide (50) |
+| #raidloot | [All|GroupLeader|RaidLeader|Selected] - Sets your Raid Loot Type if you have permission to do so. | Player (0) |
+| #randomfeatures | Temporarily randomizes the Facial Features of your target | QuestTroupe (80) |
+| #refreshgroup | Refreshes Group for you or your player target. | Player (0) |
+| #reload | Reloads different types of server data globally, use no argument for help menu. | GMMgmt (200) |
+| #removeitem | [Item ID] [Amount] - Removes the specified Item ID by Amount from you or your player target's inventory Amount defaults to 1 if not used | GMAdmin (100) |
+| #repop | [Force] - Repop the zone with optional force repop | GMAdmin (100) |
+| #resetaa | Resets a Player's AA in their profile and refunds spent AA's to unspent, may disconnect player. | GMMgmt (200) |
+| #resetaa_timer | [All|Timer ID] - Command to reset AA cooldown timers for you or your player target. | GMMgmt (200) |
+| #resetdisc_timer | [All|Timer ID] - Command to reset discipline timers. | GMMgmt (200) |
+| #revoke | [Character Name] [0|1] - Revokes or unrevokes a player's ability to talk in OOC by name 0 = Unrevoke, 1 = Revoke | GMMgmt (200) |
+| #roambox | [Remove|Set] [Box Size] [Delay Milliseconds] - Remove or set an NPC's roambox size and delay | GMMgmt (200) |
+| #rules | subcommand - Manage server rules | GMImpossible (250) |
+| #save | Force your player or player corpse target to be saved to the database | Guide (50) |
+| #scale | Handles npc scaling | GMLeadAdmin (150) |
+| #scribespell | [spellid] - Scribe specified spell in your target's spell book. | GMCoder (180) |
+| #scribespells | [max level] [min level] - Scribe all spells for you or your player target that are usable by them, up to level specified. may freeze client for a few seconds | GMLeadAdmin (150) |
+| #sendzonespawns | Refresh spawn list for all clients in zone | GMLeadAdmin (150) |
+| #sensetrap | Analog for ldon sense trap for the newer clients since we still don't have it working. | Player (0) |
+| #serverinfo | Get CPU, Operating System, and Process Information about the server | GMMgmt (200) |
+| #serverlock | [0|1] - Lock or Unlock the World Server 0 = Unlocked, 1 = Locked | GMLeadAdmin (150) |
+| #serverrules | Read this server's rules | Player (0) |
+| #setaapts | [AA|Group|Raid] [AA Amount] - Set your or your player target's Available AA Points by Type | GMAdmin (100) |
+| #setaaxp | [AA|Group|Raid] [AA Experience] - Set your or your player target's AA Experience by Type | GMAdmin (100) |
+| #setadventurepoints | [Theme] [Points] - Set your or your player target's available Adventure Points by Theme | GMLeadAdmin (150) |
+| #setaltcurrency | [Currency ID] [Amount] - Set your or your target's available Alternate Currency by Currency ID | GMAdmin (100) |
+| #setanim | [Animation ID IDs are 0 to 4] - Set target's appearance to Animation ID | GMMgmt (200) |
+| #setcrystals | [value] - Set your or your player target's available radiant or ebon crystals | GMAdmin (100) |
+| #setendurance | [Endurance] - Set your or your target's Endurance | GMAdmin (100) |
+| #setfaction | [Faction ID] - Sets targeted NPC's faction in the database | GMAreas (170) |
+| #sethp | [Health] - Set your or your target's Health | GMAdmin (100) |
+| #setlanguage | [language ID] [value] - Set your target's language skillnum to value | Guide (50) |
+| #setlsinfo | [Email] [Password] - Set loginserver email address and password if supported by loginserver | Steward (10) |
+| #setmana | [Mana] - Set your or your target's Mana | GMAdmin (100) |
+| #setpass | [Account Name] [Password] - Set local password by account name | GMLeadAdmin (150) |
+| #setpvppoints | [Amount] - Set your or your player target's PVP points | GMAdmin (100) |
+| #setskill | [skillnum] [value] - Set your target's skill skillnum to value | Guide (50) |
+| #setskillall | [Skill Level] - Set all of your or your target's skills to the specified skill level | Guide (50) |
+| #setstartzone | [Zone ID|Zone Short Name] - Sets your or your target's starting zone Use '0' or 'Reset' to allow the player use of /setstartcity | QuestTroupe (80) |
+| #setstat | Sets the stats to a specific value. | Max (255) |
+| #setxp | [value] - Set your or your player target's experience | GMAdmin (100) |
+| #showbonusstats | [item|spell|all] Shows bonus stats for target from items or spells. Shows both by default. | Guide (50) |
+| #showbuffs | List buffs active on your target or you if no target | Guide (50) |
+| #shownumhits | Shows buffs numhits for yourself. | Player (0) |
+| #shownpcgloballoot | Show global loot entries for your target NPC | Guide (50) |
+| #showskills | [Start Skill ID] [All] - Show the values of your or your player target's skills in a popup 50 at a time, use 'all' as second argument to show non-usable skill's values | Guide (50) |
+| #showspellslist | Shows spell list of targeted NPC | GMAdmin (100) |
+| #showstats | Show details about you or your target | Guide (50) |
+| #showzonegloballoot | Show global loot entries for your current zone | Guide (50) |
+| #showzonepoints | Show zone points for current zone | Guide (50) |
+| #shutdown | Shut this zone process down | GMLeadAdmin (150) |
+| #spawn | [name] [race] [level] [material] [hp] [gender] [class] [priweapon] [secweapon] [merchantid] - Spawn an NPC | Steward (10) |
+| #spawneditmass | [Search Criteria] [Edit Option] [Edit Value] [Apply] Mass editing spawn command Apply is optional, 0 = False, 1 = True, default is False | GMLeadAdmin (150) |
+| #spawnfix | Find targeted NPC in database based on its X/Y/heading and update the database to make it spawn at your current location/heading. | GMAreas (170) |
+| #spawnstatus | [All|Disabled|Enabled|Spawn ID] - Show respawn timer status | GMAdmin (100) |
+| #spellinfo | [spellid] - Get detailed info about a spell | Steward (10) |
+| #stun | [duration] - Stuns you or your target for duration | GMAdmin (100) |
+| #summon | [Character Name] - Summons your corpse, NPC, or player target, or by character name if specified | QuestTroupe (80) |
+| #summonburiedplayercorpse | Summons the target's oldest buried corpse, if any exist. | GMAdmin (100) |
+| #summonitem | [itemid] [charges] - Summon an item onto your cursor. Charges are optional. | GMMgmt (200) |
+| #suspend | [name] [days] [reason] - Suspend by character name and for specificed number of days | GMLeadAdmin (150) |
+| #task | subcommand - Task system commands | GMLeadAdmin (150) |
+| #tempname | [newname] - Temporarily renames your target. Leave name blank to restore the original name. | GMAdmin (100) |
+| #petname | [newname] - Temporarily renames your pet. Leave name blank to restore the original name. | GMAdmin (100) |
+| #texture | [Texture] [Helmet Texture] - Change your or your target's texture Helmet Texture defaults to 0 if not used | Steward (10) |
+| #time | [Hour] [Minute] - Set world time to specified time | EQSupport (90) |
+| #timers | Display persistent timers for target | GMMgmt (200) |
+| #timezone | [Hour] [Minutes] - Set timezone Minutes are optional | EQSupport (90) |
+| #title | [Title] - Set your or your player target's title use \-1\ to remove title | Guide (50) |
+| #titlesuffix | [Title Suffix] - Set your or your player target's title suffix use \-1\ to remove title suffix | Guide (50) |
+| #traindisc | [level] - Trains all the disciplines usable by the target, up to level specified. may freeze client for a few seconds | GMLeadAdmin (150) |
+| #trapinfo | Gets infomation about the traps currently spawned in the zone. | QuestTroupe (80) |
+| #tune | Calculate statistical values related to combat. | GMAdmin (100) |
+| #undye | Remove dye from all of your or your target's armor slots | GMAdmin (100) |
+| #undyeme | Remove dye from all of your armor slots | Player (0) |
+| #unfreeze | Unfreeze your target | QuestTroupe (80) |
+| #unmemspell | [Spell ID] - Unmemorize a Spell by ID for you or your target | Guide (50) |
+| #unmemspells |  Unmemorize all spells for you or your target | Guide (50) |
+| #unscribespell | [Spell ID] - Unscribe a spell from your or your target's spell book by Spell ID | GMCoder (180) |
+| #unscribespells | Clear out your or your player target's spell book. | GMCoder (180) |
+| #untraindisc | [Spell ID] - Untrain your or your target's discipline by Spell ID | GMCoder (180) |
+| #untraindiscs | Untrains all disciplines from your target. | GMCoder (180) |
+| #updatechecksum | update client checksum | GMImpossible (250) |
+| #uptime | [zone server id] - Get uptime of worldserver, or zone server if argument provided | Steward (10) |
+| #version | Display current version of EQEmu server | Player (0) |
+| #viewcurrencies | View your or your target's currencies | GMAdmin (100) |
+| #viewnpctype | [NPC ID] - Show stats for an NPC by NPC ID | GMAdmin (100) |
+| #viewpetition | [petition number] - View a petition | ApprenticeGuide (20) |
+| #viewzoneloot | [item id] - Allows you to search a zone's loot for a specific item ID. 0 shows all loot in the zone | QuestTroupe (80) |
+| #wc | [wear slot] [material] - Sends an OP_WearChange for your target | GMMgmt (200) |
+| #weather | [0/1/2/3] Off/Rain/Snow/Manual - Change the weather | QuestTroupe (80) |
+| #who | [search] | ApprenticeGuide (20) |
+| #worldshutdown | Shut down world and all zones | GMMgmt (200) |
+| #wp | [add|delete] [grid_id] [pause] [waypoint_id] [-h] - Add or delete a waypoint by grid ID. -h to use current heading | GMAreas (170) |
+| #wpadd | [pause] [-h] - Add your current location as a waypoint to your NPC target's AI path. -h to use current heading | GMAreas (170) |
+| #wpinfo | Show waypoint info about your NPC target | GMAreas (170) |
+| #worldwide | Performs world-wide GM functions such as cast can be extended for other commands. Use caution | GMImpossible (250) |
+| #xtargets | Show your targets Extended Targets and optionally set how many xtargets they can have. | GMImpossible (250) |
+| #zclip | [Minimum Clip] [Maximum Clip] [Fog Minimum Clip] [Fog Maximum Clip] [Permanent 0 = False, 1 = True] - Change zone clipping | QuestTroupe (80) |
+| #zcolor | [Red] [Green] [Blue] [Permanent 0 = False, 1 = True] - Change sky color | QuestTroupe (80) |
+| #zheader | [Zone ID|Zone Short Name] [Version] - Load a zone header from the database | QuestTroupe (80) |
+| #zone | [Zone ID|Zone Short Name] [X] [Y] [Z] - Teleport to specified Zone by ID or Short Name coordinates are optional | Guide (50) |
+| #zonebootup | [ZoneServerID] [shortname] - Make a zone server boot a specific zone | GMLeadAdmin (150) |
+| #zoneinstance | [Instance ID] [X] [Y] [Z] - Teleport to specified Instance by ID coordinates are optional | Guide (50) |
+| #zonelock | [List|Lock|Unlock] [Zone ID|Zone Short Name] - Set or get lock status of a Zone by ID or Short Name | GMAdmin (100) |
+| #zoneshutdown | [shortname] - Shut down a zone server | GMLeadAdmin (150) |
+| #zonestatus | Show connected zoneservers, synonymous with /servers | GMLeadAdmin (150) |
+| #zopp | Troubleshooting command - Sends a fake item packet to you. No server reference is created. | GMImpossible (250) |
+| #zsafecoords | [X] [Y] [Z] [Heading] [Permanent 0 = False, 1 = True] - Set the current zone's safe coordinates | QuestTroupe (80) |
+| #zsave |  Saves zheader to the database | QuestTroupe (80) |
+| #zsky | [Sky Type] [Permanent 0 = False, 1 = True] - Change zone sky type | QuestTroupe (80) |
+| #zstats | Show info about zone header | QuestTroupe (80) |
+| #zunderworld | [Z] [Permanent 0 = False, 1 = True] - Change zone underworld Z | QuestTroupe (80) |
