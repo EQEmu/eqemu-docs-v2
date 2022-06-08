@@ -13,12 +13,13 @@ To edit rules, you can use the [`#rules set [Name] [Value]`](https://docs.eqemu.
 You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loading-server-data/) to force all zones to reload the new rules. 
 
 !!! warning
-      The `notes` field in the database is set by the server software.  If you adjust the values in the field, they will be overwritten and restored to default values when you update your server binaries.
+     The `notes` field in the database is set by the server software.  If you adjust the values in the field, they will be overwritten and restored to default values when you update your server binaries.
 
 
 !!! info
-      If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
+    If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
+    Last Generated: 2022.06.08
 
 ## AA Rules
 | Rule Name | Default Value | Description |
