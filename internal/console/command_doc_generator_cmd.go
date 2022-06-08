@@ -67,44 +67,25 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 	for _, line := range strings.Split(string(body), "\n") {
 		if strings.Contains(line, "command_add(\"") {
+			currentLine := strings.ReplaceAll(line, "\t", "")
+			currentLine = strings.ReplaceAll(currentLine, "command_add", "")
+			currentLine = strings.ReplaceAll(currentLine, "(", "")
+			currentLine = strings.ReplaceAll(currentLine, ")", "")
+			currentLine = strings.ReplaceAll(currentLine, " ||", "")
+			currentLine = strings.ReplaceAll(currentLine, "\",  \"", "||")
+			currentLine = strings.ReplaceAll(currentLine, "\", \"", "||")
+			currentLine = strings.ReplaceAll(currentLine, ", Account", "||Account")
+			currentLine = strings.ReplaceAll(currentLine, ", command", "||command")
+			currentLine = strings.ReplaceAll(currentLine, "\"", "")
 
-			//pp.Println(line)
+			lineData := strings.Split(currentLine, "||")
 
-			line = strings.ReplaceAll(line, "command_add(", "")
-			line = strings.ReplaceAll(line, "\t", "")
+			statusValue := GetStatusValue(lineData[2])
+			statusName := strings.ReplaceAll(lineData[2], "AccountStatus::", "")
 
-			lineData := strings.Split(line, "\", ")
-
-			// command
-			command := strings.TrimSpace(lineData[0])
-			command = strings.ReplaceAll(command, "\"", "")
-
-			// help
-			help := strings.TrimSpace(lineData[1])
-			help = strings.ReplaceAll(help, "\"", "")
-			help = strings.ReplaceAll(help, "|", "&#124;")
-
-			// account status
-			accountStatus := getStringInBetween(line, "AccountStatus::", ",")
-
-			//pp.Println(lineData)
-			//pp.Println(command)
-			//pp.Println(help)
-			//pp.Println(accountStatus)
-
-			statusValue := GetStatusValue(accountStatus)
-
-			commandData += fmt.Sprintf(
-				"| #%v | %v | %v (%v) |\n",
-				command,
-				help,
-				accountStatus,
-				statusValue,
-			)
+			commandData += fmt.Sprintf("| #%v | %v | %v (%v) |\n", lineData[0], lineData[1], statusName, statusValue)
 		}
 	}
-
-	fmt.Println(commandData)
 
 	err = os.WriteFile("./docs/server/operation/in-game-command-reference.md", []byte(commandData), os.ModePerm)
 	if err != nil {
@@ -114,23 +95,23 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 func GetStatusValue(statusLevel string) int {
 	m := map[string]int{
-		"AccountStatus::Player":          0,
-		"AccountStatus::Steward":         10,
-		"AccountStatus::ApprenticeGuide": 20,
-		"AccountStatus::Guide":           50,
-		"AccountStatus::QuestTroupe":     80,
-		"AccountStatus::SeniorGuide":     81,
-		"AccountStatus::GMTester":        85,
-		"AccountStatus::EQSupport":       90,
-		"AccountStatus::GMStaff":         95,
-		"AccountStatus::GMAdmin":         100,
-		"AccountStatus::GMLeadAdmin":     150,
-		"AccountStatus::QuestMaster":     160,
-		"AccountStatus::GMAreas":         170,
-		"AccountStatus::GMCoder":         180,
-		"AccountStatus::GMMgmt":          200,
-		"AccountStatus::GMImpossible":    250,
-		"AccountStatus::Max":             255,
+		"Player":          0,
+		"Steward":         10,
+		"ApprenticeGuide": 20,
+		"Guide":           50,
+		"QuestTroupe":     80,
+		"SeniorGuide":     81,
+		"GMTester":        85,
+		"EQSupport":       90,
+		"GMStaff":         95,
+		"GMAdmin":         100,
+		"GMLeadAdmin":     150,
+		"QuestMaster":     160,
+		"GMAreas":         170,
+		"GMCoder":         180,
+		"GMMgmt":          200,
+		"GMImpossible":    250,
+		"Max":             255,
 	}
 
 	if _, ok := m[statusLevel]; !ok {
