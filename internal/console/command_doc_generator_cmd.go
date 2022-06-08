@@ -63,7 +63,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 	commandData += "| Command | Description | Status Level |\n"
 
-	commandData = fmt.Sprintf("%v| :--- | :--- |\n", commandData)
+	commandData = fmt.Sprintf("%v| :--- | :--- | :--- |\n", commandData)
 
 	for _, line := range strings.Split(string(body), "\n") {
 		if strings.Contains(line, "command_add(\"") {
@@ -80,7 +80,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 			lineData := strings.Split(currentLine, "||")
 
-			statusValue := GetstatusValue(lineData[2])
+			statusValue := GetStatusValue(lineData[2])
 			statusName := strings.ReplaceAll(lineData[2], "AccountStatus::", "")
 
 			commandData += fmt.Sprintf("| #%v | %v | %v (%v) |\n", lineData[0], lineData[1], statusName, statusValue)
@@ -93,7 +93,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 	}
 }
 
-func GetstatusValue(StatusLevel string) int {
+func GetStatusValue(statusLevel string) int {
 	m := map[string]int{
 		"AccountStatus::Player":          0,
 		"AccountStatus::Steward":         10,
@@ -114,5 +114,9 @@ func GetstatusValue(StatusLevel string) int {
 		"AccountStatus::Max":             255,
 	}
 
-	return m[StatusLevel]
+	if _, ok := m[statusLevel]; !ok {
+		return 0
+	}
+
+	return m[statusLevel]
 }
