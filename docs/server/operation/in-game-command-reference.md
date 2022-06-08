@@ -4,7 +4,6 @@
 
     Last Generated: 2022.06.08
 
-{{command_data}}
 
 | Command | Description | Status Level |
 | :--- | :--- |
