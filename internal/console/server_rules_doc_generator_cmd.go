@@ -76,7 +76,7 @@ func (c *ServerRulesDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 			ruleType := strings.ReplaceAll(currentServerRuleData[0], "(", "")
 			ruleName := strings.ReplaceAll(currentServerRuleData[1], " ", "")
 			ruleName = fmt.Sprintf("%v:%v", ruleType, ruleName)
-			ruleDefaultValue := currentServerRuleData[2]
+			ruleDefaultValue := strings.ReplaceAll(currentServerRuleData[2], " ", "")
 			ruleDesc := strings.ReplaceAll(lineData[1], "\")", "")
 			ruleDesc = strings.ReplaceAll(ruleDesc, "|", "&#124;")
 
