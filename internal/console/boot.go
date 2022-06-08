@@ -12,6 +12,7 @@ func Run() error {
 		NewSyncDbSchemaConfigFromFilesCommand().Command(),
 		NewQuestApiDocGeneratorCommand().Command(),
 		NewDbGenerateDocsCommand().Command(),
+		NewGMCommandsDocsGenerateCommand().Command(),
 	}
 
 	cmd.AddCommand(commands...)
