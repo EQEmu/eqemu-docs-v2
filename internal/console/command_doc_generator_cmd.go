@@ -67,25 +67,44 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 	for _, line := range strings.Split(string(body), "\n") {
 		if strings.Contains(line, "command_add(\"") {
-			currentLine := strings.ReplaceAll(line, "\t", "")
-			currentLine = strings.ReplaceAll(currentLine, "command_add", "")
-			currentLine = strings.ReplaceAll(currentLine, "(", "")
-			currentLine = strings.ReplaceAll(currentLine, ")", "")
-			currentLine = strings.ReplaceAll(currentLine, " ||", "")
-			currentLine = strings.ReplaceAll(currentLine, "\",  \"", "||")
-			currentLine = strings.ReplaceAll(currentLine, "\", \"", "||")
-			currentLine = strings.ReplaceAll(currentLine, ", Account", "||Account")
-			currentLine = strings.ReplaceAll(currentLine, ", command", "||command")
-			currentLine = strings.ReplaceAll(currentLine, "\"", "")
 
-			lineData := strings.Split(currentLine, "||")
+			//pp.Println(line)
 
-			statusValue := GetStatusValue(lineData[2])
-			statusName := strings.ReplaceAll(lineData[2], "AccountStatus::", "")
+			line = strings.ReplaceAll(line, "command_add(", "")
+			line = strings.ReplaceAll(line, "\t", "")
 
-			commandData += fmt.Sprintf("| #%v | %v | %v (%v) |\n", lineData[0], lineData[1], statusName, statusValue)
+			lineData := strings.Split(line, "\", ")
+
+			// command
+			command := strings.TrimSpace(lineData[0])
+			command = strings.ReplaceAll(command, "\"", "")
+
+			// help
+			help := strings.TrimSpace(lineData[1])
+			help = strings.ReplaceAll(help, "\"", "")
+			help = strings.ReplaceAll(help, "|", "&#124;")
+
+			// account status
+			accountStatus := getStringInBetween(line, "AccountStatus::", ",")
+
+			//pp.Println(lineData)
+			//pp.Println(command)
+			//pp.Println(help)
+			//pp.Println(accountStatus)
+
+			statusValue := GetStatusValue(accountStatus)
+
+			commandData += fmt.Sprintf(
+				"| #%v | %v | %v (%v) |\n",
+				command,
+				help,
+				accountStatus,
+				statusValue,
+			)
 		}
 	}
+
+	fmt.Println(commandData)
 
 	err = os.WriteFile("./docs/server/operation/in-game-command-reference.md", []byte(commandData), os.ModePerm)
 	if err != nil {
