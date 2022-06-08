@@ -6,7 +6,7 @@
 
 
 | Command | Description | Status Level |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | #acceptrules | [acceptrules] - Accept the EQEmu Agreement | Player (0) |
 | #advnpcspawn | [maketype|makegroup|addgroupentry|addgroupspawn][removegroupspawn|movespawn|editgroupbox|cleargroupbox] | GMLeadAdmin (150) |
 | #aggro | [Distance] [-v] - Display aggro information for all mobs 'Distance' distance from your target. -v is verbose Faction Information | QuestTroupe (80) |
