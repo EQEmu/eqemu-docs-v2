@@ -759,6 +759,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:UseSpellImpliedTargeting |  false | Replicates EQ2-style targeting behavior for spells. Spells will 'pass through' inappropriate targets to target's target if it is appropriate. |
 | Spells:BuffsFadeOnDeath |  true | Disable to keep buffs from fading on death |
 | Spells:IllusionsAlwaysPersist |  false | Allows Illusions to persist beyond death and zoning always. |
+| Spells:UseItemCastMessage |  false | Enable to use the \"item begins to glow\" messages when casting from an item. |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
