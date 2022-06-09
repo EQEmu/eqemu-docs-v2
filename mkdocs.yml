@@ -154,6 +154,7 @@ nav:
           - Bag Types: server/inventory/bag-types.md
       - Logging System:
           - server/logging-system/README.md
+          - Discord Logging Integration: server/logging-system/discord-logging-integration.md
           - Logging Categories: server/logging-system/logging-categories.md
           - Logging for Developers: server/logging-system/logging-for-developers.md
           - Logging Packets: server/logging-system/logging-packets.md
