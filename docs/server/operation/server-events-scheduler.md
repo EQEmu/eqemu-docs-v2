@@ -1,14 +1,18 @@
-The server has currently two process driven schedulers
+## Schedulers
 
-* World
+The server currently has two process driven schedulers.
+
+### World
   * Broadcast Messages (broadcast) (Stateless)
   * Reload World (reload_world) (Stateless)
-* Zone
+### Zone
   * Rule Value Change (rule_change) (Stateful)
   * Content Flag Change (content_flag_change) (Stateful)
   * Hotzone Activate (hot_zone_activate) (Stateful)
 
-Zone maintains state, world does not in the current implementation. For current every current zone event activation, there is an event deactivation event which undoes the state change.
+### Notes
+
+Zone maintains state, world does not in the current implementation. For every current zone event activation, there is an event deactivation event which undoes the state change.
 
 World does not maintain state, it is used for single event triggers and supports cron expressions since the events can be kicked off on a routine basis
 
@@ -63,11 +67,11 @@ struct ServerScheduledEvents {
 
 The way the scheduling schema works is by start end end times and vary slightly in triggering functionality depending on whether the event is stateless or stateful
 
-**Repeat Events (Stateless)**
+### Repeat Events (Stateless)
 
 Stateless events can be triggered repeatedly such as a broadcast event by using a `cron_expression`. You can also schedule a one time event by setting the start time and end time one minute apart
 
-**Repeat Events (Stateful)**
+### Repeat Events (Stateful)
 
 Events can start and end on intervals but you need to only use the unit of time (for example days) and let everything else be `0` for columns. A `0` value will imply the current time when the scheduler tics
 
@@ -109,11 +113,11 @@ select * from server_scheduled_events;
 +----+------------------------------+---------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+-----------+-------------+------------+------------+----------+---------+-----------+----------+-----------------+------------+------------+
 ```
 
-**Example of Content Flags being set for Halloween**
+### Example of Content Flags being set for Halloween
 
 ![image](https://user-images.githubusercontent.com/3319450/108163340-7ab46900-70b4-11eb-93c3-308a88e2f9c0.png)
 
-**Example of Rule Event Activation (Detail Logs)**
+### Example of Rule Event Activation (Detail Logs)
 
 ```
 [Zone] [Scheduler] Activating Event [Experience Multiplier] scheduled rule change, setting rule [Character:FinalExpMultiplier] to [10]
@@ -128,7 +132,7 @@ When event deactivates
 [Zone] [Scheduler] Deactivating event [Loot Multiplier] resetting rules to normal
 ```
 
-**Example of Broadcasts Being sent from World**
+### Example of Broadcasts Being sent from World
 
 Both the cron expression event and regular event from the table above shown in the image below
 
