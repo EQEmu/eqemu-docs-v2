@@ -1,7 +1,7 @@
 # spells_new
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -27,7 +27,7 @@
 | id | int | Unique Spell Identifier |
 | name | varchar | Name |
 | player_1 | varchar | Player_1 |
-| teleport_zone | varchar | The zone you are teleporting to or the [NPC Name](../../schema/npcs/npc_types.md) you want to spawn. |
+| teleport_zone | varchar | The zone you are teleporting to or the [NPC Name](npc_types.md) you want to spawn. |
 | you_cast | varchar | The message sent to others when you cast the spell. |
 | other_casts | varchar | The message seen when someone around you casts the spell. |
 | cast_on_you | varchar | The message received when the spell is cast on you. |
@@ -82,10 +82,10 @@
 | max12 | int | Max 12 |
 | icon | int | Icon |
 | memicon | int | Memmed Icon |
-| components1 | int | [Item Identifier](../../schema/items/items.md) |
-| components2 | int | [Item Identifier](../../schema/items/items.md) |
-| components3 | int | [Item Identifier](../../schema/items/items.md) |
-| components4 | int | [Item Identifier](../../schema/items/items.md) |
+| components1 | int | [Item Identifier](items.md) |
+| components2 | int | [Item Identifier](items.md) |
+| components3 | int | [Item Identifier](items.md) |
+| components4 | int | [Item Identifier](items.md) |
 | component_counts1 | int | Component Count 1 |
 | component_counts2 | int | Component Count 2 |
 | component_counts3 | int | Component Count 3 |
@@ -179,17 +179,17 @@
 | field152 | int | Unknown |
 | field153 | int | Unknown |
 | short_buff_box | int | Short Buff Box: 0 = False, 1 = True |
-| descnum | int | [Description Number](../../schema/client-files/db_str.md) |
-| typedescnum | int | [Type Description Number](../../schema/client-files/db_str.md) |
-| effectdescnum | int | [Effect Description Number](../../schema/client-files/db_str.md) |
-| effectdescnum2 | int | [Effect Description Number 2](../../schema/client-files/db_str.md) |
+| descnum | int | [Description Number](db_str.md) |
+| typedescnum | int | [Type Description Number](db_str.md) |
+| effectdescnum | int | [Effect Description Number](db_str.md) |
+| effectdescnum2 | int | [Effect Description Number 2](db_str.md) |
 | npc_no_los | int | NPC No Line of Sight: 0 = False, 1 = True |
 | field160 | int | Unknown |
 | reflectable | int | Reflectable: 0 = False, 1 = True |
 | bonushate | int | Bonus Hate |
 | field163 | int | Unknown |
 | field164 | int | Unknown |
-| ldon_trap | int | [LDoN Trap Identifier](../../schema/traps/traps.md) |
+| ldon_trap | int | [LDoN Trap Identifier](traps.md) |
 | EndurCost | int | Endurance Cost |
 | EndurTimerIndex | int | Endurance Timer |
 | IsDiscipline | int | Is Discipline: 0 = False, 1 = True |
@@ -205,8 +205,8 @@
 | pvpresistcalc | int | PVP Resist Calc |
 | pvpresistcap | int | PVP Resist Cap |
 | spell_category | int | [Spell Category](../../../../server/spells/spell-groups) |
-| pvp_duration | int |  |
-| pvp_duration_cap | int |  |
+| pvp_duration | int | PVP Duration |
+| pvp_duration_cap | int | PVP Duration Cap |
 | pcnpc_only_flag | int | PC/NPC Only Flag: 0 = Not Applicable, 1 = PCs and Mercs, 2 = NPCs |
 | cast_not_standing | int | Cast Not Standing: 0 = False, 1 = True |
 | can_mgb | int | Can Mass Group Buff: 0 = False, 1 = True |

@@ -1,7 +1,7 @@
 # zone_points
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -24,11 +24,11 @@
 | target_instance | int | Target Instance Identifier |
 | buffer | float | Zone Point Buffer |
 | client_version_mask | int | [Client Version Mask](../../../../server/player/client-version-bitmasks) |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
-| is_virtual | tinyint |  |
-| height | int |  |
-| width | int |  |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
+| is_virtual | tinyint | Is Virtual |
+| height | int | Height |
+| width | int | Width |
 

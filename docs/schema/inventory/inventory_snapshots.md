@@ -1,16 +1,16 @@
 # inventory_snapshots
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | time_index | int | Inventory Snapshot Time Identifier |
-| charid | int | [Character Identifier](../../schema/characters/character_data.md) |
+| charid | int | [Character Identifier](character_data.md) |
 | slotid | mediumint | [Slot Identifier](../../../../server/inventory/inventory-slots) |
-| itemid | int | [Item Identifier](../../schema/items/items.md) |
+| itemid | int | [Item Identifier](items.md) |
 | charges | smallint | Charges |
 | color | int | Color |
 | augslot1 | mediumint | Augment Slot 1 |

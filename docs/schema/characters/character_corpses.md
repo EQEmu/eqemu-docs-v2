@@ -1,7 +1,7 @@
 # character_corpses
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -17,7 +17,7 @@
 | z | float | Z Coordinate |
 | heading | float | Heading Coordinate |
 | time_of_death | datetime | Time of Death |
-| guild_consent_id | int |  |
+| guild_consent_id | int | Guild Consent Identifier |
 | is_rezzed | tinyint | Is Rezzed: 0 = False, 1 = True |
 | is_buried | tinyint | Is Buried: 0 = False, 1 = True |
 | was_at_graveyard | tinyint | Was At Graveyard: 0 = False, 1 = True |

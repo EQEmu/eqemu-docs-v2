@@ -1,7 +1,7 @@
 # spell_globals
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -9,6 +9,6 @@
 | :--- | :--- | :--- |
 | spellid | int | [Unique Spell Identifier](spells_new.md) |
 | spell_name | varchar | [Spell Name](spells_new.md) |
-| qglobal | varchar | [Quest Global Name](../../schema/data-storage/quest_globals.md) |
+| qglobal | varchar | [Quest Global Name](quest_globals.md) |
 | value | varchar | Quest Global Value |
 

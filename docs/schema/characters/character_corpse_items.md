@@ -1,7 +1,7 @@
 # character_corpse_items
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | corpse_id | int | [Corpse Identifier](character_corpses.md) |
 | equip_slot | int | Equipment Slot |
-| item_id | int | [Item Identifier](../../schema/items/items.md) |
+| item_id | int | [Item Identifier](items.md) |
 | charges | int | Item Charges |
 | aug_1 | int | Item Augment Slot 1 |
 | aug_2 | int | Item Augment Slot 2 |

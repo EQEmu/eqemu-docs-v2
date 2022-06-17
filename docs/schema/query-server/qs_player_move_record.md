@@ -1,7 +1,7 @@
 # qs_player_move_record
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -9,10 +9,10 @@
 | :--- | :--- | :--- |
 | move_id | int | Unique Move Identifier |
 | time | timestamp | Time Timestamp |
-| char_id | int | [Character Identifier](../../schema/characters/character_data.md) |
+| char_id | int | [Character Identifier](character_data.md) |
 | from_slot | mediumint | [From Slot Identifier](../../../../server/inventory/inventory-slots) |
 | to_slot | mediumint | [To Slot Identifier](../../../../server/inventory/inventory-slots) |
 | stack_size | mediumint | Stack Size |
-| char_items | mediumint | [Character Item Identifier](../../schema/items/items.md) |
+| char_items | mediumint | [Character Item Identifier](items.md) |
 | postaction | tinyint | Post Action |
 

@@ -1,13 +1,13 @@
 # doors
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIHZhcmNoYXIgc2hvcnRfbmFtZVxuICAgICAgICBpbnQgem9uZWlkbnVtYmVyXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZG9vcnMge1xuICAgICAgICBpbnQga2V5aXRlbVxuICAgICAgICB2YXJjaGFyIHpvbmVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgem9uZSB7XG4gICAgICAgICB6b25laWR1bnVtYmVyXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgfVxuICAgIGRvb3JzIHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBkb29ycyB8fC0tb3sgem9uZSA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
 
 ## Relationships
 
@@ -31,9 +31,9 @@
 | pos_z | float | Door Z Coordinate |
 | heading | float | Door Heading Coordinate |
 | opentype | smallint | [Door Open Type](../../../../server/zones/door-open-types) |
-| guild | smallint | [Guild Identifier](../../schema/guilds/guilds.md) |
+| guild | smallint | [Guild Identifier](guilds.md) |
 | lockpick | smallint | Lockpicking Skill Required: -1 = Unpickable |
-| keyitem | int | [Item Identifier](../../schema/items/items.md) |
+| keyitem | int | [Item Identifier](items.md) |
 | nokeyring | tinyint | No Key Ring: 0 = False, 1 = True |
 | triggerdoor | smallint | Trigger Door: 0 For Current Door or use a Unique Door Identifier |
 | triggertype | smallint | Trigger Type: 1 = Open a Type 255 door, 255 = Will Not Open |
@@ -41,7 +41,7 @@
 | doorisopen | smallint | Door Is Open: 0 = False, 1 = True |
 | door_param | int | Door Parameter |
 | dest_zone | varchar | [Zone Short Name](../../../../server/zones/zone-list) |
-| dest_instance | int | [Destination Instance](../../schema/instances/instance_list.md) |
+| dest_instance | int | [Destination Instance](instance_list.md) |
 | dest_x | float | Destination X Coordinate |
 | dest_y | float | Destination Y Coordinate |
 | dest_z | float | Destination Z Coordinate |
@@ -52,8 +52,8 @@
 | buffer | float | Unused |
 | client_version_mask | int | [Client Version Mask](../../../../server/player/client-version-bitmasks) |
 | is_ldon_door | smallint | Is LDoN Door: 0 = False, 1 = True |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| min_expansion | tinyint | Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

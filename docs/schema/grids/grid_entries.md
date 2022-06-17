@@ -1,7 +1,7 @@
 # grid_entries
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -15,5 +15,5 @@
 | z | float | Z Coordinate |
 | heading | float | Heading Coordinate |
 | pause | int | Pause in Seconds |
-| centerpoint | tinyint |  |
+| centerpoint | tinyint | Center Point: 0 = False, 1 = True |
 

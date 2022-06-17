@@ -1,7 +1,7 @@
 # guilds
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -15,7 +15,7 @@
 | :--- | :--- | :--- | :--- |
 | Has-Many | id | [guild_bank](../../schema/guilds/guild_bank.md) | guildid |
 | Has-Many | id | [guild_ranks](../../schema/guilds/guild_ranks.md) | guild_id |
-| Has-Many | id | [guild_members](../../schema/guilds/guild_members.md) | guild_id |
+| Has-Many | id | [guild_members](../../schema/views/vw_guild_members.md) | guild_id |
 
 
 ## Schema
@@ -24,11 +24,11 @@
 | :--- | :--- | :--- |
 | id | int | Unique Guild Identifier |
 | name | varchar | Name |
-| leader | int | [Character Identifier](../../schema/characters/character_data.md) |
+| leader | int | [Character Identifier](character_data.md) |
 | minstatus | smallint | [Minimum Status](../../../../server/player/status-levels) |
 | motd | text | Message of the Day |
 | tribute | int | Tribute |
-| motd_setter | varchar | [Character Identifier](../../schema/characters/character_data.md) |
+| motd_setter | varchar | [Character Identifier](character_data.md) |
 | channel | varchar | Channel |
 | url | varchar | Website URL |
 

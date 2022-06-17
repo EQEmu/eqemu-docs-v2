@@ -1,13 +1,13 @@
 # adventure_stats
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| player_id | int | [Character Identifier](../../schema/characters/character_data.md) |
+| player_id | int | [Character Identifier](character_data.md) |
 | guk_wins | mediumint | Deepest Guk Wins |
 | mir_wins | mediumint | Miragul's Menagerie Wins |
 | mmc_wins | mediumint | Mistmoore Catacombs Wins |

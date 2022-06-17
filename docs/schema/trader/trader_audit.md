@@ -1,7 +1,7 @@
 # trader_audit
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -10,7 +10,7 @@
 | time | datetime | Time |
 | seller | varchar | Seller |
 | buyer | varchar | Buyer |
-| itemname | varchar | [Item Name](../../schema/items/items.md) |
+| itemname | varchar | [Item Name](items.md) |
 | quantity | int | Quantity |
 | totalcost | int | Total Cost |
 | trantype | tinyint | Transaction Type |

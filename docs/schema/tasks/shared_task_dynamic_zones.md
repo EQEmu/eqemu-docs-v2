@@ -1,12 +1,12 @@
 # shared_task_dynamic_zones
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| shared_task_id | bigint |  |
-| dynamic_zone_id | int |  |
+| shared_task_id | bigint | [Shared Task Identifier](shared_tasks.md) |
+| dynamic_zone_id | int | [Dynamic Zone Identifier](dynamic_zones.md) |
 

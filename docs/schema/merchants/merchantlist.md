@@ -1,7 +1,7 @@
 # merchantlist
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -22,14 +22,17 @@
 | :--- | :--- | :--- |
 | merchantid | int | Merchant Identifier |
 | slot | int | Slot |
-| item | int | [Item Identifier](../../schema/items/items.md) |
+| item | int | [Item Identifier](items.md) |
 | faction_required | smallint | Faction Required |
 | level_required | tinyint | Level Required |
-| alt_currency_cost | smallint | [Alternate Currency Cost](../../schema/alternate-currency/alternate_currency.md) |
+| alt_currency_cost | smallint | [Alternate Currency Cost](alternate_currency.md) |
 | classes_required | int | [Classes Required](../../../../server/player/class-list) |
 | probability | int | Probability: 0 = Never, 100 = Always |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| bucket_name | varchar | Bucket Name |
+| bucket_value | varchar | Bucket Value |
+| bucket_comparison | tinyint | [Bucket Comparison Type](../../../../server/scripting/merchant-data-buckets) |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

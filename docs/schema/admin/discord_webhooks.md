@@ -1,15 +1,15 @@
 # discord_webhooks
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| webhook_name | varchar |  |
-| webhook_url | varchar |  |
-| created_at | datetime |  |
-| deleted_at | datetime |  |
+| id | int | Unique Webhook Identifier |
+| webhook_name | varchar | Webhook Name |
+| webhook_url | varchar | Webhook URL |
+| created_at | datetime | Created At |
+| deleted_at | datetime | Deleted At |
 

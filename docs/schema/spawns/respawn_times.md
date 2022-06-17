@@ -1,7 +1,7 @@
 # respawn_times
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -10,5 +10,5 @@
 | id | int | Unique Respawn Time Identifier |
 | start | int | Start UNIX Timestamp |
 | duration | int | Duration in Seconds |
-| instance_id | smallint | [Instance Identifier](../../schema/instances/instance_list.md) |
+| instance_id | smallint | [Instance Identifier](instance_list.md) |
 

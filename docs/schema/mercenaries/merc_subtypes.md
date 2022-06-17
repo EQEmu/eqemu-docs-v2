@@ -1,6 +1,28 @@
 # merc_subtypes
 
+!!! info
+	This page was last generated 2022.06.17
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zdWJ0eXBlcyB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX2ludmVudG9yeSB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX3RlbXBsYXRlcyB7XG4gICAgICAgIHRpbnlpbnQgbmFtZV90eXBlX2lkXG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfbnBjX3R5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190ZW1wbGF0ZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfc3VidHlwZXMgfHwtLW97IG1lcmNfaW52ZW50b3J5IDogSGFzLU1hbnlcbiAgICBtZXJjX3N1YnR5cGVzIHx8LS1veyBtZXJjX3RlbXBsYXRlcyA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zdWJ0eXBlcyB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX2ludmVudG9yeSB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX3RlbXBsYXRlcyB7XG4gICAgICAgIHRpbnlpbnQgbmFtZV90eXBlX2lkXG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfbnBjX3R5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190ZW1wbGF0ZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfc3VidHlwZXMgfHwtLW97IG1lcmNfaW52ZW50b3J5IDogSGFzLU1hbnlcbiAgICBtZXJjX3N1YnR5cGVzIHx8LS1veyBtZXJjX3RlbXBsYXRlcyA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zdWJ0eXBlcyB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX2ludmVudG9yeSB7XG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfc3VidHlwZV9pZFxuICAgIH1cbiAgICBtZXJjX3RlbXBsYXRlcyB7XG4gICAgICAgIHRpbnlpbnQgbmFtZV90eXBlX2lkXG4gICAgICAgIGludHVuc2lnbmVkIG1lcmNfbnBjX3R5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190ZW1wbGF0ZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY190eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfc3VidHlwZXMgfHwtLW97IG1lcmNfaW52ZW50b3J5IDogSGFzLU1hbnlcbiAgICBtZXJjX3N1YnR5cGVzIHx8LS1veyBtZXJjX3RlbXBsYXRlcyA6IEhhcy1NYW55XG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| Has-Many | merc_subtype_id | [merc_inventory](../../schema/mercenaries/merc_inventory.md) | merc_subtype_id |
+| Has-Many | merc_subtype_id | [merc_templates](../../schema/mercenaries/merc_templates.md) | merc_subtype_id |
+
+
+## Schema
+
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
+| merc_subtype_id | int | Unique Mercenary Subtype Identifier |
+| class_id | int | [Class Identifier](../../../../categories/player/class-list) |
+| tier_id | tinyint | Tier Identifier |
 | confidence_id | tinyint | Confidence Identifier |
 

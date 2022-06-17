@@ -1,7 +1,7 @@
 # bugs
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -19,5 +19,5 @@
 | target | varchar | Target when reported |
 | bug | varchar | Bug reported |
 | date | date | Date when reported |
-| status | tinyint | [Account Status of Reporter]([../../../../server/player/status-levels](../../../../server/player/status-levels) |
+| status | tinyint | [Account Status of Reporter](../../../../server/player/status-levels) |
 

@@ -1,7 +1,7 @@
 # account
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -30,7 +30,7 @@
 | sharedplat | int | Platinum in Shared Bank. |
 | password | varchar | Private loginserver password. |
 | status | int | [Status](../../../../server/player/status-levels) |
-| ls_id | varchar |  |
+| ls_id | varchar | Loginserver ID |
 | lsaccount_id | int | Loginserver Account Identifier |
 | gmspeed | tinyint | GM Speed: 0 = Disabled, 1 = Enabled |
 | revoked | tinyint | OOC Revoked: 0 = False, 1 = True |
@@ -43,7 +43,7 @@
 | expansion | tinyint | Expansion |
 | ban_reason | text | Ban Reason |
 | suspend_reason | text | Suspension Reason |
-| crc_eqgame | text |  |
-| crc_skillcaps | text |  |
-| crc_basedata | text |  |
+| crc_eqgame | text | CRC for EQGame.exe |
+| crc_skillcaps | text | CRC for SkillCaps file |
+| crc_basedata | text | CRC for BaseData file |
 

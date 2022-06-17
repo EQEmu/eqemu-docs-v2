@@ -1,7 +1,7 @@
 # bot_stances
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 

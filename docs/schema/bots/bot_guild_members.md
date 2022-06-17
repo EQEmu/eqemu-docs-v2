@@ -1,14 +1,14 @@
 # bot_guild_members
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | bot_id | int | [Bot Identifier](bot_data.md) |
-| guild_id | mediumint | [Guild Identifier](../../../schema/categories/guilds/guilds.md) |
+| guild_id | mediumint | [Guild Identifier](guilds.md) |
 | rank | tinyint | [Guild Rank](../../../../categories/player/guild-ranks) |
 | tribute_enable | tinyint | Tribute Enabled: 0 = False, 1= True |
 | total_tribute | int | Total Tribute |

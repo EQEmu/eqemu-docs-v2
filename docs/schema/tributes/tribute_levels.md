@@ -1,7 +1,7 @@
 # tribute_levels
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -10,5 +10,5 @@
 | tribute_id | int | [Unique Tribute Identifier](tributes.md) |
 | level | int | Level |
 | cost | int | Cost |
-| item_id | int | [Item Identifier](../../schema/items/items.md) |
+| item_id | int | [Item Identifier](items.md) |
 

@@ -1,7 +1,7 @@
 # tradeskill_recipe_entries
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -22,7 +22,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Tradeskill Recipe Entry Identifier |
 | recipe_id | int | [Unique Tradeskill Recipe Identifier](tradeskill_recipe.md) |
-| item_id | int | [Item Identifier](../../schema/items/items.md) |
+| item_id | int | [Item Identifier](items.md) |
 | successcount | tinyint | Success Count |
 | failcount | tinyint | Fail Count |
 | componentcount | tinyint | Component Count |

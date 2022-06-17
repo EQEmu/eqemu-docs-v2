@@ -1,7 +1,7 @@
 # aa_ranks
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -14,7 +14,7 @@
 | desc_sid | int | Description SID |
 | cost | int | Cost in AA Points |
 | level_req | int | Level Required |
-| spell | int | [Spell Identifier](../../schema/spells/spells_new.md) |
+| spell | int | [Spell Identifier](spells_new.md) |
 | spell_type | int | [Spell Type](../../../../server/spells/spell-types) |
 | recast_time | int | Recast Timer |
 | expansion | int | [Expansion Identifier](../../../../server/operation/expansion-list) |

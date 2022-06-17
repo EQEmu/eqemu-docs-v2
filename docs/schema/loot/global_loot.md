@@ -1,7 +1,7 @@
 # global_loot
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -32,9 +32,9 @@
 | class | mediumtext | [Class](../../../../server/player/class-list), multiple classes supported if  |
 | bodytype | mediumtext | [Body Type](../../../../server/npc/body-types), multiple body types supported if  |
 | zone | mediumtext | [Zone Short Name](../../../../server/zones/zone-list),, multiple zones supported if  |
-| hot_zone | tinyint |  |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| hot_zone | tinyint | Hot Zone: 0 = False, 1 = True |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

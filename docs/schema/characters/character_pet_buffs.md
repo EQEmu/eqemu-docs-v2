@@ -1,7 +1,7 @@
 # character_pet_buffs
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -10,7 +10,7 @@
 | char_id | int | [Character Identifier](character_data.md) |
 | pet | int | Pet |
 | slot | int | Slot |
-| spell_id | int | [Spell Identifier](../../schema/spells/spells_new.md) |
+| spell_id | int | [Spell Identifier](spells_new.md) |
 | caster_level | tinyint | Caster Level |
 | castername | varchar | Caster Name |
 | ticsremaining | int | Tics Remaining |

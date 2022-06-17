@@ -1,19 +1,19 @@
 # character_instance_safereturns
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| character_id | int |  |
-| instance_zone_id | int |  |
-| instance_id | int |  |
-| safe_zone_id | int |  |
-| safe_x | float |  |
-| safe_y | float |  |
-| safe_z | float |  |
-| safe_heading | float |  |
+| id | int | Safe Return Identifier |
+| character_id | int | [Character Identifier](character_data.md) |
+| instance_zone_id | int | [Instance Zone Identifier](../../../../server/zones/zone-list) |
+| instance_id | int | [Instance Identifier](instance_list.md) |
+| safe_zone_id | int | [Save Zone Identifier](../../../../server/zones/zone-list) |
+| safe_x | float | Safe X Coordinate |
+| safe_y | float | Safe Y Coordinate |
+| safe_z | float | Safe Z Coordinate |
+| safe_heading | float | Safe Heading Coordinate |
 

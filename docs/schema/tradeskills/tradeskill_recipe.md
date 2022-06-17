@@ -1,7 +1,7 @@
 # tradeskill_recipe
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -18,8 +18,8 @@
 | must_learn | tinyint | Must Learn: 0 = False, 1 = True |
 | quest | tinyint | Quest Controlled: 0 = False, 1 = True |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

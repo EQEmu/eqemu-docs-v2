@@ -1,13 +1,13 @@
 # raid_leaders
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| gid | int | [Group Identifier](../../schema/groups/group_id.md) |
+| gid | int | [Group Identifier](group_id.md) |
 | rid | int | [Raid Identifier](raid_details.md) |
 | marknpc | varchar | Mark NPC: 0 = False, 1 = True |
 | maintank | varchar | Main Tank: 0 = False, 1 = True |

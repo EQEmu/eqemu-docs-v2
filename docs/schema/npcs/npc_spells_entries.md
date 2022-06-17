@@ -1,7 +1,7 @@
 # npc_spells_entries
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique NPC Spell Entry Identifier |
 | npc_spells_id | int | [Unique NPC Spell Set Identifier](npc_spells.md) |
-| spellid | smallint | [Spell Identifier](../../schema/spells/spells_new.md) |
+| spellid | smallint | [Spell Identifier](spells_new.md) |
 | type | int | [Spell Type Bitmask](../../../../server/spells/spell-types) |
 | minlevel | tinyint | Minimum Level |
 | maxlevel | tinyint | Maximum Level |

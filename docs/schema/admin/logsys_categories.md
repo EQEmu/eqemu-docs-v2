@@ -1,7 +1,7 @@
 # logsys_categories
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -12,6 +12,6 @@
 | log_to_console | smallint | Log to Console: 0 = False, 1 = True |
 | log_to_file | smallint | Log to File: 0 = False, 1 = True |
 | log_to_gmsay | smallint | Log to GMSay: 0 = False, 1 = True |
-| log_to_discord | smallint |  |
-| discord_webhook_id | int |  |
+| log_to_discord | smallint | Log To Discord: 0 = False, 1 = True |
+| discord_webhook_id | int | Unique Webhook Identifier |
 

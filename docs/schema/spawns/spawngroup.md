@@ -1,7 +1,7 @@
 # spawngroup
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
@@ -32,5 +32,5 @@
 | mindelay | int | Minimum Delay |
 | despawn | tinyint | [Despawn Type](../../../../server/npc/spawns/npc-despawn-types) |
 | despawn_timer | int | Despawn Timer in Seconds |
-| wp_spawns | tinyint |  |
+| wp_spawns | tinyint | Waypoint Spawns: 0 = False, 1 = True |
 

@@ -1,7 +1,7 @@
 # aa_ability
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -20,5 +20,5 @@
 | grant_only | tinyint | Grant Only Flag: 0 = No, 1 = Yes |
 | first_rank_id | int | First Rank Identifier |
 | enabled | tinyint | Enabled: 0 = No, 1 = Yes |
-| reset_on_death | tinyint |  |
+| reset_on_death | tinyint | Reset on Death: 0 = False, 1 = True |
 

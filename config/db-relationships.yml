@@ -109,6 +109,30 @@ loottable_entries:
   - 1-* lootdrop_id->lootdrop_entries:lootdrop_id
 merchantlist:
   - 1-1 item->items:id
+merc_merchant_templates:
+  - 1-* merc_merchant_template_id->merc_merchant_entries:merc_merchant_template_id
+  - 1-* merc_merchant_template_id->merc_merchant_template_entries:merc_merchant_template_id
+merc_merchant_template_entries:
+  - 1-* merc_merchant_template_id->merc_merchant_template_entries:merc_merchant_template_id
+merc_name_types:
+  - 1-* name_type_id->merc_templates:name_type_id
+merc_npc_types:
+  - 1-* merc_npc_type_id->merc_armorinfo:merc_npc_type_id
+  - 1-* merc_npc_type_id->merc_stats:merc_npc_type_id
+  - 1-* merc_npc_type_id->merc_templates:merc_npc_type_id
+  - 1-* merc_npc_type_id->merc_weaponinfo:merc_npc_type_id
+merc_spell_lists:
+  - 1-* merc_spell_list_id->merc_spell_list_entries:merc_spell_list_id
+merc_templates:
+  - 1-1 merc_template_id->merc_merchant_template_entries:merc_merchant_template_entry_id
+  - 1-1 merc_template_id->merc_merchant_template_entries:merc_template_id
+merc_types:
+  - 1-* merc_type_id->merc_templates:merc_type_id
+merc_subtypes:
+  - 1-* merc_subtype_id->merc_inventory:merc_subtype_id
+  - 1-* merc_subtype_id->merc_templates:merc_subtype_id
+mercs:
+  - 1-* MercID->merc_buffs:MercID
 npc_faction:
   - 1-* id->npc_faction_entries:npc_faction_id
 npc_spells:

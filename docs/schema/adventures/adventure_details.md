@@ -1,7 +1,7 @@
 # adventure_details
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Entry Identifier |
 | adventure_id | smallint | Unique Adventure Identifier |
-| instance_id | int | [Instance Identifier](../../schema/instances/instance_list.md) |
+| instance_id | int | [Instance Identifier](instance_list.md) |
 | count | smallint | Count |
 | assassinate_count | smallint | Assassinate Count |
 | status | tinyint | Status |

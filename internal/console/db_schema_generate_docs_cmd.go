@@ -5,10 +5,6 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	"github.com/EQEmu/eqemu-docs-v2/config"
-	"github.com/EQEmu/eqemu-docs-v2/internal/database"
-	"github.com/spf13/cobra"
-	"gopkg.in/yaml.v3"
 	"log"
 	"os"
 	"path"
@@ -17,6 +13,11 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/EQEmu/eqemu-docs-v2/config"
+	"github.com/EQEmu/eqemu-docs-v2/internal/database"
+	"github.com/spf13/cobra"
+	"gopkg.in/yaml.v3"
 )
 
 type DbGenerateDocsCommand struct {
@@ -489,8 +490,9 @@ func (c *DbGenerateDocsCommand) buildLinkToTablePage(table string) string {
 			}
 
 			if strings.Contains(path, fmt.Sprintf("%v.md", table)) {
-				newPath := strings.ReplaceAll(path, "docs/", "")
-				link = fmt.Sprintf("[%v](../../%v)", table, newPath)
+				newPath := strings.ReplaceAll(path, "docs", "")
+				newPath = strings.ReplaceAll(newPath, "\\", "/")
+				link = fmt.Sprintf("[%v](../..%v)", table, newPath)
 			}
 
 			return nil

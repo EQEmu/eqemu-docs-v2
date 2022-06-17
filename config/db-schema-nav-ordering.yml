@@ -28,6 +28,7 @@
     - name_filter: schema/admin/name_filter.md
     - perl_event_export_settings: schema/admin/perl_event_export_settings.md
     - petitions: schema/admin/petitions.md
+    - peq_admin: schema/admin/peq_admin.md
     - profanity_list: schema/admin/profanity_list.md
     - reports: schema/admin/reports.md
     - saylink: schema/admin/saylink.md
@@ -48,6 +49,8 @@
     - books: schema/books/books.md
 - Bots:
     - bot_buffs: schema/bots/bot_buffs.md
+    - bot_command_settings: schema/bots/bot_command_settings.md
+    - bot_create_combinations: schema/bots/bot_create_combinations.md
     - bot_data: schema/bots/bot_data.md
     - bot_groups: schema/bots/bot_groups.md
     - bot_group_members: schema/bots/bot_group_members.md
@@ -96,6 +99,7 @@
     - character_pet_buffs: schema/characters/character_pet_buffs.md
     - character_pet_info: schema/characters/character_pet_info.md
     - character_pet_inventory: schema/characters/character_pet_inventory.md
+    - character_peqzone_flags: schema/characters/character_peqzone_flags.md
     - character_potionbelt: schema/characters/character_potionbelt.md
     - character_skills: schema/characters/character_skills.md
     - character_spells: schema/characters/character_spells.md
@@ -162,6 +166,7 @@
     - login_accounts: schema/loginserver/login_accounts.md
     - login_api_tokens: schema/loginserver/login_api_tokens.md
     - login_server_admins: schema/loginserver/login_server_admins.md
+    - login_server_list_types: schema/loginserver/login_server_list_types.md
     - login_world_servers: schema/loginserver/login_world_servers.md
 - Loot:
     - global_loot: schema/loot/global_loot.md
@@ -285,6 +290,11 @@
 - Tributes:
     - tributes: schema/tributes/tributes.md
     - tribute_levels: schema/tributes/tribute_levels.md
+- Views:
+    - vw_bot_character_mobs: schema/views/vw_bot_character_mobs.md
+    - vw_bot_groups: schema/views/vw_bot_groups.md
+    - vw_groups: schema/views/vw_groups.md
+    - vw_guild_members: schema/views/vw_guild_members.md
 - Zone:
     - launcher: schema/zone/launcher.md
     - launcher_zones: schema/zone/launcher_zones.md

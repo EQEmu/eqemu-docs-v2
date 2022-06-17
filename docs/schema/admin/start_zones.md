@@ -1,13 +1,13 @@
 # start_zones
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgdmFyY2hhciBzaG9ydF9uYW1lXG4gICAgICAgIGludCB6b25laWRudW1iZXJcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRfem9uZXMge1xuICAgICAgICBpbnQgem9uZV9pZFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgIHpvbmVpZHVudW1iZXJcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICB9XG4gICAgc3RhcnRfem9uZXMgfHwtLW97IHpvbmUgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
 
 ## Relationships
 
@@ -35,8 +35,8 @@
 | bind_y | float | Bind Y Coordinate |
 | bind_z | float | Bind Z Coordinate |
 | select_rank | tinyint | Select Rank: Always 50 |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

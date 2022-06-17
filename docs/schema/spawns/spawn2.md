@@ -1,13 +1,13 @@
 # spawn2
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Relationship Diagram
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgbnBjSURcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgc3Bhd25ncm91cElEXG4gICAgICAgIGludCBucGNJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgbnBjSURcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgbnBjSURcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgc3Bhd25ncm91cElEXG4gICAgICAgIGludCBucGNJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd24yIHtcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHtcbiAgICAgICAgaW50IGlkXG4gICAgfVxuICAgIHNwYXduZW50cnkge1xuICAgICAgICBpbnQgc3Bhd25ncm91cElEXG4gICAgICAgIGludCBucGNJRFxuICAgIH1cbiAgICBzcGF3bjIgfHwtLW97IHNwYXduZ3JvdXAgOiBPbmUtdG8tT25lXG4gICAgc3Bhd24yIHx8LS1veyBzcGF3bmVudHJ5IDogSGFzLU1hbnlcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
 
 ## Relationships
 
@@ -31,14 +31,14 @@
 | heading | float | Heading Coordinate |
 | respawntime | int | Respawn Time in Seconds |
 | variance | int | Variance in Seconds |
-| pathgrid | int | [Path Grid Identifier](../../schema/grids/grid.md) |
-| path_when_zone_idle | tinyint |  |
+| pathgrid | int | [Path Grid Identifier](grid.md) |
+| path_when_zone_idle | tinyint | Path When Zone Idle: 0 = False, 1 = True |
 | _condition | mediumint | Condition |
 | cond_value | mediumint | Condition Value |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
 | animation | tinyint | [Animation](../../../../server/npc/npc-animation-types) |
-| min_expansion | tinyint |  |
-| max_expansion | tinyint |  |
-| content_flags | varchar |  |
-| content_flags_disabled | varchar |  |
+| min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
+| max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
+| content_flags | varchar | Content Flags Required to be Enabled |
+| content_flags_disabled | varchar | Content Flags Required to be Disabled |
 

@@ -1,14 +1,14 @@
 # horses
 
 !!! info
-	This page was last generated 2022.05.11
+	This page was last generated 2022.06.17
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| filename | varchar | [NPC Type Name](../../schema/npcs/npc_types.md) |
+| id | int | Unique Horse Identifier |
+| filename | varchar | [NPC Type Name](npc_types.md) |
 | race | smallint | [Race](../../../../server/npc/race-list) |
 | gender | tinyint | [Gender](../../../../server/npc/genders) |
 | texture | tinyint | [Texture](../../../../server/npc/textures) |
