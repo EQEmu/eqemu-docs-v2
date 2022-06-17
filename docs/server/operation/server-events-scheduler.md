@@ -1,5 +1,3 @@
-## Server Event Scheduler
-
 The server has currently two process driven schedulers
 
 * World
@@ -14,7 +12,7 @@ Zone maintains state, world does not in the current implementation. For current 
 
 World does not maintain state, it is used for single event triggers and supports cron expressions since the events can be kicked off on a routine basis
 
-### Event Loading
+## Event Loading
 
 When world or zone boots, you will see the initial load of events. Zone will also reload if World has detected any changes to any of the scheduled events in the database once a minute
 
@@ -31,11 +29,11 @@ When world or zone boots, you will see the initial load of events. Zone will als
 [Zone] [Scheduler] Loaded scheduled events [9]
 ```
 
-### Event Changes
+## Event Changes
 
 If new changes are made to the `server_scheduled_events` state table, world will pick it up every minute. If world detects that there are any data changes made to the table, it will notify all zone processes to reload their scheduled events. This makes it easy for server operators to add / modify events live while the server is online
 
-### Server Scheduled Events Model
+## Server Scheduled Events Model
 
 The database table model is represented as follows
 
@@ -61,7 +59,7 @@ struct ServerScheduledEvents {
 };
 ```
 
-### Scheduling Methods
+## Scheduling Methods
 
 The way the scheduling schema works is by start end end times and vary slightly in triggering functionality depending on whether the event is stateless or stateful
 
@@ -92,7 +90,7 @@ select * from server_scheduled_events where event_type = 'hot_zone_activate';
 +----+----------------------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+-----------+-------------+------------+------------+----------+---------+-----------+----------+-----------------+------------+------------+
 ```
 
-### Example Schedule Data
+## Example Schedule Data
 
 ```
 select * from server_scheduled_events;
