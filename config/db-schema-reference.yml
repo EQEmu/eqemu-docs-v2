@@ -112,7 +112,7 @@ aa_actions:
     nullable: "NO"
   spell_id:
     dataType: mediumint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
   target:
     dataType: tinyint
@@ -279,7 +279,7 @@ aa_timers:
     nullable: "NO"
   charid:
     dataType: int
-    description: '[Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Character Identifier](../../../schema/characters/character_data.md)'
     nullable: "NO"
   end:
     dataType: int
@@ -857,7 +857,7 @@ altadv_vars:
     nullable: "NO"
   spellid:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
   title_sid:
     dataType: int
@@ -1171,7 +1171,7 @@ bot_buffs:
     ordinal_position: 7
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   tics_remaining:
@@ -1182,7 +1182,7 @@ bot_buffs:
 bot_command_settings:
   access:
     dataType: int
-    description: '[Required Status](../../../schema/categories/account/account.md)'
+    description: '[Required Status](../../../schema/account/account.md)'
     nullable: "NO"
     ordinal_position: 2
   aliases:
@@ -1374,7 +1374,7 @@ bot_data:
     ordinal_position: 4
   owner_id:
     dataType: int
-    description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Owner Character Identifier](../../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   poison:
@@ -1492,7 +1492,7 @@ bot_guild_members:
     ordinal_position: 1
   guild_id:
     dataType: mediumint
-    description: '[Guild Identifier](../../../schema/categories/guilds/guilds.md)'
+    description: '[Guild Identifier](../../../schema/guilds/guilds.md)'
     nullable: "NO"
     ordinal_position: 2
   last_tribute:
@@ -1747,7 +1747,7 @@ bot_owner_options:
     ordinal_position: 3
   owner_id:
     dataType: int
-    description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Owner Character Identifier](../../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 1
 bot_pet_buffs:
@@ -1773,13 +1773,13 @@ bot_pet_buffs:
     ordinal_position: 2
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
 bot_pet_inventories:
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   pet_inventories_index:
@@ -1820,7 +1820,7 @@ bot_pets:
     ordinal_position: 1
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 2
 bot_spell_casting_chances:
@@ -1977,7 +1977,7 @@ bot_spells_entries:
     ordinal_position: 10
   spellid:
     dataType: smallint
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   type:
@@ -8223,7 +8223,7 @@ merc_armorinfo:
     ordinal_position: 9
   armortint_id:
     dataType: int
-    description: '[Armor Tint Identifier](../../../schema/categories/npcs/npc_types_tint.md)'
+    description: '[Armor Tint Identifier](../../../schema/npcs/npc_types_tint.md)'
     nullable: "NO"
     ordinal_position: 7
   armortint_red:
@@ -8329,7 +8329,7 @@ merc_buffs:
     ordinal_position: 7
   SpellId:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   TicsRemaining:
@@ -8360,7 +8360,7 @@ merc_buffs:
 merc_inventory:
   item_id:
     dataType: int
-    description: '[Item Identifier](../../../schema/categories/items/items.md)'
+    description: '[Item Identifier](../../../schema/items/items.md)'
     nullable: "NO"
     ordinal_position: 3
   max_level:
@@ -8511,7 +8511,7 @@ merc_spell_list_entries:
     ordinal_position: 8
   spell_id:
     dataType: int
-    description: '[Spell Identifier](../../../schema/categories/spells/spells_new.md)'
+    description: '[Spell Identifier](../../../schema/spells/spells_new.md)'
     nullable: "NO"
     ordinal_position: 3
   spell_type:
@@ -8766,7 +8766,7 @@ merc_templates:
     ordinal_position: 7
   dbstring:
     dataType: varchar
-    description: '[DBString Identifier](../../../schema/categories/client-files/db_str.md)'
+    description: '[DBString Identifier](../../../schema/client-files/db_str.md)'
     nullable: "NO"
     ordinal_position: 5
   merc_npc_type_id:
@@ -8802,7 +8802,7 @@ merc_types:
     ordinal_position: 5
   dbstring:
     dataType: varchar
-    description: '[DBString Identifier](../../../schema/categories/client-files/db_str.md)'
+    description: '[DBString Identifier](../../../schema/client-files/db_str.md)'
     nullable: "NO"
     ordinal_position: 4
   merc_type_id:
@@ -9051,7 +9051,7 @@ mercs:
     ordinal_position: 4
   OwnerCharacterID:
     dataType: int
-    description: '[Owner Character Identifier](../../../schema/categories/characters/character_data.md)'
+    description: '[Owner Character Identifier](../../../schema/characters/character_data.md)'
     nullable: "NO"
     ordinal_position: 2
   Slot:

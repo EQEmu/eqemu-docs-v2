@@ -1,7 +1,21 @@
 # login_accounts
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgdmFyY2hhciBpcFxuICAgICAgICBpbnQgYWNjaWRcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBPbmUtdG8tT25lXG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnRfaXAgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgdmFyY2hhciBpcFxuICAgICAgICBpbnQgYWNjaWRcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBPbmUtdG8tT25lXG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnRfaXAgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgdmFyY2hhciBpcFxuICAgICAgICBpbnQgYWNjaWRcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBPbmUtdG8tT25lXG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnRfaXAgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | account_name | [account](../../schema/account/account.md) | name |
+| Has-Many | last_ip_address | [account_ip](../../schema/account/account_ip.md) | ip |
+
 
 ## Schema
 

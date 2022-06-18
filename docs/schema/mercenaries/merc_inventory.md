@@ -1,7 +1,21 @@
 # merc_inventory
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19pbnZlbnRvcnkge1xuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbV9pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgaWNvblxuICAgICAgICAgbmFtZVxuICAgICAgICBzbWFsbGludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgICAgICBpbnQgYm9va1xuICAgICAgICBpbnQgcmVjYXN0dHlwZVxuICAgIH1cbiAgICBtZXJjX3N1YnR5cGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zdWJ0eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfaW52ZW50b3J5IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBtZXJjX2ludmVudG9yeSB8fC0tb3sgbWVyY19zdWJ0eXBlcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19pbnZlbnRvcnkge1xuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbV9pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgaWNvblxuICAgICAgICAgbmFtZVxuICAgICAgICBzbWFsbGludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgICAgICBpbnQgYm9va1xuICAgICAgICBpbnQgcmVjYXN0dHlwZVxuICAgIH1cbiAgICBtZXJjX3N1YnR5cGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zdWJ0eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfaW52ZW50b3J5IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBtZXJjX2ludmVudG9yeSB8fC0tb3sgbWVyY19zdWJ0eXBlcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19pbnZlbnRvcnkge1xuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3N1YnR5cGVfaWRcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbV9pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgaWNvblxuICAgICAgICAgbmFtZVxuICAgICAgICBzbWFsbGludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgICAgICBpbnQgYm9va1xuICAgICAgICBpbnQgcmVjYXN0dHlwZVxuICAgIH1cbiAgICBtZXJjX3N1YnR5cGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zdWJ0eXBlX2lkXG4gICAgfVxuICAgIG1lcmNfaW52ZW50b3J5IHx8LS1veyBpdGVtcyA6IE9uZS10by1PbmVcbiAgICBtZXJjX2ludmVudG9yeSB8fC0tb3sgbWVyY19zdWJ0eXBlcyA6IE9uZS10by1PbmVcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | item_id | [items](../../schema/items/items.md) | id |
+| One-to-One | merc_subtype_id | [merc_subtypes](../../schema/mercenaries/merc_subtypes.md) | merc_subtype_id |
+
 
 ## Schema
 
@@ -9,7 +23,7 @@
 | :--- | :--- | :--- |
 | merc_inventory_id | int | Unique Mercenary Inventory Identifier |
 | merc_subtype_id | int | [Mercenary Subtype Identifier](merc_subtypes.md) |
-| item_id | int | [Item Identifier](../../../schema/categories/items/items.md) |
+| item_id | int | [Item Identifier](../../../schema/items/items.md) |
 | min_level | int | Minimum Level |
 | max_level | int | Maximum Level |
 

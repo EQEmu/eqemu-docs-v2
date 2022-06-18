@@ -1,7 +1,7 @@
 # npc_scale_global_base
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
 
 ## Schema
 

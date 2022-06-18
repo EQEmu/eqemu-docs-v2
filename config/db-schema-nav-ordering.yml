@@ -96,10 +96,10 @@
     - character_leadership_abilities: schema/characters/character_leadership_abilities.md
     - character_material: schema/characters/character_material.md
     - character_memmed_spells: schema/characters/character_memmed_spells.md
+    - character_peqzone_flags: schema/characters/character_peqzone_flags.md
     - character_pet_buffs: schema/characters/character_pet_buffs.md
     - character_pet_info: schema/characters/character_pet_info.md
     - character_pet_inventory: schema/characters/character_pet_inventory.md
-    - character_peqzone_flags: schema/characters/character_peqzone_flags.md
     - character_potionbelt: schema/characters/character_potionbelt.md
     - character_skills: schema/characters/character_skills.md
     - character_spells: schema/characters/character_spells.md

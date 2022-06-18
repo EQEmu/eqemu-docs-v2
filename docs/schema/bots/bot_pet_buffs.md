@@ -1,7 +1,21 @@
 # bot_pet_buffs
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3BldF9idWZmcyB7XG4gICAgICAgIGludHVuc2lnbmVkIHBldHNfaW5kZXhcbiAgICAgICAgaW50dW5zaWduZWQgc3BlbGxfaWRcbiAgICB9XG4gICAgYm90X3BldHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBwZXRzX2luZGV4XG4gICAgICAgIGludHVuc2lnbmVkIHNwZWxsX2lkXG4gICAgICAgIGludHVuc2lnbmVkIGJvdF9pZFxuICAgIH1cbiAgICBzcGVsbHNfbmV3IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIGludCBkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtMlxuICAgICAgICBpbnQgdHlwZWRlc2NudW1cbiAgICAgICAgdmFyY2hhciB0ZWxlcG9ydF96b25lXG4gICAgfVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IGJvdF9wZXRzIDogT25lLXRvLU9uZVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3BldF9idWZmcyB7XG4gICAgICAgIGludHVuc2lnbmVkIHBldHNfaW5kZXhcbiAgICAgICAgaW50dW5zaWduZWQgc3BlbGxfaWRcbiAgICB9XG4gICAgYm90X3BldHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBwZXRzX2luZGV4XG4gICAgICAgIGludHVuc2lnbmVkIHNwZWxsX2lkXG4gICAgICAgIGludHVuc2lnbmVkIGJvdF9pZFxuICAgIH1cbiAgICBzcGVsbHNfbmV3IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIGludCBkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtMlxuICAgICAgICBpbnQgdHlwZWRlc2NudW1cbiAgICAgICAgdmFyY2hhciB0ZWxlcG9ydF96b25lXG4gICAgfVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IGJvdF9wZXRzIDogT25lLXRvLU9uZVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3BldF9idWZmcyB7XG4gICAgICAgIGludHVuc2lnbmVkIHBldHNfaW5kZXhcbiAgICAgICAgaW50dW5zaWduZWQgc3BlbGxfaWRcbiAgICB9XG4gICAgYm90X3BldHMge1xuICAgICAgICBpbnR1bnNpZ25lZCBwZXRzX2luZGV4XG4gICAgICAgIGludHVuc2lnbmVkIHNwZWxsX2lkXG4gICAgICAgIGludHVuc2lnbmVkIGJvdF9pZFxuICAgIH1cbiAgICBzcGVsbHNfbmV3IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIGludCBkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtXG4gICAgICAgIGludCBlZmZlY3RkZXNjbnVtMlxuICAgICAgICBpbnQgdHlwZWRlc2NudW1cbiAgICAgICAgdmFyY2hhciB0ZWxlcG9ydF96b25lXG4gICAgfVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IGJvdF9wZXRzIDogT25lLXRvLU9uZVxuICAgIGJvdF9wZXRfYnVmZnMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | pets_index | [bot_pets](../../schema/bots/bot_pets.md) | pets_index |
+| One-to-One | spell_id | [spells_new](../../schema/spells/spells_new.md) | id |
+
 
 ## Schema
 
@@ -9,7 +23,7 @@
 | :--- | :--- | :--- |
 | pet_buffs_index | int | Unique Bot Pet Buffs Identifier |
 | pets_index | int | [Bot Pet Identifier](bot_pets.md) |
-| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| spell_id | int | [Spell Identifier](../../../schema/spells/spells_new.md) |
 | caster_level | int | Caster Level |
 | duration | int | Duration of buff |
 

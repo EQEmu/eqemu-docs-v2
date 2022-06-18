@@ -1,7 +1,20 @@
 # raid_leaders
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | rid | [raid_details](../../schema/raids/raid_details.md) | raidid |
+
 
 ## Schema
 

@@ -1,7 +1,20 @@
 # bot_timers
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgICBib3RfZGF0YVxuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICAgICAgc21hbGxpbnQgem9uZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBvd25lcl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbHNfaWRcbiAgICB9XG4gICAgYm90X3RpbWVycyB8fC0tb3sgYm90X2RhdGEgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgICBib3RfZGF0YVxuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICAgICAgc21hbGxpbnQgem9uZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBvd25lcl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbHNfaWRcbiAgICB9XG4gICAgYm90X3RpbWVycyB8fC0tb3sgYm90X2RhdGEgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgICBib3RfZGF0YVxuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBib3RfaWRcbiAgICAgICAgc21hbGxpbnQgem9uZV9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBvd25lcl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbHNfaWRcbiAgICB9XG4gICAgYm90X3RpbWVycyB8fC0tb3sgYm90X2RhdGEgOiBPbmUtdG8tT25lXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | bot_data | [bot_data](../../schema/bots/bot_data.md) | bot_id |
+
 
 ## Schema
 

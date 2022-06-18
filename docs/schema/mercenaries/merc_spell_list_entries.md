@@ -1,7 +1,22 @@
 # merc_spell_list_entries
 
 !!! info
-	This page was last generated 2022.06.17
+	This page was last generated 2022.06.18
+
+## Relationship Diagram
+
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbF9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3NwZWxsX2xpc3RfaWRcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHN0YW5jZV9pZFxuICAgIH1cbiAgICBtZXJjX3NwZWxsX2xpc3RzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zcGVsbF9saXN0X2lkXG4gICAgfVxuICAgIHNwZWxsc19uZXcge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW0yXG4gICAgICAgIGludCB0eXBlZGVzY251bVxuICAgICAgICB2YXJjaGFyIHRlbGVwb3J0X3pvbmVcbiAgICB9XG4gICAgbWVyY19zdGFuY2VfZW50cmllcyB7XG4gICAgICAgIHRpbnlpbnR1bnNpZ25lZCBzdGFuY2VfaWRcbiAgICB9XG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3BlbGxfbGlzdHMgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3RhbmNlX2VudHJpZXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
+
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbF9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3NwZWxsX2xpc3RfaWRcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHN0YW5jZV9pZFxuICAgIH1cbiAgICBtZXJjX3NwZWxsX2xpc3RzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zcGVsbF9saXN0X2lkXG4gICAgfVxuICAgIHNwZWxsc19uZXcge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW0yXG4gICAgICAgIGludCB0eXBlZGVzY251bVxuICAgICAgICB2YXJjaGFyIHRlbGVwb3J0X3pvbmVcbiAgICB9XG4gICAgbWVyY19zdGFuY2VfZW50cmllcyB7XG4gICAgICAgIHRpbnlpbnR1bnNpZ25lZCBzdGFuY2VfaWRcbiAgICB9XG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3BlbGxfbGlzdHMgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3RhbmNlX2VudHJpZXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBzcGVsbF9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBtZXJjX3NwZWxsX2xpc3RfaWRcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHN0YW5jZV9pZFxuICAgIH1cbiAgICBtZXJjX3NwZWxsX2xpc3RzIHtcbiAgICAgICAgaW50dW5zaWduZWQgbWVyY19zcGVsbF9saXN0X2lkXG4gICAgfVxuICAgIHNwZWxsc19uZXcge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW1cbiAgICAgICAgaW50IGVmZmVjdGRlc2NudW0yXG4gICAgICAgIGludCB0eXBlZGVzY251bVxuICAgICAgICB2YXJjaGFyIHRlbGVwb3J0X3pvbmVcbiAgICB9XG4gICAgbWVyY19zdGFuY2VfZW50cmllcyB7XG4gICAgICAgIHRpbnlpbnR1bnNpZ25lZCBzdGFuY2VfaWRcbiAgICB9XG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3BlbGxfbGlzdHMgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IHNwZWxsc19uZXcgOiBPbmUtdG8tT25lXG4gICAgbWVyY19zcGVsbF9saXN0X2VudHJpZXMgfHwtLW97IG1lcmNfc3RhbmNlX2VudHJpZXMgOiBIYXMtTWFueVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+
+## Relationships
+
+| Relationship Type | Local Key | Relates to Table | Foreign Key |
+| :--- | :--- | :--- | :--- |
+| One-to-One | merc_spell_list_id | [merc_spell_lists](../../schema/mercenaries/merc_spell_lists.md) | merc_spell_list_id |
+| One-to-One | spell_id | [spells_new](../../schema/spells/spells_new.md) | id |
+| Has-Many | stance_id | [merc_stance_entries](../../schema/mercenaries/merc_stance_entries.md) | stance_id |
+
 
 ## Schema
 
@@ -9,7 +24,7 @@
 | :--- | :--- | :--- |
 | merc_spell_list_entry_id | int | Unique Mercenary Spell List Entry Identifier |
 | merc_spell_list_id | int | [Mercenary Spell List Identifier](merc_spell_lists.md) |
-| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
+| spell_id | int | [Spell Identifier](../../../schema/spells/spells_new.md) |
 | spell_type | int | [Spell Type](../../../../server/spells/spell-types) |
 | stance_id | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
 | minlevel | tinyint | Minimum Level |
