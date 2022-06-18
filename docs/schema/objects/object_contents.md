@@ -10,7 +10,7 @@
 | zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
 | parentid | int | [Object Identifier](object.md) |
 | bagidx | int | Bag Index |
-| itemid | int | [Item Identifier](items.md) |
+| itemid | int | [Item Identifier](../../schema/items/items.md) |
 | charges | smallint | Charges |
 | droptime | datetime | Drop Time |
 | augslot1 | mediumint | Augment Slot 1 |

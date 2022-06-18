@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | buffs_index | int | Unique Entry Identifier |
 | bot_id | int | [Bot Identifier](bot_data.md) |
-| spell_id | int | [Spell Identifier](spells_new.md) |
+| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | caster_level | tinyint | Caster level |
 | duration_formula | int | Duration Formula |
 | tics_remaining | int | Tics Remaining |

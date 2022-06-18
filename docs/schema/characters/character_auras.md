@@ -9,5 +9,5 @@
 | :--- | :--- | :--- |
 | id | int | [Unique Character Identifier](character_data.md) |
 | slot | tinyint | Slot |
-| spell_id | int | [Spell Identifier](spells_new.md) |
+| spell_id | int | [Spell Identifier](../../schema/spells/spells_new.md) |
 

@@ -9,8 +9,8 @@
 | :--- | :--- | :--- |
 | dib | int | Unknown |
 | petid | int | Unique Petition Entry Identifier |
-| charname | varchar | [Character Name](character_data.md) |
-| accountname | varchar | [Account Name](account.md) |
+| charname | varchar | [Character Name](../../schema/characters/character_data.md) |
+| accountname | varchar | [Account Name](../../schema/account/account.md) |
 | lastgm | varchar | Last GM |
 | petitiontext | text | Petition Text |
 | gmtext | text | GM Text |

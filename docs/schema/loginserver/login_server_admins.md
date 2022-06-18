@@ -14,5 +14,5 @@
 | last_name | varchar | Last Name |
 | email | varchar | Email |
 | registration_date | datetime | Registration Date |
-| registration_ip_address | varchar | [Registration IP Address](account_ip.md) |
+| registration_ip_address | varchar | [Registration IP Address](../../schema/account/account_ip.md) |
 

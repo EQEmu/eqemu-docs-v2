@@ -7,7 +7,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| owner_id | int | [Owner Character Identifier](character_data.md) |
-| option_type | smallint | Option Tpye |
+| owner_id | int | [Owner Character Identifier](../../../schema/categories/characters/character_data.md) |
+| option_type | smallint | Option Type |
 | option_value | smallint | Option Value |
 

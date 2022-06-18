@@ -31,7 +31,7 @@
 | heading | float | Heading Coordinate |
 | respawntime | int | Respawn Time in Seconds |
 | variance | int | Variance in Seconds |
-| pathgrid | int | [Path Grid Identifier](grid.md) |
+| pathgrid | int | [Path Grid Identifier](../../schema/grids/grid.md) |
 | path_when_zone_idle | tinyint | Path When Zone Idle: 0 = False, 1 = True |
 | _condition | mediumint | Condition |
 | cond_value | mediumint | Condition Value |

@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | merc_spell_list_entry_id | int | Unique Mercenary Spell List Entry Identifier |
 | merc_spell_list_id | int | [Mercenary Spell List Identifier](merc_spell_lists.md) |
-| spell_id | int | [Spell Identifier](spells_new.md) |
+| spell_id | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | spell_type | int | [Spell Type](../../../../server/spells/spell-types) |
 | stance_id | tinyint | [Stance Type Identifier](../../../../categories/bots/stance-types) |
 | minlevel | tinyint | Minimum Level |

@@ -8,7 +8,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | bot_id | int | Unique Bot Identifier |
-| owner_id | int | [Owner Character Identifier](character_data.md) |
+| owner_id | int | [Owner Character Identifier](../../../schema/categories/characters/character_data.md) |
 | spells_id | int | [Bot Spell List Identifier](../../../../categories/spells/bot-spell-list-ids) |
 | name | varchar | Name |
 | last_name | varchar | Last Name |

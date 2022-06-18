@@ -8,7 +8,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Dynamic Zone Identifier |
-| instance_id | int | [Instance Identifier](instance_list.md) |
+| instance_id | int | [Instance Identifier](../../schema/instances/instance_list.md) |
 | type | tinyint | Type |
 | uuid | varchar | UUID |
 | name | varchar | Name |

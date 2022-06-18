@@ -7,7 +7,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| player_id | int | [Character Identifier](character_data.md) |
+| player_id | int | [Character Identifier](../../schema/characters/character_data.md) |
 | guk_wins | mediumint | Deepest Guk Wins |
 | mir_wins | mediumint | Miragul's Menagerie Wins |
 | mmc_wins | mediumint | Mistmoore Catacombs Wins |

@@ -8,6 +8,6 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | shared_task_id | bigint | [Shared Task Identifier](shared_tasks.md) |
-| character_id | bigint | [Character Identifier](character_data.md) |
+| character_id | bigint | [Character Identifier](../../schema/characters/character_data.md) |
 | is_leader | tinyint | Is Leader: 0 = False, 1 = True |
 

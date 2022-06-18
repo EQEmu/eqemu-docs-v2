@@ -8,8 +8,8 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | raidid | int | [Raid Identifier](raid_details.md) |
-| charid | int | [Character Identifier](character_data.md) |
-| groupid | int | [Group Identifier](group_id.md) |
+| charid | int | [Character Identifier](../../schema/characters/character_data.md) |
+| groupid | int | [Group Identifier](../../schema/groups/group_id.md) |
 | _class | tinyint | [Class](../../../../server/player/class-list) |
 | level | tinyint | Level |
 | name | varchar | Name |

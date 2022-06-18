@@ -5,9 +5,9 @@
 
 ## Relationship Diagram
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgY2hhcmlkXG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
+[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIGNoYXJpZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram-edit}
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgY2hhcmlkXG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgY2hhcmlkXG4gICAgICAgIGludHVuc2lnbmVkIGl0ZW1pZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIGNoYXJpZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgaW52ZW50b3J5IHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIGNoYXJpZFxuICAgIH1cbiAgICBpdGVtcyB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBpbnZlbnRvcnkgfHwtLW97IGl0ZW1zIDogT25lLXRvLU9uZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagram}
 
 ## Relationships
 
@@ -20,9 +20,9 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| charid | int | [Character Identifier](character_data.md) |
+| charid | int | [Character Identifier](../../schema/characters/character_data.md) |
 | slotid | mediumint | [Slot Identifier](../../../../server/inventory/inventory-slots) |
-| itemid | int | [Item Identifier](items.md) |
+| itemid | int | [Item Identifier](../../schema/items/items.md) |
 | charges | smallint | Charges |
 | color | int | Color |
 | augslot1 | mediumint | Augment Slot 1 |

@@ -8,10 +8,10 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Event Identifier |
-| accountname | varchar | [Account Name](account.md) |
-| accountid | int | [Account Identifier](account.md) |
+| accountname | varchar | [Account Name](../../schema/account/account.md) |
+| accountid | int | [Account Identifier](../../schema/account/account.md) |
 | status | int | [Status](../../../../server/player/status-levels) |
-| charname | varchar | [Character Name](character_data.md) |
+| charname | varchar | [Character Name](../../schema/characters/character_data.md) |
 | target | varchar | Target |
 | time | timestamp | TIme Timestamp |
 | descriptiontype | varchar | Description Type |

@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | corpse_id | int | [Corpse Identifier](character_corpses.md) |
 | equip_slot | int | Equipment Slot |
-| item_id | int | [Item Identifier](items.md) |
+| item_id | int | [Item Identifier](../../schema/items/items.md) |
 | charges | int | Item Charges |
 | aug_1 | int | Item Augment Slot 1 |
 | aug_2 | int | Item Augment Slot 2 |

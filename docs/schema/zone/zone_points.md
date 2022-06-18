@@ -28,7 +28,7 @@
 | max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
 | content_flags | varchar | Content Flags Required to be Enabled |
 | content_flags_disabled | varchar | Content Flags Required to be Disabled |
-| is_virtual | tinyint | Is Virtual |
+| is_virtual | tinyint | Is Virtual: 0 = False, 1 = True |
 | height | int | Height |
 | width | int | Width |
 

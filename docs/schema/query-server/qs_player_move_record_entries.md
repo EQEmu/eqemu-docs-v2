@@ -10,7 +10,7 @@
 | event_id | int | Unique Event Identifier |
 | from_slot | mediumint | [From Slot Identifier](../../../../server/inventory/inventory-slots) |
 | to_slot | mediumint | [To Slot Identifier](../../../../server/inventory/inventory-slots) |
-| item_id | int | [Item Identifier](items.md) |
+| item_id | int | [Item Identifier](../../schema/items/items.md) |
 | charges | mediumint | Charges |
 | aug_1 | int | Augment Slot 1 |
 | aug_2 | int | Augment Slot 2 |

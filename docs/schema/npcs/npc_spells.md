@@ -23,7 +23,7 @@
 | id | int | Unique NPC Spell Set Identifier |
 | name | tinytext | NPC Spell Set Name |
 | parent_list | int | Inherit all the spells from this list, and merge them with our spells. Only one level of inheritance is allowed, so your parent's parent will not be included. |
-| attack_proc | smallint | The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](spells_new.md) |
+| attack_proc | smallint | The combat proc that an NPC with this spell set will add to their list of procs. [Spell Identifier](../../schema/spells/spells_new.md) |
 | proc_chance | tinyint | Proc Chance: 0 = Never, 100 = Always |
 | range_proc | smallint | The ranged proc that an NPC with this spell set will add to their list of procs. |
 | rproc_chance | smallint | Ranged Proc Chance: 0 = Never, 100 = Always |

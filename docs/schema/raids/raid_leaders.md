@@ -7,7 +7,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| gid | int | [Group Identifier](group_id.md) |
+| gid | int | [Group Identifier](../../schema/groups/group_id.md) |
 | rid | int | [Raid Identifier](raid_details.md) |
 | marknpc | varchar | Mark NPC: 0 = False, 1 = True |
 | maintank | varchar | Main Tank: 0 = False, 1 = True |

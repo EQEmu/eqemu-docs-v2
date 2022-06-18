@@ -7,7 +7,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| char_id | int | [Unique Character Identifier](character_data.md) |
+| char_id | int | [Unique Character Identifier](../../schema/characters/character_data.md) |
 | type | mediumint | Type |
 | start | int | Start UNIX Timestamp |
 | duration | int | Duration |

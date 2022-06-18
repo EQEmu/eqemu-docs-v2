@@ -8,5 +8,5 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | shared_task_id | bigint | [Shared Task Identifier](shared_tasks.md) |
-| dynamic_zone_id | int | [Dynamic Zone Identifier](dynamic_zones.md) |
+| dynamic_zone_id | int | [Dynamic Zone Identifier](../../schema/dynamic-zones/dynamic_zones.md) |
 

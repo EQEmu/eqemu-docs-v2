@@ -10,7 +10,7 @@
 | inventories_index | int | Unique Bot Inventory Identifier |
 | bot_id | int | [Bot Identifier](bot_data.md) |
 | slot_id | mediumint | [Slot Identifier](../../../../categories/inventory/inventory-slots) |
-| item_id | int | [Item Identifier](items.md) |
+| item_id | int | [Item Identifier](../items/items.md) |
 | inst_charges | smallint | Charges |
 | inst_color | int | Color |
 | inst_no_drop | tinyint | No Drop: 0 = False, 1=  True |

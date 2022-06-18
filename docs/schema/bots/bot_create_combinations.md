@@ -7,6 +7,6 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| race | int | [Races](../../../../categories/npc/race-list) Bitmask |
-| classes | int | [Classes](../../../../categories/player/class-list) Bitmask |
+| race | int | [Races Bitmask](../../../../categories/npc/race-list) |
+| classes | int | [Classes Bitmask](../../../../categories/player/class-list) |
 

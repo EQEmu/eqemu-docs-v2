@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | id | int | Unique Task Timer Identifier |
 | character_id | int | [Character Identifer](character_data.md) |
-| task_id | int | [Task Identifier](tasks.md) |
+| task_id | int | [Task Identifier](../../schema/tasks/tasks.md) |
 | timer_type | int | Timer Type (0 = Replay, 1 = Request) |
 | expire_time | datetime | Expire Time |
 

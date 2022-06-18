@@ -9,7 +9,7 @@
 | :--- | :--- | :--- |
 | MercBuffId | int | Unique Mercenary Buff Identifier |
 | MercId | int | [Mercenary Identifier](mercs.md) |
-| SpellId | int | [Spell Identifier](spells_new.md) |
+| SpellId | int | [Spell Identifier](../../../schema/categories/spells/spells_new.md) |
 | CasterLevel | int | Caster Level |
 | DurationFormula | int | [Duration Formula](../../../../categories/spells/buff-duration-formulas) |
 | TicsRemaining | int | Tics Remaining |
