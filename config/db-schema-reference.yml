@@ -1198,12 +1198,12 @@ bot_command_settings:
 bot_create_combinations:
   classes:
     dataType: int
-    description: '[Classes Bitmask](../../../../categories/player/class-list)'
+    description: '[Classes](../../../../categories/player/class-list) Bitmask'
     nullable: "NO"
     ordinal_position: 2
   race:
     dataType: int
-    description: '[Races Bitmask](../../../../categories/npc/race-list)'
+    description: '[Races](../../../../categories/npc/race-list) Bitmask'
     nullable: "NO"
     ordinal_position: 1
 bot_data:
