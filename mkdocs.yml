@@ -13,6 +13,8 @@ extra_css:
   - stylesheets/extra.css
 copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
+  favicon: assets/eqemu-text.png
+  logo: assets/eqemu-text.png
   font:
     text: Roboto
     code: Roboto Mono
