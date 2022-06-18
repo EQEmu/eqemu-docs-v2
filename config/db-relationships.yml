@@ -483,7 +483,7 @@ instance_list:
   - 1-* id->spawn_condition_values:instance_id
   - 1-* id->zone_points:target_instance
   - 1-1 version->zone:version
-  - 1-1 zone->zone:zoneidunumber
+  - 1-1 zone->zone:zoneidnumber
 instance_list_player:
   - 1-1 charid->character_data:id
   - 1-1 id->instance_list:id
