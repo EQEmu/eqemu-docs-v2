@@ -3,11 +3,12 @@ package config
 import (
 	"bytes"
 	"fmt"
-	"gopkg.in/yaml.v3"
 	"log"
 	"os"
 	"path"
 	"strings"
+
+	"gopkg.in/yaml.v3"
 )
 
 type MkDocsCfg struct {
@@ -26,7 +27,9 @@ type MkDocsCfg struct {
 	ExtraCSS  []string `yaml:"extra_css"`
 	CopyRight string   `yaml:"copyright"`
 	Theme     struct {
-		Font struct {
+		Favicon string `yaml:"favicon"`
+		Logo    string `yaml:"logo"`
+		Font    struct {
 			Text string `yaml:"text"`
 			Code string `yaml:"code"`
 		} `yaml:"font"`
