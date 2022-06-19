@@ -373,6 +373,9 @@ content_flags:
   - 1-* flag_name->zone_points:content_flags_disabled
 damageshieldtypes:
   - 1-1 spellid->spells_new:id
+data_buckets:
+  - 1-* key->merchantlist:bucket_name
+  - 1-* key->spell_buckets:key
 db_str:
   - 1-1 id->merc_templates:dbstring
   - 1-1 id->merc_types:dbstring
@@ -690,6 +693,7 @@ merc_types:
 merc_weaponinfo:
   - 1-1 merc_npc_type_id->merc_npc_types:merc_npc_type_id
 merchantlist:
+  - 1-1 bucket_name->data_buckets:name
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 item->items:id
@@ -918,6 +922,7 @@ spawngroup:
   - 1-1 id->spawn2:spawngroupID
 spell_buckets:
   - 1-1 spellid->spells_new:id
+  - 1-1 key->data_buckets:name
 spell_globals:
   - 1-1 spellid->spells_new:id
   - 1-1 qglobals->quest_globals:name
