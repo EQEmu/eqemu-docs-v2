@@ -22,7 +22,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Lockout Identifier |
-| character_id | int | [Character Identifier](character_data.md) |
+| character_id | int | [Character Identifier](../../schema/characters/character_data.md) |
 | expedition_name | varchar | Expedition Name |
 | event_name | varchar | Event Name |
 | expire_time | datetime | Expire Time |

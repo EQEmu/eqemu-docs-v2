@@ -124,7 +124,6 @@
     - dynamic_zones: schema/dynamic-zones/dynamic_zones.md
     - dynamic_zone_members: schema/dynamic-zones/dynamic_zone_members.md
 - Expeditions:
-    - character_expedition_lockouts: schema/expeditions/character_expedition_lockouts.md
     - expeditions: schema/expeditions/expeditions.md
     - expedition_lockouts: schema/expeditions/expedition_lockouts.md
 - Factions:

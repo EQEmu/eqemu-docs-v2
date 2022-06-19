@@ -32,6 +32,10 @@ adventure_details:
   - 1-* id->adventure_members:id
   - 1-1 adventure_id->adventure_templates:id
   - 1-1 instance_id->instance_list:id
+alternate_currency:
+  - 1-* id->character_alt_currency:currency_id
+  - 1-* id->npc_types:alt_currency_id
+  - 1-* item_id->items:id
 auras:
   - 1-1 npc_type->npc_types:id
   - 1-1 spell_id->spells_new:id
@@ -245,7 +249,7 @@ character_data:
   - 1-* id->titles:char_id
   - 1-* id->trader:char_id
   - 1-* id->zone_flags:charID
-  - 1-* name->character_corpses:name
+  - 1-* name->character_corpses:charname
   - 1-* name->discovered_items:char_name
   - 1-* name->eventlog:charname
   - 1-* name->group_leaders:assist
@@ -385,10 +389,10 @@ dynamic_zone_members:
   - 1-1 character_id->character_data:id
   - 1-1 dynamic_zone_id->dynamic_zones:id
 dynamic_zones:
-  - 1-1 compass_zone_id->zone:zoneidnumer
+  - 1-1 compass_zone_id->zone:zoneidnumber
   - 1-* id->dynamic_zone_members:dynamic_zone_id
   - 1-1 instance_id->instance_list:id
-  - 1-1 safe_return_zone_id->zone:zoneidnumer
+  - 1-1 safe_return_zone_id->zone:zoneidnumber
 eventlog:
   - 1-1 accountid->account:id
   - 1-1 accountname->account:name
@@ -999,6 +1003,18 @@ veteran_reward_templates:
 zone:
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
+  - 1-* short_name->adventure_template:zone
+  - 1-* short_name->doors:zone
+  - 1-* short_name->doors:dest_zone
+  - 1-* short_name->hackers:zone
+  - 1-* short_name->launcher_zones:zone
+  - 1-* short_name->spawn_conditions:zone
+  - 1-* short_name->spawn_condition_values:zone
+  - 1-* short_name->spawn_events:zone
+  - 1-* short_name->spawn2:zone
+  - 1-* short_name->spells_new:teleport_zone
+  - 1-* short_name->traps:zone
+  - 1-* short_name->zone_points:zone
   - 1-* zoneidnumber->bot_data:zone_id
   - 1-* zoneidnumber->blocked_spells:zoneid
   - 1-* zoneidnumber->char_create_combinations:start_zone
@@ -1027,18 +1043,6 @@ zone:
   - 1-* zoneidnumber->task_activities:zones
   - 1-* zoneidnumber->zone_flags:zoneID
   - 1-* zoneidnumber->zone_points:target_zone_id
-  - 1-* zone_short_name->adventure_template:zone
-  - 1-* zone_short_name->doors:zone
-  - 1-* zone_short_name->doors:dest_zone
-  - 1-* zone_short_name->hackers:zone
-  - 1-* zone_short_name->launcher_zones:zone
-  - 1-* zone_short_name->spawn_conditions:zone
-  - 1-* zone_short_name->spawn_condition_values:zone
-  - 1-* zone_short_name->spawn_events:zone
-  - 1-* zone_short_name->spawn2:zone
-  - 1-* zone_short_name->spells_new:teleport_zone
-  - 1-* zone_short_name->traps:zone
-  - 1-* zone_short_name->zone_points:zone
   - 1-* version->adventure_template:version
   - 1-* version->doors:version
   - 1-* version->ground_spawns:version

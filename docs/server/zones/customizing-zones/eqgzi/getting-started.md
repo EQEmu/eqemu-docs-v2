@@ -68,4 +68,4 @@ If you aren't using blender, you'll need to skip the blender step, and export an
 ## Further reading and configuration
 
 - [Shader List](shader-list.md) - A list of shaders
-- [Blender Custom Properties](custom-properties.md) - A list of custom properties supported by EQGZI inside Blender
+- [Blender Custom Properties](blender-custom-properties.md) - A list of custom properties supported by EQGZI inside Blender
