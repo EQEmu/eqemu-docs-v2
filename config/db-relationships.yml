@@ -600,7 +600,7 @@ keyring:
 launcher:
   - 1-* name->launcher_zones:launcher
 launcher_zones:
-  - 1-1 launcher->launcher_zones:name
+  - 1-1 launcher->launcher:name
   - 1-1 zone->zone:short_name
 ldon_trap_entries:
   - 1-1 trap_id->ldon_trap_templates:id
