@@ -22,6 +22,8 @@ account:
   - 1-* name->eventlog:accountname
   - 1-* name->hackers:account
   - 1-* name->petitions:accountname
+account_flags:
+  - 1-1 p_accid->account:id
 account_ip:
   - 1-1 ip->banned_ips:ip_address
   - 1-1 ip->gm_ips:ip_address
