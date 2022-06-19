@@ -693,7 +693,7 @@ merc_types:
 merc_weaponinfo:
   - 1-1 merc_npc_type_id->merc_npc_types:merc_npc_type_id
 merchantlist:
-  - 1-1 bucket_name->data_buckets:name
+  - 1-1 bucket_name->data_buckets:key
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 item->items:id
@@ -922,7 +922,7 @@ spawngroup:
   - 1-1 id->spawn2:spawngroupID
 spell_buckets:
   - 1-1 spellid->spells_new:id
-  - 1-1 key->data_buckets:name
+  - 1-1 key->data_buckets:key
 spell_globals:
   - 1-1 spellid->spells_new:id
   - 1-1 qglobals->quest_globals:name
