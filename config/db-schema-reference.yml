@@ -8891,12 +8891,12 @@ merchantlist:
     dataType: varchar
     description: Content Flags Required to be Enabled
     nullable: "YES"
-    ordinal_position: 14
+    ordinal_position: 11
   content_flags_disabled:
     dataType: varchar
     description: Content Flags Required to be Disabled
     nullable: "YES"
-    ordinal_position: 15
+    ordinal_position: 12
   faction_required:
     dataType: smallint
     description: Faction Required
@@ -8916,7 +8916,7 @@ merchantlist:
     dataType: tinyint
     description: '[Maximum Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
-    ordinal_position: 13
+    ordinal_position: 10
   merchantid:
     dataType: int
     description: Merchant Identifier
@@ -8926,7 +8926,7 @@ merchantlist:
     dataType: tinyint
     description: '[Minimum Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
-    ordinal_position: 12
+    ordinal_position: 9
   probability:
     dataType: int
     description: 'Probability: 0 = Never, 100 = Always'
@@ -13740,7 +13740,7 @@ task_activities:
     dataType: int
     description: 'Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../schema/npcs/npc_types.md)'
     nullable: "NO"
-    ordinal_position: 14
+    ordinal_position: 13
   description_override:
     dataType: varchar
     description: Description Override
@@ -13755,7 +13755,7 @@ task_activities:
     dataType: int
     description: Goal Count
     nullable: "YES"
-    ordinal_position: 13
+    ordinal_position: 12
   goalid:
     dataType: int
     description: Goal Identifier or [Goal List Identifier](goallists.md)
@@ -13765,7 +13765,7 @@ task_activities:
     dataType: int
     description: 'Goal Method: 0 = Single Value, 1 = List'
     nullable: "NO"
-    ordinal_position: 12
+    ordinal_position: 11
   item_list:
     dataType: varchar
     description: '[Item Identifier List](../../schema/items/items.md)'
@@ -13775,7 +13775,7 @@ task_activities:
     dataType: tinyint
     description: 'Optional: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 16
+    ordinal_position: 15
   skill_list:
     dataType: varchar
     description: '[Skill Identifier List](../../../../server/player/skills)'
@@ -13805,7 +13805,7 @@ task_activities:
     dataType: varchar
     description: '[Zones List](../../../../server/zones/zone-list)'
     nullable: "NO"
-    ordinal_position: 15
+    ordinal_position: 14
 tasks:
   cashreward:
     dataType: int

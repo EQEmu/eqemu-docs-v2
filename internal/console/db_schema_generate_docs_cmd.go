@@ -20,6 +20,8 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
+const erdDiagramChunkSize = 8
+
 type DbGenerateDocsCommand struct {
 	command *cobra.Command
 	tables  []database.TableRelationships
@@ -254,29 +256,34 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 		}
 	}
 
-	diagram := c.buildMermaidDiagram(table)
+	diagrams := c.buildMermaidDiagrams(table)
 	imageLink := ""
 	diagramLink := ""
-	if len(diagram) > 0 {
-		mermaid := MermaidLiveJsDiagram{
-			Code: diagram,
-			Mermaid: struct {
-				Theme string `json:"theme"`
-			}{Theme: "default"},
-			UpdateEditor:  true,
-			AutoSync:      true,
-			UpdateDiagram: true,
-		}
+	diagramsMarkdown := ""
+	if len(diagrams) > 0 {
+		for _, diagram := range strings.Split(diagrams, "erDiagram") {
+			if len(diagram) > 0 {
+				mermaid := MermaidLiveJsDiagram{
+					Code: fmt.Sprintf("erDiagram%v", diagram),
+					Mermaid: struct {
+						Theme string `json:"theme"`
+					}{Theme: "default"},
+					UpdateEditor:  true,
+					AutoSync:      true,
+					UpdateDiagram: true,
+				}
 
-		b, err := json.Marshal(mermaid)
-		if err != nil {
-			fmt.Println("error:", err)
-		}
+				b, err := json.Marshal(mermaid)
+				if err != nil {
+					fmt.Println("error:", err)
+				}
 
-		encoded := base64.StdEncoding.EncodeToString(b)
-		imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagram}", encoded, encoded)
-		//imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.live/edit#%v){target=diagram}", encoded, encoded)
-		diagramLink = fmt.Sprintf("[Diagram Edit](https://mermaid.live/edit#%v){target=diagram-edit}", encoded)
+				encoded := base64.StdEncoding.EncodeToString(b)
+				imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagrams}", encoded, encoded)
+				diagramLink = fmt.Sprintf("[Diagram Edit](https://mermaid.live/edit#%v){target=diagrams-edit}", encoded)
+				diagramsMarkdown += fmt.Sprintf("%v\n\n%v\n\n", diagramLink, imageLink)
+			}
+		}
 	}
 
 	// build table
@@ -290,9 +297,9 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 
 	markdown += fmt.Sprintf("\n!!! info\n\tThis page was last generated %v\n", generatedTime)
 
-	// if we have a diagram, we have relationships
+	// if we have a diagrams, we have relationships
 	if len(imageLink) > 0 {
-		markdown += fmt.Sprintf("\n## Relationship Diagram\n\n%v\n\n%v\n", diagramLink, imageLink)
+		markdown += fmt.Sprintf("\n## Relationship Diagram(s)\n\n%v", diagramsMarkdown)
 		markdown += fmt.Sprintf("\n## Relationships\n\n")
 		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
@@ -357,7 +364,24 @@ type MermaidLiveJsDiagram struct {
 	UpdateDiagram bool `json:"updateDiagram"`
 }
 
-func (c *DbGenerateDocsCommand) buildMermaidDiagram(table string) string {
+func (c *DbGenerateDocsCommand) chunkRelationships(slice []string, chunkSize int) [][]string {
+	var chunks [][]string
+	for i := 0; i < len(slice); i += chunkSize {
+		end := i + chunkSize
+
+		// necessary check to avoid slicing beyond
+		// slice capacity
+		if end > len(slice) {
+			end = len(slice)
+		}
+
+		chunks = append(chunks, slice[i:end])
+	}
+
+	return chunks
+}
+
+func (c *DbGenerateDocsCommand) buildMermaidDiagrams(table string) string {
 	//    npc_types ||--o{ PERSON : has-many
 	//    npc_types {
 	//        string registrationNumber
@@ -378,10 +402,13 @@ func (c *DbGenerateDocsCommand) buildMermaidDiagram(table string) string {
 			// build remote tables
 			remoteTables := []string{}
 			for _, relationship := range t.Relationships {
-				remoteTables = append(remoteTables, relationship.RemoteTable)
+				if !containsStringSlice(remoteTables, relationship.RemoteTable) {
+					remoteTables = append(remoteTables, relationship.RemoteTable)
+				}
 			}
 
-			tableDefinitions := ""
+			//pp.Printf("Remote Table Count for [%v] count [%v]\n", table, len(remoteTables))
+			//pp.Println(remoteTables)
 
 			// add self table
 
@@ -396,45 +423,69 @@ func (c *DbGenerateDocsCommand) buildMermaidDiagram(table string) string {
 					)
 				}
 			}
-			tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", table, strings.TrimSuffix(keysString, "\n"))
 
-			// add remote tables
-			for _, remoteTable := range remoteTables {
-				keys := c.getRelationshipKeysForTable(remoteTable)
-				keysString := ""
-				if len(keys) > 0 {
-					for _, key := range keys {
-						keysString += fmt.Sprintf(
-							"        %v %v\n",
-							c.getDataTypeForTableField(remoteTable, key),
-							key,
-						)
+			diagrams := ""
+			for _, r := range c.chunkRelationships(remoteTables, erdDiagramChunkSize) {
+				tableDefinitions := ""
+				tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", table, strings.TrimSuffix(keysString, "\n"))
+
+				//pp.Printf("# chunk size [%v]\n", len(r))
+				//pp.Println(r)
+
+				//pp.Println("Table Definitions")
+				//fmt.Println(tableDefinitions)
+
+				// add remote tables
+				for _, remoteTable := range r {
+					keys := c.getRelationshipKeysForTable(remoteTable)
+					keysString := ""
+					if len(keys) > 0 {
+						for _, key := range keys {
+							keysString += fmt.Sprintf(
+								"        %v %v\n",
+								c.getDataTypeForTableField(remoteTable, key),
+								key,
+							)
+						}
 					}
+
+					tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", remoteTable, strings.TrimSuffix(keysString, "\n"))
 				}
 
-				tableDefinitions += fmt.Sprintf("    %v {\n%v\n    }\n", remoteTable, strings.TrimSuffix(keysString, "\n"))
+				// add relationships
+				relationshipsString := ""
+				for _, relationship := range t.Relationships {
+					if !containsStringSlice(r, relationship.RemoteTable) {
+						continue
+					}
+
+					relationshipTypeString := "relates"
+					if relationship.RelationshipType == "1-*" {
+						relationshipTypeString = "Has-Many"
+					}
+					if relationship.RelationshipType == "1-1" {
+						relationshipTypeString = "One-to-One"
+					}
+
+					relationshipsString += fmt.Sprintf(
+						"    %v ||--o{ %v : %v\n",
+						table,
+						relationship.RemoteTable,
+						relationshipTypeString,
+					)
+				}
+
+				diagram := fmt.Sprintf("erDiagram\n%v%v\n", tableDefinitions, relationshipsString)
+				diagrams += diagram
+
+				//pp.Println("Diagram")
+				//fmt.Println(diagram)
 			}
 
-			// add relationships
-			relationshipsString := ""
-			for _, relationship := range t.Relationships {
-				relationshipTypeString := "relates"
-				if relationship.RelationshipType == "1-*" {
-					relationshipTypeString = "Has-Many"
-				}
-				if relationship.RelationshipType == "1-1" {
-					relationshipTypeString = "One-to-One"
-				}
+			//pp.Println("Diagrams")
+			//fmt.Println(diagrams)
 
-				relationshipsString += fmt.Sprintf(
-					"    %v ||--o{ %v : %v\n",
-					table,
-					relationship.RemoteTable,
-					relationshipTypeString,
-				)
-			}
-
-			return fmt.Sprintf("erDiagram\n%v%v\n", tableDefinitions, relationshipsString)
+			return diagrams
 		}
 	}
 	return ""
@@ -476,7 +527,7 @@ func (c *DbGenerateDocsCommand) getDataTypeForTableField(table string, key strin
 		}
 	}
 
-	return ""
+	return "varchar"
 }
 
 func (c *DbGenerateDocsCommand) buildLinkToTablePage(table string) string {
