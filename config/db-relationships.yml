@@ -32,8 +32,27 @@ account_rewards:
   - 1-1 reward_id->veteran_reward_templates:claim_id
 adventure_details:
   - 1-* id->adventure_members:id
-  - 1-1 adventure_id->adventure_templates:id
+  - 1-1 id->adventure_template:id
+  - 1-* id->adventure_template_entry:id
+  - 1-* id->adventure_template_entry_flavor:id
+  - 1-1 adventure_id->adventure_template:id
   - 1-1 instance_id->instance_list:id
+adventure_members:
+  - 1-1 id->adventure_details:id
+  - 1-1 charid->character_data:id
+adventure_stats:
+  - 1-1 player_id->character_data:id
+adventure_template:
+  - 1-1 graveyard_zone_id->zone:zoneidnumber
+  - 1-1 id->adventure_details:id
+  - 1-1 zone->zone:short_name
+  - 1-1 zone_in_zone_id->zone:zoneidnumber
+  - 1-1 zone_version->zone:version
+adventure_template_entry:
+  - 1-1 id->adventure_details:id
+  - 1-1 template_id->adventure_template:id
+adventure_template_entry_flavor:
+  - 1-1 id->adventure_details:id
 alternate_currency:
   - 1-* id->character_alt_currency:currency_id
   - 1-* id->npc_types:alt_currency_id
@@ -46,6 +65,7 @@ banned_ips:
 blocked_spells:
   - 1-1 spellid->spells_new:id
   - 1-1 zoneid->zone:zoneidnumber
+books:
   - 1-* id->items:book
 bot_buffs:
   - 1-1 bot_id->bot_data:bot_id
@@ -176,6 +196,7 @@ character_corpses:
 character_currency:
   - 1-1 id->character_data:id
 character_data:
+  - 1-* id->adventure_members:charid
   - 1-* id->adventure_stats:player_id
   - 1-* id->char_recipe_list:char_id
   - 1-* id->character_pet_buffs:char_id
@@ -261,6 +282,7 @@ character_data:
   - 1-* name->group_leaders:puller
   - 1-1 name->guilds:motd_setter
   - 1-1 name->hackers:name
+  - 1-1 nane->lfguild:name
   - 1-* name->petitions:charname
   - 1-1 name->raid_members:name
   - 1-* name->reports:name
@@ -327,7 +349,7 @@ character_task_timers:
 character_tribute:
   - 1-1 id->character_data:id
 completed_shared_task_activity_state:
-  - 1-1 activity_id->tasks_activities:activityid
+  - 1-1 activity_id->task_activities:activityid
   - 1-1 shared_task_id->shared_tasks:id
 completed_shared_task_members:
   - 1-1 character_id->character_data:id
@@ -337,7 +359,7 @@ completed_shared_tasks:
 completed_tasks:
   - 1-1 charid->character_data:id
   - 1-1 taskid->tasks:id
-  - 1-1 activityid->tasks_activities:activityid
+  - 1-1 activityid->task_activities:activityid
 content_flags:
   - 1-* flag_name->doors:content_flags
   - 1-* flag_name->doors:content_flags_disabled
@@ -380,7 +402,11 @@ data_buckets:
   - 1-* key->spell_buckets:key
 db_str:
   - 1-1 id->merc_templates:dbstring
-  - 1-1 id->merc_types:dbstring
+  - 1-1 id->merc_types:dbstring  
+  - 1-1 id->spells_new:descnum
+  - 1-1 id->spells_new:effectdescnum
+  - 1-1 id->spells_new:effectdescnum2
+  - 1-1 id->spells_new:typedescnum
 discord_webhooks:
   - 1-* id->logsys_categories:discord_webhook_id
 discovered_items:
@@ -436,6 +462,7 @@ global_loot:
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 loottable_id->loottable:id
+  - 1-1 zone->zone:short_name
 gm_ips:
   - 1-1 account_id->account:id
   - 1-* ip_address->account_ip:ip
@@ -487,6 +514,8 @@ hackers:
   - 1-1 account->account:name
   - 1-1 name->character_data:name
   - 1-1 zone->zone:short_name
+horses:
+  - 1-1 filename->npc_types:name
 instance_list:
   - 1-* id->adventure_details:instance_id
   - 1-* id->character_bind:instance_id
@@ -609,6 +638,8 @@ ldon_trap_entries:
 ldon_trap_templates:
   - 1-* id->ldon_trap_entries:trap_id
   - 1-1 spell_id->spells_new:id
+lfguild:
+  - 1-1 name->character_data:name
 login_accounts:
   - 1-1 account_name->account:name
   - 1-* last_ip_address->account_ip:ip
@@ -657,7 +688,7 @@ merc_merchant_entries:
   - 1-1 merc_merchant_template_id->merc_merchant_templates:merc_merchant_template_id
   - 1-1 merchant_id->npc_types:id
 merc_merchant_template_entries:
-  - 1-* merc_merchant_template_id->merc_merchant_template_entries:merc_merchant_template_id
+  - 1-1 merc_merchant_template_id->merc_merchant_templates:merc_merchant_template_id
   - 1-1 merc_template_id->merc_templates:merc_template_id
 merc_merchant_templates:
   - 1-* merc_merchant_template_id->merc_merchant_entries:merc_merchant_template_id
@@ -749,6 +780,7 @@ npc_types:
   - 1-* id->task_activities:delivertonpc
   - 1-1 loottable_id->loottable:id
   - 1-* merchant_id->merchantlist:merchantid
+  - 1-1 name->horses:filename
   - 1-* npc_faction_id->npc_faction:id
   - 1-1 npc_spells_id->npc_spells:id
   - 1-1 npc_spells_effects_id->npc_spells_effects:id
@@ -759,6 +791,7 @@ npc_types_tint:
 object:
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
+  - 1-* id->object_contents:parentid
   - 1-1 itemid->items:id
   - 1-1 version->zone:version
   - 1-1 zoneid->zone:zoneidnumber
@@ -770,6 +803,7 @@ object_contents:
   - 1-1 augslot5->items:id
   - 1-1 augslot6->items:id
   - 1-1 itemid->items:id
+  - 1-1 parentid->object:id
   - 1-1 zoneid->zone:zoneidnumber
 petitions:
   - 1-1 charname->character_data:name
@@ -779,7 +813,9 @@ petitions:
 pets:
   - 1-1 npcID->npc_types:id
   - 1-1 type->npc_types:name
+  - 1-1 equipmentset->pets_equipmentset:set_id
 pets_equipmentset:
+  - 1-* set_id->pets:equipmentset
   - 1-* set_id->pets_equipmentset_entries:set_id
 pets_equipmentset_entries:
   - 1-1 item_id->items:id
@@ -877,7 +913,7 @@ rule_sets:
 rule_values:
   - 1-1 ruleset_id->rule_sets:ruleset_id
 shared_task_activity_state:
-  - 1-1 activity_id->tasks_activities:activityid
+  - 1-1 activity_id->task_activities:activityid
   - 1-1 shared_task_id->shared_tasks:id
 shared_task_dynamic_zones:
   - 1-1 dynamic_zone_id->dynamic_zones:id
@@ -1023,6 +1059,7 @@ zone:
   - 1-* short_name->adventure_template:zone
   - 1-* short_name->doors:zone
   - 1-* short_name->doors:dest_zone
+  - 1-* short_name->global_loot:zone
   - 1-* short_name->hackers:zone
   - 1-* short_name->launcher_zones:zone
   - 1-* short_name->spawn_conditions:zone
@@ -1032,6 +1069,8 @@ zone:
   - 1-* short_name->spells_new:teleport_zone
   - 1-* short_name->traps:zone
   - 1-* short_name->zone_points:zone
+  - 1-* zoneidnumber->adventure_template:graveyard_zone_id
+  - 1-* zoneidnumber->adventure_template:zone_in_zone_id
   - 1-* zoneidnumber->bot_data:zone_id
   - 1-* zoneidnumber->blocked_spells:zoneid
   - 1-* zoneidnumber->char_create_combinations:start_zone
