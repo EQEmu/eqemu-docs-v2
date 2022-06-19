@@ -847,7 +847,7 @@ quest_globals:
   - 1-1 charid->character_data:id
   - 1-* name->item_tick:it_qglobal
   - 1-* name->merc_merchant_templates:qglobal
-  - 1-* name->spell_buckets:qglobal
+  - 1-* name->spell_globals:qglobal
   - 1-1 npcid->npc_types:id
   - 1-1 zoneid->zone:zoneidnumber
 raid_details:
