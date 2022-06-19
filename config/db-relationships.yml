@@ -437,6 +437,8 @@ global_loot:
 gm_ips:
   - 1-1 account_id->account:id
   - 1-* ip_address->account_ip:ip
+goallists:
+  - 1-* listid->task_activities:goalid
 graveyard:
   - 1-1 zone_id->zone:zoneidnumber
 grid:
