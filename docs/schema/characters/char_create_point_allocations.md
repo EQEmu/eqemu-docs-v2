@@ -1,7 +1,7 @@
 # char_create_point_allocations
 
 !!! info
-	This page was last generated 2022.06.18
+	This page was last generated 2022.06.19
 
 ## Relationship Diagram(s)
 

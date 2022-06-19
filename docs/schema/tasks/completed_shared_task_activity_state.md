@@ -1,7 +1,7 @@
 # completed_shared_task_activity_state
 
 !!! info
-	This page was last generated 2022.06.18
+	This page was last generated 2022.06.19
 
 ## Relationship Diagram(s)
 

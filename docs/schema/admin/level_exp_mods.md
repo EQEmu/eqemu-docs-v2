@@ -1,7 +1,7 @@
 # level_exp_mods
 
 !!! info
-	This page was last generated 2022.06.18
+	This page was last generated 2022.06.19
 
 ## Schema
 

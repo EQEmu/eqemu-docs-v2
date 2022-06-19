@@ -1,7 +1,7 @@
 # vw_guild_members
 
 !!! info
-	This page was last generated 2022.06.18
+	This page was last generated 2022.06.19
 
 ## Schema
 

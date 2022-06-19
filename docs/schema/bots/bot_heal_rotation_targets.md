@@ -1,7 +1,7 @@
 # bot_heal_rotation_targets
 
 !!! info
-	This page was last generated 2022.06.18
+	This page was last generated 2022.06.19
 
 ## Relationship Diagram(s)
 

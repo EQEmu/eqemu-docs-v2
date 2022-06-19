@@ -382,6 +382,8 @@ discovered_items:
   - 1-1 char_name->character_data:name
   - 1-1 item_id->items:id
 doors:
+  - 1-1 content_flags->content_flags:flag_name
+  - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 keyitem->items:id
   - 1-1 zone->zone:short_name
   - 1-1 dest_zone->zone:short_name
@@ -412,10 +414,14 @@ faction_values:
   - 1-1 char_id->character_data:id
   - 1-1 faction_id->faction_list:id
 fishing:
+  - 1-1 content_flags->content_flags:flag_name
+  - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 Itemid->items:id
   - 1-1 zoneid->zone:zoneidnumber
   - 1-1 npc_id->npc_types:id
 forage:
+  - 1-1 content_flags->content_flags:flag_name
+  - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 Itemid->items:id
   - 1-1 zoneid->zone:zoneidnumber
 friends:
@@ -684,6 +690,8 @@ merc_types:
 merc_weaponinfo:
   - 1-1 merc_npc_type_id->merc_npc_types:merc_npc_type_id
 merchantlist:
+  - 1-1 content_flags->content_flags:flag_name
+  - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 item->items:id
   - 1-* merchant_id->npc_types:merchant_id
 merchantlist_temp:
@@ -894,8 +902,6 @@ spawn_events:
   - 1-1 cond_id->spawn_conditions:id
   - 1-1 zone->zone:short_name
 spawn2:
-  - 1-1 _condition->spawn_conditions:id
-  - 1-1 cond_value->spawn_conditions:value
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 pathgrid->grid:id
@@ -904,6 +910,8 @@ spawn2:
   - 1-1 version->zone:version
   - 1-1 zone->zone:short_name
 spawnentry:
+  - 1-1 content_flags->content_flags:flag_name
+  - 1-1 content_flags_disabled->content_flags:flag_name
   - 1-1 spawngroupID->spawngroup:id
   - 1-1 npcID->npc_types:id
 spawngroup:
