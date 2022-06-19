@@ -925,7 +925,7 @@ spell_buckets:
   - 1-1 key->data_buckets:key
 spell_globals:
   - 1-1 spellid->spells_new:id
-  - 1-1 qglobals->quest_globals:name
+  - 1-1 qglobal->quest_globals:name
 spells_new:
   - 1-1 descnum->db_str:id
   - 1-1 effectdescnum->db_str:id
