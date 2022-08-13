@@ -50,10 +50,13 @@ The repository generator can be found in the source via the following path
 === "Linux Bash"
       ```bash
       # Command Structure
-      perl ~/code/utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
+      perl ~/code/utils/scripts/generators/repository-generator.pl [server-location] [table|all] [base|extended|all] [
       
       # Generate everything
       perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ all
+      
+      # Only generate a repository for the account table
+      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
       
       # Only generate a repository for the account table
       perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
@@ -64,7 +67,7 @@ The repository generator can be found in the source via the following path
       # Command Structure
       # Must be run from the root eqemu source folder
       # [server-location] is the full path to server's world.exe location
-      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl [server-location] [table_name|all]
+      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl [server-location] [table|all] [base|extended|all]
       
       # Generate everything
       E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ all
