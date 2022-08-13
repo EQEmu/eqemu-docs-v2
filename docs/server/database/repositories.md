@@ -58,8 +58,8 @@ The repository generator can be found in the source via the following path
       # Only generate a repository for the account table
       perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
       
-      # Only generate a repository for the account table
-      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
+      # Only generate base repositority for specific table
+      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account base
       ```
 
 === "Windows CMD"
@@ -74,6 +74,9 @@ The repository generator can be found in the source via the following path
       
       # Only generate a repository for the account table
       E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ account
+      
+      # Only generate base repositority for specific table
+      E:\EQEmu\src>perl utils/scripts/generators/repository-generator.pl E:\EQEmu\build\bin\Debug\ account base
       
       ```
 
