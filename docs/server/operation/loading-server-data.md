@@ -16,6 +16,9 @@ This page explains how different assets on the server are loaded and by what met
 ## Blocked Spells
 * **#reload blocked_spells** will reload Blocked Spells data from the `blocked_spells` table globally
 
+## Commands
+* **#reload commands** will reload Commands data from the `command_settings` table globally
+
 ## Content Flags
 * **#reload content_flags** will reload Content Flags data from the `content_flags` table globally
 
