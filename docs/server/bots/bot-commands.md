@@ -40,6 +40,7 @@ Please use the ^findaliases command to locate abridged versions of command names
 ^botfollowdistance - Changes the follow distance(s) of a bot(s)
 ^botgroup - Lists the available bot-group [subcommands]
 ^botgroupaddmember - Adds a member to a bot-group
+^botgroupautospawn - Toggles auto spawning for a bot-group, spawning the bot group when you zone automatically
 ^botgroupcreate - Creates a bot-group and designates a leader
 ^botgroupdelete - Deletes a bot-group and releases its members
 ^botgrouplist - Lists all of your existing bot-groups
