@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.06.08
+    Last Generated: 2022.09.10
 
 
 | Command | Description | Status Level |
@@ -55,12 +55,14 @@
 | #endurance | Restores your or your target's endurance. | Guide (50) |
 | #equipitem | [slotid(0-21)] - Equip the item on your cursor into the specified slot | Guide (50) |
 | #faction | [Find (criteria &#124; all ) &#124; Review (criteria &#124; all) &#124; Reset (id)] - Resets Player's Faction | QuestTroupe (80) |
+| #factionassociation | [factionid] [amount] - triggers a faction hits via association | GMLeadAdmin (150) |
 | #feature | Change your or your target's feature's temporarily | QuestTroupe (80) |
 | #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
 | #findclass | [Search Criteria] - Search for a class | Guide (50) |
 | #findfaction | [Search Criteria] - Search for a faction | Guide (50) |
 | #findnpctype | [Search Criteria] - Search database NPC types | GMAdmin (100) |
 | #findrace | [Search Criteria] - Search for a race | Guide (50) |
+| #findrecipe | [Search Criteria] - Search for a recipe | Guide (50) |
 | #findskill | [Search Criteria] - Search for a skill | Guide (50) |
 | #findspell | [Search Criteria] - Search for a spell | Guide (50) |
 | #findtask | [Search Criteria] - Search for a task | Guide (50) |
@@ -84,6 +86,7 @@
 | #gm | [On&#124;Off] - Modify your or your target's GM Flag | QuestTroupe (80) |
 | #gmspeed | [On&#124;Off] - Turn GM Speed On or Off for you or your player target | GMAdmin (100) |
 | #gmzone | [Zone ID&#124;Zone Short Name] [Version] [Instance Identifier] - Zones to a private GM instance (Version defaults to 0 and Instance Identifier defaults to 'gmzone' if not used) | GMAdmin (100) |
+| #godmode | [on/off] - Turns on/off hideme, gmspeed, invul, and flymode. | GMMgmt (200) |
 | #goto | [playername] or [x y z] [h] - Teleport to the provided coordinates or to your target | Steward (10) |
 | #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid | GMAreas (170) |
 | #guild | Guild manipulation commands. Use argument help for more info. | Steward (10) |
@@ -115,6 +118,7 @@
 | #level | [Level] - Set your target's level | Steward (10) |
 | #list | [npcs&#124;players&#124;corpses&#124;doors&#124;objects] [search] - Search entities | ApprenticeGuide (20) |
 | #listpetition | List petitions | Guide (50) |
+| #lootsim | [npc_type_id] [loottable_id] [iterations] - Runs benchmark simulations using real loot logic to report numbers and data | GMImpossible (250) |
 | #load_shared_memory | [shared_memory_name] - Reloads shared memory and uses the input as output | GMImpossible (250) |
 | #loc | Print out your or your target's current location and heading | Player (0) |
 | #logs | Manage anything to do with logs | GMImpossible (250) |
@@ -254,6 +258,7 @@
 | #viewcurrencies | View your or your target's currencies | GMAdmin (100) |
 | #viewnpctype | [NPC ID] - Show stats for an NPC by NPC ID | GMAdmin (100) |
 | #viewpetition | [petition number] - View a petition | ApprenticeGuide (20) |
+| #viewrecipe | [Recipe ID] - Show a recipe's entries | GMAdmin (100) |
 | #viewzoneloot | [item id] - Allows you to search a zone's loot for a specific item ID. (0 shows all loot in the zone) | QuestTroupe (80) |
 | #wc | [wear slot] [material] - Sends an OP_WearChange for your target | GMMgmt (200) |
 | #weather | [0/1/2/3] (Off/Rain/Snow/Manual) - Change the weather | QuestTroupe (80) |
