@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2022.06.08
+    Last Generated: 2022.09.10
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -132,6 +132,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:DeathExpLossMaxLevel | 255 | Every higher level will no longer lose experience at death |
 | Character:DeathItemLossLevel | 10 | From this level on, items are left in the corpse when LeaveCorpses is activated |
 | Character:DeathExpLossMultiplier | 3 | Adjust how much experience is lost. Default 3.5% (0=0.5%, 1=1.5%, 2=2.5%, 3=3.5%, 4=4.5%, 5=5.5%, 6=6.5%, 7=7.5%, 8=8.5%, 9=9.5%, 10=11%) |
+| Character:DeathKeepLevel | false | Players can not drop below 0% experience from death. |
 | Character:UseDeathExpLossMult | false | Setting to control whether DeathExpLossMultiplier or the code default is used: (Level x Level / 18.0) x 12000 |
 | Character:UseOldRaceRezEffects | false | Older clients had ID 757 for races with high starting STR, but it doesn't seem used anymore |
 | Character:CorpseDecayTimeMS | 10800000 | Time after which the corpse decays (milliseconds) |
@@ -246,6 +247,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:AllowCrossClassTrainers | false | If the value is true, a player can also train with other class Guildmasters. |
 | Character:PetsUseReagents | true | Conjuring pets consumes reagents |
 | Character:DismountWater | true | Dismount horses when entering water |
+| Character:NoSkillsOnHorse | false | Enabling this will prevent Bind Wound and Foraging while on a mount |
 | Character:UseNoJunkFishing | false | Disregards junk items when fishing |
 | Character:SoftDeletes | true | When characters are deleted in character select, they are only soft deleted |
 | Character:DefaultGuild | 0 | If not 0, new characters placed into the guild # indicated |
@@ -391,11 +393,14 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:NPCsUseFrontalStunImmunityClasses | false | Enable or disable NPCs using frontal stun immunity Classes from Combat:FrontalStunImmunityClasses, false by default. |
 | Combat:FrontalStunImmunityRaces | 512 | Bitmask for Races than have frontal stun immunity, Ogre (512) only by default. |
 | Combat:NPCsUseFrontalStunImmunityRaces | true | Enable or disable NPCs using frontal stun immunity Races from Combat:FrontalStunImmunityRaces, true by default. |
+| Combat:AssassinateOnlyHumanoids | true | Enable or disable Assassinate only being allowed on Humanoids, true by default. |
+| Combat:HeadshotOnlyHumanoids | true | Enable or disable Headshot only being allowed on Humanoids, true by default. |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
 | Command:DyeCommandRequiresDyes | false | Enable this to require a Prismatic Dye (32557) each time someone uses #dye. |
+| Command:HideMeCommandDisablesTells | true | Disable this to allow tells to be received when using #hideme. |
 
 ## Console Rules
 | Rule Name | Default Value | Description |
@@ -742,6 +747,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:AllowItemTGB | false | Target group buff (/tgb) doesn't work with items on live, custom servers want it though |
 | Spells:NPCInnateProcOverride | true | NPC innate procs override the target type to single target |
 | Spells:OldRainTargets | false | Use old incorrectly implemented maximum targets for rains |
+| Spells:CallOfTheHeroAggroClearDist | 250.0 | Distance at which CoTH will wipe aggro. To disable and always enable aggro wipe on any distance of CoTH, set to 0. |
 | Spells:NPCSpellPush | false | Enable spell push on NPCs |
 | Spells:July242002PetResists | true | Enable Pets using PCs resist change from July 24 2002 |
 | Spells:AOEMaxTargets | 0 | Max number of targets a Targeted AOE spell can cast on. Set to 0 for no limit. |
@@ -760,6 +766,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:BuffsFadeOnDeath | true | Disable to keep buffs from fading on death |
 | Spells:IllusionsAlwaysPersist | false | Allows Illusions to persist beyond death and zoning always. |
 | Spells:UseItemCastMessage | false | Enable to use the \"item begins to glow\" messages when casting from an item. |
+| Spells:TargetsTargetRequiresCombatRange | true | Disable to remove combat range requirement from Target's Target Spell Target Type |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
@@ -771,6 +778,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | TaskSystem:KeepOneRecordPerCompletedTask | true | Keep only one record per completed task |
 | TaskSystem:EnableTaskProximity | true | Enable task proximity system |
 | TaskSystem:RequestCooldownTimerSeconds | 15 | Seconds between allowing characters to request tasks (live-like default: 15 seconds) |
+| TaskSystem:SharedTasksWorldProcessRate | 6000 | Timer interval (milliseconds) that shared tasks are processed in world |
+| TaskSystem:SharedTasksTerminateTimerMS | 120000 | Delay (milliseconds) until a shared task is terminated if requirements are no longer met after member removal (default: 2 minutes) |
+| TaskSystem:UpdateOneElementPerTask | true | If true (live-like) task updates only increment the first matching activity. If false all matching elements will be incremented. |
 
 ## Watermap Rules
 | Rule Name | Default Value | Description |
@@ -818,7 +828,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Zone:ClientLinkdeadMS | 90000 | The time a client remains link dead on the server after a sudden disconnection (milliseconds) |
 | Zone:GraveyardTimeMS | 1200000 | Time until a player corpse is moved to a zone's graveyard, if one is specified for the zone (milliseconds) |
 | Zone:EnableShadowrest | 1 | Enables or disables the Shadowrest zone feature for player corpses. Default is turned on |
-| Zone:AutoShutdownDelay | 5000 | How long a dynamic zone stays loaded while empty (milliseconds) |
+| Zone:AutoShutdownDelay | 60000 | How long a dynamic zone stays loaded while empty (milliseconds) |
 | Zone:PEQZoneReuseTime | 900 | Seconds between two uses of the #peqzone command (Set to 0 to disable) |
 | Zone:PEQZoneDebuff1 | 4454 | First debuff casted by #peqzone Default is Cursed Keeper's Blight |
 | Zone:PEQZoneDebuff2 | 2209 | Second debuff casted by #peqzone Default is Tendrils of Apathy |
@@ -837,3 +847,4 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Zone:KillProcessOnDynamicShutdown | true | When process has booted a zone and has hit its zone shut down timer, it will hard kill the process to free memory back to the OS |
 | Zone:SecondsBeforeIdle | 60 | Seconds before IDLE_WHEN_EMPTY define kicks in |
 | Zone:SpawnEventMin | 3 | When strict is set in spawn_events, specifies the max EQ minutes into the trigger hour a spawn_event will fire. Going below 3 may cause the spawn_event to not fire. |
+| Zone:ForageChance | 25 | Chance of foraging from zone table vs global table |
