@@ -421,6 +421,8 @@ doors:
 dynamic_zone_members:
   - 1-1 character_id->character_data:id
   - 1-1 dynamic_zone_id->dynamic_zones:id
+dynamic_zone_templates:
+  - 1-* id->tasks:dz_template_id
 dynamic_zones:
   - 1-1 compass_zone_id->zone:zoneidnumber
   - 1-* id->dynamic_zone_members:dynamic_zone_id
@@ -1013,6 +1015,7 @@ tasks:
   - 1-* id->task_activities:taskid
   - 1-* id->tasksets:taskid
   - 1-* type->character_tasks:type
+  - 1-1 dz_template_id->dynamic_zone_templates:id
 tasksets:
   - 1-1 taskid->tasks:id
 timers:

@@ -290,7 +290,7 @@ account:
     dataType: text
     description: Ban Reason
     nullable: "YES"
-    ordinal_position: 18
+    ordinal_position: 21
   charname:
     dataType: varchar
     description: Character name last logged in on this account.
@@ -300,22 +300,27 @@ account:
     dataType: text
     description: CRC for BaseData file
     nullable: "YES"
-    ordinal_position: 22
+    ordinal_position: 25
   crc_eqgame:
     dataType: text
     description: CRC for EQGame.exe
     nullable: "YES"
-    ordinal_position: 20
+    ordinal_position: 23
   crc_skillcaps:
     dataType: text
     description: CRC for SkillCaps file
     nullable: "YES"
-    ordinal_position: 21
+    ordinal_position: 24
   expansion:
     dataType: tinyint
     description: Expansion
     nullable: "NO"
-    ordinal_position: 17
+    ordinal_position: 20
+  flymode:
+    dataType: tinyint
+    description: '[Fly Mode](../../../../server/npc/fly-modes)'
+    nullable: "YES"
+    ordinal_position: 11
   gmspeed:
     dataType: tinyint
     description: 'GM Speed: 0 = Disabled, 1 = Enabled'
@@ -325,17 +330,27 @@ account:
     dataType: tinyint
     description: 'Hide Me: 0 = Disabled, 1 = Enabled'
     nullable: "NO"
-    ordinal_position: 13
+    ordinal_position: 16
   id:
     dataType: int
     description: Unique Account Identifier
     nullable: "NO"
     ordinal_position: 1
+  ignore_tells:
+    dataType: tinyint
+    description: 'Ignore Tells: 0 = False, 1 = True'
+    nullable: "YES"
+    ordinal_position: 12
+  invulnerable:
+    dataType: tinyint
+    description: 'Invulnerable: 0 = False, 1 = True'
+    nullable: "YES"
+    ordinal_position: 10
   karma:
     dataType: int
     description: Karma
     nullable: "NO"
-    ordinal_position: 11
+    ordinal_position: 14
   ls_id:
     dataType: varchar
     description: Loginserver ID
@@ -350,7 +365,7 @@ account:
     dataType: varchar
     description: Minilogin IP Address
     nullable: "NO"
-    ordinal_position: 12
+    ordinal_position: 15
   name:
     dataType: varchar
     description: Name
@@ -365,12 +380,12 @@ account:
     dataType: tinyint
     description: 'OOC Revoked: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 10
+    ordinal_position: 13
   rulesflag:
     dataType: tinyint
     description: Rules Flag
     nullable: "NO"
-    ordinal_position: 14
+    ordinal_position: 17
   sharedplat:
     dataType: int
     description: Platinum in Shared Bank.
@@ -385,17 +400,17 @@ account:
     dataType: text
     description: Suspension Reason
     nullable: "YES"
-    ordinal_position: 19
+    ordinal_position: 22
   suspendeduntil:
     dataType: datetime
     description: Time Suspension of the Account ends
     nullable: "YES"
-    ordinal_position: 15
+    ordinal_position: 18
   time_creation:
     dataType: int
     description: Time Creation UNIX Timestamp
     nullable: "NO"
-    ordinal_position: 16
+    ordinal_position: 19
 account_flags:
   p_accid:
     dataType: int
@@ -1459,6 +1474,11 @@ bot_group_members:
     nullable: "NO"
     ordinal_position: 2
 bot_groups:
+  auto_spawn:
+    dataType: tinyint
+    description: 'Auto Spawn: 0 = False, 1 = True'
+    nullable: "NO"
+    ordinal_position: 4
   group_leader_id:
     dataType: int
     description: '[Bot Identifier](bot_data.md)'
@@ -3957,7 +3977,7 @@ character_task_timers:
     dataType: datetime
     description: Expire Time
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 6
   id:
     dataType: int
     description: Unique Task Timer Identifier
@@ -3968,6 +3988,11 @@ character_task_timers:
     description: '[Task Identifier](../../schema/tasks/tasks.md)'
     nullable: "NO"
     ordinal_position: 3
+  timer_group:
+    dataType: int
+    description: Group Timer
+    nullable: "NO"
+    ordinal_position: 5
   timer_type:
     dataType: int
     description: Timer Type (0 = Replay, 1 = Request)
@@ -3999,6 +4024,11 @@ character_tasks:
     description: '[Task Type](../../../../server/task-system-guide/task-types)'
     nullable: "NO"
     ordinal_position: 4
+  was_rewarded:
+    dataType: tinyint
+    description: 'Was Rewarded: 0 = False, 1 = True'
+    nullable: "NO"
+    ordinal_position: 6
 character_tribute:
   id:
     dataType: int
@@ -4633,12 +4663,12 @@ doors:
     dataType: varchar
     description: Content Flags Required to be Enabled
     nullable: "YES"
-    ordinal_position: 34
+    ordinal_position: 35
   content_flags_disabled:
     dataType: varchar
     description: Content Flags Required to be Disabled
     nullable: "YES"
-    ordinal_position: 35
+    ordinal_position: 36
   dest_heading:
     dataType: float
     description: Destination Heading Coordinate
@@ -4689,6 +4719,11 @@ doors:
     description: 'Door Is Open: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 18
+  dz_switch_id:
+    dataType: int
+    description: '[Dynamic Zone Switch Identifier](../../schema/dynamic-zones/dynamic_zones.md)'
+    nullable: "NO"
+    ordinal_position: 32
   guild:
     dataType: smallint
     description: '[Guild Identifier](../../schema/guilds/guilds.md)'
@@ -4733,12 +4768,12 @@ doors:
     dataType: tinyint
     description: Maximum Expansion](../../../../server/operation/expansion-list)
     nullable: "NO"
-    ordinal_position: 33
+    ordinal_position: 34
   min_expansion:
     dataType: tinyint
     description: Minimum Expansion](../../../../server/operation/expansion-list)
     nullable: "NO"
-    ordinal_position: 32
+    ordinal_position: 33
   name:
     dataType: varchar
     description: This is the name of the door, such as 'IT11161' or 'POPCREATE501', for names of objects you can see.
@@ -4810,7 +4845,7 @@ dynamic_zone_members:
     description: Unique Dynamic Zone Member Identifier
     nullable: "NO"
     ordinal_position: 1
-dynamic_zones:
+dynamic_zone_templates:
   compass_x:
     dataType: float
     description: Compass X Coordinate
@@ -4823,7 +4858,7 @@ dynamic_zones:
     ordinal_position: 11
   compass_z:
     dataType: float
-    description: Compass Z Coordinate
+    description: Compass Z Coordinatet
     nullable: "NO"
     ordinal_position: 12
   compass_zone_id:
@@ -4831,11 +4866,127 @@ dynamic_zones:
     description: '[Compass Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 9
+  duration_seconds:
+    dataType: int
+    description: Duration in Seconds
+    nullable: "NO"
+    ordinal_position: 7
+  dz_switch_id:
+    dataType: int
+    description: '[Dynamic Zone Switch Identifier](../../schema/doors/doors.md)'
+    nullable: "NO"
+    ordinal_position: 8
+  id:
+    dataType: int
+    description: Dynamic Zone Template Unique Identifier
+    nullable: "NO"
+    ordinal_position: 1
+  max_players:
+    dataType: int
+    description: Maximum Players
+    nullable: "NO"
+    ordinal_position: 6
+  min_players:
+    dataType: int
+    description: Minimum Players
+    nullable: "NO"
+    ordinal_position: 5
+  name:
+    dataType: varchar
+    description: Dynamic Zone Template Name
+    nullable: "NO"
+    ordinal_position: 4
+  override_zone_in:
+    dataType: tinyint
+    description: 'Override Zone In: 0 = False, 1 = True'
+    nullable: "NO"
+    ordinal_position: 18
+  return_h:
+    dataType: float
+    description: Return Heading Coordinate
+    nullable: "NO"
+    ordinal_position: 17
+  return_x:
+    dataType: float
+    description: Return X Coordinate
+    nullable: "NO"
+    ordinal_position: 14
+  return_y:
+    dataType: float
+    description: Return Y Coordinate
+    nullable: "NO"
+    ordinal_position: 15
+  return_z:
+    dataType: float
+    description: Return Z Coordinate
+    nullable: "NO"
+    ordinal_position: 16
+  return_zone_id:
+    dataType: int
+    description: '[Return Zone Identifier](../../../../server/zones/zone-list)'
+    nullable: "NO"
+    ordinal_position: 13
+  zone_id:
+    dataType: int
+    description: '[Dynamic Zone Template Zone Identifier](../../../../server/zones/zone-list)'
+    nullable: "NO"
+    ordinal_position: 2
+  zone_in_h:
+    dataType: float
+    description: Zone In Heading Coordinate
+    nullable: "NO"
+    ordinal_position: 22
+  zone_in_x:
+    dataType: float
+    description: Zone In X Coordinate
+    nullable: "NO"
+    ordinal_position: 19
+  zone_in_y:
+    dataType: float
+    description: Zone In Y Coordinate
+    nullable: "NO"
+    ordinal_position: 20
+  zone_in_z:
+    dataType: float
+    description: Zone In Z Coordinate
+    nullable: "NO"
+    ordinal_position: 21
+  zone_version:
+    dataType: int
+    description: Zone Version
+    nullable: "NO"
+    ordinal_position: 3
+dynamic_zones:
+  compass_x:
+    dataType: float
+    description: Compass X Coordinate
+    nullable: "NO"
+    ordinal_position: 11
+  compass_y:
+    dataType: float
+    description: Compass Y Coordinate
+    nullable: "NO"
+    ordinal_position: 12
+  compass_z:
+    dataType: float
+    description: Compass Z Coordinate
+    nullable: "NO"
+    ordinal_position: 13
+  compass_zone_id:
+    dataType: int
+    description: '[Compass Zone Identifier](../../../../server/zones/zone-list)'
+    nullable: "NO"
+    ordinal_position: 10
+  dz_switch_id:
+    dataType: int
+    description: Dynamic Zone Switch Identifier](../../schema/doors/doors.md)
+    nullable: "NO"
+    ordinal_position: 9
   has_zone_in:
     dataType: tinyint
     description: 'Has Zone In: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 22
+    ordinal_position: 23
   id:
     dataType: int
     description: Unique Dynamic Zone Identifier
@@ -4870,27 +5021,27 @@ dynamic_zones:
     dataType: float
     description: Safe Return Heading Coordinate
     nullable: "NO"
-    ordinal_position: 17
+    ordinal_position: 18
   safe_return_x:
     dataType: float
     description: Safe Return X Coordinate
     nullable: "NO"
-    ordinal_position: 14
+    ordinal_position: 15
   safe_return_y:
     dataType: float
     description: Safe Return Y Coordinate
     nullable: "NO"
-    ordinal_position: 15
+    ordinal_position: 16
   safe_return_z:
     dataType: float
     description: Safe Return Z Coordinate
     nullable: "NO"
-    ordinal_position: 16
+    ordinal_position: 17
   safe_return_zone_id:
     dataType: int
     description: '[Safe Return Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
-    ordinal_position: 13
+    ordinal_position: 14
   type:
     dataType: tinyint
     description: Type
@@ -4905,22 +5056,22 @@ dynamic_zones:
     dataType: float
     description: Zone In Heading Coordinate
     nullable: "NO"
-    ordinal_position: 21
+    ordinal_position: 22
   zone_in_x:
     dataType: float
     description: Zone In X Coordinate
     nullable: "NO"
-    ordinal_position: 18
+    ordinal_position: 19
   zone_in_y:
     dataType: float
     description: Zone In Y Coordinate
     nullable: "NO"
-    ordinal_position: 19
+    ordinal_position: 20
   zone_in_z:
     dataType: float
     description: Zone In Z Coordinate
     nullable: "NO"
-    ordinal_position: 20
+    ordinal_position: 21
 eqtime:
   day:
     dataType: tinyint
@@ -8942,12 +9093,17 @@ merchantlist_temp:
     dataType: int
     description: Charges
     nullable: "NO"
+    ordinal_position: 6
+  instance_id:
+    dataType: int
+    description: '[Instance Identifier](../../schema/instances/instance_list.md)'
+    nullable: "NO"
     ordinal_position: 4
   itemid:
     dataType: int
     description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 5
   npcid:
     dataType: int
     description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
@@ -8958,6 +9114,11 @@ merchantlist_temp:
     description: Slot
     nullable: "NO"
     ordinal_position: 2
+  zone_id:
+    dataType: int
+    description: '[Zone Identifier](../../../../server/zones/zone-list)'
+    nullable: "NO"
+    ordinal_position: 3
 mercs:
   DrakkinDetails:
     dataType: int
@@ -13775,7 +13936,7 @@ task_activities:
     dataType: tinyint
     description: 'Optional: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 16
+    ordinal_position: 17
   skill_list:
     dataType: varchar
     description: '[Skill Identifier List](../../../../server/player/skills)'
@@ -13801,6 +13962,11 @@ task_activities:
     description: '[Task Identifier](tasks.md)'
     nullable: "NO"
     ordinal_position: 1
+  zone_version:
+    dataType: int
+    description: Zone Version
+    nullable: "YES"
+    ordinal_position: 16
   zones:
     dataType: varchar
     description: '[Zones List](../../../../server/zones/zone-list)'
@@ -13832,6 +13998,11 @@ tasks:
     description: '[Duration Code](../../../../server/task-system-guide/task-duration-codes)'
     nullable: "NO"
     ordinal_position: 4
+  dz_template_id:
+    dataType: int
+    description: '[Dynamic Zone Template Identifier](../../schema/dynamic-zones/dynamic_zone_templates.md)'
+    nullable: "NO"
+    ordinal_position: 26
   faction_reward:
     dataType: int
     description: Faction Reward
@@ -13847,6 +14018,11 @@ tasks:
     description: Level Spread
     nullable: "NO"
     ordinal_position: 16
+  lock_activity_id:
+    dataType: int
+    description: '[Lock Activity Identifier](../../schema/tasks/task_activities.md)'
+    nullable: "NO"
+    ordinal_position: 27
   max_players:
     dataType: int
     description: Maximum Players
@@ -13872,29 +14048,39 @@ tasks:
     description: 'Repeatable: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 19
+  replay_timer_group:
+    dataType: int
+    description: Group Replay Timer in Seconds
+    nullable: "NO"
+    ordinal_position: 22
   replay_timer_seconds:
     dataType: int
     description: Replay Timer in Seconds
     nullable: "NO"
-    ordinal_position: 22
+    ordinal_position: 23
+  request_timer_group:
+    dataType: int
+    description: Group Request Timer in Seconds
+    nullable: "NO"
+    ordinal_position: 24
   request_timer_seconds:
     dataType: int
     description: Request Timer in Seconds
     nullable: "NO"
-    ordinal_position: 23
+    ordinal_position: 25
   reward:
     dataType: varchar
     description: Reward Description
     nullable: "NO"
     ordinal_position: 7
-  reward_ebon_crystals:
+  reward_point_type:
     dataType: int
-    description: Reward Ebon Crystals
+    description: 'Reward Point Type: 4 = Radiant, 5 = Ebon'
     nullable: "NO"
     ordinal_position: 13
-  reward_radiant_crystals:
+  reward_points:
     dataType: int
-    description: Reward Radiant Crystals
+    description: Reward Points
     nullable: "NO"
     ordinal_position: 12
   rewardid:
