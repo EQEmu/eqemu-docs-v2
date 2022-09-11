@@ -1,11 +1,12 @@
 package main
 
 import (
+	"log"
+	"os"
+
 	"github.com/EQEmu/eqemu-docs-v2/internal/console"
 	"github.com/EQEmu/eqemu-docs-v2/internal/http"
 	"github.com/joho/godotenv"
-	"log"
-	"os"
 )
 
 func main() {

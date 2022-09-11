@@ -11,19 +11,19 @@ import (
 	"github.com/spf13/cobra"
 )
 
-type GMCommandsDocsGenerateCommand struct {
+type BotCommandsDocsGenerateCommand struct {
 	command *cobra.Command
 }
 
-func (c *GMCommandsDocsGenerateCommand) Command() *cobra.Command {
+func (c *BotCommandsDocsGenerateCommand) Command() *cobra.Command {
 	return c.command
 }
 
-func NewGMCommandsDocsGenerateCommand() *GMCommandsDocsGenerateCommand {
-	i := &GMCommandsDocsGenerateCommand{
+func NewBotCommandsDocsGenerateCommand() *BotCommandsDocsGenerateCommand {
+	i := &BotCommandsDocsGenerateCommand{
 		command: &cobra.Command{
-			Use:   "doc:gm-commands",
-			Short: "Command used for generated GM Commands Documentation",
+			Use:   "doc:bot-commands",
+			Short: "Command used for generated Bot Commands Documentation",
 		},
 	}
 
@@ -33,12 +33,12 @@ func NewGMCommandsDocsGenerateCommand() *GMCommandsDocsGenerateCommand {
 	return i
 }
 
-func (c *GMCommandsDocsGenerateCommand) Validate(_ *cobra.Command, _ []string) error {
+func (c *BotCommandsDocsGenerateCommand) Validate(_ *cobra.Command, _ []string) error {
 	return nil
 }
 
-func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
-	resp, err := http.Get("https://raw.githubusercontent.com/EQEmu/Server/master/zone/command.cpp")
+func (c *BotCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
+	resp, err := http.Get("https://raw.githubusercontent.com/EQEmu/Server/master/zone/bot_command.cpp")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -48,7 +48,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 		fmt.Println(err)
 	}
 
-	b, err := ioutil.ReadFile("./templates/commands-page.template")
+	b, err := ioutil.ReadFile("./templates/bot-commands-page.template")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -66,8 +66,8 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 	commandData += "| :--- | :--- | :--- |\n"
 
 	for _, line := range strings.Split(string(body), "\n") {
-		if strings.Contains(line, "command_add(\"") {
-			line = strings.ReplaceAll(line, "command_add(", "")
+		if strings.Contains(line, "bot_command_add(\"") {
+			line = strings.ReplaceAll(line, "bot_command_add(", "")
 			line = strings.ReplaceAll(line, "\t", "")
 
 			lineData := strings.Split(line, "\", ")
@@ -84,7 +84,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 			statusValue := GetStatusValue(accountStatus)
 
 			commandData += fmt.Sprintf(
-				"| #%v | %v | %v (%v) |\n",
+				"| ^%v | %v | %v (%v) |\n",
 				command,
 				help,
 				accountStatus,
@@ -95,7 +95,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 	fmt.Println(commandData)
 
-	err = os.WriteFile("./docs/server/operation/in-game-command-reference.md", []byte(commandData), os.ModePerm)
+	err = os.WriteFile("./docs/server/bots/bot-commands.md", []byte(commandData), os.ModePerm)
 	if err != nil {
 		fmt.Println(err)
 	}
