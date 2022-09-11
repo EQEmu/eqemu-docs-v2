@@ -52,10 +52,10 @@ Only those bots owned by the commanding player can be selected for any bot comma
 Usage: (<friendly_target>) ^follow ([option: reset]) [actionable: byname | ownergroup | botgroup | namesgroup | healrotation | spawned] ([actionable_name])
 ```
 
-* ^follow reset spawned - resets all spawned bots to follow their default assignments
-* ^follow byname Jojo - Set the bot 'Jojo' to follow the selected friendly target
-* ^follow botgroup Mybotgroup - Sets all spawned members of the bot-group 'Mybotgroup' to follow the selected friendly target
-* ^follow ownergroup - Sets all bots within the owner's group to follow the selected friendly target
+* `^follow reset spawned` - resets all spawned bots to follow their default assignments
+* `^follow byname Jojo` - Set the bot 'Jojo' to follow the selected friendly target
+* `^follow botgroup Mybotgroup` - Sets all spawned members of the bot-group 'Mybotgroup' to follow the selected friendly target
+* `^follow ownergroup` - Sets all bots within the owner's group to follow the selected friendly target
 
 Target selection is optional if the argument preceding the command is enclosed in parentheses. In this case, an omitted actionable argument should default to the bot's owner.
 
