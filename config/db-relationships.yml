@@ -415,6 +415,7 @@ discovered_items:
 doors:
   - 1-1 content_flags->content_flags:flag_name
   - 1-1 content_flags_disabled->content_flags:flag_name
+  - 1-1 dz_switch_id->dynamic_zones:dz_switch_id
   - 1-1 keyitem->items:id
   - 1-1 zone->zone:short_name
   - 1-1 dest_zone->zone:short_name
@@ -425,6 +426,7 @@ dynamic_zone_templates:
   - 1-* id->tasks:dz_template_id
 dynamic_zones:
   - 1-1 compass_zone_id->zone:zoneidnumber
+  - 1-* dz_switch_id->doors:dz_switch_id
   - 1-* id->dynamic_zone_members:dynamic_zone_id
   - 1-1 instance_id->instance_list:id
   - 1-1 safe_return_zone_id->zone:zoneidnumber
