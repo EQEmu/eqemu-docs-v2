@@ -12743,12 +12743,12 @@ spells_new:
     ordinal_position: 107
   classes4:
     dataType: int
-    description: Required Level for Shadow Knight
+    description: Required Level for Ranger
     nullable: "NO"
     ordinal_position: 108
   classes5:
     dataType: int
-    description: Required Level for Ranger
+    description: Required Level for Shadow Knight
     nullable: "NO"
     ordinal_position: 109
   classes6:

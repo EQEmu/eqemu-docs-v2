@@ -1,7 +1,7 @@
 # vw_groups
 
 !!! info
-	This page was last generated 2022.09.10
+	This page was last generated 2022.09.16
 
 ## Schema
 
