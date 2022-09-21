@@ -20,8 +20,8 @@ A current list can be found in [server/common/languages.h](https://github.com/EQ
 | 13 | Froglok |
 | 14 | Goblin |
 | 15 | Gnoll |
-| 16 | Combine Tonuge |
-| 17 | Elder Teirdal |
+| 16 | Combine Tongue |
+| 17 | Elder Teir'Dal |
 | 18 | Lizardman |
 | 19 | Orcish |
 | 20 | Faerie |
