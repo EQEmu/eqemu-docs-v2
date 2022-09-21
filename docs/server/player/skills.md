@@ -26,13 +26,13 @@
 | 19 | Dodge |
 | 20 | Double Attack |
 | 21 | Dragon Punch |
-| 22 | Duel Wield |
+| 22 | Dual Wield |
 | 23 | Eagle Strike |
 | 24 | Evocation |
 | 25 | Feign Death |
 | 26 | Flying Kick |
 | 27 | Forage |
-| 28 | Hand To Hand |
+| 28 | Hand to Hand |
 | 29 | Hide |
 | 30 | Kick |
 | 31 | Meditate |
@@ -40,17 +40,17 @@
 | 33 | Offense |
 | 34 | Parry |
 | 35 | Pick Lock |
-| 36 | Piercing |
+| 36 | 1H Piercing |
 | 37 | Riposte |
 | 38 | Round Kick |
 | 39 | Safe Fall |
 | 40 | Sense Heading |
-| 41 | Sing |
+| 41 | Singing |
 | 42 | Sneak |
 | 43 | Specialize Abjure |
 | 44 | Specialize Alteration |
 | 45 | Specialize Conjuration |
-| 46 | Specialize Divinatation |
+| 46 | Specialize Divination |
 | 47 | Specialize Evocation |
 | 48 | Pick Pockets |
 | 49 | Stringed Instruments |
@@ -79,7 +79,7 @@
 | 72 | Berserking |
 | 73 | Taunt |
 | 74 | Frenzy |
-| 75 | Remove Traps |
+| 75 | Remove Trap |
 | 76 | Triple Attack |
 | 77 | 2H Piercing |
 
