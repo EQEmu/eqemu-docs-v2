@@ -26,7 +26,6 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-    - search.highlight
     - search.share
     - search.suggest
   name: material
