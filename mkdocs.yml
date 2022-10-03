@@ -85,6 +85,7 @@ nav:
           - Bot Commands: server/bots/bot-commands.md
           - Bot Heal Rotations: server/bots/bot-heal-rotations.md
           - Bot Groups: server/bots/bot-groups.md
+          - Bot Spell Types: server/bots/bot-spell-types.md
       - Developer:
           - Project PEQ Expansions:
               - Classic:
