@@ -10,10 +10,10 @@
 | 32 | Pet |
 | 64 | Lifetap |
 | 128 | Snare |
-| 256 | DoT |
+| 256 | Damage Over Time |
 | 512 | Dispel |
 | 1024 | In Combat Buff |
-| 2048 | Mez |
+| 2048 | Mesmerize |
 | 4096 | Charm |
 | 8192 | Slow |
 | 16384 | Debuff |
