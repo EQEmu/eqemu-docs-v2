@@ -16,7 +16,7 @@ One of the first introductions of a native scaling system includes **Global Base
 | :---: | :---: | :---: |
 | 0 | Trash | No special flags set |
 | 1 | Named | Has flag **rare_spawn** set in **npc_types** to **1** - or - name has **#** in the beginning - or - first character in name is capitalized |
-| 2 | Raid | Has flag **rare_spawn** set in **npc_types** to **1** |
+| 2 | Raid | Has flag **raid_target** set in **npc_types** to **1** |
 
 * This data is simply an example of Levels 50-52, but has data from every **Type**
 
