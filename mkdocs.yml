@@ -219,6 +219,7 @@ nav:
           - Loading Server Data: server/operation/loading-server-data.md
           - NATS Channels: server/operation/nats-channels.md
           - Server Events Scheduler: server/operation/server-events-scheduler.md
+          - Server Management: server/operation/server-management.md
           - Server Rules: server/operation/server-rules.md
           - Server Variables: server/operation/server-variables.md
           - Updating Server Assets: server/operation/updating-server-assets.md
