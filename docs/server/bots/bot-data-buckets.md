@@ -6,9 +6,14 @@
 
 ## How the Data Buckets are Used
 * Data Buckets used by the Bot use a `bucket_key-bucket_name` format.
-* Meaning if your character ID is `7` and the bucket name is `test` your Data Bucket Key will be `character-7`.
-* If the Data Bucket's name is `test` the Bot will attempt to find a Data Bucket called `character-7-test`.
-* The Bot grabs all of your Data Buckets when spawned and then compares your values to the field values noted above.
+* Meaning if your Bot ID is `7` and the bucket name is `test` your Data Bucket Key will be `bot-7`.
+* If the Data Bucket's name is `test` the Bot will attempt to find a Data Bucket called `bot-7-test`.
+
+* The Bot will also use it's Owners Data Buckets to provide additional flexability.
+* Meaning if your Character ID is `9` and the bucket name is `test` your Data Bucket Key will be `character-9`.
+* If the Data Bucket's name is `test` the Bot will attempt to find a Data Bucket called `character-9-test`.
+
+* The Bot grabs all of their Data Buckets, along with the owner's Data Buckets when spawned and then compares values to the field values noted above.
 
 ## Comparison Types
 * Bot Data Buckets have 10 different comparison types.
