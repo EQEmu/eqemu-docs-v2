@@ -259,6 +259,7 @@ nav:
           - GMSay: server/scripting/gmsay.md
           - Lua Mods: server/scripting/lua-mods.md
           - Merchant Data Buckets: server/scripting/merchant-data-buckets.md
+          - Perl Plugins: server/scripting/perl-plugins.md
           - Player Buffer Scripts: server/scripting/player-buffer-scripts.md
           - Player Teleporter Scripts: server/scripting/player-teleporter-scripts.md
           - Using Data Buckets: server/scripting/using-data-buckets.md
