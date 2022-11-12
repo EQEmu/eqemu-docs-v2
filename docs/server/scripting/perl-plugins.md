@@ -38,3 +38,30 @@ sub EVENT_SAY {
 ```
 
 ![image](https://user-images.githubusercontent.com/89047260/201449965-c38e95fd-e1e4-49dd-ab48-e4434af3a8d1.png)
+
+Perhaps you want to use the data itself, well you can do this.
+```pl
+sub EVENT_SAY {
+	if ($text=~/Hail/i) {
+		my $list_link = quest::saylink("list", 1);
+		my $search_link = quest::saylink("search", 1);
+		quest::whisper("Hail $name, would you like to $list_link or $search_link the custom data?");
+	} elsif ($text=~/List/i) {
+		plugin::ListCustomData();
+	} elsif ($text=~/^Search$/i) {
+		quest::whisper("Simply say \search [value]\" to search the custom data.");
+	} elsif ($text=~/^Search/i) {
+		my $search_string = substr($text, 7);
+		if (length($search_string) > 0) {
+			my %custom_data = plugin::CustomData();
+			foreach my $key (sort {$a <=> $b} keys %custom_data) {
+				if (lc($search_string) eq lc($custom_data{$key})) {
+					quest::message(315, "Found '$search_string' under Key '$key'!");
+				}
+			}
+		}
+	}
+}
+```
+
+![image](https://user-images.githubusercontent.com/89047260/201450520-8adf5fb3-5cb8-4591-9e8f-41bf53f9c66e.png)
