@@ -4,6 +4,8 @@ Inside the [plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/pl
 
 The `plugins` folder can be located in the `quests` folder and can be either dragged to the base folder directory or [symbollically linked](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mklink) to be called from within the `quests` folder.
 
+To reload plugins for your zone you can use `#reload quest`, to reload plugins globally you'll need to use `#reload world`.
+
 An example plugin is this:
 ```pl
 sub CustomData {
