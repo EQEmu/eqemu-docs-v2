@@ -1,8 +1,8 @@
 # Perl Plugins
 
-Inside the [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](plugins) directory you can find example scripts on how to create reusable methods so that you don't have to copy and paste code in between files.
+Inside the [plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins) directory you can find example scripts on how to create reusable methods so that you don't have to copy and paste code in between files.
 
-The `plugins` folder can be located in the `quests` folder and can be either dragged to the base folder directory or [https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mklink](symbollically linked) to be called from within the `quests` folder.
+The `plugins` folder can be located in the `quests` folder and can be either dragged to the base folder directory or [symbollically linked](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mklink) to be called from within the `quests` folder.
 
 An example plugin is this:
 ```pl
