@@ -49,7 +49,7 @@ sub EVENT_SAY {
 	} elsif ($text=~/List/i) {
 		plugin::ListCustomData();
 	} elsif ($text=~/^Search$/i) {
-		quest::whisper("Simply say \search [value]\" to search the custom data.");
+		quest::whisper("Simply say \"search [value]\" to search the custom data.");
 	} elsif ($text=~/^Search/i) {
 		my $search_string = substr($text, 7);
 		if (length($search_string) > 0) {
@@ -64,4 +64,4 @@ sub EVENT_SAY {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/89047260/201450520-8adf5fb3-5cb8-4591-9e8f-41bf53f9c66e.png)
+![image](https://user-images.githubusercontent.com/89047260/201450584-6ab81709-5e7e-4d46-bc9f-2f38fe13527d.png)
