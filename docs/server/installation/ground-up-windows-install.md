@@ -58,9 +58,11 @@ If you have already installed any of the following, the download and installatio
 *   Visual Studio 2017 Community Edition [[select Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)]
 
     _Note: Microsoft now requires a user account to download Visual Studio. Clicking the Visual Studio link above will take you to the "older versions" page. Clicking the_ `Download` _button on that page will prompt you to log in or create an account._
+
 *   Visual Studio 2019 Community Edition [[alternative download](https://visualstudio.microsoft.com/vs/)]
 
     _Note: Only install one version of Visual Studio_
+
 * Perl v5.24.4.1 (64-bit) [[download](https://strawberryperl.com/download/5.24.4.1/strawberry-perl-5.24.4.1-64bit.msi)]
 * CMake (64-bit) [[download](https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-win64-x64.msi)]
 * Git (64-bit) [[download](https://git-scm.com/download/win)]
