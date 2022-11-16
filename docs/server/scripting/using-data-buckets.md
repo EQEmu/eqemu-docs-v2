@@ -40,7 +40,7 @@ mob:GetBucket(bucket_key);
 mob:SetBucket(bucket_key, bucket_value, expires_in);
 ```
 
-There are also 4 secondary functions in both Perl and Lua.
+There are also 5 secondary functions in both Perl and Lua.
 
 ### Perl
 ```pl
@@ -48,6 +48,7 @@ quest::get_data_expires(bucket_key);
 quest::get_data_remaining(bucket_key);
 
 $mob->GetBucketExpires(bucket_key);
+$mob->GetBucketKey();
 $mob->GetBucketRemaining(bucket_key);
 ```
 
@@ -57,6 +58,7 @@ eq.get_data_expires(bucket_key);
 eq.get_data_remaining(bucket_key);
 
 mob:GetBucketExpires(bucket_key);
+mob:GetBucketKey();
 mob:GetBucketRemaining(bucket_key);
 ```
 
@@ -123,28 +125,6 @@ end
 Keying is simply a way to uniquely identify a flag, if you want to make some data unique to a player, then you would need something to key uniquely to that player, such as their **character_id**.
 If you wanted to set a flag uniquely for a NPC for example, you could use the **npc_type_id**, for a zone you could use the **zone_id**.
 All of these circumstances are completely up to you and you have the entire Quest API to grab something that can make something unique!
-
-### Automatically Keying Buckets
-
-* Automatic keying is a `Mob` only thing, you will still have to manually key anything else.
-* These methods automatically grab a key based on Mob type, these keys are formatted as follows:
-
-* Bots: `bot-BotID`
-* Clients: `character-CharacterID`
-* NPCs: `npc-NPCID`
-
-* DeleteBucket(bucket_key)
-* GetBucket(bucket_key)
-* GetBucketExpires(bucket_key)
-* GetBucketRemaining(bucket_key)
-* SetBucket(bucket_name, bucket_value, expires_in)
-
-* When passing `bucket_key` to these methods it will automatically key the bucket
-Examples of keyed buckets.
-Bot `bucket_key` of `test`: `bot-1-test`
-Client `bucket_key` of `test`: `character-2-test`
-NPC `bucket_key` of `test`: `npc-3-test`
-
 
 Some of the examples below should give you some ideas!
 
@@ -222,6 +202,28 @@ sub EVENT_DEATH_COMPLETE {
 **Database**
 
 ![](https://user-images.githubusercontent.com/3319450/42416937-21a01aee-8241-11e8-9c29-9a2e1ed4356d.png)
+
+### Automatically Keying Buckets
+
+* Automatic keying is a `Mob` only thing, you will still have to manually key anything else.
+* These methods automatically grab a key based on Mob type, these keys are formatted as follows:
+  * Bots: `bot-BotID`
+  * Clients: `character-CharacterID`
+  * NPCs: `npc-NPCID`
+
+* DeleteBucket(bucket_key)
+* GetBucket(bucket_key)
+* GetBucketExpires(bucket_key)
+* GetBucketRemaining(bucket_key)
+* SetBucket(bucket_name, bucket_value, expires_in)
+
+* Examples of keyed buckets:
+  * Bot `bucket_key` of `test`: `bot-1-test`
+  * Client `bucket_key` of `test`: `character-2-test`
+  * NPC `bucket_key` of `test`: `npc-3-test`
+
+### Getting Bucket Key
+* You can use GetBucketKey() on any Mob type to return their bucket key if you wish to use their key for something else.
 
 ## Expiration Examples
 
