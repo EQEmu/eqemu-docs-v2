@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.09.10
+    Last Generated: 2022.11.19
 
 
 | Command | Description | Status Level |
@@ -32,23 +32,23 @@
 | #damage | [Amount] - Damage yourself or your target | GMAdmin (100) |
 | #databuckets | View&#124;Delete [key] [limit]- View data buckets, limit 50 default or Delete databucket by key | QuestTroupe (80) |
 | #date | [Year] [Month] [Day] [Hour] [Minute] - Set EQ time (Hour and Minute are optional) | EQSupport (90) |
-| #dbspawn2 | [spawngroup] [respawn] [variance] - Spawn an NPC from a predefined row in the spawn2 table | GMAdmin (100) |
+| #dbspawn2 | [Spawngroup ID] [Respawn] [Variance] [Condition ID] [Condition Minimum] - Spawn an NPC from a predefined row in the spawn2 table, Respawn and Variance are in Seconds (condition is optional) | GMAdmin (100) |
 | #delacct | [accountname] - Delete an account | GMLeadAdmin (150) |
 | #delpetition | [petition number] - Delete a petition | ApprenticeGuide (20) |
-| #depop | Depop your NPC target | Guide (50) |
-| #depopzone | Depop the zone | GMAdmin (100) |
-| #devtools | Manages devtools | GMMgmt (200) |
+| #depop | [Start Spawn Timer] - Depop your NPC target and optionally start their spawn timer (false by default) | Guide (50) |
+| #depopzone | [Start Spawn Timers] - Depop the zone and optionally start spawn timers (false by default) | GMAdmin (100) |
+| #devtools | [Enable&#124;Disable] - Manages Developer Tools (send no parameter for menu) | GMMgmt (200) |
 | #disablerecipe | [Recipe ID] - Disables a Recipe | QuestTroupe (80) |
 | #disarmtrap | Analog for ldon disarm trap for the newer clients since we still don't have it working. | QuestTroupe (80) |
 | #distance | Reports the distance between you and your target. | QuestTroupe (80) |
 | #door | Door editing command | QuestTroupe (80) |
-| #doanim | [animnum] [type] - Send an EmoteAnim for you or your target | Guide (50) |
+| #doanim | [Animation ID&#124;Animation Name] [Speed] - Send an animation by ID or name at the specified speed to you or your target (Speed is optional) | Guide (50) |
 | #dye | [slot&#124;'help'] [red] [green] [blue] [use_tint] - Dyes the specified armor slot to Red, Green, and Blue provided, allows you to bypass darkness limits. | ApprenticeGuide (20) |
 | #dz | Manage expeditions and dynamic zone instances | QuestTroupe (80) |
 | #dzkickplayers | Removes all players from current expedition. (/kickplayers alternative for pre-RoF clients) | Player (0) |
 | #editmassrespawn | [name-search] [second-value] - Mass (Zone wide) NPC respawn timer editing command | GMAdmin (100) |
-| #emote | ['name'/'world'/'zone'] [type] [message] - Send an emote message | QuestTroupe (80) |
-| #emotesearch | Searches NPC Emotes | QuestTroupe (80) |
+| #emote | [Name&#124;World&#124;Zone] [type] [message] - Send an emote message by name, to the world, or to your zone (^ separator allows multiple messages to be sent at once) | QuestTroupe (80) |
+| #emotesearch | [Search Criteria] - Search for NPC Emotes | QuestTroupe (80) |
 | #emoteview | Lists all NPC Emotes | QuestTroupe (80) |
 | #emptyinventory | Clears your or your target's entire inventory (Equipment, General, Bank, and Shared Bank) | GMImpossible (250) |
 | #enablerecipe | [Recipe ID] - Enables a Recipe | QuestTroupe (80) |
@@ -57,6 +57,7 @@
 | #faction | [Find (criteria &#124; all ) &#124; Review (criteria &#124; all) &#124; Reset (id)] - Resets Player's Faction | QuestTroupe (80) |
 | #factionassociation | [factionid] [amount] - triggers a faction hits via association | GMLeadAdmin (150) |
 | #feature | Change your or your target's feature's temporarily | QuestTroupe (80) |
+| #findaa | [Search Criteria] - Search for an AA | Guide (50) |
 | #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
 | #findclass | [Search Criteria] - Search for a class | Guide (50) |
 | #findfaction | [Search Criteria] - Search for a faction | Guide (50) |
@@ -128,7 +129,7 @@
 | #memspell | [Spell ID] [Spell Gem] - Memorize a Spell by ID to the specified Spell Gem for you or your target | Guide (50) |
 | #merchant_close_shop | Closes a merchant shop | GMAdmin (100) |
 | #merchant_open_shop | Opens a merchants shop | GMAdmin (100) |
-| #modifynpcstat | Modifies an NPC's stats | GMLeadAdmin (150) |
+| #modifynpcstat | [Stat] [Value] - Modifies an NPC's stats temporarily. | GMLeadAdmin (150) |
 | #motd | [Message of the Day] - Set Message of the Day (leave empty to have no Message of the Day) | GMLeadAdmin (150) |
 | #movechar | [Character ID&#124;Character Name] [Zone ID&#124;Zone Short Name] - Move an offline character to the specified zone | Guide (50) |
 | #movement | Various movement commands | GMMgmt (200) |
@@ -153,7 +154,7 @@
 | #nukeitem | [Item ID] - Removes the specified Item ID from you or your player target's inventory | GMLeadAdmin (150) |
 | #object | List&#124;Add&#124;Edit&#124;Move&#124;Rotate&#124;Copy&#124;Save&#124;Undo&#124;Delete - Manipulate static and tradeskill objects within the zone | GMAdmin (100) |
 | #oocmute | [0&#124;1] - Enable or Disable Server OOC | GMMgmt (200) |
-| #opcode | opcode management | GMImpossible (250) |
+| #opcode | Reloads all server patches | GMImpossible (250) |
 | #path | view and edit pathing | GMMgmt (200) |
 | #peekinv | [equip/gen/cursor/poss/limbo/curlim/trib/bank/shbank/allbank/trade/world/all] - Print out contents of your player target's inventory | GMAdmin (100) |
 | #peqzone | [Zone ID&#124;Zone Short Name] - Teleports you to the specified zone if you meet the requirements. | Player (0) |
@@ -185,8 +186,8 @@
 | #rules | (subcommand) - Manage server rules | GMImpossible (250) |
 | #save | Force your player or player corpse target to be saved to the database | Guide (50) |
 | #scale | Handles npc scaling | GMLeadAdmin (150) |
-| #scribespell | [spellid] - Scribe specified spell in your target's spell book. | GMCoder (180) |
-| #scribespells | [max level] [min level] - Scribe all spells for you or your player target that are usable by them, up to level specified. (may freeze client for a few seconds) | GMLeadAdmin (150) |
+| #scribespell | [Spell ID] - Scribe a spell by ID to your or your target's spell book. | GMCoder (180) |
+| #scribespells | [Max level] [Min level] - Scribe all spells for you or your player target that are usable by them, up to level specified. (may freeze client for a few seconds) | GMLeadAdmin (150) |
 | #sendzonespawns | Refresh spawn list for all clients in zone | GMLeadAdmin (150) |
 | #sensetrap | Analog for ldon sense trap for the newer clients since we still don't have it working. | Player (0) |
 | #serverinfo | Get CPU, Operating System, and Process Information about the server | GMMgmt (200) |
@@ -201,7 +202,7 @@
 | #setendurance | [Endurance] - Set your or your target's Endurance | GMAdmin (100) |
 | #setfaction | [Faction ID] - Sets targeted NPC's faction in the database | GMAreas (170) |
 | #sethp | [Health] - Set your or your target's Health | GMAdmin (100) |
-| #setlanguage | [language ID] [value] - Set your target's language skillnum to value | Guide (50) |
+| #setlanguage | [Language ID] [Value] - Set your or your target's Language by ID to Value | Guide (50) |
 | #setlsinfo | [Email] [Password] - Set loginserver email address and password (if supported by loginserver) | Steward (10) |
 | #setmana | [Mana] - Set your or your target's Mana | GMAdmin (100) |
 | #setpass | [Account Name] [Password] - Set local password by account name | GMLeadAdmin (150) |
@@ -268,7 +269,7 @@
 | #wpadd | [pause] [-h] - Add your current location as a waypoint to your NPC target's AI path. (-h to use current heading) | GMAreas (170) |
 | #wpinfo | Show waypoint info about your NPC target | GMAreas (170) |
 | #worldwide | Performs world-wide GM functions such as cast (can be extended for other commands). Use caution | GMImpossible (250) |
-| #xtargets | Show your targets Extended Targets and optionally set how many xtargets they can have. | GMImpossible (250) |
+| #xtargets | [New Max XTargets] - Show your or your target's XTargets and optionally set max XTargets. | GMImpossible (250) |
 | #zclip | [Minimum Clip] [Maximum Clip] [Fog Minimum Clip] [Fog Maximum Clip] [Permanent (0 = False, 1 = True)] - Change zone clipping | QuestTroupe (80) |
 | #zcolor | [Red] [Green] [Blue] [Permanent (0 = False, 1 = True)] - Change sky color | QuestTroupe (80) |
 | #zheader | [Zone ID&#124;Zone Short Name] [Version] - Load a zone header from the database | QuestTroupe (80) |
