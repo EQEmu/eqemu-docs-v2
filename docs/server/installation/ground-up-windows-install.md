@@ -3,7 +3,7 @@
 !!! info
       This guide is intended for advanced users who want to configure EQEmu "from the ground up" for a windows server. It is not the recommended route, we suggest using the [Windows-Server install ](server-installation-windows.md)instead for most cases
 
-This guide provides instructions for compiling 32-bit Windows server binaries and setting up a local development server
+This guide provides instructions for compiling 64-bit Windows server binaries and setting up a local development server
 
 Read through this guide before starting to ensure an understanding of the process
 
@@ -18,13 +18,13 @@ _Screenshots may vary depending on options selected and program graphical user i
 
 ## Compiler Setup
 
-The current c/c++ support standard of the EQEmulator server code base mandates the use of Visual Studio 2017 or later compilers.
+The current C/C++ support standard of the EQEmulator server code base mandates the use of Visual Studio 2017 or later compilers.
 
 Visual Studio 2017 is the current EQEmulator standard for binary compilation. Please ensure that your system meets the [[Visual Studio 2017 Minimum System Requirements](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-system-requirements-vs#visual-studio-2017-system-requirements)].
 
 Visual Studio 2019 may also be used..though, less is known about the stability of this platform with the EQEmulator code base.
 
-This setup assumes an install on a 64-bit Windows operating system with 32-bit target binaries.
+This setup assumes an install on a 64-bit Windows operating system with 64-bit target binaries.
 
 ## Verify System Environment Variable %Path% Length
 
@@ -58,13 +58,15 @@ If you have already installed any of the following, the download and installatio
 *   Visual Studio 2017 Community Edition [[select Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)]
 
     _Note: Microsoft now requires a user account to download Visual Studio. Clicking the Visual Studio link above will take you to the "older versions" page. Clicking the_ `Download` _button on that page will prompt you to log in or create an account._
+
 *   Visual Studio 2019 Community Edition [[alternative download](https://visualstudio.microsoft.com/vs/)]
 
     _Note: Only install one version of Visual Studio_
-* Perl v5.12.3.1204 (32-bit) [[download](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/ActivePerl-5.12.3.1204-MSWin32-x86-294330.msi)]
+
+* Perl v5.24.4.1 (64-bit) [[download](https://strawberryperl.com/download/5.24.4.1/strawberry-perl-5.24.4.1-64bit.msi)]
 * CMake (64-bit) [[download](https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-win64-x64.msi)]
 * Git (64-bit) [[download](https://git-scm.com/download/win)]
-*   TortoiseGit (64-bit - optional) [[download](https://download.tortoisegit.org/tgit/2.8.0.0/TortoiseGit-2.8.0.0-64bit.msi)]
+* TortoiseGit (64-bit - Optional) [[download](https://download.tortoisegit.org/tgit/2.8.0.0/TortoiseGit-2.8.0.0-64bit.msi)]
 
     _Note: TortoiseGit is a menu-driven, add-on gui interface for Git. Though optional, this instructional provides for its use._
 
@@ -117,7 +119,7 @@ At this point, you will need to make a decision on how you want to manage your c
 There are two options:
 
 1. Create a local repository from the parent EQEmulator project that can be updated, managed and maintained (recommended)
-2.  Create a local repository from a fork of the EQEmulator project that you manage (optional - select only if you want to contribute back to the parent project)
+2. Create a local repository from a fork of the EQEmulator project that you manage (optional - select only if you want to contribute back to the parent project)
 
     _Note: If you choose to create a fork of the EQEmulator repository, you will need to create a _[[github.com](https://github.com)] _account._
 
@@ -148,43 +150,18 @@ _Note: It is helpful to create a shortcut to the_ `account` _folder and place it
 
 To install the required submodules:
 
-* Open your `account` folder
-* Right-click the `Server` folder and select `Git Sync`
-*   Find the `Submodule` button and click the attached arrow to activate the drop-down menu
+* Open your server folder in a Git CLI of your choice.
+* Run `git submodule init`.
+* Run `git submodule update`.
 
-    ![](https://user-images.githubusercontent.com/3311166/60761743-9c1a2b80-a01c-11e9-8dea-8609a1f5aa5d.png)
-* Select `Submodule Init` - this should initiate the action
-* Click the `Submodule` button arrow again to activate the menu
-* Select `Submodule Update` - again, initiating action
+![image](https://user-images.githubusercontent.com/89047260/201527593-9e8db013-2164-45fc-af2d-9f7954591b84.png)
 
-Submodules are now installed.\
+Submodules are now installed.
 
 
-### Install Dependencies
+### Installing Dependencies/VCPkg
 
-To install the required dependencies:
-
-* Download the [[dependencies](https://github.com/EQEmu/eqemu.github.com/raw/master/downloads/WindowsDependencies_x86.zip)] file
-* Navigate down to `c:\<account>\Server\dependencies`
-* Copy the downloaded file into the folder
-* Unpack the file
-
-Dependencies are now installed.\
-
-
-### Install VCPkg
-
-To install VCPkg:
-
-* Download the [[vcpkg](https://github.com/EQEmu/Server/releases/download/v1.2/vcpkg-export-x86.zip)] file
-* Navigate down to `c:\<account>\Server`
-* Create a folder called `vcpkg`
-* Navigate down to `c:\<account>\Server\vcpkg`
-* Copy the downloaded file into the folder
-* Unpack the file
-
-VCPkg is now installed.\
-
+To install the required dependencies and VCPkg, simply run CMake and they will be automatically installed.
 
 ## Running CMake
 
@@ -199,14 +176,14 @@ For the source code, type-in or navigate to your `c:/<account>/Server` folder.
 
 The easiest way to define the build folder is to copy the source path and paste it in. Then, add `/build` to the end of the path so that you have `c:/<account>/Server/build`.
 
-Once CMake knows where to look, click the `Configure` button. You will get a pop-up window stating that the `build` folder does not exist. Click `OK` to create it.\
+Once CMake knows where to look, click the `Configure` button. You will get a pop-up window stating that the `build` folder does not exist. Click `OK` to create it.
 
 
 The next window will be for compiler selection. Ensure that the version of Visual Studio that you installed is selected (`Visual Studio 15 2017` or `Visual Studio 16 2019`). Leave the `Use default native compilers` option as-is. If you are using a newer version of CMake that has the `Optional platform for generator` drop-down box, ensure that `Win32` is selected. Finally, click `Finish` to proceed.
 
-![](../../gitbook/assets/cmake_compiler_updated_2.png)
+![image](https://user-images.githubusercontent.com/89047260/201526203-ad8c1a09-7bd5-41bc-9b20-5acac05a52fc.png)
 
-_Note: CMake will download the appropriate vcpkg and install its contents. User intervention is no longer required._\
+_Note: CMake will download the appropriate vcpkg and install its contents. User intervention is no longer required._
 
 
 You should now have a list of unconfigured options (in red) displayed in the main window of CMake:
@@ -258,7 +235,7 @@ Upon loading, Intellisense will begin mapping out the entire project. Allow a fe
 
 Visual Studio does not honor CMake's `CMAKE_BUILD_TYPE` variable. You will need to manually set this to the desired build type before compiling your code.
 
-![](https://user-images.githubusercontent.com/3311166/60749564-bfd06980-9f69-11e9-9688-a2efd8485ea5.png)
+![image](https://user-images.githubusercontent.com/89047260/201526475-6a0e277a-b17e-42b7-beae-6bbbc28c7c72.png)
 
 There are 4 options:
 
@@ -276,7 +253,7 @@ To compile your server code, you have two choices:
 * Use the menu path under the top menu (`Build` >> `Build`)
 * Use the menu path by right-clicking under `Solution Explorer` (`Solution 'EQEmu'` >> `Build`)
 
-![](https://user-images.githubusercontent.com/3311166/60749565-c3fc8700-9f69-11e9-8b54-fa331602d8c3.png)
+![image](https://user-images.githubusercontent.com/89047260/201526641-e8c48c22-ac4d-48ea-a754-4532fac8d335.png)
 
 !!! info
       Both paths result in the same action. Use whichever you are more comfortable with

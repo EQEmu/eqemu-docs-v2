@@ -17,7 +17,7 @@
 | 12 | 4096 | Charm |
 | 13 | 8192 | Slow |
 | 14 | 16384 | Debuff |
-| 15 | 32678 | Cure |
+| 15 | 32768 | Cure |
 | 16 | 65536 | Resurrect |
 | 17 | 131072 | Hate Redux |
 | 18 | 262144 | In Combat Buff Song |
