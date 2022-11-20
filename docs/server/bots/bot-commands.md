@@ -2,7 +2,7 @@
 
     This page lists the Bot commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.09.10
+    Last Generated: 2022.11.19
 
 ## Description
 
