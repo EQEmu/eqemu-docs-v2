@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.11.1
+    Last Generated: 2022.11.19
 
 
 | Command | Description | Status Level |
