@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2022.09.10
+    Last Generated: 2022.11.19
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -32,6 +32,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | AA:ModernAAScalingAAMinimum | 0 | The minimum number of earned AA before AA experience scaling begins |
 | AA:ModernAAScalingAALimit | 4000 | The number of earned AA when AA experience scaling ends |
 | AA:SoundForAAEarned | false | Play sound when AA point earned |
+| AA:UnusedAAPointCap | -1 | Cap for Unused AA Points.  Default: -1.  NOTE: DO NOT LOWER THIS WITHOUT KNOWING WHAT YOU ARE DOING. MAY RESULT IN PLAYERS LOSING AAs. |
 
 ## Adventure Rules
 | Rule Name | Default Value | Description |
@@ -395,6 +396,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:NPCsUseFrontalStunImmunityRaces | true | Enable or disable NPCs using frontal stun immunity Races from Combat:FrontalStunImmunityRaces, true by default. |
 | Combat:AssassinateOnlyHumanoids | true | Enable or disable Assassinate only being allowed on Humanoids, true by default. |
 | Combat:HeadshotOnlyHumanoids | true | Enable or disable Headshot only being allowed on Humanoids, true by default. |
+| Combat:EnableWarriorShielding | true | Enable or disable Warrior Shielding Ability (/shield), true by default. |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
