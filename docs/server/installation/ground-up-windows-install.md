@@ -179,7 +179,7 @@ The easiest way to define the build folder is to copy the source path and paste 
 Once CMake knows where to look, click the `Configure` button. You will get a pop-up window stating that the `build` folder does not exist. Click `OK` to create it.
 
 
-The next window will be for compiler selection. Ensure that the version of Visual Studio that you installed is selected (`Visual Studio 15 2017` or `Visual Studio 16 2019`). Leave the `Use default native compilers` option as-is. If you are using a newer version of CMake that has the `Optional platform for generator` drop-down box, ensure that `Win32` is selected. Finally, click `Finish` to proceed.
+The next window will be for compiler selection. Ensure that the version of Visual Studio that you installed is selected (`Visual Studio 15 2017` or `Visual Studio 16 2019`). Leave the `Use default native compilers` option as-is. If you are using a newer version of CMake that has the `Optional platform for generator` drop-down box, ensure that `x64` is selected. Finally, click `Finish` to proceed.
 
 ![image](https://user-images.githubusercontent.com/89047260/201526203-ad8c1a09-7bd5-41bc-9b20-5acac05a52fc.png)
 
