@@ -81,12 +81,13 @@ nav:
           - AA Types: server/aas/aa-types.md
           - Customizing AAs: server/aas/customizing-aas.md
       - Bots:
-          - Stance Types: server/bots/stance-types.md
+          - Bot Casting Logic: server/bots/bot-casting-logic.md
           - Bot Commands: server/bots/bot-commands.md
-          - Bot Heal Rotations: server/bots/bot-heal-rotations.md
-          - Bot Groups: server/bots/bot-groups.md
-          - Bot Spell Types: server/bots/bot-spell-types.md
           - Bot Data Buckets: server/bots//bot-data-buckets.md
+          - Bot Groups: server/bots/bot-groups.md
+          - Bot Heal Rotations: server/bots/bot-heal-rotations.md
+          - Bot Spell Types: server/bots/bot-spell-types.md
+          - Stance Types: server/bots/stance-types.md
       - Developer:
           - Project PEQ Expansions:
               - Classic:
