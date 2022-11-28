@@ -1,6 +1,6 @@
 # Spell Effect IDs
 
-
+Click [here](https://docs.google.com/spreadsheets/d/1gpnJXk5C-wurxvbi_O6EoywtRtWm9qkRdhGfy5Xo_sY/edit?usp=sharing) for a more detailed and up to date spreadsheet of spell effect information.
 
 |  |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- |
