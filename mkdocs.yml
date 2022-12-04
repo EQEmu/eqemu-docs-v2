@@ -86,6 +86,7 @@ nav:
           - Bot Data Buckets: server/bots//bot-data-buckets.md
           - Bot Groups: server/bots/bot-groups.md
           - Bot Heal Rotations: server/bots/bot-heal-rotations.md
+          - Bot Spell Settings: server/bots/bot-spell-settings.md
           - Bot Spell Types: server/bots/bot-spell-types.md
           - Stance Types: server/bots/stance-types.md
       - Developer:
