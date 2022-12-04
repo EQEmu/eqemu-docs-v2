@@ -270,21 +270,21 @@ The compiled code will be located in the `c:\<account>\Server\build\bin\<build_t
 * Reverting Changes
 * Resetting to Previous Commits
 
-### Acquiring eqemu_server.pl
+## Acquiring eqemu_server.pl
 
 * `eqemu_server.pl` can be downloaded here: https://github.com/EQEmu/Server/blob/master/utils/scripts/eqemu_server.pl
 
-### Acquiring Quests
+## Acquiring Quests
 
 * Quests can be downloaded here: https://github.com/ProjectEQ/projecteqquests
 
 * Place these in your server folder.
 
-### Acquiring Database
+## Acquiring Database
 
 * The PEQ database can be acquired here: http://db.projecteq.net/
 
-### Acquiring Assets/Maps
+## Acquiring Assets/Maps
 
 * Assets can be acquired via the `eqemu_server.pl` menu.
 
