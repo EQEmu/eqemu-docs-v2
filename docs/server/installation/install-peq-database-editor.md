@@ -432,7 +432,6 @@ Execute the queries found in the sql directory on your database
 cd sql
 mysql -u<username> -p <database>
 source schema.sql;
-source expansions.sql;
 quit
 ```
 
@@ -526,8 +525,6 @@ Save your changes to the configuration file.
 Navigate to the `sql` folder (ex. `C:\xampp\htdocs\peqphpeditor-master\sql\
 
 Open the file `schema.sql` with a text editor and copy and paste the contents into the HeidiSQL Client's query window and execute (HeidiSQL installed when you used Akkadius' EQEmu Windows Installer Script).
-
-Open the file `expansions.sql` with a text editor and copy and paste the contents into the HeidiSQL Client's query window and execute.
 
 #### Configure PHP
 
