@@ -2,7 +2,7 @@
 
     This page lists the Bot commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.11.19
+    Last Generated: 2022.12.07
 
 ## Description
 
@@ -120,6 +120,7 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^cure | Orders a bot to remove any ailments | Player (0) |
 | ^defensive | Orders a bot to use a defensive discipline | Player (0) |
 | ^depart | Orders a bot to open a magical doorway to a specified destination | Player (0) |
+| ^enforcespellsettings | Toggles your Bot to cast only spells in their spell settings list. | Player (0) |
 | ^escape | Orders a bot to send a target group to a safe location within the zone | Player (0) |
 | ^findaliases | Find available aliases for a bot command | Player (0) |
 | ^follow | Orders bots to follow a designated target (option 'chain' auto-links eligible spawned bots) | Player (0) |
@@ -174,6 +175,13 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^rune | Orders a bot to cast a rune of protection | Player (0) |
 | ^sendhome | Orders a bot to open a magical doorway home | Player (0) |
 | ^size | Orders a bot to change a player's size | Player (0) |
+| ^spellinfo | Opens a dialogue window with spell info | Player (0) |
+| ^spells | Lists all Spells learned by the Bot. | Player (0) |
+| ^spellsettings | Lists a bot's spell setting entries | Player (0) |
+| ^spellsettingsadd | Add a bot spell setting entry | Player (0) |
+| ^spellsettingsdelete | Delete a bot spell setting entry | Player (0) |
+| ^spellsettingstoggle | Toggle a bot spell use | Player (0) |
+| ^spellsettingsupdate | Update a bot spell setting entry | Player (0) |
 | ^summoncorpse | Orders a bot to summon a corpse to its feet | Player (0) |
 | ^suspend | Suspends a bot's AI processing until released | Player (0) |
 | ^taunt | Toggles taunt use by a bot | Player (0) |
