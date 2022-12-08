@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.11.19
+    Last Generated: 2022.12.07
 
 
 | Command | Description | Status Level |
@@ -19,10 +19,11 @@
 | #augmentitem | Force augments an item. Must have the augment item window open. | GMImpossible (250) |
 | #ban | [Character Name] [Reason] - Ban by character name | GMLeadAdmin (150) |
 | #bind | Sets your targets bind spot to their current location | GMMgmt (200) |
+| #bugs | [Close&#124;Delete&#124;Review&#124;Search&#124;View] - Handles player bug reports | QuestTroupe (80) |
 | #bot | Type \#bot help\ or \^help\ to the see the list of available commands for bots. | Player (0) |
 | #camerashake | [Duration (Milliseconds)] [Intensity (1-10)] - Shakes the camera on everyone's screen globally. | QuestTroupe (80) |
 | #castspell | [Spell ID] [Instant (0 = False, 1 = True, Default is 1 if Unused)] - Cast a spell | Guide (50) |
-| #chat | [channel num] [message] - Send a channel message to all zones | GMMgmt (200) |
+| #chat | [Channel ID] [Message] - Send a channel message to all zones | GMMgmt (200) |
 | #checklos | Check for line of sight to your target | Guide (50) |
 | #copycharacter | [source_char_name] [dest_char_name] [dest_account_name] - Copies character to destination account | GMImpossible (250) |
 | #corpse | Manipulate corpses, use with no arguments for help | Guide (50) |
@@ -33,7 +34,7 @@
 | #databuckets | View&#124;Delete [key] [limit]- View data buckets, limit 50 default or Delete databucket by key | QuestTroupe (80) |
 | #date | [Year] [Month] [Day] [Hour] [Minute] - Set EQ time (Hour and Minute are optional) | EQSupport (90) |
 | #dbspawn2 | [Spawngroup ID] [Respawn] [Variance] [Condition ID] [Condition Minimum] - Spawn an NPC from a predefined row in the spawn2 table, Respawn and Variance are in Seconds (condition is optional) | GMAdmin (100) |
-| #delacct | [accountname] - Delete an account | GMLeadAdmin (150) |
+| #delacct | [Account ID&#124;Account Name] - Delete an account by ID or Name | GMLeadAdmin (150) |
 | #delpetition | [petition number] - Delete a petition | ApprenticeGuide (20) |
 | #depop | [Start Spawn Timer] - Depop your NPC target and optionally start their spawn timer (false by default) | Guide (50) |
 | #depopzone | [Start Spawn Timers] - Depop the zone and optionally start spawn timers (false by default) | GMAdmin (100) |
@@ -76,7 +77,7 @@
 | #fov | Check wether you're behind or in your target's field of view | QuestTroupe (80) |
 | #freeze | Freeze your target | QuestTroupe (80) |
 | #gassign | [Grid ID] - Assign targetted NPC to predefined wandering grid id | GMAdmin (100) |
-| #gearup | Developer tool to quickly equip a character | GMMgmt (200) |
+| #gearup | Developer tool to quickly equip yourself or your target | GMMgmt (200) |
 | #gender | [0/1/2] - Change your or your target's gender to male/female/neuter | Guide (50) |
 | #getplayerburiedcorpsecount | Get your or your target's total number of buried player corpses. | GMAdmin (100) |
 | #getvariable | [Variable Name] - Get the value of a variable from the database | GMMgmt (200) |
@@ -98,7 +99,7 @@
 | #hatelist | Display hate list for NPC. | QuestTroupe (80) |
 | #heal | Completely heal your target | Steward (10) |
 | #help | [Search Criteria] - List available commands and their description, specify partial command as argument to search | Player (0) |
-| #heromodel | [hero model] [slot] - Full set of Hero's Forge Armor appearance. If slot is set, sends exact model just to slot. | GMMgmt (200) |
+| #heromodel | [Hero Model] [Slot] - Set your or your target's appearance to a full set of Hero's Forge Armor, if slot is set, sends exact model just to slot. | GMMgmt (200) |
 | #hideme | [on/off] - Hide yourself from spawn lists. | QuestTroupe (80) |
 | #hotfix | [hotfix_name] - Reloads shared memory into a hotfix, equiv to load_shared_memory followed by apply_shared_memory | GMImpossible (250) |
 | #hp | Refresh your HP bar from the server. | Player (0) |
@@ -110,7 +111,6 @@
 | #invul | [On&#124;Off]] - Turn player target's or your invulnerable flag on or off | QuestTroupe (80) |
 | #ipban | [IP] - Ban IP | GMMgmt (200) |
 | #iplookup | [charname] - Look up IP address of charname | GMMgmt (200) |
-| #iteminfo | Get information about the item on your cursor | Steward (10) |
 | #itemsearch | [Search Criteria] - Search for an item | Steward (10) |
 | #kick | [Character Name] - Disconnect a player by name | GMLeadAdmin (150) |
 | #kill | Kill your target | GMAdmin (100) |
@@ -125,7 +125,7 @@
 | #logs | Manage anything to do with logs | GMImpossible (250) |
 | #makepet | [Pet Name] - Make a pet | Guide (50) |
 | #mana | Fill your or your target's mana | Guide (50) |
-| #maxskills | Maxes skills for you. | GMMgmt (200) |
+| #maxskills | Maxes skills for you or your player target. | GMMgmt (200) |
 | #memspell | [Spell ID] [Spell Gem] - Memorize a Spell by ID to the specified Spell Gem for you or your target | Guide (50) |
 | #merchant_close_shop | Closes a merchant shop | GMAdmin (100) |
 | #merchant_open_shop | Opens a merchants shop | GMAdmin (100) |
@@ -185,7 +185,7 @@
 | #roambox | [Remove&#124;Set] [Box Size] [Delay (Milliseconds)] - Remove or set an NPC's roambox size and delay | GMMgmt (200) |
 | #rules | (subcommand) - Manage server rules | GMImpossible (250) |
 | #save | Force your player or player corpse target to be saved to the database | Guide (50) |
-| #scale | Handles npc scaling | GMLeadAdmin (150) |
+| #scale | Handles NPC scaling | GMLeadAdmin (150) |
 | #scribespell | [Spell ID] - Scribe a spell by ID to your or your target's spell book. | GMCoder (180) |
 | #scribespells | [Max level] [Min level] - Scribe all spells for you or your player target that are usable by them, up to level specified. (may freeze client for a few seconds) | GMLeadAdmin (150) |
 | #sendzonespawns | Refresh spawn list for all clients in zone | GMLeadAdmin (150) |
