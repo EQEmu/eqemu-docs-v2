@@ -1,10 +1,3 @@
-## EVENT_AGGRO
-
-``` perl
-
-sub EVENT_AGGRO {
-}
-```
 ## EVENT_AGGRO_SAY
 
 ``` perl
@@ -94,30 +87,6 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killed_h " . $killed_h);
 }
 ```
-## EVENT_FEIGN_DEATH
-
-``` perl
-
-sub EVENT_FEIGN_DEATH {
-}
-```
-## EVENT_HATE_LIST
-
-``` perl
-
-sub EVENT_HATE_LIST {
-	quest::debug("hate_state " . $hate_state);
-}
-```
-## EVENT_HP
-
-``` perl
-
-sub EVENT_HP {
-	quest::debug("hpevent " . $hpevent);
-	quest::debug("inchpevent " . $inchpevent);
-}
-```
 ## EVENT_ITEM
 
 ``` perl
@@ -128,24 +97,6 @@ sub EVENT_ITEM {
 	quest::debug("silver " . $silver);
 	quest::debug("gold " . $gold);
 	quest::debug("platinum " . $platinum);
-}
-```
-## EVENT_KILLED_MERIT
-
-``` perl
-
-sub EVENT_KILLED_MERIT {
-}
-```
-## EVENT_LOOT_ZONE
-
-``` perl
-
-sub EVENT_LOOT_ZONE {
-	quest::debug("looted_id " . $looted_id);
-	quest::debug("looted_charges " . $looted_charges);
-	quest::debug("corpse " . $corpse);
-	quest::debug("corpse_id " . $corpse_id);
 }
 ```
 ## EVENT_NPC_SLAY
@@ -162,16 +113,6 @@ sub EVENT_NPC_SLAY {
 
 sub EVENT_POPUPRESPONSE {
 	quest::debug("popupid " . $popupid);
-}
-```
-## EVENT_PROXIMITY_SAY
-
-``` perl
-
-sub EVENT_PROXIMITY_SAY {
-	quest::debug("data " . $data);
-	quest::debug("text " . $text);
-	quest::debug("langid " . $langid);
 }
 ```
 ## EVENT_SAY
@@ -222,21 +163,6 @@ sub EVENT_SPELL_EFFECT_BOT {
 sub EVENT_TARGET_CHANGE {
 }
 ```
-## EVENT_TASKACCEPTED
-
-``` perl
-
-sub EVENT_TASKACCEPTED {
-	quest::debug("task_id " . $task_id);
-}
-```
-## EVENT_TICK
-
-``` perl
-
-sub EVENT_TICK {
-}
-```
 ## EVENT_TIMER
 
 ``` perl
@@ -245,19 +171,12 @@ sub EVENT_TIMER {
 	quest::debug("timer " . $timer);
 }
 ```
-## EVENT_WAYPOINT_ARRIVE
+## EVENT_USE_SKILL
 
 ``` perl
 
-sub EVENT_WAYPOINT_ARRIVE {
-	quest::debug("wp " . $wp);
-}
-```
-## EVENT_WAYPOINT_DEPART
-
-``` perl
-
-sub EVENT_WAYPOINT_DEPART {
-	quest::debug("wp " . $wp);
+sub EVENT_USE_SKILL {
+	quest::debug("skill_id " . $skill_id);
+	quest::debug("skill_level " . $skill_level);
 }
 ```

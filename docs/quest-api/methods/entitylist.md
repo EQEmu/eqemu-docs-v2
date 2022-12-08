@@ -1,10 +1,10 @@
-=== "Perl (79)"
+=== "Perl (98)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` perl
     $entitylist->CanAddHateForMob(Mob* target);
@@ -13,57 +13,71 @@
     $entitylist->ClearFeignAggro(Mob* target);
     $entitylist->DeleteNPCCorpses();
     $entitylist->DeletePlayerCorpses();
-    $entitylist->DoubleAggro(*Mob target);
+    $entitylist->DoubleAggro(Mob* who);
     $entitylist->Fighting(Mob* target);
-    $entitylist->FindDoor(uint32 door_id);
-    $entitylist->GetBotByID(uint32 bot_id);
+    $entitylist->FindDoor(uint32_t door_id);
+    $entitylist->GetBotByID(uint32_t bot_id);
     $entitylist->GetBotByName(string bot_name);
     $entitylist->GetBotList();
-    $entitylist->GetBotListByCharacterID(uint32 character_id);
+    $entitylist->GetBotListByCharacterID(uint32_t character_id);
+    $entitylist->GetBotListByCharacterID(uint32_t character_id, uint8_t class_id);
+    $entitylist->GetBotListByClientName(string client_name, uint8 class_id);
     $entitylist->GetBotListByClientName(string client_name);
-    $entitylist->GetClientByAccID(uint32 account_id);
-    $entitylist->GetClientByCharID(uint32 character_id);
-    $entitylist->GetClientByID(uint16 client_id);
-    $entitylist->GetClientByName(name);
-    $entitylist->GetClientByWID(uint32 wid);
+    $entitylist->GetClientByAccID(uint32_t account_id);
+    $entitylist->GetClientByCharID(uint32_t character_id);
+    $entitylist->GetClientByID(uint16_t client_id);
+    $entitylist->GetClientByName(string name);
+    $entitylist->GetClientByWID(uint32_t wid);
     $entitylist->GetClientList();
-    $entitylist->GetCorpseByID(id);
-    $entitylist->GetCorpseByName(name);
-    $entitylist->GetCorpseByOwner(client);
+    $entitylist->GetCorpseByID(uint16_t id);
+    $entitylist->GetCorpseByName(string name);
+    $entitylist->GetCorpseByOwner(Client* client);
     $entitylist->GetCorpseList();
-    $entitylist->GetDoorsByDBID(uint32 database_id);
-    $entitylist->GetDoorsByDoorID(uint32 door_id);
-    $entitylist->GetDoorsByID(uint32 entity_id);
+    $entitylist->GetDoorsByDBID(uint32_t database_id);
+    $entitylist->GetDoorsByDoorID(uint32_t door_id);
+    $entitylist->GetDoorsByID(uint32_t entity_id);
     $entitylist->GetDoorsList();
     $entitylist->GetGroupByClient(Client* client);
-    $entitylist->GetGroupByID(id);
-    $entitylist->GetGroupByLeaderName(leader);
+    $entitylist->GetGroupByID(uint32_t id);
+    $entitylist->GetGroupByLeaderName(string leader_name);
     $entitylist->GetGroupByMob(Mob* mob);
-    $entitylist->GetMob(name);
-    $entitylist->GetMobByID(id);
-    $entitylist->GetMobByNpcTypeID(get_id);
-    $entitylist->GetMobID(id);
+    $entitylist->GetMob(string name);
+    $entitylist->GetMobByID(uint16_t mob_id);
+    $entitylist->GetMobByNpcTypeID(uint32_t npc_type_id);
+    $entitylist->GetMobID(uint16_t mob_id);
     $entitylist->GetMobList();
-    $entitylist->GetNPCByID(id);
-    $entitylist->GetNPCByNPCTypeID(npc_id);
-    $entitylist->GetNPCBySpawnID(spawn_id);
+    $entitylist->GetNPCByID(uint16_t id);
+    $entitylist->GetNPCByNPCTypeID(uint32_t npc_id);
+    $entitylist->GetNPCBySpawnID(uint32_t spawn_id);
     $entitylist->GetNPCList();
-    $entitylist->GetObjectByDBID(uint32 database_id);
-    $entitylist->GetObjectByID(uint32 entity_id);
+    $entitylist->GetObjectByDBID(uint32_t database_id);
+    $entitylist->GetObjectByID(uint32_t entity_id);
     $entitylist->GetObjectList();
-    $entitylist->GetRaidByClient(client);
-    $entitylist->GetRaidByID(id);
-    $entitylist->GetRandomClient(float x, float y, float z, float distance, [Client* exclude_client = nullptr]);
-    $entitylist->GetRandomMob(float x, float y, float z, float distance, [Mob* exclude_mob = nullptr]);
-    $entitylist->GetRandomNPC(float x, float y, float z, float distance, [NPC* exclude_npc = nullptr]);
-    $entitylist->HalveAggro(Mob* target);
-    $entitylist->IsMobSpawnedByNpcTypeID(get_id);
-    $entitylist->MakeNameUnique(string name);
-    $entitylist->Message(uint32 guild_id, uint32 emote_color_type, string message);
-    $entitylist->MessageClose(Mob* sender, bool skip_sender, float distance, uint32 emote_color_type, string message);
-    $entitylist->MessageGroup(Mob* sender, bool skip_close, uint32 emote_color_type, string message);
-    $entitylist->MessageStatus(uint32 guild_id, uint32 emote_color_type, string message);
-    $entitylist->OpenDoorsNear(NPC* opener);
+    $entitylist->GetRaidByClient(Client* client);
+    $entitylist->GetRaidByID(uint32_t id);
+    $entitylist->GetRandomBot(float x, float y, float z, float distance, exclude_bot);
+    $entitylist->GetRandomBot();
+    $entitylist->GetRandomBot(float x, float y, float z, float distance);
+    $entitylist->GetRandomClient();
+    $entitylist->GetRandomClient(float x, float y, float z, float distance);
+    $entitylist->GetRandomClient(float x, float y, float z, float distance, exclude_client);
+    $entitylist->GetRandomMob(float x, float y, float z, float distance);
+    $entitylist->GetRandomMob();
+    $entitylist->GetRandomMob(float x, float y, float z, float distance, exclude_mob);
+    $entitylist->GetRandomNPC(float x, float y, float z, float distance);
+    $entitylist->GetRandomNPC(float x, float y, float z, float distance, exclude_npc);
+    $entitylist->GetRandomNPC();
+    $entitylist->HalveAggro(Mob* who);
+    $entitylist->IsMobSpawnedByNpcTypeID(uint32_t npc_type_id);
+    $entitylist->MakeNameUnique(char* name);
+    $entitylist->Marquee(uint32 type, string message);
+    $entitylist->Marquee(uint32 type, string message, uint32 duration);
+    $entitylist->Marquee(uint32 type, uint32 priority, uint32 fade_in, uint32 fade_out, uint32 duration, string message);
+    $entitylist->Message(uint32 guild_id, uint32 color_type, string message);
+    $entitylist->MessageClose(Mob* sender, bool skip_sender, float distance, uint32 color_type, string message);
+    $entitylist->MessageGroup(Mob* sender, bool skip_close, uint32_t emote_color_type, string message);
+    $entitylist->MessageStatus(uint32 guild_id, int to_minstatus, uint32 color_type, string message);
+    $entitylist->OpenDoorsNear(Mob* opener);
     $entitylist->RemoveAllClients();
     $entitylist->RemoveAllCorpses();
     $entitylist->RemoveAllDoors();
@@ -72,28 +86,33 @@
     $entitylist->RemoveAllNPCs();
     $entitylist->RemoveAllObjects();
     $entitylist->RemoveAllTraps();
-    $entitylist->RemoveClient(delete_id);
-    $entitylist->RemoveCorpse(delete_id);
-    $entitylist->RemoveDoor(delete_id);
-    $entitylist->RemoveEntity(uint16 id);
-    $entitylist->RemoveFromHateLists(Mob* mob, [bool set_to_one = false]);
-    $entitylist->RemoveFromTargets(Mob* target);
-    $entitylist->RemoveGroup(delete_id);
-    $entitylist->RemoveMob(delete_id);
-    $entitylist->RemoveNPC(delete_id);
-    $entitylist->RemoveObject(delete_id);
-    $entitylist->RemoveTrap(delete_id);
+    $entitylist->RemoveClient(uint16_t delete_id);
+    $entitylist->RemoveCorpse(uint16_t delete_id);
+    $entitylist->RemoveDoor(uint16_t delete_id);
+    $entitylist->RemoveEntity(uint16_t id);
+    $entitylist->RemoveFromHateLists(Mob* mob, bool set_to_one);
+    $entitylist->RemoveFromHateLists(Mob* mob);
+    $entitylist->RemoveFromTargets(Mob* mob);
+    $entitylist->RemoveGroup(uint32_t delete_id);
+    $entitylist->RemoveMob(uint16_t delete_id);
+    $entitylist->RemoveNPC(uint16_t delete_id);
+    $entitylist->RemoveNumbers(char* name);
+    $entitylist->RemoveObject(uint16_t delete_id);
+    $entitylist->RemoveTrap(uint16_t delete_id);
     $entitylist->ReplaceWithTarget(Mob* old_mob, Mob* new_target);
-    $entitylist->SignalAllClients(uint32 data);
+    $entitylist->SignalAllBotsByOwnerCharacterID(uint32_t character_id, int signal_id);
+    $entitylist->SignalAllClients(int signal_id);
+    $entitylist->SignalBotByBotID(uint32_t bot_id, int signal_id);
+    $entitylist->SignalBotByBotName(string bot_name, int signal_id);
     $entitylist->SignalMobsByNPCID(uint32 npc_type_id, int signal_id);
     ```
-=== "Lua (72)"
+=== "Lua (86)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` lua
     entitylist:CanAddHateForMob(Mob p);
@@ -110,7 +129,9 @@
     entitylist:GetBotByName(string bot_name);
     entitylist:GetBotList();
     entitylist:GetBotListByCharacterID(uint32 character_id);
+    entitylist:GetBotListByCharacterID(uint32 character_id, uint8 class_id);
     entitylist:GetBotListByClientName(string client_name);
+    entitylist:GetBotListByClientName(string client_name, uint8 class_id);
     entitylist:GetClientByAccID(uint32 acct_id);
     entitylist:GetClientByCharID(uint32 char_id);
     entitylist:GetClientByID(int id);
@@ -129,8 +150,8 @@
     entitylist:GetGroupByID(int id);
     entitylist:GetGroupByLeaderName(string name);
     entitylist:GetGroupByMob(Mob mob);
-    entitylist:GetMob(int id);
     entitylist:GetMob(string name);
+    entitylist:GetMob(int id);
     entitylist:GetMobByNpcTypeID(int npc_type);
     entitylist:GetMobID(int id);
     entitylist:GetMobList();
@@ -143,18 +164,27 @@
     entitylist:GetObjectList();
     entitylist:GetRaidByClient(Client client);
     entitylist:GetRaidByID(int id);
-    entitylist:GetRandomClient(float x, float y, float z, float distance);
+    entitylist:GetRandomBot(float x, float y, float z, float distance, exclude_bot);
+    entitylist:GetRandomBot(float x, float y, float z, float distance);
+    entitylist:GetRandomBot();
+    entitylist:GetRandomClient();
     entitylist:GetRandomClient(float x, float y, float z, float distance, exclude_client);
+    entitylist:GetRandomClient(float x, float y, float z, float distance);
+    entitylist:GetRandomMob();
     entitylist:GetRandomMob(float x, float y, float z, float distance, exclude_mob);
     entitylist:GetRandomMob(float x, float y, float z, float distance);
     entitylist:GetRandomNPC(float x, float y, float z, float distance, exclude_npc);
     entitylist:GetRandomNPC(float x, float y, float z, float distance);
+    entitylist:GetRandomNPC();
     entitylist:GetShuffledClientList();
     entitylist:GetSpawnByID(uint32 id);
     entitylist:GetSpawnList();
     entitylist:HalveAggro(Mob who);
     entitylist:IsMobSpawnedByNpcTypeID(int npc_type);
     entitylist:MakeNameUnique(string name);
+    entitylist:Marquee(uint32 type, string message);
+    entitylist:Marquee(uint32 type, string message, uint32 duration);
+    entitylist:Marquee(uint32 type, uint32 priority, uint32 fade_in, uint32 fade_out, uint32 duration, string message);
     entitylist:Message(uint32 guild_dbid, uint32 type, string message);
     entitylist:MessageClose(Mob sender, bool skip_sender, float dist, uint32 type, string message);
     entitylist:MessageGroup(Mob who, bool skip_close, uint32 type, string message);
@@ -162,10 +192,13 @@
     entitylist:OpenDoorsNear(Mob opener);
     entitylist:RemoveFromHateLists(Mob who, bool set_to_one);
     entitylist:RemoveFromHateLists(Mob who);
-    entitylist:RemoveFromTargets(Mob mob, bool RemoveFromXTargets);
     entitylist:RemoveFromTargets(Mob mob);
+    entitylist:RemoveFromTargets(Mob mob, bool RemoveFromXTargets);
     entitylist:RemoveNumbers(string name);
     entitylist:ReplaceWithTarget(Mob target, Mob new_target);
-    entitylist:SignalAllClients(int signal);
-    entitylist:SignalMobsByNPCID(uint32 npc_id, int signal);
+    entitylist:SignalAllBotsByOwnerCharacterID(uint32 character_id, int signal_id);
+    entitylist:SignalAllClients(int signal_id);
+    entitylist:SignalBotByBotID(uint32 bot_id, int signal_id);
+    entitylist:SignalBotByBotName(string bot_name, int signal_id);
+    entitylist:SignalMobsByNPCID(uint32 npc_id, int signal_id);
     ```

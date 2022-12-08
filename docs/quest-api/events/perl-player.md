@@ -1,3 +1,46 @@
+## EVENT_AA_BUY
+
+``` perl
+
+sub EVENT_AA_BUY {
+	quest::debug("aa_cost " . $aa_cost);
+	quest::debug("aa_id " . $aa_id);
+	quest::debug("aa_previous_id " . $aa_previous_id);
+	quest::debug("aa_next_id " . $aa_next_id);
+}
+```
+## EVENT_AA_GAIN
+
+``` perl
+
+sub EVENT_AA_GAIN {
+	quest::debug("aa_gained " . $aa_gained);
+}
+```
+## EVENT_ALT_CURRENCY_MERCHANT_BUY
+
+``` perl
+
+sub EVENT_ALT_CURRENCY_MERCHANT_BUY {
+	quest::debug("currency_id " . $currency_id);
+	quest::debug("npc_id " . $npc_id);
+	quest::debug("merchant_id " . $merchant_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_cost " . $item_cost);
+}
+```
+## EVENT_ALT_CURRENCY_MERCHANT_SELL
+
+``` perl
+
+sub EVENT_ALT_CURRENCY_MERCHANT_SELL {
+	quest::debug("currency_id " . $currency_id);
+	quest::debug("npc_id " . $npc_id);
+	quest::debug("merchant_id " . $merchant_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_cost " . $item_cost);
+}
+```
 ## EVENT_BOT_COMMAND
 
 ``` perl
@@ -47,13 +90,6 @@ sub EVENT_CAST_ON {
 sub EVENT_CLICKDOOR {
 	quest::debug("doorid " . $doorid);
 	quest::debug("version " . $version);
-}
-```
-## EVENT_CLICK_DOOR
-
-``` perl
-
-sub EVENT_CLICK_DOOR {
 }
 ```
 ## EVENT_CLICK_OBJECT
@@ -146,6 +182,12 @@ sub EVENT_DEATH {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_x " . $killed_x);
+	quest::debug("killed_y " . $killed_y);
+	quest::debug("killed_z " . $killed_z);
+	quest::debug("killed_h " . $killed_h);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -157,6 +199,12 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_x " . $killed_x);
+	quest::debug("killed_y " . $killed_y);
+	quest::debug("killed_z " . $killed_z);
+	quest::debug("killed_h " . $killed_h);
 }
 ```
 ## EVENT_DISCONNECT
@@ -268,6 +316,14 @@ sub EVENT_GROUP_CHANGE {
 	quest::debug("raided " . $raided);
 }
 ```
+## EVENT_INSPECT
+
+``` perl
+
+sub EVENT_INSPECT {
+	quest::debug("target_id " . $target_id);
+}
+```
 ## EVENT_LANGUAGE_SKILL_UP
 
 ``` perl
@@ -296,6 +352,30 @@ sub EVENT_LOOT {
 	quest::debug("corpse_id " . $corpse_id);
 }
 ```
+## EVENT_MERCHANT_BUY
+
+``` perl
+
+sub EVENT_MERCHANT_BUY {
+	quest::debug("npc_id " . $npc_id);
+	quest::debug("merchant_id " . $merchant_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_quantity " . $item_quantity);
+	quest::debug("item_cost " . $item_cost);
+}
+```
+## EVENT_MERCHANT_SELL
+
+``` perl
+
+sub EVENT_MERCHANT_SELL {
+	quest::debug("npc_id " . $npc_id);
+	quest::debug("merchant_id " . $merchant_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_quantity " . $item_quantity);
+	quest::debug("item_cost " . $item_cost);
+}
+```
 ## EVENT_PLAYER_PICKUP
 
 ``` perl
@@ -311,13 +391,6 @@ sub EVENT_PLAYER_PICKUP {
 
 sub EVENT_POPUPRESPONSE {
 	quest::debug("popupid " . $popupid);
-}
-```
-## EVENT_POPUP_RESPONSE
-
-``` perl
-
-sub EVENT_POPUP_RESPONSE {
 }
 ```
 ## EVENT_RESPAWN
@@ -358,11 +431,30 @@ sub EVENT_SKILL_UP {
 	quest::debug("is_tradeskill " . $is_tradeskill);
 }
 ```
+## EVENT_SPELL_EFFECT_BOT
+
+``` perl
+
+sub EVENT_SPELL_EFFECT_BOT {
+	quest::debug("payload_id " . $payload_id);
+	quest::debug("payload_value " . $payload_value);
+}
+```
 ## EVENT_TARGET_CHANGE
 
 ``` perl
 
 sub EVENT_TARGET_CHANGE {
+}
+```
+## EVENT_TASK_BEFORE_UPDATE
+
+``` perl
+
+sub EVENT_TASK_BEFORE_UPDATE {
+	quest::debug("donecount " . $donecount);
+	quest::debug("activity_id " . $activity_id);
+	quest::debug("task_id " . $task_id);
 }
 ```
 ## EVENT_TASK_COMPLETE
@@ -459,6 +551,10 @@ sub EVENT_WARP {
 
 sub EVENT_ZONE {
 	quest::debug("from_zone_id " . $from_zone_id);
+	quest::debug("from_instance_id " . $from_instance_id);
+	quest::debug("from_instance_version " . $from_instance_version);
 	quest::debug("target_zone_id " . $target_zone_id);
+	quest::debug("target_instance_id " . $target_instance_id);
+	quest::debug("target_instance_version " . $target_instance_version);
 }
 ```

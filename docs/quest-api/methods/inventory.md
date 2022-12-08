@@ -1,35 +1,43 @@
-=== "Perl (23)"
+=== "Perl (31)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` perl
-    $inventory->CanItemFitInContainer(ItemInstance item_to_check, ItemInstance container_to_check);
-    $inventory->CheckNoDrop(int16 slot_id);
-    $inventory->CountAugmentEquippedByID(uint32 item_id);
-    $inventory->CountItemEquippedByID(uint32 item_id);
-    $inventory->DeleteItem(int16 slot_id, [uint8 quantity = 0]);
-    $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor, [uint8 min_size = 0, bool is_arrow = false]);
-    $inventory->GetBagIndex(int16 slot_id);
-    $inventory->GetItem(int16 slot_id);
-    $inventory->GetMaterialFromSlot(int16 slot_id);
-    $inventory->GetSlotByItemInst(ItemInstance item);
-    $inventory->GetSlotFromMaterial(uint8 material);
-    $inventory->GetSlotID(int16 slot_id, [uint8 bag_index]);
-    $inventory->HasAugmentEquippedByID(uint32 item_id);
-    $inventory->HasItem(uint32 item_id, [uint8 quantity, uint8 where]);
-    $inventory->HasItemByLoreGroup(uint32 loregroup, [uint8 where]);
-    $inventory->HasItemByUse(uint8 use, uint8 quantity, [uint8 where]);
-    $inventory->HasItemEquippedByID(uint32 item_id);
-    $inventory->HasSpaceForItem(ItemInstance item_to_check, uint8 quantity);
-    $inventory->PopItem(int16 slot_id);
-    $inventory->PushCursor(ItemInstance item);
-    $inventory->PutItem(int16 slot_id, ItemInstance item);
-    $inventory->SupportsContainers(int16 slot_id);
-    $inventory->SwapItem(int16 source_slot_id, int16 destination_slot_id);
+    $inventory->CanItemFitInContainer(EQ::ItemInstance* item_to_check, EQ::ItemInstance* container_to_check);
+    $inventory->CheckNoDrop(int16_t slot_id);
+    $inventory->CountAugmentEquippedByID(uint32_t item_id);
+    $inventory->CountItemEquippedByID(uint32_t item_id);
+    $inventory->DeleteItem(int16_t slot_id);
+    $inventory->DeleteItem(int16_t slot_id, uint8_t quantity);
+    $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor);
+    $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor, uint8_t min_size);
+    $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor, uint8_t min_size, bool is_arrow);
+    $inventory->GetBagIndex(int16_t slot_id);
+    $inventory->GetItem(int16_t slot_id);
+    $inventory->GetMaterialFromSlot(int16_t slot_id);
+    $inventory->GetSlotByItemInst(EQ::ItemInstance* item);
+    $inventory->GetSlotFromMaterial(uint8_t material);
+    $inventory->GetSlotID(int16_t slot_id);
+    $inventory->GetSlotID(int16_t slot_id, uint8_t bag_index);
+    $inventory->HasAugmentEquippedByID(uint32_t item_id);
+    $inventory->HasItem(uint32_t item_id);
+    $inventory->HasItem(uint32_t item_id, uint8_t quantity);
+    $inventory->HasItem(uint32_t item_id, uint8_t quantity, uint8_t where_to_look);
+    $inventory->HasItemByLoreGroup(uint32_t loregroup);
+    $inventory->HasItemByLoreGroup(uint32_t loregroup, uint8_t where_to_look);
+    $inventory->HasItemByUse(uint8_t item_use, uint8_t quantity);
+    $inventory->HasItemByUse(uint8_t item_use, uint8_t quantity, uint8_t where_to_look);
+    $inventory->HasItemEquippedByID(uint32_t item_id);
+    $inventory->HasSpaceForItem(EQ::ItemInstance* item_to_check, uint8_t quantity);
+    $inventory->PopItem(int16_t slot_id);
+    $inventory->PushCursor(EQ::ItemInstance* item);
+    $inventory->PutItem(int16_t slot_id, EQ::ItemInstance* item);
+    $inventory->SupportsContainers(int16_t slot_id);
+    $inventory->SwapItem(int16_t source_slot_id, int16_t destination_slot_id);
     ```
 === "Lua (33)"
 
@@ -37,7 +45,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` lua
     inventory:CalcBagIdx(slot_id);
@@ -49,20 +57,20 @@
     inventory:CheckNoDrop(int slot_id);
     inventory:CountAugmentEquippedByID(uint32 item_id);
     inventory:CountItemEquippedByID(uint32 item_id);
-    inventory:DeleteItem(int slot_id, int quantity);
     inventory:DeleteItem(int slot_id);
-    inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size, bool is_arrow);
-    inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size);
+    inventory:DeleteItem(int slot_id, int quantity);
     inventory:FindFreeSlot(bool for_bag, bool try_cursor);
-    inventory:GetItem(int slot_id, int bag_slot);
+    inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size);
+    inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size, bool is_arrow);
     inventory:GetItem(int slot_id);
+    inventory:GetItem(int slot_id, int bag_slot);
     inventory:GetSlotByItemInst(ItemInst inst);
     inventory:HasAugmentEquippedByID(uint32 item_id);
     inventory:HasItem(item_id, quantity);
-    inventory:HasItem(item_id);
     inventory:HasItem(item_id, quantity, where);
-    inventory:HasItemByLoreGroup(uint32 loregroup, where);
+    inventory:HasItem(item_id);
     inventory:HasItemByLoreGroup(uint32 loregroup);
+    inventory:HasItemByLoreGroup(uint32 loregroup, where);
     inventory:HasItemByUse(use, uint8 quantity, uint8 where);
     inventory:HasItemByUse(use, uint8 quantity);
     inventory:HasItemByUse(use);

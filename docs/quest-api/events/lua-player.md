@@ -1,3 +1,46 @@
+## EVENT_AA_BUY
+
+``` lua
+
+function EVENT_AA_BUY(e) {
+	eq.debug("aa_cost " .. e.aa_cost);
+	eq.debug("aa_id " .. e.aa_id);
+	eq.debug("aa_previous_id " .. e.aa_previous_id);
+	eq.debug("aa_next_id " .. e.aa_next_id);
+}
+```
+## EVENT_AA_GAIN
+
+``` lua
+
+function EVENT_AA_GAIN(e) {
+	eq.debug("aa_gained " .. e.aa_gained);
+}
+```
+## EVENT_ALT_CURRENCY_MERCHANT_BUY
+
+``` lua
+
+function EVENT_ALT_CURRENCY_MERCHANT_BUY(e) {
+	eq.debug("currency_id " .. e.currency_id);
+	eq.debug("npc_id " .. e.npc_id);
+	eq.debug("merchant_id " .. e.merchant_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_cost " .. e.item_cost);
+}
+```
+## EVENT_ALT_CURRENCY_MERCHANT_SELL
+
+``` lua
+
+function EVENT_ALT_CURRENCY_MERCHANT_SELL(e) {
+	eq.debug("currency_id " .. e.currency_id);
+	eq.debug("npc_id " .. e.npc_id);
+	eq.debug("merchant_id " .. e.merchant_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_cost " .. e.item_cost);
+}
+```
 ## EVENT_BOT_COMMAND
 
 ``` lua
@@ -128,6 +171,7 @@ function EVENT_CONSIDER_CORPSE(e) {
 
 function EVENT_DEATH(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
@@ -139,6 +183,7 @@ function EVENT_DEATH(e) {
 
 function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
@@ -264,6 +309,14 @@ function EVENT_FORAGE_SUCCESS(e) {
 function EVENT_GROUP_CHANGE(e) {
 }
 ```
+## EVENT_INSPECT
+
+``` lua
+
+function EVENT_INSPECT(e) {
+	eq.debug("other " .. e.other);
+}
+```
 ## EVENT_LANGUAGE_SKILL_UP
 
 ``` lua
@@ -298,6 +351,39 @@ function EVENT_LEVEL_UP(e) {
 function EVENT_LOOT(e) {
 	eq.debug("item " .. e.item);
 	eq.debug("corpse " .. e.corpse);
+}
+```
+## EVENT_MERCHANT_BUY
+
+``` lua
+
+function EVENT_MERCHANT_BUY(e) {
+	eq.debug("npc_id " .. e.npc_id);
+	eq.debug("merchant_id " .. e.merchant_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("item_cost " .. e.item_cost);
+}
+```
+## EVENT_MERCHANT_SELL
+
+``` lua
+
+function EVENT_MERCHANT_SELL(e) {
+	eq.debug("npc_id " .. e.npc_id);
+	eq.debug("merchant_id " .. e.merchant_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("item_cost " .. e.item_cost);
+}
+```
+## EVENT_PAYLOAD
+
+``` lua
+
+function EVENT_PAYLOAD(e) {
+	eq.debug("payload_id " .. e.payload_id);
+	eq.debug("payload_value " .. e.payload_value);
 }
 ```
 ## EVENT_PLAYER_PICKUP
@@ -358,6 +444,16 @@ function EVENT_SKILL_UP(e) {
 ``` lua
 
 function EVENT_TARGET_CHANGE(e) {
+}
+```
+## EVENT_TASK_BEFORE_UPDATE
+
+``` lua
+
+function EVENT_TASK_BEFORE_UPDATE(e) {
+	eq.debug("count " .. e.count);
+	eq.debug("activity_id " .. e.activity_id);
+	eq.debug("task_id " .. e.task_id);
 }
 ```
 ## EVENT_TASK_COMPLETE
@@ -457,6 +553,10 @@ function EVENT_WARP(e) {
 
 function EVENT_ZONE(e) {
 	eq.debug("from_zone_id " .. e.from_zone_id);
+	eq.debug("from_instance_id " .. e.from_instance_id);
+	eq.debug("from_instance_version " .. e.from_instance_version);
 	eq.debug("zone_id " .. e.zone_id);
+	eq.debug("instance_id " .. e.instance_id);
+	eq.debug("instance_version " .. e.instance_version);
 }
 ```

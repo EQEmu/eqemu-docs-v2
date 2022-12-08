@@ -2,10 +2,14 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2022.05.11
+    Last generated 2022.12.07
 
 ``` lua
+Event.aa_buy
+Event.aa_gain
 Event.aggro_say
+Event.alt_currency_merchant_buy
+Event.alt_currency_merchant_sell
 Event.augment_insert
 Event.augment_item
 Event.augment_remove
@@ -48,6 +52,7 @@ Event.forage_success
 Event.group_change
 Event.hate_list
 Event.hp
+Event.inspect
 Event.item_click
 Event.item_click_cast
 Event.item_enter_zone
@@ -58,6 +63,9 @@ Event.leave_area
 Event.level_up
 Event.loot
 Event.loot_zone
+Event.merchant_buy
+Event.merchant_sell
+Event.payload
 Event.player_pickup
 Event.popup_response
 Event.proximity_say
@@ -74,6 +82,7 @@ Event.spell_effect_translocate_complete
 Event.spell_fade
 Event.target_change
 Event.task_accepted
+Event.task_before_update
 Event.task_complete
 Event.task_fail
 Event.task_stage_complete

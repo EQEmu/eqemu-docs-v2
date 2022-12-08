@@ -1,10 +1,10 @@
-=== "Lua (48)"
+=== "Lua (50)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=ItemInst){:target="ItemInst"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` lua
     iteminst:AddExp(uint32 exp);
@@ -22,31 +22,33 @@
     iteminst:GetCustomDataString();
     iteminst:GetExp();
     iteminst:GetID();
-    iteminst:GetItem();
     iteminst:GetItem(int slot);
+    iteminst:GetItem();
     iteminst:GetItemID(int slot);
     iteminst:GetItemScriptID();
     iteminst:GetKillsNeeded(int current_level);
     iteminst:GetMaxEvolveLvl();
     iteminst:GetPrice();
+    iteminst:GetTaskDeliveredCount();
     iteminst:GetTotalItemCount();
     iteminst:GetUnscaledItem(int slot);
     iteminst:IsAmmo();
     iteminst:IsAugmentable();
     iteminst:IsAugmented();
-    iteminst:IsEquipable(int race, int class_);
     iteminst:IsEquipable(int slot_id);
+    iteminst:IsEquipable(int race, int class_);
     iteminst:IsExpendable();
     iteminst:IsInstNoDrop();
     iteminst:IsStackable();
     iteminst:IsType(int item_class);
     iteminst:IsWeapon();
+    iteminst:RemoveTaskDeliveredItems();
     iteminst:SetCharges(int charges);
     iteminst:SetColor(uint32 color);
-    iteminst:SetCustomData(string identifier, string value);
+    iteminst:SetCustomData(string identifier, bool value);
     iteminst:SetCustomData(string identifier, float value);
     iteminst:SetCustomData(string identifier, int value);
-    iteminst:SetCustomData(string identifier, bool value);
+    iteminst:SetCustomData(string identifier, string value);
     iteminst:SetExp(uint32 exp);
     iteminst:SetInstNoDrop(bool flag);
     iteminst:SetPrice(uint32 price);

@@ -679,10 +679,12 @@ nav:
           - eq: quest-api/methods/eq.md
           - quest: quest-api/methods/quest.md
       - Events:
+          - Perl [Bot]: quest-api/events/perl-bot.md
           - Perl [Item]: quest-api/events/perl-item.md
           - Perl [NPC]: quest-api/events/perl-npc.md
           - Perl [Player]: quest-api/events/perl-player.md
           - Perl [Spell]: quest-api/events/perl-spell.md
+          - Lua [Bot]: quest-api/events/lua-bot.md
           - Lua [Encounter]: quest-api/events/lua-encounter.md
           - Lua [Item]: quest-api/events/lua-item.md
           - Lua [NPC]: quest-api/events/lua-npc.md

@@ -2,11 +2,11 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Class){:target="Class"} for latest definitions and Quest examples
 
-    Last generated 2022.05.11
+    Last generated 2022.12.07
 
 ``` lua
-Class.ADVENTUREMERCHANT
-Class.ADVENTURERECRUITER
+Class.ADVENTURE_MERCHANT
+Class.ADVENTURE_RECRUITER
 Class.ALT_CURRENCY_MERCHANT
 Class.BANKER
 Class.BARD
@@ -17,7 +17,6 @@ Class.BERSERKER
 Class.BERSERKERGM
 Class.CLERIC
 Class.CLERICGM
-Class.CORPSE_CLASS
 Class.DARK_REIGN_MERCHANT
 Class.DISCORD_MERCHANT
 Class.DRUID
@@ -29,7 +28,7 @@ Class.GUILD_TRIBUTE_MASTER
 Class.LDON_TREASURE
 Class.MAGICIAN
 Class.MAGICIANGM
-Class.MERCERNARY_MASTER
+Class.MERCENARY_MASTER
 Class.MERCHANT
 Class.MONK
 Class.MONKGM

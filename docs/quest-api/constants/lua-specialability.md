@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=SpecialAbility){:target="SpecialAbility"} for latest definitions and Quest examples
 
-    Last generated 2022.05.11
+    Last generated 2022.12.07
 
 ``` lua
 SpecialAbility.allow_beneficial
@@ -32,6 +32,7 @@ SpecialAbility.immune_magic
 SpecialAbility.immune_melee
 SpecialAbility.immune_melee_except_bane
 SpecialAbility.immune_melee_except_magical
+SpecialAbility.immune_open
 SpecialAbility.immune_pacify
 SpecialAbility.immune_ranged_attacks
 SpecialAbility.immune_taunt

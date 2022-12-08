@@ -47,9 +47,12 @@ function EVENT_COMBAT(e) {
 
 function EVENT_DEATH(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("corpse " .. e.corpse);
+	eq.debug("killed " .. e.killed);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -58,9 +61,12 @@ function EVENT_DEATH(e) {
 
 function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("corpse " .. e.corpse);
+	eq.debug("killed " .. e.killed);
 }
 ```
 ## EVENT_DEATH_ZONE
@@ -68,6 +74,13 @@ function EVENT_DEATH_COMPLETE(e) {
 ``` lua
 
 function EVENT_DEATH_ZONE(e) {
+	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell " .. e.spell);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("corpse " .. e.corpse);
+	eq.debug("killed " .. e.killed);
 }
 ```
 ## EVENT_ENTER
@@ -148,6 +161,15 @@ function EVENT_LOOT_ZONE(e) {
 	eq.debug("corpse " .. e.corpse);
 }
 ```
+## EVENT_PAYLOAD
+
+``` lua
+
+function EVENT_PAYLOAD(e) {
+	eq.debug("payload_id " .. e.payload_id);
+	eq.debug("payload_value " .. e.payload_value);
+}
+```
 ## EVENT_POPUP_RESPONSE
 
 ``` lua
@@ -205,6 +227,7 @@ function EVENT_SPAWN(e) {
 ``` lua
 
 function EVENT_SPAWN_ZONE(e) {
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_TARGET_CHANGE

@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Packet){:target="Packet"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` lua
     packet:GetOpcode();
@@ -26,8 +26,8 @@
     packet:WriteDouble(double value);
     packet:WriteFixedLengthString(int offset, string value, int string_length);
     packet:WriteFixedLengthString(string value);
-    packet:WriteFloat(int offset, float value);
     packet:WriteFloat(float value);
+    packet:WriteFloat(int offset, float value);
     packet:WriteInt16(int offset, int value);
     packet:WriteInt16(int value);
     packet:WriteInt32(int offset, int value);
@@ -36,7 +36,7 @@
     packet:WriteInt64(int64 value);
     packet:WriteInt8(int offset, int value);
     packet:WriteInt8(int value);
-    packet:WriteString(int offset, string value);
     packet:WriteString(string value);
+    packet:WriteString(int offset, string value);
     packet:operator=(const o);
     ```

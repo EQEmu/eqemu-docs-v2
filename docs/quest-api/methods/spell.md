@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` perl
     $spell->GetAOEDuration();
@@ -13,7 +13,7 @@
     $spell->GetActivated();
     $spell->GetAllowRest();
     $spell->GetBaseDifficulty();
-    $spell->GetBaseValue(uint8 slot);
+    $spell->GetBaseValue(uint8_t slot);
     $spell->GetBonusHate();
     $spell->GetBuffDuration();
     $spell->GetBuffDurationFormula();
@@ -27,10 +27,10 @@
     $spell->GetCastTime();
     $spell->GetCasterRequirementID();
     $spell->GetCastingAnimation();
-    $spell->GetClasses(uint8 slot);
-    $spell->GetComponent(uint8 slot);
-    $spell->GetComponentCount(uint8 slot);
-    $spell->GetDeities(uint8 slot);
+    $spell->GetClasses(uint8_t slot);
+    $spell->GetComponent(uint8_t slot);
+    $spell->GetComponentCount(uint8_t slot);
+    $spell->GetDeities(uint8_t slot);
     $spell->GetDeityAgnostic();
     $spell->GetDescriptionID();
     $spell->GetDirectionalEnd();
@@ -38,12 +38,12 @@
     $spell->GetDisallowSit();
     $spell->GetDispelFlag();
     $spell->GetEffectDescriptionID();
-    $spell->GetEffectID(uint8 slot);
+    $spell->GetEffectID(uint8_t slot);
     $spell->GetEnduranceCost();
     $spell->GetEnduranceUpkeep();
     $spell->GetEnvironmentType();
     $spell->GetFeedbackable();
-    $spell->GetFormula(uint8 slot);
+    $spell->GetFormula(uint8_t slot);
     $spell->GetGoodEffect();
     $spell->GetHateAdded();
     $spell->GetHitNumber();
@@ -51,12 +51,12 @@
     $spell->GetID();
     $spell->GetIsDiscipline();
     $spell->GetLDoNTrap();
-    $spell->GetLimitValue(uint8 slot);
+    $spell->GetLimitValue(uint8_t slot);
     $spell->GetMana();
     $spell->GetMaxDistance();
     $spell->GetMaxDistanceMod();
     $spell->GetMaxResist();
-    $spell->GetMaxValue(uint8 slot);
+    $spell->GetMaxValue(uint8_t slot);
     $spell->GetMinDistance();
     $spell->GetMinDistanceMod();
     $spell->GetMinRange();
@@ -67,7 +67,7 @@
     $spell->GetNimbusEffect();
     $spell->GetNoBlock();
     $spell->GetNoDetrimentalSpellAggro();
-    $spell->GetNoExpendReagent(uint8 slot);
+    $spell->GetNoExpendReagent(uint8_t slot);
     $spell->GetNoHealDamageItemMod();
     $spell->GetNoPartialResist();
     $spell->GetNoRemove();
@@ -123,7 +123,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Spell){:target="Spell"} for latest definitions and Quest examples
 
-        Last generated 2022.05.11
+        Last generated 2022.12.07
 
     ``` lua
     spell:AEDuration();
