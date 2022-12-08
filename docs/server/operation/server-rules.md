@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2022.11.19
+    Last Generated: 2022.12.07
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -83,6 +83,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | :--- | :--- | :--- |
 | Bots:BotExpansionSettings | 16383 | Sets the expansion settings for bot use. Defaults to all expansions enabled up to TSS |
 | Bots:AllowCamelCaseNames | false | Allows the use of 'MyBot' type names |
+| Bots:AllowBotEquipAnyRaceGear | false | Allows Bots to wear Equipment even if their race is not valid |
 | Bots:CommandSpellRank | 1 | Filters bot command spells by rank. 1, 2 and 3 are valid filters - any other number allows all ranks |
 | Bots:CreationLimit | 150 | Number of bots that each account can create |
 | Bots:FinishBuffing | false | Allow for buffs to complete even if the bot caster is out of mana. Only affects buffing out of combat |
@@ -112,8 +113,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
 | Bugs:ReportingSystemActive | true | Activates bug reporting |
-| Bugs:UseOldReportingMethod | true | Forces the use of the old bug reporting system |
-| Bugs:DumpTargetEntity | false | Dumps the target entity, if one is provided |
 
 ## Channels Rules
 | Rule Name | Default Value | Description |
@@ -282,6 +281,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:BeastlordTrackingDistanceMultiplier | 0 | If you want beastlords to be able to track, increase this above 0.  0 disables tracking packets. |
 | Character:BerserkerTrackingDistanceMultiplier | 0 | If you want berserkers to be able to track, increase this above 0.  0 disables tracking packets. |
 | Character:OnInviteReceiveAlreadyinGroupMessage | true | If you want clients to receive a message when trying to invite a player into a group that is currently in another group. |
+| Character:PetZoneWithOwner | true | Should Pets Zone with Owner |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
