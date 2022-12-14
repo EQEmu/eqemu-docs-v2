@@ -77,7 +77,8 @@ e.other:DiaWind("markdown"); // alias
 * **{linebreak}** - Will create a linebreak
 * **mysterious** - If the text 'mysterious' is anywhere in the text, it will not show up in the player window, but it will format the window as 'Mysterious Voice tells you'
 * **wintype:0/1** - If this is 1 the window will be Yes/No
-* **popupid:ID** - If this option is present, it will give the popup window and ID
+* **popupid:ID** - If this option is present, it will give the popup window an ID response on "Yes" or button one
+* **secondresponseid:id** - If this option is present, it will give the popup window an ID response on "No" or button two
 * **noquotes** - This tells the window to not use any quotes for special formatting at times
 * **nosound** - No sound affect will play with the window
 * **=Timer=** - If a number is specified between the two ==, it will countdown a timer on the popup window
