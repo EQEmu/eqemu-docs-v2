@@ -1,9 +1,9 @@
-site_name: EQEmulator Docs
+site_name: EverQuest Emulator Docs
 plugins:
   - search
-repo_url: https://github.com/EQEmu/eqemu-docs-v2
+repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
-repo_name: EQEmu Docs
+repo_name: EQEmu Server
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
 extra:
   analytics:

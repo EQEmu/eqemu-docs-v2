@@ -17,25 +17,55 @@
     opacity: 1 !important;
 }
 
-.md-main::before {
-    content: "";
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    position: absolute;
-    z-index: -99999;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background: url(/assets/kelethin-render-min.png) var(--md-default-bg-color);
-    /*background: url(http://spire.akkadius.com/\/eq-asset-preview-master\/assets\/wallpaper\/lavastorm\.png) var(--md-default-bg-color);*/
-    /*background: url(https://cdn.staticneo.com/n/7/eq_hot_fanfaire_5_.jpg) var(--md-default-bg-color);*/
-    /*background: url(https://images3.alphacoders.com/278/thumb-1920-278779.jpg) var(--md-default-bg-color);*/
-    /*background: url(https://www.wallpaperup.com/uploads/wallpapers/2014/01/04/214433/dc7e2c509b79b6345193393115b74a84-700.jpg) var(--md-default-bg-color);*/
-    opacity: .1
+@media screen and (min-width: 76.25em) {
+    .md-main::before {
+        content: "";
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        position: absolute;
+        z-index: -99999;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: url(/assets/kelethin-render-min.png) var(--md-default-bg-color);
+        opacity: .1;
+
+        animation: changeBg 240s infinite;
+    }
+}
+
+@keyframes changeBg {
+    0% {
+        background-image: url(https://user-images.githubusercontent.com/3319450/209234376-3c4f08a5-80a9-4b38-ad40-a4aa9b6a1764.png);
+        opacity: .05;
+    }
+    25% {
+        background-image: url("https://user-images.githubusercontent.com/3319450/209234411-25086f15-d076-4e47-bc96-0c72518fbf87.png");
+        opacity: .1;
+    }
+    50% {
+        background-image: url("https://user-images.githubusercontent.com/3319450/209234471-48435c70-3047-4260-8220-dc9e912377a7.png");
+    }
+    75% {
+        background-image: url("https://user-images.githubusercontent.com/3319450/209234500-d1a0c432-c535-4261-b919-0a5471965aef.png");
+    }
 }
 
 .md-header { background-color: rgba(14, 20, 24, 0.8) !important; }
 .md-tabs { background-color: rgba(14, 20, 24, 0.6) !important; }
 
+@media screen and (min-width: 76.25em) {
+    .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+        background: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .md-nav--secondary .md-nav__title {
+        background: none;
+        box-shadow: none;
+    }
+}
