@@ -29,27 +29,23 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background: url(/assets/kelethin-render-min.png) var(--md-default-bg-color);
-        opacity: .1;
-
-        animation: changeBg 240s infinite;
+        opacity: .05;
+        animation: changeBg 600s infinite;
     }
 }
 
 @keyframes changeBg {
-    0% {
-        background-image: url(https://user-images.githubusercontent.com/3319450/209234376-3c4f08a5-80a9-4b38-ad40-a4aa9b6a1764.png);
-        opacity: .05;
+    0%, 100% {
+        background-image: var(--bg1);
     }
     25% {
-        background-image: url("https://user-images.githubusercontent.com/3319450/209234411-25086f15-d076-4e47-bc96-0c72518fbf87.png");
-        opacity: .1;
+        background-image: var(--bg2);
     }
     50% {
-        background-image: url("https://user-images.githubusercontent.com/3319450/209234471-48435c70-3047-4260-8220-dc9e912377a7.png");
+        background-image: var(--bg3);
     }
     75% {
-        background-image: url("https://user-images.githubusercontent.com/3319450/209234500-d1a0c432-c535-4261-b919-0a5471965aef.png");
+        background-image: var(--bg4);
     }
 }
 

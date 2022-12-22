@@ -24,9 +24,10 @@ type MkDocsCfg struct {
 			Property string `yaml:"property"`
 		} `yaml:"analytics"`
 	} `yaml:"extra"`
-	ExtraCSS  []string `yaml:"extra_css"`
-	CopyRight string   `yaml:"copyright"`
-	Theme     struct {
+	ExtraCSS        []string `yaml:"extra_css"`
+	ExtraJavascript []string `yaml:"extra_javascript"`
+	CopyRight       string   `yaml:"copyright"`
+	Theme           struct {
 		Favicon string `yaml:"favicon"`
 		Logo    string `yaml:"logo"`
 		Font    struct {

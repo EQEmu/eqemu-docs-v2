@@ -10,7 +10,9 @@ extra:
     provider: google
     property: G-98Y234QYH3
 extra_css:
-  - stylesheets/extra.css
+  - extra/extra.css
+extra_javascript:
+  - extra/extra.js
 copyright: Everquest is a registered trademark of Daybreak Game Company LLC. EverQuest Emulator is not associated or affiliated in any way with Daybreak Game Company LLC.
 theme:
   favicon: assets/eqemu-text.png
