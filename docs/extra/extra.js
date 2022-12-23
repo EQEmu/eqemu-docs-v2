@@ -4,6 +4,14 @@ const backgrounds = [
   "https://user-images.githubusercontent.com/3319450/209234500-d1a0c432-c535-4261-b919-0a5471965aef.png",
   "https://user-images.githubusercontent.com/3319450/209234471-48435c70-3047-4260-8220-dc9e912377a7.png",
   "/assets/kelethin-render-min.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/faydark.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/soldungb.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/sebilis.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/rivervale.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/qeynos.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/oasis.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/lavastorm.png",
+  "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/freeport.png",
 ]
 
 let index = 1;
