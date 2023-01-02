@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2022.12.07
+    Last generated 2023.01.02
 
 ``` lua
 Rule.AAExpMultiplier
@@ -68,6 +68,8 @@ Rule.AutosaveIntervalS
 Rule.AvgDefProcsPerMinute
 Rule.AvgProcsPerMinute
 Rule.AvgSpellProcsPerMinute
+Rule.BackstabIgnoresBane
+Rule.BackstabIgnoresElemental
 Rule.BardTrackingDistanceMultiplier
 Rule.BaseCritChance
 Rule.BaseCritRatio
@@ -221,6 +223,7 @@ Rule.ExemptMaxClientsStatus
 Rule.ExpMultiplier
 Rule.ExpPerPoint
 Rule.ExpansionSettings
+Rule.ExperiencePercentCapPerKill
 Rule.ExpireRead
 Rule.ExpireTrash
 Rule.ExpireUnread
@@ -253,6 +256,8 @@ Rule.FoodLossPerUpdate
 Rule.ForageChance
 Rule.FrontalStunImmunityClasses
 Rule.FrontalStunImmunityRaces
+Rule.FullEndurOnDeath
+Rule.FullManaOnDeath
 Rule.GMAccountIPList
 Rule.GlobalChatLevelLimit
 Rule.GlobalLootMultiplier

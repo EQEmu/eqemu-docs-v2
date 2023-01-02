@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Group){:target="Group"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` perl
     $group->CastGroupSpell(Mob* caster, uint16 spell_id);
@@ -40,7 +40,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Group){:target="Group"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` lua
     group:CastGroupSpell(Mob caster, int spell_id);
@@ -63,7 +63,7 @@
     group:IsLeader(Mob c);
     group:IsLeader(string name);
     group:SetLeader(Mob c);
-    group:SplitExp(uint32 exp, Mob other);
+    group:SplitExp(uint64 exp, Mob other);
     group:SplitMoney(uint32 copper, uint32 silver, uint32 gold, uint32 platinum, Client splitter);
     group:SplitMoney(uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
     group:TeleportGroup(Mob sender, uint32 zone_id, uint32 instance_id, float x, float y, float z, float h);

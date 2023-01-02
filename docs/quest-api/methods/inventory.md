@@ -1,10 +1,10 @@
-=== "Perl (31)"
+=== "Perl (32)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` perl
     $inventory->CanItemFitInContainer(EQ::ItemInstance* item_to_check, EQ::ItemInstance* container_to_check);
@@ -16,6 +16,7 @@
     $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor);
     $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor, uint8_t min_size);
     $inventory->FindFreeSlot(bool is_for_bag, bool try_cursor, uint8_t min_size, bool is_arrow);
+    $inventory->GetAugmentIDsBySlotID(int16 slot_id);
     $inventory->GetBagIndex(int16_t slot_id);
     $inventory->GetItem(int16_t slot_id);
     $inventory->GetMaterialFromSlot(int16_t slot_id);
@@ -24,13 +25,13 @@
     $inventory->GetSlotID(int16_t slot_id);
     $inventory->GetSlotID(int16_t slot_id, uint8_t bag_index);
     $inventory->HasAugmentEquippedByID(uint32_t item_id);
+    $inventory->HasItem(uint32_t item_id, uint8_t quantity, uint8_t where_to_look);
     $inventory->HasItem(uint32_t item_id);
     $inventory->HasItem(uint32_t item_id, uint8_t quantity);
-    $inventory->HasItem(uint32_t item_id, uint8_t quantity, uint8_t where_to_look);
-    $inventory->HasItemByLoreGroup(uint32_t loregroup);
     $inventory->HasItemByLoreGroup(uint32_t loregroup, uint8_t where_to_look);
-    $inventory->HasItemByUse(uint8_t item_use, uint8_t quantity);
+    $inventory->HasItemByLoreGroup(uint32_t loregroup);
     $inventory->HasItemByUse(uint8_t item_use, uint8_t quantity, uint8_t where_to_look);
+    $inventory->HasItemByUse(uint8_t item_use, uint8_t quantity);
     $inventory->HasItemEquippedByID(uint32_t item_id);
     $inventory->HasSpaceForItem(EQ::ItemInstance* item_to_check, uint8_t quantity);
     $inventory->PopItem(int16_t slot_id);
@@ -39,20 +40,20 @@
     $inventory->SupportsContainers(int16_t slot_id);
     $inventory->SwapItem(int16_t source_slot_id, int16_t destination_slot_id);
     ```
-=== "Lua (33)"
+=== "Lua (34)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Inventory){:target="Inventory"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` lua
     inventory:CalcBagIdx(slot_id);
     inventory:CalcMaterialFromSlot(equipslot);
     inventory:CalcSlotFromMaterial(material);
-    inventory:CalcSlotId(slot_id, bag_slot);
     inventory:CalcSlotId(slot_id);
+    inventory:CalcSlotId(slot_id, bag_slot);
     inventory:CanItemFitInContainer(Item item, Item container);
     inventory:CheckNoDrop(int slot_id);
     inventory:CountAugmentEquippedByID(uint32 item_id);
@@ -62,6 +63,7 @@
     inventory:FindFreeSlot(bool for_bag, bool try_cursor);
     inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size);
     inventory:FindFreeSlot(bool for_bag, bool try_cursor, min_size, bool is_arrow);
+    inventory:GetAugmentIDsBySlotID(int16 slot_id);
     inventory:GetItem(int slot_id);
     inventory:GetItem(int slot_id, int bag_slot);
     inventory:GetSlotByItemInst(ItemInst inst);

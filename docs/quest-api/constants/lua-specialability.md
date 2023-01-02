@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=SpecialAbility){:target="SpecialAbility"} for latest definitions and Quest examples
 
-    Last generated 2022.12.07
+    Last generated 2023.01.02
 
 ``` lua
 SpecialAbility.allow_beneficial

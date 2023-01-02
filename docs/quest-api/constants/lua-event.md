@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2022.12.07
+    Last generated 2023.01.02
 
 ``` lua
 Event.aa_buy
@@ -49,6 +49,7 @@ Event.fish_start
 Event.fish_success
 Event.forage_failure
 Event.forage_success
+Event.gm_command
 Event.group_change
 Event.hate_list
 Event.hp
@@ -60,6 +61,7 @@ Event.item_tick
 Event.killed_merit
 Event.language_skill_up
 Event.leave_area
+Event.level_down
 Event.level_up
 Event.loot
 Event.loot_zone

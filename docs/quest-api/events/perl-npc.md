@@ -94,6 +94,29 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killed_h " . $killed_h);
 }
 ```
+## EVENT_ENTER
+
+``` perl
+
+sub EVENT_ENTER {
+}
+```
+## EVENT_ENTER_AREA
+
+``` perl
+
+sub EVENT_ENTER_AREA {
+	quest::debug("area_id " . $area_id);
+	quest::debug("area_type " . $area_type);
+}
+```
+## EVENT_EXIT
+
+``` perl
+
+sub EVENT_EXIT {
+}
+```
 ## EVENT_FEIGN_DEATH
 
 ``` perl
@@ -137,6 +160,15 @@ sub EVENT_ITEM {
 sub EVENT_KILLED_MERIT {
 }
 ```
+## EVENT_LEAVE_AREA
+
+``` perl
+
+sub EVENT_LEAVE_AREA {
+	quest::debug("area_id " . $area_id);
+	quest::debug("area_type " . $area_type);
+}
+```
 ## EVENT_LOOT_ZONE
 
 ``` perl
@@ -154,6 +186,15 @@ sub EVENT_LOOT_ZONE {
 
 sub EVENT_NPC_SLAY {
 	quest::debug("killed " . $killed);
+}
+```
+## EVENT_PAYLOAD
+
+``` perl
+
+sub EVENT_PAYLOAD {
+	quest::debug("payload_id " . $payload_id);
+	quest::debug("payload_value " . $payload_value);
 }
 ```
 ## EVENT_POPUPRESPONSE
@@ -204,15 +245,6 @@ sub EVENT_SLAY {
 ``` perl
 
 sub EVENT_SPAWN {
-}
-```
-## EVENT_SPELL_EFFECT_BOT
-
-``` perl
-
-sub EVENT_SPELL_EFFECT_BOT {
-	quest::debug("payload_id " . $payload_id);
-	quest::debug("payload_value " . $payload_value);
 }
 ```
 ## EVENT_TARGET_CHANGE

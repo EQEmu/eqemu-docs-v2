@@ -236,6 +236,22 @@ sub EVENT_DUEL_LOSE {
 sub EVENT_DUEL_WIN {
 }
 ```
+## EVENT_ENTER
+
+``` perl
+
+sub EVENT_ENTER {
+}
+```
+## EVENT_ENTER_AREA
+
+``` perl
+
+sub EVENT_ENTER_AREA {
+	quest::debug("area_id " . $area_id);
+	quest::debug("area_type " . $area_type);
+}
+```
 ## EVENT_ENTER_ZONE
 
 ``` perl
@@ -261,6 +277,13 @@ sub EVENT_EQUIP_ITEM_CLIENT {
 	quest::debug("item_id " . $item_id);
 	quest::debug("item_quantity " . $item_quantity);
 	quest::debug("slot_id " . $slot_id);
+}
+```
+## EVENT_EXIT
+
+``` perl
+
+sub EVENT_EXIT {
 }
 ```
 ## EVENT_FEIGN_DEATH
@@ -307,6 +330,14 @@ sub EVENT_FORAGE_SUCCESS {
 	quest::debug("foraged_item " . $foraged_item);
 }
 ```
+## EVENT_GM_COMMAND
+
+``` perl
+
+sub EVENT_GM_COMMAND {
+	quest::debug("message " . $message);
+}
+```
 ## EVENT_GROUP_CHANGE
 
 ``` perl
@@ -334,11 +365,29 @@ sub EVENT_LANGUAGE_SKILL_UP {
 	quest::debug("skill_max " . $skill_max);
 }
 ```
+## EVENT_LEAVE_AREA
+
+``` perl
+
+sub EVENT_LEAVE_AREA {
+	quest::debug("area_id " . $area_id);
+	quest::debug("area_type " . $area_type);
+}
+```
+## EVENT_LEVEL_DOWN
+
+``` perl
+
+sub EVENT_LEVEL_DOWN {
+	quest::debug("levels_lost " . $levels_lost);
+}
+```
 ## EVENT_LEVEL_UP
 
 ``` perl
 
 sub EVENT_LEVEL_UP {
+	quest::debug("levels_gained " . $levels_gained);
 }
 ```
 ## EVENT_LOOT
@@ -374,6 +423,15 @@ sub EVENT_MERCHANT_SELL {
 	quest::debug("item_id " . $item_id);
 	quest::debug("item_quantity " . $item_quantity);
 	quest::debug("item_cost " . $item_cost);
+}
+```
+## EVENT_PAYLOAD
+
+``` perl
+
+sub EVENT_PAYLOAD {
+	quest::debug("payload_id " . $payload_id);
+	quest::debug("payload_value " . $payload_value);
 }
 ```
 ## EVENT_PLAYER_PICKUP
@@ -429,15 +487,6 @@ sub EVENT_SKILL_UP {
 	quest::debug("skill_value " . $skill_value);
 	quest::debug("skill_max " . $skill_max);
 	quest::debug("is_tradeskill " . $is_tradeskill);
-}
-```
-## EVENT_SPELL_EFFECT_BOT
-
-``` perl
-
-sub EVENT_SPELL_EFFECT_BOT {
-	quest::debug("payload_id " . $payload_id);
-	quest::debug("payload_value " . $payload_value);
 }
 ```
 ## EVENT_TARGET_CHANGE

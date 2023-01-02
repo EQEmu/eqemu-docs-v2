@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` perl
     $expedition->AddLockout(string event_name, uint32_t seconds);
@@ -47,13 +47,13 @@
     $expedition->UpdateLockoutDuration(string event_name, uint32_t seconds);
     $expedition->UpdateLockoutDuration(string event_name, uint32_t seconds, bool members_only);
     ```
-=== "Lua (39)"
+=== "Lua (41)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Expedition){:target="Expedition"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` lua
     expedition:AddLockout(string event_name, uint32_t seconds);
@@ -66,9 +66,11 @@
     expedition:GetID();
     expedition:GetInstanceID();
     expedition:GetLeaderName();
+    expedition:GetLockouts();
     expedition:GetLootEventByNPCTypeID(uint32_t npc_type_id);
     expedition:GetLootEventBySpawnID(uint32_t spawn_id);
     expedition:GetMemberCount();
+    expedition:GetMembers();
     expedition:GetName();
     expedition:GetSecondsRemaining();
     expedition:GetUUID();

@@ -107,6 +107,15 @@ sub EVENT_NPC_SLAY {
 	quest::debug("killed " . $killed);
 }
 ```
+## EVENT_PAYLOAD
+
+``` perl
+
+sub EVENT_PAYLOAD {
+	quest::debug("payload_id " . $payload_id);
+	quest::debug("payload_value " . $payload_value);
+}
+```
 ## EVENT_POPUPRESPONSE
 
 ``` perl
@@ -145,15 +154,6 @@ sub EVENT_SLAY {
 ``` perl
 
 sub EVENT_SPAWN {
-}
-```
-## EVENT_SPELL_EFFECT_BOT
-
-``` perl
-
-sub EVENT_SPELL_EFFECT_BOT {
-	quest::debug("payload_id " . $payload_id);
-	quest::debug("payload_value " . $payload_value);
 }
 ```
 ## EVENT_TARGET_CHANGE

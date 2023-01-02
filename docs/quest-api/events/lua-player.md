@@ -220,6 +220,13 @@ function EVENT_DUEL_WIN(e) {
 	eq.debug("other " .. e.other);
 }
 ```
+## EVENT_ENTER
+
+``` lua
+
+function EVENT_ENTER(e) {
+}
+```
 ## EVENT_ENTER_AREA
 
 ``` lua
@@ -255,6 +262,13 @@ function EVENT_EQUIP_ITEM_CLIENT(e) {
 	eq.debug("item_quantity " .. e.item_quantity);
 	eq.debug("slot_id " .. e.slot_id);
 	eq.debug("item " .. e.item);
+}
+```
+## EVENT_EXIT
+
+``` lua
+
+function EVENT_EXIT(e) {
 }
 ```
 ## EVENT_FEIGN_DEATH
@@ -302,6 +316,14 @@ function EVENT_FORAGE_SUCCESS(e) {
 	eq.debug("item " .. e.item);
 }
 ```
+## EVENT_GM_COMMAND
+
+``` lua
+
+function EVENT_GM_COMMAND(e) {
+	eq.debug("message " .. e.message);
+}
+```
 ## EVENT_GROUP_CHANGE
 
 ``` lua
@@ -337,11 +359,20 @@ function EVENT_LEAVE_AREA(e) {
 	eq.debug("area_type " .. e.area_type);
 }
 ```
+## EVENT_LEVEL_DOWN
+
+``` lua
+
+function EVENT_LEVEL_DOWN(e) {
+	eq.debug("levels_lost " .. e.levels_lost);
+}
+```
 ## EVENT_LEVEL_UP
 
 ``` lua
 
 function EVENT_LEVEL_UP(e) {
+	eq.debug("levels_gained " .. e.levels_gained);
 }
 ```
 ## EVENT_LOOT

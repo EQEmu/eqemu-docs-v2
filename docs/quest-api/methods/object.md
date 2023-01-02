@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` perl
     $object->ClearEntityVariables();
@@ -54,26 +54,27 @@
     $object->StartDecay();
     $object->VarSave();
     ```
-=== "Lua (36)"
+=== "Lua (37)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Object){:target="Object"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` lua
     object:ClearEntityVariables();
     object:ClearUser();
     object:Close();
-    object:Delete(bool reset_state);
     object:Delete();
+    object:Delete(bool reset_state);
     object:DeleteEntityVariable(string variable_name);
     object:DeleteItem(int index);
     object:Depop();
     object:EntityVariableExists(string variable_name);
     object:GetDBID();
     object:GetEntityVariable(variable_name);
+    object:GetEntityVariables();
     object:GetHeading();
     object:GetID();
     object:GetIcon();

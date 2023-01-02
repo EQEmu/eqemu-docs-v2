@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` perl
     $raid->BalanceHP(int32_t penalty, uint32_t group_id);
@@ -40,7 +40,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
-        Last generated 2022.12.07
+        Last generated 2023.01.02
 
     ``` lua
     raid:BalanceHP(int penalty, uint32 group_id);
@@ -64,7 +64,7 @@
     raid:IsRaidMember(Client c);
     raid:IsRaidMember(string name);
     raid:RaidCount();
-    raid:SplitExp(uint32 exp, Mob other);
+    raid:SplitExp(uint64 exp, Mob other);
     raid:SplitMoney(uint32 gid, uint32 copper, uint32 silver, uint32 gold, uint32 platinum, Client splitter);
     raid:SplitMoney(uint32 gid, uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
     raid:TeleportGroup(Mob sender, uint32 zone_id, uint32 instance_id, float x, float y, float z, float h, uint32 group_id);
