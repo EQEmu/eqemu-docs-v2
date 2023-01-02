@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2022.12.07
+    Last Generated: 2023.01.02
 
 
 | Command | Description | Status Level |
@@ -55,9 +55,11 @@
 | #enablerecipe | [Recipe ID] - Enables a Recipe | QuestTroupe (80) |
 | #endurance | Restores your or your target's endurance. | Guide (50) |
 | #equipitem | [slotid(0-21)] - Equip the item on your cursor into the specified slot | Guide (50) |
+| #exptoggle | [Toggle] - Toggle your or your target's experience gain. | QuestTroupe (80) |
 | #faction | [Find (criteria &#124; all ) &#124; Review (criteria &#124; all) &#124; Reset (id)] - Resets Player's Faction | QuestTroupe (80) |
 | #factionassociation | [factionid] [amount] - triggers a faction hits via association | GMLeadAdmin (150) |
 | #feature | Change your or your target's feature's temporarily | QuestTroupe (80) |
+| #size | Change your targets size (alias of #feature size) | QuestTroupe (80) |
 | #findaa | [Search Criteria] - Search for an AA | Guide (50) |
 | #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
 | #findclass | [Search Criteria] - Search for a class | Guide (50) |
@@ -176,6 +178,8 @@
 | #randomfeatures | Temporarily randomizes the Facial Features of your target | QuestTroupe (80) |
 | #refreshgroup | Refreshes Group for you or your player target. | Player (0) |
 | #reload | Reloads different types of server data globally, use no argument for help menu. | GMMgmt (200) |
+| #rq | Reloads quests (alias of #reload quests). | GMMgmt (200) |
+| #rl | Reloads logs (alias of #reload logs). | GMMgmt (200) |
 | #removeitem | [Item ID] [Amount] - Removes the specified Item ID by Amount from you or your player target's inventory (Amount defaults to 1 if not used) | GMAdmin (100) |
 | #repop | [Force] - Repop the zone with optional force repop | GMAdmin (100) |
 | #resetaa | Resets a Player's AA in their profile and refunds spent AA's to unspent, may disconnect player. | GMMgmt (200) |
@@ -232,6 +236,7 @@
 | #summonburiedplayercorpse | Summons the target's oldest buried corpse, if any exist. | GMAdmin (100) |
 | #summonitem | [itemid] [charges] - Summon an item onto your cursor. Charges are optional. | GMMgmt (200) |
 | #suspend | [name] [days] [reason] - Suspend by character name and for specificed number of days | GMLeadAdmin (150) |
+| #suspendmulti | [Character Name One&#124;Character Name Two&#124;etc] [Days] [Reason] - Suspend multiple characters by name for specified number of days | GMLeadAdmin (150) |
 | #task | (subcommand) - Task system commands | GMLeadAdmin (150) |
 | #tempname | [newname] - Temporarily renames your target. Leave name blank to restore the original name. | GMAdmin (100) |
 | #petname | [newname] - Temporarily renames your pet. Leave name blank to restore the original name. | GMAdmin (100) |
