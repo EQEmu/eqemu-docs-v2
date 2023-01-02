@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2022.12.07
+    Last Generated: 2023.01.02
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -218,17 +218,17 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:OrnamentationAugmentType | 20 | Ornamentation Augment Type |
 | Character:EnvironmentDamageMulipliter | 1 | Multiplier for environmental damage like fall damage. |
 | Character:UnmemSpellsOnDeath | true | Setting whether at death all memorized Spells are forgotten |
-| Character:TradeskillUpAlchemy | 2 | Alchemy skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpBaking | 2 | Baking skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpBlacksmithing | 2 | Blacksmithing skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpBrewing | 3 | Brewing skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpFletching | 2 | Fletching skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpJewelcrafting | 2 | Jewelcrafting skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpMakePoison | 2 | Make Poison skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpPottery | 4 | Pottery skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpResearch | 1 | Research skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpTinkering | 2 | Tinkering skillup rate adjustment. Lower is faster |
-| Character:TradeskillUpTailoring | 2 | Tailoring skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpAlchemy | 2.0 | Alchemy skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpBaking | 2.0 | Baking skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpBlacksmithing | 2.0 | Blacksmithing skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpBrewing | 3.0 | Brewing skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpFletching | 2.0 | Fletching skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpJewelcrafting | 2.0 | Jewelcrafting skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpMakePoison | 2.0 | Make Poison skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpPottery | 4.0 | Pottery skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpResearch | 1.0 | Research skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpTinkering | 2.0 | Tinkering skillup rate adjustment. Lower is faster |
+| Character:TradeskillUpTailoring | 2.0 | Tailoring skillup rate adjustment. Lower is faster |
 | Character:MarqueeHPUpdates | false | Will show health percentage in center of screen if health lesser than 100% |
 | Character:IksarCommonTongue | 95 | Starting value for Common Tongue for Iksars |
 | Character:OgreCommonTongue | 95 | Starting value for Common Tongue for Ogres |
@@ -282,6 +282,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:BerserkerTrackingDistanceMultiplier | 0 | If you want berserkers to be able to track, increase this above 0.  0 disables tracking packets. |
 | Character:OnInviteReceiveAlreadyinGroupMessage | true | If you want clients to receive a message when trying to invite a player into a group that is currently in another group. |
 | Character:PetZoneWithOwner | true | Should Pets Zone with Owner |
+| Character:FullManaOnDeath | true | On death set mana to full |
+| Character:FullEndurOnDeath | true | On death set endurance to full |
+| Character:ExperiencePercentCapPerKill | -1 | Caps the percentage of experience that can be gained per kill. -1 disables the cap; 0 blocks all (non-aa) xp. |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -397,6 +400,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:AssassinateOnlyHumanoids | true | Enable or disable Assassinate only being allowed on Humanoids, true by default. |
 | Combat:HeadshotOnlyHumanoids | true | Enable or disable Headshot only being allowed on Humanoids, true by default. |
 | Combat:EnableWarriorShielding | true | Enable or disable Warrior Shielding Ability (/shield), true by default. |
+| Combat:BackstabIgnoresElemental | false | Enable or disable Elemental weapon damage affecting backstab damage, false by default. |
+| Combat:BackstabIgnoresBane | false | Enable or disable Bane weapon damage affecting backstab damage, false by default. |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
