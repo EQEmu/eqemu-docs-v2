@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.01.02
+    Last Generated: 2023.01.04
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -47,6 +47,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Adventure:LDoNTrapDistanceUse | 625 | LDoN trap distance use |
 | Adventure:LDoNBaseTrapDifficulty | 15.0 | LDoN base trap difficulty |
 | Adventure:LDoNCriticalFailTrapThreshold | 10.0 | LDoN critical fail trap threshold |
+| Adventure:LDoNLootCountModifier | 10 | LDoN Loot Count Modifier, lower is better (default is 10) |
 
 ## Aggro Rules
 | Rule Name | Default Value | Description |

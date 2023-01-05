@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.01.02
+    Last Generated: 2023.01.04
 
 
 | Command | Description | Status Level |
@@ -62,6 +62,7 @@
 | #size | Change your targets size (alias of #feature size) | QuestTroupe (80) |
 | #findaa | [Search Criteria] - Search for an AA | Guide (50) |
 | #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
+| #findcharacter | [Search Criteria] - Search for a character | Guide (50) |
 | #findclass | [Search Criteria] - Search for a class | Guide (50) |
 | #findfaction | [Search Criteria] - Search for a faction | Guide (50) |
 | #findnpctype | [Search Criteria] - Search database NPC types | GMAdmin (100) |
@@ -202,6 +203,7 @@
 | #setadventurepoints | [Theme] [Points] - Set your or your player target's available Adventure Points by Theme | GMLeadAdmin (150) |
 | #setaltcurrency | [Currency ID] [Amount] - Set your or your target's available Alternate Currency by Currency ID | GMAdmin (100) |
 | #setanim | [Animation ID (IDs are 0 to 4)] - Set target's appearance to Animation ID | GMMgmt (200) |
+| #setanon | [Anonymous Flag] - Set you or your target's Anonymous Flag (0 = Not Anonymous, 1 = Anonymous, 2 = Roleplaying) | QuestTroupe (80) |
 | #setcrystals | [value] - Set your or your player target's available radiant or ebon crystals | GMAdmin (100) |
 | #setendurance | [Endurance] - Set your or your target's Endurance | GMAdmin (100) |
 | #setfaction | [Faction ID] - Sets targeted NPC's faction in the database | GMAreas (170) |
