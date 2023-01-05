@@ -71,7 +71,6 @@ Find us on Discord!
 
 | Description | Link |
 | :--- | :--- |
-| Firiona Vie Project - Classic quests in Perl | [FV Project Quests](https://github.com/Gates-Of-Time/FVProject-Quests) |
 | Project 2002 - Classic through POP quests in Lua | [p2002 Quests](https://github.com/p2002eq/quests) |
 
 
