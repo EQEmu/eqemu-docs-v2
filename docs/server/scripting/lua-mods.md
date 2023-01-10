@@ -16,19 +16,15 @@ Most functions have a e.IgnoreDefault boolean that by default is false. If set t
 
 #reload quest can be used to reload the scripts in your zone to reflect your latest changes. Be sure to #reload world once you finalize your setup and want it to go across all zones.
 
-# Usage
-
-In some functions, an IgnoreDefault boolean is provided to allow you to override default logic with your custom mod. If this is set to false, code will execute as normal after parsing your mod data. If set to true, a return occurs, only using the logic provided in your mod, effectively overriding default logic entirely.
-
 # Function List
 
 | Function | Description |
 | :--- | :--- |
 | [CheckHitChance](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L97) | Check if an attacker hit a defender. e.hit will have hit information|
-| AvoidDamage | Check if an attacker avoided damage |
+| AvoidDamage | Check if an attacker avoided damage, no example available |
 | [MeleeMitigation](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L65) | Process melee mitigation (damage reduction) |
 | [TryCriticalHit](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L255) | Try executing a critical hit |
-| [ApplyDamageTable] | Adjust damage based on a table, no example available |
+| ApplyDamageTable | Adjust damage based on a table, no example available |
 | [CommonOutgoingHitSuccess](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L961) | This is the final value of an outgoing hit success. Note that if any critical hits occured, if this value is modified, the crit won't match up as the text for the crit would already be displayed. |
 | [GetExperienceForKill](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L9) | Get experience earned for a kill, and modify the amount |
 | [GetEXPForLevel](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L49) | Get raw experience normally rewarded for leveling |
