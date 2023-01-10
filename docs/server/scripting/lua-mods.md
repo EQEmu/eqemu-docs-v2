@@ -14,7 +14,7 @@ Ensure load_order.txt exists under mods, and refers to any hooks that need to be
 
 Most functions have a e.IgnoreDefault boolean that by default is false. If set to true, you can override all default logic and inject your own.
 
-#reload quest can be used to reload the scripts in your zone to reflect your latest changes. Be sure to #reload world once you finalize your setup and want it to go across all zones.
+You can use #reload quest can be used to reload the scripts in your zone to reflect your latest changes. Be sure to #reload world once you finalize your setup and want it to go across all zones.
 
 # Function List
 
