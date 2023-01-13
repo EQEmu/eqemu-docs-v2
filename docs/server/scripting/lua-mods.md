@@ -20,6 +20,7 @@ You can use #reload quest to reload the scripts in your zone to reflect your lat
 
 | Function | Description |
 | :--- | :--- |
+| [CalcSpellEffectValue_formula](https://github.com/EQEmu/Server/blob/master/utils/mods/spell_formula.lua) | Apply custom spell formulas to how a spell value is deduced
 | [CheckHitChance](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L97) | Check if an attacker hit a defender. e.hit will have hit information|
 | AvoidDamage | Check if an attacker avoided damage, no example available |
 | [MeleeMitigation](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L65) | Process melee mitigation (damage reduction) |
