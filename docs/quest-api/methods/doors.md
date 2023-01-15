@@ -1,13 +1,18 @@
-=== "Perl (27)"
+=== "Perl (33)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Doors){:target="Doors"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` perl
     $doors->CreateDatabaseEntry();
+    $doors->ForceClose(Mob* sender);
+    $doors->ForceClose(Mob* sender, bool alt_mode);
+    $doors->ForceOpen(Mob* sender);
+    $doors->ForceOpen(Mob* sender, bool alt_mode);
+    $doors->GetDisableTimer();
     $doors->GetDoorDBID();
     $doors->GetDoorID();
     $doors->GetHeading();
@@ -22,6 +27,7 @@
     $doors->GetX();
     $doors->GetY();
     $doors->GetZ();
+    $doors->SetDisableTimer(bool disable_timer);
     $doors->SetHeading(float heading);
     $doors->SetIncline(uint32_t incline);
     $doors->SetKeyItem(uint32_t key_item_id);

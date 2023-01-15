@@ -1,3 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated 2023.01.15
+
 ## EVENT_AA_BUY
 
 ``` perl
@@ -41,6 +47,30 @@ sub EVENT_ALT_CURRENCY_MERCHANT_SELL {
 	quest::debug("item_cost " . $item_cost);
 }
 ```
+## EVENT_AUGMENT_INSERT_CLIENT
+
+``` perl
+
+sub EVENT_AUGMENT_INSERT_CLIENT {
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_slot " . $item_slot);
+	quest::debug("augment_id " . $augment_id);
+	quest::debug("augment_slot " . $augment_slot);
+	quest::debug("destroyed " . $destroyed);
+}
+```
+## EVENT_AUGMENT_REMOVE_CLIENT
+
+``` perl
+
+sub EVENT_AUGMENT_REMOVE_CLIENT {
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_slot " . $item_slot);
+	quest::debug("augment_id " . $augment_id);
+	quest::debug("augment_slot " . $augment_slot);
+	quest::debug("destroyed " . $destroyed);
+}
+```
 ## EVENT_BOT_COMMAND
 
 ``` perl
@@ -51,6 +81,18 @@ sub EVENT_BOT_COMMAND {
 	quest::debug("data " . $data);
 	quest::debug("text " . $text);
 	quest::debug("langid " . $langid);
+}
+```
+## EVENT_BOT_CREATE
+
+``` perl
+
+sub EVENT_BOT_CREATE {
+	quest::debug("bot_name " . $bot_name);
+	quest::debug("bot_id " . $bot_id);
+	quest::debug("bot_race " . $bot_race);
+	quest::debug("bot_class " . $bot_class);
+	quest::debug("bot_gender " . $bot_gender);
 }
 ```
 ## EVENT_CAST
@@ -183,6 +225,10 @@ sub EVENT_DEATH {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -200,6 +246,10 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);

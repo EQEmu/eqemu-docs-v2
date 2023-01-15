@@ -380,7 +380,17 @@ func (c *QuestApiDocGeneratorCommand) WriteEventDocs(response QuestApiResponse, 
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildEventPagePerl(eventType string, events []Event) string {
-	markdown := ""
+	markdown := `!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated {{generated_time}}
+
+`
+
+	currentTime := time.Now()
+	generatedTime := currentTime.Format("2006.01.02")
+	markdown = strings.ReplaceAll(markdown, "{{generated_time}}", generatedTime)
 
 	b, err := ioutil.ReadFile("./templates/event-block-perl.template")
 	if err != nil {
@@ -416,7 +426,17 @@ sub {{event_name}} {
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildEventPageLua(eventType string, events []Event) string {
-	markdown := ""
+	markdown := `!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated {{generated_time}}
+
+`
+
+	currentTime := time.Now()
+	generatedTime := currentTime.Format("2006.01.02")
+	markdown = strings.ReplaceAll(markdown, "{{generated_time}}", generatedTime)
 
 	b, err := ioutil.ReadFile("./templates/event-block-lua.template")
 	if err != nil {

@@ -1,3 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated 2023.01.15
+
 ## EVENT_AGGRO_SAY
 
 ``` lua
@@ -64,6 +70,13 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
+}
+```
+## EVENT_DESPAWN
+
+``` lua
+
+function EVENT_DESPAWN(e) {
 }
 ```
 ## EVENT_PAYLOAD

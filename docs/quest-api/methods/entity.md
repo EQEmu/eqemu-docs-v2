@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Entity){:target="Entity"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` lua
     entity:CastToBot();

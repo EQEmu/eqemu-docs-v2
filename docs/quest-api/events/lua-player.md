@@ -1,3 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated 2023.01.15
+
 ## EVENT_AA_BUY
 
 ``` lua
@@ -41,6 +47,33 @@ function EVENT_ALT_CURRENCY_MERCHANT_SELL(e) {
 	eq.debug("item_cost " .. e.item_cost);
 }
 ```
+## EVENT_AUGMENT_INSERT_CLIENT
+
+``` lua
+
+function EVENT_AUGMENT_INSERT_CLIENT(e) {
+	eq.debug("item " .. e.item);
+	eq.debug("augment " .. e.augment);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_slot " .. e.item_slot);
+	eq.debug("augment_id " .. e.augment_id);
+	eq.debug("augment_slot " .. e.augment_slot);
+}
+```
+## EVENT_AUGMENT_REMOVE_CLIENT
+
+``` lua
+
+function EVENT_AUGMENT_REMOVE_CLIENT(e) {
+	eq.debug("item " .. e.item);
+	eq.debug("augment " .. e.augment);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_slot " .. e.item_slot);
+	eq.debug("augment_id " .. e.augment_id);
+	eq.debug("augment_slot " .. e.augment_slot);
+	eq.debug("destroyed " .. e.destroyed);
+}
+```
 ## EVENT_BOT_COMMAND
 
 ``` lua
@@ -48,6 +81,18 @@ function EVENT_ALT_CURRENCY_MERCHANT_SELL(e) {
 function EVENT_BOT_COMMAND(e) {
 	eq.debug("bot_command " .. e.bot_command);
 	eq.debug("args " .. e.args);
+}
+```
+## EVENT_BOT_CREATE
+
+``` lua
+
+function EVENT_BOT_CREATE(e) {
+	eq.debug("bot_name " .. e.bot_name);
+	eq.debug("bot_id " .. e.bot_id);
+	eq.debug("bot_race " .. e.bot_race);
+	eq.debug("bot_class " .. e.bot_class);
+	eq.debug("bot_gender " .. e.bot_gender);
 }
 ```
 ## EVENT_CAST

@@ -1,3 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated 2023.01.15
+
 ## EVENT_AUGMENT_INSERT
 
 ``` lua

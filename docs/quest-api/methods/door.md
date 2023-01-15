@@ -1,10 +1,10 @@
-=== "Lua (32)"
+=== "Lua (33)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Door){:target="Door"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` lua
     door:CreateDatabaseEntry();
@@ -17,6 +17,7 @@
     door:GetDoorID();
     door:GetDoorName();
     door:GetHeading();
+    door:GetID();
     door:GetIncline();
     door:GetKeyItem();
     door:GetLockPick();

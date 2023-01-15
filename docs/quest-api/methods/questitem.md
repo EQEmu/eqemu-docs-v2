@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=QuestItem){:target="QuestItem"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` perl
     $questitem->ContainsAugmentByID(uint32_t item_id);

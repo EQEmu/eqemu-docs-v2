@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Skill){:target="Skill"} for latest definitions and Quest examples
 
-    Last generated 2023.01.02
+    Last generated 2023.01.15
 
 ``` lua
 Skill.1HBlunt

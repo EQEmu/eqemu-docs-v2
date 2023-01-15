@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.02
+    Last generated 2023.01.15
 
 ``` lua
 Event.aa_buy
@@ -11,8 +11,11 @@ Event.aggro_say
 Event.alt_currency_merchant_buy
 Event.alt_currency_merchant_sell
 Event.augment_insert
+Event.augment_insert_client
 Event.augment_item
 Event.augment_remove
+Event.augment_remove_client
+Event.bot_create
 Event.cast
 Event.cast_begin
 Event.cast_on
@@ -28,6 +31,8 @@ Event.consider_corpse
 Event.death
 Event.death_complete
 Event.death_zone
+Event.despawn
+Event.despawn_zone
 Event.destroy_item
 Event.disconnect
 Event.discover_item

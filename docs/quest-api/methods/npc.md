@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` perl
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, uint32 max_delay);
@@ -146,7 +146,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2023.01.02
+        Last generated 2023.01.15
 
     ``` lua
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);

@@ -1,3 +1,9 @@
+!!! info end
+
+    Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
+
+    Last generated 2023.01.15
+
 ## EVENT_AGGRO
 
 ``` perl
@@ -70,6 +76,10 @@ sub EVENT_DEATH {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -87,11 +97,27 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
+	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
+	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+}
+```
+## EVENT_DESPAWN
+
+``` perl
+
+sub EVENT_DESPAWN {
+	quest::debug("despawned_entity_id " . $despawned_entity_id);
+	quest::debug("despawned_bot_id " . $despawned_bot_id);
+	quest::debug("despawned_npc_id " . $despawned_npc_id);
+	quest::debug("despawned_bot_id " . $despawned_bot_id);
+	quest::debug("despawned_npc_id " . $despawned_npc_id);
 }
 ```
 ## EVENT_ENTER
