@@ -1,7 +1,7 @@
 # vw_groups
 
 !!! info
-	This page was last generated 2022.09.16
+	This page was last generated 2023.01.22
 
 ## Schema
 
@@ -11,5 +11,5 @@
 | mob_type | char | Mob Type |
 | name | varchar | Name |
 | mob_id | int | Mob Identifier |
-| level | bigint | Level |
+| level | int | Level |
 

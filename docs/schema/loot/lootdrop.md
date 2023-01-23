@@ -1,7 +1,7 @@
 # lootdrop
 
 !!! info
-	This page was last generated 2022.09.16
+	This page was last generated 2023.01.22
 
 ## Relationship Diagram(s)
 

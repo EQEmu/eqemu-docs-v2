@@ -290,7 +290,7 @@ account:
     dataType: text
     description: Ban Reason
     nullable: "YES"
-    ordinal_position: 21
+    ordinal_position: 20
   charname:
     dataType: varchar
     description: Character name last logged in on this account.
@@ -300,17 +300,17 @@ account:
     dataType: text
     description: CRC for BaseData file
     nullable: "YES"
-    ordinal_position: 25
+    ordinal_position: 24
   crc_eqgame:
     dataType: text
     description: CRC for EQGame.exe
     nullable: "YES"
-    ordinal_position: 23
+    ordinal_position: 22
   crc_skillcaps:
     dataType: text
     description: CRC for SkillCaps file
     nullable: "YES"
-    ordinal_position: 24
+    ordinal_position: 23
   expansion:
     dataType: tinyint
     description: Expansion
@@ -400,7 +400,7 @@ account:
     dataType: text
     description: Suspension Reason
     nullable: "YES"
-    ordinal_position: 22
+    ordinal_position: 21
   suspendeduntil:
     dataType: datetime
     description: Time Suspension of the Account ends
@@ -1232,6 +1232,11 @@ bot_data:
     description: Agility
     nullable: "NO"
     ordinal_position: 37
+  archery_setting:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 50
   atk:
     dataType: mediumint
     description: Attack
@@ -1307,6 +1312,16 @@ bot_data:
     description: Drakkin Tattoo
     nullable: "NO"
     ordinal_position: 26
+  enforce_spell_settings:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 49
+  expansion_bitmask:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 48
   eye_color_1:
     dataType: int
     description: Eye Color 1
@@ -1944,7 +1959,58 @@ bot_spell_casting_chances:
     description: '[Stance Type Identifier](../../../../categories/bots/stance-types)'
     nullable: "NO"
     ordinal_position: 4
+bot_spell_settings:
+  bot_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_enabled:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  max_hp:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  min_hp:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  priority:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  spell_id:
+    dataType: smallint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
 bot_spells_entries:
+  bucket_comparison:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 15
+  bucket_name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
+  bucket_value:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
   id:
     dataType: int
     description: Unique Bot Spell Entry Identifier
@@ -1958,7 +2024,7 @@ bot_spells_entries:
   max_hp:
     dataType: smallint
     description: Maximum Health Percentage
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 12
   maxlevel:
     dataType: tinyint
@@ -1968,7 +2034,7 @@ bot_spells_entries:
   min_hp:
     dataType: smallint
     description: Minimum Health Percentage
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 11
   minlevel:
     dataType: tinyint
@@ -1993,7 +2059,7 @@ bot_spells_entries:
   resist_adjust:
     dataType: int
     description: Resist Adjustment
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 10
   spellid:
     dataType: smallint
@@ -3033,32 +3099,32 @@ character_data:
     dataType: int
     description: Rest Timer
     nullable: "NO"
-    ordinal_position: 88
+    ordinal_position: 89
   aa_exp:
     dataType: int
     description: AA Experience
     nullable: "NO"
-    ordinal_position: 40
+    ordinal_position: 41
   aa_points:
     dataType: int
     description: AA Points
     nullable: "NO"
-    ordinal_position: 41
+    ordinal_position: 42
   aa_points_old:
     dataType: int
     description: AA Points Old
     nullable: "NO"
-    ordinal_position: 100
+    ordinal_position: 101
   aa_points_spent:
     dataType: int
     description: AA Points Spent
     nullable: "NO"
-    ordinal_position: 39
+    ordinal_position: 40
   aa_points_spent_old:
     dataType: int
     description: AA Points Spent Old
     nullable: "NO"
-    ordinal_position: 99
+    ordinal_position: 100
   ability_number:
     dataType: tinyint
     description: '[Ability Number](../../schema/aas/aa_ability.md)'
@@ -3083,7 +3149,7 @@ character_data:
     dataType: int
     description: Ability Up
     nullable: "NO"
-    ordinal_position: 62
+    ordinal_position: 63
   account_id:
     dataType: int
     description: '[Account Identifier](../../schema/account/account.md)'
@@ -3093,12 +3159,12 @@ character_data:
     dataType: int
     description: Agility
     nullable: "NO"
-    ordinal_position: 56
+    ordinal_position: 57
   air_remaining:
     dataType: int
     description: Air Remaining
     nullable: "NO"
-    ordinal_position: 89
+    ordinal_position: 90
   anon:
     dataType: tinyint
     description: 'Anon: 0 = False, 1 = Anonymous, 2 = Roleplaying'
@@ -3108,7 +3174,7 @@ character_data:
     dataType: int
     description: 'Autosplit Enabled: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 90
+    ordinal_position: 91
   beard:
     dataType: tinyint
     description: Beard
@@ -3128,12 +3194,12 @@ character_data:
     dataType: int
     description: Career Tribute Points
     nullable: "NO"
-    ordinal_position: 70
+    ordinal_position: 71
   cha:
     dataType: int
     description: Charisma
     nullable: "NO"
-    ordinal_position: 53
+    ordinal_position: 54
   class:
     dataType: tinyint
     description: '[Class](../../../../server/player/class-list)'
@@ -3143,7 +3209,7 @@ character_data:
     dataType: int
     description: Health
     nullable: "NO"
-    ordinal_position: 47
+    ordinal_position: 48
   deity:
     dataType: int
     description: '[Deity](../../../../server/player/deity-list)'
@@ -3153,12 +3219,12 @@ character_data:
     dataType: datetime
     description: Deleted At Unix Timestamp
     nullable: "YES"
-    ordinal_position: 102
+    ordinal_position: 103
   dex:
     dataType: int
     description: Dexterity
     nullable: "NO"
-    ordinal_position: 54
+    ordinal_position: 55
   drakkin_details:
     dataType: int
     description: Drakkin Details
@@ -3178,32 +3244,37 @@ character_data:
     dataType: int
     description: Experience AA Effects
     nullable: "NO"
-    ordinal_position: 96
+    ordinal_position: 97
   e_expended_aa_spent:
     dataType: int
     description: Expended AA Points Spent
     nullable: "NO"
-    ordinal_position: 98
+    ordinal_position: 99
   e_last_invsnapshot:
     dataType: int
     description: Last Inventory Snapshot
     nullable: "NO"
-    ordinal_position: 101
+    ordinal_position: 102
   e_percent_to_aa:
     dataType: int
     description: Experience Percentage to AA Points
     nullable: "NO"
-    ordinal_position: 97
+    ordinal_position: 98
   endurance:
     dataType: int
     description: Endurance
     nullable: "NO"
-    ordinal_position: 49
+    ordinal_position: 50
   exp:
     dataType: int
     description: Experience
     nullable: "NO"
     ordinal_position: 38
+  exp_enabled:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 39
   eye_color_1:
     dataType: tinyint
     description: Eye Color 1
@@ -3223,7 +3294,7 @@ character_data:
     dataType: tinyint
     description: First Logon
     nullable: "NO"
-    ordinal_position: 95
+    ordinal_position: 96
   gender:
     dataType: tinyint
     description: '[Gender](../../../../server/npc/genders)'
@@ -3238,22 +3309,22 @@ character_data:
     dataType: tinyint
     description: 'Group Auto Consent: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 84
+    ordinal_position: 85
   group_leadership_exp:
     dataType: int
     description: Group Leadership Experience
     nullable: "NO"
-    ordinal_position: 42
+    ordinal_position: 43
   group_leadership_points:
     dataType: int
     description: Group Leadership Points
     nullable: "NO"
-    ordinal_position: 44
+    ordinal_position: 45
   guild_auto_consent:
     dataType: tinyint
     description: 'Guild Auto Consent: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 86
+    ordinal_position: 87
   hair_color:
     dataType: tinyint
     description: Hair Color
@@ -3273,7 +3344,7 @@ character_data:
     dataType: int
     description: Hunger Level
     nullable: "NO"
-    ordinal_position: 60
+    ordinal_position: 61
   id:
     dataType: int
     description: Unique Character Identifier
@@ -3283,12 +3354,12 @@ character_data:
     dataType: int
     description: Intelligence
     nullable: "NO"
-    ordinal_position: 55
+    ordinal_position: 56
   intoxication:
     dataType: int
     description: Intoxication
     nullable: "NO"
-    ordinal_position: 50
+    ordinal_position: 51
   last_login:
     dataType: int
     description: UNIX Timestamp of Last Login
@@ -3303,37 +3374,37 @@ character_data:
     dataType: int
     description: LDoN Points Available
     nullable: "NO"
-    ordinal_position: 68
+    ordinal_position: 69
   ldon_points_guk:
     dataType: int
     description: LDoN Points - [Deepest Guk](../../../../server/zones/ldon-themes)
     nullable: "NO"
-    ordinal_position: 63
+    ordinal_position: 64
   ldon_points_mir:
     dataType: int
     description: LDoN Points - [Miragul's Menagerie](../../../../server/zones/ldon-themes)
     nullable: "NO"
-    ordinal_position: 64
+    ordinal_position: 65
   ldon_points_mmc:
     dataType: int
     description: LDoN Points - [Mistmoore Catacombs](../../../../server/zones/ldon-themes)
     nullable: "NO"
-    ordinal_position: 65
+    ordinal_position: 66
   ldon_points_ruj:
     dataType: int
     description: LDoN Points - [Rujarkian Hills](../../../../server/zones/ldon-themes)
     nullable: "NO"
-    ordinal_position: 66
+    ordinal_position: 67
   ldon_points_tak:
     dataType: int
     description: LDoN Points - [Takish-Hiz](../../../../server/zones/ldon-themes)
     nullable: "NO"
-    ordinal_position: 67
+    ordinal_position: 68
   leadership_exp_on:
     dataType: tinyint
     description: 'Leadership Experience On : 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 87
+    ordinal_position: 88
   level:
     dataType: int
     description: Level
@@ -3348,22 +3419,22 @@ character_data:
     dataType: tinyint
     description: 'Looking For Guild: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 92
+    ordinal_position: 93
   lfp:
     dataType: tinyint
     description: 'Looking For Party: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 91
+    ordinal_position: 92
   mailkey:
     dataType: char
     description: Mail Key
     nullable: "NO"
-    ordinal_position: 93
+    ordinal_position: 94
   mana:
     dataType: int
     description: Mana
     nullable: "NO"
-    ordinal_position: 48
+    ordinal_position: 49
   name:
     dataType: varchar
     description: Name
@@ -3373,57 +3444,57 @@ character_data:
     dataType: int
     description: Points
     nullable: "NO"
-    ordinal_position: 46
+    ordinal_position: 47
   pvp_best_kill_streak:
     dataType: int
     description: Best Kill Streak
     nullable: "NO"
-    ordinal_position: 78
+    ordinal_position: 79
   pvp_career_points:
     dataType: int
     description: Career PVP Points
     nullable: "NO"
-    ordinal_position: 77
+    ordinal_position: 78
   pvp_current_kill_streak:
     dataType: int
     description: Current Kill Streak
     nullable: "NO"
-    ordinal_position: 80
+    ordinal_position: 81
   pvp_current_points:
     dataType: int
     description: PVP Points
     nullable: "NO"
-    ordinal_position: 76
+    ordinal_position: 77
   pvp_deaths:
     dataType: int
     description: PVP Deaths
     nullable: "NO"
-    ordinal_position: 75
+    ordinal_position: 76
   pvp_kills:
     dataType: int
     description: PVP Kills
     nullable: "NO"
-    ordinal_position: 74
+    ordinal_position: 75
   pvp_status:
     dataType: tinyint
     description: 'PVP Status: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 73
+    ordinal_position: 74
   pvp_type:
     dataType: int
     description: PVP Type
     nullable: "NO"
-    ordinal_position: 82
+    ordinal_position: 83
   pvp_worst_death_streak:
     dataType: int
     description: Worse Death Streak
     nullable: "NO"
-    ordinal_position: 79
+    ordinal_position: 80
   pvp2:
     dataType: int
     description: 'PVP Status: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 81
+    ordinal_position: 82
   race:
     dataType: smallint
     description: '[Race](../../../../server/npc/race-list)'
@@ -3433,32 +3504,32 @@ character_data:
     dataType: tinyint
     description: 'Raid Auto Consent: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 85
+    ordinal_position: 86
   raid_leadership_exp:
     dataType: int
     description: Raid Leadership Experience
     nullable: "NO"
-    ordinal_position: 43
+    ordinal_position: 44
   raid_leadership_points:
     dataType: int
     description: Raid Leadership Points
     nullable: "NO"
-    ordinal_position: 45
+    ordinal_position: 46
   show_helm:
     dataType: int
     description: 'Show Helm: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 83
+    ordinal_position: 84
   sta:
     dataType: int
     description: Stamina
     nullable: "NO"
-    ordinal_position: 52
+    ordinal_position: 53
   str:
     dataType: int
     description: Strength
     nullable: "NO"
-    ordinal_position: 51
+    ordinal_position: 52
   suffix:
     dataType: varchar
     description: Suffix
@@ -3468,7 +3539,7 @@ character_data:
     dataType: int
     description: Thirst Level
     nullable: "NO"
-    ordinal_position: 61
+    ordinal_position: 62
   time_played:
     dataType: int
     description: Time Played
@@ -3483,27 +3554,27 @@ character_data:
     dataType: int
     description: Toxicity
     nullable: "NO"
-    ordinal_position: 59
+    ordinal_position: 60
   tribute_active:
     dataType: int
     description: 'Tribute Active: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 72
+    ordinal_position: 73
   tribute_points:
     dataType: int
     description: Tribute Points
     nullable: "NO"
-    ordinal_position: 71
+    ordinal_position: 72
   tribute_time_remaining:
     dataType: int
     description: Tribute Time Remaining
     nullable: "NO"
-    ordinal_position: 69
+    ordinal_position: 70
   wis:
     dataType: int
     description: Wisdom
     nullable: "NO"
-    ordinal_position: 57
+    ordinal_position: 58
   x:
     dataType: float
     description: X Coordinate
@@ -3513,7 +3584,7 @@ character_data:
     dataType: tinyint
     description: XTargets
     nullable: "NO"
-    ordinal_position: 94
+    ordinal_position: 95
   "y":
     dataType: float
     description: Y Coordinate
@@ -3528,7 +3599,7 @@ character_data:
     dataType: int
     description: Zone Change Count
     nullable: "NO"
-    ordinal_position: 58
+    ordinal_position: 59
   zone_id:
     dataType: int
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
@@ -3571,7 +3642,7 @@ character_exp_modifiers:
     dataType: float
     description: AA Experience Modifier (.5 = 50%, 1 = 100%, 1.5 = 150%)
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
   character_id:
     dataType: int
     description: '[Character Identifier](character_data.md)'
@@ -3581,7 +3652,12 @@ character_exp_modifiers:
     dataType: float
     description: Experience Modifier (.5 = 50%, 1 = 100%, 1.5 = 150%)
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 5
+  instance_version:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
   zone_id:
     dataType: int
     description: '[Zone Identifier](../../../../server/zones/zone-list) (0 for Global)'
@@ -4045,27 +4121,43 @@ character_tribute:
     description: Tribute
     nullable: "NO"
     ordinal_position: 3
+chatchannel_reserved_names:
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  name:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
 chatchannels:
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
   minstatus:
     dataType: int
     description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 5
   name:
     dataType: varchar
     description: Name
     nullable: "NO"
-    ordinal_position: 1
+    ordinal_position: 2
   owner:
     dataType: varchar
     description: '[Owner Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 3
   password:
     dataType: varchar
     description: Password
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
 class_skill:
   class:
     dataType: smallint
@@ -5185,6 +5277,27 @@ expedition_lockouts:
     description: Unique Expedition Lockout Identifier
     nullable: "NO"
     ordinal_position: 1
+expedition_members:
+  character_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  expedition_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_current_member:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
 expeditions:
   add_replay_on_join:
     dataType: tinyint
@@ -5206,6 +5319,112 @@ expeditions:
     description: 'Is Locked: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 4
+faction_association:
+  id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  id_1:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  id_2:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  id_3:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  id_4:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  id_5:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
+  id_6:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
+  id_7:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
+  id_8:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
+  id_9:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
+  id_10:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 20
+  mod_1:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  mod_2:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  mod_3:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  mod_4:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
+  mod_5:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 11
+  mod_6:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
+  mod_7:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
+  mod_8:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
+  mod_9:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 19
+  mod_10:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 21
 faction_base_data:
   client_faction_id:
     dataType: smallint
@@ -9093,7 +9312,7 @@ merchantlist_temp:
     dataType: int
     description: Charges
     nullable: "NO"
-    ordinal_position: 6
+    ordinal_position: 4
   instance_id:
     dataType: int
     description: '[Instance Identifier](../../schema/instances/instance_list.md)'
@@ -9103,7 +9322,7 @@ merchantlist_temp:
     dataType: int
     description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 3
   npcid:
     dataType: int
     description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
@@ -9945,6 +10164,11 @@ npc_types:
     description: Face
     nullable: "NO"
     ordinal_position: 33
+  faction_amount:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 126
   feettexture:
     dataType: tinyint
     description: '[Feet Texture](../../../../server/npc/textures)'
@@ -9985,6 +10209,11 @@ npc_types:
     description: '[Helmet Texture](../../../../server/npc/textures)'
     nullable: "NO"
     ordinal_position: 12
+  heroic_strikethrough:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 125
   herosforgemodel:
     dataType: int
     description: Hero's Forge Model
@@ -10025,6 +10254,11 @@ npc_types:
     description: 'Is Quest: 0 = False, 1 = True'
     nullable: "NO"
     ordinal_position: 92
+  keeps_sold_items:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 127
   lastname:
     dataType: varchar
     description: Last Name
@@ -10945,6 +11179,98 @@ pets_equipmentset_entries:
     description: Slot
     nullable: "NO"
     ordinal_position: 2
+player_event_log_settings:
+  discord_webhook_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  event_enabled:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  retention_days:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+player_event_logs:
+  account_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  character_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
+  event_data:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  event_type_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  event_type_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  heading:
+    dataType: float
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  instance_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  x:
+    dataType: float
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  "y":
+    dataType: float
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  z:
+    dataType: float
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  zone_id:
+    dataType: int
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
 player_titlesets:
   char_id:
     dataType: int
@@ -13896,7 +14222,7 @@ task_activities:
     dataType: tinyint
     description: '[Activity Type](../../../../server/task-system-guide/task-activity-types)'
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 5
   delivertonpc:
     dataType: int
     description: 'Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../schema/npcs/npc_types.md)'
@@ -13907,6 +14233,11 @@ task_activities:
     description: Description Override
     nullable: "NO"
     ordinal_position: 9
+  dz_switch_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 13
   goal_match_list:
     dataType: text
     description: 'Goal Match List: Pipe (|) Separated Values'
@@ -13916,7 +14247,7 @@ task_activities:
     dataType: int
     description: Goal Count
     nullable: "YES"
-    ordinal_position: 13
+    ordinal_position: 8
   goalid:
     dataType: int
     description: Goal Identifier or [Goal List Identifier](goallists.md)
@@ -13926,37 +14257,82 @@ task_activities:
     dataType: int
     description: 'Goal Method: 0 = Single Value, 1 = List'
     nullable: "NO"
-    ordinal_position: 12
+    ordinal_position: 7
+  item_id_list:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
   item_list:
     dataType: varchar
     description: '[Item Identifier List](../../schema/items/items.md)'
     nullable: "NO"
-    ordinal_position: 6
+    ordinal_position: 12
+  max_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 17
+  max_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 18
+  max_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 19
+  min_x:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
+  min_y:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
+  min_z:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 16
+  npc_match_list:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
   optional:
     dataType: tinyint
     description: 'Optional: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 17
+    ordinal_position: 24
+  req_activity_id:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
   skill_list:
     dataType: varchar
     description: '[Skill Identifier List](../../../../server/player/skills)'
     nullable: "NO"
-    ordinal_position: 7
+    ordinal_position: 20
   spell_list:
     dataType: varchar
     description: '[Spell Identifier List](../../schema/spells/spells_new.md)'
     nullable: "NO"
-    ordinal_position: 8
+    ordinal_position: 21
   step:
     dataType: int
     description: 'Step: 0 = Always Available, &gt;0 = Must Complete Previous'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
   target_name:
     dataType: varchar
     description: Target Name
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 6
   taskid:
     dataType: int
     description: '[Task Identifier](tasks.md)'
@@ -13966,13 +14342,18 @@ task_activities:
     dataType: int
     description: Zone Version
     nullable: "YES"
-    ordinal_position: 16
+    ordinal_position: 23
   zones:
     dataType: varchar
     description: '[Zones List](../../../../server/zones/zone-list)'
     nullable: "NO"
-    ordinal_position: 15
+    ordinal_position: 22
 tasks:
+  cash_reward:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 9
   cashreward:
     dataType: int
     description: Cash Reward in Copper
@@ -14003,6 +14384,16 @@ tasks:
     description: '[Dynamic Zone Template Identifier](../../schema/dynamic-zones/dynamic_zone_templates.md)'
     nullable: "NO"
     ordinal_position: 26
+  exp_reward:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 10
+  faction_amount:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 28
   faction_reward:
     dataType: int
     description: Faction Reward
@@ -14023,6 +14414,11 @@ tasks:
     description: '[Lock Activity Identifier](../../schema/tasks/task_activities.md)'
     nullable: "NO"
     ordinal_position: 27
+  max_level:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 15
   max_players:
     dataType: int
     description: Maximum Players
@@ -14033,6 +14429,11 @@ tasks:
     description: Maximum Level
     nullable: "NO"
     ordinal_position: 15
+  min_level:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 14
   min_players:
     dataType: int
     description: Minimum Players
@@ -14073,6 +14474,16 @@ tasks:
     description: Reward Description
     nullable: "NO"
     ordinal_position: 7
+  reward_id_list:
+    dataType: text
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  reward_method:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 11
   reward_point_type:
     dataType: int
     description: 'Reward Point Type: 4 = Radiant, 5 = Ebon'
@@ -14083,6 +14494,11 @@ tasks:
     description: Reward Points
     nullable: "NO"
     ordinal_position: 12
+  reward_text:
+    dataType: varchar
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
   rewardid:
     dataType: int
     description: '[Reward Item Identifier](../../schema/items/items.md)'
@@ -14684,7 +15100,7 @@ veteran_reward_templates:
     ordinal_position: 5
 vw_bot_character_mobs:
   class:
-    dataType: tinyint
+    dataType: decimal
     description: '[Class](../../../../categories/player/class-list)'
     nullable: "NO"
     ordinal_position: 4
@@ -14719,7 +15135,7 @@ vw_bot_character_mobs:
     nullable: "NO"
     ordinal_position: 3
   zone_id:
-    dataType: int
+    dataType: decimal
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 7
@@ -14761,7 +15177,7 @@ vw_groups:
     nullable: "NO"
     ordinal_position: 1
   level:
-    dataType: bigint
+    dataType: int
     description: Level
     nullable: "YES"
     ordinal_position: 5
@@ -14812,7 +15228,7 @@ vw_guild_members:
     nullable: "NO"
     ordinal_position: 1
   public_note:
-    dataType: text
+    dataType: mediumtext
     description: Public Note
     nullable: "YES"
     ordinal_position: 9
@@ -14832,56 +15248,61 @@ vw_guild_members:
     nullable: "NO"
     ordinal_position: 5
 zone:
+  bypass_expansion_check:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 64
   canbind:
     dataType: tinyint
     description: 'Can Bind: 0 = False, 1 = True (for Caster), 2 = True (for All)'
     nullable: "NO"
-    ordinal_position: 54
+    ordinal_position: 55
   cancombat:
     dataType: tinyint
     description: 'Can Combat: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 55
+    ordinal_position: 56
   canlevitate:
     dataType: tinyint
     description: 'Can Levitate: 0 = False, 1 = True (Does not affect those with #gm on)'
     nullable: "NO"
-    ordinal_position: 56
+    ordinal_position: 57
   castoutdoor:
     dataType: tinyint
     description: 'Cast Outdoors: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 57
+    ordinal_position: 58
   content_flags:
     dataType: varchar
     description: Content Flags Required to be Enabled
     nullable: "YES"
-    ordinal_position: 90
+    ordinal_position: 92
   content_flags_disabled:
     dataType: varchar
     description: Content Flags Required to be Disabled
     nullable: "YES"
-    ordinal_position: 91
+    ordinal_position: 93
   expansion:
     dataType: tinyint
     description: '[Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
-    ordinal_position: 62
+    ordinal_position: 63
   fast_regen_endurance:
     dataType: int
     description: Fast Regen Endurance
     nullable: "NO"
-    ordinal_position: 85
+    ordinal_position: 87
   fast_regen_hp:
     dataType: int
     description: Fast Regen Health
     nullable: "NO"
-    ordinal_position: 83
+    ordinal_position: 85
   fast_regen_mana:
     dataType: int
     description: Fast Regen Mana
     nullable: "NO"
-    ordinal_position: 84
+    ordinal_position: 86
   file_name:
     dataType: varchar
     description: File Name
@@ -14891,137 +15312,137 @@ zone:
     dataType: varchar
     description: '[Flag Required](zone_flags.md)'
     nullable: "NO"
-    ordinal_position: 53
+    ordinal_position: 54
   fog_blue:
     dataType: tinyint
     description: 'Fog Blue Level: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 24
+    ordinal_position: 25
   fog_blue1:
     dataType: tinyint
     description: 'Fog Blue Level 1: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 34
+    ordinal_position: 35
   fog_blue2:
     dataType: tinyint
     description: 'Fog Blue Level 2: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 39
+    ordinal_position: 40
   fog_blue3:
     dataType: tinyint
     description: 'Fog Blue Level 3: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 44
+    ordinal_position: 45
   fog_blue4:
     dataType: tinyint
     description: 'Fog Blue Level 4: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 49
+    ordinal_position: 50
   fog_density:
     dataType: float
     description: This is the intensity of the fog, this should be a number between 0-1, most commonly used is .1 or .33
     nullable: "NO"
-    ordinal_position: 52
+    ordinal_position: 53
   fog_green:
     dataType: tinyint
     description: 'Fog Green Level: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 26
+    ordinal_position: 27
   fog_green1:
     dataType: tinyint
     description: 'Fog Green Level 1: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 33
+    ordinal_position: 34
   fog_green2:
     dataType: tinyint
     description: 'Fog Green Level 2: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 38
+    ordinal_position: 39
   fog_green3:
     dataType: tinyint
     description: 'Fog Green Level 3: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 43
+    ordinal_position: 44
   fog_green4:
     dataType: tinyint
     description: 'Fog Green Level 4: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 48
+    ordinal_position: 49
   fog_maxclip:
     dataType: float
     description: Fog Maximum Clipping Distance
     nullable: "NO"
-    ordinal_position: 23
+    ordinal_position: 24
   fog_maxclip1:
     dataType: float
     description: Fog Maximum Clipping Distance 1
     nullable: "NO"
-    ordinal_position: 36
+    ordinal_position: 37
   fog_maxclip2:
     dataType: float
     description: Fog Maximum Clipping Distance 2
     nullable: "NO"
-    ordinal_position: 41
+    ordinal_position: 42
   fog_maxclip3:
     dataType: float
     description: Fog Maximum Clipping Distance 4
     nullable: "NO"
-    ordinal_position: 46
+    ordinal_position: 47
   fog_maxclip4:
     dataType: float
     description: Fog Maximum Clipping Distance 4
     nullable: "NO"
-    ordinal_position: 51
+    ordinal_position: 52
   fog_minclip:
     dataType: float
     description: Fog Minimum Clipping Distance
     nullable: "NO"
-    ordinal_position: 22
+    ordinal_position: 23
   fog_minclip1:
     dataType: float
     description: Fog Minimum Clipping Distance 1
     nullable: "NO"
-    ordinal_position: 35
+    ordinal_position: 36
   fog_minclip2:
     dataType: float
     description: Fog Minimum Clipping Distance 2
     nullable: "NO"
-    ordinal_position: 40
+    ordinal_position: 41
   fog_minclip3:
     dataType: float
     description: Fog Minimum Clipping Distance 3
     nullable: "NO"
-    ordinal_position: 45
+    ordinal_position: 46
   fog_minclip4:
     dataType: float
     description: Fog Minimum Clipping Distance 4
     nullable: "NO"
-    ordinal_position: 50
+    ordinal_position: 51
   fog_red:
     dataType: tinyint
     description: 'Fog Red Level: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 25
+    ordinal_position: 26
   fog_red1:
     dataType: tinyint
     description: 'Fog Red Level 1: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 32
+    ordinal_position: 33
   fog_red2:
     dataType: tinyint
     description: 'Fog Red Level 2: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 37
+    ordinal_position: 38
   fog_red3:
     dataType: tinyint
     description: 'Fog Red Level 3: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 42
+    ordinal_position: 43
   fog_red4:
     dataType: tinyint
     description: 'Fog Red Level 4: 0 = None, 255 = Max'
     nullable: "NO"
-    ordinal_position: 47
+    ordinal_position: 48
   graveyard_id:
     dataType: float
     description: '[Graveyard Identifier](../../schema/graveyards/graveyard.md)'
@@ -15031,12 +15452,12 @@ zone:
     dataType: float
     description: Gravity
     nullable: "NO"
-    ordinal_position: 80
+    ordinal_position: 82
   hotzone:
     dataType: tinyint
     description: 'Hotzone: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 58
+    ordinal_position: 59
   id:
     dataType: int
     description: Unique Entry Identifier
@@ -15046,12 +15467,12 @@ zone:
     dataType: tinyint
     description: Instance Type
     nullable: "NO"
-    ordinal_position: 59
+    ordinal_position: 60
   lava_damage:
     dataType: int
     description: Lava Damage Modifier
     nullable: "YES"
-    ordinal_position: 93
+    ordinal_position: 95
   long_name:
     dataType: text
     description: Long Name
@@ -15066,32 +15487,37 @@ zone:
     dataType: tinyint
     description: '[Maximum Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
-    ordinal_position: 89
+    ordinal_position: 91
+  max_level:
+    dataType: tinyint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 12
   max_movement_update_range:
     dataType: int
     description: Max Movement Update Range
     nullable: "NO"
-    ordinal_position: 87
+    ordinal_position: 89
   maxclients:
     dataType: int
     description: Maximum Clients
     nullable: "NO"
-    ordinal_position: 16
+    ordinal_position: 17
   maxclip:
     dataType: float
     description: Maximum Clipping Distance
     nullable: "NO"
-    ordinal_position: 21
+    ordinal_position: 22
   min_expansion:
     dataType: tinyint
     description: '[Minimum Expansion](../../../../server/operation/expansion-list)'
     nullable: "NO"
-    ordinal_position: 88
+    ordinal_position: 90
   min_lava_damage:
     dataType: int
     description: Minimum Lava Damage Modifier
     nullable: "NO"
-    ordinal_position: 94
+    ordinal_position: 96
   min_level:
     dataType: tinyint
     description: Minimum Level
@@ -15101,72 +15527,72 @@ zone:
     dataType: tinyint
     description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
-    ordinal_position: 12
+    ordinal_position: 13
   minclip:
     dataType: float
     description: Minimum Clipping Distance
     nullable: "NO"
-    ordinal_position: 20
+    ordinal_position: 21
   note:
     dataType: varchar
     description: Note
     nullable: "YES"
-    ordinal_position: 18
+    ordinal_position: 19
   npc_max_aggro_dist:
     dataType: int
     description: NPC Max Aggro Distance
     nullable: "NO"
-    ordinal_position: 86
+    ordinal_position: 88
   peqzone:
     dataType: tinyint
     description: '#peqzone: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 61
+    ordinal_position: 62
   rain_chance1:
     dataType: int
     description: Rain Chance 1
     nullable: "NO"
-    ordinal_position: 64
+    ordinal_position: 66
   rain_chance2:
     dataType: int
     description: Rain Chance 2
     nullable: "NO"
-    ordinal_position: 65
+    ordinal_position: 67
   rain_chance3:
     dataType: int
     description: Rain Chance 3
     nullable: "NO"
-    ordinal_position: 66
+    ordinal_position: 68
   rain_chance4:
     dataType: int
     description: Rain Chance 4
     nullable: "NO"
-    ordinal_position: 67
+    ordinal_position: 69
   rain_duration1:
     dataType: int
     description: Rain Duration 1
     nullable: "NO"
-    ordinal_position: 68
+    ordinal_position: 70
   rain_duration2:
     dataType: int
     description: Rain Duration 2
     nullable: "NO"
-    ordinal_position: 69
+    ordinal_position: 71
   rain_duration3:
     dataType: int
     description: Rain Duration 3
     nullable: "NO"
-    ordinal_position: 70
+    ordinal_position: 72
   rain_duration4:
     dataType: int
     description: Rain Duration 4
     nullable: "NO"
-    ordinal_position: 71
+    ordinal_position: 73
   ruleset:
     dataType: int
     description: '[Ruleset Identifier](../../schema/rules/rule_sets.md)'
     nullable: "NO"
-    ordinal_position: 17
+    ordinal_position: 18
   safe_heading:
     dataType: float
     description: Safe Heading Coordinate
@@ -15196,112 +15622,112 @@ zone:
     dataType: bigint
     description: Shutdown Delay
     nullable: "NO"
-    ordinal_position: 60
+    ordinal_position: 61
   sky:
     dataType: tinyint
     description: Sky type the client will present as the backdrop
     nullable: "NO"
-    ordinal_position: 27
+    ordinal_position: 28
   skylock:
     dataType: tinyint
     description: Sky Lock
     nullable: "NO"
-    ordinal_position: 82
+    ordinal_position: 84
   snow_chance1:
     dataType: int
     description: Snow Chance 1
     nullable: "NO"
-    ordinal_position: 72
+    ordinal_position: 74
   snow_chance2:
     dataType: int
     description: Snow Chance 2
     nullable: "NO"
-    ordinal_position: 73
+    ordinal_position: 75
   snow_chance3:
     dataType: int
     description: Snow Chance 3
     nullable: "NO"
-    ordinal_position: 74
+    ordinal_position: 76
   snow_chance4:
     dataType: int
     description: Snow Chance 4
     nullable: "NO"
-    ordinal_position: 75
+    ordinal_position: 77
   snow_duration1:
     dataType: int
     description: Snow Duration 1
     nullable: "NO"
-    ordinal_position: 76
+    ordinal_position: 78
   snow_duration2:
     dataType: int
     description: Snow Duration 2
     nullable: "NO"
-    ordinal_position: 77
+    ordinal_position: 79
   snow_duration3:
     dataType: int
     description: Snow Duration 3
     nullable: "NO"
-    ordinal_position: 78
+    ordinal_position: 80
   snow_duration4:
     dataType: int
     description: Snow Duration 4
     nullable: "NO"
-    ordinal_position: 79
+    ordinal_position: 81
   suspendbuffs:
     dataType: tinyint
     description: 'Suspend Buffs: 0 = False, 1 = True'
     nullable: "NO"
-    ordinal_position: 63
+    ordinal_position: 65
   time_type:
     dataType: tinyint
     description: This value varies depending on the zone but it is sent to the client on zone in.  Most starting zones/newbie areas have this value set to 2, dungeons tyically have this set to 0, some zones break from the norm and have values greater than 2, (akanon = 3, blackburrow = 5, cazicthule = 5, crushbone = 5, erudnint = 4, kaladima = 3, etc.)
     nullable: "NO"
-    ordinal_position: 31
+    ordinal_position: 32
   timezone:
     dataType: int
     description: Timezone
     nullable: "NO"
-    ordinal_position: 15
+    ordinal_position: 16
   type:
     dataType: int
     description: Type (0 = Unknown, 1 = Regular, 2 = Instanced, 3 = Hybrid, 4 = Raid, 5 = City)
     nullable: "NO"
-    ordinal_position: 81
+    ordinal_position: 83
   underworld:
     dataType: float
     description: Bottom Z to represent when the player is under the world
     nullable: "NO"
-    ordinal_position: 19
+    ordinal_position: 20
   underworld_teleport_index:
     dataType: int
     description: Underworld Teleport Index
     nullable: "NO"
-    ordinal_position: 92
+    ordinal_position: 94
   version:
     dataType: tinyint
     description: Version
     nullable: "NO"
-    ordinal_position: 14
+    ordinal_position: 15
   walkspeed:
     dataType: float
     description: Walkspeed in this zone
     nullable: "NO"
-    ordinal_position: 30
+    ordinal_position: 31
   zone_exp_multiplier:
     dataType: decimal
     description: This will multiply the XP to this percentage value (decimal based, 100% = 1.0)
     nullable: "NO"
-    ordinal_position: 29
+    ordinal_position: 30
   zoneidnumber:
     dataType: int
     description: '[Unique Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
-    ordinal_position: 13
+    ordinal_position: 14
   ztype:
     dataType: tinyint
     description: This field is sent directly to the client on zone-in, most zones are set to 0, 1 or 255.
     nullable: "NO"
-    ordinal_position: 28
+    ordinal_position: 29
 zone_flags:
   charID:
     dataType: int

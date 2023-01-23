@@ -1,7 +1,7 @@
 # vw_guild_members
 
 !!! info
-	This page was last generated 2022.09.16
+	This page was last generated 2023.01.22
 
 ## Schema
 
@@ -15,6 +15,6 @@
 | total_tribute | int | Total Tribute |
 | last_tribute | int | Last Tribute |
 | banker | tinyint | Banker: 0 = False, 1 = True |
-| public_note | text | Public Note |
+| public_note | mediumtext | Public Note |
 | alt | tinyint | Alt: 0 = False, 1 = True |
 

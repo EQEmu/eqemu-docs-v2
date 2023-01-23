@@ -1,12 +1,13 @@
 # chatchannels
 
 !!! info
-	This page was last generated 2022.09.16
+	This page was last generated 2023.01.22
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
+| id | int |  |
 | name | varchar | Name |
 | owner | varchar | [Owner Character Identifier](../../schema/characters/character_data.md) |
 | password | varchar | Password |

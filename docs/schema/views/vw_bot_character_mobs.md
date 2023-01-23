@@ -1,7 +1,7 @@
 # vw_bot_character_mobs
 
 !!! info
-	This page was last generated 2022.09.16
+	This page was last generated 2023.01.22
 
 ## Schema
 
@@ -10,9 +10,9 @@
 | mob_type | varchar | Mob Type: B = Bot, C = Client |
 | id | int | Unique View Bot Character Mob Identifier |
 | name | varchar | Name |
-| class | tinyint | [Class](../../../../categories/player/class-list) |
+| class | decimal | [Class](../../../../categories/player/class-list) |
 | level | int | Level |
 | last_login | int | Last Login Unix Timestamp |
-| zone_id | int | [Zone Identifier](../../../../server/zones/zone-list) |
+| zone_id | decimal | [Zone Identifier](../../../../server/zones/zone-list) |
 | deleted_at | datetime | Deleted At |
 
