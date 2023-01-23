@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.01.04
+    Last Generated: 2023.01.22
 
 
 | Command | Description | Status Level |
@@ -13,7 +13,7 @@
 | #aggrozone | [aggro] - Aggro every mob in the zone with X aggro. Default is 0. Not recommend if you're not invulnerable. | GMAdmin (100) |
 | #ai | [factionid/spellslist/con/guard/roambox/stop/start] - Modify AI on NPC target | GMAdmin (100) |
 | #appearance | [type] [value] - Send an appearance packet for you or your target | GMLeadAdmin (150) |
-| #appearanceeffects | [view] [set] [remove] appearance effects. | GMAdmin (100) |
+| #appearanceeffects | [Help&#124;Remove&#124;Set&#124;View] - Modify appearance effects on yourself or your target. | GMAdmin (100) |
 | #apply_shared_memory | [shared_memory_name] - Tells every zone and world to apply a specific shared memory segment by name. | GMImpossible (250) |
 | #attack | [Entity Name] - Make your NPC target attack an entity by name | GMLeadAdmin (150) |
 | #augmentitem | Force augments an item. Must have the augment item window open. | GMImpossible (250) |
@@ -95,9 +95,6 @@
 | #goto | [playername] or [x y z] [h] - Teleport to the provided coordinates or to your target | Steward (10) |
 | #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid | GMAreas (170) |
 | #guild | Guild manipulation commands. Use argument help for more info. | Steward (10) |
-| #guildapprove | [guildapproveid] - Approve a guild with specified ID (guild creator receives the id) | Player (0) |
-| #guildcreate | [guildname] - Creates an approval setup for guild name specified | Player (0) |
-| #guildlist | [guildapproveid] - Lists character names who have approved the guild specified by the approve id | Player (0) |
 | #haste | [percentage] - Set your haste percentage | GMAdmin (100) |
 | #hatelist | Display hate list for NPC. | QuestTroupe (80) |
 | #heal | Completely heal your target | Steward (10) |
@@ -252,7 +249,6 @@
 | #trapinfo | Gets infomation about the traps currently spawned in the zone. | QuestTroupe (80) |
 | #tune | Calculate statistical values related to combat. | GMAdmin (100) |
 | #undye | Remove dye from all of your or your target's armor slots | GMAdmin (100) |
-| #undyeme | Remove dye from all of your armor slots | Player (0) |
 | #unfreeze | Unfreeze your target | QuestTroupe (80) |
 | #unmemspell | [Spell ID] - Unmemorize a Spell by ID for you or your target | Guide (50) |
 | #unmemspells |  Unmemorize all spells for you or your target | Guide (50) |

@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.01.04
+    Last Generated: 2023.01.22
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -82,6 +82,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## Bots Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
+| Bots:Enabled | false | Enable of disable bot functionality, default is false |
 | Bots:BotExpansionSettings | 16383 | Sets the expansion settings for bot use. Defaults to all expansions enabled up to TSS |
 | Bots:AllowCamelCaseNames | false | Allows the use of 'MyBot' type names |
 | Bots:AllowBotEquipAnyRaceGear | false | Allows Bots to wear Equipment even if their race is not valid |
@@ -286,6 +287,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:FullManaOnDeath | true | On death set mana to full |
 | Character:FullEndurOnDeath | true | On death set endurance to full |
 | Character:ExperiencePercentCapPerKill | -1 | Caps the percentage of experience that can be gained per kill. -1 disables the cap; 0 blocks all (non-aa) xp. |
+| Character:EnableGroupEXPModifier | true | Enable or disable the group experience modifier based on number of players in group, default is true |
+| Character:GroupMemberEXPModifier | 0.2 | Sets the group experience modifier per members between 2 and 5, default is 0.2 |
+| Character:FullGroupEXPModifier | 2.16 | Sets the group experience modifier for a full group, default is 2.16 |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -296,6 +300,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Chat:EnableMailKeyIPVerification | true | Setting whether the authenticity of the client should be verified via its IP address when accessing the InGame mailbox |
 | Chat:EnableAntiSpam | true | Enable anti-spam system for chat |
 | Chat:SuppressCommandErrors | false | Do not suppress command errors by default |
+| Chat:MaxPermanentPlayerChannels | 0 | Maximum number of permanent chat channels a player can make. Default 0. |
 | Chat:MinStatusToBypassAntiSpam | 100 | Minimum status to bypass the anti-spam system |
 | Chat:MinimumMessagesPerInterval | 4 | Minimum number of chat messages allowed per interval. The karma value is added to this value |
 | Chat:MaximumMessagesPerInterval | 12 | Maximum value of chat messages allowed per interval |
@@ -775,6 +780,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:IllusionsAlwaysPersist | false | Allows Illusions to persist beyond death and zoning always. |
 | Spells:UseItemCastMessage | false | Enable to use the \"item begins to glow\" messages when casting from an item. |
 | Spells:TargetsTargetRequiresCombatRange | true | Disable to remove combat range requirement from Target's Target Spell Target Type |
+| Spells:NPCBuffLevelRestrictions | false | Impose BuffLevelRestrictions on NPCs if true |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
