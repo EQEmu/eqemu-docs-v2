@@ -143,6 +143,8 @@ index 8f51d0ec9..4eaa1d797 100644
 
 Once you have the above changes ready to go, merge it into master it will trigger a pipeline build and the pipeline will take care of the rest!
 
+See [Build Pipeline](build-pipeline.md)
+
 ![image](https://user-images.githubusercontent.com/3319450/214204709-6ddd4383-99c3-49cc-9ae6-9797ab37d8bc.png)
 
 ![image](https://user-images.githubusercontent.com/3319450/214204806-0b139dc7-4a5e-4f33-b22b-37d82c91fbef.png)
