@@ -4,7 +4,7 @@
 
 http://drone.akkadius.com/EQEmu/Server
 
-The current CI pipeline uses [Drone](https://www.drone.io/) which is written in GoLang and [open source](https://github.com/harness/drone)
+The current CI pipeline uses [Drone](https://www.drone.io/) which is written in Golang and [open source](https://github.com/harness/drone)
 
 ![image](https://user-images.githubusercontent.com/3319450/214195643-43bb8b8b-04ca-42c7-9cf0-9bf612dc2016.png)
 
