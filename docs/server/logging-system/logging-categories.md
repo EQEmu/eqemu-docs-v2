@@ -16,7 +16,6 @@ Logging categories have their settings stored in the [logsys_categories](https:/
 | 2 | AI | 0 | 0 | 0 | Logs the AI for mercs and bots (IE spell casting, aggro, etc.) |
 | 3 | Aggro | 0 | 0 | 0 | Mob aggro, prox and range |
 | 4 | Attack | 0 | 0 | 0 | Weapon skill and weapon in use, and mob aggro |
-| 5 | Packet :: Client -&gt; Server | 0 | 0 | 0 | See [Logging Packets](logging-packets.md) |
 | 6 | Combat | 0 | 0 | 0 | Combat damage (IE weapon, base, thrown) |
 | 7 | Commands | 0 | 0 | 0 | Commands that require account status (IE GM) |
 | 8 | Crash | 1 | 1 | 0 | Stacktrace, exceptions, timestamp |
@@ -50,10 +49,6 @@ Logging categories have their settings stored in the [logsys_categories](https:/
 | 36 | MySQL Query | 0 | 0 | 0 |  |
 | 37 | Mercenaries | 0 | 0 | 0 |  |
 | 38 | Quest Debug | 0 | 0 | 1 |  |
-| 39 | Packet :: Server -&gt; Client | 0 | 0 | 0 | See [Logging Packets](logging-packets.md) |
-| 40 | Packet :: Client -&gt; Server Unhandled | 0 | 0 | 0 | See [Logging Packets](logging-packets.md) |
-| 41 | Packet :: Server -&gt; Client (Dump) | 0 | 0 | 0 | See [Logging Packets](logging-packets.md) |
-| 42 | Packet :: Client -&gt; Server (Dump) | 0 | 0 | 0 | See [Logging Packets](logging-packets.md) |
 | 43 | Login Server | 0 | 0 | 0 |  |
 | 44 | Client Login | 1 | 1 | 0 |  |
 | 45 | Headless Client | 0 | 0 | 0 |  |

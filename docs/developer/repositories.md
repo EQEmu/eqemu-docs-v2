@@ -14,9 +14,9 @@ The purpose of this guide to serve as a reference for our source generated repos
       Reference [https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
        
 
-![Repository Pattern Illustration A](<../../gitbook/assets/image (9).png>)
+![Repository Pattern Illustration A](<../gitbook/assets/image (9).png>)
 
-![Repository Pattern Illustration B ](<../../gitbook/assets/image (10).png>)
+![Repository Pattern Illustration B ](<../gitbook/assets/image (10).png>)
 
 The underlying persistence layer could be anything, file, memory, remote storage, but in most cases relevant to what we are using repositories for right now in this article pertain to the database (MySQL)
 
