@@ -13,7 +13,7 @@
 | 6 | normal 90 degree door swing forward |  |
 | 7 | normal 90 degree door swing forward |  |
 | 8 | normal 90 degree door swing backward |  |
-| 9 | nothing |  |
+| 9 | no movement, click events will only fire once  |  |
 | 10 | slides forward |  |
 | 11 | slides forward |  |
 | 12 | slides forward |  |
