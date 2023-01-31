@@ -12,7 +12,6 @@ As of **01/31/2023**, EQGZI is a program that turns a 3D modeled project into an
 
 ## Installation
 
-A video of the following steps
 <iframe width="100%" height="600" src="https://www.youtube.com/embed/G16H-qWBZ20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Download [EQGZI-Manager](https://github.com/xackery/eqgzi-manager/releases/latest) and move it to a place you wish to keep your customized zones.
@@ -28,5 +27,6 @@ A video of the following steps
 
 ## Further reading and configuration
 
+- [Feature Breakdown](breakdown.md) - A list of features and how to use them
 - [Shader List](shader-list.md) - A list of shaders
 - [Blender Custom Properties](blender-custom-properties.md) - A list of custom properties supported by EQGZI inside Blender
