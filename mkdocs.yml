@@ -319,6 +319,7 @@ nav:
               - EQGZI:
                   - server/zones/customizing-zones/eqgzi/README.md
                   - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
+                  - Feature Breakdown: server/zones/customizing-zones/eqgzi/breakdown.md
                   - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
                   - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md
                   - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
