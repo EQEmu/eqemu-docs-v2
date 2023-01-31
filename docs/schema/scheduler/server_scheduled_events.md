@@ -1,7 +1,7 @@
 # server_scheduled_events
 
 !!! info
-	This page was last generated 2023.01.22
+	This page was last generated 2023.01.30
 
 ## Schema
 

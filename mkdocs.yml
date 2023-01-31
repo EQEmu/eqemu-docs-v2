@@ -96,7 +96,7 @@ nav:
           - Database Migrations: developer/database-schema-migrations.md
           - Build Pipeline: developer/build-pipeline.md
           - Codebase:
-            - EQDictionary: developer/eqdictionary.md
+              - EQDictionary: developer/eqdictionary.md
           - Logging: developer/logging.md
           - Release Pipeline: developer/release-pipeline.md
           - Repositories: developer/repositories.md
