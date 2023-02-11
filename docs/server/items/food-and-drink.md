@@ -6,6 +6,8 @@ description: >-
 
 # Food and Drink
 
+These values are set in the "casttime_" field of the items table
+
 ## Food
 
 | Value | Description |
