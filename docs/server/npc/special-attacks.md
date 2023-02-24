@@ -1095,23 +1095,6 @@
 | 50 | Special Attack "Immune NPC Aggro" |
 | 1 | Special Attack "Immune NPC Aggro" enabled |
 
-## Immune NPC Aggro (50)
-
-!!! info
-      Immune NPC Aggro, denoted by special attack 50, makes the NPC immune to aggro by NPCs.
-
-
-### **Example:**
-
-```text
-50,1
-```
-
-|  |  |
-| :--- | :--- |
-| 50 | Special Attack "Immune NPC Aggro" |
-| 1 | Special Attack "Immune NPC Aggro" enabled |
-
 ## Modify Avoid Damage (51)
 
 !!! info
