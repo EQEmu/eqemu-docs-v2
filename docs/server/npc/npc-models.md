@@ -49,7 +49,7 @@ Below is a list of NPC Race Models that are used in the _chr text files in the c
 | 55 | bgm | oasis_chr | Beggar |
 | 56 | pim |  | Pixie |
 | 57 | drm | pojustice_chr | Drachnid |
-| 58 | sol | soltemple_chr | Solusek Ro |
+| 58 | sol | solrotower_chr | Solusek Ro |
 | 59 | bgg | lakeofillomen_chr | Goblin |
 | 60 | ske | povalor_chr | Skeleton |
 | 61 | sha | oot_chr | Shark |
