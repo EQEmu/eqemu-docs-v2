@@ -477,3 +477,45 @@ sub EVENT_ITEM {
 }
 ```
 
+## Scaling Heroic Stat Bonuses via Data Buckets
+
+The rule ```Character, HeroicStatsUseDataBucketsToScale``` Allows scaling the benefits a Player or Bot receives from Heroic Stats using Data Buckets. This works with other multipliers, as long as a valid data bucket is applied to the character.
+
+Below are valid keys that can be used, and the benefit given if keyed with a value of "1.00" or "1".
+
+| Bucket Key "character-id-KEY" |  Description assuming Bucket Value of "1.00"    |
+|-------------------------------|-------------------------------------------------|
+|**HSTR-MeleeDamage** 			| 1 melee damage per 10 Heroic Strength.          |
+|**HSTR-ShieldAC**				| 1 Shield AC per 10 Heroic Strength.             |
+|**HSTR-MaxEndurance** 			| 2.5 Base Endurance per every 1 Heroic Strength. |
+|**HSTR-EnduranceRegen"** 		| 0.05 Endurance Regen per 10 Heroic Strength.    |
+|                               |                                                 |
+|**HSTA-MaxHP**    			    | 10 HP per 1 Heroic Stamina.                     |
+|**HSTA-HPRegen**   		    | 0.5 HP Regen per 10 Heroic Stamina.             |
+|**HSTR-MaxEndurance** 		    | 2.5 Base Endurance per every 1 Heroic Stamina.  |
+|**HSTA-EnduranceRegen** 		| 0.05 Endurance Regen per 10 Heroic Stamina.     |
+|                               |                                                 |
+|**HAGI-Avoidance**  		    | 1 Avoidance per 10 Heroic Agility.              |
+|**HAGI-MaxEndurance**		    | 2.5 Base Endurance per every 1 Heroic Agility.  |
+|**HAGI-EnduranceRegen** 		| 0.05 Endurance Regen per 10 Heroic Agility.     |
+|                               |                                                 |
+|**HDEX-RangedDamage** 		    | 1 Ranged Damage per 10 Heroic Dexterity.        |
+|**HDEX-MaxEndurance**  		| 2.5 Base Endurance per every 1 Heroic Dexterity.|
+|**HDEX-EnduranceRegen** 		| 0.05 Endurance Regen per 10 Heroic Dexterity.   |
+|                               |                                                 |
+|**HINT-SpellDmg**    			| 1 Spell Damage per 1 Heroic Intelligence.       |
+|**HINT-MaxMana**  		        | 250 Base Mana per every 25 Heroic Intelligence. |
+|**HINT-ManaRegen**   		    | 1 Mana Regen/Regen Cap per 25 Heroic Intelligence.        |
+|                               |                                                 |
+|**HWIS-HealAmt**   		    | 1 Heal Amount per 1 Heroic Wisdom.              |
+|**HWIS-MaxMana**   		    | 250 Base Mana per every 25 Heroic Wisdom.       |
+|**HWIS-ManaRegen**  		    | 1 Mana Regen/Regen Cap per 25 Heroic Wisdom.    |
+
+## Practical Example
+
+Say we want a player to receive 10 melee damage per 10 Heroic Strength, we would set a bucket as follows:
+
+```pl
+my $bucket_key = "HSTR-MeleeDamage";
+$client->SetBucket($bucket_key, 10.00);
+```
