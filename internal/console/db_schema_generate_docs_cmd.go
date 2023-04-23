@@ -468,7 +468,7 @@ func (c *DbGenerateDocsCommand) buildMermaidDiagrams(table string) string {
 					}
 
 					relationshipsString += fmt.Sprintf(
-						"    %v ||--o{ %v : %v\n",
+						"    %v ||--o{ %v : \"%v\"\n",
 						table,
 						relationship.RemoteTable,
 						relationshipTypeString,

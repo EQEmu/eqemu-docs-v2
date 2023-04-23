@@ -1999,7 +1999,7 @@ bot_spells_entries:
   bucket_comparison:
     dataType: tinyint
     description: ""
-    nullable: "YES"
+    nullable: "NO"
     ordinal_position: 15
   bucket_name:
     dataType: varchar
@@ -3763,7 +3763,7 @@ character_item_recast:
     nullable: "NO"
     ordinal_position: 1
   recast_type:
-    dataType: smallint
+    dataType: int
     description: Recast Type
     nullable: "NO"
     ordinal_position: 2
@@ -4142,22 +4142,22 @@ chatchannels:
     dataType: int
     description: '[Minimum Status](../../../../server/player/status-levels)'
     nullable: "NO"
-    ordinal_position: 5
+    ordinal_position: 4
   name:
     dataType: varchar
     description: Name
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 1
   owner:
     dataType: varchar
     description: '[Owner Character Identifier](../../schema/characters/character_data.md)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 2
   password:
     dataType: varchar
     description: Password
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 3
 class_skill:
   class:
     dataType: smallint
@@ -4668,7 +4668,7 @@ data_buckets:
     ordinal_position: 3
 db_str:
   id:
-    dataType: int
+    dataType: bigint
     description: Unique Database String Identifier
     nullable: "NO"
     ordinal_position: 1
@@ -5772,6 +5772,17 @@ goallists:
   listid:
     dataType: int
     description: Goal List Identifier
+    nullable: "NO"
+    ordinal_position: 1
+goallists_backup_9_25_2022:
+  entry:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  listid:
+    dataType: int
+    description: ""
     nullable: "NO"
     ordinal_position: 1
 graveyard:
@@ -9312,7 +9323,7 @@ merchantlist_temp:
     dataType: int
     description: Charges
     nullable: "NO"
-    ordinal_position: 4
+    ordinal_position: 6
   instance_id:
     dataType: int
     description: '[Instance Identifier](../../schema/instances/instance_list.md)'
@@ -9322,7 +9333,7 @@ merchantlist_temp:
     dataType: int
     description: '[Item Identifier](../../schema/items/items.md)'
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 5
   npcid:
     dataType: int
     description: '[NPC Type Identifier](../../schema/npcs/npc_types.md)'
@@ -11332,6 +11343,47 @@ proximities:
   zoneid:
     dataType: int
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
+    nullable: "NO"
+    ordinal_position: 1
+proximities_backup_9203:
+  exploreid:
+    dataType: int
+    description: ""
+    nullable: "NO"
+    ordinal_position: 2
+  maxx:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 4
+  maxy:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 6
+  maxz:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 8
+  minx:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 3
+  miny:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 5
+  minz:
+    dataType: float
+    description: ""
+    nullable: "NO"
+    ordinal_position: 7
+  zoneid:
+    dataType: int
+    description: ""
     nullable: "NO"
     ordinal_position: 1
 qs_merchant_transaction_record:
@@ -14050,6 +14102,445 @@ spells_new:
     description: '[Zone Type](../../../../server/zones/zone-types)'
     nullable: "NO"
     ordinal_position: 102
+spire_analytic_event_counts:
+  count:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  event_key:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  updated_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+spire_analytic_events:
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  event_value:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  ip_address:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  request_uri:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  updated_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  user_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+spire_crash_reports:
+  compile_date:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  compile_time:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  cpus:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  crash_report:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 18
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  origination_info:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 17
+  os_machine:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  os_release:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  os_sysname:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  os_version:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  platform_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 16
+  process_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  rss_memory:
+    dataType: double
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  server_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  server_short_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
+  server_version:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 14
+  uptime:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 15
+spire_server_database_connections:
+  content_db_host:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  content_db_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  content_db_password:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  content_db_port:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  content_db_username:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 16
+  created_by:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 15
+  created_from_ip:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 14
+  db_host:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  db_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  db_password:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  db_port:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  db_username:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  deleted_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 18
+  discord_webhook_url:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  updated_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 17
+spire_settings:
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  setting:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+  value:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+spire_user_event_log:
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  data:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  event_name:
+    dataType: varchar
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  server_database_connection_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  user_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+spire_user_server_database_connections:
+  active:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  created_by:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  deleted_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  server_database_connection_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  updated_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  user_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+spire_user_server_resource_permissions:
+  can_read:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  can_write:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  resource_name:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  server_database_connection_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  user_id:
+    dataType: bigint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
+spire_users:
+  avatar:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 7
+  created_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 11
+  deleted:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 13
+  email:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 6
+  first_name:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 4
+  full_name:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 3
+  id:
+    dataType: bigint
+    description: ""
+    nullable: "NO"
+    ordinal_position: 1
+  is_admin:
+    dataType: tinyint
+    description: ""
+    nullable: "YES"
+    ordinal_position: 10
+  last_name:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 5
+  password:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 9
+  provider:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 8
+  updated_at:
+    dataType: datetime
+    description: ""
+    nullable: "YES"
+    ordinal_position: 12
+  user_name:
+    dataType: longtext
+    description: ""
+    nullable: "YES"
+    ordinal_position: 2
 start_zones:
   bind_id:
     dataType: int

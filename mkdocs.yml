@@ -92,6 +92,14 @@ nav:
           - Bot Spell Types: server/bots/bot-spell-types.md
           - Stance Types: server/bots/stance-types.md
       - Developer:
+          - Database Conventions: developer/conventions-guidelines.md
+          - Database Migrations: developer/database-schema-migrations.md
+          - Build Pipeline: developer/build-pipeline.md
+          - Codebase:
+              - EQDictionary: developer/eqdictionary.md
+          - Logging: developer/logging.md
+          - Release Pipeline: developer/release-pipeline.md
+          - Repositories: developer/repositories.md
           - Project PEQ Expansions:
               - Classic:
                   - developer/project-peq-expansions/classic/README.md
@@ -101,18 +109,11 @@ nav:
               - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
               - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
               - Design Considerations: developer/project-peq-expansions/design-considerations.md
-          - EQDictionary: developer/eqdictionary.md
           - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
-          - Tools:
-              - Lua for Windows: developer/tools/lua-for-windows.md
-              - Notepad++: developer/tools/notepad++.md
-              - TortoiseGit: developer/tools/tortoisegit.md
       - Database:
-          - Conventions & Guidlines: server/database/conventions-guidelines.md
           - Multi Tenancy: server/database/multi-tenancy.md
           - Database Backup Tool: server/database/database-backup-tool.md
           - Performance Tuning: server/database/performance-tuning.md
-          - Repositories: server/database/repositories.md
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md
@@ -161,8 +162,6 @@ nav:
           - server/logging-system/README.md
           - Discord Logging Integration: server/logging-system/discord-logging-integration.md
           - Logging Categories: server/logging-system/logging-categories.md
-          - Logging for Developers: server/logging-system/logging-for-developers.md
-          - Logging Packets: server/logging-system/logging-packets.md
       - Login Server:
           - Auto Create Login Accounts: server/login-server/auto-create-login-accounts.md
           - REST API: server/login-server/login-server-rest-api.md
@@ -320,12 +319,14 @@ nav:
               - EQGZI:
                   - server/zones/customizing-zones/eqgzi/README.md
                   - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
+                  - Feature Breakdown: server/zones/customizing-zones/eqgzi/breakdown.md
                   - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
                   - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md
                   - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
                   - Blender Zone Making: server/zones/customizing-zones/eqgzi/blender-first-zone.md
                   - Blender Custom Properties: server/zones/customizing-zones/eqgzi/blender-custom-properties.md
                   - Animated Textures: server/zones/customizing-zones/eqgzi/animated-textures.md
+                  - Getting Started (Advanced): server/zones/customizing-zones/eqgzi/getting-started-advanced.md
               - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
               - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
               - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md

@@ -29,7 +29,7 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        opacity: .1;
+        opacity: .05;
         animation: changeBg 600s infinite;
     }
 }

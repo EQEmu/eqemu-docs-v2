@@ -187,16 +187,3 @@ Using said alias then becomes very simple
         ```cpp
         LogSaylink("Loaded [{}] saylinks into cache", saylinks.size());
         ```
-
-## Default Logging Category Colors
-
-Color settings for GMSay and console respectively can be managed in eqemu_logsys.cpp and the functions are labeled to their respective responsibilities
-
-=== "eqemu_logsys.cpp"
-
-    ```cpp
-    uint16 GetGMSayColorFromCategory(uint16 log_category);
-    std::string GetLinuxConsoleColorFromCategory(uint16 log_category);
-    uint16 GetWindowsConsoleColorFromCategory(uint16 log_category);
-    ```
-    

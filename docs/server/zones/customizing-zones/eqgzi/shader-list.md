@@ -5,7 +5,6 @@ description: A list of shaders for EQG zones
 These shaders are only applicable to eqg files, s3d uses a different method
 
 
-
 # Shader List
 
 |Note|Zone|Material|Shader|Property|Type|Value|Descrption|Triangle|Bits|Location
@@ -53,3 +52,293 @@ Flowing Lava|thenest|lavaflow|Opaque_MaxLava.fx|e_fSlide1X|0|0.3||||
 Flowing Lava|thenest|lavaflow|Opaque_MaxLava.fx|e_fSlide1Y|0|0||||
 Flowing Lava|thenest|lavaflow|Opaque_MaxLava.fx|e_fSlide2X|0|0.2||||
 Flowing Lava|thenest|lavaflow|Opaque_MaxLava.fx|e_fSlide2Y|0|0
+
+# Shader References
+
+- Name: AddAlpha_MaxC1.fx
+
+  Example: anguish.eqg, clvgate.mod
+
+- Name: AddAlpha_MaxCB1.fx
+
+    Example: thundercrest.eqg, obj_roof_decor_a.mod
+
+- Name: AddAlpha_MaxCBSG1.fx
+
+    Example: crs.eqg, crs.mod
+
+- Name: AddAlpha_MaxCG1.fx
+
+    Example: tbsequip.eqg, it11107.mod
+
+- Name: AddAlpha_MPLBasicA.fx
+
+    Example: barren.eqg, obp_beam_yellow.mod
+
+- Name: AddAlpha_MPLBasicAT.fx
+
+    Example: pillarsalra.eqg, obj_nat_button_base.mod
+
+- Name: AddAlpha_MPLBumpA.fx
+
+    Example: wallet35.eqg, it12307.mod
+
+- Name: AddAlphaC1Max.fx
+
+    Example: fhalls.eqg, obp_geode01.mod
+
+- Name: Alpha_MaxC1.fx
+
+    Example: fie.eqg, fie.mod
+
+- Name: Alpha_MaxCBS1.fx
+
+    Example: aie.eqg, aie.mod
+
+- Name: Alpha_MaxCBSG1.fx
+
+    Example: delvea.eqg, obp_spderweb_small_d.mod
+
+- Name: Alpha_MaxCBSGE1.fx
+
+    Example: cry.eqg, cry.mds
+
+- Name: Alpha_MaxCE1.fx
+
+    Example: anguish.eqg, obj_cppods1.mod
+
+- Name: Alpha_MPLBasicA.fx
+
+    Example: alkabormare.eqg, obp_mistyfloraa_lod1.mod
+
+- Name: Alpha_MPLBasicAT.fx
+
+    Example: arelis.eqg, obj_weapon_rack_lod1.mod
+
+- Name: Alpha_MPLBumpA.fx
+
+    Example: bertoxtemple.eqg, obj_corral_topb.mod
+
+- Name: Alpha_MPLBumpAT.fx
+
+    Example: bertoxtemple.eqg, obp_plant_cluster.mod
+
+- Name: AlphaSModelC1Max.fx
+
+    Example: fhalls.eqg, obj_smplant01.mod
+
+- Name: AlphaSModelCBGG1Max.fx
+
+    Example: provinggrounds.eqg, mmlttm.mod
+
+- Name: Chroma_MaxC1.fx
+
+    Example: bazaar.eqg, obp_bannerdragon.mod
+
+- Name: Chroma_MaxCB1.fx
+
+    Example: bnr.eqg, obp_bnr_blue00.mod
+
+- Name: Chroma_MaxCBS1.fx
+
+    Example: ahf.eqg, ahf.mds
+
+- Name: Chroma_MaxCBSG1.fx
+
+    Example: bat.eqg, bat.mod
+
+- Name: Chroma_MaxCBSGE1.fx
+
+    Example: genericplate.eqg, it14157.mod
+
+- Name: Chroma_MPLBasicA.fx
+
+    Example: argath.eqg, obp_cropb_lod1.mod
+
+- Name: Chroma_MPLBasicAT.fx
+
+    Example: alkabormare.eqg, obj_dread_bannersm.mod
+
+- Name: Chroma_MPLBumpA.fx
+
+    Example: arena2.eqg, obj_arch_innerlt.mod
+
+- Name: Chroma_MPLBumpAT.fx
+
+    Example: arcstone.eqg, obj_fs_tent_.mod
+
+- Name: Chroma_MPLGBAT.fx
+
+    Example: furniture08.eqg, it20060.mod
+
+- Name: Opaque_AddAlphaC1Max.fx
+
+    Example: anguish.eqg, rasymbol.mod
+
+- Name: Opaque_MaxC1_2UV.fx
+
+    Example: bazaar.eqg, obj_cageb.mod
+
+- Name: Opaque_MaxC1.fx
+
+    Example: bazaar.eqg, obj_cageb.mod
+
+- Name: Opaque_MaxCB1_2UV.fx
+
+    Example: bazaar.eqg, obj_sackb.mod
+
+- Name: Opaque_MaxCB1.fx
+
+    Example: 10annvshield.eqg, it14000.mod
+
+- Name: Opaque_MaxCBE1.fx
+
+    Example: riftseekers.eqg, obj_scustat.mod
+
+- Name: Opaque_MaxCBS_2UV.fx
+
+    Example: gua.eqg, gua.mod
+
+- Name: Opaque_MaxCBS1.fx
+
+    Example: aam.eqg, aam.mds
+
+- Name: Opaque_MaxCBSE1.fx
+
+    Example: anguish.eqg, obj_dias01.mod
+
+- Name: Opaque_MaxCBSGE1.fx
+
+    Example: dodequip.eqg, it10817.mod
+
+- Name: Opaque_MaxCBST2_2UV.fx
+
+    Example: g05.eqg, g05.mod
+
+- Name: Opaque_MaxCE1.fx
+
+    Example: steamfactory.eqg, obj_pipe_elbow.mod
+
+- Name: Opaque_MaxCG1.fx
+
+    Example: anguish.eqg, clvgate.mod
+
+- Name: Opaque_MaxCSG1.fx
+
+    Example: dranikcatacombsa.eqg, obj_pedestalg01.mod
+
+- Name: Opaque_MaxLava.fx
+
+    Example: arcstone.eqg, obj_fs_flame_rock_c1.mod
+
+- Name: Opaque_MaxSMLava2.fx
+
+    Example: ldr.eqg, ldr.mod
+
+- Name: Opaque_MaxWater.fx
+
+    Example: anguish.eqg, obj_skin.mod
+
+- Name: Opaque_MaxWaterFall.fx
+
+    Example: ashengate.eqg, obj_crumblea.mod
+
+- Name: Opaque_MPLBasic.fx
+
+    Example: alkabormare.eqg, obj_everruina.mod
+
+- Name: Opaque_MPLBasicA.fx
+
+    Example: zonein.eqg, obj_libtelportpad.mod
+
+- Name: Opaque_MPLBlend.fx
+
+    Example: alkabormare.eqg, obj_everruina.mod
+
+- Name: Opaque_MPLBlendNoBump.fx
+
+    Example: beastdomain.eqg, obj_beastd_spike.mod
+
+- Name: Opaque_MPLBump.fx
+
+    Example: alkabormare.eqg, obj_dread_bannersm.mod
+
+- Name: Opaque_MPLBump2UV.fx
+
+    Example: arcstone.eqg, obj_fs_flame_rock_c1.mod
+
+- Name: Opaque_MPLBumpA.fx
+
+    Example: furniture19.eqg, it35125.mod
+
+- Name: Opaque_MPLBumpAT.fx
+
+    Example: breedinggrounds.eqg, obj_bg_frdragstatb.mod
+
+- Name: Opaque_MPLFull.fx
+
+    Example: drachnidhive.eqg, obj_glyph_voodo_wrym_a_.mod
+
+- Name: Opaque_MPLFull2UV.fx
+
+    Example: guildhall.eqg, obj_lamp_wall_05.mod
+
+- Name: Opaque_MPLGB.fx
+
+    Example: arcstone.eqg, obj_reliccard.mod
+
+- Name: Opaque_MPLGB2UV.fx
+
+    Example: convorteum.eqg, obj_convringsyel.mod
+
+- Name: Opaque_MPLRB.fx
+
+    Example: arthicrex.eqg, obj_temple_torch.mod
+
+- Name: Opaque_MPLRB2UV.fx
+
+    Example: crystallos.eqg, obj_uppercolearth.mod
+
+- Name: Opaque_MPLSB.fx
+
+    Example: arcstone.eqg, obj_ravenglass_.mod
+
+- Name: Opaque_MPLSB2UV.fx
+
+    Example: cityofbronze.eqg, obj_bronzecityentb.mod
+
+- Name: Opaque_OpaqueRegionCBGG1Max.fx
+
+    Example: dranikhollowsa.eqg, obj_urntall02_bk_00.mod
+
+- Name: Opaque_OpaqueSkinMeshCBGG1Max.fx
+
+    Example: omensequip.eqg, it10762.mod
+
+- Name: Opaque_OpaqueSModelC1Max.fx
+
+    Example: wallofslaughter.eqg, obj_tower02rev.mod
+
+- Name: Opaque_OpaqueSModelCBGG1Max.fx
+
+    Example: chambersf.eqg, obj_spine02.mod
+
+- Name: OpaqueRegionC1Max.fx
+
+    Example: fhalls.eqg, obj_statuepedestal01.mod
+
+- Name: OpaqueRegionCB1Max.fx
+
+    Example: fhalls.eqg, obj_statuepedestal01.mod
+
+- Name: OpaqueSModelCB1Max.fx
+
+    Example: draniksscar.eqg, rc_d_entry_b.mod
+
+- Name: OpaqueSModelCBGG1Max.fx
+
+    Example: fhalls.eqg, obp_geode01.mod
+
+- Name: OpaqueSModelCG1Max.fx
+
+    Example: provinggrounds.eqg, mmlrtm.mod

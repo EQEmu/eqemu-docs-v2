@@ -118,6 +118,8 @@ func (i *Instance) GetSchemaTableNames() ([]string, error) {
 		  INFORMATION_SCHEMA.COLUMNS
 		WHERE
 		  TABLE_SCHEMA = '%v' 
+		  AND TABLE_NAME NOT LIKE 'spire_%%'
+		  AND TABLE_NAME NOT LIKE '_backup_%%'
 		GROUP BY TABLE_NAME;
 	  `, os.Getenv("DB_NAME"),
 		),
