@@ -1,7 +1,7 @@
 # peq_admin
 
 !!! info
-	This page was last generated 2023.01.30
+	This page was last generated 2023.04.23
 
 ## Schema
 
