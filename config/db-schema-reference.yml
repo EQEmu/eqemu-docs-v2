@@ -1871,82 +1871,82 @@ bot_spell_casting_chances:
     ordinal_position: 1
   nHSND_value:
     dataType: tinyint
-    description: nHSND Value
+    description: Negative Healer/Slower/Nuker/Doter Value
     nullable: "NO"
     ordinal_position: 5
   pD_value:
     dataType: tinyint
-    description: pD Value
+    description: Positive Doter Value
     nullable: "NO"
     ordinal_position: 13
   pH_value:
     dataType: tinyint
-    description: pH Value
+    description: Positive Healer Value
     nullable: "NO"
     ordinal_position: 6
   pHD_value:
     dataType: tinyint
-    description: pHD Value
+    description: Positive Healer/Doter Value
     nullable: "NO"
     ordinal_position: 14
   pHN_value:
     dataType: tinyint
-    description: pHN Value
+    description: Positive Healer/Nuker Value
     nullable: "NO"
     ordinal_position: 10
   pHND_value:
     dataType: tinyint
-    description: pHND Value
+    description: Positive Healer/Nuker/Doter Value
     nullable: "NO"
     ordinal_position: 18
   pHS_value:
     dataType: tinyint
-    description: pHS Value
+    description: Positive Healer/Slower Value
     nullable: "NO"
     ordinal_position: 8
   pHSD_value:
     dataType: tinyint
-    description: pHSD Value
+    description: Positive Healer/Slower/Doter Value
     nullable: "NO"
     ordinal_position: 16
   pHSN_value:
     dataType: tinyint
-    description: pHSN Value
+    description: Positive Healer/Slower/Nuker Value
     nullable: "NO"
     ordinal_position: 12
   pHSND_value:
     dataType: tinyint
-    description: pHSND Value
+    description: Positive Healer/Slower/Nuker/Doter Value
     nullable: "NO"
     ordinal_position: 20
   pN_value:
     dataType: tinyint
-    description: pN Value
+    description: Positive Nuker Value
     nullable: "NO"
     ordinal_position: 9
   pND_value:
     dataType: tinyint
-    description: pND Value
+    description: Positive Nuker/Doter Value
     nullable: "NO"
     ordinal_position: 17
   pS_value:
     dataType: tinyint
-    description: pS Value
+    description: Positive Slower Value
     nullable: "NO"
     ordinal_position: 7
   pSD_value:
     dataType: tinyint
-    description: pSD Value
+    description: Positive Slower/Doter Value
     nullable: "NO"
     ordinal_position: 15
   pSN_value:
     dataType: tinyint
-    description: pSN Value
+    description: Positive Slower/Nuker Value
     nullable: "NO"
     ordinal_position: 11
   pSND_value:
     dataType: tinyint
-    description: pSND Value
+    description: Positive Slower/Nuker/Doter Value
     nullable: "NO"
     ordinal_position: 19
   spell_type_index:
