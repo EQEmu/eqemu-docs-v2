@@ -57,7 +57,7 @@ Only NPCs may use these classes.
 | 66 | Guild Banker |
 | 67 | Norrath's Keeper Merchant (Radiant Crystals) |
 | 68 | Dark Reign Merchant (Ebon Crystals) |
-| 69 | Fellowships |
+| 69 | Fellowship Master |
 | 70 | Alternate Currency Merchant |
 | 71 | Mercenary Liaison  |
 
