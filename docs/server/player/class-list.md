@@ -31,32 +31,32 @@ Only NPCs may use these classes.
 
 | ID | Name |
 | :--- | :--- |
-| 20 | GM Warrior |
-| 21 | GM Cleric |
-| 22 | GM Paladin |
-| 23 | GM Ranger |
-| 24 | GM Shadow Knight |
-| 25 | GM Druid |
-| 26 | GM Monk |
-| 27 | GM Bard |
-| 28 | GM Rogue |
-| 29 | GM Shaman |
-| 30 | GM Necromancer |
-| 31 | GM Wizard |
-| 32 | GM Magician |
-| 33 | GM Enchanter |
-| 34 | GM Beastlord |
-| 35 | GM Berserker |
+| 20 | Warrior Guildmaster |
+| 21 | Cleric Guildmaster |
+| 22 | Paladin Guildmaster |
+| 23 | Ranger Guildmaster |
+| 24 | Shadow Knight Guildmaster |
+| 25 | Druid Guildmaster |
+| 26 | Monk Guildmaster |
+| 27 | Bard Guildmaster |
+| 28 | Rogue Guildmaster |
+| 29 | Shaman Guildmaster |
+| 30 | Necromancer Guildmaster |
+| 31 | Wizard Guildmaster |
+| 32 | Magician Guildmaster |
+| 33 | Enchanter Guildmaster |
+| 34 | Beastlord Guildmaster |
+| 35 | Berserker Guildmaster |
 | 40 | Banker |
-| 41 | Shopkeeper |
-| 59 | Discord Merchant |
+| 41 | Merchant |
+| 59 | Discord Merchant (PVP Points) |
 | 60 | Adventure Recruiter |
 | 61 | Adventure Merchant |
 | 63 | Tribute Master |
 | 64 | Guild Tribute Master |
 | 66 | Guild Banker |
-| 67 | Radiant Crystal Merchant |
-| 68 | Ebon Crystal Merchant |
+| 67 | Norrath's Keeper Merchant (Radiant Crystals) |
+| 68 | Dark Reign Merchant (Ebon Crystals) |
 | 69 | Fellowships |
 | 70 | Alternate Currency Merchant |
 | 71 | Mercenary Liaison  |
