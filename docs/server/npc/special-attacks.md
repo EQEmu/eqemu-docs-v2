@@ -1150,3 +1150,20 @@
 | :--- | :--- |
 | 52 | Special Attack "Immune Fading Memories" |
 | 1 | Special Attack "Immune Fading Memories" enabled |
+
+## Immune to Open (53)
+
+!!! info
+      Immune to Open, denoted by special attack 53, makes the NPC immune to /open.
+
+
+### **Example:**
+
+```text
+53,1
+```
+
+|  |  |
+| :--- | :--- |
+| 53 | Special Attack "Immune to Open" |
+| 1 | Special Attack "Immune to Open" enabled |
