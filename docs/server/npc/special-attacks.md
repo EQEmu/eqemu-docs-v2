@@ -963,8 +963,8 @@
 | :--- | :--- | :--- |
 | Parameter 0 | Flat negative percent modifier to ALL avoidance skills | 0 |
 | Parameter 1 | Flat negative percent modifier to Riposte skill | 0 |
-| Parameter 2 | Flat negative percent modifier to Parry skill | 0 |
-| Parameter 3 | Flat negative percent modifier to Block skill | 0 |
+| Parameter 2 | Flat negative percent modifier to Block skill | 0 |
+| Parameter 3 | Flat negative percent modifier to Parry skill | 0 |
 | Parameter 4 | Flat negative percent modifier to Dodge skill | 0 |
 
 ### **Examples:**
@@ -988,10 +988,10 @@
 | 44 | Special Attack "Counter Avoid Damage" |
 | 1 | Special Attack "Counter Avoid Damage" enabled |
 | 0 | 0 percent reduction to ALL avoidance skills |
-| 0 | 0 percent reduction to Riposte avoidance skill |
-| 0 | 0 percent reduction to Parry avoidance skill |
-| 0 | 0 percent reduction to Block avoidance skill |
-| 50 | 50 percent reduction to Dodge avoidance skill |
+| 0 | 0 percent reduction to Riposte skill |
+| 0 | 0 percent reduction to Block skill |
+| 0 | 0 percent reduction to Parry skill |
+| 50 | 50 percent reduction to Dodge skill |
 
 ## Proximity Aggro (45)
 
@@ -1104,8 +1104,8 @@
 | :--- | :--- | :--- |
 | Parameter 0 | Flat percent modifier to ALL avoidance skills | 0 |
 | Parameter 1 | Flat percent modifier to Riposte skill | 0 |
-| Parameter 2 | Flat percent modifier to Parry skill | 0 |
-| Parameter 3 | Flat percent modifier to Block skill | 0 |
+| Parameter 2 | Flat percent modifier to Block skill | 0 |
+| Parameter 3 | Flat percent modifier to Parry skill | 0 |
 | Parameter 4 | Flat percent modifier to Dodge skill | 0 |
 
 ### **Examples:**
@@ -1130,8 +1130,8 @@
 | 1 | Special Attack "Modify Avoid Damage" enabled |
 | 0 | 0 percent increase to ALL avoidance skills |
 | 0 | 0 percent increase to Riposte avoidance skill |
-| 0 | 0 percent increase to Parry avoidance skill |
 | 0 | 0 percent increase to Block avoidance skill |
+| 0 | 0 percent increase to Parry avoidance skill |
 | 50 | 50 percent increase to Dodge avoidance skill |
 
 ## Immune Fading Memories (52)
