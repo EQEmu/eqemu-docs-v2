@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.01.22
+    Last Generated: 2023.06.12
 
 
 | Command | Description | Status Level |
@@ -54,7 +54,7 @@
 | #emptyinventory | Clears your or your target's entire inventory (Equipment, General, Bank, and Shared Bank) | GMImpossible (250) |
 | #enablerecipe | [Recipe ID] - Enables a Recipe | QuestTroupe (80) |
 | #endurance | Restores your or your target's endurance. | Guide (50) |
-| #equipitem | [slotid(0-21)] - Equip the item on your cursor into the specified slot | Guide (50) |
+| #entityvariable | [clear&#124;delete&#124;set&#124;view] - Modify entity variables for yourself or your target | GMAdmin (100) |
 | #exptoggle | [Toggle] - Toggle your or your target's experience gain. | QuestTroupe (80) |
 | #faction | [Find (criteria &#124; all ) &#124; Review (criteria &#124; all) &#124; Reset (id)] - Resets Player's Faction | QuestTroupe (80) |
 | #factionassociation | [factionid] [amount] - triggers a faction hits via association | GMLeadAdmin (150) |
@@ -64,6 +64,7 @@
 | #findaliases | [Search Criteria]- Searches for available command aliases, by alias or command | Player (0) |
 | #findcharacter | [Search Criteria] - Search for a character | Guide (50) |
 | #findclass | [Search Criteria] - Search for a class | Guide (50) |
+| #findcurrency | [Search Criteria] - Search for an alternate currency | Guide (50) |
 | #findfaction | [Search Criteria] - Search for a faction | Guide (50) |
 | #findnpctype | [Search Criteria] - Search database NPC types | GMAdmin (100) |
 | #findrace | [Search Criteria] - Search for a race | Guide (50) |
@@ -95,18 +96,18 @@
 | #goto | [playername] or [x y z] [h] - Teleport to the provided coordinates or to your target | Steward (10) |
 | #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid | GMAreas (170) |
 | #guild | Guild manipulation commands. Use argument help for more info. | Steward (10) |
-| #haste | [percentage] - Set your haste percentage | GMAdmin (100) |
+| #haste | [Percentage] - Set your or your target's GM Bonus Haste (100 is 100% more Attack Speed) | GMAdmin (100) |
 | #hatelist | Display hate list for NPC. | QuestTroupe (80) |
 | #heal | Completely heal your target | Steward (10) |
 | #help | [Search Criteria] - List available commands and their description, specify partial command as argument to search | Player (0) |
 | #heromodel | [Hero Model] [Slot] - Set your or your target's appearance to a full set of Hero's Forge Armor, if slot is set, sends exact model just to slot. | GMMgmt (200) |
-| #hideme | [on/off] - Hide yourself from spawn lists. | QuestTroupe (80) |
+| #hideme | [On&#124;Off] or [0&#124;1] - Hide yourself from players below your status level. | QuestTroupe (80) |
 | #hotfix | [hotfix_name] - Reloads shared memory into a hotfix, equiv to load_shared_memory followed by apply_shared_memory | GMImpossible (250) |
 | #hp | Refresh your HP bar from the server. | Player (0) |
 | #incstat | Increases or Decreases a client's stats permanently. | GMMgmt (200) |
 | #instance | Modify Instances | GMMgmt (200) |
 | #interrogateinv | use [help] argument for available options | Player (0) |
-| #interrupt | [message id] [color] - Interrupt your casting. Arguments are optional. | Guide (50) |
+| #interrupt | [Message ID] [Color] - Interrupt your casting. Arguments are optional. | Guide (50) |
 | #invsnapshot | Manipulates inventory snapshots for your current target | QuestTroupe (80) |
 | #invul | [On&#124;Off]] - Turn player target's or your invulnerable flag on or off | QuestTroupe (80) |
 | #ipban | [IP] - Ban IP | GMMgmt (200) |
@@ -116,7 +117,7 @@
 | #kill | Kill your target | GMAdmin (100) |
 | #killallnpcs | [npc_name] - Kills all npcs by search name, leave blank for all attackable NPC's | GMMgmt (200) |
 | #lastname | [Last Name] - Set your or your player target's last name (use \-1\ to remove last name) | Guide (50) |
-| #level | [Level] - Set your target's level | Steward (10) |
+| #level | [Level] - Set your or your target's level | Steward (10) |
 | #list | [npcs&#124;players&#124;corpses&#124;doors&#124;objects] [search] - Search entities | ApprenticeGuide (20) |
 | #listpetition | List petitions | Guide (50) |
 | #lootsim | [npc_type_id] [loottable_id] [iterations] - Runs benchmark simulations using real loot logic to report numbers and data | GMImpossible (250) |
@@ -264,7 +265,7 @@
 | #viewpetition | [petition number] - View a petition | ApprenticeGuide (20) |
 | #viewrecipe | [Recipe ID] - Show a recipe's entries | GMAdmin (100) |
 | #viewzoneloot | [item id] - Allows you to search a zone's loot for a specific item ID. (0 shows all loot in the zone) | QuestTroupe (80) |
-| #wc | [wear slot] [material] - Sends an OP_WearChange for your target | GMMgmt (200) |
+| #wc | [Slot ID] [Material] [Hero Forge Model] [Elite Material] - Sets the specified slot for you or your target to a material, Hero Forge Model and Elite Material are optional | GMMgmt (200) |
 | #weather | [0/1/2/3] (Off/Rain/Snow/Manual) - Change the weather | QuestTroupe (80) |
 | #who | [search] | ApprenticeGuide (20) |
 | #worldshutdown | Shut down world and all zones | GMMgmt (200) |
