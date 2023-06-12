@@ -1,7 +1,7 @@
 # aa_rank_effects
 
 !!! info
-	This page was last generated 2023.04.23
+	This page was last generated 2023.06.12
 
 ## Relationship Diagram(s)
 

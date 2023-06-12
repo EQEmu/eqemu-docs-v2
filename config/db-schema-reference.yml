@@ -4131,21 +4131,26 @@ character_tasks:
     nullable: "NO"
     ordinal_position: 6
 character_tribute:
-  id:
+  character_id:
     dataType: int
     description: '[Character Identifier](character_data.md)'
+    nullable: "NO"
+    ordinal_position: 2
+  id:
+    dataType: int
+    description: Unique Tribute Identifier
     nullable: "NO"
     ordinal_position: 1
   tier:
     dataType: tinyint
     description: Tier
     nullable: "NO"
-    ordinal_position: 2
+    ordinal_position: 3
   tribute:
     dataType: int
     description: Tribute
     nullable: "NO"
-    ordinal_position: 3
+    ordinal_position: 4
 chatchannel_reserved_names:
   id:
     dataType: int

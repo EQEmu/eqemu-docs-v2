@@ -236,7 +236,7 @@ character_data:
   - 1-* id->character_spells:id
   - 1-* id->character_task_timers:character_id
   - 1-* id->character_tasks:charid
-  - 1-* id->character_tribute:id
+  - 1-* id->character_tribute:character_id
   - 1-* id->completed_shared_task_members:character_id
   - 1-* id->completed_tasks:charid
   - 1-* id->dynamic_zone_members:character_id
