@@ -2,7 +2,7 @@
 
     This page lists the Bot commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.01.22
+    Last Generated: 2023.06.12
 
 ## Description
 
@@ -88,14 +88,6 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^boteyes | Changes the eye colors of a bot | Player (0) |
 | ^botface | Changes the facial appearance of your bot | Player (0) |
 | ^botfollowdistance | Changes the follow distance(s) of a bot(s) | Player (0) |
-| ^botgroup | Lists the available bot-group [subcommands] | Player (0) |
-| ^botgroupaddmember | Adds a member to a bot-group | Player (0) |
-| ^botgroupautospawn | Toggles auto spawning for a bot-group, spawning the bot group when you zone automatically | Player (0) |
-| ^botgroupcreate | Creates a bot-group and designates a leader | Player (0) |
-| ^botgroupdelete | Deletes a bot-group and releases its members | Player (0) |
-| ^botgrouplist | Lists all of your existing bot-groups | Player (0) |
-| ^botgroupload | Loads all members of a bot-group | Player (0) |
-| ^botgroupremovemember | Removes a bot from its bot-group | Player (0) |
 | ^bothaircolor | Changes the hair color of a bot | Player (0) |
 | ^bothairstyle | Changes the hairstyle of a bot | Player (0) |
 | ^botheritage | Changes the Drakkin heritage of a bot | Player (0) |
@@ -115,6 +107,7 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^bottitle | Sets a bots title | Player (0) |
 | ^botupdate | Updates a bot to reflect any level changes that you have experienced | Player (0) |
 | ^botwoad | Changes the Barbarian woad of a bot | Player (0) |
+| ^casterrange | Controls the range casters will try to stay away from a mob (if too far, they will skip spells that are out-of-range) | Player (0) |
 | ^charm | Attempts to have a bot charm your target | Player (0) |
 | ^circle | Orders a Druid bot to open a magical doorway to a specified destination | Player (0) |
 | ^cure | Orders a bot to remove any ailments | Player (0) |
