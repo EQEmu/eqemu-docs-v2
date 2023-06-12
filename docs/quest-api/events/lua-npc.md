@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ## EVENT_AGGRO_SAY
 
@@ -45,6 +45,40 @@ function EVENT_CAST_ON(e) {
 function EVENT_COMBAT(e) {
 	eq.debug("other " .. e.other);
 	eq.debug("joined " .. e.joined);
+}
+```
+## EVENT_DAMAGE_GIVEN
+
+``` lua
+
+function EVENT_DAMAGE_GIVEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
+}
+```
+## EVENT_DAMAGE_TAKEN
+
+``` lua
+
+function EVENT_DAMAGE_TAKEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_DEATH

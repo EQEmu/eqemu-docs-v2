@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ## EVENT_SPELL_EFFECT_BOT
 

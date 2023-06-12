@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ## EVENT_AA_BUY
 
@@ -13,6 +13,14 @@ function EVENT_AA_BUY(e) {
 	eq.debug("aa_id " .. e.aa_id);
 	eq.debug("aa_previous_id " .. e.aa_previous_id);
 	eq.debug("aa_next_id " .. e.aa_next_id);
+}
+```
+## EVENT_AA_EXP_GAIN
+
+``` lua
+
+function EVENT_AA_EXP_GAIN(e) {
+	eq.debug("aa_exp_gained " .. e.aa_exp_gained);
 }
 ```
 ## EVENT_AA_GAIN
@@ -200,6 +208,7 @@ function EVENT_CONNECT(e) {
 
 function EVENT_CONSIDER(e) {
 	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_CONSIDER_CORPSE
@@ -208,6 +217,41 @@ function EVENT_CONSIDER(e) {
 
 function EVENT_CONSIDER_CORPSE(e) {
 	eq.debug("corpse_entity_id " .. e.corpse_entity_id);
+	eq.debug("corpse " .. e.corpse);
+}
+```
+## EVENT_DAMAGE_GIVEN
+
+``` lua
+
+function EVENT_DAMAGE_GIVEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
+}
+```
+## EVENT_DAMAGE_TAKEN
+
+``` lua
+
+function EVENT_DAMAGE_TAKEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_DEATH
@@ -234,6 +278,17 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("skill " .. e.skill);
 }
 ```
+## EVENT_DESTROY_ITEM_CLIENT
+
+``` lua
+
+function EVENT_DESTROY_ITEM_CLIENT(e) {
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_name " .. e.item_name);
+	eq.debug("quantity " .. e.quantity);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_DISCONNECT
 
 ``` lua
@@ -246,6 +301,19 @@ function EVENT_DISCONNECT(e) {
 ``` lua
 
 function EVENT_DISCOVER_ITEM(e) {
+	eq.debug("item " .. e.item);
+}
+```
+## EVENT_DROP_ITEM_CLIENT
+
+``` lua
+
+function EVENT_DROP_ITEM_CLIENT(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("quantity " .. e.quantity);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_name " .. e.item_name);
+	eq.debug("spell_id " .. e.spell_id);
 	eq.debug("item " .. e.item);
 }
 ```
@@ -316,6 +384,14 @@ function EVENT_EQUIP_ITEM_CLIENT(e) {
 function EVENT_EXIT(e) {
 }
 ```
+## EVENT_EXP_GAIN
+
+``` lua
+
+function EVENT_EXP_GAIN(e) {
+	eq.debug("exp_gained " .. e.exp_gained);
+}
+```
 ## EVENT_FEIGN_DEATH
 
 ``` lua
@@ -384,6 +460,30 @@ function EVENT_INSPECT(e) {
 	eq.debug("other " .. e.other);
 }
 ```
+## EVENT_ITEM_CLICK_CAST_CLIENT
+
+``` lua
+
+function EVENT_ITEM_CLICK_CAST_CLIENT(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_name " .. e.item_name);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("item " .. e.item);
+}
+```
+## EVENT_ITEM_CLICK_CLIENT
+
+``` lua
+
+function EVENT_ITEM_CLICK_CLIENT(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_name " .. e.item_name);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_LANGUAGE_SKILL_UP
 
 ``` lua
@@ -427,6 +527,16 @@ function EVENT_LEVEL_UP(e) {
 function EVENT_LOOT(e) {
 	eq.debug("item " .. e.item);
 	eq.debug("corpse " .. e.corpse);
+}
+```
+## EVENT_MEMORIZE_SPELL
+
+``` lua
+
+function EVENT_MEMORIZE_SPELL(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("spell " .. e.spell);
 }
 ```
 ## EVENT_MERCHANT_BUY
@@ -496,6 +606,16 @@ function EVENT_SAY(e) {
 	eq.debug("language " .. e.language);
 }
 ```
+## EVENT_SCRIBE_SPELL
+
+``` lua
+
+function EVENT_SCRIBE_SPELL(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("spell " .. e.spell);
+}
+```
 ## EVENT_SIGNAL
 
 ``` lua
@@ -520,6 +640,15 @@ function EVENT_SKILL_UP(e) {
 ``` lua
 
 function EVENT_TARGET_CHANGE(e) {
+	eq.debug("other " .. e.other);
+}
+```
+## EVENT_TASK_ACCEPTED
+
+``` lua
+
+function EVENT_TASK_ACCEPTED(e) {
+	eq.debug("task_id " .. e.task_id);
 }
 ```
 ## EVENT_TASK_BEFORE_UPDATE
@@ -602,6 +731,26 @@ function EVENT_UNEQUIP_ITEM_CLIENT(e) {
 function EVENT_UNHANDLED_OPCODE(e) {
 	eq.debug("packet " .. e.packet);
 	eq.debug("connecting " .. e.connecting);
+}
+```
+## EVENT_UNMEMORIZE_SPELL
+
+``` lua
+
+function EVENT_UNMEMORIZE_SPELL(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("spell " .. e.spell);
+}
+```
+## EVENT_UNSCRIBE_SPELL
+
+``` lua
+
+function EVENT_UNSCRIBE_SPELL(e) {
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("spell " .. e.spell);
 }
 ```
 ## EVENT_USE_SKILL

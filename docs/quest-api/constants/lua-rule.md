@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ``` lua
 Rule.AAExpMultiplier
@@ -37,6 +37,7 @@ Rule.AllowCamelCaseNames
 Rule.AllowCorpse
 Rule.AllowCrossClassTrainers
 Rule.AllowDoubleInvis
+Rule.AllowExtraDmgSkill
 Rule.AllowItemTGB
 Rule.AllowMQTarget
 Rule.AllowMercSuspendInCombat
@@ -47,6 +48,7 @@ Rule.AllowOwnerOptionAutoDefend
 Rule.AllowSpellMemorizeFromItem
 Rule.AllowTickPulling
 Rule.AllyFactionMinimum
+Rule.AlternateAugmentationSealer
 Rule.AlwaysNotifyNewLeaderOnChange
 Rule.AlwaysSendTargetsBuffs
 Rule.AmiablyFactionMinimum
@@ -78,6 +80,8 @@ Rule.BaseImmunityLevel
 Rule.BaseInstrumentSoftCap
 Rule.BaseProcChance
 Rule.BaseRunSpeedCap
+Rule.BatchPlayerEventProcessChunkSize
+Rule.BatchPlayerEventProcessIntervalSeconds
 Rule.BeastlordTrackingDistanceMultiplier
 Rule.BeginCast
 Rule.BerserkerFrenzyEnd
@@ -99,6 +103,7 @@ Rule.CasterStopMeleeLevel
 Rule.CazicTouchTargetsPetOwner
 Rule.ChaBonusMod
 Rule.ChaPenaltyMod
+Rule.ChannelsIgnoreNameFilter
 Rule.ChargeMercPurchaseCost
 Rule.ChargeMercUpkeepCost
 Rule.CharismaCharmDuration
@@ -128,6 +133,7 @@ Rule.CompressZoneStream
 Rule.CorpseDecayTimeMS
 Rule.CorpseResTimeMS
 Rule.CorpseUnlockTimer
+Rule.CrashReporting
 Rule.CreationLimit
 Rule.CriticalDamage
 Rule.CriticallyWoundedAggroMod
@@ -158,7 +164,6 @@ Rule.DisableNoTransfer
 Rule.DisablePotionBelt
 Rule.DisableSpellFocusEffects
 Rule.DismountWater
-Rule.DistanceCanTravelBeforeAdjustment
 Rule.DistanceForRescueAccept
 Rule.DistanceForRescueComplete
 Rule.DivineInterventionHeal
@@ -183,6 +188,8 @@ Rule.EnableDevTools
 Rule.EnableDiscoveredItems
 Rule.EnableFearPathing
 Rule.EnableFoodRequirement
+Rule.EnableGroupEXPModifier
+Rule.EnableGroupMemberEXPModifier
 Rule.EnableHungerPenalties
 Rule.EnableIPExemptions
 Rule.EnableInDynamicZoneStatus
@@ -196,6 +203,8 @@ Rule.EnableMailKeyIPVerification
 Rule.EnableMailSystem
 Rule.EnableMeritBasedFaction
 Rule.EnableNPCQuestJournal
+Rule.EnableRaidEXPModifier
+Rule.EnableRaidMemberEXPModifier
 Rule.EnableRangerAutoFire
 Rule.EnableReturnHomeButton
 Rule.EnableShadowrest
@@ -212,6 +221,7 @@ Rule.EnableWarpToTrader
 Rule.EnableWarriorShielding
 Rule.EnableXTargetting
 Rule.EnableZoneControllerGlobals
+Rule.Enabled
 Rule.EnchanterTrackingDistanceMultiplier
 Rule.EnduranceRegenMultiplier
 Rule.EnforceAugmentRestriction
@@ -222,6 +232,7 @@ Rule.EnvironmentDamageMulipliter
 Rule.ExemptMaxClientsStatus
 Rule.ExpMultiplier
 Rule.ExpPerPoint
+Rule.ExpRewardsIgnoreLevelBasedEXPMods
 Rule.ExpansionSettings
 Rule.ExperiencePercentCapPerKill
 Rule.ExpireRead
@@ -257,6 +268,7 @@ Rule.ForageChance
 Rule.FrontalStunImmunityClasses
 Rule.FrontalStunImmunityRaces
 Rule.FullEndurOnDeath
+Rule.FullGroupEXPModifier
 Rule.FullManaOnDeath
 Rule.GMAccountIPList
 Rule.GlobalChatLevelLimit
@@ -266,7 +278,7 @@ Rule.GraveyardTimeMS
 Rule.GreenModifier
 Rule.GroupBuffing
 Rule.GroupExpMultiplier
-Rule.GuildBankZoneID
+Rule.GroupMemberEXPModifier
 Rule.GuildHallExpirationDays
 Rule.HOTsScaleWithHealAmt
 Rule.HPRegenMultiplier
@@ -276,10 +288,20 @@ Rule.HeadshotOnlyHumanoids
 Rule.HealOnLevel
 Rule.HealRotationMaxMembers
 Rule.HealRotationMaxTargets
+Rule.HeroicAgilityMultiplier
+Rule.HeroicDexterityMultiplier
+Rule.HeroicIntelligenceIncreaseSpellDmgMultiplier
+Rule.HeroicIntelligenceMultiplier
+Rule.HeroicStaminaMultiplier
+Rule.HeroicStatsUseDataBucketsToScale
+Rule.HeroicStrengthMultiplier
+Rule.HeroicWisdomIncreaseHealAmtMultiplier
+Rule.HeroicWisdomMultiplier
 Rule.HideMeCommandDisablesTells
 Rule.HitBoxMod
 Rule.HotZoneBonus
 Rule.IPLimitDisconnectAll
+Rule.IgnoreLevelBasedHasteCaps
 Rule.IgnoreSpellDmgLvlRestriction
 Rule.IksarCommonTongue
 Rule.IllusionsAlwaysPersist
@@ -302,6 +324,7 @@ Rule.ItemDamageShieldCap
 Rule.ItemDoTShieldingCap
 Rule.ItemEnduranceRegenCap
 Rule.ItemExtraDmgCap
+Rule.ItemExtraSkillDamageCalcAsPercent
 Rule.ItemExtraSpellAmtCalcAsPercent
 Rule.ItemHealAmtCap
 Rule.ItemHealthRegenCap
@@ -330,6 +353,7 @@ Rule.LastFightingDelayMovingMax
 Rule.LastFightingDelayMovingMin
 Rule.LeashDistance
 Rule.LeaveCorpses
+Rule.LeaveCursorMoneyOnCorpse
 Rule.LeaveNakedCorpses
 Rule.LevelBasedEXPMods
 Rule.LevelToStopACTwinkControl
@@ -358,6 +382,7 @@ Rule.MaxCharmDurationForPlayerCharacter
 Rule.MaxClientsPerIP
 Rule.MaxClientsSetByStatus
 Rule.MaxDiscSlotsNPC
+Rule.MaxDistanceToClickDoors
 Rule.MaxDraggedCorpses
 Rule.MaxExpLevel
 Rule.MaxFearDurationForPlayerCharacter
@@ -368,6 +393,7 @@ Rule.MaxLevelRange
 Rule.MaxMessagesBeforeKick
 Rule.MaxNavmeshNodes
 Rule.MaxNumberForGroup
+Rule.MaxPermanentPlayerChannels
 Rule.MaxRaceID
 Rule.MaxRampageTargets
 Rule.MaxScalingProcAggro
@@ -379,6 +405,7 @@ Rule.MaxTradeskillSearchSkillDiff
 Rule.MaxTrainSpecializations
 Rule.MaxTrainTradeskills
 Rule.MaximumMessagesPerInterval
+Rule.MaximumQuestErrors
 Rule.MeleeCritDifficulty
 Rule.MeleePush
 Rule.MeleePushChance
@@ -401,6 +428,7 @@ Rule.MinStatusToZoneAnywhere
 Rule.MinimumMessagesPerInterval
 Rule.MinorNPCCorpseDecayTimeMS
 Rule.MobCloseScanDistance
+Rule.MobPathingVisualDebug
 Rule.MobZVisualDebug
 Rule.ModernAAScalingAALimit
 Rule.ModernAAScalingAAMinimum
@@ -412,6 +440,7 @@ Rule.NPCAssistCap
 Rule.NPCAssistCapTimer
 Rule.NPCAttackMagicLevel
 Rule.NPCBashKickLevel
+Rule.NPCBuffLevelRestrictions
 Rule.NPCCanCrit
 Rule.NPCFlurryChance
 Rule.NPCGateDistanceBind
@@ -445,7 +474,6 @@ Rule.OldResurrectionSicknessSpell
 Rule.OldResurrectionSicknessSpellID
 Rule.OnInviteReceiveAlreadyinGroupMessage
 Rule.OneProcPerWeapon
-Rule.OrnamentationAugmentType
 Rule.PEQZoneDebuff1
 Rule.PEQZoneDebuff2
 Rule.PEQZoneHPRatio
@@ -470,6 +498,7 @@ Rule.PlayerCreationRequiredLevel
 Rule.PlayerCreationRequiredStatus
 Rule.PlayerCreationRequiredTime
 Rule.PlayerDropItems
+Rule.PlayerEventsQSProcess
 Rule.PlayerLogAAPurchases
 Rule.PlayerLogAARate
 Rule.PlayerLogAlternateCurrencyTransactions
@@ -537,6 +566,7 @@ Rule.RestRegenTimeToActivate
 Rule.RestrictApplyPotionToRogue
 Rule.RestrictSpellScribing
 Rule.ResurrectRadius
+Rule.ResurrectionEffectBlock
 Rule.ResurrectionSickness
 Rule.ResurrectionSicknessSpell
 Rule.ResurrectionSicknessSpellID
@@ -588,6 +618,7 @@ Rule.StartEnrageValue
 Rule.StartZoneSameAsBindOnCreation
 Rule.StatCap
 Rule.SuccorFailChance
+Rule.SummonMeleeRange
 Rule.SuppressCommandErrors
 Rule.SuspendIntervalMS
 Rule.SuspendIntervalS

@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
-        Last generated 2023.01.15
+        Last generated 2023.06.12
 
     ``` perl
     $raid->BalanceHP(int32_t penalty, uint32_t group_id);
@@ -14,7 +14,7 @@
     $raid->GetClientByIndex(uint16_t member_index);
     $raid->GetGroup(string name);
     $raid->GetGroup(Client* client);
-    $raid->GetGroupNumber(member_index {);
+    $raid->GetGroupNumber(member_index);
     $raid->GetHighestLevel();
     $raid->GetID();
     $raid->GetLeader();
@@ -42,7 +42,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Raid){:target="Raid"} for latest definitions and Quest examples
 
-        Last generated 2023.01.15
+        Last generated 2023.06.12
 
     ``` lua
     raid:BalanceHP(int penalty, uint32 group_id);

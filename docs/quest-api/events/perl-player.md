@@ -2,8 +2,15 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
+## 
+
+``` perl
+
+sub  {
+}
+```
 ## EVENT_AA_BUY
 
 ``` perl
@@ -13,6 +20,14 @@ sub EVENT_AA_BUY {
 	quest::debug("aa_id " . $aa_id);
 	quest::debug("aa_previous_id " . $aa_previous_id);
 	quest::debug("aa_next_id " . $aa_next_id);
+}
+```
+## EVENT_AA_EXP_GAIN
+
+``` perl
+
+sub EVENT_AA_EXP_GAIN {
+	quest::debug("aa_exp_gained " . $aa_exp_gained);
 }
 ```
 ## EVENT_AA_GAIN
@@ -56,7 +71,8 @@ sub EVENT_AUGMENT_INSERT_CLIENT {
 	quest::debug("item_slot " . $item_slot);
 	quest::debug("augment_id " . $augment_id);
 	quest::debug("augment_slot " . $augment_slot);
-	quest::debug("destroyed " . $destroyed);
+	quest::debug("item " . $item);
+	quest::debug("augment " . $augment);
 }
 ```
 ## EVENT_AUGMENT_REMOVE_CLIENT
@@ -69,6 +85,8 @@ sub EVENT_AUGMENT_REMOVE_CLIENT {
 	quest::debug("augment_id " . $augment_id);
 	quest::debug("augment_slot " . $augment_slot);
 	quest::debug("destroyed " . $destroyed);
+	quest::debug("item " . $item);
+	quest::debug("augment " . $augment);
 }
 ```
 ## EVENT_BOT_COMMAND
@@ -132,6 +150,7 @@ sub EVENT_CAST_ON {
 sub EVENT_CLICKDOOR {
 	quest::debug("doorid " . $doorid);
 	quest::debug("version " . $version);
+	quest::debug("door " . $door);
 }
 ```
 ## EVENT_CLICK_OBJECT
@@ -141,6 +160,7 @@ sub EVENT_CLICKDOOR {
 sub EVENT_CLICK_OBJECT {
 	quest::debug("objectid " . $objectid);
 	quest::debug("clicker_id " . $clicker_id);
+	quest::debug("object " . $object);
 }
 ```
 ## EVENT_COMBINE
@@ -205,6 +225,7 @@ sub EVENT_CONNECT {
 
 sub EVENT_CONSIDER {
 	quest::debug("entity_id " . $entity_id);
+	quest::debug("target " . $target);
 }
 ```
 ## EVENT_CONSIDER_CORPSE
@@ -213,6 +234,39 @@ sub EVENT_CONSIDER {
 
 sub EVENT_CONSIDER_CORPSE {
 	quest::debug("corpse_entity_id " . $corpse_entity_id);
+	quest::debug("corpse " . $corpse);
+}
+```
+## EVENT_DAMAGE_GIVEN
+
+``` perl
+
+sub EVENT_DAMAGE_GIVEN {
+	quest::debug("entity_id " . $entity_id);
+	quest::debug("damage " . $damage);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("skill_id " . $skill_id);
+	quest::debug("is_damage_shield " . $is_damage_shield);
+	quest::debug("is_avoidable " . $is_avoidable);
+	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("is_buff_tic " . $is_buff_tic);
+	quest::debug("special_attack " . $special_attack);
+}
+```
+## EVENT_DAMAGE_TAKEN
+
+``` perl
+
+sub EVENT_DAMAGE_TAKEN {
+	quest::debug("entity_id " . $entity_id);
+	quest::debug("damage " . $damage);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("skill_id " . $skill_id);
+	quest::debug("is_damage_shield " . $is_damage_shield);
+	quest::debug("is_avoidable " . $is_avoidable);
+	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("is_buff_tic " . $is_buff_tic);
+	quest::debug("special_attack " . $special_attack);
 }
 ```
 ## EVENT_DEATH
@@ -226,8 +280,6 @@ sub EVENT_DEATH {
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_entity_id " . $killed_entity_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
@@ -249,12 +301,21 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killed_entity_id " . $killed_entity_id);
 	quest::debug("killed_bot_id " . $killed_bot_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+}
+```
+## EVENT_DESTROY_ITEM_CLIENT
+
+``` perl
+
+sub EVENT_DESTROY_ITEM_CLIENT {
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_name " . $item_name);
+	quest::debug("quantity " . $quantity);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_DISCONNECT
@@ -270,20 +331,20 @@ sub EVENT_DISCONNECT {
 
 sub EVENT_DISCOVER_ITEM {
 	quest::debug("itemid " . $itemid);
+	quest::debug("item " . $item);
 }
 ```
-## EVENT_DUEL_LOSE
+## EVENT_DROP_ITEM_CLIENT
 
 ``` perl
 
-sub EVENT_DUEL_LOSE {
-}
-```
-## EVENT_DUEL_WIN
-
-``` perl
-
-sub EVENT_DUEL_WIN {
+sub EVENT_DROP_ITEM_CLIENT {
+	quest::debug("quantity " . $quantity);
+	quest::debug("item_name " . $item_name);
+	quest::debug("item_id " . $item_id);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_ENTER
@@ -327,6 +388,7 @@ sub EVENT_EQUIP_ITEM_CLIENT {
 	quest::debug("item_id " . $item_id);
 	quest::debug("item_quantity " . $item_quantity);
 	quest::debug("slot_id " . $slot_id);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_EXIT
@@ -334,6 +396,14 @@ sub EVENT_EQUIP_ITEM_CLIENT {
 ``` perl
 
 sub EVENT_EXIT {
+}
+```
+## EVENT_EXP_GAIN
+
+``` perl
+
+sub EVENT_EXP_GAIN {
+	quest::debug("exp_gained " . $exp_gained);
 }
 ```
 ## EVENT_FEIGN_DEATH
@@ -363,6 +433,7 @@ sub EVENT_FISH_START {
 
 sub EVENT_FISH_SUCCESS {
 	quest::debug("fished_item " . $fished_item);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_FORAGE_FAILURE
@@ -378,6 +449,7 @@ sub EVENT_FORAGE_FAILURE {
 
 sub EVENT_FORAGE_SUCCESS {
 	quest::debug("foraged_item " . $foraged_item);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_GM_COMMAND
@@ -403,6 +475,31 @@ sub EVENT_GROUP_CHANGE {
 
 sub EVENT_INSPECT {
 	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+}
+```
+## EVENT_ITEM_CLICK_CAST_CLIENT
+
+``` perl
+
+sub EVENT_ITEM_CLICK_CAST_CLIENT {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_name " . $item_name);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("item " . $item);
+}
+```
+## EVENT_ITEM_CLICK_CLIENT
+
+``` perl
+
+sub EVENT_ITEM_CLICK_CLIENT {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("item_id " . $item_id);
+	quest::debug("item_name " . $item_name);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_LANGUAGE_SKILL_UP
@@ -447,8 +544,20 @@ sub EVENT_LEVEL_UP {
 sub EVENT_LOOT {
 	quest::debug("looted_id " . $looted_id);
 	quest::debug("looted_charges " . $looted_charges);
-	quest::debug("corpse " . $corpse);
+	quest::debug("corpse_name " . $corpse_name);
 	quest::debug("corpse_id " . $corpse_id);
+	quest::debug("item " . $item);
+	quest::debug("corpse " . $corpse);
+}
+```
+## EVENT_MEMORIZE_SPELL
+
+``` perl
+
+sub EVENT_MEMORIZE_SPELL {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_MERCHANT_BUY
@@ -491,6 +600,7 @@ sub EVENT_PAYLOAD {
 sub EVENT_PLAYER_PICKUP {
 	quest::debug("picked_up_id " . $picked_up_id);
 	quest::debug("picked_up_entity_id " . $picked_up_entity_id);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_POPUPRESPONSE
@@ -520,6 +630,16 @@ sub EVENT_SAY {
 	quest::debug("langid " . $langid);
 }
 ```
+## EVENT_SCRIBE_SPELL
+
+``` perl
+
+sub EVENT_SCRIBE_SPELL {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
+}
+```
 ## EVENT_SIGNAL
 
 ``` perl
@@ -544,6 +664,15 @@ sub EVENT_SKILL_UP {
 ``` perl
 
 sub EVENT_TARGET_CHANGE {
+	quest::debug("target " . $target);
+}
+```
+## EVENT_TASKACCEPTED
+
+``` perl
+
+sub EVENT_TASKACCEPTED {
+	quest::debug("task_id " . $task_id);
 }
 ```
 ## EVENT_TASK_BEFORE_UPDATE
@@ -616,6 +745,7 @@ sub EVENT_UNEQUIP_ITEM_CLIENT {
 	quest::debug("item_id " . $item_id);
 	quest::debug("item_quantity " . $item_quantity);
 	quest::debug("slot_id " . $slot_id);
+	quest::debug("item " . $item);
 }
 ```
 ## EVENT_UNHANDLED_OPCODE
@@ -623,6 +753,26 @@ sub EVENT_UNEQUIP_ITEM_CLIENT {
 ``` perl
 
 sub EVENT_UNHANDLED_OPCODE {
+}
+```
+## EVENT_UNMEMORIZE_SPELL
+
+``` perl
+
+sub EVENT_UNMEMORIZE_SPELL {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
+}
+```
+## EVENT_UNSCRIBE_SPELL
+
+``` perl
+
+sub EVENT_UNSCRIBE_SPELL {
+	quest::debug("slot_id " . $slot_id);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_USE_SKILL

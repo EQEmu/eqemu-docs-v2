@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=ItemInst){:target="ItemInst"} for latest definitions and Quest examples
 
-        Last generated 2023.01.15
+        Last generated 2023.06.12
 
     ``` lua
     iteminst:AddExp(uint32 exp);
@@ -12,13 +12,13 @@
     iteminst:Clone();
     iteminst:ContainsAugmentByID(uint32 item_id);
     iteminst:CountAugmentByID(uint32 item_id);
-    iteminst:DeleteCustomData(string identifier);
+    iteminst:DeleteCustomData(const std);
     iteminst:GetAugment(int slot);
     iteminst:GetAugmentItemID(int slot);
     iteminst:GetAugmentType();
     iteminst:GetCharges();
     iteminst:GetColor();
-    iteminst:GetCustomData(identifier);
+    iteminst:GetCustomData(const std);
     iteminst:GetCustomDataString();
     iteminst:GetExp();
     iteminst:GetID();
@@ -45,10 +45,10 @@
     iteminst:RemoveTaskDeliveredItems();
     iteminst:SetCharges(int charges);
     iteminst:SetColor(uint32 color);
-    iteminst:SetCustomData(string identifier, bool value);
-    iteminst:SetCustomData(string identifier, float value);
-    iteminst:SetCustomData(string identifier, int value);
-    iteminst:SetCustomData(string identifier, string value);
+    iteminst:SetCustomData(const std);
+    iteminst:SetCustomData(const std);
+    iteminst:SetCustomData(const std);
+    iteminst:SetCustomData(const string &identifier, std);
     iteminst:SetExp(uint32 exp);
     iteminst:SetInstNoDrop(bool flag);
     iteminst:SetPrice(uint32 price);

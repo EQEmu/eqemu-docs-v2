@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ## EVENT_AGGRO_SAY
 
@@ -50,6 +50,20 @@ function EVENT_COMBAT(e) {
 	eq.debug("joined " .. e.joined);
 }
 ```
+## EVENT_DAMAGE_GIVEN
+
+``` lua
+
+function EVENT_DAMAGE_GIVEN(e) {
+}
+```
+## EVENT_DAMAGE_TAKEN
+
+``` lua
+
+function EVENT_DAMAGE_TAKEN(e) {
+}
+```
 ## EVENT_DEATH
 
 ``` lua
@@ -77,6 +91,17 @@ function EVENT_DEATH_COMPLETE(e) {
 ``` lua
 
 function EVENT_DESPAWN(e) {
+}
+```
+## EVENT_EQUIP_ITEM_BOT
+
+``` lua
+
+function EVENT_EQUIP_ITEM_BOT(e) {
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item " .. e.item);
 }
 ```
 ## EVENT_PAYLOAD
@@ -159,10 +184,23 @@ function EVENT_TRADE(e) {
 	eq.debug("trade " .. e.trade);
 }
 ```
+## EVENT_UNEQUIP_ITEM_BOT
+
+``` lua
+
+function EVENT_UNEQUIP_ITEM_BOT(e) {
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_quantity " .. e.item_quantity);
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_USE_SKILL
 
 ``` lua
 
 function EVENT_USE_SKILL(e) {
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("skill_level " .. e.skill_level);
 }
 ```

@@ -1,10 +1,10 @@
-=== "Perl (132)"
+=== "Perl (148)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2023.01.15
+        Last generated 2023.06.12
 
     ``` perl
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, uint32 max_delay);
@@ -13,15 +13,15 @@
     $npc->AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     $npc->AddCash(uint16 copper, uint16 silver, uint16 gold, uint16 platinum);
     $npc->AddDefensiveProc(uint16_t spell_id, uint16_t chance);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3);
     $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4);
     $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);
     $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, uint32 aug6);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3);
-    $npc->AddItem(uint32 item_id);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item);
     $npc->AddItem(uint32 item_id, uint16 charges);
+    $npc->AddItem(uint32 item_id);
     $npc->AddLootTable();
     $npc->AddLootTable(uint32 loottable_id);
     $npc->AddMeleeProc(uint16_t spell_id, uint16_t chance);
@@ -51,6 +51,9 @@
     $npc->GetHealScale();
     $npc->GetItemIDBySlot(uint16 loot_slot);
     $npc->GetKeepsSoldItems();
+    $npc->GetLDoNLockedSkill();
+    $npc->GetLDoNTrapSpellID();
+    $npc->GetLDoNTrapType();
     $npc->GetLootList();
     $npc->GetLoottableID();
     $npc->GetMaxDMG();
@@ -84,12 +87,16 @@
     $npc->GetWaypointMax();
     $npc->HasAISpellEffect(int spell_effect_id);
     $npc->HasItem(uint32 item_id);
+    $npc->HasSpecialAbilities();
     $npc->IsAnimal();
     $npc->IsGuarding();
+    $npc->IsLDoNLocked();
+    $npc->IsLDoNTrapped();
     $npc->IsOnHatelist(Mob* mob);
     $npc->IsRaidTarget();
     $npc->IsRareSpawn();
     $npc->IsTaunting();
+    $npc->IsUnderwaterOnly();
     $npc->MerchantCloseShop();
     $npc->MerchantOpenShop();
     $npc->ModifyNPCStat(string stat, string value);
@@ -105,22 +112,29 @@
     $npc->RemoveCash();
     $npc->RemoveDefensiveProc(uint16_t spell_id);
     $npc->RemoveFromHateList(Mob* mob);
-    $npc->RemoveItem(uint32 item_id, uint16 quantity, uint16 slot_id);
     $npc->RemoveItem(uint32 item_id);
+    $npc->RemoveItem(uint32 item_id, uint16 quantity, uint16 slot_id);
     $npc->RemoveItem(uint32 item_id, uint16 quantity);
     $npc->RemoveMeleeProc(uint16_t spell_id);
     $npc->RemoveRangedProc(uint16_t spell_id);
     $npc->ResumeWandering();
-    $npc->SaveGuardSpot();
     $npc->SaveGuardSpot(float x, float y, float z, float heading);
     $npc->SaveGuardSpot(bool clear);
+    $npc->SaveGuardSpot();
     $npc->ScaleNPC(uint8 npc_level);
+    $npc->ScaleNPC(uint8 npc_level, bool override_special_abilities);
     $npc->SendPayload(int payload_id, string payload_value);
     $npc->SendPayload(int payload_id);
     $npc->SetCopper(uint32 amt);
     $npc->SetGold(uint32 amt);
     $npc->SetGrid(int grid);
     $npc->SetKeepsSoldItems(bool keeps_sold_items);
+    $npc->SetLDoNLocked(bool is_locked);
+    $npc->SetLDoNLockedSkill(uint16 skill_value);
+    $npc->SetLDoNTrapDetected(bool is_detected);
+    $npc->SetLDoNTrapSpellID(uint16 spell_id);
+    $npc->SetLDoNTrapType(uint8 trap_type);
+    $npc->SetLDoNTrapped(bool is_trapped);
     $npc->SetNPCFactionID(int faction_id);
     $npc->SetPetSpellID(uint16 amount);
     $npc->SetPlatinum(uint32 amt);
@@ -129,6 +143,8 @@
     $npc->SetSecSkill(int skill_id);
     $npc->SetSilver(uint32 amt);
     $npc->SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
+    $npc->SetSimpleRoamBox(float box_size, float move_distance);
+    $npc->SetSimpleRoamBox(float box_size);
     $npc->SetSp2(uint32 set_spawn_group_id);
     $npc->SetSpellFocusDMG(int new_spell_focus_dmg);
     $npc->SetSpellFocusHeal(int new_spell_focus_heal);
@@ -140,29 +156,29 @@
     $npc->StopWandering();
     $npc->UpdateWaypoint(int wp_index);
     ```
-=== "Lua (132)"
+=== "Lua (147)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
-        Last generated 2023.01.15
+        Last generated 2023.06.12
 
     ``` lua
-    npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y, uint32 delay, uint32 mindelay);
-    npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
+    npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
     npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust, int min_hp, int max_hp);
+    npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
     npc:AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     npc:AddCash(int copper, int silver, int gold, int platinum);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4);
     npc:AddItem(int item_id, int charges, bool equip, int aug1);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5, int aug6);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3);
     npc:AddItem(int item_id, int charges);
-    npc:AddItem(int item_id, int charges, bool equip);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4);
+    npc:AddItem(int item_id, int charges, bool equip);
     npc:AddLootTable();
     npc:AddLootTable(int id);
     npc:AssignWaypoints(int grid);
@@ -192,6 +208,9 @@
     npc:GetHealScale();
     npc:GetItemIDBySlot(uint16 loot_slot);
     npc:GetKeepsSoldItems();
+    npc:GetLDoNLockedSkill();
+    npc:GetLDoNTrapSpellID();
+    npc:GetLDoNTrapType();
     npc:GetLootList();
     npc:GetLoottableID();
     npc:GetMaxDMG();
@@ -226,12 +245,17 @@
     npc:GetWaypointMax();
     npc:HasAISpellEffect(int spell_effect_id);
     npc:HasItem(uint32 item_id);
+    npc:HasSpecialAbilities();
     npc:IsAnimal();
     npc:IsGuarding();
+    npc:IsLDoNLocked();
+    npc:IsLDoNTrapDetected();
+    npc:IsLDoNTrapped();
     npc:IsOnHatelist(Mob ent);
     npc:IsRaidTarget();
     npc:IsRareSpawn();
     npc:IsTaunting();
+    npc:IsUnderwaterOnly();
     npc:MerchantCloseShop();
     npc:MerchantOpenShop();
     npc:ModifyNPCStat(string stat, string value);
@@ -248,12 +272,13 @@
     npc:RemoveItem(int item_id, int quantity);
     npc:RemoveItem(int item_id);
     npc:ResumeWandering();
-    npc:SaveGuardSpot();
-    npc:SaveGuardSpot(bool clear);
     npc:SaveGuardSpot(float x, float y, float z, float heading);
+    npc:SaveGuardSpot(bool clear);
+    npc:SaveGuardSpot();
+    npc:ScaleNPC(uint8 npc_level, bool override_special_abilities);
     npc:ScaleNPC(uint8 npc_level);
-    npc:SendPayload(int payload_id);
     npc:SendPayload(int payload_id, string payload_value);
+    npc:SendPayload(int payload_id);
     npc:SetCopper(uint32 amt);
     npc:SetFollowCanRun(bool v);
     npc:SetFollowDistance(int dist);
@@ -261,6 +286,12 @@
     npc:SetGold(uint32 amt);
     npc:SetGrid(int grid);
     npc:SetKeepsSoldItems(bool keeps_sold_items);
+    npc:SetLDoNLocked(bool is_locked);
+    npc:SetLDoNLockedSkill(uint16 skill_value);
+    npc:SetLDoNTrapDetected(bool is_detected);
+    npc:SetLDoNTrapSpellID(uint16 spell_id);
+    npc:SetLDoNTrapType(uint8 trap_type);
+    npc:SetLDoNTrapped(bool is_trapped);
     npc:SetNPCFactionID(int id);
     npc:SetPetSpellID(int id);
     npc:SetPlatinum(uint32 amt);
@@ -268,9 +299,9 @@
     npc:SetSaveWaypoint(int wp);
     npc:SetSecSkill(int skill_id);
     npc:SetSilver(uint32 amt);
-    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
-    npc:SetSimpleRoamBox(float box_size);
     npc:SetSimpleRoamBox(float box_size, float move_distance);
+    npc:SetSimpleRoamBox(float box_size);
+    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     npc:SetSp2(int sg2);
     npc:SetSpellFocusDMG(int focus);
     npc:SetSpellFocusHeal(int focus);

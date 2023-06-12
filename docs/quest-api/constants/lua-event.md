@@ -2,11 +2,12 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2023.01.15
+    Last generated 2023.06.12
 
 ``` lua
 Event.aa_buy
-Event.aa_gain
+Event.aa_exp_gained
+Event.aa_gained
 Event.aggro_say
 Event.alt_currency_merchant_buy
 Event.alt_currency_merchant_sell
@@ -28,15 +29,19 @@ Event.command
 Event.connect
 Event.consider
 Event.consider_corpse
+Event.damage_given
+Event.damage_taken
 Event.death
 Event.death_complete
 Event.death_zone
 Event.despawn
 Event.despawn_zone
 Event.destroy_item
+Event.destroy_item_client
 Event.disconnect
 Event.discover_item
 Event.drop_item
+Event.drop_item_client
 Event.duel_lose
 Event.duel_win
 Event.encounter_load
@@ -46,8 +51,10 @@ Event.enter_area
 Event.enter_zone
 Event.environmental_damage
 Event.equip_item
+Event.equip_item_bot
 Event.equip_item_client
 Event.exit
+Event.exp_gain
 Event.feign_death
 Event.fish_failure
 Event.fish_start
@@ -61,6 +68,8 @@ Event.hp
 Event.inspect
 Event.item_click
 Event.item_click_cast
+Event.item_click_cast_client
+Event.item_click_client
 Event.item_enter_zone
 Event.item_tick
 Event.killed_merit
@@ -70,6 +79,7 @@ Event.level_down
 Event.level_up
 Event.loot
 Event.loot_zone
+Event.memorize_spell
 Event.merchant_buy
 Event.merchant_sell
 Event.payload
@@ -78,6 +88,7 @@ Event.popup_response
 Event.proximity_say
 Event.say
 Event.scale_calc
+Event.scribe_spell
 Event.signal
 Event.skill_up
 Event.slay
@@ -100,8 +111,11 @@ Event.timer
 Event.trade
 Event.unaugment_item
 Event.unequip_item
+Event.unequip_item_bot
 Event.unequip_item_client
 Event.unhandled_opcode
+Event.unmemorize_spell
+Event.unscribe_spell
 Event.use_skill
 Event.warp
 Event.waypoint_arrive
