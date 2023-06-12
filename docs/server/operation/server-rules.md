@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.01.22
+    Last Generated: 2023.06.12
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -70,6 +70,11 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Aggro:PetAttackRange | 40000.0 | Maximum squared range /pet attack works at default is 200 |
 | Aggro:NPCAggroMaxDistanceEnabled | true | If enabled, NPC's will drop aggro beyond 600 units or what is defined at the zone level |
 | Aggro:AggroPlayerPets | false | If enabled, NPCs will aggro player pets |
+
+## Analytics Rules
+| Rule Name | Default Value | Description |
+| :--- | :--- | :--- |
+| Analytics:CrashReporting | true | Automatic crash reporting analytics for EQEmu Server developers |
 
 ## Bazaar Rules
 | Rule Name | Default Value | Description |
@@ -183,6 +188,15 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:ItemExtraDmgCap | 150 | Cap for bonuses to melee skills like Bash, Frenzy, etc. |
 | Character:HasteCap | 100 | Haste cap for non-v3(over haste) haste |
 | Character:Hastev3Cap | 25 | Haste cap for v3(over haste) haste |
+| Character:HeroicStatsUseDataBucketsToScale | false | Allows scaling the benefits a character receives from Heroic Stats using Data Buckets. Stacks with other Heroic Stats Mulitplier Rules. |
+| Character:HeroicIntelligenceIncreaseSpellDmgMultiplier | 0.00 | Allows Heroic Intelligence to increase a Players Worn Spell Damage Stat from Equipment, for example, setting this rule to 1.00 will always grant 1 Spell Damage per 1 Heroic Intelligence |
+| Character:HeroicWisdomIncreaseHealAmtMultiplier | 0.00 | Allows Heroic Wisdom to increase a Players Worn Heal Amount Stat from Equipment, for example, setting this rule to 1.00 will always grant 1 Heal Amount per 1 Heroic Wisdom |
+| Character:HeroicStrengthMultiplier | 1.00 | Multplier scales benefits from Heroic Strength. Grants 25 Base Endurance, 0.05 Endurance Regen, 1 Melee Damage each Hit, and 1 Shield AC per 10 Heroic Strength. |
+| Character:HeroicStaminaMultiplier | 1.00 | Multplier scales benefits from Heroic Stamina. Grants 25 Base Endurance, 0.05 Endurance Regen, 100 Base HP, and 0.5 HP Regen per 10 Heroic Stamina. |
+| Character:HeroicAgilityMultiplier | 1.00 | Multplier scales benefits from Heroic Agility. Grants 25 Base Endurance, 0.05 Endurance Regen, and 1 Avoidance AC per 10 Heroic Agility. (Rule does not change Dodge Chance) |
+| Character:HeroicDexterityMultiplier | 1.00 | Multplier scales benefits from Heroic Dexterity. Grants 25 Base Endurance, 0.05 Endurance Regen, and 1 Archery/Throwing Damage each hit per 10 Heroic Dexterity. (Rule does not change Assassinate/Headshot/Block/Parry/Riposte Chances) |
+| Character:HeroicWisdomMultiplier | 1.00 | Multplier scales benefits from Heroic Wisdom. Grants 250 Base Mana, 1 Mana Regen per 25 Heroic Wisdom. |
+| Character:HeroicIntelligenceMultiplier | 1.00 | Multplier scales benefits from Heroic Intelligence. Grants 250 Base Mana, 1 Mana Regen per 25 Heroic Intelligence. |
 | Character:SkillUpModifier | 100 | The probability for a skill-up is multiplied by value/100 |
 | Character:SharedBankPlat | false | Shared bank platinum. Off by default to prevent duplication |
 | Character:BindAnywhere | false | Allows players to bind their soul anywhere in the world |
@@ -217,7 +231,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:BaseInstrumentSoftCap | 36 | Softcap for instrument mods, 36 commonly referred to as 3.6 as well |
 | Character:UseSpellFileSongCap | true | When they removed the AA that increased the cap they removed the above and just use the spell field |
 | Character:BaseRunSpeedCap | 158 | Base Run Speed Cap, on live it's 158% which will give you a runspeed of 1.580 hard capped to 225 |
-| Character:OrnamentationAugmentType | 20 | Ornamentation Augment Type |
 | Character:EnvironmentDamageMulipliter | 1 | Multiplier for environmental damage like fall damage. |
 | Character:UnmemSpellsOnDeath | true | Setting whether at death all memorized Spells are forgotten |
 | Character:TradeskillUpAlchemy | 2.0 | Alchemy skillup rate adjustment. Lower is faster |
@@ -287,9 +300,15 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:FullManaOnDeath | true | On death set mana to full |
 | Character:FullEndurOnDeath | true | On death set endurance to full |
 | Character:ExperiencePercentCapPerKill | -1 | Caps the percentage of experience that can be gained per kill. -1 disables the cap; 0 blocks all (non-aa) xp. |
-| Character:EnableGroupEXPModifier | true | Enable or disable the group experience modifier based on number of players in group, default is true |
+| Character:EnableGroupEXPModifier | true | Enable or disable the group experience modifier in group, default is true |
+| Character:EnableGroupMemberEXPModifier | true | Enable or disable the group member experience modifier based on number of players in group, default is true |
 | Character:GroupMemberEXPModifier | 0.2 | Sets the group experience modifier per members between 2 and 5, default is 0.2 |
 | Character:FullGroupEXPModifier | 2.16 | Sets the group experience modifier for a full group, default is 2.16 |
+| Character:IgnoreLevelBasedHasteCaps | false | Ignores hard coded level based haste caps. |
+| Character:EnableRaidEXPModifier | true | Enable or disable the raid experience modifier, default is true |
+| Character:EnableRaidMemberEXPModifier | true | Enable or disable the raid experience modifier based on members in raid, default is true |
+| Character:LeaveCursorMoneyOnCorpse | false | Enable or disable leaving cursor money on player corpses |
+| Character:ItemExtraSkillDamageCalcAsPercent | false | If enabled, apply Item Extra Skill Damage as Percentage-based modifiers |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -300,6 +319,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Chat:EnableMailKeyIPVerification | true | Setting whether the authenticity of the client should be verified via its IP address when accessing the InGame mailbox |
 | Chat:EnableAntiSpam | true | Enable anti-spam system for chat |
 | Chat:SuppressCommandErrors | false | Do not suppress command errors by default |
+| Chat:ChannelsIgnoreNameFilter | false | Ignore name filtering when creating new chat channels |
 | Chat:MaxPermanentPlayerChannels | 0 | Maximum number of permanent chat channels a player can make. Default 0. |
 | Chat:MinStatusToBypassAntiSpam | 100 | Minimum status to bypass the anti-spam system |
 | Chat:MinimumMessagesPerInterval | 4 | Minimum number of chat messages allowed per interval. The karma value is added to this value |
@@ -408,6 +428,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:EnableWarriorShielding | true | Enable or disable Warrior Shielding Ability (/shield), true by default. |
 | Combat:BackstabIgnoresElemental | false | Enable or disable Elemental weapon damage affecting backstab damage, false by default. |
 | Combat:BackstabIgnoresBane | false | Enable or disable Bane weapon damage affecting backstab damage, false by default. |
+| Combat:SummonMeleeRange | true | Enable or disable summoning of a player when already in melee range of the summoner. |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
@@ -509,6 +530,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Inventory:AllowAnyWeaponTransformation | false | Weapons can use any weapon transformation |
 | Inventory:TransformSummonedBags | false | Transforms summoned bags into disenchanted ones instead of deleting |
 | Inventory:AllowMultipleOfSameAugment | false | Allows multiple of the same augment to be placed in an item via #augmentitem or MQ2, set to true to allow |
+| Inventory:AlternateAugmentationSealer | 53 | Allows RoF+ clients to augment items from a special container type |
 
 ## Items Rules
 | Rule Name | Default Value | Description |
@@ -528,6 +550,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | :--- | :--- | :--- |
 | Logging:PrintFileFunctionAndLine | false | Ex: [World Server] [net.cpp::main:309] Loading variables... |
 | Logging:WorldGMSayLogging | true | Relay worldserver logging to zone processes via GM say output |
+| Logging:PlayerEventsQSProcess | false | Have query server process player events instead of world. Useful when wanting to use a dedicated server and database for processing player events on separate disk |
+| Logging:BatchPlayerEventProcessIntervalSeconds | 5 | This is the interval in which player events are processed in world or qs |
+| Logging:BatchPlayerEventProcessChunkSize | 10000 | This is the cap of events that can be inserted into the queue before a force flush. This is to keep from hitting MySQL max_allowed_packet and killing the connection |
 
 ## Mail Rules
 | Rule Name | Default Value | Description |
@@ -542,8 +567,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | :--- | :--- | :--- |
 | Map:FixPathingZOnSendTo | false | Try to repair Z coordinates in the SendTo routine as well |
 | Map:FixZWhenPathing | true | Automatically fix NPC Z coordinates when moving/pathing/engaged (Far less CPU intensive than its predecessor) |
-| Map:DistanceCanTravelBeforeAdjustment | 10.0 | Distance a mob can path before FixZ is called, depends on FixZWhenPathing |
 | Map:MobZVisualDebug | false | Displays spell effects determining whether or not NPC is hitting Best Z calcs (blue for hit, red for miss) |
+| Map:MobPathingVisualDebug | false | Displays nodes in pathing points in realtime to help with visual debugging |
 | Map:FixPathingZMaxDeltaSendTo | 20 | At runtime in SendTo: maximum change in Z to allow the BestZ code to apply |
 | Map:FindBestZHeightAdjust | 1 | Adds this to the current Z before seeking the best Z position |
 
@@ -674,6 +699,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Range:ClientPositionUpdates | 300 | Distance in which the own changed position is communicated to other clients |
 | Range:CriticalDamage | 80 | The packet range in which critical hit messages are sent |
 | Range:MobCloseScanDistance | 600 | Close scan distance |
+| Range:MaxDistanceToClickDoors | 100 | Max distance that a client can click a door from (Client says 'You can't reach that' at roughly 25-50 for most doors) |
 
 ## Skills Rules
 | Rule Name | Default Value | Description |
@@ -691,6 +717,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## Spells Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
+| Spells:AllowExtraDmgSkill | false | Allow ExtraDmgSkill from Items, Spells, and AAs to apply ExtraDmgAmt when the ExtraDmgSkill matches the casted Spells Skill Type. |
 | Spells:BaseCritChance | 0 | Base percentage chance that everyone has to crit a spell |
 | Spells:BaseCritRatio | 100 | Base percentage bonus to damage on a successful spell crit. 100=2xdamage |
 | Spells:WizCritLevel | 12 | Level wizards first get spell crits |
@@ -781,6 +808,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:UseItemCastMessage | false | Enable to use the \"item begins to glow\" messages when casting from an item. |
 | Spells:TargetsTargetRequiresCombatRange | true | Disable to remove combat range requirement from Target's Target Spell Target Type |
 | Spells:NPCBuffLevelRestrictions | false | Impose BuffLevelRestrictions on NPCs if true |
+| Spells:ResurrectionEffectBlock | 2 | 0 = allow overwrites/rule disabled. If set to 1 = Block all buffs that would overwrite Resurrection Effects. If set to 2 = Will not overwrite Resurrection Effects, instead moves new buff to an empty slot if available. Default is 2. |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
@@ -792,6 +820,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | TaskSystem:KeepOneRecordPerCompletedTask | true | Keep only one record per completed task |
 | TaskSystem:EnableTaskProximity | true | Enable task proximity system |
 | TaskSystem:RequestCooldownTimerSeconds | 15 | Seconds between allowing characters to request tasks (live-like default: 15 seconds) |
+| TaskSystem:ExpRewardsIgnoreLevelBasedEXPMods | false | Rewarding Level Based Exp will ignore Rule LevelBasedEXPMods if true |
 | TaskSystem:SharedTasksWorldProcessRate | 6000 | Timer interval (milliseconds) that shared tasks are processed in world |
 | TaskSystem:SharedTasksTerminateTimerMS | 120000 | Delay (milliseconds) until a shared task is terminated if requirements are no longer met after member removal (default: 2 minutes) |
 | TaskSystem:UpdateOneElementPerTask | true | If true (live-like) task updates only increment the first matching activity. If false all matching elements will be incremented. |
@@ -814,7 +843,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | World:EnableReturnHomeButton | true | Setting whether the Return Home button should be active |
 | World:MaxLevelForTutorial | 10 | The highest level with which you can enter the tutorial |
 | World:TutorialZoneID | 189 | Zone ID of the tutorial |
-| World:GuildBankZoneID | 345 | Zone ID of the guild bank |
 | World:MinOfflineTimeToReturnHome | 21600 | Minimum offline time to activate the Return Home button. 21600 seconds is 6 Hours |
 | World:MaxClientsPerIP | -1 | Maximum number of clients allowed to connect per IP address if account status is < AddMaxClientsStatus. Default value: -1 (feature disabled) |
 | World:ExemptMaxClientsStatus | -1 | Exempt accounts from the MaxClientsPerIP and AddMaxClientsStatus rules, if their status is >= this value. Default value: -1 (feature disabled) |
@@ -835,6 +863,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | World:EnforceCharacterLimitAtLogin | false | Enforce the limit for characters that are online at login |
 | World:EnableDevTools | true | Enable or Disable the Developer Tools globally (Most of the time you want this enabled) |
 | World:EnableChecksumVerification | false | Enable or Disable the Checksum Verification for eqgame.exe and spells_us.txt |
+| World:MaximumQuestErrors | 30 | Changes the maximum number of quest errors that can be displayed in #questerrors, default is 30 |
 
 ## Zone Rules
 | Rule Name | Default Value | Description |
