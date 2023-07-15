@@ -2,7 +2,7 @@
 
     This page lists the Bot commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.06.12
+    Last Generated: 2023.07.15
 
 ## Description
 
@@ -159,6 +159,7 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^petremove | Orders a bot to remove its charmed pet | Player (0) |
 | ^petsettype | Orders a Magician bot to use a specified pet type | Player (0) |
 | ^picklock | Orders a capable bot to pick the lock of the closest door | Player (0) |
+| ^pickpocket | Orders a capable bot to pickpocket a NPC | Player (0) |
 | ^precombat | Sets flag used to determine pre-combat behavior | Player (0) |
 | ^portal | Orders a Wizard bot to open a magical doorway to a specified destination | Player (0) |
 | ^pull | Orders a designated bot to 'pull' an enemy | Player (0) |
