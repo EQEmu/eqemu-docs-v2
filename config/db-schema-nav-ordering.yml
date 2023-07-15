@@ -14,7 +14,9 @@
     - bug_reports: schema/admin/bug_reports.md
     - bugs: schema/admin/bugs.md
     - chatchannels: schema/admin/chatchannels.md
+    - chatchannel_reserved_names: schema/admin/chatchannel_reserved_names.md
     - command_settings: schema/admin/command_settings.md
+    - command_subsettings: schema/admin/command_subsettings.md
     - db_version: schema/admin/db_version.md
     - discovered_items: schema/admin/discovered_items.md
     - discord_webhooks: schema/admin/discord_webhooks.md
@@ -30,6 +32,8 @@
     - petitions: schema/admin/petitions.md
     - peq_admin: schema/admin/peq_admin.md
     - profanity_list: schema/admin/profanity_list.md
+    - player_event_logs: schema/admin/player_event_logs.md
+    - player_event_log_settings: schema/admin/player_event_log_settings.md
     - reports: schema/admin/reports.md
     - saylink: schema/admin/saylink.md
     - start_zones: schema/admin/start_zones.md
@@ -66,6 +70,7 @@
     - bot_pet_inventories: schema/bots/bot_pet_inventories.md
     - bot_spells_entries: schema/bots/bot_spells_entries.md
     - bot_spell_casting_chances: schema/bots/bot_spell_casting_chances.md
+    - bot_spell_settings: schema/bots/bot_spell_settings.md
     - bot_stances: schema/bots/bot_stances.md
     - bot_timers: schema/bots/bot_timers.md
 - Buyers:
@@ -128,6 +133,10 @@
     - expeditions: schema/expeditions/expeditions.md
     - expedition_lockouts: schema/expeditions/expedition_lockouts.md
 - Factions:
+    - client_faction_associations: schema/factions/client_faction_associations.md
+    - client_faction_names: schema/factions/client_faction_names.md
+    - client_server_faction_map: schema/factions/client_server_faction_map.md
+    - faction_association: schema/factions/faction_association.md
     - faction_base_data: schema/factions/faction_base_data.md
     - faction_list: schema/factions/faction_list.md
     - faction_list_mod: schema/factions/faction_list_mod.md

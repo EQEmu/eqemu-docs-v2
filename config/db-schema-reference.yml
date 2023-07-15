@@ -4547,6 +4547,32 @@ command_settings:
     description: Unique Command Identifier
     nullable: "NO"
     ordinal_position: 1
+command_subsettings:
+  access_level:
+    dataType: int
+    description: '[Required Status](../../../../server/player/status-levels)'
+    nullable: "NO"
+    ordinal_position: 4
+  id:
+    dataType: int
+    description: Unique Subcommand Identifier
+    nullable: "NO"
+    ordinal_position: 1
+  parent_command:
+    dataType: varchar
+    description: '[Parent Command](../../schema/admin/command_settings.md)'
+    nullable: "NO"
+    ordinal_position: 2
+  sub_command:
+    dataType: varchar
+    description: Subcommand Identifier
+    nullable: "NO"
+    ordinal_position: 3
+  top_level_aliases:
+    dataType: varchar
+    description: Top Level Aliases
+    nullable: "NO"
+    ordinal_position: 5
 completed_shared_task_activity_state:
   activity_id:
     dataType: int
@@ -12368,6 +12394,21 @@ raid_details:
     description: Loot Type
     nullable: "NO"
     ordinal_position: 2
+  marked_npc_1:
+    dataType: smallint
+    description: Marked NPC 1
+    nullable: "NO"
+    ordinal_position: 5
+  marked_npc_2:
+    dataType: smallint
+    description: Marked NPC 2
+    nullable: "NO"
+    ordinal_position: 6
+  marked_npc_3:
+    dataType: smallint
+    description: Marked NPC 3
+    nullable: "NO"
+    ordinal_position: 7
   motd:
     dataType: varchar
     description: Message of the Day
@@ -12450,6 +12491,16 @@ raid_members:
     description: ""
     nullable: "NO"
     ordinal_position: 1
+  is_assister:
+    dataType: tinyint
+    description: 'Is Assister: 0 = False, 1 = True'
+    nullable: "NO"
+    ordinal_position: 13
+  is_marker:
+    dataType: tinyint
+    description: 'Is Marker: 0 = False, 1 = True'
+    nullable: "NO"
+    ordinal_position: 12
   isgroupleader:
     dataType: tinyint
     description: 'Is Group Leader: 0 = False, 1 = True'
@@ -12475,6 +12526,11 @@ raid_members:
     description: Name
     nullable: "NO"
     ordinal_position: 8
+  note:
+    dataType: varchar
+    description: Note
+    nullable: "NO"
+    ordinal_position: 14
   raidid:
     dataType: int
     description: '[Raid Identifier](raid_details.md)'
