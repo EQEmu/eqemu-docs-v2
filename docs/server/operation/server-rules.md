@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.06.12
+    Last Generated: 2023.07.15
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -429,6 +429,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:BackstabIgnoresElemental | false | Enable or disable Elemental weapon damage affecting backstab damage, false by default. |
 | Combat:BackstabIgnoresBane | false | Enable or disable Bane weapon damage affecting backstab damage, false by default. |
 | Combat:SummonMeleeRange | true | Enable or disable summoning of a player when already in melee range of the summoner. |
+| Combat:WaterMatchRequiredForAutoFireLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for AutoFire LoS to pass. |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
@@ -661,6 +662,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Pets:PetPowerLevelCap | 10 | Maximum number of levels a player pet can go up with pet power |
 | Pets:CanTakeNoDrop | false | Setting whether anyone can give no-drop items to pets |
 | Pets:LivelikeBreakCharmOnInvis | true | Default: true will break charm on any type of invis (hide/ivu/iva/etc) false will only break if the pet can not see you (ex. you have an undead pet and cast IVU |
+| Pets:ClientPetsUseOwnerNameInLastName | true | Disable this to keep client pet's last names from being owner_name's pet |
 
 ## QueryServ Rules
 | Rule Name | Default Value | Description |
@@ -706,6 +708,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | :--- | :--- | :--- |
 | Skills:MaxTrainTradeskills | 21 | Highest level for trading skills that can be learnt by the trainer |
 | Skills:UseLimitTradeskillSearchSkillDiff | true | Enables the limit for the maximum difference between trivial and skill for recipe searches and favorites |
+| Skills:TrivialTradeskillCombinesNoFail | false | Enable to make all trivial tradeskill combines unable to fail |
 | Skills:MaxTradeskillSearchSkillDiff | 50 | The maximum difference in skill between the trivial of an item and the skill of the player if the trivial is higher than the skill. Recipes that have not been learnt or made at least once via the Experiment mode will be removed from searches based on this criteria. |
 | Skills:MaxTrainSpecializations | 50 | Maximum level a GM trainer will train casting specializations |
 | Skills:SwimmingStartValue | 100 | Start value of swimming skill |
@@ -809,6 +812,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:TargetsTargetRequiresCombatRange | true | Disable to remove combat range requirement from Target's Target Spell Target Type |
 | Spells:NPCBuffLevelRestrictions | false | Impose BuffLevelRestrictions on NPCs if true |
 | Spells:ResurrectionEffectBlock | 2 | 0 = allow overwrites/rule disabled. If set to 1 = Block all buffs that would overwrite Resurrection Effects. If set to 2 = Will not overwrite Resurrection Effects, instead moves new buff to an empty slot if available. Default is 2. |
+| Spells:WaterMatchRequiredForLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for spells LoS to pass. |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
