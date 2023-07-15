@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Doors){:target="Doors"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` perl
     $doors->CreateDatabaseEntry();

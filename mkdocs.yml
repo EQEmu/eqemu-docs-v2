@@ -675,6 +675,7 @@ nav:
           - Packet: quest-api/methods/packet.md
           - PerlPacket: quest-api/methods/perlpacket.md
           - QuestItem: quest-api/methods/questitem.md
+          - QuestItemData: quest-api/methods/questitemdata.md
           - Raid: quest-api/methods/raid.md
           - Spawn: quest-api/methods/spawn.md
           - Spell: quest-api/methods/spell.md

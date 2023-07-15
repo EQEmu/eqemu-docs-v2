@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.06.12
+    Last generated 2023.07.15
 
 ## EVENT_AA_BUY
 
@@ -492,7 +492,6 @@ function EVENT_LANGUAGE_SKILL_UP(e) {
 	eq.debug("skill_id " .. e.skill_id);
 	eq.debug("skill_value " .. e.skill_value);
 	eq.debug("skill_max " .. e.skill_max);
-	eq.debug("is_tradeskill " .. e.is_tradeskill);
 }
 ```
 ## EVENT_LEAVE_AREA

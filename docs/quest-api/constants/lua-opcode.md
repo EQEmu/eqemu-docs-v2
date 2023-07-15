@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Opcode){:target="Opcode"} for latest definitions and Quest examples
 
-    Last generated 2023.06.12
+    Last generated 2023.07.15
 
 ``` lua
 Opcode.0x0193

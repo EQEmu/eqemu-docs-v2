@@ -1,15 +1,20 @@
-=== "Perl (3)"
+=== "Perl (8)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` perl
     $hateentry->GetDamage();
     $hateentry->GetEnt();
+    $hateentry->GetFrenzy();
     $hateentry->GetHate();
+    $hateentry->SetDamage(int64 value);
+    $hateentry->SetEnt(Mob* mob);
+    $hateentry->SetFrenzy(bool is_frenzy);
+    $hateentry->SetHate(int64 value);
     ```
 === "Lua (8)"
 
@@ -17,7 +22,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=HateEntry){:target="HateEntry"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` lua
     hateentry:GetDamage();

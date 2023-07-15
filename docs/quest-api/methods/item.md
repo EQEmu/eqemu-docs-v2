@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Item){:target="Item"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` lua
     item:AAgi();
@@ -21,9 +21,9 @@
     item:Attuneable();
     item:AugDistiller();
     item:AugRestrict();
-    item:AugSlotType(i);
-    item:AugSlotUnk2(i);
-    item:AugSlotVisible(i);
+    item:AugSlotType(uint8 slot_id);
+    item:AugSlotUnk2(uint8 slot_id);
+    item:AugSlotVisible(uint8 slot_id);
     item:AugType();
     item:Avoidance();
     item:BackstabDmg();

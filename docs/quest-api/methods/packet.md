@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Packet){:target="Packet"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` lua
     packet:GetOpcode();

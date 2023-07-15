@@ -1,10 +1,10 @@
-=== "Perl (77)"
+=== "Perl (79)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Bot){:target="Bot"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` perl
     $bot->AddBotItem(uint16 slot_id, uint32 item_id, uint16 charges, bool attuned, uint32 aug1, uint32 aug2, uint32 aug3);
@@ -48,6 +48,7 @@
     $bot->GetBotID();
     $bot->GetBotItem(uint16 slot_id);
     $bot->GetBotItemIDBySlot(uint16 slot_id);
+    $bot->GetClassAbbreviation();
     $bot->GetExpansionBitmask();
     $bot->GetGroup();
     $bot->GetHealAmount();
@@ -55,6 +56,7 @@
     $bot->GetItemAt(int16 slot_id);
     $bot->GetItemIDAt(int16 slot_id);
     $bot->GetOwner();
+    $bot->GetRaceAbbreviation();
     $bot->GetRawItemAC();
     $bot->GetSpellDamage();
     $bot->HasAugmentEquippedByID(uint32 item_id);
@@ -73,25 +75,25 @@
     $bot->SendPayload(int payload_id, string payload_value);
     $bot->SendPayload(int payload_id);
     $bot->SendSpellAnim(uint16 target_id, uint16 spell_id);
-    $bot->SetExpansionBitmask(int expansion_bitmask, bool save);
     $bot->SetExpansionBitmask(int expansion_bitmask);
-    $bot->SetSpellDuration(int spell_id);
-    $bot->SetSpellDuration(int spell_id, int duration);
+    $bot->SetExpansionBitmask(int expansion_bitmask, bool save);
     $bot->SetSpellDuration(int spell_id, int duration, bool allow_pets);
-    $bot->SetSpellDurationGroup(int spell_id);
+    $bot->SetSpellDuration(int spell_id, int duration);
+    $bot->SetSpellDuration(int spell_id);
     $bot->SetSpellDurationGroup(int spell_id, int duration, bool allow_pets);
+    $bot->SetSpellDurationGroup(int spell_id);
     $bot->SetSpellDurationGroup(int spell_id, int duration);
     $bot->Signal(int signal_id);
     $bot->Sit();
     $bot->Stand();
     ```
-=== "Lua (85)"
+=== "Lua (87)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Bot){:target="Bot"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` lua
     bot:AddBotItem(uint16 slot_id, uint32 item_id);
@@ -104,28 +106,28 @@
     bot:AddBotItem(uint16 slot_id, uint32 item_id, int16 charges, bool attuned, uint32 augment_one, uint32 augment_two, uint32 augment_three, uint32 augment_four, uint32 augment_five);
     bot:AddBotItem(uint16 slot_id, uint32 item_id, int16 charges, bool attuned, uint32 augment_one, uint32 augment_two, uint32 augment_three, uint32 augment_four, uint32 augment_five, uint32 augment_six);
     bot:AddItem(const object& item_table);
-    bot:ApplySpell(int spell_id);
     bot:ApplySpell(int spell_id, int duration);
     bot:ApplySpell(int spell_id, int duration, bool allow_pets);
-    bot:ApplySpellGroup(int spell_id);
+    bot:ApplySpell(int spell_id);
     bot:ApplySpellGroup(int spell_id, int duration, bool allow_pets);
+    bot:ApplySpellGroup(int spell_id);
     bot:ApplySpellGroup(int spell_id, int duration);
-    bot:ApplySpellRaid(int spell_id, int duration, bool allow_pets);
     bot:ApplySpellRaid(int spell_id, int duration, bool allow_pets, bool is_raid_group_only);
     bot:ApplySpellRaid(int spell_id);
     bot:ApplySpellRaid(int spell_id, int duration);
-    bot:Camp();
+    bot:ApplySpellRaid(int spell_id, int duration, bool allow_pets);
     bot:Camp(bool save_to_database);
+    bot:Camp();
     bot:CountAugmentEquippedByID(uint32 item_id);
     bot:CountBotItem(item_id);
     bot:CountItemEquippedByID(uint32 item_id);
     bot:Escape();
     bot:Fling(float target_x, float target_y, float target_z, bool ignore_los, bool clip_through_walls);
+    bot:Fling(float target_x, float target_y, float target_z);
+    bot:Fling(float value, float target_x, float target_y, float target_z, bool ignore_los, bool clip_through_walls);
     bot:Fling(float value, float target_x, float target_y, float target_z);
     bot:Fling(float value, float target_x, float target_y, float target_z, bool ignore_los);
-    bot:Fling(float value, float target_x, float target_y, float target_z, bool ignore_los, bool clip_through_walls);
     bot:Fling(float target_x, float target_y, float target_z, bool ignore_los);
-    bot:Fling(float target_x, float target_y, float target_z);
     bot:GetAugmentAt(int16 slot_id, uint8 augment_index);
     bot:GetAugmentIDAt(int16 slot_id, uint8 augment_index);
     bot:GetAugmentIDsBySlotID(int16 slot_id);
@@ -139,6 +141,7 @@
     bot:GetBotID();
     bot:GetBotItem(uint16 slot_id);
     bot:GetBotItemIDBySlot(uint16 slot_id);
+    bot:GetClassAbbreviation();
     bot:GetExpansionBitmask();
     bot:GetGroup();
     bot:GetHealAmount();
@@ -146,6 +149,7 @@
     bot:GetItemAt(int16 slot_id // @categories Inventory and Items);
     bot:GetItemIDAt(int16 slot_id);
     bot:GetOwner();
+    bot:GetRaceAbbreviation();
     bot:GetRawItemAC();
     bot:GetSpellDamage();
     bot:HasAugmentEquippedByID(uint32 item_id);
@@ -161,16 +165,16 @@
     bot:ReloadBotSpellSettings();
     bot:ReloadBotSpells();
     bot:RemoveBotItem(uint32 item_id);
-    bot:SendPayload(int payload_id);
     bot:SendPayload(int payload_id, string payload_value);
+    bot:SendPayload(int payload_id);
     bot:SendSpellAnim(uint16 target_id, uint16 spell_id);
     bot:SetExpansionBitmask(int expansion_bitmask);
     bot:SetExpansionBitmask(int expansion_bitmask, bool save);
-    bot:SetSpellDuration(int spell_id);
-    bot:SetSpellDuration(int spell_id, int duration, bool allow_pets);
     bot:SetSpellDuration(int spell_id, int duration);
-    bot:SetSpellDurationGroup(int spell_id, int duration);
+    bot:SetSpellDuration(int spell_id, int duration, bool allow_pets);
+    bot:SetSpellDuration(int spell_id);
     bot:SetSpellDurationGroup(int spell_id);
+    bot:SetSpellDurationGroup(int spell_id, int duration);
     bot:SetSpellDurationGroup(int spell_id, int duration, bool allow_pets);
     bot:SetSpellDurationRaid(int spell_id, int duration, bool allow_pets, bool is_raid_group_only);
     bot:SetSpellDurationRaid(int spell_id);

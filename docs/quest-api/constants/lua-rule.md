@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2023.06.12
+    Last generated 2023.07.15
 
 ``` lua
 Rule.AAExpMultiplier
@@ -125,6 +125,7 @@ Rule.ClientAggroCheckIdleInterval
 Rule.ClientAggroCheckMovingInterval
 Rule.ClientDataRate
 Rule.ClientLinkdeadMS
+Rule.ClientPetsUseOwnerNameInLastName
 Rule.ClientPositionUpdates
 Rule.ClientRemovalDelayMS
 Rule.CommandSpellRank
@@ -646,6 +647,7 @@ Rule.TradeskillUpTinkering
 Rule.TrainSenseHeading
 Rule.TransformSummonedBags
 Rule.TranslocateTimeLimit
+Rule.TrivialTradeskillCombinesNoFail
 Rule.TrollCommonTongue
 Rule.TunnelVisionAggroMod
 Rule.TutorialZoneID
@@ -695,6 +697,8 @@ Rule.UseXPConScaling
 Rule.UseZoneController
 Rule.WarmlyFactionMinimum
 Rule.WarriorTrackingDistanceMultiplier
+Rule.WaterMatchRequiredForAutoFireLoS
+Rule.WaterMatchRequiredForLoS
 Rule.WeatherTimer
 Rule.WhiteModifier
 Rule.WizCritChance

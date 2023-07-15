@@ -1,10 +1,10 @@
-=== "Lua (21)"
+=== "Lua (24)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Entity){:target="Entity"} for latest definitions and Quest examples
 
-        Last generated 2023.06.12
+        Last generated 2023.07.15
 
     ``` lua
     entity:CastToBot();
@@ -15,6 +15,7 @@
     entity:CastToNPC();
     entity:CastToObject();
     entity:GetID();
+    entity:IsAura();
     entity:IsBeacon();
     entity:IsBot();
     entity:IsClient();
@@ -26,6 +27,8 @@
     entity:IsNPC();
     entity:IsNPCCorpse();
     entity:IsObject();
+    entity:IsOfClientBot();
+    entity:IsOfClientBotMerc();
     entity:IsPlayerCorpse();
     entity:IsTrap();
     ```
