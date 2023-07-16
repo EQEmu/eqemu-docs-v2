@@ -7,6 +7,6 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
-| name | varchar |  |
+| id | int | Unique Chat Channel Reserved Name Identifier |
+| name | varchar | Name |
 

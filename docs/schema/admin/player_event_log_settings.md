@@ -7,9 +7,9 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | bigint |  |
-| event_name | varchar |  |
-| event_enabled | tinyint |  |
-| retention_days | int |  |
-| discord_webhook_id | int |  |
+| id | bigint | Unique Event Identifier |
+| event_name | varchar | Event Name |
+| event_enabled | tinyint | Event Enabled: 0 = False, 1 = True |
+| retention_days | int | Retention Days: 0 for Permanent |
+| discord_webhook_id | int | [Discord Webhook Identifier](../../schema/admin/discord_webhooks.md) |
 

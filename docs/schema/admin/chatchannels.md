@@ -7,7 +7,7 @@
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| id | int |  |
+| id | int | Unique Chat Channel Identifier |
 | name | varchar | Name |
 | owner | varchar | [Owner Character Identifier](../../schema/characters/character_data.md) |
 | password | varchar | Password |
