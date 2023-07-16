@@ -1477,43 +1477,6 @@ bot_data:
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 8
-bot_group_members:
-  bot_id:
-    dataType: int
-    description: '[Bot Identifier](bot_data.md)'
-    nullable: "NO"
-    ordinal_position: 3
-  group_members_index:
-    dataType: int
-    description: Unique Group Member Identifier
-    nullable: "NO"
-    ordinal_position: 1
-  groups_index:
-    dataType: int
-    description: '[Group Identifier](bot_groups.md)'
-    nullable: "NO"
-    ordinal_position: 2
-bot_groups:
-  auto_spawn:
-    dataType: tinyint
-    description: 'Auto Spawn: 0 = False, 1 = True'
-    nullable: "NO"
-    ordinal_position: 4
-  group_leader_id:
-    dataType: int
-    description: '[Bot Identifier](bot_data.md)'
-    nullable: "NO"
-    ordinal_position: 2
-  group_name:
-    dataType: varchar
-    description: Group Name
-    nullable: "NO"
-    ordinal_position: 3
-  groups_index:
-    dataType: int
-    description: Unique Group Identifier
-    nullable: "NO"
-    ordinal_position: 1
 bot_guild_members:
   alt:
     dataType: tinyint
@@ -16175,37 +16138,6 @@ vw_bot_character_mobs:
     description: '[Zone Identifier](../../../../server/zones/zone-list)'
     nullable: "NO"
     ordinal_position: 7
-vw_bot_groups:
-  group_leader_id:
-    dataType: int
-    description: '[Group Leader Character Identifier](../../schema/characters/character_data.md)'
-    nullable: "NO"
-    ordinal_position: 3
-  group_leader_name:
-    dataType: varchar
-    description: Group Leader Name
-    nullable: "NO"
-    ordinal_position: 4
-  group_name:
-    dataType: varchar
-    description: Group Name
-    nullable: "NO"
-    ordinal_position: 2
-  groups_index:
-    dataType: int
-    description: Groups Index
-    nullable: "NO"
-    ordinal_position: 1
-  owner_id:
-    dataType: int
-    description: '[Owner Character Identifier](../../schema/characters/character_data.md)'
-    nullable: "NO"
-    ordinal_position: 5
-  owner_name:
-    dataType: varchar
-    description: Owner Name
-    nullable: "NO"
-    ordinal_position: 6
 vw_groups:
   group_id:
     dataType: int
