@@ -71,8 +71,6 @@ bot_buffs:
   - 1-1 bot_id->bot_data:bot_id
   - 1-1 spell_id->spells_new:id
 bot_data:
-  - 1-1 bot_id->bot_group_members:bot_id
-  - 1-1 bot_id->bot_group_leaderss:group_leader_id
   - 1-1 bot_id->bot_guild_members:bot_id
   - 1-* bot_id->bot_heal_rotation_members:bot_id
   - 1-1 bot_id->bot_inspect_messages:bot_id
@@ -83,12 +81,6 @@ bot_data:
   - 1-1 owner_id->character_data:id
   - 1-1 spells_id->npc_spells:id
   - 1-1 zone_id->zone:zoneidnumber
-bot_group_members:
-  - 1-1 bot_id->bot_data:bot_id
-  - 1-* groups_index->bot_groups:groups_index
-bot_groups:
-  - 1-1 group_leader_id->bot_data:bot_id
-  - 1-* groups_index->bot_group_members:groups_index
 bot_guild_members:
   - 1-1 bot_id->bot_data:bot_id
   - 1-1 guild_id->guilds:id

@@ -56,8 +56,6 @@
     - bot_command_settings: schema/bots/bot_command_settings.md
     - bot_create_combinations: schema/bots/bot_create_combinations.md
     - bot_data: schema/bots/bot_data.md
-    - bot_groups: schema/bots/bot_groups.md
-    - bot_group_members: schema/bots/bot_group_members.md
     - bot_guild_members: schema/bots/bot_guild_members.md
     - bot_heal_rotations: schema/bots/bot_heal_rotations.md
     - bot_heal_rotation_members: schema/bots/bot_heal_rotation_members.md
@@ -301,7 +299,6 @@
     - tribute_levels: schema/tributes/tribute_levels.md
 - Views:
     - vw_bot_character_mobs: schema/views/vw_bot_character_mobs.md
-    - vw_bot_groups: schema/views/vw_bot_groups.md
     - vw_groups: schema/views/vw_groups.md
     - vw_guild_members: schema/views/vw_guild_members.md
 - Zone:
