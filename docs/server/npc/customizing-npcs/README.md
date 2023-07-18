@@ -12,7 +12,7 @@ So you want to create your own NPC?  This is the first step in learning to custo
 
 ### Creating a Custom NPC
 
-{% page-ref page="using-the-peq-database-editing-interface.md" %}
+(https://docs.eqemu.io/server/npc/using-the-peq-database-editing-interface/)
 
 
 
