@@ -152,6 +152,7 @@ nav:
           - Item Types: server/items/item-types.md
           - Ornament Types: server/items/ornament-types.md
           - Powersources: server/items/powersources.md
+          - Wearable Models: server/items/wearable-models.md
       - Inventory:
           - Inventory Slots: server/inventory/inventory-slots.md
           - Item Slots: server/inventory/item-slots.md
