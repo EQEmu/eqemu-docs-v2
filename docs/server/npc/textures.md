@@ -19,4 +19,28 @@
 | 14 | Robe 4 for Player Races |
 | 15 | Robe 5 for Player Races |
 | 16 | Robe 6 for Player Races |
+| 17 | Velious Leather 1 |
+| 18 | Velious Chain 1 |
+| 19 | Velious Plate 1 |
+| 20 | Velious Leather 2 |
+| 21 | Velious Chain 2 |
+| 22 | Velious Plate 2 |
+| 23 | Velious Monk |
+| 240 | Velious Helmets |
 
+## Velious Textures
+
+The following lines must exist in your client file "eqclient.ini" in order for Velious textures to load properly on the client:
+
+```text
+LoadArmor17=TRUE
+LoadArmor18=TRUE
+LoadArmor19=TRUE
+LoadArmor20=TRUE
+LoadArmor21=TRUE
+LoadArmor22=TRUE
+LoadArmor23=TRUE
+LoadArmor240=TRUE
+```
+
+In order to use Velious helmet textures on an item the **idfile** field should be "IT240" and the **material** field should be 240. The client determines which helmet model to load based on the race and gender of the player that equips it.
