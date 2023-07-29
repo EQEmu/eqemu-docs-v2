@@ -47,27 +47,7 @@ For the longest time, player audit logging or event logging of any type has been
 
 ## Table Schema(s)
 
-### player_event_logs
-
-```
-+-----------------+--------------+------+-----+---------+----------------+
-| Field           | Type         | Null | Key | Default | Extra          |
-+-----------------+--------------+------+-----+---------+----------------+
-| id              | bigint(20)   | NO   | PRI | NULL    | auto_increment |
-| account_id      | bigint(20)   | YES  |     | NULL    |                |
-| character_id    | bigint(20)   | YES  | MUL | NULL    |                |
-| zone_id         | int(11)      | YES  | MUL | NULL    |                |
-| instance_id     | int(11)      | YES  |     | NULL    |                |
-| x               | float        | YES  |     | NULL    |                |
-| y               | float        | YES  |     | NULL    |                |
-| z               | float        | YES  |     | NULL    |                |
-| heading         | float        | YES  |     | NULL    |                |
-| event_type_id   | int(11)      | YES  | MUL | NULL    |                |
-| event_type_name | varchar(255) | YES  |     | NULL    |                |
-| event_data      | longtext     | YES  |     | NULL    |                |
-| created_at      | datetime     | YES  | MUL | NULL    |                |
-+-----------------+--------------+------+-----+---------+----------------+
-```
+[player_event_logs](../../schema/admin/player_event_logs.md)
 
 #### Indexes
 
@@ -80,17 +60,7 @@ KEY `created_at` (`created_at`)
 
 ### player_event_log_settings
 
-```
-+--------------------+--------------+------+-----+---------+-------+
-| Field              | Type         | Null | Key | Default | Extra |
-+--------------------+--------------+------+-----+---------+-------+
-| id                 | bigint(20)   | NO   | PRI | NULL    |       |
-| event_name         | varchar(100) | YES  |     | NULL    |       |
-| event_enabled      | tinyint(1)   | YES  |     | NULL    |       |
-| retention_days     | int(11)      | YES  |     | 0       |       |
-| discord_webhook_id | int(11)      | YES  |     | 0       |       |
-+--------------------+--------------+------+-----+---------+-------+
-```
+[player_event_log_settings](../../schema/admin/player_event_log_settings.md)
 
 ## Currently Handled Events
 
