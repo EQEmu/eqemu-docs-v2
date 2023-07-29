@@ -1,3 +1,10 @@
+---
+tags:
+  - Discord
+  - Logs
+  - Logging
+---
+
 # Discord Logging Integration
 
 This is meant to be purely a one-way, highly performing implementation of publishing data to Discord.

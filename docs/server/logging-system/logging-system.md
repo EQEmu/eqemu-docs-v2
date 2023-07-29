@@ -1,3 +1,10 @@
+---
+tags:
+  - Logs
+  - Logging
+---
+
+
 # Logging System
 
 !!! info
@@ -48,12 +55,12 @@ When a process boots up, such as **zone/world/ucs/queryserv/etc**. These setting
 
 ## In-Game Commands
 
-| **Command** | **Description** |
-| :--- | :--- |
-| #logs | Displays usage menu |
-| #logs reload_all | Reload all settings in world and all zone processes with what is defined in the database |
-| #logs list_settings | Shows current log settings and categories loaded into the current process' memory |
-| #logs set [console|file|gmsay] | Sets log settings during the lifetime of the zone |
+| **Command**        | **Description** |
+|:-------------------| :--- |
+| #logs              | Displays usage menu |
+| #logs reload       | Reload all settings in world and all zone processes with what is defined in the database |
+| #logs list         | Shows current log settings and categories loaded into the current process' memory |
+| #logs set [console |file|gmsay] | Sets log settings during the lifetime of the zone |
 
 ```text
 #logs set [gmsay|file|console] [category_id] [log_level]

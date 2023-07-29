@@ -1,6 +1,9 @@
 ---
-description: This page lists the logging categories available in EQEmu.
+tags:
+  - Logs
+  - Logging
 ---
+
 
 # Logging Categories
 
@@ -8,7 +11,6 @@ Logging categories have their settings stored in the [logsys_categories](https:/
 
 !!! info
       The default settings for the "log-to" categories (Console, File, GM Say) are listed below.  You can modify these values for your own server in your `logsys_categories` table.
-
 
 | ID | Description | Console | File | GMSay | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |

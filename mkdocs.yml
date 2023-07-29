@@ -1,6 +1,8 @@
 site_name: EverQuest Emulator Docs
 plugins:
   - search
+  - tags:
+        tags_file: tags.md
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
@@ -158,10 +160,11 @@ nav:
           - Item Slots: server/inventory/item-slots.md
           - Bag Sizes: server/inventory/bag-sizes.md
           - Bag Types: server/inventory/bag-types.md
-      - Logging System:
-          - server/logging-system/README.md
-          - Discord Logging Integration: server/logging-system/discord-logging-integration.md
+      - Logging:
+          - Discord Logging: server/logging-system/discord-logging.md
           - Logging Categories: server/logging-system/logging-categories.md
+          - Logging System: server/logging-system/logging-system.md
+          - Player Event Logging: server/logging-system/player-event-logging.md
       - Login Server:
           - Auto Create Login Accounts: server/login-server/auto-create-login-accounts.md
           - REST API: server/login-server/login-server-rest-api.md
@@ -746,3 +749,4 @@ nav:
       - Changelog Contributions: changelog/server/changelog-contributions.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
+  - Tags: tags.md

@@ -57,7 +57,7 @@ This page explains how different assets on the server are loaded and by what met
 
 ## Logging
 * **#reload logs** will reload Log Settings data from the `logsys_categories` table globally
-* **#logs reload_all** will also reload Log Settings data from the `logsys_categories` table globally
+* **#logs reload** will also reload Log Settings data from the `logsys_categories` table globally
 
 ## Loot
 * Loot uses shared memory

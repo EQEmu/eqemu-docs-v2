@@ -3,12 +3,11 @@ package config
 import (
 	"bytes"
 	"fmt"
+	"gopkg.in/yaml.v2"
 	"log"
 	"os"
 	"path"
 	"strings"
-
-	"gopkg.in/yaml.v3"
 )
 
 type MkDocsCfg struct {
@@ -72,6 +71,7 @@ type MkDocsCfg struct {
 			ChangelogContributions string `yaml:"Changelog Contributions,omitempty"`
 		} `yaml:"Changelog,omitempty"`
 		Contributing []interface{} `yaml:"Contributing,omitempty"`
+		Tags         []interface{} `yaml:"Tags,omitempty"`
 	} `yaml:"nav"`
 }
 
