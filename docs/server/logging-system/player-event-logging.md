@@ -64,7 +64,7 @@ KEY `created_at` (`created_at`)
 
 ## Currently Handled Events
 
-These are the events currently supported at the time of this writing. It's very likely more will be added later on and you can find the most recent events in **./common/player_events.h**
+These are the events currently supported at the time of this writing. It's very likely more will be added later on and you can find the most recent events in https://github.com/EQEmu/Server/blob/master/common/events/player_events.h
 
 ```
 1	GM Command
