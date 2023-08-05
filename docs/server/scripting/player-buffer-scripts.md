@@ -138,7 +138,7 @@ This script will set all available skills to their maximum amount at the player'
         #:: Match text for "skills", case insensitive
         elsif ($text=~/skills/i) {
             #:: Set available (non-trade, non-casting specialization) skills to maximum for race/class at current level
-            foreach my $skill ( 0 .. 42, 48 .. 54, 70 .. 74 ) {
+            foreach my $skill (0..42, 48..54, 70..77) {
                 next unless $client->CanHaveSkill($skill);
                 #:: Create a scalar variable to store each skill's maximum skill level at the player's current level
                 my $maxSkill = $client->MaxSkill($skill, $client->GetClass(), $ulevel);
@@ -168,7 +168,7 @@ This script will max all skills when a player levels up.
     ```perl
     sub EVENT_LEVEL_UP {
         #:: Set available (non-trade, non-casting specialization) skills to maximum for race/class at current level
-        foreach my $skill ( 0 .. 42, 48 .. 54, 70 .. 74 ) {
+        foreach my $skill (0..42, 48..54, 70..77) {
             next unless $client->CanHaveSkill($skill);
             #:: Create a scalar variable to store each skill's maximum skill level at the player's current level
             my $maxSkill = $client->MaxSkill($skill, $client->GetClass(), $ulevel);
@@ -182,7 +182,7 @@ This script will max all skills when a player levels up.
 === "global/global_player.lua"
     ```lua
     function event_level_up(e)
-         local skills = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 48, 49, 50, 51, 52, 53, 54, 56, 62, 66, 67, 70, 71, 72, 73, 74 };
+         local skills = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 48, 49, 50, 51, 52, 53, 54, 56, 62, 66, 67, 70, 71, 72, 73, 74, 75, 76, 77 };
          for i, curskill in ipairs(skills) do
               local maxskill = e.self:MaxSkill(curskill);
               if (e.self:CanHaveSkill(curskill) == false) then
