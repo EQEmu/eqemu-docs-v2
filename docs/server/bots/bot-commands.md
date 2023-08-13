@@ -28,13 +28,12 @@ With specific exceptions, bot commands are designed to work using an 'actionable
 
 Some of these actionable arguments also require the use of an 'actionable name' parameter.
 
-The use an 'actionable' bot argument provides much greater flexibility and control over a bot or groups of bots and eliminates the overhead of programming multiple selection criteria into a command.
+The use an 'actionable' bot argument provides much greater flexibility and control over a bot or multiple bots and eliminates the overhead of programming multiple selection criteria into a command.
 
 ```text
 target - selects target as single bot .. use ^command [target] or imply by empty actionable argument
 byname [name] - selects single bot by name
 ownergroup - selects all bots in the owner's group;
-botgroup [name] - selects members of a bot-group by its name
 targetgroup - selects all bots in target's group
 namesgroup [name] - selects all bots in name's group
 healrotation [name] - selects all member and target bots of a heal rotation where name is a member
@@ -49,12 +48,11 @@ Only those bots owned by the commanding player can be selected for any bot comma
 ## Example
 
 ```text
-Usage: (<friendly_target>) ^follow ([option: reset]) [actionable: byname | ownergroup | botgroup | namesgroup | healrotation | spawned] ([actionable_name])
+Usage: (<friendly_target>) ^follow ([option: reset]) [actionable: byname | ownergroup | namesgroup | healrotation | spawned] ([actionable_name])
 ```
 
 * `^follow reset spawned` - resets all spawned bots to follow their default assignments
 * `^follow byname Jojo` - Set the bot 'Jojo' to follow the selected friendly target
-* `^follow botgroup Mybotgroup` - Sets all spawned members of the bot-group 'Mybotgroup' to follow the selected friendly target
 * `^follow ownergroup` - Sets all bots within the owner's group to follow the selected friendly target
 
 Target selection is optional if the argument preceding the command is enclosed in parentheses. In this case, an omitted actionable argument should default to the bot's owner.
