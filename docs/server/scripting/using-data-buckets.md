@@ -40,7 +40,7 @@ mob:GetBucket(bucket_key);
 mob:SetBucket(bucket_key, bucket_value, expires_in);
 ```
 
-There are also 5 secondary functions in both Perl and Lua.
+There are also 4 secondary functions in both Perl and Lua.
 
 ### Perl
 ```pl
@@ -48,7 +48,6 @@ quest::get_data_expires(bucket_key);
 quest::get_data_remaining(bucket_key);
 
 $mob->GetBucketExpires(bucket_key);
-$mob->GetBucketKey();
 $mob->GetBucketRemaining(bucket_key);
 ```
 
@@ -58,7 +57,6 @@ eq.get_data_expires(bucket_key);
 eq.get_data_remaining(bucket_key);
 
 mob:GetBucketExpires(bucket_key);
-mob:GetBucketKey();
 mob:GetBucketRemaining(bucket_key);
 ```
 
@@ -72,6 +70,9 @@ mob:GetBucketRemaining(bucket_key);
 | key | Unique Data Bucket Key |
 | value | Data Bucket Value |
 | expires | Data Bucket Expiration (UNIX Timestamp) |
+| character_id | Character Identifier |
+| npc_id | NPC Identifier |
+| bot_id | Bot Identifier |
 
 * Expired data bucket rows will not be queryable via the quest API, they may exist in a table until 5-10 minutes have past and the server will garbage collect and wipe the table clean of expired buckets
 
@@ -206,24 +207,16 @@ sub EVENT_DEATH_COMPLETE {
 ### Automatically Keying Buckets
 
 * Automatic keying is a `Mob` only thing, you will still have to manually key anything else.
-* These methods automatically grab a key based on Mob type, these keys are formatted as follows:
-  * Bots: `bot-BotID`
-  * Clients: `character-CharacterID`
-  * NPCs: `npc-NPCID`
+* These methods automatically grab set columns based on Mob type.
+  * Bots use `bot_id`
+  * Clients use `character_id`
+  * NPCs use `npc_id`
 
 * DeleteBucket(bucket_key)
 * GetBucket(bucket_key)
 * GetBucketExpires(bucket_key)
 * GetBucketRemaining(bucket_key)
 * SetBucket(bucket_name, bucket_value, expires_in)
-
-* Examples of keyed buckets:
-  * Bot `bucket_key` of `test`: `bot-1-test`
-  * Client `bucket_key` of `test`: `character-2-test`
-  * NPC `bucket_key` of `test`: `npc-3-test`
-
-### Getting Bucket Key
-* You can use GetBucketKey() on any Mob type to return their bucket key if you wish to use their key for something else.
 
 ## Expiration Examples
 
@@ -458,10 +451,8 @@ sub EVENT_SAY {
 	if ($text=~/hail/i) {
 		quest::say("Hail, $name. What brings you to the Tin Soldier? We have the finest in previously owned weapons and armor. Feel free to browse.");
 	} elsif ($text=~/tax collection/i) {
-		#:: Data bucket to verify quest has been started appropriately
-		my $bucket_key = $client->CharacterID() . "-tax-collection";
 		#:: Match if the key exists
-		if (quest::get_data($bucket_key)) {
+		if ($client->GetBucket("tax-collection") {
 			quest::say("Here are the taxes, $name. Boy, you call the guards and they take their time to show up but be a few days late on your taxes and they send the goons after you. Sheesh!");
 			#:: Give a 13171 - Sedder's Tax Payment
 			quest::summonitem(13171);
