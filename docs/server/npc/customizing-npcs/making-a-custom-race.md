@@ -103,5 +103,6 @@ The easiest way to spawn to test is go to a zone it loads in (or any zone if you
 # Troubleshooting
 
 If you generated your .mod file in a unique way, here's a screenshot of the contents of my wtf.mod:
+
 ![wtf.mod](../../../gitbook/assets/wtf.mod.png)
 
