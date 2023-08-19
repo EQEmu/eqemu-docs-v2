@@ -39,7 +39,7 @@ To inject the new Races via dinput8.dll, one of the easier routes is to use [eq-
 From now on, we're going to continue the wiki with the shortname of `WTF` and race ID of `733`, which is the next unused ID for RoF2 by default.
 
 
-Once set up, inside _options.h you want to add the new Race shortname and new unique ID, similar to this:
+Once set up, inside `_options.h` you want to add the new `race shortname` and new `unique ID`, similar to this:
 
 ```cpp
 // areCustomRacesEnabled if set to true will allow the Races defined in Races[] to be injected in game
@@ -57,11 +57,11 @@ static RaceEntry Races[] = {
 };
 ```
 
-Change areCustomRacesEnabled to true, and add your new Race to the list. You can add as many as you want, but you'll need to update the MaxRaceID rule to match the highest raceID you use.
+Change `areCustomRacesEnabled` to `true`, and add your new race entry to the list. You can add as many as you want, but you'll need to update the `MaxRaceID` rule later to match the highest raceID you use.
 
-[An example of existing race IDs and their values can be found in this gist](https://gist.github.com/xackery/f39d14b93004dae295e861f387a7374e)
+If you're curious what existing NPCs use for race flags, [this gist covers them](https://gist.github.com/xackery/f39d14b93004dae295e861f387a7374e)
 
-Once you build the solution, copy dinput8.dll to your EQ directory and you've now injected a new model name to eqgame.
+Once you build the solution, copy the generated `dinput8.dll`` to your EQ directory and you've now injected a new model name to eqgame.
 
 # Increase max race ID server side
 
@@ -71,6 +71,8 @@ This step requires you to edit the rules table. You can do this via spire, peq e
 - Reload rules in game via #reload rule
 
 # Add the new Race to either global or zone loading
+
+Races aren't loaded by default until a txt file informs EQ to do so. The easiest routes to add a custom NPC are either via global race and zone race entries. Both are covered below.
 
 ## Global Race
 - Inside your eq directory, go to the Resources subfolder and look for GlobalLoad_chr.txt
@@ -82,4 +84,10 @@ This step requires you to edit the rules table. You can do this via spire, peq e
 
 # Spawn the new race in game
 
-The easiest way to spawn to test is go to a zone it loads (or any zone if you used a global race) and type `#spawn WTF 733 1 0 10 2`. This will spawn an Race named WTF with race ID 733, level 1, and gender 2 (neutral).
+The easiest way to spawn to test is go to a zone it loads in (or any zone if you used a global race) and type `#spawn WTF 733 1 0 10 2`. This will spawn an Race named WTF with race ID 733, level 1, and gender 2 (neutral).
+
+# Troubleshooting
+
+If you generated your .mod file in a unique way, here's a screenshot of the contents of my wtf.mod:
+![wtf.mod](![wtf.mod](../../../gitbook/assets/wtf.mod.png))
+
