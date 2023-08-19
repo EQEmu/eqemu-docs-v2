@@ -23,9 +23,23 @@ There are currently a number of ways to do this, and each one has it's pros and 
 
 ## Create model via Quail
 
-TODO: add directions
+- Download [Blender](https://www.blender.org/download/)
+- Download [Quail-Addon zip](https://github.com/xackery/quail-addon/releases)
+- Install Blender
+- Open Blender
+- Go to Edit -> Preferences -> Addons -> Install
+- Select the quail-addon zip file
+- Enable the Quail addon
+- Press `n` to open the right side panel
+- A fast export menu should appear. Type in the field wtf.eqg ![quail-fast-export](../../../gitbook/assets/quail-fast-export.png)
+- Create a cube by pressing shift+a -> mesh -> cube
+- Click the EverQuest tab
+- Click File -> Save As, and place the blend file in your EQ directory, call it e.g. wtf.blend
+- Press the fast export button. A pop up should appear with success: ![quail-success](../../../gitbook/assets/quail-success.png)
 
 ## Create model via EQGZI
+
+Not yet documented
 
 # Inject a new model name to eqgame
 
@@ -59,7 +73,7 @@ static RaceEntry Races[] = {
 
 Change `areCustomRacesEnabled` to `true`, and add your new race entry to the list. You can add as many as you want, but you'll need to update the `MaxRaceID` rule later to match the highest raceID you use.
 
-If you're curious what existing NPCs use for race flags, [this gist covers them](https://gist.github.com/xackery/f39d14b93004dae295e861f387a7374e)
+If you're curious what existing NPCs use for race flags, [this gist covers them](https://gist.github.com/xackery/f39d14b93004dae295e861f387a7374e){:target="_blank"}
 
 Once you build the solution, copy the generated `dinput8.dll`` to your EQ directory and you've now injected a new model name to eqgame.
 
@@ -89,5 +103,5 @@ The easiest way to spawn to test is go to a zone it loads in (or any zone if you
 # Troubleshooting
 
 If you generated your .mod file in a unique way, here's a screenshot of the contents of my wtf.mod:
-![wtf.mod](![wtf.mod](../../../gitbook/assets/wtf.mod.png))
+![wtf.mod](../../../gitbook/assets/wtf.mod.png)
 
