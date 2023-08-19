@@ -3,7 +3,7 @@ description: >-
   This page details the process of creating a race from scratch
 ---
 !!! info
-  This is an advanced guide. You should be familiar with the basics of EQEmu before attempting this guide.
+      This is an advanced guide. You should be familiar with the basics of EQEmu before attempting this guide.
 
 Here are the blockers you need to overcome to create a custom race:
 
@@ -31,11 +31,13 @@ There are currently a number of ways to do this, and each one has it's pros and 
 - Select the quail-addon zip file
 - Enable the Quail addon
 - Press `n` to open the right side panel
-- A fast export menu should appear. Type in the field wtf.eqg ![quail-fast-export](../../../gitbook/assets/quail-fast-export.png)
+- A fast export menu should appear. Type in the field wtf.eqg
+![quail-fast-export](../../../gitbook/assets/quail-fast-export.png)
 - Create a cube by pressing shift+a -> mesh -> cube
 - Click the EverQuest tab
 - Click File -> Save As, and place the blend file in your EQ directory, call it e.g. wtf.blend
-- Press the fast export button. A pop up should appear with success: ![quail-success](../../../gitbook/assets/quail-success.png)
+- Press the fast export button. A pop up should appear with success:
+![quail-success](../../../gitbook/assets/quail-success.png)
 
 ## Create model via EQGZI
 
