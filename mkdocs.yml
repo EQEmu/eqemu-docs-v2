@@ -205,6 +205,7 @@ nav:
           - Customizing NPCs:
               - server/npc/customizing-npcs/README.md
               - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
+              - Making a Custom NPC: server/npc/customizing-npcs/making-a-custom-npc.md
           - NPC Animation Types: server/npc/npc-animation-types.md
           - NPC Scaling: server/npc/npc-scaling.md
           - Special Attacks: server/npc/special-attacks.md

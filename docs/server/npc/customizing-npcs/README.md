@@ -10,9 +10,5 @@ description: >-
 
 So you want to create your own NPC?  This is the first step in learning to customize your EQEmu Server.  There are a few different resources that can help, which we will explore in detail in this guide.  Please note that there are many different ways to achieve the goal of adding custom content, and that there are also advanced techniques for NPC Scaling and Scripting that will be covered in later guides.
 
-### Creating a Custom NPC
-
-(https://docs.eqemu.io/server/npc/using-the-peq-database-editing-interface/)
-
-
-
+- [How to add a NPC via PEQ](https://docs.eqemu.io/server/npc/using-the-peq-database-editing-interface/)
+- (Advanced) [How to add a custom NPC model from scratch](making-a-custom-npc.md)
