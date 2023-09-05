@@ -2,6 +2,37 @@
 
 Dialogue Window used to be a plugin that is now source-native that provides a simple way to deliver a dialogue experience to players through a popup window instead of through the chat window.
 
+## Note
+
+* Using newlines may cause the dialogue window to not function properly. Example below.
+
+### No Newlines
+```pl
+sub EVENT_SAY {
+    if ($text=~/#a/i) {
+        my $dialogMessage = "{title: Title} {button_one: Button One} {button_two: Button Two} wintype:1 Message";
+        quest::crosszonedialoguewindowbycharid($client->CharacterID(), $dialogMessage);
+    }
+}
+```
+![image](https://github.com/EQEmu/eqemu-docs-v2/assets/89047260/b2718cdd-dfc8-410e-bccb-b502bd727d63)
+
+### Newlines
+```pl
+sub EVENT_SAY {
+    if ($text=~/#a/i) {
+        my $dialogMessage = "{title: Title}
+        {button_one: Button One}
+        {button_two: Button Two}
+        wintype:1
+        Message";
+        quest::crosszonedialoguewindowbycharid($client->CharacterID(), $dialogMessage);
+    }
+}
+```
+![image](https://github.com/EQEmu/eqemu-docs-v2/assets/89047260/d319b86b-31b9-475c-b522-30463e080489)
+
+
 ## Features
 
 * Simple custom markdown with features to change window behavior
