@@ -120,6 +120,17 @@ nav:
           - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
           - Release Pipeline: developer/release-pipeline.md
           - Repositories: developer/repositories.md
+          - Project PEQ Expansions:
+              - Classic:
+                  - developer/project-peq-expansions/classic/README.md
+                  - Item Changes: developer/project-peq-expansions/classic/item-changes.md
+                  - Zone Changes: developer/project-peq-expansions/classic/zone-changes.md
+              - Zone Version Switching: developer/project-peq-expansions/zone-version-switching.md
+              - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
+              - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
+              - Design Considerations: developer/project-peq-expansions/design-considerations.md
+          - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
+          - Prepared Statements: developer/mysql-stmt.md
       - Database:
           - Database Backup Tool: server/database/database-backup-tool.md
           - Handy Queries: server/database/handy-queries.md
