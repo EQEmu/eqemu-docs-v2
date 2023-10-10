@@ -671,6 +671,7 @@ nav:
   - Quest API:
       - Resources:
           - Introduction: quest-api/introduction.md
+          - Database API: quest-api/database.md
           - Dialogue Window (DiaWind): quest-api/diawind.md
           - Events: quest-api/events.md
           - Quest Loading: quest-api/quest-loading.md
