@@ -1167,3 +1167,20 @@
 | :--- | :--- |
 | 53 | Special Attack "Immune to Open" |
 | 1 | Special Attack "Immune to Open" enabled |
+
+## Immune to Assassinate (54)
+
+!!! info
+      Immune to Assassinate, denoted by special attack 54, makes the NPC immune to being Assassinated.
+
+
+### **Example:**
+
+```text
+54,1
+```
+
+|  |  |
+| :--- | :--- |
+| 54 | Special Attack "Immune to Assassinate" |
+| 1 | Special Attack "Immune to Assassinate" enabled |
