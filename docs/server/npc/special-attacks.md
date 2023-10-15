@@ -1184,3 +1184,20 @@
 | :--- | :--- |
 | 54 | Special Attack "Immune to Assassinate" |
 | 1 | Special Attack "Immune to Assassinate" enabled |
+
+## Immune to Headshot (55)
+
+!!! info
+      Immune to Headshot, denoted by special attack 55, makes the NPC immune to being Headshotted.
+
+
+### **Example:**
+
+```text
+55,1
+```
+
+|  |  |
+| :--- | :--- |
+| 55 | Special Attack "Immune to Headshot" |
+| 1 | Special Attack "Immune to Headshot" enabled |
