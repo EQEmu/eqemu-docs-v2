@@ -16,7 +16,7 @@ The database version will need to match the manifest entry you have added, more 
 
 ## The Manifest
 
-[Manifest Link]([https://github.com/EQEmu/Server/blob/master/utils/sql/db_update_manifest.txt](https://github.com/EQEmu/Server/blob/master/common/database/database_update_manifest.cpp))
+The manifest is located at **common/database/database_update_manifest.cpp**
 
 Add a struct representing your migration 
 
