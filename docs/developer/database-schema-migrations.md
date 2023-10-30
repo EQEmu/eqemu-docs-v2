@@ -2,10 +2,7 @@
 
 ## Adding New Required Schema Migrations
 
-* It's extremely simple
-* When you add your .sql file, you still will add it as traditionally to our regular path
-
-`utils/sql/git/required` - [Github Link](https://github.com/EQEmu/Server/tree/master/utils/sql/git/required)
+It's extremely simple
 
 ## Changes in the Source
 
@@ -15,71 +12,45 @@
 
 The database version will need to match the manifest entry you have added, more on that in a moment
 
-`CURRENT_BINARY_DATABASE_VERSION = 9058`
+`CURRENT_BINARY_DATABASE_VERSION = 9240`
 
 ## The Manifest
 
-* The manifest is stored always on Github and contains all the definitions and logic for determining if a database needs to update
-  * `utils/sql/db_update_manifest.txt`
-  * [Manifest Link](https://github.com/EQEmu/Server/blob/master/utils/sql/db_update_manifest.txt)
+[Manifest Link]([https://github.com/EQEmu/Server/blob/master/utils/sql/db_update_manifest.txt](https://github.com/EQEmu/Server/blob/master/common/database/database_update_manifest.cpp))
 
-Add a line to the bottom of the file, it is going to look similar to the following
+Add a struct representing your migration 
 
-```text
-9058|2014_11_17_example_update_file.sql|SHOW TABLES LIKE 'character_mercenaries'|empty|
+```cpp
+	ManifestEntry{
+		.version = 9240,
+		.description = "2023_10_29_variables_id.sql",
+		.check = "SHOW COLUMNS FROM `variables` LIKE 'id'",
+		.condition = "empty",
+		.match = "",
+		.sql = R"(
+ALTER TABLE `variables`
+ADD COLUMN `id` int(11) NOT NULL AUTO_INCREMENT FIRST,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`id`) USING BTREE,
+ADD UNIQUE INDEX(`varname`);
+)"
+	},
 ```
 
-* This example would then have users run `2014_11_17_example_update_file.sql` when they don't have the 'character_mercenaries' table because of the empty condition
-* That's it! As far as what is needed from a developer to have the server run the migration, that is all you need to do
+That's it! As far as what is needed from a developer to have the server run the migration, that is all you need to do.
+
+You can test it by running world manually after you compile. Please test your database migrations before submitting a PR, it's a very simple mistake to avoid trying to fix later.
 
 ## Manifest Conditions
 
-```text
-Example: Version|Filename.sql|Query_to_Check_Condition_For_Needed_Update|match type|text to match
-	0 = Database Version
-	1 = Filename.sql
-	2 = Query_to_Check_Condition_For_Needed_Update
-	3 = Match Type - If condition from match type to Value 4 is true, update will flag for needing to be ran
-		contains = If query results contains text from 4th value
-		match = If query results matches text from 4th value
-		missing = If query result is missing text from 4th value
-		empty = If the query results in no results
-		not_empty = If the query is not empty
-	4 = Text to match
+```cpp
+// see struct definitions for what each field does
+// struct ManifestEntry {
+// 	int         version{};     // database version of the migration
+// 	std::string description{}; // description of the migration ex: "add_new_table" or "add_index_to_table"
+// 	std::string check{};       // query that checks against the condition
+// 	std::string condition{};   // condition or "match_type" - Possible values [contains|match|missing|empty|not_empty]
+// 	std::string match{};       // match field that is not always used, but works in conjunction with "condition" values [missing|match|contains]
+// 	std::string sql{};         // the SQL DDL that gets ran when the condition is true
+// };
 ```
-
-## Other Manifest Examples
-
-#### Missing
-
-```text
-9056|2014_11_08_RaidMembers.sql|SHOW COLUMNS FROM `raid_members` LIKE 'groupid'|missing|unsigned
-```
-
-This entry is looking for what the column looks like in raid_members and to see if it is an unsigned integer
-
-The match type is `missing`, so I'm looking to see if the word 'unsigned' is missing from the table. In this case if unsigned was missing, we need to run this update because that is what the update did
-
-_If Missing_ If the table is missing the column, it will run the SQL file specified above `2014_11_08_RaidMembers.sql`
-
-```text
-ALTER TABLE `raid_members` CHANGE COLUMN `groupid` `groupid` INT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `charid`;
-```
-
-#### Contains
-
-```text
-9055|2014_10_30_special_abilities_null.sql|SHOW COLUMNS FROM `npc_types` LIKE 'special_abilities'|contains|NO
-```
-
-This entry is looking for what the column looks like in npc_types, column 'special_abilities' to see if it contains the word 'NO' (If special_abilities is nullable), which if you look at the SQL result at the given time before this update is applied
-
-You will see the data about column regarding NULL, defined as NO. Which means the field can't be null, we want it to be able to be null because it causes issues with later MySQL versions, which is why this update was made
-
-Given the condition is true, the following runs
-
-```text
-ALTER TABLE `merc_stats` MODIFY COLUMN `special_abilities`  text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
-ALTER TABLE `npc_types` MODIFY COLUMN `special_abilities`  text CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
-```
-
