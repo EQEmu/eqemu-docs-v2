@@ -6,7 +6,7 @@ It's extremely simple
 
 ## Changes in the Source
 
-* You need to increment a define in the source that dictates what database version the source SHOULD be running at
+You need to increment a define in the source that dictates what database version the source SHOULD be running at
 
 **Location** `common/version.h`
 
