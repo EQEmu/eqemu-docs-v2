@@ -2,6 +2,8 @@
 
 The purpose of this document is to provide a list of useful queries that can be used to help with various tasks.
 
+If you think a query could be helpful and added to this list, suggest it in EQEmu server help.
+
 ## Find All Player Accounts By Player Name
 
 ```sql
