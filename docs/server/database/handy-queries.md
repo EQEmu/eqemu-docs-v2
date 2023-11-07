@@ -193,7 +193,34 @@ where
   );
 ```
 
+## Online Characters
+
+Filters by characters saved within the past 10 minutes
+
+```sql
+SELECT
+    character_data.account_id,
+    character_data.name,
+    character_data.zone_id,
+    COALESCE((select zone.short_name from zone where zoneidnumber = character_data.zone_id LIMIT 1), "Not Found") as zone_name,
+    character_data.zone_instance,
+    character_data.x,
+    character_data.y,
+    character_data.z,
+    character_data.heading,
+    COALESCE((select guild_id from guild_members where char_id = character_data.id), 0) as guild_id,
+    (select guilds.name from guilds where id = ((select guild_id from guild_members where char_id = character_data.id))) as guild_name,
+    FROM_UNIXTIME(character_data.last_login) AS date_time
+FROM
+    character_data
+WHERE
+    last_login > (UNIX_TIMESTAMP() - 600)
+ORDER BY character_data.name;
+```
+
 ## Online Accounts Unique Addresses
+
+Filters by characters saved within the past 10 minutes
 
 ```sql
 SELECT
