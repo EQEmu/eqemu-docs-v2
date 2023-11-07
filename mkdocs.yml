@@ -116,7 +116,7 @@ nav:
           - Handy Queries: server/database/handy-queries.md
           - Multi Tenancy: server/database/multi-tenancy.md
           - Performance Tuning: server/database/performance-tuning.md
-          - Schema: /schema
+          - Schema: /schema/aas/aa_ability/
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md
