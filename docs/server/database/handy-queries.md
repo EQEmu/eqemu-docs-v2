@@ -251,7 +251,7 @@ ORDER BY count desc;
 
 Displays all empty id's in a given table
 
-```
+```sql
 SELECT
  CONCAT(z.expected, IF(z.got-1>z.expected, CONCAT(' thru ',z.got-1), '')) AS missing
 FROM (
@@ -270,7 +270,7 @@ WHERE z.got!=0;
 
 Lists total epics by class/epic type
 
-```
+```sql
 SELECT
     c.class_name AS Class,
     i.Name AS Epic_Name,
