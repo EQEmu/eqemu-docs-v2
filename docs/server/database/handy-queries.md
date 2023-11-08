@@ -247,5 +247,48 @@ WHERE
 ORDER BY count desc;
 ```
 
+## Local empty id's in a table
 
+Displays all empty id's in a given table
 
+```
+SELECT
+ CONCAT(z.expected, IF(z.got-1>z.expected, CONCAT(' thru ',z.got-1), '')) AS missing
+FROM (
+ SELECT
+  @rownum:=@rownum+1 AS expected,
+  IF(@rownum=id, 0, @rownum:=id) AS got
+ FROM
+  (SELECT @rownum:=0) AS a
+  JOIN tablename
+  ORDER BY id
+ ) AS z
+WHERE z.got!=0;
+```
+
+## List total number of epics by class/epic type
+
+Lists total epics by class/epic type
+
+```
+SELECT
+    c.class_name AS Class,
+    i.Name AS Epic_Name,
+    count(c.class_name) AS Count
+FROM
+    character_data a,
+    inventory b,
+    class_list c,
+    items i,
+    account z
+WHERE
+    a.id = b.charid AND
+    a.class = c.class_id AND
+    b.itemid = i.id AND
+    a.account_id = z.id AND
+    z.`status` BETWEEN '0' AND '15' AND
+    a.is_deleted = '0' AND
+    i.epicitem
+GROUP BY Epic_Name
+ORDER BY Class;
+```
