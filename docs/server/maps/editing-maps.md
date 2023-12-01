@@ -2,7 +2,7 @@
 
 **Tool Download**
 
-[https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
+Included in the git repository which is downloaded with all standard installs. Check your maps/tools/Map_Edit folder
 
 **Source**
 
