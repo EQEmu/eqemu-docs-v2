@@ -41,7 +41,7 @@ The underlying persistence layer could be anything, file, memory, remote storage
 
 ### **Code Generation: Repository Generator**
 
-The repository generator can be found in the source via the following path
+The repository generator can be found and executed from the source root via the following path
 
 ```bash
 ./utils/scripts/generators/repository-generator.pl
@@ -50,16 +50,16 @@ The repository generator can be found in the source via the following path
 === "Linux Bash"
       ```bash
       # Command Structure
-      perl ~/code/utils/scripts/generators/repository-generator.pl [server-location] [table|all] [base|extended|all] [
+      perl /path/to/sourcecode/utils/scripts/generators/repository-generator.pl [server-location] [table|all] [base|extended|all] [
       
       # Generate everything
-      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ all
+      perl /path/to/sourcecode/utils/scripts/generators/repository-generator.pl /path/to/server all
       
       # Only generate a repository for the account table
-      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account 
+      perl /path/to/sourcecode/utils/scripts/generators/repository-generator.pl /path/to/server account 
       
       # Only generate base repositority for specific table
-      perl ~/code/utils/scripts/generators/repository-generator.pl ~/server/ account base
+      perl /path/to/sourcecode/utils/scripts/generators/repository-generator.pl /path/to/server account base
       ```
 
 === "Windows CMD"
