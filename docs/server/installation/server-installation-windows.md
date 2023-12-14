@@ -109,7 +109,7 @@ Once extracted, right click **eqemu_install.bat** and **Run as Administrator;** 
 | --------- | --------------------------- |
 | 9000-9001 | World process               |
 | 7000-7500 | Zone processes              |
-| 7778      | UCS / Mail                  |
+| 7778      | UCS                         |
 | 5998      | Loginserver (Titanium)      |
 | 5999      | Loginserver (SoD+)          |
 | 6000      | Loginserver (HTTP Rest API) |
