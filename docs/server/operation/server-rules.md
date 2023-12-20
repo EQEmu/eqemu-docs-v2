@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.07.15
+    Last Generated: 2023.12.19
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -97,7 +97,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Bots:GroupBuffing | false | Bots will cast single target buffs as group buffs, default is false for single. Does not make single target buffs work for MGB |
 | Bots:HealRotationMaxMembers | 24 | Maximum number of heal rotation members |
 | Bots:HealRotationMaxTargets | 12 | Maximum number of heal rotation targets |
-| Bots:ManaRegen | 2.0 | Adjust mana regen for bots, 1 is fast and higher numbers slow it down 3 is about the same as players |
+| Bots:ManaRegen | 2.0 | Adjust mana regen. Acts as a final multiplier, stacks with Rule Character:ManaRegenMultiplier. |
 | Bots:PreferNoManaCommandSpells | true | Give sorting priority to newer no-mana spells (i.e., 'Bind Affinity') |
 | Bots:QuestableSpawnLimit | false | Optional quest method to manage bot spawn limits using the quest_globals name bot_spawn_limit, see: /bazaar/Aediles_Thrall.pl |
 | Bots:SpawnLimit | 71 | Number of bots a character can have spawned at one time, You + 71 bots is a 12 group pseudo-raid |
@@ -115,6 +115,13 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Bots:ResurrectionSickness | true | Use Resurrection Sickness based on Resurrection spell cast, set to false to disable Resurrection Sickness. |
 | Bots:OldResurrectionSicknessSpell | 757 | 757 is Default Old Resurrection Sickness Spell |
 | Bots:ResurrectionSicknessSpell | 756 | 756 is Default Resurrection Sickness Spell |
+| Bots:AllowPickpocketCommand | true | Allows the use of the bot command 'pickpocket' |
+| Bots:BotHealOnLevel | false | Setting whether a bot should heal completely when leveling. Default FALSE. |
+| Bots:AutosaveIntervalSeconds | 300 | Number of seconds after which a timer is triggered which stores the bot data. The value 0 means no periodic automatic saving. |
+| Bots:CazicTouchBotsOwner | true | Default True. Cazic Touch/DT will hit bot owner rather than bot. |
+| Bots:BotsClickItemsMinLvl | 1 | Minimum level for bots to be able to use ^clickitem. Default 1. |
+| Bots:BotsCanClickItems | true | Enabled the ability for bots to click items they have equipped. Default TRUE |
+| Bots:CanClickMageEpicV1 | true | Whether or not bots are allowed to click Mage Epic 1.0. Default TRUE |
 
 ## Bugs Rules
 | Rule Name | Default Value | Description |
@@ -153,6 +160,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:AAExpMultiplier | 0.5 | If greater than 0, the AA experience gained is multiplied by this value.  |
 | Character:GroupExpMultiplier | 0.5 | The experience in a group is multiplied by this value in addition to the group multiplier. The group multiplier is: 2 members=x 1.2, 3=x1.4, 4=x1.6, 5=x1.8, 6=x2.16 |
 | Character:RaidExpMultiplier | 0.2 | The experience gained in raids is multiplied by (1-RaidExpMultiplier)  |
+| Character:FinalRaidExpMultiplier | 1.0 | Multiplies all raid experience by this value. Default: 1.0 |
 | Character:UseXPConScaling | true | When activated, the experience is modified depending on the difference between player level and NPC level. The values from the rules GreenModifier to RedModifier are used |
 | Character:ShowExpValues | 0 | Show experience values. 0=normal, 1=show raw experience values, 2=show raw experience values and percent |
 | Character:GreenModifier | 20 | The experience obtained for green con mobs is multiplied by value/100 |
@@ -359,7 +367,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## Combat Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
-| Combat:AERampageSafeZone | 0.018 | max hit ae ramp reduction range |
+| Combat:AERampageMaxDistance | 70 | Max AERampage range (% of max combat distance) |
 | Combat:PetBaseCritChance | 0 | Pet base crit chance |
 | Combat:NPCBashKickLevel | 6 | The level that NPCcan KICK/BASH |
 | Combat:MeleeCritDifficulty | 8900 | Value against which is rolled to check if a melee crit is triggered. Lower is easier |
@@ -430,6 +438,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:BackstabIgnoresBane | false | Enable or disable Bane weapon damage affecting backstab damage, false by default. |
 | Combat:SummonMeleeRange | true | Enable or disable summoning of a player when already in melee range of the summoner. |
 | Combat:WaterMatchRequiredForAutoFireLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for AutoFire LoS to pass. |
+| Combat:ExtraAllowedKickClassesBitmask | 0 | Bitmask for allowing extra classes beyond Warrior, Ranger, Beastlord, and Berserker to kick, No Extra Classes (0) by default |
+| Combat:MaxProcs | 4 | Adjustable maximum number of procs per round, the hard cap is MAX_PROCS (11). Requires mob repop or client zone when changed |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
@@ -467,6 +477,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | :--- | :--- | :--- |
 | Expansion:CurrentExpansion | -1 | The current expansion enabled for the server [-1 = ALL, 0 = Classic, 1 = Kunark etc.] |
 | Expansion:UseCurrentExpansionAAOnly | false | When true will only load AA ranks that match CurrentExpansion rule |
+| Expansion:AutoGrantAAExpansion | -1 | Expansion to auto grant AAs up to, [-1 = Disabled, 0 = Classic, 1 = Kunark etc.] |
 
 ## Expedition Rules
 | Rule Name | Default Value | Description |
@@ -618,6 +629,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | NPC:LastFightingDelayMovingMax | 20000 | Maximum time before mob goes home after all aggro loss (milliseconds) |
 | NPC:SmartLastFightingDelayMoving | true | When true, mobs that started going home previously will do so again immediately if still on FD hate list |
 | NPC:ReturnNonQuestNoDropItems | false | Returns NO DROP items on NPC that don't have an EVENT_TRADE sub in their script |
+| NPC:ReturnQuestItemsFromNonQuestNPCs | false | Returns Quest items traded to NPCs that are not flagged as a Quest NPC |
 | NPC:StartEnrageValue | 9 |  Percentage HP that an NPC will begin to enrage |
 | NPC:LiveLikeEnrage | false | If set to true then only player controlled pets will enrage |
 | NPC:EnableMeritBasedFaction | false | If set to true, faction will be given in the same way as experience (solo/group/raid) |
@@ -661,6 +673,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Pets:UnTargetableSwarmPet | false | Setting whether swarm pets should be targetable |
 | Pets:PetPowerLevelCap | 10 | Maximum number of levels a player pet can go up with pet power |
 | Pets:CanTakeNoDrop | false | Setting whether anyone can give no-drop items to pets |
+| Pets:CanTakeQuestItems | true | Setting whether anyone can give quest items to pets |
 | Pets:LivelikeBreakCharmOnInvis | true | Default: true will break charm on any type of invis (hide/ivu/iva/etc) false will only break if the pet can not see you (ex. you have an undead pet and cast IVU |
 | Pets:ClientPetsUseOwnerNameInLastName | true | Disable this to keep client pet's last names from being owner_name's pet |
 
@@ -813,6 +826,12 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:NPCBuffLevelRestrictions | false | Impose BuffLevelRestrictions on NPCs if true |
 | Spells:ResurrectionEffectBlock | 2 | 0 = allow overwrites/rule disabled. If set to 1 = Block all buffs that would overwrite Resurrection Effects. If set to 2 = Will not overwrite Resurrection Effects, instead moves new buff to an empty slot if available. Default is 2. |
 | Spells:WaterMatchRequiredForLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for spells LoS to pass. |
+| Spells:WizardCritMinimumRandomRatio | 20 | The minimum value for the random range which Wizards and Caster DPS Mercs innately have for spell crit ratio. Set to 20 for vanilla values. |
+| Spells:WizardCritMaximumRandomRatio | 70 | The maximum value for the random range which Wizards and Caster DPS Mercs innately have for spell crit ratio. Set to 70 for vanilla values. |
+| Spells:DefensiveProcPenaltyLevelGap | 6 | Defensive Proc Penalty Level Gap where procs start losing their proc rate at RuleR(Spells, DefensiveProcPenaltyModifier)% per level difference |
+| Spells:DefensiveProcPenaltyLevelGapModifier | 10.0f | Defensive Proc Penalty Level Gap Modifier where procs start losing their proc rate at defined % after RuleI(Spells, DefensiveProcLevelGap) level difference |
+| Spells:DOTBonusDamageSplitOverDuration | true | Disable to have Damage Over Time total bonus damage added to each tick instead of divided across duration |
+| Spells:HOTBonusHealingSplitOverDuration | true | Disable to have Heal Over Time total bonus healing added to each tick instead of divided across duration |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
@@ -859,7 +878,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | World:MinGMAntiHackStatus | 1 | Minimum status to check against AntiHack list |
 | World:SoFStartZoneID | -1 | Sets the Starting Zone for SoF Clients separate from Titanium Clients (-1 is disabled) |
 | World:TitaniumStartZoneID | -1 | Sets the Starting Zone for Titanium Clients (-1 is disabled). Replaces the old method |
-| World:ExpansionSettings | 16383 | Sets the expansion settings for the server, This is sent on login to world and affects client expansion settings. Defaults to all expansions enabled up to TSS, value is bitmask |
+| World:ExpansionSettings | 16383 | Sets the expansion settings bitmask for the server, This is sent on login to world and affects client expansion settings. Defaults to all expansions enabled up to TSS, value is bitmask |
+| World:CharacterSelectExpansionSettings | -1 | Sets the expansion settings bitmask for character select if you wish to override. -1 is off |
 | World:UseClientBasedExpansionSettings | true | If true it will overrule World, ExpansionSettings and set someone's expansion based on the client they're using |
 | World:PVPSettings | 0 | Sets the PVP settings for the server. 1=Rallos Zek RuleSet, 2=Tallon/Vallon Zek Ruleset, 4=Sullon Zek Ruleset, 6=Discord Ruleset, anything above 6 is the Discord Ruleset without the no-drop restrictions removed. NOTE: edit IsAttackAllowed in Zone-table to accomodate for these rules |
 | World:PVPMinLevel | 0 | Minimum level to pvp |
@@ -868,6 +888,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | World:EnableDevTools | true | Enable or Disable the Developer Tools globally (Most of the time you want this enabled) |
 | World:EnableChecksumVerification | false | Enable or Disable the Checksum Verification for eqgame.exe and spells_us.txt |
 | World:MaximumQuestErrors | 30 | Changes the maximum number of quest errors that can be displayed in #questerrors, default is 30 |
+| World:BootHour | 0 | Sets the in-game hour world will set when it first boots. 0-24 are valid options, where 0 disables this rule |
+| World:UseItemLinksForKeyRing | false | Uses item links for Key Ring Listing instead of item name |
+| World:UseOldShadowKnightClassExport | true | Disable to have Shadowknight show as Shadow Knight (live-like) |
 
 ## Zone Rules
 | Rule Name | Default Value | Description |
