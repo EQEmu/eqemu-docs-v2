@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.07.29
+    Last Generated: 2023.12.19
 
 
 | Command | Description | Status Level |
@@ -59,6 +59,7 @@
 | #givemoney | [Platinum] [Gold] [Silver] [Copper] - Gives specified amount of money to you or your player target | GMMgmt (200) |
 | #gmzone | [Zone ID&#124;Zone Short Name] [Version] [Instance Identifier] - Zones to a private GM instance (Version defaults to 0 and Instance Identifier defaults to 'gmzone' if not used) | GMAdmin (100) |
 | #goto | [playername] or [x y z] [h] - Teleport to the provided coordinates or to your target | Steward (10) |
+| #grantaa | [level] - Grants a player all available AA points up the specified level, all AAs are granted if no level is specified. | GMMgmt (200) |
 | #grid | [add/delete] [grid_num] [wandertype] [pausetype] - Create/delete a wandering grid | GMAreas (170) |
 | #guild | Guild manipulation commands. Use argument help for more info. | Steward (10) |
 | #help | [Search Criteria] - List available commands and their description, specify partial command as argument to search | Player (0) |
@@ -138,6 +139,7 @@
 | #summonitem | [itemid] [charges] - Summon an item onto your cursor. Charges are optional. | GMMgmt (200) |
 | #suspend | [name] [days] [reason] - Suspend by character name and for specificed number of days | GMLeadAdmin (150) |
 | #suspendmulti | [Character Name One&#124;Character Name Two&#124;etc] [Days] [Reason] - Suspend multiple characters by name for specified number of days | GMLeadAdmin (150) |
+| #takeplatinum | [Platinum] - Takes specified amount of platinum from you or your player target | GMMgmt (200) |
 | #task | (subcommand) - Task system commands | GMLeadAdmin (150) |
 | #petname | [newname] - Temporarily renames your pet. Leave name blank to restore the original name. | GMAdmin (100) |
 | #traindisc | [level] - Trains all the disciplines usable by the target, up to level specified. (may freeze client for a few seconds) | GMLeadAdmin (150) |
