@@ -2,7 +2,7 @@
 
     This page lists the Bot commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.07.15
+    Last Generated: 2023.12.19
 
 ## Description
 
@@ -108,6 +108,7 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^casterrange | Controls the range casters will try to stay away from a mob (if too far, they will skip spells that are out-of-range) | Player (0) |
 | ^charm | Attempts to have a bot charm your target | Player (0) |
 | ^circle | Orders a Druid bot to open a magical doorway to a specified destination | Player (0) |
+| ^clickitem | Orders your targeted bot to click the item in the provided inventory slot. | Player (0) |
 | ^cure | Orders a bot to remove any ailments | Player (0) |
 | ^defensive | Orders a bot to use a defensive discipline | Player (0) |
 | ^depart | Orders a bot to open a magical doorway to a specified destination | Player (0) |
@@ -177,6 +178,7 @@ Optional 'options' and 'actionable' arguments are also enclosed within parenthes
 | ^summoncorpse | Orders a bot to summon a corpse to its feet | Player (0) |
 | ^suspend | Suspends a bot's AI processing until released | Player (0) |
 | ^taunt | Toggles taunt use by a bot | Player (0) |
+| ^timer | Checks or clears timers of the chosen type. | GMMgmt (200) |
 | ^track | Orders a capable bot to track enemies | Player (0) |
 | ^viewcombos | Views bot race class combinations | Player (0) |
 | ^waterbreathing | Orders a bot to cast a water breathing spell | Player (0) |
