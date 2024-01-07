@@ -69,23 +69,14 @@ description: This page describes the settings and options in your eqemu_config.j
 | *port | 3306 | MySQL port |
 | *db | eq | MySQL database name |
 
-### mailserver
+### ucs
 
-* Required for UCS Mailserver service
+* Required for UCS (chat and mail service)
 
-| Variable | Default | Description |
-| :--- | :--- | :--- |
-| *host |  | Mailserver hostname - just use (0.0.0.0) |
-| port | 7778 | Mailserver port |
-
-### chatserver
-
-* Required for UCS Chatserver service
-
-| Variable | Default | Description |
-| :--- | :--- | :--- |
-| *host |  | Chatserver hostname - just use (0.0.0.0) |
-| port | 7778 | Chatserver port |
+| Variable | Default | Description                   |
+| :--- | :--- |:------------------------------|
+| *host |  | Hostname - just use (0.0.0.0) |
+| port | 7778 | Mailserver port               |
 
 ### zones
 

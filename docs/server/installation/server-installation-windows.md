@@ -86,13 +86,13 @@ You will be presented with a series of prompts to configure your server installa
 
 ### Ports Forwarded
 
-| Port      | Purpose                     |
-| --------- | --------------------------- |
-| 9000-9001 | World process               |
-| 7000-7500 | Zone processes              |
-| 7778      | UCS / Mail                  |
-| 5998      | Loginserver (Titanium)      |
-| 5999      | Loginserver (SoD+)          |
+| Port      | Purpose                  |
+| --------- | ------------------------ |
+| 9000-9001 | World process            |
+| 7000-7500 | Zone processes           |
+| 7778      | UCS                  |
+| 5998      | Loginserver (Titanium)   |
+| 5999      | Loginserver (SoD+)       |
 
 ### Install Finished
 
