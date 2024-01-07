@@ -16,15 +16,13 @@ This installer assumes you have a **clean** install of Windows and an Internet C
 ## What's in the Installer
 
 - [x] **[Perl 5.24.4 x64](https://strawberryperl.com/)** (Quests)
+- [x] **[Lua Server Runtime](https://www.lua.org/about.html)** (Quests)
 - [x] **[MariaDB x64 10.x](https://mariadb.org/)**
 - [x] **[Latest PEQ Database](http://db.projecteq.net/)**
 - [x] **[Latest PEQ Quests](https://github.com/ProjectEQ/projecteqquests)**
 - [x] **[V2 Server Side Maps](https://github.com/Akkadius/eqemu-maps)**
 - [x] **[Optimized and latest server binaries](https://github.com/EQEmu/Server/releases) (Stable)**
 - [x] **[Spire Web Admin / Content Editor](https://github.com/akkadius/spire)**
-- [x] **Automatically added firewall rules**
-- [x] **Lua Server Runtime** (Quests)
-
 
 !!! info
       More installer info found in the installation details
