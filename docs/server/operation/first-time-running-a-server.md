@@ -18,7 +18,7 @@ mysql> quit;
 
 In this example, `my_db_username` is the username that you set for the MySQL database during server installation and `my_character_name` is the name of the character you setting to GM status.
 
-You may find the [account](https://eqemu.gitbook.io/database-schema/tables/account) table schema a useful reference as well.
+You may find the [account](https://docs.eqemu.io/schema/account/account/) table schema a useful reference as well.
 
 ### What can I do once I'm a GM?
 
