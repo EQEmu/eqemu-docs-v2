@@ -9,7 +9,7 @@ The EQEmu Task System allows implementation of quests that utilize the clients T
 Much of the Task System functionality can be found in [/zones/task.cpp](https://github.com/EQEmu/Server/blob/master/zone/tasks.cpp) and should be referenced by those comfortable with looking at the EQEmu source code.
 
 !!! info
-      While every attempt will be made to keep this page updated, please reference the additional supporting documentation found in the [Database Schema](https://eqemu.gitbook.io/database-schema/), [Quest API](https://eqemu.gitbook.io/quest-api/), and [Changelog](https://eqemu.gitbook.io/changelog/).
+      While every attempt will be made to keep this page updated, please reference the additional supporting documentation found in the [Database Schema](https://docs.eqemu.io/schema/aas/aa_ability/), [Quest API](https://docs.eqemu.io/quest-api/introduction/), and [Changelog](https://docs.eqemu.io/changelog/server/2023/).
 
 
 | Section Description                                                     | Link                                                                                                                  |
@@ -22,7 +22,7 @@ Much of the Task System functionality can be found in [/zones/task.cpp](https://
 
 ## Database Schema
 
-The most up to date information regarding the database schema can be found in the Database Schema Space for [Tasks](https://eqemu.gitbook.io/database-schema/server/tasks).  The information presented here is current as of this writing.
+The most up to date information regarding the database schema can be found in the Database Schema Space for [Tasks](https://docs.eqemu.io/schema/tasks/tasks/).  The information presented here is current as of this writing.
 
 ### Tasks Table
 
@@ -218,7 +218,7 @@ The most up to date information regarding the database schema can be found in th
 ## Logging Options
 
 !!! info
-      These options are present in the Logging System through [logsys_categories](https://eqemu.gitbook.io/database-schema/server/admin/logsys_categories) or in-game via command #logs set [output] [type] [level]
+      These options are present in the Logging System through [logsys_categories](https://docs.eqemu.io/schema/admin/logsys_categories/) or in-game via command #logs set [output] [type] [level]
 
 
 ```sql
@@ -238,7 +238,7 @@ TASKS UPDATE is used to print out debug information when checking if activities 
 These are the **quest::[methods]** and **EVENT** triggers that are related to the Task System.
 
 !!! info
-      Be sure to reference the [Quest API](https://eqemu.gitbook.io/quest-api/) in the event that functionality is expanded.
+      Be sure to reference the [Quest API](https://docs.eqemu.io/quest-api/introduction/) in the event that functionality is expanded.
 
 
 ### taskselector
