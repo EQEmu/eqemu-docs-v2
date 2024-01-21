@@ -4,14 +4,14 @@ description: This page describes customizing factions on your EQEmu server
 
 # Customizing Factions
 
-Every faction that exists on a server is listed in the [`faction_list`](https://eqemu.gitbook.io/database-schema/server/factions/faction_list) table. This table includes a unique id, a name, and a starting (base) faction. This starting value is combined with any race/class/deity adjustments that apply (see [`faction_list_mod`](https://eqemu.gitbook.io/database-schema/server/factions/faction_list_mod) table) to create the starting faction for characters when they are born. As characters interact with the world, they can gain/lose faction through their actions, be that killing or questing. These values are continuously updated in the [`faction_values`](https://eqemu.gitbook.io/database-schema/server/factions/faction_values) table.
+Every faction that exists on a server is listed in the [`faction_list`](https://docs.eqemu.io/schema/factions/faction_list/) table. This table includes a unique id, a name, and a starting (base) faction. This starting value is combined with any race/class/deity adjustments that apply (see [`faction_list_mod`](https://docs.eqemu.io/schema/factions/faction_list_mod/) table) to create the starting faction for characters when they are born. As characters interact with the world, they can gain/lose faction through their actions, be that killing or questing. These values are continuously updated in the [`faction_values`](https://docs.eqemu.io/schema/factions/faction_values/) table.
 
 !!! info
       Note that the `faction_values` table contains _character_ data, even though it does not follow the Database Schema Guidelines (it should be `character_faction_values`).
 
 
 !!! info
-      As of [06 March 2019](https://eqemu.gitbook.io/changelog/years/2019#3-1-2019) we have imported the client faction list and we now use these renumbered factions. The client does not have a base for any of the factions, all of the offsets are realized in faction_list_mod instead. This does not mean that the base cannot be altered for custom results.
+      As of [01 March 2019](https://docs.eqemu.io/changelog/server/2019/#312019) we have imported the client faction list and we now use these renumbered factions. The client does not have a base for any of the factions, all of the offsets are realized in faction_list_mod instead. This does not mean that the base cannot be altered for custom results.
 
 
 Each faction has a minimum and a maximum value, at which point no more faction can be lost or gained. This information is stored in the `faction_base_data` table. The default _base_ maximum is 2000 and the _base_ minimum is -2000 if there is no entry. The amount a character can earn is based on these constants **and** the faction's initial base value. For example, a faction that starts out at 0 (base value in `faction_list`) is a simple case, and would use the maximum of 2000 and minimum of -2000.
