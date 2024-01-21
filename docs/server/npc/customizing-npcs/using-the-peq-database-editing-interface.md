@@ -34,7 +34,7 @@ A dazzling array of NPC attributes are displayed on the page.  These attributes 
 
 ![Default settings for our new NPC](../../../gitbook/assets/peq_database_editor-5.png)
 
-Explanations for each of these fields can be found on the [npc_types](https://eqemu.gitbook.io/database-schema/server/npcs/npc_types) page (opens new window) in the Database Schema documentation.  
+Explanations for each of these fields can be found on the [npc_types](https://docs.eqemu.io/schema/npcs/npc_types/) page (opens new window) in the Database Schema documentation.  
 
 For our Server Greeter Bot, we are going to input the NPC Name as "_**Salutation_Model_XIV**_", select the **457 - Gnomework** _race_, with a **5 - Construct** _bodytype_ setting, _gender_ **Neuter**. These options will cause the NPC to display correctly to the client.  Be sure to also place a checkmark in the following boxes:  **Will Not Aggro (24)**, **Immune to Aggro (25)**, and **Has Quest File**.  The rest of the settings are entirely up to you.  You can choose to match the settings below for the purposes of this guide.  We do want our Greeter Bot to be noticeable, so we have increased the _size_ to **10**.  We also don't want our Greeter Bot to be accidentally killed, so we have made the NPC quite resilient by granting ridiculous HP and resist.  
 
@@ -56,7 +56,7 @@ NPCs must be assigned additional information to allow them to spawn in the world
 
 ![The Spawns tab has all of the information regarding the spawning of your NPC](../../../gitbook/assets/peq_database_editor-7.png)
 
-A _Spawngroup_ is a grouping of one or more NPCs.  A Spawngroup can have one member, which will be the case for our Greeter Bot, or it can have many members; a Spawngroup with many members can create a more random feel for your world, since the same NPC may not always appear.  You can review the fields in database table on the [spawngroup](https://eqemu.gitbook.io/database-schema/server/spawns/spawngroup) page (opens new window) in the Database Schema documentation.
+A _Spawngroup_ is a grouping of one or more NPCs.  A Spawngroup can have one member, which will be the case for our Greeter Bot, or it can have many members; a Spawngroup with many members can create a more random feel for your world, since the same NPC may not always appear.  You can review the fields in database table on the [spawngroup](https://docs.eqemu.io/schema/spawns/spawngroup/) page (opens new window) in the Database Schema documentation.
 
 Click on the _Click here to create a new spawngroup_ link.
 
@@ -72,7 +72,7 @@ Choose the link in yellow text that says _View Spawnpoints (0) for this Spawngro
 
 ### Create a Spawnpoint
 
-A Spawnpoint is the database entry that determines the location and behavior when the NPC spawns in the world.  These values are stored in the spawn2 table in your database.  You can review the fields of this table on the [spawn2](https://eqemu.gitbook.io/database-schema/server/spawns/spawn2) page (opens new window) of the Database Schema documentation.
+A Spawnpoint is the database entry that determines the location and behavior when the NPC spawns in the world.  These values are stored in the spawn2 table in your database.  You can review the fields of this table on the [spawn2](https://docs.eqemu.io/schema/spawns/spawn2/) page (opens new window) of the Database Schema documentation.
 
 Since there are no Spawnpoints associated with this Spawngroup, this area is empty.
 
@@ -96,7 +96,7 @@ Once you click the _Add Spawnpoint_ button, you are redirected to a page that al
 
 A Pathing Grid is the mechanism that allows an NPC to appear as though it is traveling around inside of your world.  This mechanism is separate from Pathing Nodes (which your NPC would follow when chasing a player after losing Line of Sight), and separate from scripted Wandering.  
 
-The Pathing Grid has Wander types, Pause types, and a listing of Waypoints that your NPC will follow.  To review the Grid fields in your database, reference the [grid](https://eqemu.gitbook.io/database-schema/server/grids/grid) page (opens new window) in the Database Schema documentation.  For information regarding the Waypoint entry fields in your database, reference the [grid_entries](https://eqemu.gitbook.io/database-schema/server/grids/grid_entries) page (opens new window).
+The Pathing Grid has Wander types, Pause types, and a listing of Waypoints that your NPC will follow.  To review the Grid fields in your database, reference the [grid](https://docs.eqemu.io/schema/grids/grid/) page (opens new window) in the Database Schema documentation.  For information regarding the Waypoint entry fields in your database, reference the [grid_entries](https://docs.eqemu.io/schema/grids/grid_entries/) page (opens new window).
 
 Since we have not defined any information about this particular Pathing Grid, we will do so now.
 
