@@ -14,7 +14,7 @@ By default, when a player reaches level 51, the player unlocks the option to ded
 
 ## "Ranks" in Alternative Advancements
 
-AAs often have "ranks" available that allow you to progress the ability, making the effects more powerful at each rank level purchased.  These values are stored in the [aa_rank](https://eqemu.gitbook.io/database-schema/server/aas/aa_ranks) table. For example, _Innate Run Speed_ has many ranks to represent the levels it can be trained. 
+AAs often have "ranks" available that allow you to progress the ability, making the effects more powerful at each rank level purchased.  These values are stored in the [aa_rank](https://docs.eqemu.io/schema/aas/aa_ranks/) table. For example, _Innate Run Speed_ has many ranks to represent the levels it can be trained. 
 
 ![Innate Run Speed from your aa_ability table](../../gitbook/assets/innate-run-speed.png)
 
@@ -36,7 +36,7 @@ In order to find out what the advantage of _Innate Run Speed 3_ compared to _Inn
 
 ## Rank Effects in Alternative Advancements
 
-The effects of each rank of an AA is stored in the aptly named [aa_rank_effects](https://eqemu.gitbook.io/database-schema/server/aas/aa_rank_effects) database table.  
+The effects of each rank of an AA is stored in the aptly named [aa_rank_effects](https://docs.eqemu.io/schema/aas/aa_rank_effects/) database table.  
 
 Let's examine the rank effects for our _Innate Run Speed_ AA:
 
