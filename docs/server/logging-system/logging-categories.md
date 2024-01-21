@@ -7,7 +7,7 @@ tags:
 
 # Logging Categories
 
-Logging categories have their settings stored in the [logsys_categories](https://eqemu.gitbook.io/database-schema/server/admin/logsys_categories) table, but the categories are defined in [common/eqemu_logsys.h](https://github.com/EQEmu/Server/blob/master/common/eqemu_logsys.h)
+Logging categories have their settings stored in the [logsys_categories](https://docs.eqemu.io/schema/admin/logsys_categories/) table, but the categories are defined in [common/eqemu_logsys.h](https://github.com/EQEmu/Server/blob/master/common/eqemu_logsys.h)
 
 !!! info
       The default settings for the "log-to" categories (Console, File, GM Say) are listed below.  You can modify these values for your own server in your `logsys_categories` table.
