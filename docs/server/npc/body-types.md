@@ -9,7 +9,7 @@
 | 5 | Construct |
 | 6 | Extra Planar |
 | 7 | Monster |
-| 8 | Flying Monsters |
+| 8 | Undead Pet |
 | 9 | Raid Giant |
 | 10 | Raid Coldain |
 | 11 | Untargetable |
