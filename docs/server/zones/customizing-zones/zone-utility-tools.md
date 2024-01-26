@@ -6,7 +6,7 @@ description: This page organizes various tools for manipulation of Zones.
 
 **Download**
 
-* [https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip](https://ci.appveyor.com/api/projects/KimLS/zone-utilities/artifacts/build_x64.zip)
+* Included in maps repository on all installs. [https://github.com/Akkadius/eqemu-maps/tree/master/tools] (https://github.com/Akkadius/eqemu-maps/tree/master/tools)
 
 **Source**
 
