@@ -6,7 +6,7 @@ description: This page organizes various tools for manipulation of Zones.
 
 **Download**
 
-* Included in maps repository on all installs. [https://github.com/Akkadius/eqemu-maps/tree/master/tools] (https://github.com/Akkadius/eqemu-maps/tree/master/tools)
+* Included in maps repository on all installs. https://github.com/Akkadius/eqemu-maps/tree/master/tools
 
 **Source**
 
