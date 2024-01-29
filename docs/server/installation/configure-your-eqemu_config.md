@@ -91,7 +91,7 @@ description: This page describes the settings and options in your eqemu_config.j
 | Variable | Default | Description |
 | :--- | :--- | :--- |
 | low | 7000 | Starting TCP/UDP port assignment for zones |
-| high | 7999 | Ending TCP/UDP port assignment for zones |
+| high | 7500 | Ending TCP/UDP port assignment for zones |
 
 ### loginserver
 
