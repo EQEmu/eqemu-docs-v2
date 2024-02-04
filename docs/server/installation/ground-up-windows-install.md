@@ -64,7 +64,7 @@ If you have already installed any of the following, the download and installatio
     _Note: Only install one version of Visual Studio_
 
 * Perl v5.24.4.1 (64-bit) [[download](https://strawberryperl.com/download/5.24.4.1/strawberry-perl-5.24.4.1-64bit.msi)]
-* CMake (64-bit) [[download](https://github.com/Kitware/CMake/releases/download/v3.14.5/cmake-3.14.5-win64-x64.msi)]
+* CMake (64-bit) [[download](https://cmake.org/download/)]
 * Git (64-bit) [[download](https://git-scm.com/download/win)]
 * TortoiseGit (64-bit - Optional) [[download](https://download.tortoisegit.org/tgit/2.8.0.0/TortoiseGit-2.8.0.0-64bit.msi)]
 
