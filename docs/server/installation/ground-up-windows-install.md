@@ -59,7 +59,7 @@ If you have already installed any of the following, the download and installatio
 
     _Note: Microsoft now requires a user account to download Visual Studio. Clicking the Visual Studio link above will take you to the "older versions" page. Clicking the_ `Download` _button on that page will prompt you to log in or create an account._
 
-*   Visual Studio 2019 Community Edition [[alternative download](https://visualstudio.microsoft.com/vs/)]
+*   Visual Studio 2022 Community Edition [[alternative download](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=3602&passive=false)]
 
     _Note: Only install one version of Visual Studio_
 
