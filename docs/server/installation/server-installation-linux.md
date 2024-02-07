@@ -1,4 +1,4 @@
-# Basic Server Install - Linux
+# Linux Server Installer
 
 ### Supported Distributions
 

@@ -1,19 +1,15 @@
-# Basic Server Install - Windows
+# Windows Server Installer
 
-### Operating System Compatibility
+### Requirements
+
+This installer assumes you have a **clean** install of Windows and an Internet Connection
 
 * Windows 10 - x64
 * Windows 11 - x64
 
-### Requirements
+**Runtime** - 2-10 minute(s) install depending on your connection
 
-This installer assumes you have a **clean** install of Windows and an Internet Connection 
-
-## Runtime
-
-2-10 minute(s) install depending on your connection
-
-## What's in the Installer
+### What's in the Installer
 
 - [x] **[Perl 5.24.4 x64](https://strawberryperl.com/)** (Quests)
 - [x] **[Lua Server Runtime](https://www.lua.org/about.html)** (Quests)
@@ -100,7 +96,7 @@ When the installation process is done running, you will see **"press any key to 
 
 The installer will do a few things for you at the end
 
-* Open up your **install_config.yml** this is all of the inputs you provided to the installer or randomly generated passwords created during the install process. You can use this file to reference your passwords and other information.
+* Open up your **install_config.yml** this is all the inputs you provided to the installer or randomly generated passwords created during the install process. You can use this file to reference your passwords and other information.
 * Opens up Spire web service in your default browser. This is a web service that allows you to manage your server. You can use this to start/stop/restart your server, edit content, manage accounts, manage zones, and more. Spire is continually ever evolving and is the recommended way to manage your server.
 * Opens up the server folder in your file explorer. This is where all of your server files are located. You can use this to edit configuration files, add custom content, and more.
 

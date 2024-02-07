@@ -13,6 +13,10 @@
     }
 }
 
+body[data-md-color-scheme=slate] .md-sidebar--primary .md-sidebar__scrollwrap {
+    border-right: 1px solid #454755;
+}
+
 .md-container {
     opacity: 1 !important;
 }

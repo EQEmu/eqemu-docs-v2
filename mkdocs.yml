@@ -92,6 +92,8 @@ nav:
           - Bot Spell Settings: server/bots/bot-spell-settings.md
           - Bot Spell Types: server/bots/bot-spell-types.md
           - Stance Types: server/bots/stance-types.md
+      - Configuration:
+          - eqemu_config.json: ./configuration/eqemu_config.md
       - Developer:
           - Database Conventions: developer/conventions-guidelines.md
           - Database Migrations: developer/database-schema-migrations.md
@@ -248,16 +250,9 @@ nav:
           - Status Levels: server/player/status-levels.md
       - Server Installation:
           - server/installation/README.md
-          - Basic Server Install - Linux: server/installation/server-installation-linux.md
-          - Basic Server Install - Windows: server/installation/server-installation-windows.md
-          - Bot Installation: server/installation/bot-installation.md
-          - Configure your eqemu_config: server/installation/configure-your-eqemu_config.md
-          - Development Server Setup: server/installation/development-server-setup.md
-          - Ground Up Linux Install: server/installation/ground-up-linux-install.md
-          - Ground Up Windows Install: server/installation/ground-up-windows-install.md
-          - Install PEQ Database Editor: server/installation/install-peq-database-editor.md
-          - Troubleshooting: server/installation/troubleshooting.md
-          - VSCode Dev Container Environment: server/installation/vscode-dev-container-environment.md
+          - Windows Server Installer: server/installation/server-installation-windows.md
+          - Linux Server Installer: server/installation/server-installation-linux.md
+          - Manual Windows Install: server/installation/ground-up-windows-install.md
       - Scripting:
           - server/scripting/README.md
           - Converting QGlobals: server/scripting/converting-qglobals.md
@@ -318,6 +313,7 @@ nav:
       - Tools:
           - server/tools/README.md
           - Cheat Sheet: ./server/tools/tools-cheat-sheet.md
+          - Install PEQ Database Editor: ./server/tools/install-peq-database-editor.md
       - Zones:
           - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Customizing Zones:

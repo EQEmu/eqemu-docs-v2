@@ -13,7 +13,7 @@ description: >-
 
 Link:  [https://github.com/ProjectEQ/peqphpeditor](https://github.com/ProjectEQ/peqphpeditor)  
 Description:  An intuitive editor that allows you to make changes to your world server.  
-Installation: [Install PEQ Database Editor](../installation/install-peq-database-editor.md)
+Installation: [Install PEQ Database Editor](install-peq-database-editor.md)
 
 #### EQEmu Operations Center (EOC)
 
