@@ -26,6 +26,7 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - content.action.edit
     - navigation.indexes
     - navigation.instant
     - navigation.tabs
@@ -755,6 +756,7 @@ nav:
       - Operate:
           - Backups: akk-stack/operate/backups.md
           - CPU: akk-stack/operate/cpu.md
+          - File Structure: akk-stack/operate/file-structure.md
           - Services: akk-stack/operate/services.md
           - Shell: akk-stack/operate/shell.md
           - Update: akk-stack/operate/update.md
