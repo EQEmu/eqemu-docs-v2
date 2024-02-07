@@ -13,7 +13,7 @@
     }
 }
 
-body[data-md-color-scheme=slate] .md-sidebar--primary .md-sidebar__scrollwrap {
+body .md-sidebar--primary .md-sidebar__scrollwrap {
     border-right: 1px solid #454755;
 }
 
