@@ -754,6 +754,7 @@ nav:
         - Installation: akk-stack/installation.md
       - Operate:
           - Backups: akk-stack/operate/backups.md
+          - CPU: akk-stack/operate/cpu.md
           - Services: akk-stack/operate/services.md
           - Shell: akk-stack/operate/shell.md
           - Update: akk-stack/operate/update.md
