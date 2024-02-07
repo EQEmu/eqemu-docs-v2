@@ -23,6 +23,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
+    - content.code.copy
     - content.code.annotate
     - content.tabs.link
     - navigation.indexes
@@ -30,6 +31,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    - navigation.sections
     - search.share
     - search.suggest
   name: material
@@ -746,6 +748,14 @@ nav:
       - "2004": changelog/server/2004.md
       - "2003": changelog/server/2003.md
       - Changelog Contributions: changelog/server/changelog-contributions.md
+  - Akk Stack:
+      - Introduction: akk-stack/introduction.md
+      - Install:
+        - Installation: akk-stack/installation.md
+      - Operate:
+          - Backups: akk-stack/operate/backups.md
+          - Services: akk-stack/operate/services.md
+          - Shell: akk-stack/operate/shell.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md
