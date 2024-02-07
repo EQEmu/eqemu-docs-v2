@@ -4,7 +4,7 @@ description: This page introduces scripting for your EQEmu Server.
 
 # Scripting
 
-Please note that there is extensive documentation of the [EQEmu Quest Api](https://eqemu.gitbook.io/quest-api/) available on this site.  This documentation includes sample scripts describing functions, variables, sub routines and the like.  
+Please note that there is extensive documentation of the [EQEmu Quest Api](https://docs.eqemu.io/quest-api/introduction/) available on this site.  This documentation includes sample scripts describing functions, variables, sub routines and the like.  
 
 The information found here is intended to get someone started down the path of creating their own custom scripts on their world.
 
@@ -12,15 +12,15 @@ The information found here is intended to get someone started down the path of c
 
 If you are new to the EQEmu Quest API, it can easily be daunting to try to digest the vast array of methods, functions, subroutines, plugins, and varying quest-scripting languages.  Quest scripts in EQEmu are written in [Lua](https://www.lua.org/) or [Perl](https://www.perl.org/), both of which are widely accepted throughout the EQEmu community.
 
-**If you are new to both Lua and Perl**, a good place to get started is the [Beginner's Guide to Perl and Lua.](https://eqemu.gitbook.io/quest-api/methods/beginners-guide)
+**If you are new to both Lua and Perl**, a good place to get started is the [Quest API Introduction.](https://docs.eqemu.io/quest-api/introduction/)
 
-**If you are adept at either Lua or Perl**, it is best to familiarize yourself with how EQEmu [loads quests scripts](https://eqemu.gitbook.io/quest-api/methods/quest-loading), followed by reviewing the various [Events](https://eqemu.gitbook.io/quest-api/methods/events) that can be triggered in either Perl or Lua, along with  exports of those events (as well as the [global exports](https://eqemu.gitbook.io/quest-api/perl/exports)), and then beginning to review the many methods and functions exposed in the API.
+**If you are adept at either Lua or Perl**, it is best to familiarize yourself with how EQEmu [loads quests scripts](https://docs.eqemu.io/quest-api/quest-loading/), followed by reviewing the various [Events](https://docs.eqemu.io/quest-api/events/) that can be triggered in either Perl or Lua, along with exports of those events (as well as the global exports), and then beginning to review the many methods and functions exposed in the API.
 
 ## To Perl, or to Lua?
 
-The decision to utilize either Perl or Lua for your quest scripts is entirely up to you.  Both offer nearly all the same functions and methods--where discrepancies exist, they are noted (for instance the [Spell Methods (Lua)](https://eqemu.gitbook.io/quest-api/methods/spell-methods-lua) page describes methods only available in Lua.  Beginners often find Perl easier to understand. Adept Lua programmers might enjoy the ability to load [encounters](encounters-lua.md).  Advanced Perl programmers may find the ability to create or utilize [plugins](https://eqemu.gitbook.io/quest-api/perl/plugins) very desirable.
+The decision to utilize either Perl or Lua for your quest scripts is entirely up to you.  Both offer nearly all the same functions and methods--where discrepancies exist, they are noted (for instance the [Spell Methods](https://docs.eqemu.io/quest-api/methods/spell/) page describes methods only available in Lua.  Beginners often find Perl easier to understand. Adept Lua programmers might enjoy the ability to load [encounters](encounters-lua.md).  Advanced Perl programmers may find the ability to create or utilize [plugins](https://docs.eqemu.io/server/scripting/perl-plugins/) very desirable.
 
-All attempts have been made to provide corresponding examples in both languages throughout this Wiki.  Many community members have a preference, and certainly there are many members of the community that can provide you guidance for either language--please look for us in the **#Support-Quest-Scripts** channel on the [EQEmu Discord](https://discord.gg/QHsm7CD) server.
+All attempts have been made to provide corresponding examples in both languages throughout this Wiki.  Many community members have a preference, and certainly there are many members of the community that can provide you guidance for either language--please look for us in the **#server-help** channel on the [EQEmu Discord](https://discord.gg/QHsm7CD) server.
 
 ## Some Basics to get you Started
 
@@ -30,7 +30,7 @@ We're frequently asked for certain types of scripts that server operators need t
 
 The [Player Buffer Scripts](player-buffer-scripts.md) page gives you examples of how to automatically buff players (for instance, when a player levels up and needs new skills or spells), as well as examples of how to include NPCs that perform these duties or cast specific buffs when a player interacts with the Buffer NPC.
 
-These scripts range from fairly straightforward to relatively complex--be sure to reference [Event Subroutines](https://eqemu.gitbook.io/quest-api/events) to learn why these scripts fire, [Quest API Functions](https://docs.eqemu.io/quest-api/introduction/) to learn what each function does and how to properly call the function, and finally, [Customizing NPCs](../../../../server/npc/customizing-npcs) if you would like to learn how to create your own NPC who will utilize any of these quest scripts.
+These scripts range from fairly straightforward to relatively complex--be sure to reference [Event Subroutines](https://docs.eqemu.io/quest-api/events/) to learn why these scripts fire, [Quest API Functions](https://docs.eqemu.io/quest-api/introduction/) to learn what each function does and how to properly call the function, and finally, [Customizing NPCs](../../../../server/npc/customizing-npcs) if you would like to learn how to create your own NPC who will utilize any of these quest scripts.
 
 ### Player Teleporting
 

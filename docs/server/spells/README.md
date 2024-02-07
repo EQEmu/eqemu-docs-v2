@@ -4,7 +4,7 @@
 
 So you would like to understand spells? It's a bit of a journey, so let's get started.
 
-There are tens of thousands of records in your [spells_new](https://eqemu.gitbook.io/database-schema/tables/spells_new) table, and making sense of them all can be a little daunting (at least at first).
+There are tens of thousands of records in your [spells_new](https://docs.eqemu.io/schema/spells/spells_new/) table, and making sense of them all can be a little daunting (at least at first).
 
 Each spell has MANY fields related to it--and you're probably wondering what all of these fields do. You may even be up against some [Client Limitations](../../../../server/reference-lists/client-spell-id-limitations), or perhaps you've just discovered that AAs are actually spells! Don't get too worked up!! (╯°□°）╯彡 ┻━┻
 
@@ -208,7 +208,7 @@ Protection of the Glades:
 
 ## Understanding the Remaining Fields
 
-A dizzying array of fields exists that have not been covered above. Many of these fields are quite self-explanatory, such as the level at which each class can use the spell, the deities allowed to use the spell, cast-on messages, etc. This section is meant to cover the remaining fields as questions arise about their functionality. Remember to reference the information on [spells_new](https://eqemu.gitbook.io/database-schema/tables/spells_new) found on this wiki, and the information contained in the [spdat.h](https://github.com/EQEmu/Server/blob/master/common/spdat.h) source file, as well as the other helpful wiki pages for [Base Value Formulas](../../../../server/spells/base-value-formulas), [Spell Target Restrictions](../../../../server/spells/spell-target-restrictions), [Spell Resist Types](spell-resist-types.md), and [Damage Shield Types](../../../../server/spells/damage-shield-types).
+A dizzying array of fields exists that have not been covered above. Many of these fields are quite self-explanatory, such as the level at which each class can use the spell, the deities allowed to use the spell, cast-on messages, etc. This section is meant to cover the remaining fields as questions arise about their functionality. Remember to reference the information on [spells_new](https://docs.eqemu.io/schema/spells/spells_new/) found on this wiki, and the information contained in the [spdat.h](https://github.com/EQEmu/Server/blob/master/common/spdat.h) source file, as well as the other helpful wiki pages for [Base Value Formulas](../../../../server/spells/base-value-formulas), [Spell Target Restrictions](../../../../server/spells/spell-target-restrictions), [Spell Resist Types](spell-resist-types.md), and [Damage Shield Types](../../../../server/spells/damage-shield-types).
 
 ## Reagents
 

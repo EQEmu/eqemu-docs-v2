@@ -210,7 +210,7 @@ end
 
 ![](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LnsZsY32yEVJrtyioON%2Fuploads%2FNFb0vJedzuIFIiYTaF16%2Ffile.png?alt=media)
 
-* The same exact thing applies for clients, you can use any $client object listed in the [Quest API](https://eqemu.gitbook.io/quest-api/) manipulate the entity list and trigger any action in any event that you want. It is a less frequent thing to want to use a full list of clients to do something, but you can use it for a variety of things depending on the cool ideas that you come up with. But for examples sake I want to use an example where maybe I want to freeze all of the clients in a zone in a boss fight with **Emperor Crushbone **for many a few seconds at a time
+* The same exact thing applies for clients, you can use any $client object listed in the [Quest API](https://docs.eqemu.io/quest-api/introduction/) manipulate the entity list and trigger any action in any event that you want. It is a less frequent thing to want to use a full list of clients to do something, but you can use it for a variety of things depending on the cool ideas that you come up with. But for examples sake I want to use an example where maybe I want to freeze all of the clients in a zone in a boss fight with **Emperor Crushbone **for many a few seconds at a time
 
 ## Client Example
 

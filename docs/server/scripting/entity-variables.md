@@ -21,7 +21,7 @@ With this, you can get really really creative as to how you pass variables aroun
 * **There are Perl Plugin Shorthands for these functions (For speed of writing scripts)**
   * **plugin::SEV($entity, "variable_name", "value"); - Write**
   * **plugin::REV($entity, "variable_name"); - Returns value, Read**
-  * See [Plugins Reference](https://eqemu.gitbook.io/quest-api/perl/plugins)
+  * See [Plugins Reference](https://docs.eqemu.io/server/scripting/perl-plugins/)
 
 ## Example
 
