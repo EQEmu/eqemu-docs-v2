@@ -35,12 +35,12 @@ Docker Compose version v2.2.3
 First clone the repository somewhere on your server, in this case I'm going to clone it to an `/opt/eqemu-servers` folder in a Debian Linux host with Docker installed
 
 ```
-git clone https://github.com/Akkadius/akk-stack.git peq-test-server
+git clone https://github.com/Akkadius/akk-stack.git && cd akk-stack
 ```
 
 ```
-root@host:/opt/eqemu-servers# git clone https://github.com/Akkadius/akk-stack.git peq-test-server
-Cloning into 'peq-test-server'...
+$ git clone https://github.com/Akkadius/akk-stack.git
+Cloning into 'akk-stack'...
 remote: Enumerating objects: 57, done.
 remote: Counting objects: 100% (57/57), done.
 remote: Compressing objects: 100% (42/42), done.
@@ -49,18 +49,12 @@ Receiving objects: 100% (782/782), 101.94 KiB | 7.28 MiB/s, done.
 Resolving deltas: 100% (437/437), done.
 ```
 
-Change into the new directory that represents your server
-
-```bash
-root@host:/opt/eqemu-servers# cd peq-test-server/
-```
-
 ### Initialize the Environment
 
 There are a ton of configuration variables available in the **.env** file that is produced from running the next command, we will get into that later. The key thing here is that it creates the base **.env** and scrambles all of the password fields in the environment
 
 ```shell
-root@host:/opt/eqemu-servers# make init-reset-env
+$ make init-reset-env
 make env-transplant
 Wrote updated config to [.env]
 make env-scramble-secrets
@@ -80,17 +74,16 @@ The more ports you nail up, the longer it takes to start / stop. Since this is a
 
 This `make` command also configures the `eqemu_config.json` port and address parameters as well automatically for you
 
-!!! Terminal
-    ```
-    make set-vars port-range-high=7030 ip-address=66.70.153.122
-    ```
+```
+make set-vars port-range-high=7030 ip-address=66.70.153.122
+```
 
-    Yields the following output
+Yields the following output
 
-    ```
-    Wrote [IP_ADDRESS] = [66.70.153.122] to [.env]
-    Wrote [PORT_RANGE_HIGH] = [7030] to [.env]
-    ```
+```
+Wrote [IP_ADDRESS] = [66.70.153.122] to [.env]
+Wrote [PORT_RANGE_HIGH] = [7030] to [.env]
+```
 
 
 
