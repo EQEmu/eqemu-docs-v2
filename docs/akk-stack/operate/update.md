@@ -10,6 +10,8 @@ docker-compose build
 make up
 ```
 
+This does not touch the database, the server directory, or any of the configuration files. It's a safe way to update the stack without losing any data.
+
 Keep in mind of new environment variables that may be added to the **.env** file via **.env.example**
 
 ### Updating Spire
