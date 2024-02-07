@@ -1,3 +1,17 @@
+### Updating Akk Stack
+
+Most of the time, unless instructed otherwise, updating the **akk-stack** is as simple as running the following command from the root of the **akk-stack** directory
+
+```
+make down
+git pull
+docker-compose pull
+docker-compose build
+make up
+```
+
+Keep in mind of new environment variables that may be added to the **.env** file via **.env.example**
+
 ### Updating Spire
 
 From within the **eqemu-server** container at the root of the home directory, you can run the following command to update the Spire server binaries. Do note that Spire can also be updated from within the Spire admin panel.
