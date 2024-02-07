@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## 
 
@@ -67,6 +67,7 @@ sub EVENT_ITEM_CLICK {
 	quest::debug("itemname " . $itemname);
 	quest::debug("slotid " . $slotid);
 	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_ITEM_ENTER_ZONE
@@ -78,13 +79,6 @@ sub EVENT_ITEM_ENTER_ZONE {
 	quest::debug("itemname " . $itemname);
 }
 ```
-## EVENT_ITEM_TICK
-
-``` perl
-
-sub EVENT_ITEM_TICK {
-}
-```
 ## EVENT_LOOT
 
 ``` perl
@@ -94,7 +88,6 @@ sub EVENT_LOOT {
 	quest::debug("looted_charges " . $looted_charges);
 	quest::debug("corpse_name " . $corpse_name);
 	quest::debug("corpse_id " . $corpse_id);
-	quest::debug("item " . $item);
 	quest::debug("corpse " . $corpse);
 }
 ```

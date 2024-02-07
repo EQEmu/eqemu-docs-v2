@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## 
 
@@ -36,6 +36,9 @@ sub EVENT_CAST {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -46,6 +49,9 @@ sub EVENT_CAST_BEGIN {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_CAST_ON
@@ -56,6 +62,9 @@ sub EVENT_CAST_ON {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_COMBAT
@@ -80,6 +89,7 @@ sub EVENT_DAMAGE_GIVEN {
 	quest::debug("buff_slot " . $buff_slot);
 	quest::debug("is_buff_tic " . $is_buff_tic);
 	quest::debug("special_attack " . $special_attack);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_DAMAGE_TAKEN
@@ -96,6 +106,7 @@ sub EVENT_DAMAGE_TAKEN {
 	quest::debug("buff_slot " . $buff_slot);
 	quest::debug("is_buff_tic " . $is_buff_tic);
 	quest::debug("special_attack " . $special_attack);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_DEATH
@@ -107,9 +118,8 @@ sub EVENT_DEATH {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
-	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_entity_id " . $killed_entity_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -126,9 +136,8 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
-	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_entity_id " . $killed_entity_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -156,6 +165,22 @@ sub EVENT_ITEM {
 	quest::debug("silver " . $silver);
 	quest::debug("gold " . $gold);
 	quest::debug("platinum " . $platinum);
+}
+```
+## EVENT_LEVEL_DOWN
+
+``` perl
+
+sub EVENT_LEVEL_DOWN {
+	quest::debug("levels_lost " . $levels_lost);
+}
+```
+## EVENT_LEVEL_UP
+
+``` perl
+
+sub EVENT_LEVEL_UP {
+	quest::debug("levels_gained " . $levels_gained);
 }
 ```
 ## EVENT_NPC_SLAY

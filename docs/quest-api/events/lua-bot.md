@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## EVENT_AGGRO_SAY
 
@@ -19,6 +19,8 @@ function EVENT_CAST(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -29,6 +31,8 @@ function EVENT_CAST_BEGIN(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_ON
@@ -39,6 +43,8 @@ function EVENT_CAST_ON(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_COMBAT
@@ -55,6 +61,16 @@ function EVENT_COMBAT(e) {
 ``` lua
 
 function EVENT_DAMAGE_GIVEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_DAMAGE_TAKEN
@@ -62,6 +78,16 @@ function EVENT_DAMAGE_GIVEN(e) {
 ``` lua
 
 function EVENT_DAMAGE_TAKEN(e) {
+	eq.debug("entity_id " .. e.entity_id);
+	eq.debug("damage " .. e.damage);
+	eq.debug("spell_id " .. e.spell_id);
+	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("is_damage_shield " .. e.is_damage_shield);
+	eq.debug("is_avoidable " .. e.is_avoidable);
+	eq.debug("buff_slot " .. e.buff_slot);
+	eq.debug("is_buff_tic " .. e.is_buff_tic);
+	eq.debug("special_attack " .. e.special_attack);
+	eq.debug("other " .. e.other);
 }
 ```
 ## EVENT_DEATH
@@ -70,9 +96,11 @@ function EVENT_DAMAGE_TAKEN(e) {
 
 function EVENT_DEATH(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -81,9 +109,11 @@ function EVENT_DEATH(e) {
 
 function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("other " .. e.other);
+	eq.debug("killer_id " .. e.killer_id);
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 }
 ```
 ## EVENT_DESPAWN
@@ -102,6 +132,21 @@ function EVENT_EQUIP_ITEM_BOT(e) {
 	eq.debug("item_quantity " .. e.item_quantity);
 	eq.debug("slot_id " .. e.slot_id);
 	eq.debug("item " .. e.item);
+}
+```
+## EVENT_LEVEL_DOWN
+
+``` lua
+
+function EVENT_LEVEL_DOWN(e) {
+}
+```
+## EVENT_LEVEL_UP
+
+``` lua
+
+function EVENT_LEVEL_UP(e) {
+	eq.debug("levels_gained " .. e.levels_gained);
 }
 ```
 ## EVENT_PAYLOAD

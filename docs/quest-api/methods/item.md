@@ -1,10 +1,10 @@
-=== "Lua (175)"
+=== "Lua (176)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Item){:target="Item"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` lua
     item:AAgi();
@@ -58,6 +58,7 @@
     item:Click_Type();
     item:Color();
     item:CombatEffects();
+    item:Comment();
     item:DR();
     item:DSMitigation();
     item:Damage();

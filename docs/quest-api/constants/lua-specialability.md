@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=SpecialAbility){:target="SpecialAbility"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ``` lua
 SpecialAbility.allow_beneficial
@@ -23,11 +23,13 @@ SpecialAbility.immune_aggro
 SpecialAbility.immune_aggro_client
 SpecialAbility.immune_aggro_npc
 SpecialAbility.immune_aggro_on
+SpecialAbility.immune_assassinate
 SpecialAbility.immune_casting_from_range
 SpecialAbility.immune_damage_client
 SpecialAbility.immune_damage_npc
 SpecialAbility.immune_feign_death
 SpecialAbility.immune_fleeing
+SpecialAbility.immune_headshot
 SpecialAbility.immune_magic
 SpecialAbility.immune_melee
 SpecialAbility.immune_melee_except_bane

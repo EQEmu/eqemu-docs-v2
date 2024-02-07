@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Group){:target="Group"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` perl
     $group->CastGroupSpell(Mob* caster, uint16 spell_id);
@@ -40,7 +40,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Group){:target="Group"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` lua
     group:CastGroupSpell(Mob caster, int spell_id);
@@ -56,7 +56,7 @@
     group:GetMember(int member_index);
     group:GetTotalGroupDamage(Mob other);
     group:GroupCount();
-    group:GroupMessage(Mob sender, int language, string message);
+    group:GroupMessage(Mob sender, uint8 language, string message);
     group:GroupMessage(Mob sender, string message);
     group:IsGroupMember(Mob c);
     group:IsGroupMember(string name);

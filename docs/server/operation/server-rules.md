@@ -19,7 +19,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2023.12.19
+    Last Generated: 2024.02.07
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -70,6 +70,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Aggro:PetAttackRange | 40000.0 | Maximum squared range /pet attack works at default is 200 |
 | Aggro:NPCAggroMaxDistanceEnabled | true | If enabled, NPC's will drop aggro beyond 600 units or what is defined at the zone level |
 | Aggro:AggroPlayerPets | false | If enabled, NPCs will aggro player pets |
+| Aggro:UndeadAlwaysAggro | true | should undead always aggro? |
+| Aggro:BardAggroCap | 40 | per song bard aggro cap. |
 
 ## Analytics Rules
 | Rule Name | Default Value | Description |
@@ -317,6 +319,11 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:EnableRaidMemberEXPModifier | true | Enable or disable the raid experience modifier based on members in raid, default is true |
 | Character:LeaveCursorMoneyOnCorpse | false | Enable or disable leaving cursor money on player corpses |
 | Character:ItemExtraSkillDamageCalcAsPercent | false | If enabled, apply Item Extra Skill Damage as Percentage-based modifiers |
+| Character:UseForageCommonFood | true | If enabled, use the common foods specified in the code. |
+| Character:ClearXTargetDelay | 10 | Seconds between uses of the #clearxtargets command (Set to 0 to disable) |
+| Character:PreventMountsFromZoning | false | Enable to prevent mounts from zoning - Prior to December 15, 2004 this is enabled. |
+| Character:GroupInvitesRequireTarget | false | Enable to require players to have invitee on target (Disables /invite name) - Classic Style |
+| Character:PlayerTradingLoreFeedback | true | If enabled, during a player to player trade, if lore items exist, it will output which items. |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -401,6 +408,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:DefProcPerMinAgiContrib | 0.075 | How much agility contributes to defensive proc rate |
 | Combat:NPCFlurryChance | 20 | Chance for NPC to flurry |
 | Combat:TauntOverLevel | 1 | Allows you to taunt NPC's over warriors level |
+| Combat:TauntOverAggro | 0 | + amount over hate_top it will add before any bonus hate. |
 | Combat:TauntSkillFalloff | 0.33 | For every taunt skill point that's not maxed you lose this percentage chance to taunt |
 | Combat:EXPFromDmgShield | false | Determine if damage from a damage shield counts for experience gain |
 | Combat:QuiverHasteCap | 1000 | Quiver haste cap 1000 on live for a while, currently 700 on live |
@@ -410,6 +418,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:ProjectileDmgOnImpact | true | If enabled, projectiles (i.e. arrows) will hit on impact, instead of instantly |
 | Combat:MeleePush | true | Enable melee push |
 | Combat:MeleePushChance | 50 | NPC chance the target will be pushed. Made up, 100 actually isn't that bad |
+| Combat:MeleePushForceClientPercent | 0.00 | Percent to add or remove from push for players |
+| Combat:MeleePushForcePetPercent | 0.00 | Percent to add or remove from push for pets |
+| Combat:NPCtoNPCPush | false | Disabled prevents NPC to NPC pushing per the 2013+ patch. |
 | Combat:UseLiveCombatRounds | true | Turn this false if you don't want to worry about fixing up combat rounds for NPCs |
 | Combat:NPCAssistCap | 5 | Maximum number of NPC that will assist another NPC at once |
 | Combat:NPCAssistCapTimer | 6000 | Time a NPC will take to clear assist aggro cap space (milliseconds) |
@@ -440,6 +451,15 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:WaterMatchRequiredForAutoFireLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for AutoFire LoS to pass. |
 | Combat:ExtraAllowedKickClassesBitmask | 0 | Bitmask for allowing extra classes beyond Warrior, Ranger, Beastlord, and Berserker to kick, No Extra Classes (0) by default |
 | Combat:MaxProcs | 4 | Adjustable maximum number of procs per round, the hard cap is MAX_PROCS (11). Requires mob repop or client zone when changed |
+| Combat:FinishingBlowOnlyWhenFleeing | false | Enable to only allow Finishing Blow when fleeing (Original Style Finishing Blow) |
+| Combat:ClassicTripleAttack | false | enable to use non-skill based classic triple attack. Originally it was Warrior Only but was expanded, can use the TripleAttackChance to tune the classes out. |
+| Combat:ClassicTripleAttackChanceWarrior | 100 | Innate Chance for Warrior to Triple Attack after a Double Attack (125 = 12.5%). DEFAULT: 100 |
+| Combat:ClassicTripleAttackChanceMonk | 100 | Innate Chance for Monk to Triple Attack after a Double Attack (200 = 20%). DEFAULT: 100 |
+| Combat:ClassicTripleAttackChanceBerserker | 100 | Innate Chance for Berserker to Triple Attack after a Double Attack (200 = 20%). DEFAULT: 100 |
+| Combat:ClassicTripleAttackChanceRanger | 100 | Innate Chance for Ranger to Triple Attack after a Double Attack (200 = 20%). DEFAULT: 100 |
+| Combat:StunChance | 12 | Percent chance that client will be stunned when mob is behind player. DEFAULT: 12 |
+| Combat:BashTwoHanderUseShoulderAC | false | Enable to use shoulder AC for bash calculations when two hander is equipped. Unproven if accurate DEFAULT: false |
+| Combat:BashACBonusDivisor | 25.0 | this divides the AC value contribution to bash damage, lower to increase damage |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
@@ -637,6 +657,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | NPC:NPCToNPCAggroTimerMax | 6000 | Maximum time span after which one NPC aggro another NPC (milliseconds) |
 | NPC:UseClassAsLastName | true | Uses class archetype as LastName for NPC with none |
 | NPC:NewLevelScaling | true | Better level scaling, use old if new formulas would break your server |
+| NPC:NPCBackstabMod | 1.9 | Multiplier for NPC Backstab, Higher = Lower backstab amount |
 | NPC:NPCGatePercent | 20 |  Percentage at which the NPC Will attempt to gate at |
 | NPC:NPCGateNearBind | false | Will NPC attempt to gate when near bind location? |
 | NPC:NPCGateDistanceBind | 75 | Distance from bind before NPC will attempt to gate |
@@ -676,6 +697,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Pets:CanTakeQuestItems | true | Setting whether anyone can give quest items to pets |
 | Pets:LivelikeBreakCharmOnInvis | true | Default: true will break charm on any type of invis (hide/ivu/iva/etc) false will only break if the pet can not see you (ex. you have an undead pet and cast IVU |
 | Pets:ClientPetsUseOwnerNameInLastName | true | Disable this to keep client pet's last names from being owner_name's pet |
+| Pets:PetTauntRange | 150 | Range at which a pet will taunt targets. |
 
 ## QueryServ Rules
 | Rule Name | Default Value | Description |
@@ -719,7 +741,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## Skills Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
-| Skills:MaxTrainTradeskills | 21 | Highest level for trading skills that can be learnt by the trainer |
+| Skills:MaxTrainTradeskills | 21 | Highest level for trade skills that can be taught by the trainer |
+| Skills:MaxTrainResearch | 21 | Highest level for training research from a GM. |
 | Skills:UseLimitTradeskillSearchSkillDiff | true | Enables the limit for the maximum difference between trivial and skill for recipe searches and favorites |
 | Skills:TrivialTradeskillCombinesNoFail | false | Enable to make all trivial tradeskill combines unable to fail |
 | Skills:MaxTradeskillSearchSkillDiff | 50 | The maximum difference in skill between the trivial of an item and the skill of the player if the trivial is higher than the skill. Recipes that have not been learnt or made at least once via the Experiment mode will be removed from searches based on this criteria. |
@@ -729,6 +752,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Skills:SenseHeadingStartValue | 200 | Start value of sense heading skill |
 | Skills:SelfLanguageLearning | true | Enabling self-learning of languages |
 | Skills:RequireTomeHandin | false | Disable click-to-learn and force hand in to Guild Master |
+| Skills:TradeSkillClamp | 0 | Legacy tradeskills would clamp at 252 regardless of item modifiers and skill combination. DEFAULT: 0 will bypass clamp. Legacy value 252 |
+| Skills:UseAltSinisterStrikeFormula | false | Enabling will utilize a formula derived from 2004 monkey business post which makes the AA actually worth something. |
+| Skills:TrackingAutoRefreshSkillUps | true | Disable to prevent tracking auto-refresh from giving skill-ups. Classic Style |
+| Skills:MaximumTauntDistance | 150 | Maximum player taunt distance. |
 
 ## Spells Rules
 | Rule Name | Default Value | Description |
@@ -800,6 +827,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:FlatItemExtraSpellAmt | false | Allow SpellDmg stat to affect all spells, regardless of cast time/cooldown/etc |
 | Spells:IgnoreSpellDmgLvlRestriction | false | Ignore the 5 level spread on applying SpellDmg |
 | Spells:ItemExtraSpellAmtCalcAsPercent | false | Apply the Item stats Spell Dmg and Heal Amount as Percentage-based modifiers instead of flat additions |
+| Spells:BreakFeignDeathWhenCastOn | 2.0 | Percentage that Feign Death will break when you resist a spell |
+| Spells:BreakSneakWhenCastOn | 2.0 | Percentage that Sneak will break when you resist a spell |
+| Spells:EnableResistSoftCap | false | Enabled resist softcap and can be adjusted by rule, SpellResistSoftCap |
+| Spells:SpellResistSoftCap | 255 | Softcap for spell resists. |
 | Spells:AllowItemTGB | false | Target group buff (/tgb) doesn't work with items on live, custom servers want it though |
 | Spells:NPCInnateProcOverride | true | NPC innate procs override the target type to single target |
 | Spells:OldRainTargets | false | Use old incorrectly implemented maximum targets for rains |
@@ -832,6 +863,16 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:DefensiveProcPenaltyLevelGapModifier | 10.0f | Defensive Proc Penalty Level Gap Modifier where procs start losing their proc rate at defined % after RuleI(Spells, DefensiveProcLevelGap) level difference |
 | Spells:DOTBonusDamageSplitOverDuration | true | Disable to have Damage Over Time total bonus damage added to each tick instead of divided across duration |
 | Spells:HOTBonusHealingSplitOverDuration | true | Disable to have Heal Over Time total bonus healing added to each tick instead of divided across duration |
+| Spells:UseLegacyFizzleCode | false | Enable will turn on the legacy fizzle code which is far stricter and more accurate to 2001/2002 testing. |
+| Spells:LegacyManaburn | false | Enable to have the legacy manaburn system from 2003 and earlier. |
+| Spells:LegacyManaburnCap | 9492 | Adjusted the hard cap (Normal or Crit) for the Legacy Manaburn system. DEFAULT: 9492 |
+| Spells:EvacClearAggroInSameZone | false | Enable to clear aggro on clients when evacing in same zone. |
+| Spells:CharmAggroOverLevel | false | Enabling this rule will cause Charm casts over level to show resisted and cause aggro. Early EQ style. |
+| Spells:RequireMnemonicRetention | true | Enabling will require spell slots 9-12 to have the appropriate Mnemonic Retention AA learned. |
+| Spells:EvacClearCharmPet | false | Enable to have evac in zone clear charm from charm pets and detach buffs. |
+| Spells:ManaTapsRequireNPCMana | false | Enabling will require target to have mana to tap. Default off as many npc's are caster class with 0 mana and need fixed. |
+| Spells:HarmTouchCritRatio | 200 | Harmtouch crit bonus, on top of BaseCritRatio |
+| Spells:UseClassicSpellFocus | false | Enabling will tell the server to handle random focus damage as classic spell imports lack the limit values. |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
@@ -915,6 +956,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Zone:EnableZoneControllerGlobals | false | Enables the ability to use quest globals with the zone controller NPC |
 | Zone:GlobalLootMultiplier | 1 | Sets Global Loot drop multiplier for database based drops, useful for double, triple loot etc |
 | Zone:KillProcessOnDynamicShutdown | true | When process has booted a zone and has hit its zone shut down timer, it will hard kill the process to free memory back to the OS |
-| Zone:SecondsBeforeIdle | 60 | Seconds before IDLE_WHEN_EMPTY define kicks in |
 | Zone:SpawnEventMin | 3 | When strict is set in spawn_events, specifies the max EQ minutes into the trigger hour a spawn_event will fire. Going below 3 may cause the spawn_event to not fire. |
 | Zone:ForageChance | 25 | Chance of foraging from zone table vs global table |
+| Zone:AllowCrossZoneSpellsOnBots | false | Set to true to allow cross zone spells (cast/remove) to affect bots |
+| Zone:AllowCrossZoneSpellsOnMercs | false | Set to true to allow cross zone spells (cast/remove) to affect mercenaries |
+| Zone:AllowCrossZoneSpellsOnPets | false | Set to true to allow cross zone spells (cast/remove) to affect pets |

@@ -1,10 +1,10 @@
-=== "Perl (37)"
+=== "Perl (34)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` perl
     $corpse->AddItem(uint32 item_id, uint16 charges);
@@ -21,9 +21,7 @@
     $corpse->GetCopper();
     $corpse->GetDBID();
     $corpse->GetDecayTime();
-    $corpse->GetFirstSlotByItemID(uint32_t item_id);
     $corpse->GetGold();
-    $corpse->GetItemIDBySlot(uint16_t loot_slot);
     $corpse->GetLootList();
     $corpse->GetOwnerName();
     $corpse->GetPlatinum();
@@ -34,7 +32,6 @@
     $corpse->IsLocked();
     $corpse->IsRezzed();
     $corpse->Lock();
-    $corpse->RemoveCash();
     $corpse->RemoveItem(uint16_t loot_slot);
     $corpse->RemoveItemByID(uint32_t item_id);
     $corpse->RemoveItemByID(uint32_t item_id, int quantity);
@@ -51,7 +48,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Corpse){:target="Corpse"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` lua
     corpse:AddItem(uint32 itemnum, uint16 charges, int16 slot, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);

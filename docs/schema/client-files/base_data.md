@@ -1,14 +1,14 @@
 # base_data
 
 !!! info
-	This page was last generated 2023.07.15
+	This page was last generated 2024.02.07
 
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
-| level | int | Level |
-| class | int | [Class Identifier](../../../../server/player/class-list) |
+| level | tinyint | Level |
+| class | tinyint | [Class Identifier](../../../../server/player/class-list) |
 | hp | double | Health |
 | mana | double | Mana |
 | end | double | Endurance |

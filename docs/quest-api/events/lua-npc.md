@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## EVENT_AGGRO_SAY
 
@@ -20,6 +20,10 @@ function EVENT_AGGRO_SAY(e) {
 
 function EVENT_CAST(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -28,6 +32,10 @@ function EVENT_CAST(e) {
 
 function EVENT_CAST_BEGIN(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_ON
@@ -36,6 +44,10 @@ function EVENT_CAST_BEGIN(e) {
 
 function EVENT_CAST_ON(e) {
 	eq.debug("spell " .. e.spell);
+	eq.debug("caster_id " .. e.caster_id);
+	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_COMBAT
@@ -91,6 +103,7 @@ function EVENT_DEATH(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -105,6 +118,7 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -119,6 +133,7 @@ function EVENT_DEATH_ZONE(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -204,6 +219,23 @@ function EVENT_KILLED_MERIT(e) {
 function EVENT_LEAVE_AREA(e) {
 	eq.debug("area_id " .. e.area_id);
 	eq.debug("area_type " .. e.area_type);
+}
+```
+## EVENT_LOOT_ADDED
+
+``` lua
+
+function EVENT_LOOT_ADDED(e) {
+	eq.debug("item " .. e.item);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("item_name " .. e.item_name);
+	eq.debug("item_charges " .. e.item_charges);
+	eq.debug("augment_one " .. e.augment_one);
+	eq.debug("augment_two " .. e.augment_two);
+	eq.debug("augment_three " .. e.augment_three);
+	eq.debug("augment_four " .. e.augment_four);
+	eq.debug("augment_five " .. e.augment_five);
+	eq.debug("augment_six " .. e.augment_six);
 }
 ```
 ## EVENT_LOOT_ZONE

@@ -1,7 +1,7 @@
 # ldon_trap_templates
 
 !!! info
-	This page was last generated 2023.07.15
+	This page was last generated 2024.02.07
 
 ## Relationship Diagram(s)
 

@@ -2,11 +2,11 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ``` lua
 Rule.AAExpMultiplier
-Rule.AERampageSafeZone
+Rule.AERampageMaxDistance
 Rule.AI_EngagedBeneficialOtherChance
 Rule.AI_EngagedBeneficialSelfChance
 Rule.AI_EngagedDetrimentalChance
@@ -36,6 +36,9 @@ Rule.AllowBotEquipAnyRaceGear
 Rule.AllowCamelCaseNames
 Rule.AllowCorpse
 Rule.AllowCrossClassTrainers
+Rule.AllowCrossZoneSpellsOnBots
+Rule.AllowCrossZoneSpellsOnMercs
+Rule.AllowCrossZoneSpellsOnPets
 Rule.AllowDoubleInvis
 Rule.AllowExtraDmgSkill
 Rule.AllowItemTGB
@@ -45,6 +48,7 @@ Rule.AllowMercs
 Rule.AllowMultipleOfSameAugment
 Rule.AllowOwnerOptionAltCombat
 Rule.AllowOwnerOptionAutoDefend
+Rule.AllowPickpocketCommand
 Rule.AllowSpellMemorizeFromItem
 Rule.AllowTickPulling
 Rule.AllyFactionMinimum
@@ -63,15 +67,18 @@ Rule.AssassinateOnlyHumanoids
 Rule.AssistNoTargetSelf
 Rule.AttackCommandRange
 Rule.AuditTrail
+Rule.AutoGrantAAExpansion
 Rule.AutoInjectSaylinksToClientMessage
 Rule.AutoInjectSaylinksToSay
 Rule.AutoShutdownDelay
 Rule.AutosaveIntervalS
+Rule.AutosaveIntervalSeconds
 Rule.AvgDefProcsPerMinute
 Rule.AvgProcsPerMinute
 Rule.AvgSpellProcsPerMinute
 Rule.BackstabIgnoresBane
 Rule.BackstabIgnoresElemental
+Rule.BardAggroCap
 Rule.BardTrackingDistanceMultiplier
 Rule.BaseCritChance
 Rule.BaseCritRatio
@@ -80,6 +87,8 @@ Rule.BaseImmunityLevel
 Rule.BaseInstrumentSoftCap
 Rule.BaseProcChance
 Rule.BaseRunSpeedCap
+Rule.BashACBonusDivisor
+Rule.BashTwoHanderUseShoulderAC
 Rule.BatchPlayerEventProcessChunkSize
 Rule.BatchPlayerEventProcessIntervalSeconds
 Rule.BeastlordTrackingDistanceMultiplier
@@ -89,26 +98,37 @@ Rule.BerserkerFrenzyStart
 Rule.BerserkerTrackingDistanceMultiplier
 Rule.BindAnywhere
 Rule.BlueModifier
+Rule.BootHour
 Rule.BotCharacterLevel
 Rule.BotExpansionSettings
 Rule.BotGroupXP
+Rule.BotHealOnLevel
 Rule.BotLevelsWithOwner
+Rule.BotsCanClickItems
+Rule.BotsClickItemsMinLvl
+Rule.BreakFeignDeathWhenCastOn
+Rule.BreakSneakWhenCastOn
 Rule.BuffFriends
 Rule.BuffLevelRestrictions
 Rule.BuffsFadeOnDeath
 Rule.BuyCostMod
 Rule.CallOfTheHeroAggroClearDist
+Rule.CanClickMageEpicV1
 Rule.CanTakeNoDrop
+Rule.CanTakeQuestItems
 Rule.CasterStopMeleeLevel
+Rule.CazicTouchBotsOwner
 Rule.CazicTouchTargetsPetOwner
 Rule.ChaBonusMod
 Rule.ChaPenaltyMod
 Rule.ChannelsIgnoreNameFilter
+Rule.CharacterSelectExpansionSettings
 Rule.ChargeMercPurchaseCost
 Rule.ChargeMercUpkeepCost
 Rule.CharismaCharmDuration
 Rule.CharismaEffectiveness
 Rule.CharismaEffectivenessCap
+Rule.CharmAggroOverLevel
 Rule.CharmBreakCheckChance
 Rule.CharmDisablesSpecialAbilities
 Rule.CheckCursorEmptyWhenLooting
@@ -118,7 +138,13 @@ Rule.ChooseLeaderCooldownTime
 Rule.Classic2HBAnimation
 Rule.ClassicMasterWu
 Rule.ClassicNPCBackstab
+Rule.ClassicTripleAttack
+Rule.ClassicTripleAttackChanceBerserker
+Rule.ClassicTripleAttackChanceMonk
+Rule.ClassicTripleAttackChanceRanger
+Rule.ClassicTripleAttackChanceWarrior
 Rule.ClearTempMerchantlist
+Rule.ClearXTargetDelay
 Rule.ClericInnateHealFocus
 Rule.ClericTrackingDistanceMultiplier
 Rule.ClientAggroCheckIdleInterval
@@ -140,6 +166,7 @@ Rule.CriticalDamage
 Rule.CriticallyWoundedAggroMod
 Rule.CurrentExpansion
 Rule.CurrentTargetAggroMod
+Rule.DOTBonusDamageSplitOverDuration
 Rule.DOTsScaleWithSpellDmg
 Rule.DamageMessages
 Rule.DeathExpLossLevel
@@ -151,6 +178,8 @@ Rule.DeathSaveCharismaMod
 Rule.DefProcPerMinAgiContrib
 Rule.DefaultGuild
 Rule.DefaultRampageTargets
+Rule.DefensiveProcPenaltyLevelGap
+Rule.DefensiveProcPenaltyLevelGapModifier
 Rule.DeleteTimer
 Rule.DeleteTransformationMold
 Rule.DialogueWindowAnimatesNPCsIfNoneSet
@@ -207,6 +236,7 @@ Rule.EnableNPCQuestJournal
 Rule.EnableRaidEXPModifier
 Rule.EnableRaidMemberEXPModifier
 Rule.EnableRangerAutoFire
+Rule.EnableResistSoftCap
 Rule.EnableReturnHomeButton
 Rule.EnableShadowrest
 Rule.EnableSneakPull
@@ -230,6 +260,8 @@ Rule.EnforceAugmentUsability
 Rule.EnforceAugmentWear
 Rule.EnforceCharacterLimitAtLogin
 Rule.EnvironmentDamageMulipliter
+Rule.EvacClearAggroInSameZone
+Rule.EvacClearCharmPet
 Rule.ExemptMaxClientsStatus
 Rule.ExpMultiplier
 Rule.ExpPerPoint
@@ -239,6 +271,7 @@ Rule.ExperiencePercentCapPerKill
 Rule.ExpireRead
 Rule.ExpireTrash
 Rule.ExpireUnread
+Rule.ExtraAllowedKickClassesBitmask
 Rule.FRProjectileItem_NPC
 Rule.FRProjectileItem_SOF
 Rule.FRProjectileItem_Titanium
@@ -247,9 +280,11 @@ Rule.Fear
 Rule.FearBreakCheckChance
 Rule.FeignKillsPet
 Rule.FinalExpMultiplier
+Rule.FinalRaidExpMultiplier
 Rule.Find
 Rule.FindBestZHeightAdjust
 Rule.FinishBuffing
+Rule.FinishingBlowOnlyWhenFleeing
 Rule.FishingLineLength
 Rule.FishingLineStepSize
 Rule.FishingRodLength
@@ -279,10 +314,13 @@ Rule.GraveyardTimeMS
 Rule.GreenModifier
 Rule.GroupBuffing
 Rule.GroupExpMultiplier
+Rule.GroupInvitesRequireTarget
 Rule.GroupMemberEXPModifier
 Rule.GuildHallExpirationDays
+Rule.HOTBonusHealingSplitOverDuration
 Rule.HOTsScaleWithHealAmt
 Rule.HPRegenMultiplier
+Rule.HarmTouchCritRatio
 Rule.HasteCap
 Rule.Hastev3Cap
 Rule.HeadshotOnlyHumanoids
@@ -356,6 +394,8 @@ Rule.LeashDistance
 Rule.LeaveCorpses
 Rule.LeaveCursorMoneyOnCorpse
 Rule.LeaveNakedCorpses
+Rule.LegacyManaburn
+Rule.LegacyManaburnCap
 Rule.LevelBasedEXPMods
 Rule.LevelToStopACTwinkControl
 Rule.LevelToStopDamageCaps
@@ -375,6 +415,7 @@ Rule.MaintainIntoxicationAcrossZones
 Rule.MajorNPCCorpseDecayTimeMS
 Rule.ManaRegen
 Rule.ManaRegenMultiplier
+Rule.ManaTapsRequireNPCMana
 Rule.MarkMQWarpLT
 Rule.MarqueeHPUpdates
 Rule.MaxBarterSearchResults
@@ -395,6 +436,7 @@ Rule.MaxMessagesBeforeKick
 Rule.MaxNavmeshNodes
 Rule.MaxNumberForGroup
 Rule.MaxPermanentPlayerChannels
+Rule.MaxProcs
 Rule.MaxRaceID
 Rule.MaxRampageTargets
 Rule.MaxScalingProcAggro
@@ -403,13 +445,17 @@ Rule.MaxSongSlotsNPC
 Rule.MaxTotalSlotsNPC
 Rule.MaxTotalSlotsPET
 Rule.MaxTradeskillSearchSkillDiff
+Rule.MaxTrainResearch
 Rule.MaxTrainSpecializations
 Rule.MaxTrainTradeskills
 Rule.MaximumMessagesPerInterval
 Rule.MaximumQuestErrors
+Rule.MaximumTauntDistance
 Rule.MeleeCritDifficulty
 Rule.MeleePush
 Rule.MeleePushChance
+Rule.MeleePushForceClientPercent
+Rule.MeleePushForcePetPercent
 Rule.MeleeRangeAggroMod
 Rule.MinAggroLevel
 Rule.MinGMAntiHackStatus
@@ -440,6 +486,7 @@ Rule.NPCAggroMaxDistanceEnabled
 Rule.NPCAssistCap
 Rule.NPCAssistCapTimer
 Rule.NPCAttackMagicLevel
+Rule.NPCBackstabMod
 Rule.NPCBashKickLevel
 Rule.NPCBuffLevelRestrictions
 Rule.NPCCanCrit
@@ -458,6 +505,7 @@ Rule.NPC_UseFocusFromItems
 Rule.NPC_UseFocusFromSpells
 Rule.NPCsUseFrontalStunImmunityClasses
 Rule.NPCsUseFrontalStunImmunityRaces
+Rule.NPCtoNPCPush
 Rule.NavmeshStepSize
 Rule.NecromancerTrackingDistanceMultiplier
 Rule.NewLevelScaling
@@ -491,6 +539,7 @@ Rule.PetAttackRange
 Rule.PetBaseCritChance
 Rule.PetPowerLevelCap
 Rule.PetSpellAggroMod
+Rule.PetTauntRange
 Rule.PetZoneWithOwner
 Rule.PetsUseReagents
 Rule.PlayerCreationAllowed
@@ -518,9 +567,11 @@ Rule.PlayerLogTaskUpdates
 Rule.PlayerLogTradeSkillEvents
 Rule.PlayerLogTrades
 Rule.PlayerLogZone
+Rule.PlayerTradingLoreFeedback
 Rule.PreNerfBardAEDoT
 Rule.PreferNoManaCommandSpells
 Rule.PreventFactionWarOnCharmBreak
+Rule.PreventMountsFromZoning
 Rule.PriceBonusPct
 Rule.PricePenaltyPct
 Rule.PrintFileFunctionAndLine
@@ -550,6 +601,7 @@ Rule.ReflectType
 Rule.ReportingSystemActive
 Rule.RequestCooldownTimerSeconds
 Rule.RequireKeyOnCursor
+Rule.RequireMnemonicRetention
 Rule.RequireTomeHandin
 Rule.RequiredStatusAdmin
 Rule.RequiredStatusListAll
@@ -572,6 +624,7 @@ Rule.ResurrectionSickness
 Rule.ResurrectionSicknessSpell
 Rule.ResurrectionSicknessSpellID
 Rule.ReturnNonQuestNoDropItems
+Rule.ReturnQuestItemsFromNonQuestNPCs
 Rule.RogueTrackingDistanceMultiplier
 Rule.RootBreakCheckChance
 Rule.RootBreakFromSpells
@@ -582,7 +635,6 @@ Rule.SacrificeMinLevel
 Rule.Say
 Rule.SayPauseTimeInSec
 Rule.ScaleRate
-Rule.SecondsBeforeIdle
 Rule.SelfLanguageLearning
 Rule.SellCostMod
 Rule.SenseHeadingStartValue
@@ -615,9 +667,11 @@ Rule.SpawnLimit
 Rule.SpellAggroMod
 Rule.SpellMessages
 Rule.SpellParticles
+Rule.SpellResistSoftCap
 Rule.StartEnrageValue
 Rule.StartZoneSameAsBindOnCreation
 Rule.StatCap
+Rule.StunChance
 Rule.SuccorFailChance
 Rule.SummonMeleeRange
 Rule.SuppressCommandErrors
@@ -626,6 +680,7 @@ Rule.SuspendIntervalS
 Rule.SwarmPetTargetLock
 Rule.SwimmingStartValue
 Rule.TargetsTargetRequiresCombatRange
+Rule.TauntOverAggro
 Rule.TauntOverLevel
 Rule.TauntSkillFalloff
 Rule.TellQueueSize
@@ -633,6 +688,8 @@ Rule.ThreateninglyFactionMinimum
 Rule.ThrowingConsumesAmmo
 Rule.ThrowingCritDifficulty
 Rule.TitaniumStartZoneID
+Rule.TrackingAutoRefreshSkillUps
+Rule.TradeSkillClamp
 Rule.TradeskillUpAlchemy
 Rule.TradeskillUpBaking
 Rule.TradeskillUpBlacksmithing
@@ -652,23 +709,29 @@ Rule.TrollCommonTongue
 Rule.TunnelVisionAggroMod
 Rule.TutorialZoneID
 Rule.UnTargetableSwarmPet
+Rule.UndeadAlwaysAggro
 Rule.UnmemSpellsOnDeath
 Rule.UnusedAAPointCap
 Rule.UpdateOneElementPerTask
 Rule.UpkeepIntervalMS
 Rule.UseAdditiveFocusFromWornSlot
+Rule.UseAltSinisterStrikeFormula
 Rule.UseBaneDamage
 Rule.UseBannedIPsTable
 Rule.UseCHAScribeHack
 Rule.UseClassAsLastName
+Rule.UseClassicSpellFocus
 Rule.UseClientBasedExpansionSettings
 Rule.UseCurrentExpansionAAOnly
 Rule.UseDeathExpLossMult
 Rule.UseExtendedPoisonProcs
 Rule.UseFadingMemoriesMaxLevel
+Rule.UseForageCommonFood
 Rule.UseIntervalAC
 Rule.UseItemBonusesForNonPets
 Rule.UseItemCastMessage
+Rule.UseItemLinksForKeyRing
+Rule.UseLegacyFizzleCode
 Rule.UseLevelAggro
 Rule.UseLimitTradeskillSearchSkillDiff
 Rule.UseLiveBlockedMessage
@@ -685,6 +748,7 @@ Rule.UseOldClassExpPenalties
 Rule.UseOldConSystem
 Rule.UseOldRaceExpPenalties
 Rule.UseOldRaceRezEffects
+Rule.UseOldShadowKnightClassExport
 Rule.UsePEQZoneDebuffs
 Rule.UsePriceMod
 Rule.UseRaceClassExpBonuses
@@ -704,6 +768,8 @@ Rule.WhiteModifier
 Rule.WizCritChance
 Rule.WizCritLevel
 Rule.WizCritRatio
+Rule.WizardCritMaximumRandomRatio
+Rule.WizardCritMinimumRandomRatio
 Rule.WizardTrackingDistanceMultiplier
 Rule.WorldGMSayLogging
 Rule.WorldProcessRate

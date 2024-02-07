@@ -1,7 +1,7 @@
 # client_server_faction_map
 
 !!! info
-	This page was last generated 2023.07.15
+	This page was last generated 2024.02.07
 
 ## Schema
 

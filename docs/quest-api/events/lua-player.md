@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## EVENT_AA_BUY
 
@@ -29,6 +29,26 @@ function EVENT_AA_EXP_GAIN(e) {
 
 function EVENT_AA_GAIN(e) {
 	eq.debug("aa_gained " .. e.aa_gained);
+}
+```
+## EVENT_ALT_CURRENCY_GAIN
+
+``` lua
+
+function EVENT_ALT_CURRENCY_GAIN(e) {
+	eq.debug("currency_id " .. e.currency_id);
+	eq.debug("amount " .. e.amount);
+	eq.debug("total " .. e.total);
+}
+```
+## EVENT_ALT_CURRENCY_LOSS
+
+``` lua
+
+function EVENT_ALT_CURRENCY_LOSS(e) {
+	eq.debug("currency_id " .. e.currency_id);
+	eq.debug("amount " .. e.amount);
+	eq.debug("total " .. e.total);
 }
 ```
 ## EVENT_ALT_CURRENCY_MERCHANT_BUY
@@ -111,6 +131,8 @@ function EVENT_CAST(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -121,6 +143,8 @@ function EVENT_CAST_BEGIN(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CAST_ON
@@ -131,6 +155,8 @@ function EVENT_CAST_ON(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("caster_id " .. e.caster_id);
 	eq.debug("caster_level " .. e.caster_level);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("target " .. e.target);
 }
 ```
 ## EVENT_CLICK_DOOR
@@ -220,6 +246,26 @@ function EVENT_CONSIDER_CORPSE(e) {
 	eq.debug("corpse " .. e.corpse);
 }
 ```
+## EVENT_CRYSTAL_GAIN
+
+``` lua
+
+function EVENT_CRYSTAL_GAIN(e) {
+	eq.debug("ebon_amount " .. e.ebon_amount);
+	eq.debug("radiant_amount " .. e.radiant_amount);
+	eq.debug("is_reclaim " .. e.is_reclaim);
+}
+```
+## EVENT_CRYSTAL_LOSS
+
+``` lua
+
+function EVENT_CRYSTAL_LOSS(e) {
+	eq.debug("ebon_amount " .. e.ebon_amount);
+	eq.debug("radiant_amount " .. e.radiant_amount);
+	eq.debug("is_reclaim " .. e.is_reclaim);
+}
+```
 ## EVENT_DAMAGE_GIVEN
 
 ``` lua
@@ -264,6 +310,7 @@ function EVENT_DEATH(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -276,6 +323,7 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("damage " .. e.damage);
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
+	eq.debug("killed_entity_id " .. e.killed_entity_id);
 }
 ```
 ## EVENT_DESTROY_ITEM_CLIENT
@@ -492,6 +540,24 @@ function EVENT_LANGUAGE_SKILL_UP(e) {
 	eq.debug("skill_id " .. e.skill_id);
 	eq.debug("skill_value " .. e.skill_value);
 	eq.debug("skill_max " .. e.skill_max);
+}
+```
+## EVENT_LDON_POINTS_GAIN
+
+``` lua
+
+function EVENT_LDON_POINTS_GAIN(e) {
+	eq.debug("theme_id " .. e.theme_id);
+	eq.debug("points " .. e.points);
+}
+```
+## EVENT_LDON_POINTS_LOSS
+
+``` lua
+
+function EVENT_LDON_POINTS_LOSS(e) {
+	eq.debug("theme_id " .. e.theme_id);
+	eq.debug("points " .. e.points);
 }
 ```
 ## EVENT_LEAVE_AREA

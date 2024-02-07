@@ -1,7 +1,7 @@
 # tradeskill_recipe
 
 !!! info
-	This page was last generated 2023.07.15
+	This page was last generated 2024.02.07
 
 ## Relationship Diagram(s)
 
@@ -32,6 +32,7 @@
 | replace_container | tinyint | Replace Container: 0 = False, 1 = True |
 | notes | tinytext | Notes |
 | must_learn | tinyint | Must Learn: 0 = False, 1 = True |
+| learned_by_item_id | int |  |
 | quest | tinyint | Quest Controlled: 0 = False, 1 = True |
 | enabled | tinyint | Enabled: 0 = False, 1 = True |
 | min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |

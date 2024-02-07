@@ -1,7 +1,7 @@
 # raid_details
 
 !!! info
-	This page was last generated 2023.07.15
+	This page was last generated 2024.02.07
 
 ## Relationship Diagram(s)
 
@@ -29,4 +29,10 @@
 | marked_npc_1 | smallint | Marked NPC 1 |
 | marked_npc_2 | smallint | Marked NPC 2 |
 | marked_npc_3 | smallint | Marked NPC 3 |
+| marked_npc_2_entity_id | int |  |
+| marked_npc_2_zone_id | int |  |
+| marked_npc_2_instance_id | int |  |
+| marked_npc_3_entity_id | int |  |
+| marked_npc_3_zone_id | int |  |
+| marked_npc_3_instance_id | int |  |
 

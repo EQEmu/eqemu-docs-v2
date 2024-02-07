@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2023.12.19
+    Last Generated: 2024.02.07
 
 
 | Command | Description | Status Level |
@@ -22,6 +22,7 @@
 | #camerashake | [Duration (Milliseconds)] [Intensity (1-10)] - Shakes the camera on everyone's screen globally. | QuestTroupe (80) |
 | #castspell | [Spell ID] [Instant (0 = False, 1 = True, Default is 1 if Unused)] - Cast a spell | Guide (50) |
 | #chat | [Channel ID] [Message] - Send a channel message to all zones | GMMgmt (200) |
+| #clearxtargets | Clears XTargets | Player (0) |
 | #copycharacter | [source_char_name] [dest_char_name] [dest_account_name] - Copies character to destination account | GMImpossible (250) |
 | #corpse | Manipulate corpses, use with no arguments for help | Guide (50) |
 | #corpsefix | Attempts to bring corpses from underneath the ground within close proximity of the player | Player (0) |
@@ -160,5 +161,4 @@
 | #zonebootup | [ZoneServerID] [shortname] - Make a zone server boot a specific zone | GMLeadAdmin (150) |
 | #zoneinstance | [Instance ID] [X] [Y] [Z] - Teleport to specified Instance by ID (coordinates are optional) | Guide (50) |
 | #zoneshutdown | [shortname] - Shut down a zone server | GMLeadAdmin (150) |
-| #zopp | Troubleshooting command - Sends a fake item packet to you. No server reference is created. | GMImpossible (250) |
 | #zsave |  Saves zheader to the database | QuestTroupe (80) |

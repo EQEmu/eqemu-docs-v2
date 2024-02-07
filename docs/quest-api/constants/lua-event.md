@@ -2,13 +2,15 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Event){:target="Event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ``` lua
 Event.aa_buy
 Event.aa_exp_gained
 Event.aa_gained
 Event.aggro_say
+Event.alt_currency_gain
+Event.alt_currency_loss
 Event.alt_currency_merchant_buy
 Event.alt_currency_merchant_sell
 Event.augment_insert
@@ -29,6 +31,8 @@ Event.command
 Event.connect
 Event.consider
 Event.consider_corpse
+Event.crystal_gain
+Event.crystal_loss
 Event.damage_given
 Event.damage_taken
 Event.death
@@ -71,13 +75,15 @@ Event.item_click_cast
 Event.item_click_cast_client
 Event.item_click_client
 Event.item_enter_zone
-Event.item_tick
 Event.killed_merit
 Event.language_skill_up
+Event.ldon_points_gain
+Event.ldon_points_loss
 Event.leave_area
 Event.level_down
 Event.level_up
 Event.loot
+Event.loot_added
 Event.loot_zone
 Event.memorize_spell
 Event.merchant_buy

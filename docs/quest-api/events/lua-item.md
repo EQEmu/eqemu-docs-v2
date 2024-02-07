@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## EVENT_AUGMENT_INSERT
 
@@ -75,13 +75,6 @@ function EVENT_ITEM_CLICK_CAST(e) {
 ``` lua
 
 function EVENT_ITEM_ENTER_ZONE(e) {
-}
-```
-## EVENT_ITEM_TICK
-
-``` lua
-
-function EVENT_ITEM_TICK(e) {
 }
 ```
 ## EVENT_LOOT

@@ -59,6 +59,9 @@ install: ##@dev Install
 generate: ##dev Generate docs
 	go run main.go doc:quest-api-doc-generate
 	go run main.go doc:db-schema-generate
+	go run main.go doc:bot-commands
+	go run main.go doc:gm-commands
+	go run main.go doc:server-rules
 
 build:
 	mkdocs build

@@ -1,10 +1,10 @@
-=== "Perl (54)"
+=== "Perl (55)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=QuestItem){:target="QuestItem"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` perl
     $questitem->AddEXP(uint32 exp);
@@ -18,12 +18,13 @@
     $questitem->GetAugmentType();
     $questitem->GetCharges();
     $questitem->GetColor();
+    $questitem->GetComment();
     $questitem->GetCustomData(identifier);
     $questitem->GetCustomDataString();
     $questitem->GetEXP();
     $questitem->GetID();
-    $questitem->GetItem();
     $questitem->GetItem(uint8 slot_id);
+    $questitem->GetItem();
     $questitem->GetItemID(uint8 slot_id);
     $questitem->GetItemScriptID();
     $questitem->GetKillsNeeded(uint8 current_level);

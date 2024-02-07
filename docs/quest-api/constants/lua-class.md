@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Class){:target="Class"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ``` lua
 Class.ADVENTURE_MERCHANT
@@ -24,6 +24,7 @@ Class.DRUIDGM
 Class.ENCHANTER
 Class.ENCHANTERGM
 Class.FELLOWSHIP_MASTER
+Class.GUILD_BANKER
 Class.GUILD_TRIBUTE_MASTER
 Class.LDON_TREASURE
 Class.MAGICIAN

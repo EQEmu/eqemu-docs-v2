@@ -4,7 +4,7 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` perl
     $entitylist->CanAddHateForMob(Mob* target);
@@ -120,11 +120,11 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=EntityList){:target="EntityList"} for latest definitions and Quest examples
 
-        Last generated 2023.07.15
+        Last generated 2024.02.07
 
     ``` lua
     entitylist:CanAddHateForMob(Mob p);
-    entitylist:ChannelMessage(Mob from, int channel_num, int language, string message);
+    entitylist:ChannelMessage(Mob from, int channel_num, uint8 language_id, string message);
     entitylist:ClearClientPetitionQueue();
     entitylist:ClearFeignAggro(Mob who);
     entitylist:DeleteNPCCorpses();

@@ -11,12 +11,12 @@ import (
 )
 
 type MkDocsCfg struct {
-	SiteName string   `yaml:"site_name"`
-	Plugins  []string `yaml:"plugins"`
-	RepoURL  string   `yaml:"repo_url"`
-	SiteUrl  string   `yaml:"site_url"`
-	RepoName string   `yaml:"repo_name"`
-	EditURI  string   `yaml:"edit_uri"`
+	SiteName string        `yaml:"site_name"`
+	Plugins  []interface{} `yaml:"plugins"`
+	RepoURL  string        `yaml:"repo_url"`
+	SiteUrl  string        `yaml:"site_url"`
+	RepoName string        `yaml:"repo_name"`
+	EditURI  string        `yaml:"edit_uri"`
 	Extra    struct {
 		Analytics struct {
 			Provider string `yaml:"provider"`
@@ -48,6 +48,7 @@ type MkDocsCfg struct {
 		DatabaseSchema []map[string][]map[string]string `yaml:"Database Schema,omitempty"`
 		QuestApi       []map[string][]map[string]string `yaml:"Quest API,omitempty"`
 		Changelog      []struct {
+			Num2023                string `yaml:"2023,omitempty"`
 			Num2022                string `yaml:"2022,omitempty"`
 			Num2021                string `yaml:"2021,omitempty"`
 			Num2020                string `yaml:"2020,omitempty"`
@@ -71,7 +72,7 @@ type MkDocsCfg struct {
 			ChangelogContributions string `yaml:"Changelog Contributions,omitempty"`
 		} `yaml:"Changelog,omitempty"`
 		Contributing []interface{} `yaml:"Contributing,omitempty"`
-		Tags         []interface{} `yaml:"Tags,omitempty"`
+		Tags         string        `yaml:"Tags,omitempty"`
 	} `yaml:"nav"`
 }
 

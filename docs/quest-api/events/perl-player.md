@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## 
 
@@ -121,6 +121,9 @@ sub EVENT_CAST {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_CAST_BEGIN
@@ -131,6 +134,9 @@ sub EVENT_CAST_BEGIN {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_CAST_ON
@@ -141,6 +147,9 @@ sub EVENT_CAST_ON {
 	quest::debug("spell_id " . $spell_id);
 	quest::debug("caster_id " . $caster_id);
 	quest::debug("caster_level " . $caster_level);
+	quest::debug("target_id " . $target_id);
+	quest::debug("target " . $target);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_CLICKDOOR
@@ -237,6 +246,26 @@ sub EVENT_CONSIDER_CORPSE {
 	quest::debug("corpse " . $corpse);
 }
 ```
+## EVENT_CRYSTAL_GAIN
+
+``` perl
+
+sub EVENT_CRYSTAL_GAIN {
+	quest::debug("ebon_amount " . $ebon_amount);
+	quest::debug("radiant_amount " . $radiant_amount);
+	quest::debug("is_reclaim " . $is_reclaim);
+}
+```
+## EVENT_CRYSTAL_LOSS
+
+``` perl
+
+sub EVENT_CRYSTAL_LOSS {
+	quest::debug("ebon_amount " . $ebon_amount);
+	quest::debug("radiant_amount " . $radiant_amount);
+	quest::debug("is_reclaim " . $is_reclaim);
+}
+```
 ## EVENT_DAMAGE_GIVEN
 
 ``` perl
@@ -251,6 +280,7 @@ sub EVENT_DAMAGE_GIVEN {
 	quest::debug("buff_slot " . $buff_slot);
 	quest::debug("is_buff_tic " . $is_buff_tic);
 	quest::debug("special_attack " . $special_attack);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_DAMAGE_TAKEN
@@ -267,6 +297,7 @@ sub EVENT_DAMAGE_TAKEN {
 	quest::debug("buff_slot " . $buff_slot);
 	quest::debug("is_buff_tic " . $is_buff_tic);
 	quest::debug("special_attack " . $special_attack);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_DEATH
@@ -278,9 +309,8 @@ sub EVENT_DEATH {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
-	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_entity_id " . $killed_entity_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -297,9 +327,8 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_damage " . $killer_damage);
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
-	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_entity_id " . $killed_entity_id);
-	quest::debug("killed_bot_id " . $killed_bot_id);
+	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
@@ -331,7 +360,6 @@ sub EVENT_DISCONNECT {
 
 sub EVENT_DISCOVER_ITEM {
 	quest::debug("itemid " . $itemid);
-	quest::debug("item " . $item);
 }
 ```
 ## EVENT_DROP_ITEM_CLIENT
@@ -433,7 +461,6 @@ sub EVENT_FISH_START {
 
 sub EVENT_FISH_SUCCESS {
 	quest::debug("fished_item " . $fished_item);
-	quest::debug("item " . $item);
 }
 ```
 ## EVENT_FORAGE_FAILURE
@@ -449,7 +476,6 @@ sub EVENT_FORAGE_FAILURE {
 
 sub EVENT_FORAGE_SUCCESS {
 	quest::debug("foraged_item " . $foraged_item);
-	quest::debug("item " . $item);
 }
 ```
 ## EVENT_GM_COMMAND
@@ -546,7 +572,6 @@ sub EVENT_LOOT {
 	quest::debug("looted_charges " . $looted_charges);
 	quest::debug("corpse_name " . $corpse_name);
 	quest::debug("corpse_id " . $corpse_id);
-	quest::debug("item " . $item);
 	quest::debug("corpse " . $corpse);
 }
 ```
@@ -600,7 +625,6 @@ sub EVENT_PAYLOAD {
 sub EVENT_PLAYER_PICKUP {
 	quest::debug("picked_up_id " . $picked_up_id);
 	quest::debug("picked_up_entity_id " . $picked_up_entity_id);
-	quest::debug("item " . $item);
 }
 ```
 ## EVENT_POPUPRESPONSE

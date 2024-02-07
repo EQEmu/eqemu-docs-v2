@@ -2,7 +2,7 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2023.07.15
+    Last generated 2024.02.07
 
 ## EVENT_SPELL_EFFECT_BOT
 
@@ -14,6 +14,7 @@ sub EVENT_SPELL_EFFECT_BOT {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_BUFF_TIC_BOT
@@ -26,6 +27,7 @@ sub EVENT_SPELL_EFFECT_BUFF_TIC_BOT {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_BUFF_TIC_CLIENT
@@ -38,6 +40,7 @@ sub EVENT_SPELL_EFFECT_BUFF_TIC_CLIENT {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_BUFF_TIC_NPC
@@ -50,6 +53,7 @@ sub EVENT_SPELL_EFFECT_BUFF_TIC_NPC {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_CLIENT
@@ -62,6 +66,7 @@ sub EVENT_SPELL_EFFECT_CLIENT {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_NPC
@@ -74,6 +79,7 @@ sub EVENT_SPELL_EFFECT_NPC {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
 ## EVENT_SPELL_EFFECT_TRANSLOCATE_COMPLETE
@@ -93,5 +99,6 @@ sub EVENT_SPELL_FADE {
 	quest::debug("tics_remaining " . $tics_remaining);
 	quest::debug("caster_level " . $caster_level);
 	quest::debug("buff_slot " . $buff_slot);
+	quest::debug("spell " . $spell);
 }
 ```
