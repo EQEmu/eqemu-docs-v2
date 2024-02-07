@@ -33,7 +33,7 @@
 | goalmethod | int | Goal Method: 0 = Single Value, 1 = List |
 | goalcount | int | Goal Count |
 | description_override | varchar | Description Override |
-| npc_match_list | text | NPC Match List |
+| goalid | int | Goal Identifier or [Goal List Identifier](goallists.md) |
 | goal_match_list | text | Goal Match List: Pipe (|) Separated Values |
 | item_list | varchar | [Item Identifier List](../../schema/items/items.md) |
 | dz_switch_id | int | [Dynamic Zone Switch ID](../../schema/doors/doors.md) |

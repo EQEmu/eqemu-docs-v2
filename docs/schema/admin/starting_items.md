@@ -25,14 +25,14 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Starting Items Entry Identifier |
-| race | int | [Race](../../../../server/npc/race-list): 0 = All |
-| race_list | text |  |
+| class_list | text |  |
+| class | int | [Class](../../../../server/player/class-list): 0 = All |
 | deity_list | text |  |
-| zone_id_list | text |  |
-| itemid | int | [Item Identifier](../../schema/items/items.md) |
+| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
+| item_id | int |  |
 | item_charges | tinyint | Item Charges |
 | gm | tinyint | GM: 0 = False, 1 = True |
-| slot | mediumint | [Slot](../../../../server/inventory/inventory-slots) |
+| inventory_slot | mediumint |  |
 | min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
 | max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
 | content_flags | varchar | Content Flags Required to be Enabled |

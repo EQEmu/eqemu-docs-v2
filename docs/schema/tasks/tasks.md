@@ -31,10 +31,10 @@
 | title | varchar | Title |
 | description | text | Description |
 | reward | varchar | Reward Description |
-| rewardid | int | [Reward Item Identifier](../../schema/items/items.md) |
+| reward_id_list | text | Reward ID List |
 | cash_reward | int | Cash Reward in Copper |
-| xpreward | int | Experience Reward |
-| reward_method | tinyint | Reward Method |
+| exp_reward | int | Experience Reward |
+| rewardmethod | tinyint | Reward Method: 0 = Single Item ID, 1 = List of Items, 2 = Quest Controlled |
 | reward_points | int | Reward Points |
 | reward_point_type | int | Reward Point Type: 4 = Radiant, 5 = Ebon |
 | min_level | tinyint | Minimum Level |

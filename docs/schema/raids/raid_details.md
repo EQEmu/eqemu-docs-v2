@@ -26,9 +26,9 @@
 | loottype | int | Loot Type |
 | locked | tinyint | Locked: 0 = False, 1 = True |
 | motd | varchar | Message of the Day |
-| marked_npc_1 | smallint | Marked NPC 1 |
-| marked_npc_1_zone_id | int |  |
-| marked_npc_3 | smallint | Marked NPC 3 |
+| marked_npc_1_entity_id | int |  |
+| marked_npc_2 | smallint | Marked NPC 2 |
+| marked_npc_1_instance_id | int |  |
 | marked_npc_2_entity_id | int |  |
 | marked_npc_2_zone_id | int |  |
 | marked_npc_2_instance_id | int |  |

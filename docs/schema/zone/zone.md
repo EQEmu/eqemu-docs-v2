@@ -164,8 +164,8 @@
 | fog_density | float | This is the intensity of the fog, this should be a number between 0-1, most commonly used is .1 or .33 |
 | flag_needed | varchar | [Flag Required](zone_flags.md) |
 | canbind | tinyint | Can Bind: 0 = False, 1 = True (for Caster), 2 = True (for All) |
-| cancombat | tinyint | Can Combat: 0 = False, 1 = True |
-| bucket_comparison | tinyint |  |
+| bucket_value | varchar |  |
+| canlevitate | tinyint | Can Levitate: 0 = False, 1 = True (Does not affect those with #gm on) |
 | castoutdoor | tinyint | Cast Outdoors: 0 = False, 1 = True |
 | hotzone | tinyint | Hotzone: 0 = False, 1 = True |
 | insttype | tinyint | Instance Type |

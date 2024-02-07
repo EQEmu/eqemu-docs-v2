@@ -40,7 +40,7 @@
 | icon | int | Icon |
 | unknown08 | mediumint | Unknown |
 | unknown24 | int | Unknown |
-| unknown20 | int | Unknown |
+| unknown60 | int | Unknown |
 | unknown64 | int | Unknown |
 | unknown68 | int | Unknown |
 | unknown72 | int | Unknown |

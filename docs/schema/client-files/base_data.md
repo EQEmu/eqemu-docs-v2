@@ -12,8 +12,8 @@
 | hp | double | Health |
 | mana | double | Mana |
 | end | double | Endurance |
-| hp_regen | double |  |
-| unk2 | double | Unknown |
+| unk1 | double | Unknown |
+| end_regen | double |  |
 | hp_fac | double | Health Factor |
 | mana_fac | double | Mana Factor |
 | end_fac | double | Endurance Factor |
