@@ -3,6 +3,7 @@ package database
 import (
 	"github.com/EQEmu/eqemu-docs-v2/config"
 	"log"
+	"sort"
 	"strings"
 )
 
@@ -31,41 +32,52 @@ type Relationship struct {
 
 // GetTables returns a slice of table objects
 // @example
-//   database.TableRelationships{
-//    Name: "task_activities",
-//    Keys: []string{
-//      "delivertonpc",
-//      "goalid",
-//    },
-//    Relationships: []database.Relationship{
-//      database.Relationship{
-//        RelationshipType: "1-1",
-//        LocalTable:       "task_activities",
-//        LocalKey:         "delivertonpc",
-//        RemoteTable:      "npc_types",
-//        RemoteKey:        "id",
-//      },
-//      database.Relationship{
-//        RelationshipType: "1-*",
-//        LocalTable:       "task_activities",
-//        LocalKey:         "goalid",
-//        RemoteTable:      "goallists",
-//        RemoteKey:        "listid",
-//      },
-//    },
-//  },
 //
+//	 database.TableRelationships{
+//	  Name: "task_activities",
+//	  Keys: []string{
+//	    "delivertonpc",
+//	    "goalid",
+//	  },
+//	  Relationships: []database.Relationship{
+//	    database.Relationship{
+//	      RelationshipType: "1-1",
+//	      LocalTable:       "task_activities",
+//	      LocalKey:         "delivertonpc",
+//	      RemoteTable:      "npc_types",
+//	      RemoteKey:        "id",
+//	    },
+//	    database.Relationship{
+//	      RelationshipType: "1-*",
+//	      LocalTable:       "task_activities",
+//	      LocalKey:         "goalid",
+//	      RemoteTable:      "goallists",
+//	      RemoteKey:        "listid",
+//	    },
+//	  },
+//	},
 func (r *RelationshipService) GetTables() []TableRelationships {
 	cfg, err := config.GetDbRelationShipsConfig()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	tables := []TableRelationships{}
-	for table, relations := range cfg {
+	// sort tables via slice
+	var tableNames []string
+	for table, _ := range cfg {
+		tableNames = append(tableNames, table)
+	}
 
-		relationships := []Relationship{}
-		keys := []string{}
+	// sort tableNames
+	sort.Strings(tableNames)
+
+	var tables []TableRelationships
+	for _, table := range tableNames {
+
+		relations := cfg[table]
+
+		var relationships []Relationship
+		var keys []string
 		for _, relationship := range relations {
 			//fmt.Printf("[%v] [%v]\n", table, relationship)
 

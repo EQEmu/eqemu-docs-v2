@@ -20,7 +20,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-const erdDiagramChunkSize = 8
+const erdDiagramChunkSize = 4
 
 type DbGenerateDocsCommand struct {
 	command *cobra.Command
@@ -400,7 +400,7 @@ func (c *DbGenerateDocsCommand) buildMermaidDiagrams(table string) string {
 		if t.Name == table {
 
 			// build remote tables
-			remoteTables := []string{}
+			var remoteTables []string
 			for _, relationship := range t.Relationships {
 				if !containsStringSlice(remoteTables, relationship.RemoteTable) {
 					remoteTables = append(remoteTables, relationship.RemoteTable)
@@ -492,7 +492,7 @@ func (c *DbGenerateDocsCommand) buildMermaidDiagrams(table string) string {
 }
 
 func (c *DbGenerateDocsCommand) getRelationshipKeysForTable(table string) []string {
-	keys := []string{}
+	var keys []string
 
 	for _, t := range c.tables {
 		if t.Name == table {
