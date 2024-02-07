@@ -100,7 +100,8 @@ From this point you're ready to run the fully automated install with a simple `m
 
 An example of what this output looks like below (Sped up)
 
-<img src="https://user-images.githubusercontent.com/3319450/87240353-7289a200-c3de-11ea-8afe-1b0a5ad8400e.gif">
+<img src="https://user-images.githubusercontent.com/3319450/87240353-7289a200-c3de-11ea-8afe-1b0a5ad8400e.gif" style="border-radius: 10px">
+
 
 ## Post-Install
 
@@ -113,92 +114,40 @@ To gain a bash into the emulator server we have two options, we can come through
 To print a handy list of passwords and access URL's, simply use **make info** at the host level of the deployment
 
 ```
-root@host:/opt/eqemu-servers/peq-test-server# make info
-##################################
-# Server Info
-##################################
-# Akkas Docker PEQ Installer
-##################################
-# Passwords
-##################################
-MARIADB_PASSWORD=1jo5XUzpY7lYOf5FmJKRBhUfGmnVzBN
-MARIADB_ROOT_PASSWORD=mDI8gefiVEGjeiMCUMrZhMmKMWI101B
-SERVER_PASSWORD=uVNjjlucE5H9UzUlziZfP16GQvsWJhe
-PHPMYADMIN_PASSWORD=tD02XcNGoaIaV82wnnEnenp0V7p58V9
-PEQ_EDITOR_PASSWORD=5X5o1E84SXQzjmxN86fLzuBFJyGEjN9
-FTP_QUESTS_PASSWORD=Jqx3KxCZFkRA1aPqBJqMTSA1vA8uK4Y
-##################################
-# IP
-##################################
-IP_ADDRESS=66.70.153.122
-##################################
-# Quests FTP  | 66.70.153.122:21 | quests / Jqx3KxCZFkRA1aPqBJqMTSA1vA8uK4Y
-##################################
-# Web Interfaces
-##################################
-# PEQ Editor  | http://66.70.153.122:8081 | admin / 5X5o1E84SXQzjmxN86fLzuBFJyGEjN9
-# PhpMyAdmin  | http://66.70.153.122:8082 | admin / tD02XcNGoaIaV82wnnEnenp0V7p58V9
-# EQEmu Admin | http://66.70.153.122:3000 | admin / 82a71144a51c521283834f99daff5a
-##################################
+make info
 ```
 
-### Service Lifetime
-
-By default each container / service in the **docker-compose.yml** is configured to restart unless stopped, meaning if the server restarts the Docker daemon will boot the services you had started initially which is the default behavior of this stack
-
-Occulus and the eqemu-server entrypoint bootup script is designed to start the emulator server services when the server first comes up, so if you need to bring the whole host down, everything will come back up on reboot automatically
-
-### Services to Boot
-
-By default the whole deployment is booted post install, but for production setups maybe you only want the emulator server and the database server only. Simply bring everything down with either **make down** or **docker-compose down**
-
-**make up** will by default only bring up eqemu-server and mariadb
+!!! info
+    Note this may look different depending on the services you have booted
 
 ```
-root@host:/opt/eqemu-servers/peq-test-server# make up --dry-run
-docker-compose up -d eqemu-server mariadb
+----------------------------------
+> Server Info
+----------------------------------
+> Akkas Test Bed (LDL)
+----------------------------------
+> Passwords
+----------------------------------
+MARIADB_PASSWORD=wNh6CrKiVq6oy5FPjQIMr7M18oAC7Ii
+MARIADB_ROOT_PASSWORD=jrwe7Jv6sZRgrYig5vgoTEvBX6XGgxb
+SERVER_PASSWORD=UXWrUXWv4MPZsJpUgbWuEPJn59ksNpc
+PHPMYADMIN_PASSWORD=L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
+PEQ_EDITOR_PASSWORD=jufMcw584ZDK3JRNJf4JB8z0e3Whoma
+FTP_QUESTS_PASSWORD=gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
+----------------------------------
+> IP
+----------------------------------
+IP_ADDRESS=192.168.65.62
+----------------------------------
+> Quests FTP  | 192.168.65.62:21 | quests / gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
+----------------------------------
+> Web Interfaces
+----------------------------------
+> PEQ Editor  | http://192.168.65.62:8081 | admin / jufMcw584ZDK3JRNJf4JB8z0e3Whoma
+> PhpMyAdmin  | http://192.168.65.62:8082 | admin / L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
+> EQEmu Admin | http://192.168.65.62:3000 | admin / 2c9a88fa8470a70168080e5dbc8446
+----------------------------------
+> Spire Backend Development  | http://192.168.65.62:3010 | 
+> Spire Frontend Development | http://192.168.65.62:8080 | 
+----------------------------------
 ```
-
-If you want to single boot another service, such as the **peq-editor** simply **docker-compose up -d peq-editor** and you'll have the 2 main services as well as the editor booted
-
-![dc-ps](https://user-images.githubusercontent.com/3319450/87241769-eb432b00-c3eb-11ea-9cbf-f48307981303.gif)
-
-### Accessing the Admin Panel
-
-By default, Occulus runs within the `eqemu-server` service container and is available on port 3000
-
-To access your admin panel bash or ssh into your server and run config to see your web admin password (Or view it in make info mentioned before)
-
-```
-eqemu@97b8129b90b4:~$ config | jq '.["web-admin"]'
-{
-  "application": {
-    "key": "dadbeb31-3073-43dc-a359-569737bb2746",
-    "admin": {
-      "password": "82a71144a51c521283834f99daff5a"
-    }
-  },
-  "launcher": {
-    "runLoginserver": false,
-    "runQueryServ": false,
-    "isRunning": true,
-    "minZoneProcesses": 3
-  }
-}
-```
-
-### Updating the Admin Panel
-
-Updating server binaries is as simple as running **make update-admin-panel** in the server shell at the root of home, it will kill the currently running panel, cycle it out, start it up. This is not service affecting for running servers with a launcher running.
-
-### Updating Server Binaries
-
-Updating server binaries is as simple as running **update** in the server shell, it will change directory to the source directory, git pull and run a build which will be immediately available the next time you boot a process
-
-### Running Server Processes While Developing
-
-While developing its easy to jump back and forth between compiling changes and running single processes
-
-If you have camped to character select, you can run **kzone** which will kill all zones and simply typing **z** will boot a zone process in the background but will still display in the foreground of the shell
-
-`world` `ucs` `shared` are all shorthands that also work anywhere in any folder in the shell (See below in compiling and developing)

@@ -26,3 +26,9 @@ ENABLE_FTP_QUESTS=false
 ENABLE_PEQ_EDITOR=false
 ENABLE_PHPMYADMIN=false
 ```
+
+## Service Lifetime
+
+By default each container / service in the **docker-compose.yml** is configured to restart unless stopped, meaning if the server restarts the Docker daemon will boot the services you had started initially which is the default behavior of this stack
+
+**Spire** and the **eqemu-server** entrypoint bootup script is designed to start the emulator server services when the server first comes up, so if you need to bring the whole host down, everything will **come back up on reboot automatically**

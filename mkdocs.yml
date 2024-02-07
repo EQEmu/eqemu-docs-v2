@@ -756,6 +756,7 @@ nav:
           - Backups: akk-stack/operate/backups.md
           - Services: akk-stack/operate/services.md
           - Shell: akk-stack/operate/shell.md
+          - Update: akk-stack/operate/update.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md
