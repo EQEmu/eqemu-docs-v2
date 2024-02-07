@@ -270,10 +270,6 @@ The compiled code will be located in the `c:\<account>\Server\build\bin\<build_t
 * Reverting Changes
 * Resetting to Previous Commits
 
-## Acquiring eqemu_server.pl
-
-* `eqemu_server.pl` can be downloaded here: https://github.com/EQEmu/Server/blob/master/utils/scripts/eqemu_server.pl
-
 ## Acquiring Quests
 
 * Quests can be downloaded here: https://github.com/ProjectEQ/projecteqquests
@@ -286,9 +282,4 @@ The compiled code will be located in the `c:\<account>\Server\build\bin\<build_t
 
 ## Acquiring Assets/Maps
 
-* Assets can be acquired via the `eqemu_server.pl` menu.
-
-![image](https://user-images.githubusercontent.com/89047260/205470326-9dd9d91b-cdd2-4bd7-984f-0637a92c168b.png)
-![image](https://user-images.githubusercontent.com/89047260/205470341-f8c6de9e-ec2a-4a0e-a6d8-cd0d385ab136.png)
-
-
+This section needs to be updated. The current method was deprecated (eqemu_server.pl)
