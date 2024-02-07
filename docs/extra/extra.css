@@ -13,6 +13,16 @@
     }
 }
 
+.md-typeset code {
+    background: rgba(0, 0, 0, .95);
+    color: white;
+    border-radius: 5px;
+}
+
+.highlight .kc, .highlight .n {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 body .md-sidebar--primary .md-sidebar__scrollwrap {
     border-right: 1px solid #454755;
 }
