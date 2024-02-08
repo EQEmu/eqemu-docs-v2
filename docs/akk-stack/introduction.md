@@ -38,10 +38,10 @@ It's what I've also used exclusively for development as well as many other devel
 - [x] **[Spire Web Admin / Content Editor](https://github.com/akkadius/spire)**
 - [x] **[ProjectEQ Editor](https://github.com/ProjectEQ/peqphpeditor)**
 - [x] **SSH in the eqemu-server container on port 2222**
-- [x] **make menu for managing the **eqemu-server** container**
+- [x] **make menu for managing the eqemu-server container**
 - [x] **make menu for managing the host-level container environment**
-- [x] **Cron Jobs for the **eqemu-server** container**
-- [x] **Startup Scripts for the **eqemu-server** container**
+- [x] **Cron Jobs for the eqemu-server container**
+- [x] **Startup Scripts for the eqemu-server container**
 - [x] **Docker Compose v2 for easy management**
 - [x] **Developer and Operator focused tooling**
 - [x] **Developer tuned environment for easy development**
