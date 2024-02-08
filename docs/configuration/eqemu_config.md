@@ -5,11 +5,12 @@ description: This page describes the settings and options in your eqemu_config.j
 # eqemu_config.json
 
 !!! warning
-If you make use of the various services listed below, be sure to **open the corresponding ports** on your server /
-firewall / router to TCP and UDP traffic!
+
+    If you make use of the various services listed below, be sure to **open the corresponding ports** on your server / firewall / router to TCP and UDP traffic!
 
 !!! danger
-STOP!  Did you read the line above? It's a **really** important tip.
+
+    STOP!  Did you read the line above? It's a **really** important tip.
 
 | Legend       |
 |:-------------|
@@ -104,8 +105,8 @@ STOP!  Did you read the line above? It's a **really** important tip.
 | password |                      | Account forum password                                                                             |
 
 !!! warning
-Your server will need to use port 5998 to communicate with the public EQEmu loginserver. Do NOT change that value as you
-would for your eqhost file, based on client.
+
+    Your server will need to use port 5998 to communicate with the public EQEmu loginserver. Do NOT change that value as you would for your eqhost file, based on client.
 
 * Note: Multiple Loginserver endpoints can be established by using the same configuration above, however declaring your
   loginserver subsections with a number, below is an example
