@@ -79,3 +79,50 @@ You will see an output that resembles the following:
 eqemu@66636230306d:~/code/build$ n
 [90/130] Building CXX object zone/CMakeFiles/zone.dir/zone_base_data.cpp.o
 ```
+
+## Spire Development
+
+<img
+    style="border-radius: 10px; max-width: 100%; max-height: 140px"
+    src="https://user-images.githubusercontent.com/3319450/192067289-4cf2fe7f-25ab-47be-ae36-d7be8398ddfa.png" alt="Spire">
+
+[Spire](https://github.com/akkadius/spire) is a web-based content editor and server management tool that is used to manage the server. **akk-stack** is setup the best to be able to develop and test Spire in a local environment.
+
+In the **.env** file, set `SPIRE_DEV=true` and make sure `ENV=development` is set. 
+
+On your Docker host run the following commands:
+
+```
+make down
+docker-compose pull
+docker-compose build
+make up
+```
+
+If you are running the initial installation of **akk-stack** this will be ran during install, but if you already have **akk-stack** installed, you can run `make init-spire-dev` in the **eqemu-server** container to initialize the development environment for Spire.
+
+Shell into the **eqemu-server** container via 
+
+```
+make bash
+```
+
+And then run
+
+```
+make init-spire-dev
+```
+
+### Spire Development Aliases
+
+**akk-stack** comes with a few aliases that are useful for developing Spire. 
+
+* **spire** Changes to the Spire directory
+* **spire-be** Starts the Spire backend in development mode
+* **spire-fe** Starts the Spire frontend in development mode
+
+```bash
+alias spire='cd ~/server/spire'
+alias spire-be='cd ~/server/spire && air'
+alias spire-fe='cd ~/server/spire/frontend && npm run dev'
+```
