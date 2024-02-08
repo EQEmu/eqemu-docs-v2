@@ -10,7 +10,9 @@
 <img 
     style="border-radius: 10px; max-width: 100%"
     src="https://github.com/Akkadius/akk-stack/assets/3319450/10da1c85-e232-4a6b-a354-a0a2ef166ae1" alt="Docker">
+
 </div>
+
 
 <hr>
 
@@ -20,11 +22,11 @@ tooling for running **EverQuest Emulator servers**.
 You can have an entire server running within **minutes**, configured and ready to go for **development** or **production
 ** use!
 
-This is what I've used in production, battle-tested, for almost 5+ years. I've worked through a lot of issues to give
-you
-the final stable product.
+This is what I've used in production, battle-tested, for almost 5+ years. I've worked through a lot of issues to give you  the final stable product.
 
 It's what I've also used exclusively for development as well as many other developers!
+
+**Repository** [https://github.com/Akkadius/akk-stack](https://github.com/Akkadius/akk-stack)
 
 <hr>
 
