@@ -5,9 +5,28 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3BlbGxfYnVja2V0cyB7XG4gICAgICAgIHZhcmNoYXIga2V5XG4gICAgICAgIGJpZ2ludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxzX25ldyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bTJcbiAgICAgICAgaW50IHR5cGVkZXNjbnVtXG4gICAgICAgIHZhcmNoYXIgdGVsZXBvcnRfem9uZVxuICAgIH1cbiAgICBkYXRhX2J1Y2tldHMge1xuICAgICAgICB2YXJjaGFyIGtleVxuICAgIH1cbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBzcGVsbHNfbmV3IDogXCJPbmUtdG8tT25lXCJcbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBkYXRhX2J1Y2tldHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    spell_buckets {
+        varchar key
+        bigintunsigned spellid
+    }
+    spells_new {
+        int id
+        int descnum
+        int effectdescnum
+        int effectdescnum2
+        int typedescnum
+        varchar teleport_zone
+    }
+    data_buckets {
+        varchar key
+    }
+    spell_buckets ||--o{ spells_new : "One-to-One"
+    spell_buckets ||--o{ data_buckets : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3BlbGxfYnVja2V0cyB7XG4gICAgICAgIHZhcmNoYXIga2V5XG4gICAgICAgIGJpZ2ludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxzX25ldyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bTJcbiAgICAgICAgaW50IHR5cGVkZXNjbnVtXG4gICAgICAgIHZhcmNoYXIgdGVsZXBvcnRfem9uZVxuICAgIH1cbiAgICBkYXRhX2J1Y2tldHMge1xuICAgICAgICB2YXJjaGFyIGtleVxuICAgIH1cbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBzcGVsbHNfbmV3IDogXCJPbmUtdG8tT25lXCJcbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBkYXRhX2J1Y2tldHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3BlbGxfYnVja2V0cyB7XG4gICAgICAgIHZhcmNoYXIga2V5XG4gICAgICAgIGJpZ2ludHVuc2lnbmVkIHNwZWxsaWRcbiAgICB9XG4gICAgc3BlbGxzX25ldyB7XG4gICAgICAgIGludCBpZFxuICAgICAgICBpbnQgZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bVxuICAgICAgICBpbnQgZWZmZWN0ZGVzY251bTJcbiAgICAgICAgaW50IHR5cGVkZXNjbnVtXG4gICAgICAgIHZhcmNoYXIgdGVsZXBvcnRfem9uZVxuICAgIH1cbiAgICBkYXRhX2J1Y2tldHMge1xuICAgICAgICB2YXJjaGFyIGtleVxuICAgIH1cbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBzcGVsbHNfbmV3IDogXCJPbmUtdG8tT25lXCJcbiAgICBzcGVsbF9idWNrZXRzIHx8LS1veyBkYXRhX2J1Y2tldHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships

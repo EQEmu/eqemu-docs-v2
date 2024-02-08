@@ -5,9 +5,18 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    raid_leaders {
+        intunsigned rid
+    }
+    raid_details {
+        int raidid
+    }
+    raid_leaders ||--o{ raid_details : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9sZWFkZXJzIHtcbiAgICAgICAgaW50dW5zaWduZWQgcmlkXG4gICAgfVxuICAgIHJhaWRfZGV0YWlscyB7XG4gICAgICAgIGludCByYWlkaWRcbiAgICB9XG4gICAgcmFpZF9sZWFkZXJzIHx8LS1veyByYWlkX2RldGFpbHMgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships

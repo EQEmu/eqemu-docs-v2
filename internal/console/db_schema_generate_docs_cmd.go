@@ -2,8 +2,6 @@ package console
 
 import (
 	"bytes"
-	"encoding/base64"
-	"encoding/json"
 	"fmt"
 	"log"
 	"os"
@@ -20,7 +18,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-const erdDiagramChunkSize = 4
+const erdDiagramChunkSize = 5
 
 type DbGenerateDocsCommand struct {
 	command *cobra.Command
@@ -83,20 +81,7 @@ func (c *DbGenerateDocsCommand) WriteNav() {
 		}
 	}
 
-	// yaml
-	var newConfig bytes.Buffer
-	yamlEncoder := yaml.NewEncoder(&newConfig)
-	yamlEncoder.SetIndent(2)
-	err = yamlEncoder.Encode(&mkdocsCfg)
-	if err != nil {
-		log.Println(err)
-	}
-
-	// write
-	err = os.WriteFile(config.MkDocsConfigFile, newConfig.Bytes(), 755)
-	if err != nil {
-		log.Println(err)
-	}
+	config.WriteMkdocsConfig(mkdocsCfg)
 
 	fmt.Printf("Writing database navigation\n")
 	fmt.Printf("Wrote [%v]\n", config.MkDocsConfigFile)
@@ -257,31 +242,33 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 	}
 
 	diagrams := c.buildMermaidDiagrams(table)
-	imageLink := ""
-	diagramLink := ""
+	//imageLink := ""
+	//diagramLink := ""
 	diagramsMarkdown := ""
 	if len(diagrams) > 0 {
 		for _, diagram := range strings.Split(diagrams, "erDiagram") {
 			if len(diagram) > 0 {
-				mermaid := MermaidLiveJsDiagram{
-					Code: fmt.Sprintf("erDiagram%v", diagram),
-					Mermaid: struct {
-						Theme string `json:"theme"`
-					}{Theme: "default"},
-					UpdateEditor:  true,
-					AutoSync:      true,
-					UpdateDiagram: true,
-				}
+				//mermaid := MermaidLiveJsDiagram{
+				//	Code: fmt.Sprintf("erDiagram%v", diagram),
+				//	Mermaid: struct {
+				//		Theme string `json:"theme"`
+				//	}{Theme: "default"},
+				//	UpdateEditor:  true,
+				//	AutoSync:      true,
+				//	UpdateDiagram: true,
+				//}
 
-				b, err := json.Marshal(mermaid)
-				if err != nil {
-					fmt.Println("error:", err)
-				}
+				//b, err := json.Marshal(mermaid)
+				//if err != nil {
+				//	fmt.Println("error:", err)
+				//}
 
-				encoded := base64.StdEncoding.EncodeToString(b)
-				imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagrams}", encoded, encoded)
-				diagramLink = fmt.Sprintf("[Diagram Edit](https://mermaid.live/edit#%v){target=diagrams-edit}", encoded)
-				diagramsMarkdown += fmt.Sprintf("%v\n\n%v\n\n", diagramLink, imageLink)
+				//encoded := base64.StdEncoding.EncodeToString(b)
+				//imageLink = fmt.Sprintf("[![](https://mermaid.ink/img/%v)](https://mermaid.ink/img/%v){target=diagrams}", encoded, encoded)
+				//diagramLink = fmt.Sprintf("[Diagram Edit](https://mermaid.live/edit#%v){target=diagrams-edit}", encoded)
+				//diagramsMarkdown += fmt.Sprintf("%v\n\n%v\n\n", diagramLink, imageLink)
+
+				diagramsMarkdown += fmt.Sprintf("```mermaid\nerDiagram%v\n```\n\n", diagram)
 			}
 		}
 	}
@@ -298,7 +285,7 @@ func (c *DbGenerateDocsCommand) BuildMarkdownForTable(table string, schemaConfig
 	markdown += fmt.Sprintf("\n!!! info\n\tThis page was last generated %v\n", generatedTime)
 
 	// if we have a diagrams, we have relationships
-	if len(imageLink) > 0 {
+	if len(diagrams) > 0 {
 		markdown += fmt.Sprintf("\n## Relationship Diagram(s)\n\n%v", diagramsMarkdown)
 		markdown += fmt.Sprintf("\n## Relationships\n\n")
 		markdown += `| Relationship Type | Local Key | Relates to Table | Foreign Key |

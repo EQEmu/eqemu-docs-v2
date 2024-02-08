@@ -5,9 +5,59 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgb2JqZWN0IHtcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgIGludCBpZFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgb2JqZWN0X2NvbnRlbnRzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIHBhcmVudGlkXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QyXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QzXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q0XG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q1XG4gICAgICAgIG1lZGl1bWludCBhdWdzbG90NlxuICAgICAgICBpbnR1bnNpZ25lZCB6b25laWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBvYmplY3QgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgb2JqZWN0IHx8LS1veyBvYmplY3RfY29udGVudHMgOiBcIkhhcy1NYW55XCJcbiAgICBvYmplY3QgfHwtLW97IGl0ZW1zIDogXCJPbmUtdG8tT25lXCJcbiAgICBvYmplY3QgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgem9uZSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    object {
+        varchar content_flags
+        varchar content_flags_disabled
+        int itemid
+        int id
+        smallint version
+        intunsigned zoneid
+    }
+    content_flags {
+        varchar flag_name
+    }
+    object_contents {
+        intunsigned itemid
+        intunsigned parentid
+        mediumintunsigned augslot1
+        mediumintunsigned augslot2
+        mediumintunsigned augslot3
+        mediumintunsigned augslot4
+        mediumintunsigned augslot5
+        mediumint augslot6
+        intunsigned zoneid
+    }
+    items {
+        int id
+        int book
+        varchar name
+        int recasttype
+        int icon
+        mediumint bardeffect
+        int clickeffect
+        int focuseffect
+        int proceffect
+        int scrolleffect
+        int worneffect
+    }
+    zone {
+        int zoneidnumber
+        varchar short_name
+        tinyintunsigned version
+        varchar content_flags
+        varchar content_flags_disabled
+    }
+    object ||--o{ content_flags : "One-to-One"
+    object ||--o{ content_flags : "One-to-One"
+    object ||--o{ object_contents : "Has-Many"
+    object ||--o{ items : "One-to-One"
+    object ||--o{ zone : "One-to-One"
+    object ||--o{ zone : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgb2JqZWN0IHtcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgIGludCBpZFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgb2JqZWN0X2NvbnRlbnRzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIHBhcmVudGlkXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QyXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QzXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q0XG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q1XG4gICAgICAgIG1lZGl1bWludCBhdWdzbG90NlxuICAgICAgICBpbnR1bnNpZ25lZCB6b25laWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBvYmplY3QgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgb2JqZWN0IHx8LS1veyBvYmplY3RfY29udGVudHMgOiBcIkhhcy1NYW55XCJcbiAgICBvYmplY3QgfHwtLW97IGl0ZW1zIDogXCJPbmUtdG8tT25lXCJcbiAgICBvYmplY3QgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgem9uZSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgb2JqZWN0IHtcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgICAgICBpbnQgaXRlbWlkXG4gICAgICAgIGludCBpZFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgb2JqZWN0X2NvbnRlbnRzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaXRlbWlkXG4gICAgICAgIGludHVuc2lnbmVkIHBhcmVudGlkXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QyXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3QzXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q0XG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGF1Z3Nsb3Q1XG4gICAgICAgIG1lZGl1bWludCBhdWdzbG90NlxuICAgICAgICBpbnR1bnNpZ25lZCB6b25laWRcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBvYmplY3QgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgb2JqZWN0IHx8LS1veyBvYmplY3RfY29udGVudHMgOiBcIkhhcy1NYW55XCJcbiAgICBvYmplY3QgfHwtLW97IGl0ZW1zIDogXCJPbmUtdG8tT25lXCJcbiAgICBvYmplY3QgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuICAgIG9iamVjdCB8fC0tb3sgem9uZSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships
@@ -40,7 +90,7 @@
 | icon | int | Icon |
 | unknown08 | mediumint | Unknown |
 | unknown24 | int | Unknown |
-| unknown60 | int | Unknown |
+| unknown20 | int | Unknown |
 | unknown64 | int | Unknown |
 | unknown68 | int | Unknown |
 | unknown72 | int | Unknown |

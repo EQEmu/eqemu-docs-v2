@@ -5,9 +5,30 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZXZlbnRsb2cge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRpZFxuICAgICAgICB2YXJjaGFyIGFjY291bnRuYW1lXG4gICAgICAgIHZhcmNoYXIgY2hhcm5hbWVcbiAgICB9XG4gICAgYWNjb3VudCB7XG4gICAgICAgIGludCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICB9XG4gICAgY2hhcmFjdGVyX2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgdmFyY2hhciBuYW5lXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVfaW5zdGFuY2VcbiAgICAgICAgaW50dW5zaWduZWQgem9uZV9pZFxuICAgIH1cbiAgICBldmVudGxvZyB8fC0tb3sgYWNjb3VudCA6IFwiT25lLXRvLU9uZVwiXG4gICAgZXZlbnRsb2cgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGV2ZW50bG9nIHx8LS1veyBjaGFyYWN0ZXJfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    eventlog {
+        varchar accountid
+        varchar accountname
+        varchar charname
+    }
+    account {
+        int id
+        varchar name
+    }
+    character_data {
+        intunsigned id
+        varchar name
+        varchar nane
+        intunsigned zone_instance
+        intunsigned zone_id
+    }
+    eventlog ||--o{ account : "One-to-One"
+    eventlog ||--o{ account : "One-to-One"
+    eventlog ||--o{ character_data : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZXZlbnRsb2cge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRpZFxuICAgICAgICB2YXJjaGFyIGFjY291bnRuYW1lXG4gICAgICAgIHZhcmNoYXIgY2hhcm5hbWVcbiAgICB9XG4gICAgYWNjb3VudCB7XG4gICAgICAgIGludCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICB9XG4gICAgY2hhcmFjdGVyX2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgdmFyY2hhciBuYW5lXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVfaW5zdGFuY2VcbiAgICAgICAgaW50dW5zaWduZWQgem9uZV9pZFxuICAgIH1cbiAgICBldmVudGxvZyB8fC0tb3sgYWNjb3VudCA6IFwiT25lLXRvLU9uZVwiXG4gICAgZXZlbnRsb2cgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGV2ZW50bG9nIHx8LS1veyBjaGFyYWN0ZXJfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZXZlbnRsb2cge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRpZFxuICAgICAgICB2YXJjaGFyIGFjY291bnRuYW1lXG4gICAgICAgIHZhcmNoYXIgY2hhcm5hbWVcbiAgICB9XG4gICAgYWNjb3VudCB7XG4gICAgICAgIGludCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICB9XG4gICAgY2hhcmFjdGVyX2RhdGEge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgdmFyY2hhciBuYW5lXG4gICAgICAgIGludHVuc2lnbmVkIHpvbmVfaW5zdGFuY2VcbiAgICAgICAgaW50dW5zaWduZWQgem9uZV9pZFxuICAgIH1cbiAgICBldmVudGxvZyB8fC0tb3sgYWNjb3VudCA6IFwiT25lLXRvLU9uZVwiXG4gICAgZXZlbnRsb2cgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGV2ZW50bG9nIHx8LS1veyBjaGFyYWN0ZXJfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships

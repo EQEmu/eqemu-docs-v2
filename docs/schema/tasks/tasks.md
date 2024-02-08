@@ -5,9 +5,38 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB0aW55aW50IHR5cGVcbiAgICAgICAgaW50dW5zaWduZWQgZHpfdGVtcGxhdGVfaWRcbiAgICB9XG4gICAgdGFza19hY3Rpdml0aWVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgYWN0aXZpdHlpZFxuICAgICAgICB2YXJjaGFyIGdvYWxpZFxuICAgICAgICB2YXJjaGFyIGRlbGl2ZXJ0b25wY1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgdmFyY2hhciB6b25lc1xuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICBjaGFyYWN0ZXJfdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBjaGFyaWRcbiAgICAgICAgaW50dW5zaWduZWQgdGFza2lkXG4gICAgICAgIHRpbnlpbnQgdHlwZVxuICAgIH1cbiAgICBkeW5hbWljX3pvbmVfdGVtcGxhdGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaWRcbiAgICB9XG4gICAgdGFza3MgfHwtLW97IHRhc2tfYWN0aXZpdGllcyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyB0YXNrc2V0cyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyBjaGFyYWN0ZXJfdGFza3MgOiBcIkhhcy1NYW55XCJcbiAgICB0YXNrcyB8fC0tb3sgZHluYW1pY196b25lX3RlbXBsYXRlcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    tasks {
+        intunsigned id
+        tinyint type
+        intunsigned dz_template_id
+    }
+    task_activities {
+        intunsigned activityid
+        varchar goalid
+        varchar delivertonpc
+        intunsigned taskid
+        varchar zones
+    }
+    tasksets {
+        intunsigned taskid
+    }
+    character_tasks {
+        intunsigned charid
+        intunsigned taskid
+        tinyint type
+    }
+    dynamic_zone_templates {
+        intunsigned id
+    }
+    tasks ||--o{ task_activities : "Has-Many"
+    tasks ||--o{ tasksets : "Has-Many"
+    tasks ||--o{ character_tasks : "Has-Many"
+    tasks ||--o{ dynamic_zone_templates : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB0aW55aW50IHR5cGVcbiAgICAgICAgaW50dW5zaWduZWQgZHpfdGVtcGxhdGVfaWRcbiAgICB9XG4gICAgdGFza19hY3Rpdml0aWVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgYWN0aXZpdHlpZFxuICAgICAgICB2YXJjaGFyIGdvYWxpZFxuICAgICAgICB2YXJjaGFyIGRlbGl2ZXJ0b25wY1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgdmFyY2hhciB6b25lc1xuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICBjaGFyYWN0ZXJfdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBjaGFyaWRcbiAgICAgICAgaW50dW5zaWduZWQgdGFza2lkXG4gICAgICAgIHRpbnlpbnQgdHlwZVxuICAgIH1cbiAgICBkeW5hbWljX3pvbmVfdGVtcGxhdGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaWRcbiAgICB9XG4gICAgdGFza3MgfHwtLW97IHRhc2tfYWN0aXZpdGllcyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyB0YXNrc2V0cyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyBjaGFyYWN0ZXJfdGFza3MgOiBcIkhhcy1NYW55XCJcbiAgICB0YXNrcyB8fC0tb3sgZHluYW1pY196b25lX3RlbXBsYXRlcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgICAgICB0aW55aW50IHR5cGVcbiAgICAgICAgaW50dW5zaWduZWQgZHpfdGVtcGxhdGVfaWRcbiAgICB9XG4gICAgdGFza19hY3Rpdml0aWVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgYWN0aXZpdHlpZFxuICAgICAgICB2YXJjaGFyIGdvYWxpZFxuICAgICAgICB2YXJjaGFyIGRlbGl2ZXJ0b25wY1xuICAgICAgICBpbnR1bnNpZ25lZCB0YXNraWRcbiAgICAgICAgdmFyY2hhciB6b25lc1xuICAgIH1cbiAgICB0YXNrc2V0cyB7XG4gICAgICAgIGludHVuc2lnbmVkIHRhc2tpZFxuICAgIH1cbiAgICBjaGFyYWN0ZXJfdGFza3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBjaGFyaWRcbiAgICAgICAgaW50dW5zaWduZWQgdGFza2lkXG4gICAgICAgIHRpbnlpbnQgdHlwZVxuICAgIH1cbiAgICBkeW5hbWljX3pvbmVfdGVtcGxhdGVzIHtcbiAgICAgICAgaW50dW5zaWduZWQgaWRcbiAgICB9XG4gICAgdGFza3MgfHwtLW97IHRhc2tfYWN0aXZpdGllcyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyB0YXNrc2V0cyA6IFwiSGFzLU1hbnlcIlxuICAgIHRhc2tzIHx8LS1veyBjaGFyYWN0ZXJfdGFza3MgOiBcIkhhcy1NYW55XCJcbiAgICB0YXNrcyB8fC0tb3sgZHluYW1pY196b25lX3RlbXBsYXRlcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships
@@ -30,11 +59,11 @@
 | duration_code | tinyint | [Duration Code](../../../../server/task-system-guide/task-duration-codes) |
 | title | varchar | Title |
 | description | text | Description |
-| reward | varchar | Reward Description |
+| reward_text | varchar | Reward Text |
 | reward_id_list | text | Reward ID List |
 | cash_reward | int | Cash Reward in Copper |
 | exp_reward | int | Experience Reward |
-| rewardmethod | tinyint | Reward Method: 0 = Single Item ID, 1 = List of Items, 2 = Quest Controlled |
+| reward_method | tinyint | Reward Method |
 | reward_points | int | Reward Points |
 | reward_point_type | int | Reward Point Type: 4 = Radiant, 5 = Ebon |
 | min_level | tinyint | Minimum Level |

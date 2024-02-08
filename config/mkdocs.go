@@ -71,6 +71,7 @@ type MkDocsCfg struct {
 			Num2003                string `yaml:"2003,omitempty"`
 			ChangelogContributions string `yaml:"Changelog Contributions,omitempty"`
 		} `yaml:"Changelog,omitempty"`
+		AkkStack     []interface{} `yaml:"Akk Stack,omitempty"`
 		Contributing []interface{} `yaml:"Contributing,omitempty"`
 		Tags         string        `yaml:"Tags,omitempty"`
 	} `yaml:"nav"`
@@ -82,9 +83,16 @@ func GetMkdocsConfig() (MkDocsCfg, error) {
 	// read config
 	cfg, err := os.ReadFile(MkDocsConfigFile)
 
+	newCfg := string(cfg)
+
+	// there are special characters in the file that need to be temporarily
+	// changed and then popped back on during save because go yaml can't handle it
+	// so we need to do some post processing
+	newCfg = strings.ReplaceAll(newCfg, "!!python/name:", "bangbang")
+
 	// yaml
 	var configYaml MkDocsCfg
-	err = yaml.Unmarshal(cfg, &configYaml)
+	err = yaml.Unmarshal([]byte(newCfg), &configYaml)
 	if err != nil {
 		return MkDocsCfg{}, err
 	}
@@ -106,7 +114,10 @@ func WriteMkdocsConfig(config MkDocsCfg) {
 
 	// post processing for any special yaml objects since go can't marshal / unmarshal properly
 	configString := newConfig.String()
-	configString += ``
+	// there are special characters in the file that need to be temporarily
+	// changed and then popped back on during save because go yaml can't handle it
+	// so we need to do some post processing
+	configString = strings.ReplaceAll(configString, "bangbang", "!!python/name:")
 
 	// write
 	err = os.WriteFile(MkDocsConfigFile, []byte(configString), 755)

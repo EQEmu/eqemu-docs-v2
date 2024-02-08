@@ -5,9 +5,22 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgIHZhcmNoYXIgYm90X2lkXG4gICAgICAgIHZhcmNoYXIgYm90X2RhdGFcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICB2YXJjaGFyIGJvdF9pZFxuICAgICAgICB2YXJjaGFyIG93bmVyX2lkXG4gICAgICAgIHZhcmNoYXIgc3BlbGxzX2lkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgIH1cbiAgICBib3RfdGltZXJzIHx8LS1veyBib3RfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    bot_timers {
+        varchar bot_id
+        varchar bot_data
+    }
+    bot_data {
+        varchar bot_id
+        varchar owner_id
+        varchar spells_id
+        varchar zone_id
+    }
+    bot_timers ||--o{ bot_data : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgIHZhcmNoYXIgYm90X2lkXG4gICAgICAgIHZhcmNoYXIgYm90X2RhdGFcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICB2YXJjaGFyIGJvdF9pZFxuICAgICAgICB2YXJjaGFyIG93bmVyX2lkXG4gICAgICAgIHZhcmNoYXIgc3BlbGxzX2lkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgIH1cbiAgICBib3RfdGltZXJzIHx8LS1veyBib3RfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYm90X3RpbWVycyB7XG4gICAgICAgIHZhcmNoYXIgYm90X2lkXG4gICAgICAgIHZhcmNoYXIgYm90X2RhdGFcbiAgICB9XG4gICAgYm90X2RhdGEge1xuICAgICAgICB2YXJjaGFyIGJvdF9pZFxuICAgICAgICB2YXJjaGFyIG93bmVyX2lkXG4gICAgICAgIHZhcmNoYXIgc3BlbGxzX2lkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgIH1cbiAgICBib3RfdGltZXJzIHx8LS1veyBib3RfZGF0YSA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships

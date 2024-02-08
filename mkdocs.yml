@@ -59,7 +59,11 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          name: mermaid
   - pymdownx.snippets
   - pymdownx.magiclink:
       repo: mkdocs-material
@@ -752,7 +756,7 @@ nav:
   - Akk Stack:
       - Introduction: akk-stack/introduction.md
       - Install:
-        - Installation: akk-stack/installation.md
+          - Installation: akk-stack/installation.md
       - Operate:
           - Backups: akk-stack/operate/backups.md
           - CPU: akk-stack/operate/cpu.md

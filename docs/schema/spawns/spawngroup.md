@@ -5,9 +5,24 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd25ncm91cCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzcGF3bjIge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIGludCBwYXRoZ3JpZFxuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIHZhcmNoYXIgem9uZVxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHx8LS1veyBzcGF3bjIgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    spawngroup {
+        int id
+    }
+    spawn2 {
+        varchar content_flags
+        varchar content_flags_disabled
+        int pathgrid
+        int id
+        int spawngroupID
+        smallint version
+        varchar zone
+    }
+    spawngroup ||--o{ spawn2 : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd25ncm91cCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzcGF3bjIge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIGludCBwYXRoZ3JpZFxuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIHZhcmNoYXIgem9uZVxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHx8LS1veyBzcGF3bjIgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3Bhd25ncm91cCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBzcGF3bjIge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIGludCBwYXRoZ3JpZFxuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHNwYXduZ3JvdXBJRFxuICAgICAgICBzbWFsbGludCB2ZXJzaW9uXG4gICAgICAgIHZhcmNoYXIgem9uZVxuICAgIH1cbiAgICBzcGF3bmdyb3VwIHx8LS1veyBzcGF3bjIgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships

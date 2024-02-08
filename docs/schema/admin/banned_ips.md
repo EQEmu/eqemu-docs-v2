@@ -5,9 +5,19 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYmFubmVkX2lwcyB7XG4gICAgICAgIHZhcmNoYXIgaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgYmFubmVkX2lwcyB8fC0tb3sgYWNjb3VudF9pcCA6IFwiSGFzLU1hbnlcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    banned_ips {
+        varchar ip_address
+    }
+    account_ip {
+        int accid
+        varchar ip
+    }
+    banned_ips ||--o{ account_ip : "Has-Many"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYmFubmVkX2lwcyB7XG4gICAgICAgIHZhcmNoYXIgaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgYmFubmVkX2lwcyB8fC0tb3sgYWNjb3VudF9pcCA6IFwiSGFzLU1hbnlcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYmFubmVkX2lwcyB7XG4gICAgICAgIHZhcmNoYXIgaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgYmFubmVkX2lwcyB8fC0tb3sgYWNjb3VudF9pcCA6IFwiSGFzLU1hbnlcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships

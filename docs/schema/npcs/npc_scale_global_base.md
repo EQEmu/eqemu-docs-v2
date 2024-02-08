@@ -9,8 +9,8 @@
 | :--- | :--- | :--- |
 | type | int | Type: 0 = Trash, 1 = Named, 2 = Raid |
 | level | int | Level |
-| zone_id_list | text | [Zone Identifier List](../../../../server/zones/zone-list) (Pipe (|) Separated) |
-| instance_version_list | text | Instance Version List (Pipe (|) Separated) |
+| zone_id | int | [Zone Identifier](../../../../server/zones/zone-list) |
+| instance_version | int | Instance Version |
 | ac | int | Armor Class |
 | hp | bigint | Health |
 | accuracy | int | Accuracy |

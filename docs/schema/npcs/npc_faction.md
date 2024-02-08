@@ -5,9 +5,24 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbnBjX2ZhY3Rpb24ge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHByaW1hcnlmYWN0aW9uXG4gICAgfVxuICAgIG5wY19mYWN0aW9uX2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBucGNfZmFjdGlvbl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBmYWN0aW9uX2lkXG4gICAgfVxuICAgIGZhY3Rpb25fbGlzdCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBucGNfZmFjdGlvbiB8fC0tb3sgbnBjX2ZhY3Rpb25fZW50cmllcyA6IFwiSGFzLU1hbnlcIlxuICAgIG5wY19mYWN0aW9uIHx8LS1veyBmYWN0aW9uX2xpc3QgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    npc_faction {
+        int id
+        int primaryfaction
+    }
+    npc_faction_entries {
+        intunsigned npc_faction_id
+        intunsigned faction_id
+    }
+    faction_list {
+        int id
+    }
+    npc_faction ||--o{ npc_faction_entries : "Has-Many"
+    npc_faction ||--o{ faction_list : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbnBjX2ZhY3Rpb24ge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHByaW1hcnlmYWN0aW9uXG4gICAgfVxuICAgIG5wY19mYWN0aW9uX2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBucGNfZmFjdGlvbl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBmYWN0aW9uX2lkXG4gICAgfVxuICAgIGZhY3Rpb25fbGlzdCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBucGNfZmFjdGlvbiB8fC0tb3sgbnBjX2ZhY3Rpb25fZW50cmllcyA6IFwiSGFzLU1hbnlcIlxuICAgIG5wY19mYWN0aW9uIHx8LS1veyBmYWN0aW9uX2xpc3QgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbnBjX2ZhY3Rpb24ge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IHByaW1hcnlmYWN0aW9uXG4gICAgfVxuICAgIG5wY19mYWN0aW9uX2VudHJpZXMge1xuICAgICAgICBpbnR1bnNpZ25lZCBucGNfZmFjdGlvbl9pZFxuICAgICAgICBpbnR1bnNpZ25lZCBmYWN0aW9uX2lkXG4gICAgfVxuICAgIGZhY3Rpb25fbGlzdCB7XG4gICAgICAgIGludCBpZFxuICAgIH1cbiAgICBucGNfZmFjdGlvbiB8fC0tb3sgbnBjX2ZhY3Rpb25fZW50cmllcyA6IFwiSGFzLU1hbnlcIlxuICAgIG5wY19mYWN0aW9uIHx8LS1veyBmYWN0aW9uX2xpc3QgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships
