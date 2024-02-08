@@ -112,22 +112,24 @@ description: This page describes the settings and options in your eqemu_config.j
 
     Multiple Loginserver endpoints can be established by using the same configuration above, however declaring your loginserver subsections with a number, below is an example
 
-```text
-  "world" : {
-	   "loginserver1" : {
-			"account" : "",
-			"host" : "login.eqemulator.net",
-			"legacy" : "1",
-			"password" : "",
-			"port" : "5998"
-	   },
-	   "loginserver2" : {
-			"account" : "",
-			"host" : "myloginserver.net",
-			"password" : "",
-			"port" : "5998"
-	   },
-  },
+```json
+{
+  "world": {
+    "loginserver1": {
+      "account": "",
+      "host": "login.eqemulator.net",
+      "legacy": "1",
+      "password": "",
+      "port": "5998"
+    },
+    "loginserver2": {
+      "account": "",
+      "host": "myloginserver.net",
+      "password": "",
+      "port": "5998"
+    }
+  }
+}
 ```
 
 ### directories
