@@ -37,7 +37,7 @@ description: This page describes the settings and options in your eqemu_config.j
 
 #### telnet
 
-* Subsection for world telnet sub-service
+Subsection for world telnet sub-service
 
 | Variable | Default   | Description                                         |
 |:---------|:----------|:----------------------------------------------------|
@@ -47,7 +47,7 @@ description: This page describes the settings and options in your eqemu_config.j
 
 ### database
 
-* Required for a connection to the MySQL database
+Required for a connection to the MySQL database
 
 | Variable  | Default   | Description         |
 |:----------|:----------|:--------------------|
@@ -59,8 +59,7 @@ description: This page describes the settings and options in your eqemu_config.j
 
 ### qsdatabase
 
-* Required for a connection to the query server MySQL database if you decide to use a different and external source
-  and/or database for it (Logging purposes or otherwise)
+**Optional** for a connection to the query server MySQL database if you decide to use a different and external source and/or database for it (Logging purposes or otherwise)
 
 | Variable  | Default   | Description         |
 |:----------|:----------|:--------------------|
@@ -72,7 +71,7 @@ description: This page describes the settings and options in your eqemu_config.j
 
 ### ucs
 
-* Required for UCS (chat and mail service)
+**Optional** for UCS (chat and mail service)
 
 | Variable | Default | Description                   |
 |:---------|:--------|:------------------------------|
@@ -134,7 +133,7 @@ description: This page describes the settings and options in your eqemu_config.j
 
 ### directories
 
-* Most of these are optional, but configurable settings for the server
+Most of these are optional, but configurable settings for the server
 
 | Variable      | Default      | Description             |
 |:--------------|:-------------|:------------------------|
