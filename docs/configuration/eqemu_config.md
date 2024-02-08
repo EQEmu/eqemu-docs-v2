@@ -108,8 +108,9 @@ description: This page describes the settings and options in your eqemu_config.j
 
     Your server will need to use port 5998 to communicate with the public EQEmu loginserver. Do NOT change that value as you would for your eqhost file, based on client.
 
-* Note: Multiple Loginserver endpoints can be established by using the same configuration above, however declaring your
-  loginserver subsections with a number, below is an example
+!!! note
+
+    Multiple Loginserver endpoints can be established by using the same configuration above, however declaring your loginserver subsections with a number, below is an example
 
 ```text
   "world" : {
