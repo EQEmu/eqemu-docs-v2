@@ -32,7 +32,7 @@ cd ~/ && make init-dev-build
 * [Ccache](https://ccache.dev/) is also used to speed up compilation times, and the build is done using the **Ninja** build system. This is also pre-baked into the **eqemu-server** container image and you don't have to do any configuration beyond running the make command.
 * Uses the **[gold](https://en.wikipedia.org/wiki/Gold_(linker))** linker which is known to be faster than the default linker that comes with the compiler.
 * Uses the **[Clang](https://clang.llvm.org/)** compiler which is known to be faster than the default GCC compiler that comes with the compiler.
-* Uses **Ninja** as the build system which is known to be faster than the default **make** build system that comes with the compiler.
+* Uses **[Ninja](https://ninja-build.org/)** as the build system which is known to be faster than the default **make** build system that comes with the compiler.
 
 
 ```
