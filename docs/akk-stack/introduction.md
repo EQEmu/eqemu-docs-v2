@@ -1,25 +1,27 @@
 # Introduction
 
 <div style="text-align:center">
-    <div style="width: 600px; height: 400px; position: relative; top: 0; left: 25%;">
-        <img 
-            style="position: absolute; top: 1%; left: 1%; border-radius: 180px"
-            width="600" src="https://user-images.githubusercontent.com/3319450/87238998-55010c00-c3cf-11ea-8db5-3be25a868ac8.png" alt="AkkStack">
-        <img 
-            style="position: absolute; top: 260px; left: 22%; border-radius: 180px"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtksTtU5AvlNwK2Iq4tctmy9aVU6t6U7iSsITW59EmzQ&s" alt="Docker">
-    </div>
+<img 
+    style="border-radius: 10px; height: auto; width: auto; max-height: 140px"
+    src="https://user-images.githubusercontent.com/3319450/87238998-55010c00-c3cf-11ea-8db5-3be25a868ac8.png" alt="AkkStack">
+<img
+    style="border-radius: 10px; max-width: 100%; max-height: 140px"
+    src="https://user-images.githubusercontent.com/3319450/192067289-4cf2fe7f-25ab-47be-ae36-d7be8398ddfa.png" alt="Spire">
+<img 
+    style="border-radius: 10px; max-width: 100%"
+    src="https://github.com/Akkadius/akk-stack/assets/3319450/10da1c85-e232-4a6b-a354-a0a2ef166ae1" alt="Docker">
 </div>
-
 
 <hr>
 
 **AkkStack** is a simple **Docker Compose** environment that is augmented with **developer** and **operator** focused
 tooling for running **EverQuest Emulator servers**.
 
-You can have an entire server running within **minutes**, configured and ready to go for **development** or **production** use!
+You can have an entire server running within **minutes**, configured and ready to go for **development** or **production
+** use!
 
-This is what I've used in production, battle-tested, for almost 5+ years. I've worked through a lot of issues to give you
+This is what I've used in production, battle-tested, for almost 5+ years. I've worked through a lot of issues to give
+you
 the final stable product.
 
 It's what I've also used exclusively for development as well as many other developers!
@@ -60,7 +62,8 @@ It's what I've also used exclusively for development as well as many other devel
 
 ### Spire Web Admin
 
-[Spire](https://github.com/akkadius/spire) is a powerhouse web admin panel as well as rich server content editor. It is continually being developed and new features being added regularly.
+[Spire](https://github.com/akkadius/spire) is a powerhouse web admin panel as well as rich server content editor. It is
+continually being developed and new features being added regularly.
 
 <img src="https://github.com/Akkadius/akk-stack/assets/3319450/caa916d6-349f-4f86-8a5f-c504a8b1e1ac" style="border-radius: 10px">
 
@@ -72,7 +75,8 @@ Automatically configured with pre-set admin password, listens on port **8081** b
 
 ### PhpMyAdmin
 
-Automatically configured **PhpMyAdmin** instance with pre-set admin password (Behind a password protected proxy) listens on port 8082 by default
+Automatically configured **PhpMyAdmin** instance with pre-set admin password (Behind a password protected proxy) listens
+on port 8082 by default
 
 <img src="https://user-images.githubusercontent.com/3319450/87240916-63f1b980-c3e3-11ea-8dd8-93bca87f54ec.png">
 
@@ -100,16 +104,19 @@ A **make** menu to manage the host-level container environment
 
 ### SSH
 
-**eqemu-server** starts with SSH server, the installation provides a generated 30+ character password, persistent keys through reboot. 
+**eqemu-server** starts with SSH server, the installation provides a generated 30+ character password, persistent keys
+through reboot.
 
-!!!info 
+!!!info
+
     Default port is **2222**
 
 ### Cron Jobs
 
-Cronjob support via crontab is available in the **eqemu-server** container. 
+Cronjob support via crontab is available in the **eqemu-server** container.
 
-Edit **~/assets/cron/crontab.cron** directly and the file watcher will install new crontab changes. (You cannot use crontab -e)
+Edit **~/assets/cron/crontab.cron** directly and the file watcher will install new crontab changes. (You cannot use
+crontab -e)
 
 For example, PEQ has a configured database dump cron that feeds https://db.projecteq.net
 
@@ -120,9 +127,10 @@ eqemu@f30bb0b5bd3c:~$ cat ~/assets/cron/crontab.cron
 
 ### Startup Scripts
 
-The **eqemu-server** container will start applications or scripts in **~/server/startup/*** folder. 
+The **eqemu-server** container will start applications or scripts in **~/server/startup/*** folder.
 
-!!! warning 
+!!! warning
+
     Do not try to run eqemu services here as they are managed by Spire
 
 This is useful for running custom scripts or applications on startup, for example, a Discord bot
@@ -135,6 +143,7 @@ total 8.7M
 
 ### Automated Backups
 
-There is a **backup-cron** container that is optional to use, it will automatically backup the entire deployment and perform database and quest snapshots for with different retention schedules defined in **.env**
+There is a **backup-cron** container that is optional to use, it will automatically backup the entire deployment and
+perform database and quest snapshots for with different retention schedules defined in **.env**
 
 <img src="https://github.com/Akkadius/akk-stack/assets/3319450/4f2240cb-4e5a-4433-b7dc-1f22a7b8a40b" style="border-radius: 10px">
