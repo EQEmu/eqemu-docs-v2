@@ -759,11 +759,14 @@ nav:
           - Installation: akk-stack/installation.md
       - Operate:
           - Backups: akk-stack/operate/backups.md
+
           - CPU: akk-stack/operate/cpu.md
           - File Structure: akk-stack/operate/file-structure.md
           - Services: akk-stack/operate/services.md
           - Shell: akk-stack/operate/shell.md
           - Update: akk-stack/operate/update.md
+      - Develop:
+          - Development: akk-stack/operate/development.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md
