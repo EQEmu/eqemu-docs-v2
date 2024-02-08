@@ -118,8 +118,8 @@ make init-spire-dev
 **akk-stack** comes with a few aliases that are useful for developing Spire. 
 
 * **spire** Changes to the Spire directory
-* **spire-be** Starts the Spire backend in development mode
-* **spire-fe** Starts the Spire frontend in development mode
+* **spire-be** Starts the Spire backend in development mode restarting on file changes
+* **spire-fe** Starts the Spire frontend in development mode restarting on file changes
 
 ```bash
 alias spire='cd ~/server/spire'
