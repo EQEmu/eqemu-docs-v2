@@ -13,18 +13,18 @@ following directories noted that are shared to the host and will persist through
 | **~/.ssh/**              | (Shared to the host) Where SSH client keys are persisted if you use them to clone custom Git repo's using SSH etc. Also used to store keys of users who access **eqemu-server** |
 | **~/assets**             | (Shared to the host @./assets) This is for common server utilities, management scripts, crontab, these are usually a part of akk-stack exclusively                              |
 | **~/code**               | (Shared to the host @./code) Where EQEmu Server source code is located if you wish to compile yourself (not required)                                                           |
-| **~/code/build**         | Where the **CMake** configuration is held for **make** or **ninja**                                                                                                             |
+| **~/code/build**         | Where the **CMake** configuration is held for **make** or **ninja** **-  Navigate via "build" command**                                                                 |
 | **~/code/build/bin**     | If you compile, where executables are built to and symlinked to **~/server/bin**                                                                                                |
-| **~/server**             | (Shared to the host @./server) Where the main server folder is located.                                                                                                         |
+| **~/server**             | (Shared to the host @./server) Where the main server folder is located. **-  Navigate via "server" command**                                                            |
 | **~/server/backups**     | Where server automatic database backups go when there are server schema updates. These can be used to revert prior to an update if needed. Rare necessity but here if needed.   |
-| **~/server/maps**        | Where server side maps are located                                                                                                                                              |
-| **~/server/quests**      | Where server side quests are located                                                                                                                                            |
+| **~/server/maps**        | Where server side maps are located **-  Navigate via "maps" command**                                                                                                   |
+| **~/server/quests**      | Where server side quests are located **-  Navigate via "quests" command**                                                                                               |
 | **~/server/shared**      | Where server side shared memory mapped files are located                                                                                                                        |
 | **~/server/logs**        | Where server logs are located                                                                                                                                                   |
-| **~/server/plugins**     | Where server quest perl plugins are located                                                                                                                                     |
-| **~/server/lua_modules** | Where server quest lua plugins are located                                                                                                                                      |
-| **~/server/assets**      | Where server client patches, opcodes, misc are located                                                                                                                          |
-| **~/server/bin**         | Where server executables are located                                                                                                                                            |
+| **~/server/plugins**     | Where server quest perl plugins are located **-  Navigate via "plugins" command**                                                                                       |
+| **~/server/lua_modules** | Where server quest lua plugins are located **-  Navigate via "bin" command**                                                                                            |
+| **~/server/assets**      | Where server client patches, opcodes, misc are located **-  Navigate via "assets" command**                                                                             |
+| **~/server/bin**         | Where server executables are located **-  Navigate via "bin" command**                                                                                                  |
 | **~/server/startup**     | Where server startup scripts are located, for running custom services not managed by Spire on container bootup                                                                  |
 
 ## Symlinked Directories
