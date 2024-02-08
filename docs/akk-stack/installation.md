@@ -98,9 +98,19 @@ An example of what this output looks like below (Sped up)
 
 ## Post-Install
 
-Now that you're installed we need to look at how we interact with the environment
+### Start / Stop
 
-To gain a bash into the emulator server we have two options, we can come through a docker exec entry or we can SSH into the container
+To start the server, simply use the **make up** command from the root of the **akk-stack** directory
+
+```
+make up
+```
+
+To stop the server, simply use the **make down** command from the root of the **akk-stack** directory
+
+```
+make down
+```
 
 ### Deployment Info
 
