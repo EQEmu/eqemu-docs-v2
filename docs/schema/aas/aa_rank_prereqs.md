@@ -5,9 +5,20 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYWFfcmFua19wcmVyZXFzIHtcbiAgICAgICAgaW50IGFhX2lkXG4gICAgICAgIGludHVuc2lnbmVkIHJhbmtfaWRcbiAgICB9XG4gICAgYWFfcmFua3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagrams-edit}
+```mermaid
+erDiagram
+    aa_rank_prereqs {
+        int aa_id
+        intunsigned rank_id
+    }
+    aa_ranks {
+        intunsigned id
+    }
+    aa_rank_prereqs ||--o{ aa_ranks : "One-to-One"
+    aa_rank_prereqs ||--o{ aa_ranks : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYWFfcmFua19wcmVyZXFzIHtcbiAgICAgICAgaW50IGFhX2lkXG4gICAgICAgIGludHVuc2lnbmVkIHJhbmtfaWRcbiAgICB9XG4gICAgYWFfcmFua3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgYWFfcmFua19wcmVyZXFzIHtcbiAgICAgICAgaW50IGFhX2lkXG4gICAgICAgIGludHVuc2lnbmVkIHJhbmtfaWRcbiAgICB9XG4gICAgYWFfcmFua3Mge1xuICAgICAgICBpbnR1bnNpZ25lZCBpZFxuICAgIH1cbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcbiAgICBhYV9yYW5rX3ByZXJlcXMgfHwtLW97IGFhX3JhbmtzIDogXCJPbmUtdG8tT25lXCJcblxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjp0cnVlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6dHJ1ZX0=){target=diagrams}
+
+```
 
 
 ## Relationships

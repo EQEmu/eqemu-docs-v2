@@ -5,9 +5,25 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGxvZ2luX2FjY291bnRzIHx8LS1veyBhY2NvdW50X2lwIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    login_accounts {
+        varchar account_name
+        varchar last_ip_address
+    }
+    account {
+        int id
+        varchar name
+    }
+    account_ip {
+        int accid
+        varchar ip
+    }
+    login_accounts ||--o{ account : "One-to-One"
+    login_accounts ||--o{ account_ip : "Has-Many"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGxvZ2luX2FjY291bnRzIHx8LS1veyBhY2NvdW50X2lwIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9naW5fYWNjb3VudHMge1xuICAgICAgICB2YXJjaGFyIGFjY291bnRfbmFtZVxuICAgICAgICB2YXJjaGFyIGxhc3RfaXBfYWRkcmVzc1xuICAgIH1cbiAgICBhY2NvdW50IHtcbiAgICAgICAgaW50IGlkXG4gICAgICAgIHZhcmNoYXIgbmFtZVxuICAgIH1cbiAgICBhY2NvdW50X2lwIHtcbiAgICAgICAgaW50IGFjY2lkXG4gICAgICAgIHZhcmNoYXIgaXBcbiAgICB9XG4gICAgbG9naW5fYWNjb3VudHMgfHwtLW97IGFjY291bnQgOiBcIk9uZS10by1PbmVcIlxuICAgIGxvZ2luX2FjY291bnRzIHx8LS1veyBhY2NvdW50X2lwIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships

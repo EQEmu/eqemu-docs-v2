@@ -1,5 +1,8 @@
 !!! info
-    Automated cron-based backups that upload to Dropbox using Dropbox API
+    
+    Automated cron-based backups that upload to **Dropbox** using **Dropbox API**
+
+    There are plans to update this to include more cloud providers in the future via https://rclone.org/ but Dropbox has been tried and true for many years and is a great solution currently.
 
 <img src="https://github.com/Akkadius/akk-stack/assets/3319450/4f2240cb-4e5a-4433-b7dc-1f22a7b8a40b" style="border-radius: 10px">
 

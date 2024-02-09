@@ -13,8 +13,12 @@
     }
 }
 
+#__mermaid_0 {
+    font-size: 16px;
+}
+
 .md-typeset code {
-    background: rgba(0, 0, 0, .95);
+    background: rgba(0, 0, 0, .9);
     color: white;
     border-radius: 5px;
 }

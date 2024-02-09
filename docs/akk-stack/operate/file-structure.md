@@ -29,9 +29,13 @@ following directories noted that are shared to the host and will persist through
 
 ## Symlinked Directories
 
-The following files are symlinked within the container.
+* Server binaries - Never need to copy binaries after a compile
+* Patch files
+* Quests
+* Plugins
+* LUA Modules
 
-These symlinks are created on bootup of the container and are not ones you need to manage yourself and are here for convenience.
+Symlinks are created on bootup of the container and are not ones you need to manage yourself and are here for convenience.
 
 This means that when the **~/code** directory is updated via **git pull** the opcodes and patch files are automatically updated.
 

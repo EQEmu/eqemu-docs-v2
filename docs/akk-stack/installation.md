@@ -4,23 +4,21 @@
 
 ### Install Docker
 
-Linux Host or VM with [Docker Installed](https://docs.docker.com/engine/install/debian/) along with [Docker Compose v2](https://docs.docker.com/compose/install/linux/#install-the-plugin-manually)
-
 It doesn't matter what Linux OS you use as long as it has **Docker** and **Docker Compose**, my personal recommendation is **Debian**.
 
-After you install, make sure you install docker compose (listed below) and follow the instructions to run Docker as non-root
+- [x] Install [Docker](https://docs.docker.com/engine/install/debian/)
+- [x] Install docker compose (listed below)
+- [x] Follow the instructions to [run Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/)
 
-https://docs.docker.com/engine/install/linux-postinstall/
+
+!!! warning
+
+    Do not run Docker as root, run docker as the user you are logged in as and add your user to the `docker` group
 
 ### Installing Docker Compose
 
-With the latest docker compose v2; Docker does not provide the easiest documentation for installing Docker Compose as `docker-compose` instead of `docker compose`.
-
 ```
-DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
-chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
-sudo rm /usr/local/bin/docker-compose
-sudo ln -s $DOCKER_CONFIG/cli-plugins/docker-compose /usr/local/bin/docker-compose
+curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 ```
 
 Confirm that it's working

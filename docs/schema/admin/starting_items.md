@@ -5,9 +5,45 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIHZhcmNoYXIgaXRlbWlkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgICAgICB2YXJjaGFyIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIHN0YXJ0aW5nX2l0ZW1zIHx8LS1veyBpdGVtcyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    starting_items {
+        varchar content_flags
+        varchar content_flags_disabled
+        varchar itemid
+        varchar zone_id
+        varchar zoneid
+    }
+    content_flags {
+        varchar flag_name
+    }
+    items {
+        int id
+        int book
+        varchar name
+        int recasttype
+        int icon
+        mediumint bardeffect
+        int clickeffect
+        int focuseffect
+        int proceffect
+        int scrolleffect
+        int worneffect
+    }
+    zone {
+        int zoneidnumber
+        varchar short_name
+        tinyintunsigned version
+        varchar content_flags
+        varchar content_flags_disabled
+    }
+    starting_items ||--o{ content_flags : "One-to-One"
+    starting_items ||--o{ content_flags : "One-to-One"
+    starting_items ||--o{ items : "One-to-One"
+    starting_items ||--o{ zone : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIHZhcmNoYXIgaXRlbWlkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgICAgICB2YXJjaGFyIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIHN0YXJ0aW5nX2l0ZW1zIHx8LS1veyBpdGVtcyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgc3RhcnRpbmdfaXRlbXMge1xuICAgICAgICB2YXJjaGFyIGNvbnRlbnRfZmxhZ3NcbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzX2Rpc2FibGVkXG4gICAgICAgIHZhcmNoYXIgaXRlbWlkXG4gICAgICAgIHZhcmNoYXIgem9uZV9pZFxuICAgICAgICB2YXJjaGFyIHpvbmVpZFxuICAgIH1cbiAgICBjb250ZW50X2ZsYWdzIHtcbiAgICAgICAgdmFyY2hhciBmbGFnX25hbWVcbiAgICB9XG4gICAgaXRlbXMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGJvb2tcbiAgICAgICAgdmFyY2hhciBuYW1lXG4gICAgICAgIGludCByZWNhc3R0eXBlXG4gICAgICAgIGludCBpY29uXG4gICAgICAgIG1lZGl1bWludCBiYXJkZWZmZWN0XG4gICAgICAgIGludCBjbGlja2VmZmVjdFxuICAgICAgICBpbnQgZm9jdXNlZmZlY3RcbiAgICAgICAgaW50IHByb2NlZmZlY3RcbiAgICAgICAgaW50IHNjcm9sbGVmZmVjdFxuICAgICAgICBpbnQgd29ybmVmZmVjdFxuICAgIH1cbiAgICB6b25lIHtcbiAgICAgICAgaW50IHpvbmVpZG51bWJlclxuICAgICAgICB2YXJjaGFyIHNob3J0X25hbWVcbiAgICAgICAgdGlueWludHVuc2lnbmVkIHZlcnNpb25cbiAgICAgICAgdmFyY2hhciBjb250ZW50X2ZsYWdzXG4gICAgICAgIHZhcmNoYXIgY29udGVudF9mbGFnc19kaXNhYmxlZFxuICAgIH1cbiAgICBzdGFydGluZ19pdGVtcyB8fC0tb3sgY29udGVudF9mbGFncyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IGNvbnRlbnRfZmxhZ3MgOiBcIk9uZS10by1PbmVcIlxuICAgIHN0YXJ0aW5nX2l0ZW1zIHx8LS1veyBpdGVtcyA6IFwiT25lLXRvLU9uZVwiXG4gICAgc3RhcnRpbmdfaXRlbXMgfHwtLW97IHpvbmUgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships
@@ -25,7 +61,7 @@
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Starting Items Entry Identifier |
-| class_list | text |  |
+| race | int | [Race](../../../../server/npc/race-list): 0 = All |
 | class | int | [Class](../../../../server/player/class-list): 0 = All |
 | deity_list | text |  |
 | zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |

@@ -5,9 +5,22 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3VpbGRfcmVsYXRpb25zIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgZ3VpbGQxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGd1aWxkMlxuICAgIH1cbiAgICBndWlsZHMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGxlYWRlclxuICAgICAgICB2YXJjaGFyIG1vdGRfc2V0dGVyXG4gICAgfVxuICAgIGd1aWxkX3JlbGF0aW9ucyB8fC0tb3sgZ3VpbGRzIDogXCJPbmUtdG8tT25lXCJcbiAgICBndWlsZF9yZWxhdGlvbnMgfHwtLW97IGd1aWxkcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    guild_relations {
+        mediumintunsigned guild1
+        mediumintunsigned guild2
+    }
+    guilds {
+        int id
+        int leader
+        varchar motd_setter
+    }
+    guild_relations ||--o{ guilds : "One-to-One"
+    guild_relations ||--o{ guilds : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3VpbGRfcmVsYXRpb25zIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgZ3VpbGQxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGd1aWxkMlxuICAgIH1cbiAgICBndWlsZHMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGxlYWRlclxuICAgICAgICB2YXJjaGFyIG1vdGRfc2V0dGVyXG4gICAgfVxuICAgIGd1aWxkX3JlbGF0aW9ucyB8fC0tb3sgZ3VpbGRzIDogXCJPbmUtdG8tT25lXCJcbiAgICBndWlsZF9yZWxhdGlvbnMgfHwtLW97IGd1aWxkcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgZ3VpbGRfcmVsYXRpb25zIHtcbiAgICAgICAgbWVkaXVtaW50dW5zaWduZWQgZ3VpbGQxXG4gICAgICAgIG1lZGl1bWludHVuc2lnbmVkIGd1aWxkMlxuICAgIH1cbiAgICBndWlsZHMge1xuICAgICAgICBpbnQgaWRcbiAgICAgICAgaW50IGxlYWRlclxuICAgICAgICB2YXJjaGFyIG1vdGRfc2V0dGVyXG4gICAgfVxuICAgIGd1aWxkX3JlbGF0aW9ucyB8fC0tb3sgZ3VpbGRzIDogXCJPbmUtdG8tT25lXCJcbiAgICBndWlsZF9yZWxhdGlvbnMgfHwtLW97IGd1aWxkcyA6IFwiT25lLXRvLU9uZVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships

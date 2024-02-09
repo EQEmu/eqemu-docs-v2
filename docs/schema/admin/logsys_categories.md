@@ -5,9 +5,18 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9nc3lzX2NhdGVnb3JpZXMge1xuICAgICAgICBpbnQgZGlzY29yZF93ZWJob29rX2lkXG4gICAgfVxuICAgIGRpc2NvcmRfd2ViaG9va3Mge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbG9nc3lzX2NhdGVnb3JpZXMgfHwtLW97IGRpc2NvcmRfd2ViaG9va3MgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams-edit}
+```mermaid
+erDiagram
+    logsys_categories {
+        int discord_webhook_id
+    }
+    discord_webhooks {
+        int id
+    }
+    logsys_categories ||--o{ discord_webhooks : "One-to-One"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9nc3lzX2NhdGVnb3JpZXMge1xuICAgICAgICBpbnQgZGlzY29yZF93ZWJob29rX2lkXG4gICAgfVxuICAgIGRpc2NvcmRfd2ViaG9va3Mge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbG9nc3lzX2NhdGVnb3JpZXMgfHwtLW97IGRpc2NvcmRfd2ViaG9va3MgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgbG9nc3lzX2NhdGVnb3JpZXMge1xuICAgICAgICBpbnQgZGlzY29yZF93ZWJob29rX2lkXG4gICAgfVxuICAgIGRpc2NvcmRfd2ViaG9va3Mge1xuICAgICAgICBpbnQgaWRcbiAgICB9XG4gICAgbG9nc3lzX2NhdGVnb3JpZXMgfHwtLW97IGRpc2NvcmRfd2ViaG9va3MgOiBcIk9uZS10by1PbmVcIlxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOnRydWUsImF1dG9TeW5jIjp0cnVlLCJ1cGRhdGVEaWFncmFtIjp0cnVlfQ==){target=diagrams}
+
+```
 
 
 ## Relationships

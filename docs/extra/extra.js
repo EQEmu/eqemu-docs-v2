@@ -37,3 +37,19 @@ function shuffle(array) {
 
   return array;
 }
+
+window.onload = function() {
+  onLoad()
+};
+
+let origOpen = XMLHttpRequest.prototype.open;
+XMLHttpRequest.prototype.open = function() {
+  this.addEventListener('loadend', function() {
+    onLoad()
+  });
+  origOpen.apply(this, arguments);
+};
+
+function onLoad() {
+  //
+}

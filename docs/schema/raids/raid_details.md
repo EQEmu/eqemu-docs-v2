@@ -5,9 +5,24 @@
 
 ## Relationship Diagram(s)
 
-[Diagram Edit](https://mermaid.live/edit#eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9kZXRhaWxzIHtcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2xlYWRlcnMge1xuICAgICAgICBpbnR1bnNpZ25lZCByaWRcbiAgICB9XG4gICAgcmFpZF9tZW1iZXJzIHtcbiAgICAgICAgaW50IGNoYXJpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2RldGFpbHMgfHwtLW97IHJhaWRfbGVhZGVycyA6IFwiSGFzLU1hbnlcIlxuICAgIHJhaWRfZGV0YWlscyB8fC0tb3sgcmFpZF9tZW1iZXJzIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams-edit}
+```mermaid
+erDiagram
+    raid_details {
+        int raidid
+    }
+    raid_leaders {
+        intunsigned rid
+    }
+    raid_members {
+        int charid
+        varchar name
+        int raidid
+    }
+    raid_details ||--o{ raid_leaders : "Has-Many"
+    raid_details ||--o{ raid_members : "Has-Many"
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9kZXRhaWxzIHtcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2xlYWRlcnMge1xuICAgICAgICBpbnR1bnNpZ25lZCByaWRcbiAgICB9XG4gICAgcmFpZF9tZW1iZXJzIHtcbiAgICAgICAgaW50IGNoYXJpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2RldGFpbHMgfHwtLW97IHJhaWRfbGVhZGVycyA6IFwiSGFzLU1hbnlcIlxuICAgIHJhaWRfZGV0YWlscyB8fC0tb3sgcmFpZF9tZW1iZXJzIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9)](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgcmFpZF9kZXRhaWxzIHtcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2xlYWRlcnMge1xuICAgICAgICBpbnR1bnNpZ25lZCByaWRcbiAgICB9XG4gICAgcmFpZF9tZW1iZXJzIHtcbiAgICAgICAgaW50IGNoYXJpZFxuICAgICAgICB2YXJjaGFyIG5hbWVcbiAgICAgICAgaW50IHJhaWRpZFxuICAgIH1cbiAgICByYWlkX2RldGFpbHMgfHwtLW97IHJhaWRfbGVhZGVycyA6IFwiSGFzLU1hbnlcIlxuICAgIHJhaWRfZGV0YWlscyB8fC0tb3sgcmFpZF9tZW1iZXJzIDogXCJIYXMtTWFueVwiXG5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9){target=diagrams}
+
+```
 
 
 ## Relationships
@@ -27,7 +42,7 @@
 | locked | tinyint | Locked: 0 = False, 1 = True |
 | motd | varchar | Message of the Day |
 | marked_npc_1_entity_id | int |  |
-| marked_npc_2 | smallint | Marked NPC 2 |
+| marked_npc_1_zone_id | int |  |
 | marked_npc_1_instance_id | int |  |
 | marked_npc_2_entity_id | int |  |
 | marked_npc_2_zone_id | int |  |
