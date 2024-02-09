@@ -6,16 +6,16 @@ description: This page describes the backwards compatibility for the guild manag
 
 Guild ranks will translate as follows when the server sends rank to the client.
 
-|Guild Rank Name|Titanium/Underfoot|
-|---------------|------------------|
-|Leader(1)|Leader(2)|
-|Senior Officer(2)|Officer(1)|
-|Officer(3)|Officer(1)|
-|Senior Member(4)|Member(0)|
-|Member(5)|Member(0)|
-|Junior Member(6)|Member(0)|
-|Initate(7)|Member(0)|
-|Recruit(8)|Member(0)|
+|Guild Rank Name|RoF2|Titanium|Underfoot|
+|:---|:---:|:---:|:---:|
+|Leader|1|2|2|
+|Senior Officer|2|1|1|
+|Officer|3|1|1|
+|Senior Member|4|0|0|
+|Member|5|0|0|
+|Junior Member|6|0|0|
+|Initate|7|0|0|
+|Recruit|8|0|0|
 
 What does this mean?
 
@@ -23,9 +23,11 @@ If you are using a mixture of clients, the change of ranks will mirror the above
 
 Example:
 
-If an RoF2 client changes the rank of Player A from Recruit to Junior Member, a Ti/UF client will show Player A as a member.  
+If an RoF2 client changes the rank of Player A from Recruit to Junior Member, a Ti/UF client will show Player A as a member before and after the change.  
 
-If a Ti/UF client changes the rank of Player A from Member to Officer, a RoF 2 client will show Player A as Officer.  Player A will then be afforded the permissions as noted within the RoF2 client for the rank of Officer.
+If a Ti/UF client changes the rank of Player A from Member to Officer, a RoF 2 client will show Player A as Officer.  
+
+Player A will then be afforded the permissions as noted within the RoF2 client for the rank.
 
 ### Permissions
 

@@ -3,7 +3,7 @@ description: This page describes the guild management defaults on your EQEmu Ser
 ---
 
 |Guild Rank Name|Guild Rank #|
-|---------------|------------|
+|---------------|:---:|
 |Leader|1|
 |Senior Officer|2|
 |Officer|3|

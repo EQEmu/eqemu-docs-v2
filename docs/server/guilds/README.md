@@ -24,7 +24,7 @@ As of February 2024, the following **features are implemented**:
 - Real Estate
 - Banners
 
-The sysytem has been tested against Titanium, Underfoot and Rain of Fear 2.  Functionality is limited to the client feature set.
+The system has been tested against Titanium, Underfoot and Rain of Fear 2.  Functionality is limited to the client feature set.
 
 ## Server Rules for Guild Management
 
