@@ -41,6 +41,9 @@ There are several rules that allow for customization of guild functionality.
 
 If you have existing quest scripts that use client:GuildRank() or $client->GuildRank(), these will need to be updated to reflect the RoF2 guild rank numbers.
 
+## Tributes
+
+In order for tributes to function, you will need to source the tributes and tribute_level tables.  These are included within a new install, and can also be sourced from the peq content [database](https://db.projecteq.net/)
 
 ## Known Issues
 
