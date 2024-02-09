@@ -40,7 +40,7 @@ func Run() {
 
 				// run git pull
 				cmd := exec.Command("git", "pull")
-				_, err := cmd.Output()
+				_, err = cmd.Output()
 				if err != nil {
 					log.Println(err)
 				}
