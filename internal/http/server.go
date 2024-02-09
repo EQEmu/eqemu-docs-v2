@@ -29,6 +29,13 @@ func Run() {
 		"/deploy", func(c echo.Context) error {
 			if c.Request().Header.Get("X-Github-Event") != "" &&
 				c.Request().Header.Get("X-Github-Delivery") != "" {
+				err := SendDiscordWebhook(
+					fmt.Sprintf("[Docs Deploy] Starting build..."),
+				)
+				if err != nil {
+					log.Println(err)
+				}
+
 				start := time.Now()
 
 				// run git pull
@@ -57,7 +64,7 @@ func Run() {
 				return c.JSON(
 					http.StatusOK,
 					echo.Map{
-						"data": "Deployed", "time": fmt.Sprintf("%s", time.Since(start)),
+						"data": "Deployed", "time": fmt.Sprintf("%s", time.Since(start).Round(time.Second))),
 					},
 				)
 			}
