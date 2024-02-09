@@ -121,7 +121,7 @@ make init-spire-dev
 * **spire-be** Starts the Spire backend in development mode restarting on file changes
 * **spire-fe** Starts the Spire frontend in development mode restarting on file changes
 
-```bash 
+```bash
 alias spire='cd ~/server/spire'
 alias spire-be='cd ~/server/spire && air'
 alias spire-fe='cd ~/server/spire/frontend && npm run dev'
