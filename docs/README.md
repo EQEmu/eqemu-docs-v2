@@ -13,13 +13,7 @@ Everything you need can be found by using **search** as well as the left and top
     The breadth of information compiled in the documentation is the accumulation of open source community members dating back to early 2000's.
 
     The purpose of this platform is to allow a scalable transfer of knowledge and information regarding this massive project.
-
-## Supported Clients
-
-|Titanium Edition|Secrets of Faydwer|Seeds of Destruction|Underfoot|Rain of Fear (Most used)|
-|:---:|:---:|:---:|:---:|:---:|
-| ![](https://user-images.githubusercontent.com/3319450/143334304-4faf5cf8-6ed9-4b47-a0e2-938cc3f68e57.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334432-e6e9eaef-b141-4b05-9607-ceb38dcf717d.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334455-420ee97d-ed5e-4f21-a824-48371831c604.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334476-4b699dec-6a1b-4690-be7f-64eec22cd60c.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334498-810f76b6-7f18-4723-a02a-d50e11af96d1.png){: style="height:150px; width: 250px;"} |
-
+    
 ## EverQuest Emulator Server
 
 **EverQuest Emulator Server is a custom, completely from-scratch reverse-engineered open source server implementation for EverQuest built mostly on C / C++**
@@ -27,14 +21,17 @@ Everything you need can be found by using **search** as well as the left and top
 !!! features
 
     - [x] **Storage Engine** MySQL / MariaDB is used as the database engine (over 200+ tables)
-    
     - [x] **Scripting Engine(s)** Perl and LUA are both supported scripting languages for NPC/Player/Quest oriented events
-    
     - [x] **Game Content** Open source database (Project EQ) has content up to expansion OoW (included in server installs)
-    
     - [x] Game server environments and databases can be heavily customized to create all new experiences
-    
     - [x] Hundreds of [Quests and events](https://github.com/ProjectEQ/projecteqquests) created and maintained by Project EQ
+
+## Supported Clients
+
+|Titanium Edition|Secrets of Faydwer|Seeds of Destruction|Underfoot|Rain of Fear (Most used)|
+|:---:|:---:|:---:|:---:|:---:|
+| ![](https://user-images.githubusercontent.com/3319450/143334304-4faf5cf8-6ed9-4b47-a0e2-938cc3f68e57.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334432-e6e9eaef-b141-4b05-9607-ceb38dcf717d.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334455-420ee97d-ed5e-4f21-a824-48371831c604.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334476-4b699dec-6a1b-4690-be7f-64eec22cd60c.png){: style="height:150px; width: 125px;"} | ![image](https://user-images.githubusercontent.com/3319450/143334498-810f76b6-7f18-4723-a02a-d50e11af96d1.png){: style="height:150px; width: 250px;"} |
+
 
 ## Server Installation
 
