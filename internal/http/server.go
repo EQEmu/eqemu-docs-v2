@@ -64,7 +64,7 @@ func Run() {
 				return c.JSON(
 					http.StatusOK,
 					echo.Map{
-						"data": "Deployed", "time": fmt.Sprintf("%s", time.Since(start).Round(time.Second))),
+						"data": "Deployed", "time": fmt.Sprintf("%s", time.Since(start)),
 					},
 				)
 			}
@@ -96,7 +96,7 @@ func SendDeployMessage(start time.Time) {
 	err := SendDiscordWebhook(
 		fmt.Sprintf("[Docs Deploy] Changes are now live on [%v] **took %s second(s)**",
 			siteUrl,
-			time.Since(start),
+			time.Since(start).Round(time.Second),
 		),
 	)
 	if err != nil {
