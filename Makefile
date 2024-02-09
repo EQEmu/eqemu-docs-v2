@@ -12,6 +12,15 @@ MAKEFLAGS += --no-print-directory
 endif
 
 #----------------------
+# Load .env file
+#----------------------
+ifneq ("$(wildcard .env)","")
+include .env
+export
+else
+endif
+
+#----------------------
 # Terminal
 #----------------------
 

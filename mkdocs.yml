@@ -3,6 +3,13 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
+  - git-committers:
+        repository: EQEmu/eqemu-docs-v2
+        branch: main
+        enabled: !ENV [ENV_PROD, false]
+  - git-revision-date-localized:
+        enable_creation_date: true
+        enabled: !ENV [ENV_PROD, false]
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server

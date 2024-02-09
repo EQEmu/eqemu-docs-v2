@@ -3,3 +3,4 @@ site
 public
 .env
 node_modules
+.cache
