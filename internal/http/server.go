@@ -52,7 +52,7 @@ func Run() {
 					log.Println(err)
 				}
 
-				SendDeployMessage()
+				SendDeployMessage(start)
 
 				return c.JSON(
 					http.StatusOK,
@@ -84,9 +84,14 @@ type DiscordRequestBody struct {
 	Content string `json:"content"`
 }
 
-func SendDeployMessage() {
+func SendDeployMessage(start time.Time) {
 	siteUrl := os.Getenv("SITE_URL")
-	err := SendDiscordWebhook(fmt.Sprintf("[Docs Deploy] Changes are now live on [%v]", siteUrl))
+	err := SendDiscordWebhook(
+		fmt.Sprintf("[Docs Deploy] Changes are now live on [%v] **took %s second(s)**",
+			siteUrl,
+			time.Since(start),
+		),
+	)
 	if err != nil {
 		log.Println(err)
 	}
