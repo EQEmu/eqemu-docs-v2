@@ -145,6 +145,10 @@ nav:
           - Creating a New Faction: server/factions/add-a-new-faction.md
           - Customizing Factions: server/factions/customizing-factions.md
           - Faction Values: server/factions/faction-values.md
+      - Guild Management: 
+          - server/guilds/README.md
+          - Defaults: server/guilds/defaults.md
+          - Backwards Compatibility: server/guilds/compatibility.md
       - Items:
           - Alternate Currencies: server/items/alternate-currencies.md
           - Augment Restrictions: server/items/augment-restrictions.md
