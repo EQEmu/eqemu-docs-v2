@@ -1,9 +1,6 @@
 # starting_items
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -46,8 +43,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | One-to-One | content_flags | [content_flags](../../schema/flagging/content_flags.md) | flag_name |
@@ -61,14 +56,14 @@ erDiagram
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | id | int | Unique Starting Items Entry Identifier |
-| race | int | [Race](../../../../server/npc/race-list): 0 = All |
+| class_list | text |  |
 | class | int | [Class](../../../../server/player/class-list): 0 = All |
-| deity_list | text |  |
-| zoneid | int | [Zone Identifier](../../../../server/zones/zone-list) |
-| item_id | int |  |
+| deityid | int | [Deity](../../../../server/player/deity-list): 0 = Alll |
+| zone_id_list | text |  |
+| itemid | int | [Item Identifier](../../schema/items/items.md) |
 | item_charges | tinyint | Item Charges |
-| gm | tinyint | GM: 0 = False, 1 = True |
-| inventory_slot | mediumint |  |
+| status | mediumint |  |
+| slot | mediumint | [Slot](../../../../server/inventory/inventory-slots) |
 | min_expansion | tinyint | [Minimum Expansion](../../../../server/operation/expansion-list) |
 | max_expansion | tinyint | [Maximum Expansion](../../../../server/operation/expansion-list) |
 | content_flags | varchar | Content Flags Required to be Enabled |

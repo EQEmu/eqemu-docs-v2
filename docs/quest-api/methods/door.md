@@ -4,8 +4,6 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Door){:target="Door"} for latest definitions and Quest examples
 
-        Last generated 2024.02.07
-
     ``` lua
     door:CreateDatabaseEntry();
     door:ForceClose(Mob sender, bool alt_mode);

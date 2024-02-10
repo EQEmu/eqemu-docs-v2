@@ -2,13 +2,11 @@ package console
 
 import (
 	"fmt"
+	"github.com/spf13/cobra"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"strings"
-	"time"
-
-	"github.com/spf13/cobra"
 )
 
 type GMCommandsDocsGenerateCommand struct {
@@ -54,10 +52,6 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 	}
 
 	template := string(b)
-
-	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02")
-	template = strings.ReplaceAll(template, "{{generated_time}}", generatedTime)
 
 	commandData := fmt.Sprintf("%v\n", template)
 

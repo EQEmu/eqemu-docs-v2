@@ -2,8 +2,6 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Last Generated: 2024.02.07
-
 
 | Command | Description | Status Level |
 | :--- | :--- | :--- |

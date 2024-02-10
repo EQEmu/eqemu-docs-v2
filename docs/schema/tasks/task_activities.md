@@ -1,9 +1,6 @@
 # task_activities
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -52,8 +49,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | One-to-One | delivertonpc | [npc_types](../../schema/npcs/npc_types.md) | id |
@@ -76,10 +71,10 @@ erDiagram
 | goalcount | int | Goal Count |
 | description_override | varchar | Description Override |
 | goalid | int | Goal Identifier or [Goal List Identifier](goallists.md) |
-| item_id_list | text | [Item Identifier List](../../schema/items/items.md) |
+| goal_match_list | text | Goal Match List: Pipe (|) Separated Values |
 | item_list | varchar | [Item Identifier List](../../schema/items/items.md) |
 | dz_switch_id | int | [Dynamic Zone Switch ID](../../schema/doors/doors.md) |
-| delivertonpc | int | Deliver To NPC: 0 = No Delivery NPC, &gt;0 = [NPC Type Identifier](../../schema/npcs/npc_types.md) |
+| min_x | float | Minimum X Coordinate |
 | min_y | float | Minimum Y Coordinate |
 | min_z | float | Minimum Z Coordinate |
 | max_x | float | Maximum X Coordinate |

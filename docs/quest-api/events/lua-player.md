@@ -2,8 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated 2024.02.07
-
 ## EVENT_AA_BUY
 
 ``` lua

@@ -1,9 +1,6 @@
 # tasks
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -39,8 +36,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | Has-Many | id | [task_activities](../../schema/tasks/task_activities.md) | taskid |
@@ -59,11 +54,11 @@ erDiagram
 | duration_code | tinyint | [Duration Code](../../../../server/task-system-guide/task-duration-codes) |
 | title | varchar | Title |
 | description | text | Description |
-| reward_text | varchar | Reward Text |
-| reward_id_list | text | Reward ID List |
+| reward | varchar | Reward Description |
+| rewardid | int | [Reward Item Identifier](../../schema/items/items.md) |
 | cash_reward | int | Cash Reward in Copper |
-| exp_reward | int | Experience Reward |
-| reward_method | tinyint | Reward Method |
+| xpreward | int | Experience Reward |
+| rewardmethod | tinyint | Reward Method: 0 = Single Item ID, 1 = List of Items, 2 = Quest Controlled |
 | reward_points | int | Reward Points |
 | reward_point_type | int | Reward Point Type: 4 = Radiant, 5 = Ebon |
 | min_level | tinyint | Minimum Level |

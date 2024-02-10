@@ -1,8 +1,5 @@
 # player_event_log_settings
 
-!!! info
-	This page was last generated 2024.02.07
-
 ## Schema
 
 | Column | Data Type | Description |

@@ -1,9 +1,6 @@
 # zone
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -389,8 +386,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | One-to-One | content_flags | [content_flags](../../schema/flagging/content_flags.md) | flag_name |
@@ -507,8 +502,8 @@ erDiagram
 | fog_density | float | This is the intensity of the fog, this should be a number between 0-1, most commonly used is .1 or .33 |
 | flag_needed | varchar | [Flag Required](zone_flags.md) |
 | bucket_name | varchar |  |
-| cancombat | tinyint | Can Combat: 0 = False, 1 = True |
-| canlevitate | tinyint | Can Levitate: 0 = False, 1 = True (Does not affect those with #gm on) |
+| bucket_value | varchar |  |
+| bucket_comparison | tinyint |  |
 | castoutdoor | tinyint | Cast Outdoors: 0 = False, 1 = True |
 | hotzone | tinyint | Hotzone: 0 = False, 1 = True |
 | insttype | tinyint | Instance Type |

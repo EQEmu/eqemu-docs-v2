@@ -4,12 +4,12 @@ plugins:
   - tags:
       tags_file: tags.md
   - git-committers:
-        repository: EQEmu/eqemu-docs-v2
-        branch: main
-        enabled: !ENV [ENV_PROD, false]
+      branch: main
+      enabled: !ENV [ENV_PROD, false]
+      repository: EQEmu/eqemu-docs-v2
   - git-revision-date-localized:
-        enable_creation_date: true
-        enabled: !ENV [ENV_PROD, false]
+      enable_creation_date: true
+      enabled: !ENV [ENV_PROD, false]
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
@@ -156,7 +156,7 @@ nav:
           - Creating a New Faction: server/factions/add-a-new-faction.md
           - Customizing Factions: server/factions/customizing-factions.md
           - Faction Values: server/factions/faction-values.md
-      - Guild Management: 
+      - Guild Management:
           - server/guilds/README.md
           - Defaults: server/guilds/defaults.md
           - Backwards Compatibility: server/guilds/compatibility.md
@@ -769,7 +769,6 @@ nav:
           - Installation: akk-stack/installation.md
       - Operate:
           - Backups: akk-stack/operate/backups.md
-
           - CPU: akk-stack/operate/cpu.md
           - File Structure: akk-stack/operate/file-structure.md
           - Services: akk-stack/operate/services.md

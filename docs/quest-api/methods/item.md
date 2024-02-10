@@ -4,8 +4,6 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&type=Item){:target="Item"} for latest definitions and Quest examples
 
-        Last generated 2024.02.07
-
     ``` lua
     item:AAgi();
     item:AC();

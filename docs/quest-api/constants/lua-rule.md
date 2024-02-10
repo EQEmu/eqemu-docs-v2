@@ -2,8 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Rule){:target="Rule"} for latest definitions and Quest examples
 
-    Last generated 2024.02.07
-
 ``` lua
 Rule.AAExpMultiplier
 Rule.AERampageMaxDistance
@@ -157,8 +155,9 @@ Rule.ClientRemovalDelayMS
 Rule.CommandSpellRank
 Rule.CompoundLifetapHeals
 Rule.CompressZoneStream
-Rule.CorpseDecayTimeMS
-Rule.CorpseResTimeMS
+Rule.CorpseDecayTime
+Rule.CorpseOwnerOnlineTime
+Rule.CorpseResTime
 Rule.CorpseUnlockTimer
 Rule.CrashReporting
 Rule.CreationLimit
@@ -200,11 +199,13 @@ Rule.DivineInterventionHeal
 Rule.DragCorpseDistance
 Rule.DruidTrackingDistanceMultiplier
 Rule.DubiouslyFactionMinimum
+Rule.DuelCorpseResTime
 Rule.DyeCommandRequiresDyes
 Rule.EXPFromDmgShield
 Rule.EbonCrystalItemID
 Rule.Emote
-Rule.EmptyNPCCorpseDecayTimeMS
+Rule.EmptyCorpseDecayTime
+Rule.EmptyNPCCorpseDecayTime
 Rule.EmptyShutdownDelaySeconds
 Rule.EmptyShutdownEnabled
 Rule.EnableAggroMeter
@@ -412,7 +413,7 @@ Rule.MQWarpExemptStatus
 Rule.MQZoneExemptStatus
 Rule.MagicianTrackingDistanceMultiplier
 Rule.MaintainIntoxicationAcrossZones
-Rule.MajorNPCCorpseDecayTimeMS
+Rule.MajorNPCCorpseDecayTime
 Rule.ManaRegen
 Rule.ManaRegenMultiplier
 Rule.ManaTapsRequireNPCMana
@@ -473,7 +474,7 @@ Rule.MinStatusToLevelTarget
 Rule.MinStatusToSummonItem
 Rule.MinStatusToZoneAnywhere
 Rule.MinimumMessagesPerInterval
-Rule.MinorNPCCorpseDecayTimeMS
+Rule.MinorNPCCorpseDecayTime
 Rule.MobCloseScanDistance
 Rule.MobPathingVisualDebug
 Rule.MobZVisualDebug

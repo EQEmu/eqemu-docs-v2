@@ -1,9 +1,6 @@
 # account
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -83,8 +80,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | Has-Many | id | [account_flags](../../schema/account/account_flags.md) | p_accid |
@@ -122,7 +117,7 @@ erDiagram
 | rulesflag | tinyint | Rules Flag |
 | suspendeduntil | datetime | Time Suspension of the Account ends |
 | time_creation | int | Time Creation UNIX Timestamp |
-| expansion | tinyint | Expansion |
+| ban_reason | text | Ban Reason |
 | suspend_reason | text | Suspension Reason |
 | crc_eqgame | text | CRC for EQGame.exe |
 | crc_skillcaps | text | CRC for SkillCaps file |
