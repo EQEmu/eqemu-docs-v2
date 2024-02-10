@@ -126,13 +126,13 @@ nav:
           - Schema: /schema/aas/aa_ability/
       - Expansions:
         - Classic:
-              - developer/project-peq-expansions/classic/README.md
-              - Item Changes: developer/project-peq-expansions/classic/item-changes.md
-              - Zone Changes: developer/project-peq-expansions/classic/zone-changes.md
-        - Zone Version Switching: developer/project-peq-expansions/zone-version-switching.md
-        - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
-        - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
-        - Design Considerations: developer/project-peq-expansions/design-considerations.md
+              - server/expansions/classic/README.md
+              - Item Changes: server/expansions/classic/item-changes.md
+              - Zone Changes: server/expansions/classic/zone-changes.md
+        - Zone Version Switching: server/expansions/zone-version-switching.md
+        - Expansion and Content Filtering: server/expansions/expansion-content-filtering.md
+        - Expansion List Reference: server/expansions/expansion-list-reference.md
+        - Design Considerations: server/expansions/design-considerations.md
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md
