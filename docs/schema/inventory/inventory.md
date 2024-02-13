@@ -1,9 +1,6 @@
 # inventory
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -49,8 +46,6 @@ erDiagram
 
 ```
 
-
-## Relationships
 
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |

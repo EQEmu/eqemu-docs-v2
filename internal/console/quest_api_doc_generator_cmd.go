@@ -118,7 +118,7 @@ func (c *QuestApiDocGeneratorCommand) GetSpireDefinitions() QuestApiResponse {
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, response QuestApiResponse) string {
-	b, err := ioutil.ReadFile("./templates/method-page.template")
+	b, err := os.ReadFile("./templates/method-page.template")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -128,7 +128,7 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 	luaTemplate := template
 	perlTemplate := template
 
-	perlMethods := []string{}
+	var perlMethods []string
 	for _, methods := range response.Data.PerlApi.PerlMethods {
 		for _, method := range methods {
 			if method.MethodType == methodType {
@@ -177,11 +177,7 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 
 	markdown := ``
 
-	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02")
-
 	if len(perlMethods) > 0 {
-		perlTemplate = strings.ReplaceAll(perlTemplate, "{{generated_time}}", generatedTime)
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{method_type}}", methodType)
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_label}}", "Perl")
 		perlTemplate = strings.ReplaceAll(perlTemplate, "{{language_syntax}}", "perl")
@@ -192,7 +188,6 @@ func (c *QuestApiDocGeneratorCommand) BuildMethodPage(methodType string, respons
 		markdown += perlTemplate
 	}
 	if len(luaMethods) > 0 {
-		luaTemplate = strings.ReplaceAll(luaTemplate, "{{generated_time}}", generatedTime)
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{method_type}}", methodType)
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_label}}", "Lua")
 		luaTemplate = strings.ReplaceAll(luaTemplate, "{{language_syntax}}", "lua")
@@ -384,15 +379,9 @@ func (c *QuestApiDocGeneratorCommand) BuildEventPagePerl(eventType string, event
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated {{generated_time}}
-
 `
 
-	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02")
-	markdown = strings.ReplaceAll(markdown, "{{generated_time}}", generatedTime)
-
-	b, err := ioutil.ReadFile("./templates/event-block-perl.template")
+	b, err := os.ReadFile("./templates/event-block-perl.template")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -430,15 +419,9 @@ func (c *QuestApiDocGeneratorCommand) BuildEventPageLua(eventType string, events
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua){:target="perl_event"} for latest definitions and Quest examples
 
-    Last generated {{generated_time}}
-
 `
 
-	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02")
-	markdown = strings.ReplaceAll(markdown, "{{generated_time}}", generatedTime)
-
-	b, err := ioutil.ReadFile("./templates/event-block-lua.template")
+	b, err := os.ReadFile("./templates/event-block-lua.template")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -566,15 +549,12 @@ func (c *QuestApiDocGeneratorCommand) WriteConstantsDocs(response QuestApiRespon
 }
 
 func (c *QuestApiDocGeneratorCommand) BuildConstantPage(language string, constantType string, constants map[string][]Constant) string {
-	b, err := ioutil.ReadFile("./templates/constants-page.template")
+	b, err := os.ReadFile("./templates/constants-page.template")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	template := string(b)
-	currentTime := time.Now()
-	generatedTime := currentTime.Format("2006.01.02")
-	template = strings.ReplaceAll(template, "{{generated_time}}", generatedTime)
 	constantsString := ""
 	for category, constants := range constants {
 		if category == constantType {

@@ -89,6 +89,7 @@ func GetMkdocsConfig() (MkDocsCfg, error) {
 	// changed and then popped back on during save because go yaml can't handle it
 	// so we need to do some post processing
 	newCfg = strings.ReplaceAll(newCfg, "!!python/name:", "bangbang")
+	newCfg = strings.ReplaceAll(newCfg, "!ENV [ENV_PROD, false]", "env-prod")
 
 	// yaml
 	var configYaml MkDocsCfg
@@ -118,6 +119,7 @@ func WriteMkdocsConfig(config MkDocsCfg) {
 	// changed and then popped back on during save because go yaml can't handle it
 	// so we need to do some post processing
 	configString = strings.ReplaceAll(configString, "bangbang", "!!python/name:")
+	configString = strings.ReplaceAll(configString, "env-prod", "!ENV [ENV_PROD, false]")
 
 	// write
 	err = os.WriteFile(MkDocsConfigFile, []byte(configString), 755)

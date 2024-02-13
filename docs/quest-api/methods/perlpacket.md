@@ -4,8 +4,6 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=PerlPacket){:target="PerlPacket"} for latest definitions and Quest examples
 
-        Last generated 2024.02.07
-
     ``` perl
     $perlpacket->DESTROY();
     $perlpacket->FromArray(reference avref, uint32_t length);

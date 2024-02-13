@@ -1,8 +1,5 @@
 # level_exp_mods
 
-!!! info
-	This page was last generated 2024.02.07
-
 ## Schema
 
 | Column | Data Type | Description |

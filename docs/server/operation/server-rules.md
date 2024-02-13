@@ -8,9 +8,9 @@ description: >-
 
 ### Editing rules
 
-To edit rules, you can use the [`#rules set [Name] [Value]`](https://docs.eqemu.io/server/operation/in-game-command-reference) command to set a rule. 
+To edit rules, you can use the [`#rules set [Name] [Value]`](https://docs.eqemu.io/server/operation/in-game-command-reference) command to set a rule.
 
-You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loading-server-data/) to force all zones to reload the new rules. 
+You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loading-server-data/) to force all zones to reload the new rules.
 
 !!! warning
      The `notes` field in the database is set by the server software.  If you adjust the values in the field, they will be overwritten and restored to default values when you update your server binaries.
@@ -19,7 +19,12 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-    Last Generated: 2024.02.07
+##  Character Rules
+| Rule Name | Default Value | Description |
+| :--- | :--- | :--- |
+|  Character:EmptyCorpseDecayTime | 10800000 | Time after which an empty corpse decays (milliseconds) DEFAULT: 10800000 (3 Hours) |
+|  Character:DuelCorpseResTime | 600000 | Time before cant res corpse after a duel (milliseconds) DEFAULT: 600000 (10 Minutes) |
+|  Character:CorpseOwnerOnlineTime | 30000 | How often corpse will check if its owner is online DEFAULT: 30000 (30 Seconds) |
 
 ## AA Rules
 | Rule Name | Default Value | Description |
@@ -151,8 +156,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:DeathKeepLevel | false | Players can not drop below 0% experience from death. |
 | Character:UseDeathExpLossMult | false | Setting to control whether DeathExpLossMultiplier or the code default is used: (Level x Level / 18.0) x 12000 |
 | Character:UseOldRaceRezEffects | false | Older clients had ID 757 for races with high starting STR, but it doesn't seem used anymore |
-| Character:CorpseDecayTimeMS | 10800000 | Time after which the corpse decays (milliseconds) |
-| Character:CorpseResTimeMS | 10800000 | Time after which the corpse can no longer be resurrected (milliseconds) |
+| Character:CorpseDecayTime | 604800000 | Time after which the corpse decays (milliseconds) DEFAULT: 604800000 (7 Days) |
+| Character:CorpseResTime | 10800000 | Time after which the corpse can no longer be resurrected (milliseconds) DEFAULT: 10800000 (3 Hours) |
 | Character:LeaveCorpses | true | Setting whether you leave a corpse behind |
 | Character:LeaveNakedCorpses | false | Setting whether you leave a corpse without items |
 | Character:MaxDraggedCorpses | 2 | Maximum number of corpses you can drag at once |
@@ -635,10 +640,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## NPC Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
-| NPC:MinorNPCCorpseDecayTimeMS | 450000 | NPC corpse decay time, if NPC below level 55 (milliseconds) |
-| NPC:MajorNPCCorpseDecayTimeMS | 1500000 | NPC corpse decay time, if NPC equal or greater than level 55 (milliseconds) |
+| NPC:MinorNPCCorpseDecayTime | 450000 | NPC corpse decay time, if NPC below level 55 (milliseconds) |
+| NPC:MajorNPCCorpseDecayTime | 1500000 | NPC corpse decay time, if NPC equal or greater than level 55 (milliseconds) |
 | NPC:CorpseUnlockTimer | 150000 | Time after which corpses are unlocked for everyone to loot (milliseconds) |
-| NPC:EmptyNPCCorpseDecayTimeMS | 0 | NPC corpse decay time, if no items are left on the corpse (milliseconds) |
+| NPC:EmptyNPCCorpseDecayTime | 0 | NPC corpse decay time, if no items are left on the corpse (milliseconds) |
 | NPC:UseItemBonusesForNonPets | true | Switch whether item bonuses should be used for NPCs who are not pets |
 | NPC:UseBaneDamage | false | If NPCs can't inherently hit the target we don't add bane/magic dmg which isn't exactly the same as PCs |
 | NPC:SayPauseTimeInSec | 5 | Time span in which an NPC pauses his movement after a Say event without aggro (seconds) |

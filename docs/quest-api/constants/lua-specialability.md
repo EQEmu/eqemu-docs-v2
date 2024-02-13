@@ -2,8 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=SpecialAbility){:target="SpecialAbility"} for latest definitions and Quest examples
 
-    Last generated 2024.02.07
-
 ``` lua
 SpecialAbility.allow_beneficial
 SpecialAbility.allow_to_tank

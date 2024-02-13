@@ -29,11 +29,18 @@ func Run() {
 		"/deploy", func(c echo.Context) error {
 			if c.Request().Header.Get("X-Github-Event") != "" &&
 				c.Request().Header.Get("X-Github-Delivery") != "" {
+				err := SendDiscordWebhook(
+					fmt.Sprintf("[Docs Deploy] Starting build..."),
+				)
+				if err != nil {
+					log.Println(err)
+				}
+
 				start := time.Now()
 
 				// run git pull
 				cmd := exec.Command("git", "pull")
-				_, err := cmd.Output()
+				_, err = cmd.Output()
 				if err != nil {
 					log.Println(err)
 				}
@@ -52,7 +59,7 @@ func Run() {
 					log.Println(err)
 				}
 
-				SendDeployMessage()
+				SendDeployMessage(start)
 
 				return c.JSON(
 					http.StatusOK,
@@ -84,9 +91,14 @@ type DiscordRequestBody struct {
 	Content string `json:"content"`
 }
 
-func SendDeployMessage() {
+func SendDeployMessage(start time.Time) {
 	siteUrl := os.Getenv("SITE_URL")
-	err := SendDiscordWebhook(fmt.Sprintf("[Docs Deploy] Changes are now live on [%v]", siteUrl))
+	err := SendDiscordWebhook(
+		fmt.Sprintf("[Docs Deploy] Changes are now live on [%v] **took %s second(s)**",
+			siteUrl,
+			time.Since(start).Round(time.Second),
+		),
+	)
 	if err != nil {
 		log.Println(err)
 	}

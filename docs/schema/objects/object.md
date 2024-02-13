@@ -1,9 +1,6 @@
 # object
 
-!!! info
-	This page was last generated 2024.02.07
-
-## Relationship Diagram(s)
+## Relationships
 
 ```mermaid
 erDiagram
@@ -60,8 +57,6 @@ erDiagram
 ```
 
 
-## Relationships
-
 | Relationship Type | Local Key | Relates to Table | Foreign Key |
 | :--- | :--- | :--- | :--- |
 | One-to-One | content_flags | [content_flags](../../schema/flagging/content_flags.md) | flag_name |
@@ -88,7 +83,7 @@ erDiagram
 | objectname | varchar | Object Name |
 | type | int | [Type](../../../../server/zones/object-types) |
 | icon | int | Icon |
-| unknown08 | mediumint | Unknown |
+| size_percentage | float |  |
 | unknown24 | int | Unknown |
 | unknown20 | int | Unknown |
 | unknown64 | int | Unknown |

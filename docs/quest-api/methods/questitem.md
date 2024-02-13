@@ -4,8 +4,6 @@
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=QuestItem){:target="QuestItem"} for latest definitions and Quest examples
 
-        Last generated 2024.02.07
-
     ``` perl
     $questitem->AddEXP(uint32 exp);
     $questitem->ClearTimers();
@@ -45,16 +43,16 @@
     $questitem->IsStackable();
     $questitem->IsType(int type);
     $questitem->IsWeapon();
-    $questitem->ItemSay(string text, uint8 language_id);
     $questitem->ItemSay(string text);
+    $questitem->ItemSay(string text, uint8 language_id);
     $questitem->RemoveTaskDeliveredItems();
     $questitem->SetAttuned(bool is_attuned);
     $questitem->SetCharges(int16_t charges);
     $questitem->SetColor(uint32 color);
-    $questitem->SetCustomData(string identifier, bool value);
     $questitem->SetCustomData(string identifier, float value);
     $questitem->SetCustomData(string identifier, int value);
     $questitem->SetCustomData(string identifier, string value);
+    $questitem->SetCustomData(string identifier, bool value);
     $questitem->SetEXP(uint32 exp);
     $questitem->SetInstanceNoDrop(bool is_attuned);
     $questitem->SetPrice(uint32 price);

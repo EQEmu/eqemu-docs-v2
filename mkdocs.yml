@@ -3,6 +3,13 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
+  - git-committers:
+      branch: main
+      enabled: !ENV [ENV_PROD, false]
+      repository: EQEmu/eqemu-docs-v2
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enabled: !ENV [ENV_PROD, false]
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
@@ -110,15 +117,6 @@ nav:
           - Logging: developer/logging.md
           - Release Pipeline: developer/release-pipeline.md
           - Repositories: developer/repositories.md
-          - Project PEQ Expansions:
-              - Classic:
-                  - developer/project-peq-expansions/classic/README.md
-                  - Item Changes: developer/project-peq-expansions/classic/item-changes.md
-                  - Zone Changes: developer/project-peq-expansions/classic/zone-changes.md
-              - Zone Version Switching: developer/project-peq-expansions/zone-version-switching.md
-              - Expansion and Content Filtering: developer/project-peq-expansions/expansion-content-filtering.md
-              - Expansion List Reference: developer/project-peq-expansions/expansion-list-reference.md
-              - Design Considerations: developer/project-peq-expansions/design-considerations.md
           - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
       - Database:
           - Database Backup Tool: server/database/database-backup-tool.md
@@ -126,6 +124,15 @@ nav:
           - Multi Tenancy: server/database/multi-tenancy.md
           - Performance Tuning: server/database/performance-tuning.md
           - Schema: /schema/aas/aa_ability/
+      - Expansions:
+        - Classic:
+              - server/expansions/classic/README.md
+              - Item Changes: server/expansions/classic/item-changes.md
+              - Zone Changes: server/expansions/classic/zone-changes.md
+        - Zone Version Switching: server/expansions/zone-version-switching.md
+        - Expansion and Content Filtering: server/expansions/expansion-content-filtering.md
+        - Expansion List Reference: server/expansions/expansion-list-reference.md
+        - Design Considerations: server/expansions/design-considerations.md
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md
@@ -149,7 +156,7 @@ nav:
           - Creating a New Faction: server/factions/add-a-new-faction.md
           - Customizing Factions: server/factions/customizing-factions.md
           - Faction Values: server/factions/faction-values.md
-      - Guild Management: 
+      - Guild Management:
           - server/guilds/README.md
           - Defaults: server/guilds/defaults.md
           - Backwards Compatibility: server/guilds/compatibility.md
@@ -245,7 +252,6 @@ nav:
           - Server Management: server/operation/server-management.md
           - Server Rules: server/operation/server-rules.md
           - Server Variables: server/operation/server-variables.md
-          - Updating Server Assets: server/operation/updating-server-assets.md
       - Player:
           - Class List: server/player/class-list.md
           - Client Version Bitmasks: server/player/client-version-bitmasks.md
@@ -763,7 +769,6 @@ nav:
           - Installation: akk-stack/installation.md
       - Operate:
           - Backups: akk-stack/operate/backups.md
-
           - CPU: akk-stack/operate/cpu.md
           - File Structure: akk-stack/operate/file-structure.md
           - Services: akk-stack/operate/services.md

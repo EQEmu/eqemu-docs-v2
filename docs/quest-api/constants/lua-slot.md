@@ -2,8 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=lua&constant=Slot){:target="Slot"} for latest definitions and Quest examples
 
-    Last generated 2024.02.07
-
 ``` lua
 Slot.Ammo
 Slot.Arms

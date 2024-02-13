@@ -1,16 +1,13 @@
 # npc_scale_global_base
 
-!!! info
-	This page was last generated 2024.02.07
-
 ## Schema
 
 | Column | Data Type | Description |
 | :--- | :--- | :--- |
 | type | int | Type: 0 = Trash, 1 = Named, 2 = Raid |
 | level | int | Level |
-| zone_id | int | [Zone Identifier](../../../../server/zones/zone-list) |
-| instance_version | int | Instance Version |
+| zone_id_list | text | [Zone Identifier List](../../../../server/zones/zone-list) (Pipe (|) Separated) |
+| instance_version_list | text | Instance Version List (Pipe (|) Separated) |
 | ac | int | Armor Class |
 | hp | bigint | Health |
 | accuracy | int | Accuracy |
