@@ -43,7 +43,20 @@ If you have existing quest scripts that use client:GuildRank() or $client->Guild
 
 ## Tributes
 
-In order for tributes to function, you will need to source the tributes and tribute_level tables.  These are included within a new install, and can also be sourced from the peq content [database](https://db.projecteq.net/)
+As of release 22.44.5, the guild tribute data can be sourced from content_database.  Prior to this release, the guild tribute must be sourced from the peq_content tributes and tribute_level tables.  These are included within a new install, and can also be sourced from the peq content [database](https://db.projecteq.net/)
+
+## Defaults
+
+There have been many questions about the default behaviour of guild permissions.  Care was taken to align with Live.  If you encounter any discrepancies, please report them as an issue on github.  Also, please checkout the [Default](./defaults.md) section.
+
+## Player Event Logging
+
+The following player events are available.
+
+|Rule Name|Default|Rentention|
+|:---|:---|:---|
+|Guild Tribute Donate Item|Enabled|7 days|
+|Guild Tribute Donate Platinum|Enabled|7 days|
 
 ## Known Issues
 
