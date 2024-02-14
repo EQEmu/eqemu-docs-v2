@@ -4,6 +4,14 @@ The purpose of this document is to provide a list of useful queries that can be 
 
 If you think a query could be helpful and added to this list, suggest it in EQEmu server help.
 
+## Delete All #gmzone Instances
+
+```sql
+DELETE from instance_list WHERE id IN (SELECT value FROM `data_buckets` WHERE `key` LIKE '%gmzone%');
+DELETE from instance_list_player WHERE id IN (SELECT value FROM `data_buckets` WHERE `key` LIKE '%gmzone%');
+DELETE from data_buckets WHERE `key` LIKE '%gmzone%';
+```
+
 ## Find All Player Accounts By Player Name
 
 ```sql
