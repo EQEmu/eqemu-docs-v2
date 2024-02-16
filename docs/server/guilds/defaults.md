@@ -2,6 +2,8 @@
 description: This page describes the guild management defaults on your EQEmu Server.
 ---
 
+### Ranks
+
 |Guild Rank Name|Guild Rank #|
 |---------------|:---:|
 |Leader|1|
@@ -14,7 +16,7 @@ description: This page describes the guild management defaults on your EQEmu Ser
 |Recruit|8|
 
 
-Default Invite Rank
+### Default Invite Rank
 
 |Client|Rank|
 |:---|:---|
@@ -25,3 +27,10 @@ Default Invite Rank
 Guild Banker
 
 By default, the guild leader is a guild banker.
+
+### Permissions
+
+When creating a new guild, the following permissions are set as a default.
+
+![image](https://github.com/EQEmu/Server/assets/65987027/5e5d4a21-8b44-4f05-b185-774141ef0f18)
+
