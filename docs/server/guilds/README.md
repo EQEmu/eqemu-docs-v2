@@ -53,7 +53,7 @@ There have been many questions about the default behaviour of guild permissions.
 
 The following player events are available.
 
-|Rule Name|Default|Rentention|
+|Rule Name|Default|Retention|
 |:---|:---|:---|
 |Guild Tribute Donate Item|Enabled|7 days|
 |Guild Tribute Donate Platinum|Enabled|7 days|
