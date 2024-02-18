@@ -8,6 +8,28 @@
 
     For the most up to date set of events see the **events** section in the left navigation pane
 
+### Default Exports
+
+* These exports are the default event objects exported along with these event types.
+
+#### Bot
+`e.self`
+
+#### Encounter
+`e.name`
+
+#### Item
+`e.self` and `e.owner`
+
+#### NPC
+`e.self`
+
+#### Player
+`e.self`
+
+#### Spell
+`e.self`
+
 ### EVENT_AGGRO
 
 #### Trigger
