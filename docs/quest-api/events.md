@@ -2220,7 +2220,7 @@ Note that you must enable quest::set_proximity().
 
 #### Trigger
 
-* Triggered using quest::signal(NPC_ID,wait_time) or quest::signalwith(NPC_ID,signal_ID,wait_time).
+* Triggered using quest::signal(NPC_ID, wait_time) or quest::signalwith(NPC_ID,signal_ID,wait_time).
 
 Generally a way to have one NPC cause another NPC to do something. Often used with "controller" NPCs that coordinate events.
 
