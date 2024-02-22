@@ -8,9 +8,9 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Parameter 0 | 1 = Summon Target to NPC, 2 = Summon NPC to Target | No Default, Setting is Required |
-| Parameter 1 | Cooldown in Milliseconds | 6000 |
-| Parameter 2 | HP ratio required to summon | 97 |
+| Level | 1 = Summon Target to NPC, 2 = Summon NPC to Target | No Default, Setting is Required |
+| Parameter 0 | Cooldown in Milliseconds | 6000 |
+| Parameter 1 | HP ratio required to summon | 97 |
 
 ### **Example:**
 
@@ -153,7 +153,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -174,7 +174,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -195,7 +195,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -216,7 +216,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -237,7 +237,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -283,7 +283,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -304,7 +304,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -325,7 +325,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -346,7 +346,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -367,7 +367,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -388,7 +388,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -409,7 +409,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -430,7 +430,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -451,7 +451,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -472,7 +472,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -493,7 +493,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -514,7 +514,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -535,7 +535,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -556,7 +556,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -577,7 +577,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -594,7 +594,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -615,7 +615,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -658,7 +658,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -679,7 +679,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -744,7 +744,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -765,7 +765,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -786,7 +786,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -828,7 +828,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -849,7 +849,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -895,7 +895,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
@@ -916,7 +916,7 @@
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 0 = Off, 1 = On | 0 |
+| Toggle | 0 = Disabled, 1 = Enabled | 0 |
 
 ### **Example:**
 
