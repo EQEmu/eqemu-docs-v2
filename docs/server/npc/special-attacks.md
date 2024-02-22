@@ -6,12 +6,11 @@
       Summon, denoted by special attack 1 or "S" (old code), allows you to teleport the player to the NPC, or the NPC to the player.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Level 1 | Summon Target to NPC | 0 |
-| Level 2 | Summon NPC to Target | 0 |
-| Parameter 0 | Cooldown in ms | 6000 |
-| Parameter 1 | HP ratio required to summon | 97 |
+| Parameter 0 | 1 = Summon Target to NPC, 2 = Summon NPC to Target | No Default, Setting is Required |
+| Parameter 1 | Cooldown in Milliseconds | 6000 |
+| Parameter 2 | HP ratio required to summon | 97 |
 
 ### **Example:**
 
@@ -19,7 +18,7 @@
 1,1,2,10000,90
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 1 | Special Attack "Summon" |
 | 1 | Special Attack "Summon" enabled |
@@ -33,11 +32,11 @@
       Enrage, denoted by special attack 2 or "E" (old code), allows the NPC to riposte incoming melee attacks.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | HP percent required to enrage | Rule: NPC:StartEnrageValue |
-| Parameter 1 | Duration of Special Attack in ms | 10000 |
-| Parameter 2 | Cooldown of Special Attack in ms | 360000 |
+| Parameter 1 | Duration of Special Attack in Milliseconds | 10000 |
+| Parameter 2 | Cooldown of Special Attack in Milliseconds | 360000 |
 
 ### **Example:**
 
@@ -45,7 +44,7 @@
 2,1,25,8000,60000
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 2 | Special Attack "Enrage" |
 | 1 | Special Attack "Enrage" enabled |
@@ -59,7 +58,7 @@
       Rampage, denoted by special attack 3 or "R" (old code), allows the NPC to attack additional players.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Percent chance of Special Attack Proc | 20 percent |
 | Parameter 1 | Special Attack Target Count | Rule: Combat:MaxRampageTargets |
@@ -76,7 +75,7 @@
 3,1,15,1,75
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 3 | Special Attack "Rampage" |
 | 1 | Special Attack "Rampage" enabled |
@@ -90,7 +89,7 @@
       Area Rampage, denoted by special attack 4 or "r" (old code), allows the NPC to attack additional players.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Percent chance of Special Attack Proc | 20 percent |
 | Parameter 1 | Special Attack Target Count | -1 (all in range) |
@@ -107,7 +106,7 @@
 4,1,15,-1,75
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 4 | Special Attack "Area Rampage" |
 | 1 | Special Attack "Area Rampage" enabled |
@@ -121,7 +120,7 @@
       Flurry, denoted by special attack 5 or "F" (old code), allows the NPC to have additional melee attacks against a player.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Percent chance of Special Attack Proc | Rule: Combat:NPCFlurryChance |
 | Parameter 1 | Special Attack count | Rule: Combat:MaxFlurryHits |
@@ -138,7 +137,7 @@
 5,1,25,5,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 5 | Special Attack "Flurry" |
 | 1 | Special Attack "Flurry" enabled |
@@ -152,9 +151,9 @@
       Triple Attack, denoted by special attack 6 or "T" (old code), allows the NPC to have three melee attacks against a player.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -162,7 +161,7 @@
 6,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 6 | Special Attack "Triple Attack" |
 | 1 | Special Attack "Triple Attack" enabled |
@@ -173,9 +172,9 @@
       Quad Attack, denoted by special attack 7 or "Q" (old code), allows the NPC to have four melee attacks against a player.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -183,7 +182,7 @@
 7,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 7 | Special Attack "Quad Attack" |
 | 1 | Special Attack "Quad Attack" enabled |
@@ -194,9 +193,9 @@
       Dual Wield, denoted by special attack 8 or "L" (old code), allows the NPC to utilize two weapons.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -204,7 +203,7 @@
 8,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 8 | Special Attack "Dual Wield" |
 | 1 | Special Attack "Dual Wield" enabled |
@@ -215,9 +214,9 @@
       Bane Attack, denoted by special attack 9 or "b" (old code), gives the NPC the ability to hit NPCs that require bane weapons to damage.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -225,7 +224,7 @@
 9,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 9 | Special Attack "Bane Attack" |
 | 1 | Special Attack "Bane Attack" enabled |
@@ -236,9 +235,9 @@
       Magical Attack, denoted by special attack 10 or "m" (old code), gives the NPC the ability to hit NPCs that require magical weapons to damage.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -246,7 +245,7 @@
 10,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 10 | Special Attack "Magical Attack" |
 | 1 | Special Attack "Magical Attack" enabled |
@@ -257,7 +256,7 @@
       Ranged Attack, denoted by special attack 11 or "Y" (old code), gives the NPC the ability to perform ranged attacks if their target is out of melee range.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Minimum ranged distance | 25 |
 | Parameter 1 | Maximum ranged distance | 250 |
@@ -270,7 +269,7 @@
 11,1,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 11 | Special Attack "Ranged Attack" |
 | 1 | Special Attack "Ranged Attack" enabled |
@@ -282,9 +281,9 @@
       Unslowable, denoted by special attack 12 or "U" (old code), makes the NPC immune to slow effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -292,7 +291,7 @@
 12,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 12 | Special Attack "Unslowable" |
 | 1 | Special Attack "Unslowable" enabled |
@@ -303,9 +302,9 @@
       Unmezable, denoted by special attack 13 or "M" (old code), makes the NPC immune to mesmerization effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -313,7 +312,7 @@
 13,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 13 | Special Attack "Unmezable" |
 | 1 | Special Attack "Unmezable" enabled |
@@ -324,9 +323,9 @@
       Uncharmable, denoted by special attack 14 or "C" (old code), makes the NPC immune to charm effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -334,7 +333,7 @@
 14,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 14 | Special Attack "Uncharmable" |
 | 1 | Special Attack "Uncharmable" enabled |
@@ -345,9 +344,9 @@
       Unstunable, denoted by special attack 15 or "N" (old code), makes the NPC immune to stun effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -355,7 +354,7 @@
 15,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 15 | Special Attack "Unstunable" |
 | 1 | Special Attack "Unstunable" enabled |
@@ -366,9 +365,9 @@
       Unsnareable, denoted by special attack 16 or "I" (old code), makes the NPC immune to snare effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -376,7 +375,7 @@
 16,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 16 | Special Attack "Unsnareable" |
 | 1 | Special Attack "Unsnareable" enabled |
@@ -387,9 +386,9 @@
       Unfearable, denoted by special attack 17 or "D" (old code), makes the NPC immune to fear effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -397,7 +396,7 @@
 17,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 17 | Special Attack "Unfearable" |
 | 1 | Special Attack "Unfearable" enabled |
@@ -408,9 +407,9 @@
       Immune to Dispell, denoted by special attack 18 or "K" (old code), makes the NPC immune to dispelling spells.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -418,7 +417,7 @@
 18,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 18 | Special Attack "Immune to Dispell" |
 | 1 | Special Attack "Immune to Dispell" enabled |
@@ -429,9 +428,9 @@
       Immune to Melee, denoted by special attack 19 or "A" (old code), makes the NPC immune to all melee damage.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -439,7 +438,7 @@
 19,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 19 | Special Attack "Immune to Melee" |
 | 1 | Special Attack "Immune to Melee" enabled |
@@ -450,9 +449,9 @@
       Immune to Magic, denoted by special attack 20 or "B" (old code), makes the NPC immune to all magic spells.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -460,7 +459,7 @@
 20,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 20 | Special Attack "Immune to Magic" |
 | 1 | Special Attack "Immune to Magic" enabled |
@@ -471,9 +470,9 @@
       Immune to Fleeing, denoted by special attack 21 or "f" (old code), prevents the NPC from fleeing under any circumstances.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -481,7 +480,7 @@
 21,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 21 | Special Attack "Immune to Fleeing" |
 | 1 | Special Attack "Immune to Fleeing" enabled |
@@ -492,9 +491,9 @@
       Immune to Non-Bane Damage, denoted by special attack 22 or "O" (old code), prevents the NPC from being damaged by weapons that don't have the bane type matching its bodytype.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -502,7 +501,7 @@
 22,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 22 | Special Attack "Immune to Non-Bane Damage" |
 | 1 | Special Attack "Immune to Non-Bane Damage" enabled |
@@ -513,9 +512,9 @@
       Immune to Non-Magical Damage, denoted by special attack 23 or "W" (old code), prevents the NPC from being damaged by weapons that are not magical.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -523,7 +522,7 @@
 23,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 23 | Special Attack "Immune to Non-Bane Damage" |
 | 1 | Special Attack "Immune to Non-Bane Damage" enabled |
@@ -534,9 +533,9 @@
       Will Not Aggro, denoted by special attack 24 or "H" (old code), prevents a player from getting on an NPC's hate list.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -544,7 +543,7 @@
 24,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 24 | Special Attack "Will Not Aggro" |
 | 1 | Special Attack "Will Not Aggro" enabled |
@@ -555,9 +554,9 @@
       Immune to Aggro, denoted by special attack 25 or "G" (old code), prevents the NPC from getting on an NPC's hate list.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -565,7 +564,7 @@
 25,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 25 | Special Attack "Immune to Aggro" |
 | 1 | Special Attack "Immune to Aggro" enabled |
@@ -576,9 +575,9 @@
       Resist Ranged Spells, denoted by special attack 26 or "g" (old code), prevents the NPC from being damaged from spells cast outside of melee range ("belly caster" mob).
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -586,16 +585,16 @@
 26,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 26 | Special Attack "Resist Ranged Spells" |
 | 1 | Special Attack "Resist Ranged Spells" enabled |
 
 ## See through Feign Death (27)
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -603,7 +602,7 @@
 27,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 27 | Special Attack "See through Feign Death" |
 | 1 | Special Attack "See through Feign Death" enabled |
@@ -614,9 +613,9 @@
       Immune to Taunt, denoted by special attack 28 or "i" (old code), prevents the NPC from taunted by players.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -624,7 +623,7 @@
 28,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 28 | Special Attack "Immune to Taunt" |
 | 1 | Special Attack "Immune to Taunt" enabled |
@@ -635,7 +634,7 @@
       Tunnel Vision, denoted by special attack 29 or "t" (old code), makes anyone not on the top of the hate list generate a different amount of hate.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | aggro modifier | Rule: Aggro:TunnelVisionAggroMod |
 
@@ -645,7 +644,7 @@
 29,1,0
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 29 | Special Attack "Tunnel Vision" |
 | 1 | Special Attack "Tunnel Vision" enabled |
@@ -657,9 +656,9 @@
       Does NOT buff/heal friends, denoted by special attack 30 or "n" (old code), makes the NPC NOT buff or heal members of the same faction.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -667,7 +666,7 @@
 30,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 30 | Special Attack "Does NOT buff/heal friends" |
 | 1 | Special Attack "Does NOT buff/heal friends" enabled |
@@ -678,9 +677,9 @@
       Unpacifiable, denoted by special attack 31 or "p" (old code), makes the NPC immune to lull effects.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -688,7 +687,7 @@
 31,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 31 | Special Attack "Unpacifiable" |
 | 1 | Special Attack "Unpacifiable" enabled |
@@ -699,7 +698,7 @@
       Leashed, denoted by special attack 32 or "J" (old code), makes the NPC return to their aggro point, fully heal, and wipes their hate list if the NPC is pulled out of a particular range.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | range | aggro range * aggro range |
 
@@ -709,7 +708,7 @@
 32,1,150
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 32 | Special Attack "Leashed" |
 | 1 | Special Attack "Leashed" enabled |
@@ -721,7 +720,7 @@
       Tethered, denoted by special attack 33 or "j" (old code), is used to leashe the mob to their aggro range.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | range | aggro range * aggro range |
 
@@ -731,7 +730,7 @@
 33,1,100
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 33 | Special Attack "Tethered" |
 | 1 | Special Attack "Tethered" enabled |
@@ -743,9 +742,9 @@
       Destructible Object, denoted by special attack 34 or "o" (old code), is used on destructing NPCs. (Deprecated?)
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -753,7 +752,7 @@
 34,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 34 | Special Attack "Destructible Object" |
 | 1 | Special Attack "Destructible Object" enabled |
@@ -764,9 +763,9 @@
       No Harm from Players, denoted by special attack 35 or "Z" (old code), prevents players from being able to harm the NPC in any way.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -774,7 +773,7 @@
 35,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 35 | Special Attack "No Harm from Players" |
 | 1 | Special Attack "No Harm from Players" enabled |
@@ -785,9 +784,9 @@
       Always Flee, denoted by special attack 36, makes the NPC flee at low health even if faction allies are near.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -795,7 +794,7 @@
 36,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 36 | Special Attack "Always Flee" |
 | 1 | Special Attack "Always Flee" enabled |
@@ -806,10 +805,9 @@
       Flee Percentage, denoted by special attack 37, makes the NPC flee at low health even if faction allies are near, at a given percent.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Level 1 | Percent NPC will flee at |  |
-| Parameter 0 | Percent chance to flee |  |
+| Parameter 0 | Percent NPC will flee at | No Default, Setting is Required |
 
 ### **Example:**
 
@@ -817,7 +815,7 @@
 37,10
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 37 | Special Attack "Flee Percentage" |
 | 10 | Flee when health reaches 10 percent |
@@ -828,9 +826,9 @@
       Allow Beneficial, denoted by special attack 38, allows players to cast beneficial spells on the NPC.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -838,7 +836,7 @@
 38,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 38 | Special Attack "Allow Beneficial" |
 | 1 | Special Attack "Allow Beneficial" enabled |
@@ -849,9 +847,9 @@
       Disable Melee, denoted by special attack 39, makes the NPC unable to melee, but does allow the NPC to aggro.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -859,7 +857,7 @@
 39,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 39 | Special Attack "Disable Melee" |
 | 1 | Special Attack "Disable Melee" enabled |
@@ -870,11 +868,11 @@
       Chase Distance, denoted by special attack 40, establishes the minimum and maximum distances between the NPC and an aggro player.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Parameter 0 | Maximum chase distance |  |
-| Parameter 1 | Minimum chase distance |  |
-| Parameter 2 | Ignore line of sight |  |
+| Parameter 0 | Maximum chase distance | No Default, Setting is Required |
+| Parameter 1 | Minimum chase distance | No Default, Setting is Required |
+| Parameter 2 | Ignore line of sight | false |
 
 ### **Example:**
 
@@ -882,7 +880,7 @@
 40,1,200,20
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 40 | Special Attack "Chase Distance" |
 | 1 | Special Attack "Chase Distance" enabled |
@@ -895,9 +893,9 @@
       Allow Tank, denoted by special attack 41, sets the NPC to allow other NPCs to take aggro from players.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -905,7 +903,7 @@
 41,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 41 | Special Attack "Allow Tank" |
 | 1 | Special Attack "Allow Tank" enabled |
@@ -916,9 +914,9 @@
       Ignore Root Aggro, denoted by special attack 42, sets the NPC to ignore the rules of root aggro--the NPC will not attack the closest player, but rather the player on top of the hate list.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
-| Bool | 1 = on, 0 = off | 0 |
+| Bool | 0 = Off, 1 = On | 0 |
 
 ### **Example:**
 
@@ -926,7 +924,7 @@
 42,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 42 | Special Attack "Ignore Root Aggro" |
 | 1 | Special Attack "Ignore Root Aggro" enabled |
@@ -937,7 +935,7 @@
       Casting Resist Diff, denoted by special attack 43, makes the NPC's spells cast at a different resist level.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Flat modifier to the resist diff of the spell | 0 |
 
@@ -947,7 +945,7 @@
 43,1,-200
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 43 | Special Attack "Casting Resist Diff" |
 | 1 | Special Attack "Casting Resist Diff" enabled |
@@ -959,7 +957,7 @@
       Counter Avoid Damage, denoted by special attack 44, makes the NPC more likely to hit a player, decreasing their chance for at avoiding melee through dodge/parry/riposte/etc.
 
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Flat negative percent modifier to ALL avoidance skills | 0 |
 | Parameter 1 | Flat negative percent modifier to Riposte skill | 0 |
@@ -973,7 +971,7 @@
 44,1,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 44 | Special Attack "Counter Avoid Damage" |
 | 1 | Special Attack "Counter Avoid Damage" enabled |
@@ -983,7 +981,7 @@
 44,1,0,0,0,0,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 44 | Special Attack "Counter Avoid Damage" |
 | 1 | Special Attack "Counter Avoid Damage" enabled |
@@ -1005,7 +1003,7 @@
 45,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 45 | Special Attack "Proximity Aggro" |
 | 1 | Special Attack "Proximity Aggro" enabled |
@@ -1022,7 +1020,7 @@
 46,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 46 | Special Attack "Immune Ranged Attacks" |
 | 1 | Special Attack "Immune Ranged Attacks" enabled |
@@ -1039,7 +1037,7 @@
 47,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 47 | Special Attack "Immune Client Damage" |
 | 1 | Special Attack "Immune Client Damage" enabled |
@@ -1056,7 +1054,7 @@
 48,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 48 | Special Attack "Immune NPC Damage" |
 | 1 | Special Attack "Immune NPC Damage" enabled |
@@ -1073,7 +1071,7 @@
 49,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 49 | Special Attack "Immune Client Aggro" |
 | 1 | Special Attack "Immune Client Aggro" enabled |
@@ -1090,7 +1088,7 @@
 50,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 50 | Special Attack "Immune NPC Aggro" |
 | 1 | Special Attack "Immune NPC Aggro" enabled |
@@ -1100,7 +1098,7 @@
 !!! info
       Modify Avoid Damage, denoted by special attack 51, allows you to modify specific avoidances for an NPC.
 
-| Settings |  | Defaults |
+| Setting | Description | Default |
 | :--- | :--- | :--- |
 | Parameter 0 | Flat percent modifier to ALL avoidance skills | 0 |
 | Parameter 1 | Flat percent modifier to Riposte skill | 0 |
@@ -1114,7 +1112,7 @@
 51,1,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 51 | Special Attack "Modify Avoid Damage" |
 | 1 | Special Attack "Modify Avoid Damage" enabled |
@@ -1124,7 +1122,7 @@
 51,1,0,0,0,0,50
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 51 | Special Attack "Modify Avoid Damage" |
 | 1 | Special Attack "Modify Avoid Damage" enabled |
@@ -1146,7 +1144,7 @@
 52,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 52 | Special Attack "Immune Fading Memories" |
 | 1 | Special Attack "Immune Fading Memories" enabled |
@@ -1163,7 +1161,7 @@
 53,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 53 | Special Attack "Immune to Open" |
 | 1 | Special Attack "Immune to Open" enabled |
@@ -1180,7 +1178,7 @@
 54,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 54 | Special Attack "Immune to Assassinate" |
 | 1 | Special Attack "Immune to Assassinate" enabled |
@@ -1197,7 +1195,7 @@
 55,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 55 | Special Attack "Immune to Headshot" |
 | 1 | Special Attack "Immune to Headshot" enabled |
@@ -1214,7 +1212,7 @@
 56,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 56 | Special Attack "Immune to Bot Aggro" |
 | 1 | Special Attack "Immune to Bot Aggro" enabled |
@@ -1231,7 +1229,7 @@
 57,1
 ```
 
-|  |  |
+| Setting | Description |
 | :--- | :--- |
 | 57 | Special Attack "Immune to Bot Damage" |
 | 1 | Special Attack "Immune to Bot Damage" enabled |
