@@ -1201,3 +1201,37 @@
 | :--- | :--- |
 | 55 | Special Attack "Immune to Headshot" |
 | 1 | Special Attack "Immune to Headshot" enabled |
+
+## Immune to Bot Aggro (56)
+
+!!! info
+      Immune to Bot Aggro, denoted by special attack 56, makes the NPC immune to Bot Aggro.
+
+
+### **Example:**
+
+```text
+56,1
+```
+
+|  |  |
+| :--- | :--- |
+| 56 | Special Attack "Immune to Bot Aggro" |
+| 1 | Special Attack "Immune to Bot Aggro" enabled |
+
+## Immune to Bot Damage (57)
+
+!!! info
+      Immune to Bot Damage, denoted by special attack 57, makes the NPC immune to Bot Damage.
+
+
+### **Example:**
+
+```text
+57,1
+```
+
+|  |  |
+| :--- | :--- |
+| 57 | Special Attack "Immune to Bot Damage" |
+| 1 | Special Attack "Immune to Bot Damage" enabled |
