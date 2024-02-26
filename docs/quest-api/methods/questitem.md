@@ -1,4 +1,4 @@
-=== "Perl (55)"
+=== "Perl (56)"
 
     !!! info end
 
@@ -12,6 +12,7 @@
     $questitem->CountAugmentByID(uint32_t item_id);
     $questitem->DeleteCustomData(string identifier);
     $questitem->GetAugment(uint8 slot_id);
+    $questitem->GetAugmentIDs();
     $questitem->GetAugmentItemID(uint8 slot_id);
     $questitem->GetAugmentType();
     $questitem->GetCharges();
@@ -36,8 +37,8 @@
     $questitem->IsAttuned();
     $questitem->IsAugmentable();
     $questitem->IsAugmented();
-    $questitem->IsEquipable(uint16 race_bitmask, uint16 class_bitmask);
     $questitem->IsEquipable(int16 slot_id);
+    $questitem->IsEquipable(uint16 race_bitmask, uint16 class_bitmask);
     $questitem->IsExpendable();
     $questitem->IsInstanceNoDrop();
     $questitem->IsStackable();
@@ -49,10 +50,10 @@
     $questitem->SetAttuned(bool is_attuned);
     $questitem->SetCharges(int16_t charges);
     $questitem->SetColor(uint32 color);
+    $questitem->SetCustomData(string identifier, bool value);
     $questitem->SetCustomData(string identifier, float value);
     $questitem->SetCustomData(string identifier, int value);
     $questitem->SetCustomData(string identifier, string value);
-    $questitem->SetCustomData(string identifier, bool value);
     $questitem->SetEXP(uint32 exp);
     $questitem->SetInstanceNoDrop(bool is_attuned);
     $questitem->SetPrice(uint32 price);

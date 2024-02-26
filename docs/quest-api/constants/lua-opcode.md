@@ -238,7 +238,7 @@ Opcode.GuildPublicNote
 Opcode.GuildRemove
 Opcode.GuildStatus
 Opcode.GuildTributeInfo
-Opcode.GuildUpdateURLAndChannel
+Opcode.GuildUpdate
 Opcode.GuildWar
 Opcode.GuildsList
 Opcode.HPUpdate

@@ -98,6 +98,41 @@ function EVENT_TIMER(e) {
 	eq.debug("timer " .. e.timer);
 }
 ```
+## EVENT_TIMER_PAUSE
+
+``` lua
+
+function EVENT_TIMER_PAUSE(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_RESUME
+
+``` lua
+
+function EVENT_TIMER_RESUME(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_START
+
+``` lua
+
+function EVENT_TIMER_START(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` lua
+
+function EVENT_TIMER_STOP(e) {
+	eq.debug("timer " .. e.timer);
+}
+```
 ## EVENT_UNAUGMENT_ITEM
 
 ``` lua

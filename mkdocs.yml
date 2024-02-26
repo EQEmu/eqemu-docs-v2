@@ -125,14 +125,14 @@ nav:
           - Performance Tuning: server/database/performance-tuning.md
           - Schema: /schema/aas/aa_ability/
       - Expansions:
-        - Classic:
+          - Classic:
               - server/expansions/classic/README.md
               - Item Changes: server/expansions/classic/item-changes.md
               - Zone Changes: server/expansions/classic/zone-changes.md
-        - Zone Version Switching: server/expansions/zone-version-switching.md
-        - Expansion and Content Filtering: server/expansions/expansion-content-filtering.md
-        - Expansion List Reference: server/expansions/expansion-list-reference.md
-        - Design Considerations: server/expansions/design-considerations.md
+          - Zone Version Switching: server/expansions/zone-version-switching.md
+          - Expansion and Content Filtering: server/expansions/expansion-content-filtering.md
+          - Expansion List Reference: server/expansions/expansion-list-reference.md
+          - Design Considerations: server/expansions/design-considerations.md
       - Expedition System:
           - server/expedition-system/README.md
           - Database: server/expedition-system/database.md

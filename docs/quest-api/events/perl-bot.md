@@ -117,6 +117,10 @@ sub EVENT_DEATH {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("combat_start_time " . $combat_start_time);
+	quest::debug("combat_end_time " . $combat_end_time);
+	quest::debug("damage_received " . $damage_received);
+	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
@@ -135,6 +139,10 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("killer_spell " . $killer_spell);
 	quest::debug("killer_skill " . $killer_skill);
 	quest::debug("killed_entity_id " . $killed_entity_id);
+	quest::debug("combat_start_time " . $combat_start_time);
+	quest::debug("combat_end_time " . $combat_end_time);
+	quest::debug("damage_received " . $damage_received);
+	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
 	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
@@ -151,6 +159,15 @@ sub EVENT_DESPAWN {
 	quest::debug("despawned_entity_id " . $despawned_entity_id);
 	quest::debug("despawned_bot_id " . $despawned_bot_id);
 	quest::debug("despawned_npc_id " . $despawned_npc_id);
+}
+```
+## EVENT_ENTITY_VARIABLE_DELETE
+
+``` perl
+
+sub EVENT_ENTITY_VARIABLE_DELETE {
+	quest::debug("variable_name " . $variable_name);
+	quest::debug("variable_value " . $variable_value);
 }
 ```
 ## EVENT_ITEM
@@ -252,6 +269,41 @@ sub EVENT_TARGET_CHANGE {
 ``` perl
 
 sub EVENT_TIMER {
+	quest::debug("timer " . $timer);
+}
+```
+## EVENT_TIMER_PAUSE
+
+``` perl
+
+sub EVENT_TIMER_PAUSE {
+	quest::debug("timer " . $timer);
+	quest::debug("duration " . $duration);
+}
+```
+## EVENT_TIMER_RESUME
+
+``` perl
+
+sub EVENT_TIMER_RESUME {
+	quest::debug("timer " . $timer);
+	quest::debug("duration " . $duration);
+}
+```
+## EVENT_TIMER_START
+
+``` perl
+
+sub EVENT_TIMER_START {
+	quest::debug("timer " . $timer);
+	quest::debug("duration " . $duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` perl
+
+sub EVENT_TIMER_STOP {
 	quest::debug("timer " . $timer);
 }
 ```

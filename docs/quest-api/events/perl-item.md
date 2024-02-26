@@ -106,6 +106,23 @@ sub EVENT_TIMER {
 	quest::debug("timer " . $timer);
 }
 ```
+## EVENT_TIMER_START
+
+``` perl
+
+sub EVENT_TIMER_START {
+	quest::debug("timer " . $timer);
+	quest::debug("duration " . $duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` perl
+
+sub EVENT_TIMER_STOP {
+	quest::debug("timer " . $timer);
+}
+```
 ## EVENT_UNAUGMENT_ITEM
 
 ``` perl

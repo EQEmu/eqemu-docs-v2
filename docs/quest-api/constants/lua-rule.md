@@ -44,7 +44,6 @@ Rule.AllowMQTarget
 Rule.AllowMercSuspendInCombat
 Rule.AllowMercs
 Rule.AllowMultipleOfSameAugment
-Rule.AllowOwnerOptionAltCombat
 Rule.AllowOwnerOptionAutoDefend
 Rule.AllowPickpocketCommand
 Rule.AllowSpellMemorizeFromItem
@@ -136,6 +135,7 @@ Rule.ChooseLeaderCooldownTime
 Rule.Classic2HBAnimation
 Rule.ClassicMasterWu
 Rule.ClassicNPCBackstab
+Rule.ClassicTauntSystem
 Rule.ClassicTripleAttack
 Rule.ClassicTripleAttackChanceBerserker
 Rule.ClassicTripleAttackChanceMonk
@@ -681,6 +681,7 @@ Rule.SuspendIntervalS
 Rule.SwarmPetTargetLock
 Rule.SwimmingStartValue
 Rule.TargetsTargetRequiresCombatRange
+Rule.TauntChanceBonus
 Rule.TauntOverAggro
 Rule.TauntOverLevel
 Rule.TauntSkillFalloff
@@ -705,6 +706,9 @@ Rule.TradeskillUpTinkering
 Rule.TrainSenseHeading
 Rule.TransformSummonedBags
 Rule.TranslocateTimeLimit
+Rule.TributePlatConversionRate
+Rule.TributeTime
+Rule.TributeTimeRefreshInterval
 Rule.TrivialTradeskillCombinesNoFail
 Rule.TrollCommonTongue
 Rule.TunnelVisionAggroMod
@@ -720,6 +724,7 @@ Rule.UseAltSinisterStrikeFormula
 Rule.UseBaneDamage
 Rule.UseBannedIPsTable
 Rule.UseCHAScribeHack
+Rule.UseCharacterMaxLevelForGuildTributes
 Rule.UseClassAsLastName
 Rule.UseClassicSpellFocus
 Rule.UseClientBasedExpansionSettings

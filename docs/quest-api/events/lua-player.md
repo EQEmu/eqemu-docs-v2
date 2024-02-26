@@ -402,6 +402,39 @@ function EVENT_ENTER_AREA(e) {
 function EVENT_ENTER_ZONE(e) {
 }
 ```
+## EVENT_ENTITY_VARIABLE_DELETE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_DELETE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_SET
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_SET(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_UPDATE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_UPDATE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
+}
+```
 ## EVENT_ENVIRONMENTAL_DAMAGE
 
 ``` lua
@@ -773,6 +806,41 @@ function EVENT_TEST_BUFF(e) {
 ``` lua
 
 function EVENT_TIMER(e) {
+	eq.debug("timer " .. e.timer);
+}
+```
+## EVENT_TIMER_PAUSE
+
+``` lua
+
+function EVENT_TIMER_PAUSE(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_RESUME
+
+``` lua
+
+function EVENT_TIMER_RESUME(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_START
+
+``` lua
+
+function EVENT_TIMER_START(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` lua
+
+function EVENT_TIMER_STOP(e) {
 	eq.debug("timer " .. e.timer);
 }
 ```

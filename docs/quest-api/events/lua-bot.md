@@ -121,6 +121,27 @@ function EVENT_DEATH_COMPLETE(e) {
 function EVENT_DESPAWN(e) {
 }
 ```
+## EVENT_ENTITY_VARIABLE_DELETE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_DELETE(e) {
+}
+```
+## EVENT_ENTITY_VARIABLE_SET
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_SET(e) {
+}
+```
+## EVENT_ENTITY_VARIABLE_UPDATE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_UPDATE(e) {
+}
+```
 ## EVENT_EQUIP_ITEM_BOT
 
 ``` lua
@@ -137,6 +158,7 @@ function EVENT_EQUIP_ITEM_BOT(e) {
 ``` lua
 
 function EVENT_LEVEL_DOWN(e) {
+	eq.debug("levels_lost " .. e.levels_lost);
 }
 ```
 ## EVENT_LEVEL_UP
@@ -211,6 +233,41 @@ function EVENT_TARGET_CHANGE(e) {
 ``` lua
 
 function EVENT_TIMER(e) {
+	eq.debug("timer " .. e.timer);
+}
+```
+## EVENT_TIMER_PAUSE
+
+``` lua
+
+function EVENT_TIMER_PAUSE(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_RESUME
+
+``` lua
+
+function EVENT_TIMER_RESUME(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_START
+
+``` lua
+
+function EVENT_TIMER_START(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` lua
+
+function EVENT_TIMER_STOP(e) {
 	eq.debug("timer " .. e.timer);
 }
 ```

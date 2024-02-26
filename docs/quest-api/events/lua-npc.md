@@ -102,6 +102,10 @@ function EVENT_DEATH(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
 	eq.debug("killed_entity_id " .. e.killed_entity_id);
+	eq.debug("combat_start_time " .. e.combat_start_time);
+	eq.debug("combat_end_time " .. e.combat_end_time);
+	eq.debug("damage_received " .. e.damage_received);
+	eq.debug("healing_received " .. e.healing_received);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -117,6 +121,10 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
 	eq.debug("killed_entity_id " .. e.killed_entity_id);
+	eq.debug("combat_start_time " .. e.combat_start_time);
+	eq.debug("combat_end_time " .. e.combat_end_time);
+	eq.debug("damage_received " .. e.damage_received);
+	eq.debug("healing_received " .. e.healing_received);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -132,6 +140,10 @@ function EVENT_DEATH_ZONE(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill_id " .. e.skill_id);
 	eq.debug("killed_entity_id " .. e.killed_entity_id);
+	eq.debug("combat_start_time " .. e.combat_start_time);
+	eq.debug("combat_end_time " .. e.combat_end_time);
+	eq.debug("damage_received " .. e.damage_received);
+	eq.debug("healing_received " .. e.healing_received);
 	eq.debug("corpse " .. e.corpse);
 	eq.debug("killed " .. e.killed);
 }
@@ -166,6 +178,39 @@ function EVENT_ENTER(e) {
 function EVENT_ENTER_AREA(e) {
 	eq.debug("area_id " .. e.area_id);
 	eq.debug("area_type " .. e.area_type);
+}
+```
+## EVENT_ENTITY_VARIABLE_DELETE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_DELETE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_SET
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_SET(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_UPDATE
+
+``` lua
+
+function EVENT_ENTITY_VARIABLE_UPDATE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
 }
 ```
 ## EVENT_EXIT
@@ -344,6 +389,41 @@ function EVENT_TICK(e) {
 ``` lua
 
 function EVENT_TIMER(e) {
+	eq.debug("timer " .. e.timer);
+}
+```
+## EVENT_TIMER_PAUSE
+
+``` lua
+
+function EVENT_TIMER_PAUSE(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_RESUME
+
+``` lua
+
+function EVENT_TIMER_RESUME(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_START
+
+``` lua
+
+function EVENT_TIMER_START(e) {
+	eq.debug("timer " .. e.timer);
+	eq.debug("duration " .. e.duration);
+}
+```
+## EVENT_TIMER_STOP
+
+``` lua
+
+function EVENT_TIMER_STOP(e) {
 	eq.debug("timer " .. e.timer);
 }
 ```

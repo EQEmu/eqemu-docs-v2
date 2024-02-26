@@ -1,24 +1,24 @@
-=== "Perl (145)"
+=== "Perl (146)"
 
     !!! info end
 
         Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl&type=NPC){:target="NPC"} for latest definitions and Quest examples
 
     ``` perl
-    $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y);
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, uint32 max_delay, uint32 min_delay);
+    $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y);
     $npc->AI_SetRoambox(float distance, float max_x, float min_x, float max_y, float min_y, uint32 max_delay);
     $npc->AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     $npc->AddDefensiveProc(uint16_t spell_id, uint16_t chance);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3);
-    $npc->AddItem(uint32 item_id);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);
-    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, uint32 aug6);
     $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2);
     $npc->AddItem(uint32 item_id, uint16 charges);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1, uint32 aug2, uint32 aug3, uint32 aug4, uint32 aug5, uint32 aug6);
+    $npc->AddItem(uint32 item_id);
     $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item, uint32 aug1);
+    $npc->AddItem(uint32 item_id, uint16 charges, bool equip_item);
     $npc->AddLootTable(uint32 loottable_id);
     $npc->AddLootTable();
     $npc->AddMeleeProc(uint16_t spell_id, uint16_t chance);
@@ -57,6 +57,7 @@
     $npc->GetNPCAggro();
     $npc->GetNPCFactionID();
     $npc->GetNPCHate(Mob* mob);
+    $npc->GetNPCSpellsEffectsID();
     $npc->GetNPCSpellsID();
     $npc->GetNPCStat(string stat);
     $npc->GetPetSpellID();
@@ -95,9 +96,9 @@
     $npc->MerchantCloseShop();
     $npc->MerchantOpenShop();
     $npc->ModifyNPCStat(string stat, string value);
-    $npc->MoveTo(float x, float y, float z, float h, bool save);
     $npc->MoveTo(float x, float y, float z);
     $npc->MoveTo(float x, float y, float z, float h);
+    $npc->MoveTo(float x, float y, float z, float h, bool save);
     $npc->NextGuardPosition();
     $npc->PauseWandering(int pause_time);
     $npc->PickPocket(Client* thief);
@@ -106,17 +107,17 @@
     $npc->RemoveAISpellEffect(int spell_effect_id);
     $npc->RemoveDefensiveProc(uint16_t spell_id);
     $npc->RemoveFromHateList(Mob* mob);
+    $npc->RemoveItem(uint32 item_id, uint16 quantity, uint16 slot_id);
     $npc->RemoveItem(uint32 item_id, uint16 quantity);
     $npc->RemoveItem(uint32 item_id);
-    $npc->RemoveItem(uint32 item_id, uint16 quantity, uint16 slot_id);
     $npc->RemoveMeleeProc(uint16_t spell_id);
     $npc->RemoveRangedProc(uint16_t spell_id);
     $npc->ResumeWandering();
-    $npc->SaveGuardSpot();
-    $npc->SaveGuardSpot(bool clear);
     $npc->SaveGuardSpot(float x, float y, float z, float heading);
-    $npc->ScaleNPC(uint8 npc_level);
+    $npc->SaveGuardSpot(bool clear);
+    $npc->SaveGuardSpot();
     $npc->ScaleNPC(uint8 npc_level, bool override_special_abilities);
+    $npc->ScaleNPC(uint8 npc_level);
     $npc->SendPayload(int payload_id, string payload_value);
     $npc->SendPayload(int payload_id);
     $npc->SetCopper(uint32 amt);
@@ -137,9 +138,9 @@
     $npc->SetSaveWaypoint(uint16 wp);
     $npc->SetSecSkill(int skill_id);
     $npc->SetSilver(uint32 amt);
+    $npc->SetSimpleRoamBox(float box_size);
     $npc->SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     $npc->SetSimpleRoamBox(float box_size, float move_distance);
-    $npc->SetSimpleRoamBox(float box_size);
     $npc->SetSp2(uint32 set_spawn_group_id);
     $npc->SetSpellFocusDMG(int new_spell_focus_dmg);
     $npc->SetSpellFocusHeal(int new_spell_focus_heal);
@@ -151,7 +152,7 @@
     $npc->StopWandering();
     $npc->UpdateWaypoint(int wp_index);
     ```
-=== "Lua (155)"
+=== "Lua (156)"
 
     !!! info end
 
@@ -160,18 +161,18 @@
     ``` lua
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y, uint32 delay, uint32 mindelay);
     npc:AI_SetRoambox(float dist, float max_x, float min_x, float max_y, float min_y);
-    npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
     npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust, int min_hp, int max_hp);
+    npc:AddAISpell(int priority, int spell_id, int type, int mana_cost, int recast_delay, int resist_adjust);
     npc:AddAISpellEffect(int spell_effect_id, int base_value, int limit_value, int max_value);
     npc:AddCash(uint32 copper, uint32 silver, uint32 gold, uint32 platinum);
+    npc:AddItem(int item_id, int charges);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5);
-    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3);
+    npc:AddItem(int item_id, int charges, bool equip);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4, int aug5, int aug6);
     npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2, int aug3, int aug4);
-    npc:AddItem(int item_id, int charges, bool equip);
+    npc:AddItem(int item_id, int charges, bool equip, int aug1, int aug2);
     npc:AddItem(int item_id, int charges, bool equip, int aug1);
-    npc:AddItem(int item_id, int charges);
     npc:AddLootTable(int id);
     npc:AddLootTable();
     npc:AssignWaypoints(int grid);
@@ -217,6 +218,7 @@
     npc:GetNPCAggro();
     npc:GetNPCFactionID();
     npc:GetNPCHate(Mob ent);
+    npc:GetNPCSpellsEffectsID();
     npc:GetNPCSpellsID();
     npc:GetNPCStat(string stat);
     npc:GetPetSpellID();
@@ -267,18 +269,18 @@
     npc:RemoveAISpellEffect(int spell_effect_id);
     npc:RemoveCash();
     npc:RemoveItem(int item_id);
-    npc:RemoveItem(int item_id, int quantity);
     npc:RemoveItem(int item_id, int quantity, int slot);
+    npc:RemoveItem(int item_id, int quantity);
     npc:ResumeWandering();
-    npc:SaveGuardSpot(bool clear);
     npc:SaveGuardSpot();
     npc:SaveGuardSpot(float x, float y, float z, float heading);
-    npc:ScaleNPC(uint8 npc_level);
+    npc:SaveGuardSpot(bool clear);
     npc:ScaleNPC(uint8 npc_level, bool override_special_abilities);
+    npc:ScaleNPC(uint8 npc_level);
     npc:SendPayload(int payload_id, string payload_value);
     npc:SendPayload(int payload_id);
-    npc:SetBucket(string bucket_name, string bucket_value);
     npc:SetBucket(string bucket_name, string bucket_value, string expiration);
+    npc:SetBucket(string bucket_name, string bucket_value);
     npc:SetCopper(uint32 amt);
     npc:SetFollowCanRun(bool v);
     npc:SetFollowDistance(int dist);
@@ -300,9 +302,9 @@
     npc:SetSaveWaypoint(int wp);
     npc:SetSecSkill(int skill_id);
     npc:SetSilver(uint32 amt);
+    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     npc:SetSimpleRoamBox(float box_size);
     npc:SetSimpleRoamBox(float box_size, float move_distance);
-    npc:SetSimpleRoamBox(float box_size, float move_distance, int move_delay);
     npc:SetSp2(int sg2);
     npc:SetSpellFocusDMG(int focus);
     npc:SetSpellFocusHeal(int focus);

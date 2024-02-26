@@ -51,6 +51,9 @@ Event.encounter_unload
 Event.enter
 Event.enter_area
 Event.enter_zone
+Event.entity_variable_delete
+Event.entity_variable_set
+Event.entity_variable_update
 Event.environmental_damage
 Event.equip_item
 Event.equip_item_bot
@@ -112,6 +115,10 @@ Event.task_update
 Event.test_buff
 Event.tick
 Event.timer
+Event.timer_pause
+Event.timer_resume
+Event.timer_start
+Event.timer_stop
 Event.trade
 Event.unaugment_item
 Event.unequip_item
