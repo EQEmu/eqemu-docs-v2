@@ -19,13 +19,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 !!! info
     If you would like to improve upon the descriptions or notes in the Server Rules table, please submit a pull request on the [ruletypes](https://github.com/EQEmu/Server/blob/master/common/ruletypes.h) header file.
 
-##  Character Rules
-| Rule Name | Default Value | Description |
-| :--- | :--- | :--- |
-|  Character:EmptyCorpseDecayTime | 10800000 | Time after which an empty corpse decays (milliseconds) DEFAULT: 10800000 (3 Hours) |
-|  Character:DuelCorpseResTime | 600000 | Time before cant res corpse after a duel (milliseconds) DEFAULT: 600000 (10 Minutes) |
-|  Character:CorpseOwnerOnlineTime | 30000 | How often corpse will check if its owner is online DEFAULT: 30000 (30 Seconds) |
-
 ## AA Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
@@ -112,7 +105,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Bots:BotLevelsWithOwner | false | Auto-updates spawned bots as owner levels/de-levels (false is original behavior) |
 | Bots:BotCharacterLevel | 0 | If level is greater that value player can spawn bots if BotCharacterLevelEnabled is true |
 | Bots:CasterStopMeleeLevel | 13 | Level at which caster bots stop melee attacks |
-| Bots:AllowOwnerOptionAltCombat | true | When option is enabled, bots will use an auto-/shared-aggro combat model |
 | Bots:AllowOwnerOptionAutoDefend | true | When option is enabled, bots will defend their owner on enemy aggro |
 | Bots:LeashDistance | 562500.0f | Distance a bot is allowed to travel from leash owner before being pulled back (squared value) |
 | Bots:AllowApplyPoisonCommand | true | Allows the use of the bot command 'applypoison' |
@@ -329,6 +321,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:PreventMountsFromZoning | false | Enable to prevent mounts from zoning - Prior to December 15, 2004 this is enabled. |
 | Character:GroupInvitesRequireTarget | false | Enable to require players to have invitee on target (Disables /invite name) - Classic Style |
 | Character:PlayerTradingLoreFeedback | true | If enabled, during a player to player trade, if lore items exist, it will output which items. |
+|  Character:EmptyCorpseDecayTime | 10800000 | Time after which an empty corpse decays (milliseconds) DEFAULT: 10800000 (3 Hours) |
+|  Character:DuelCorpseResTime | 600000 | Time before cant res corpse after a duel (milliseconds) DEFAULT: 600000 (10 Minutes) |
+|  Character:CorpseOwnerOnlineTime | 30000 | How often corpse will check if its owner is online DEFAULT: 30000 (30 Seconds) |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -414,6 +409,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:NPCFlurryChance | 20 | Chance for NPC to flurry |
 | Combat:TauntOverLevel | 1 | Allows you to taunt NPC's over warriors level |
 | Combat:TauntOverAggro | 0 | + amount over hate_top it will add before any bonus hate. |
+| Combat:TauntChanceBonus | 0 | Bonus to taunt chance |
+| Combat:ClassicTauntSystem | false | Enable to use the pre 2006 taunt system. |
 | Combat:TauntSkillFalloff | 0.33 | For every taunt skill point that's not maxed you lose this percentage chance to taunt |
 | Combat:EXPFromDmgShield | false | Determine if damage from a damage shield counts for experience gain |
 | Combat:QuiverHasteCap | 1000 | Quiver haste cap 1000 on live for a while, currently 700 on live |
@@ -541,6 +538,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Guild:PlayerCreationRequiredStatus | 0 | Required status to create a guild |
 | Guild:PlayerCreationRequiredLevel | 0 | Required level of the player attempting to create the guild |
 | Guild:PlayerCreationRequiredTime | 0 | Time needed online on the account to create a guild (in minutes) |
+| Guild:TributeTime | 600000 | Time in ms for guild tributes.  Default is 10 mins. |
+| Guild:TributeTimeRefreshInterval | 180000 | Time in ms to send all guild members a Tribute Time refresh. Default is 3 mins. |
+| Guild:TributePlatConversionRate | 10 | The conversion rate of platinum donations.  Default is 10 guild favor to 1 platinum. |
+| Guild:UseCharacterMaxLevelForGuildTributes | true | Guild Tributes will adhere to Character:MaxLevel.  Default is true. |
 
 ## HotReload Rules
 | Rule Name | Default Value | Description |
@@ -553,7 +554,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 ## Instances Rules
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
-| Instances:ReservedInstances | 30 | Number of instance IDs which are reserved for globals. This value should not be changed while a server is running |
+| Instances:ReservedInstances | 100 | Number of instance IDs which are reserved for globals. This value should not be changed while a server is running |
 | Instances:RecycleInstanceIds | true | Setting whether free instance IDs should be recycled to prevent them from gradually running out at 32k |
 | Instances:GuildHallExpirationDays | 90 | Amount of days before a Guild Hall instance expires |
 
