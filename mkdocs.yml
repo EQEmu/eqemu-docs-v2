@@ -755,6 +755,14 @@ nav:
           - Development: akk-stack/operate/development.md
   - Client:
     - Introduction: client/introduction.md
+    - Guides:
+        - client/guides/README.md              
+        - Custom Zone Making: client/guides/custom-zone-making.md
+        - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
+        - Placing Objects: client/guides/placing-objects.md
+        - Sky System: client/guides/sky-system.md
+        - File Formats:
+            - WLD: client/guides/wld.md
     - OpenZone: 
         - client/openzone/README.md
         - NPC Editing: client/openzone/npc-editing.md
@@ -771,19 +779,11 @@ nav:
         - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
     - Zone Utilities:
         - client/zone-utilities/README.md
-    
-    - Guides:
-        - client/guides/README.md              
-        - Custom Zone Making: client/guides/custom-zone-making.md
-        - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
-        - GL Model Viewer: client/guides/gl-model-viewer.md
-        - List Objects Tool: client/guides/list-objects-tool.md
-        - Placing Objects: client/guides/placing-objects.md
-        - Sky System: client/guides/sky-system.md
-        - WLD Editor Suite: client/guides/wld-editor-suite.md
-        - WLD File Reference: client/guides/wld-file-reference.md
-        - XMI to MIDI Converter: client/guides/xmi-to-midi-converter.md
-        
+    - Misc Tools:
+        - GL Model Viewer: client/misc/gl-model-viewer.md
+        - List Objects Tool: client/misc/list-objects-tool.md
+        - WLD Editor Suite: client/misc/wld-editor-suite.md
+        - XMI to MIDI Converter: client/misc/xmi-to-midi-converter.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md

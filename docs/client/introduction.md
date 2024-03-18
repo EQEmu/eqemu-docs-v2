@@ -3,9 +3,14 @@
 Client side modifications
 
 ## Guides
+
 - [Custom Zone Making](guides/custom-zone-making.md) - A guide to making custom zones
 - [Fog System and Clip Plane](guides/fog-system-and-clip-plane.md) - A guide to fog and clip plane modifying 
+- [Placing Objects](guides/placing-objects.md) - A guide to placing objects in zones
+- [Sky System](guides/sky-system.md) - A guide to modifying the sky system
 
+## File Formats
+- [WLD by Windcatcher](guides/file-formats/wld-by-windcatcher.md) - A reference guide to the WLD file format
 
 ## Tools
 
