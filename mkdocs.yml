@@ -332,30 +332,7 @@ nav:
           - Cheat Sheet: ./server/tools/tools-cheat-sheet.md
           - Install PEQ Database Editor: ./server/tools/install-peq-database-editor.md
       - Zones:
-          - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
-          - Customizing Zones:
-              - server/zones/customizing-zones/README.md
-              - EQGZI:
-                  - server/zones/customizing-zones/eqgzi/README.md
-                  - Getting Started: server/zones/customizing-zones/eqgzi/getting-started.md
-                  - Feature Breakdown: server/zones/customizing-zones/eqgzi/breakdown.md
-                  - Shader List: server/zones/customizing-zones/eqgzi/shader-list.md
-                  - Sound How to: server/zones/customizing-zones/eqgzi/sound-howto.md
-                  - 3ds Max Zone Making: server/zones/customizing-zones/eqgzi/3dsmax-first-zone.md
-                  - Blender Zone Making: server/zones/customizing-zones/eqgzi/blender-first-zone.md
-                  - Blender Custom Properties: server/zones/customizing-zones/eqgzi/blender-custom-properties.md
-                  - Animated Textures: server/zones/customizing-zones/eqgzi/animated-textures.md
-                  - Getting Started (Advanced): server/zones/customizing-zones/eqgzi/getting-started-advanced.md
-              - Custom Zone Making: server/zones/customizing-zones/custom-zone-making.md
-              - Fog System and Clip Plane: server/zones/customizing-zones/fog-system-and-clip-plane.md
-              - GL Model Viewer: server/zones/customizing-zones/gl-model-viewer.md
-              - List Objects Tool: server/zones/customizing-zones/list-objects-tool.md
-              - Placing Objects: server/zones/customizing-zones/placing-objects.md
-              - Sky System: server/zones/customizing-zones/sky-system.md
-              - WLD Editor Suite: server/zones/customizing-zones/wld-editor-suite.md
-              - WLD File Reference: server/zones/customizing-zones/wld-file-reference.md
-              - XMI to MIDI Converter: server/zones/customizing-zones/xmi-to-midi-converter.md
-              - Zone Utility Tools: server/zones/customizing-zones/zone-utility-tools.md
+          - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md          
           - Door Open Types: server/zones/door-open-types.md
           - Environment Emitters: server/zones/environment-emitters.md
           - LDON Themes: server/zones/ldon-themes.md
@@ -776,6 +753,37 @@ nav:
           - Update: akk-stack/operate/update.md
       - Develop:
           - Development: akk-stack/operate/development.md
+  - Client:
+    - Introduction: client/introduction.md
+    - OpenZone: 
+        - client/openzone/README.md
+        - NPC Editing: client/openzone/npc-editing.md
+    - EQGZI:
+        - client/eqgzi/README.md
+        - Getting Started: client/eqgzi/getting-started.md
+        - Feature Breakdown: client/eqgzi/breakdown.md
+        - Shader List: client/eqgzi/shader-list.md
+        - Sound How to: client/eqgzi/sound-howto.md
+        - 3ds Max Zone Making: client/eqgzi/3dsmax-first-zone.md
+        - Blender Zone Making: client/eqgzi/blender-first-zone.md
+        - Blender Custom Properties: client/eqgzi/blender-custom-properties.md
+        - Animated Textures: client/eqgzi/animated-textures.md
+        - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
+    - Zone Utilities:
+        - client/zone-utilities/README.md
+    
+    - Guides:
+        - client/guides/README.md              
+        - Custom Zone Making: client/guides/custom-zone-making.md
+        - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
+        - GL Model Viewer: client/guides/gl-model-viewer.md
+        - List Objects Tool: client/guides/list-objects-tool.md
+        - Placing Objects: client/guides/placing-objects.md
+        - Sky System: client/guides/sky-system.md
+        - WLD Editor Suite: client/guides/wld-editor-suite.md
+        - WLD File Reference: client/guides/wld-file-reference.md
+        - XMI to MIDI Converter: client/guides/xmi-to-midi-converter.md
+        
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md
