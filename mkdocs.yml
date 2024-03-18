@@ -762,7 +762,7 @@ nav:
         - Placing Objects: client/guides/placing-objects.md
         - Sky System: client/guides/sky-system.md
         - File Formats:
-            - WLD: client/guides/wld.md
+            - WLD by Windcatcher: client/guides/wld-by-windcatcher.md
     - OpenZone: 
         - client/openzone/README.md
         - NPC Editing: client/openzone/npc-editing.md
