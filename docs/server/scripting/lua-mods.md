@@ -30,4 +30,4 @@ You can use #reload quest to reload the scripts in your zone to reflect your lat
 | [GetExperienceForKill](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L9) | Get experience earned for a kill, and modify the amount |
 | [GetEXPForLevel](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L49) | Get raw experience normally rewarded for leveling |
 | [GetRequiredAAExperience](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L4) | Get how much experience is needed for an AA gain |
-
+| [RegisterBug]() | When a /bug report occurs, this fires with info. Can use [githubeq](https://github.com/xackery/githubeq) for example to redirect bugs to github |
