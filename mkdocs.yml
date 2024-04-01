@@ -761,6 +761,7 @@ nav:
         - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
         - Placing Objects: client/guides/placing-objects.md
         - Sky System: client/guides/sky-system.md
+        - Model Loading: client/guides/model-loading.md
         - File Formats:
             - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
     - OpenZone: 
