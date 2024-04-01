@@ -8,6 +8,7 @@ Client side modifications
 - [Fog System and Clip Plane](guides/fog-system-and-clip-plane.md) - A guide to fog and clip plane modifying 
 - [Placing Objects](guides/placing-objects.md) - A guide to placing objects in zones
 - [Sky System](guides/sky-system.md) - A guide to modifying the sky system
+- [Model Loading](guides/model-loading.md) - A guide on how to get models to load in a zone
 
 ## File Formats
 - [WLD by Windcatcher](guides/file-formats/wld-by-windcatcher.md) - A reference guide to the WLD file format
