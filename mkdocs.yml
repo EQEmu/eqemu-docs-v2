@@ -109,15 +109,15 @@ nav:
       - Configuration:
           - eqemu_config.json: ./configuration/eqemu_config.md
       - Developer:
-          - Database Conventions: developer/conventions-guidelines.md
-          - Database Migrations: developer/database-schema-migrations.md
           - Build Pipeline: developer/build-pipeline.md
           - Codebase:
               - EQDictionary: developer/eqdictionary.md
+          - Database Conventions: developer/conventions-guidelines.md
+          - Database Migrations: developer/database-schema-migrations.md
           - Logging: developer/logging.md
+          - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
           - Release Pipeline: developer/release-pipeline.md
           - Repositories: developer/repositories.md
-          - Packet and OpCode Analysis: developer/packet-and-opcode-analysis.md
       - Database:
           - Database Backup Tool: server/database/database-backup-tool.md
           - Handy Queries: server/database/handy-queries.md
@@ -158,8 +158,8 @@ nav:
           - Faction Values: server/factions/faction-values.md
       - Guild Management:
           - server/guilds/README.md
-          - Defaults: server/guilds/defaults.md
           - Backwards Compatibility: server/guilds/compatibility.md
+          - Defaults: server/guilds/defaults.md
       - Items:
           - Alternate Currencies: server/items/alternate-currencies.md
           - Augment Restrictions: server/items/augment-restrictions.md
@@ -178,10 +178,10 @@ nav:
           - Powersources: server/items/powersources.md
           - Wearable Models: server/items/wearable-models.md
       - Inventory:
-          - Inventory Slots: server/inventory/inventory-slots.md
-          - Item Slots: server/inventory/item-slots.md
           - Bag Sizes: server/inventory/bag-sizes.md
           - Bag Types: server/inventory/bag-types.md
+          - Inventory Slots: server/inventory/inventory-slots.md
+          - Item Slots: server/inventory/item-slots.md
       - Logging:
           - Discord Logging: server/logging-system/discord-logging.md
           - Logging Categories: server/logging-system/logging-categories.md
@@ -189,12 +189,12 @@ nav:
           - Player Event Logging: server/logging-system/player-event-logging.md
       - Login Server:
           - Auto Create Login Accounts: server/login-server/auto-create-login-accounts.md
-          - REST API: server/login-server/login-server-rest-api.md
-          - Database Schema: server/login-server/database-schema.md
           - CLI Management Interface: server/login-server/login-server-cli-management-interface.md
-          - Migrating from Legacy Login Server: server/login-server/migrating-from-legacy-login-server.md
-          - Configuration: server/login-server/login-server-configuration.md
           - Commonly Asked Questions: server/login-server/commonly-asked-questions.md
+          - Configuration: server/login-server/login-server-configuration.md
+          - Database Schema: server/login-server/database-schema.md
+          - Migrating from Legacy Login Server: server/login-server/migrating-from-legacy-login-server.md
+          - REST API: server/login-server/login-server-rest-api.md
           - World Registration: server/login-server/world-registration.md
           - World Servers with Same Names: server/login-server/world-servers-with-same-names.md
       - Maps:
@@ -207,9 +207,9 @@ nav:
           - Consider Colors: server/npc/consider-colors.md
           - Consider Levels: server/npc/consider-levels.md
           - Customizing NPCs:
-                - server/npc/customizing-npcs/README.md
-                - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
-                - Making a Custom Race: server/npc/customizing-npcs/making-a-custom-race.md
+              - server/npc/customizing-npcs/README.md
+              - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
+              - Making a Custom Race: server/npc/customizing-npcs/making-a-custom-race.md
           - Emote Event Types: server/npc/emote-event-types.md
           - Emote Types: server/npc/emote-types.md
           - Facial Features: server/npc/facial-features.md
@@ -303,7 +303,6 @@ nav:
           - GetSpellStat Identifiers: server/spells/getspellstat-identifiers.md
           - Illusion Spell Guidelines: server/spells/illusion-spell-guidelines.md
           - NPC Spell Categories: server/spells/npc-spell-categories.md
-          - Numhit Types: server/spells/numhit-types-1.md
           - Numhit Types: server/spells/numhit-types.md
           - Resist Types: server/spells/resist-types.md
           - Spell Attack Speed: server/spells/spell-attack-speed.md
@@ -760,25 +759,25 @@ nav:
       - Guides:
           - client/guides/README.md
           - Custom Zone Making: client/guides/custom-zone-making.md
+          - File Formats:
+                - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
           - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
+          - Model Loading: client/guides/model-loading.md
           - Placing Objects: client/guides/placing-objects.md
           - Sky System: client/guides/sky-system.md
-          - Model Loading: client/guides/model-loading.md
-          - File Formats:
-              - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
       - OpenZone:
           - client/openzone/README.md
           - NPC Editing: client/openzone/npc-editing.md
       - EQGZI:
           - client/eqgzi/README.md
-          - Getting Started: client/eqgzi/getting-started.md
+          - Animated Textures: client/eqgzi/animated-textures.md
+          - Blender Custom Properties: client/eqgzi/blender-custom-properties.md
+          - Blender Zone Making: client/eqgzi/blender-first-zone.md
           - Feature Breakdown: client/eqgzi/breakdown.md
+          - Getting Started: client/eqgzi/getting-started.md
+          - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
           - Shader List: client/eqgzi/shader-list.md
           - Sound How to: client/eqgzi/sound-howto.md
-          - Blender Zone Making: client/eqgzi/blender-first-zone.md
-          - Blender Custom Properties: client/eqgzi/blender-custom-properties.md
-          - Animated Textures: client/eqgzi/animated-textures.md
-          - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
       - Zone Utilities:
           - client/zone-utilities/README.md
       - Misc Tools:
