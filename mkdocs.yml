@@ -231,6 +231,7 @@ nav:
           - NPC Animation Types: server/npc/npc-animation-types.md
           - NPC Scaling: server/npc/npc-scaling.md
           - Special Attacks: server/npc/special-attacks.md
+          - Consider Levels: server/npc/consider-levels.md
       - Operation:
           - Adjust Maximum Level: server/operation/adjust-maximum-level.md
           - Adjust World Date / Time: server/operation/adjust-world-date-time.md
@@ -332,7 +333,7 @@ nav:
           - Cheat Sheet: ./server/tools/tools-cheat-sheet.md
           - Install PEQ Database Editor: ./server/tools/install-peq-database-editor.md
       - Zones:
-          - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md          
+          - Adjusting Zone Shutdown Delay: server/zones/adjusting-zone-shutdown-delay.md
           - Door Open Types: server/zones/door-open-types.md
           - Environment Emitters: server/zones/environment-emitters.md
           - LDON Themes: server/zones/ldon-themes.md
@@ -756,7 +757,7 @@ nav:
   - Client:
     - Introduction: client/introduction.md
     - Guides:
-        - client/guides/README.md              
+        - client/guides/README.md
         - Custom Zone Making: client/guides/custom-zone-making.md
         - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
         - Placing Objects: client/guides/placing-objects.md
@@ -764,7 +765,7 @@ nav:
         - Model Loading: client/guides/model-loading.md
         - File Formats:
             - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
-    - OpenZone: 
+    - OpenZone:
         - client/openzone/README.md
         - NPC Editing: client/openzone/npc-editing.md
     - EQGZI:
