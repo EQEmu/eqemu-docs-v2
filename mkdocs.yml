@@ -5,11 +5,11 @@ plugins:
       tags_file: tags.md
   - git-committers:
       branch: main
-      enabled: !ENV [ENV_PROD, false]
+      enabled: !ENV [ ENV_PROD, false ]
       repository: EQEmu/eqemu-docs-v2
   - git-revision-date-localized:
       enable_creation_date: true
-      enabled: !ENV [ENV_PROD, false]
+      enabled: !ENV [ ENV_PROD, false ]
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
@@ -201,18 +201,27 @@ nav:
           - server/maps/README.md
           - Editing Maps: server/maps/editing-maps.md
       - NPC:
-          - NPC Aggro: server/npc/npc-aggro.md
-          - ModifyNPCStat Identifiers: server/npc/modifynpcstat-identifiers.md
-          - Stuck Behavior: server/npc/stuck-behavior.md
-          - Mob Version List: server/npc/mob-version-list.md
-          - Race List: server/npc/race-list.md
-          - NPC Models: server/npc/npc-models.md
-          - Fly Modes: server/npc/fly-modes.md
-          - Client Race Inventory: server/npc/client-race-inventory.md
           - Animations: server/npc/animations.md
+          - Body Types: server/npc/body-types.md
+          - Client Race Inventory: server/npc/client-race-inventory.md
+          - Consider Colors: server/npc/consider-colors.md
+          - Consider Levels: server/npc/consider-levels.md
+          - Customizing NPCs:
+                - server/npc/customizing-npcs/README.md
+                - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
+                - Making a Custom Race: server/npc/customizing-npcs/making-a-custom-race.md
+          - Emote Event Types: server/npc/emote-event-types.md
+          - Emote Types: server/npc/emote-types.md
           - Facial Features: server/npc/facial-features.md
+          - Fly Modes: server/npc/fly-modes.md
           - Genders: server/npc/genders.md
-          - Textures: server/npc/textures.md
+          - Mob Version List: server/npc/mob-version-list.md
+          - ModifyNPCStat Identifiers: server/npc/modifynpcstat-identifiers.md
+          - NPC Aggro: server/npc/npc-aggro.md
+          - NPC Animation Types: server/npc/npc-animation-types.md
+          - NPC Models: server/npc/npc-models.md
+          - NPC Scaling: server/npc/npc-scaling.md
+          - Race List: server/npc/race-list.md
           - Spawns:
               - server/npc/spawns/README.md
               - On Change Types: server/npc/spawns/on-change-types.md
@@ -221,17 +230,9 @@ nav:
               - Action Types: server/npc/spawns/action-types.md
               - NPC Despawn Types: server/npc/spawns/npc-despawn-types.md
               - Grids: server/npc/spawns/grids.md
-          - Body Types: server/npc/body-types.md
-          - Emote Types: server/npc/emote-types.md
-          - Emote Event Types: server/npc/emote-event-types.md
-          - Customizing NPCs:
-              - server/npc/customizing-npcs/README.md
-              - Using the PEQ Database Editing Interface: server/npc/customizing-npcs/using-the-peq-database-editing-interface.md
-              - Making a Custom Race: server/npc/customizing-npcs/making-a-custom-race.md
-          - NPC Animation Types: server/npc/npc-animation-types.md
-          - NPC Scaling: server/npc/npc-scaling.md
           - Special Attacks: server/npc/special-attacks.md
-          - Consider Levels: server/npc/consider-levels.md
+          - Stuck Behavior: server/npc/stuck-behavior.md
+          - Textures: server/npc/textures.md
       - Operation:
           - Adjust Maximum Level: server/operation/adjust-maximum-level.md
           - Adjust World Date / Time: server/operation/adjust-world-date-time.md
@@ -755,36 +756,36 @@ nav:
       - Develop:
           - Development: akk-stack/operate/development.md
   - Client:
-    - Introduction: client/introduction.md
-    - Guides:
-        - client/guides/README.md
-        - Custom Zone Making: client/guides/custom-zone-making.md
-        - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
-        - Placing Objects: client/guides/placing-objects.md
-        - Sky System: client/guides/sky-system.md
-        - Model Loading: client/guides/model-loading.md
-        - File Formats:
-            - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
-    - OpenZone:
-        - client/openzone/README.md
-        - NPC Editing: client/openzone/npc-editing.md
-    - EQGZI:
-        - client/eqgzi/README.md
-        - Getting Started: client/eqgzi/getting-started.md
-        - Feature Breakdown: client/eqgzi/breakdown.md
-        - Shader List: client/eqgzi/shader-list.md
-        - Sound How to: client/eqgzi/sound-howto.md
-        - Blender Zone Making: client/eqgzi/blender-first-zone.md
-        - Blender Custom Properties: client/eqgzi/blender-custom-properties.md
-        - Animated Textures: client/eqgzi/animated-textures.md
-        - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
-    - Zone Utilities:
-        - client/zone-utilities/README.md
-    - Misc Tools:
-        - GL Model Viewer: client/misc/gl-model-viewer.md
-        - List Objects Tool: client/misc/list-objects-tool.md
-        - WLD Editor Suite: client/misc/wld-editor-suite.md
-        - XMI to MIDI Converter: client/misc/xmi-to-midi-converter.md
+      - Introduction: client/introduction.md
+      - Guides:
+          - client/guides/README.md
+          - Custom Zone Making: client/guides/custom-zone-making.md
+          - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
+          - Placing Objects: client/guides/placing-objects.md
+          - Sky System: client/guides/sky-system.md
+          - Model Loading: client/guides/model-loading.md
+          - File Formats:
+              - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
+      - OpenZone:
+          - client/openzone/README.md
+          - NPC Editing: client/openzone/npc-editing.md
+      - EQGZI:
+          - client/eqgzi/README.md
+          - Getting Started: client/eqgzi/getting-started.md
+          - Feature Breakdown: client/eqgzi/breakdown.md
+          - Shader List: client/eqgzi/shader-list.md
+          - Sound How to: client/eqgzi/sound-howto.md
+          - Blender Zone Making: client/eqgzi/blender-first-zone.md
+          - Blender Custom Properties: client/eqgzi/blender-custom-properties.md
+          - Animated Textures: client/eqgzi/animated-textures.md
+          - Getting Started (Advanced): client/eqgzi/getting-started-advanced.md
+      - Zone Utilities:
+          - client/zone-utilities/README.md
+      - Misc Tools:
+          - GL Model Viewer: client/misc/gl-model-viewer.md
+          - List Objects Tool: client/misc/list-objects-tool.md
+          - WLD Editor Suite: client/misc/wld-editor-suite.md
+          - XMI to MIDI Converter: client/misc/xmi-to-midi-converter.md
   - Contributing:
       - How to Doc: contributing/how-to-doc.md
   - Tags: tags.md

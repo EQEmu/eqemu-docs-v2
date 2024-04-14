@@ -2,12 +2,13 @@
 
 | Consider Level ID | Consider Level Name |
 |:------------------|:--------------------|
-| 2                 | Green               |
-| 4                 | Blue                |
-| 6                 | Gray                |
-| 10                | White               |
-| 13                | Red                 |
-| 15                | Yellow              |
-| 18                | Light Blue          |
-| 20                | White (Titanium)    |
+| 1                 | Ally                |
+| 2                 | Warmly                |
+| 3                 | Kindly                |
+| 4                 | Amiably                |
+| 5                 | Indifferently                |
+| 6                 | Apprehensively                |
+| 7                 | Dubiously                |
+| 8                 | Threateningly                |
+| 9                 | Scowls                |
 
