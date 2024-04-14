@@ -5,9 +5,6 @@
 * To use a Merchant Data Bucket you will need to set the `bucket_name`, `bucket_value`, and `bucket_comparison` fields in the `merchantlist` table for your intended item.
 
 ## How the Data Buckets are Used
-* Data Buckets used by the Merchant use a `bucket_key-bucket_name` format.
-* Meaning if your character ID is `7` and the bucket name is `test` your Data Bucket Key will be `character-7`.
-* If the Data Bucket's name is `test` the Merchant will attempt to find a Data Bucket called `character-7-test`.
 * The Merchant grabs all of your Data Buckets when you open the Merchant window and then compares your values to the field values noted above.
 
 ## Comparison Types
