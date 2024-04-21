@@ -252,6 +252,8 @@ nav:
           - Server Management: server/operation/server-management.md
           - Server Rules: server/operation/server-rules.md
           - Server Variables: server/operation/server-variables.md
+      - Parcel Management:
+          - server/parcels/README.md
       - Player:
           - Class List: server/player/class-list.md
           - Client Version Bitmasks: server/player/client-version-bitmasks.md
