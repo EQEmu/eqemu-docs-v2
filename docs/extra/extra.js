@@ -20,8 +20,6 @@ for (let bg of backgrounds) {
   img.src = bg;
 }
 
-
-
 function shuffleBackgrounds() {
   let index = 1;
   for (let bg of shuffle(backgrounds)) {
@@ -49,6 +47,8 @@ function shuffle(array) {
   return array;
 }
 
+shuffleBackgrounds()
+
 window.onload = function () {
   onLoad()
 };
@@ -62,5 +62,5 @@ XMLHttpRequest.prototype.open = function () {
 };
 
 function onLoad() {
-  shuffleBackgrounds()
+  // shuffleBackgrounds()
 }

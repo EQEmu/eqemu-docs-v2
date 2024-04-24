@@ -69,8 +69,7 @@ body .md-sidebar--primary .md-sidebar__scrollwrap {
 }
 
 @keyframes changeBg {
-    0% { opacity: .01; background-image: var(--bg1); }
-    .1% { opacity: .05; background-image: var(--bg1); }
+    0% { background-image: var(--bg1); }
     7% { background-image: var(--bg2); }
     14% { background-image: var(--bg3); }
     21% { background-image: var(--bg4); }
