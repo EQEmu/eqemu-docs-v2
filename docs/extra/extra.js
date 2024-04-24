@@ -14,10 +14,21 @@ const backgrounds = [
   "https://raw.githubusercontent.com/Akkadius/eq-asset-preview/master/assets/wallpaper/freeport.png",
 ]
 
-let index = 1;
-for (let bg of shuffle(backgrounds)) {
-  document.body.style.setProperty("--bg" + index, "url(" + bg + ")");
-  index++;
+for (let bg of backgrounds) {
+  // console.log("loading " + bg)
+  let img = new Image();
+  img.src = bg;
+}
+
+
+
+function shuffleBackgrounds() {
+  let index = 1;
+  for (let bg of shuffle(backgrounds)) {
+    document.body.style.setProperty("--bg" + index, "url(" + bg + ")");
+    // console.log("setting bg" + index + " to " + bg)
+    index++;
+  }
 }
 
 function shuffle(array) {
@@ -38,18 +49,18 @@ function shuffle(array) {
   return array;
 }
 
-window.onload = function() {
+window.onload = function () {
   onLoad()
 };
 
-let origOpen = XMLHttpRequest.prototype.open;
-XMLHttpRequest.prototype.open = function() {
-  this.addEventListener('loadend', function() {
+let origOpen                  = XMLHttpRequest.prototype.open;
+XMLHttpRequest.prototype.open = function () {
+  this.addEventListener('loadend', function () {
     onLoad()
   });
   origOpen.apply(this, arguments);
 };
 
 function onLoad() {
-  //
+  shuffleBackgrounds()
 }
