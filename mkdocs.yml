@@ -105,6 +105,7 @@ nav:
           - Bot Heal Rotations: server/bots/bot-heal-rotations.md
           - Bot Spell Settings: server/bots/bot-spell-settings.md
           - Bot Spell Types: server/bots/bot-spell-types.md
+          - Bot Cheat Sheet: server/bots/bot-cheat-sheet.md
           - Stance Types: server/bots/stance-types.md
       - Configuration:
           - eqemu_config.json: ./configuration/eqemu_config.md
