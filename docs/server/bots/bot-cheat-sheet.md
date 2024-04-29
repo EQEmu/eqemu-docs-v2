@@ -1,6 +1,6 @@
 !!! info end
 
-    This page lists a quick reference and cheat sheet on using bots. Check out [bot commands](/docs/server/bots/bot-commands) for a comprehsive list of commands that bots can use.
+    This page lists a quick reference and highlights how to use bots. Check out [bot commands](/server/bots/bot-commands) for a more detailed list of commands that bots can use.
 
 ## Getting Started
 
@@ -26,4 +26,6 @@ Spells have two types of logic. By default, all spells go to the `^spells` comma
 
 Spell setting is a mode to let you granularly control spells, first, you need to opt in to spell settings by typing `^enforcespellsettings`
 
-Now that you've opted in, you can use `^spellsettings` to see the list of spells you can enable/disable, or remove. By default, newly added spells are enabled and you don't need to do anything, pressing the `Enabled` links will flip them to disabled, and `Remove` will remove them from the list so they're back in the `^spells` section.
+Now that you've opted in, you can use `^spellsettings` to see the list of spells you can enable/disable, or remove. By default, spells you pressed Add on from ^spells goes to this list enabled, so you don't need to do anything, But, pressing the `Enabled` links will flip them to disabled, and `Remove` will remove them from the list so they're back in the `^spells` section.
+
+There are many more advanced ways to use bots, including healrotations, stances, disciplines, but for a quick start this should get you started.
