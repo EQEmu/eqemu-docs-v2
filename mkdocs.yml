@@ -273,6 +273,7 @@ nav:
           - Windows Server Installer: server/installation/server-installation-windows.md
           - Linux Server Installer: server/installation/server-installation-linux.md
           - Manual Windows Install: server/installation/ground-up-windows-install.md
+          - Dev Container: server/installation/dev-container.md
       - Scripting:
           - server/scripting/README.md
           - Converting QGlobals: server/scripting/converting-qglobals.md
