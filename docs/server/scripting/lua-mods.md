@@ -18,16 +18,22 @@ You can use #reload quest to reload the scripts in your zone to reflect your lat
 
 # Function List
 
-| Function | Description |
-| :--- | :--- |
-| [CalcSpellEffectValue_formula](https://github.com/EQEmu/Server/blob/master/utils/mods/spell_formula.lua) | Apply custom spell formulas to how a spell value is deduced
-| [CheckHitChance](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L97) | Check if an attacker hit a defender. e.hit will have hit information|
-| AvoidDamage | Check if an attacker avoided damage, no example available |
-| [MeleeMitigation](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L65) | Process melee mitigation (damage reduction) |
-| [TryCriticalHit](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L255) | Try executing a critical hit |
-| ApplyDamageTable | Adjust damage based on a table, no example available |
-| [CommonOutgoingHitSuccess](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L961) | This is the final value of an outgoing hit success. Note that if any critical hits occured, if this value is modified, the crit won't match up as the text for the crit would already be displayed. |
-| [GetExperienceForKill](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L9) | Get experience earned for a kill, and modify the amount |
-| [GetEXPForLevel](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L49) | Get raw experience normally rewarded for leveling |
-| [GetRequiredAAExperience](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L4) | Get how much experience is needed for an AA gain |
-| [RegisterBug]() | When a /bug report occurs, this fires with info. Can use [githubeq](https://github.com/xackery/githubeq) for example to redirect bugs to github |
+Function|Description
+:---|:---
+**ApplyDamageTable**|Adjust damage based on a table, no example available.
+**AvoidDamage**|Check if an attacker avoided damage, no example available
+**CalcSpellEffectValue_formula**|Apply custom spell formulas to how a spell value is deduced. An [example is found in utils](https://github.com/EQEmu/Server/blob/master/utils/mods/spell_formula.lua)
+**CheckHitChance**|Check if an attacker hit a defender. e.hit will have hit information. [legacy combat example](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L97) and [jamfest example](https://github.com/jamfesteq/quests/blob/main/mods/mighty.lua#L3)
+**CommonDamage**|Adjust damage done. [jamfest example](https://github.com/jamfesteq/quests/blob/89e5ca78646f258801463dfcbc6b3800e9e3768a/mods/mighty.lua#L130)
+**CommonOutgoingHitSuccess**|This is the final value of an outgoing hit success. Note that if any critical hits occured, if this value is modified, the crit won't match up as the text for the crit would already be displayed. [legacy combat example](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L961).
+**GetExperienceForKill**|Get experience earned for a kill, and modify the amount. [classic wow example](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L9). Note for more granular control, you can use SetEXP and SetAAEXP.
+**GetEXPForLevel**|Get raw experience normally rewarded for leveling. [classic wow example](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L49)
+**GetRequiredAAExperience**|Get how much experience is needed for an AA gain. [classic wow example](https://github.com/EQEmu/Server/blob/master/utils/mods/classic_wow_experience.lua#L4)
+**HealDamage**|Adjust healing done. [jamfest example](https://github.com/jamfesteq/quests/blob/89e5ca78646f258801463dfcbc6b3800e9e3768a/mods/mighty.lua#L86)
+**IsImmuneToSpell**|Check if a target is immune to a spell, and inject custom logic and message on resist [jamfest example](https://github.com/jamfesteq/quests/blob/89e5ca78646f258801463dfcbc6b3800e9e3768a/mods/mighty.lua#L244)
+**MeleeMitigation**|Process melee mitigation (damage reduction). [legacy combat example](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L65). |
+**RegisterBug**|When a /bug report occurs, this fires with info. [githubeq](https://github.com/xackery/githubeq) uses this to reroute bugs to github issues. [githubeq example](https://github.com/xackery/githubeq/blob/master/lua/register_bug.lua)|
+**SetAAEXP**|Set AA experience earned for a kill. [jamfest example](https://github.com/jamfesteq/quests/blob/main/mods/exp.lua#L60)
+**SetEXP**|Set experience earned for a kill. [jamfest example](https://github.com/jamfesteq/quests/blob/main/mods/exp.lua#L2)
+**TryCriticalHit**|Try executing a critical hit. [legacy combat example](https://github.com/EQEmu/Server/blob/master/utils/mods/legacy_combat.lua#L255).
+**UpdatePersonalFaction**|Adjust faction gain. [jamfest example](https://github.com/jamfesteq/quests/blob/89e5ca78646f258801463dfcbc6b3800e9e3768a/mods/faction.lua#L3C33)
