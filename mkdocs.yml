@@ -761,6 +761,7 @@ nav:
       - Guides:
           - client/guides/README.md
           - Custom Zone Making: client/guides/custom-zone-making.md
+          - Custom Zone Editing: client/guides/custom-zone-editing.md
           - File Formats:
                 - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
           - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
