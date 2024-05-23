@@ -10,7 +10,6 @@ When you make a new zone, or want to edit an existing one, you need to override 
 
 This flow involves generating a dinput8.dll that goes in your EQ folder. You'll need to distribute this to your clients, one option for doing so is using [eqemupatcher](https://github.com/xackery/eqemupatcher).
 
-Note that you can provide an existing zone ID and edit values for zones that are already in eqgame (e.g. change long name or short name refs), or you can add a new, unique zone id to create from scratch zones (The example 787 entry is a new zone id). Also note, zones below 200 are not replacable due to how the hook eq-core uses hooks into them. If you want to replace a zone below 200, you'll need to either edit the eqgame directly, or clone the zone to a higher new zoneidnumber.
 
 - Follow the [guide on the eq-core-dll repo](https://github.com/xackery/eq-core-dll/) to build your DLL
 - Enable custom zones via `bool areCustomZonesEnabled = true;` in _options.h
@@ -44,3 +43,5 @@ To clone a zone, you can use the following steps:
 - Edit eq-core-dll and add the _option entry to match the settings noted above, 787, ncommons, etc
 
 - Edit eqstr_us.txt and add a new entry for North Commonlands 
+
+- From this point onward is more involved depending on how much you plan to clone. You can go through many tables like spawn2, spawngroup, grid, pathgrid, etc and duplicate the entries, changing the zoneidnumber to 787 and the shortname to ncommons. 
