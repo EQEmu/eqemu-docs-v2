@@ -32,9 +32,15 @@ This guide is not yet covered in detail, but essentially you use a hex editor an
 
 To clone a zone, you can use the following steps:
 - Let's assume for this example you want to clone East Commonlands to a new zone called "North Commonlands". So ecommons.s3d to ncommons.s3d
+
 - Pick a zoneidnumber unused above 786. Let's use 787
+
 - In your zones SQL table, find the ecommons row and duplicate it. Change the id to a new unique number, zoneidnumber to 787, short_name to ncommons, long_name to North Commonlands
+
 - Copy the s3d/eqg's related to your original zone's shortname, e.g. ecommons.s3d and any other files related to ncommons.s3d. (Same with .eqg)
+
 - Use eqzip, quail-gui or another tool and open the s3d/eqg archive, find the ecommons.wld inside it and rename it to ncommons.wld. (In the case of an eqg, there'll be a .zon file. but it shouldn't need to be renamed)
+
 - Edit eq-core-dll and add the _option entry to match the settings noted above, 787, ncommons, etc
+
 - Edit eqstr_us.txt and add a new entry for North Commonlands 
