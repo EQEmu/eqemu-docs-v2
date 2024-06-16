@@ -59,7 +59,7 @@
 | 52 | nothing |  |
 | 53 | no door showing (invisible) |  |
 | 54 | no door showing (invisible) |  |
-| 55 | nothing |  |
+| 55 | nothing - will not trigger "can't reach that" message |  |
 | 56 | nothing |  |
 | 57 | nothing |  |
 | 115 | spins nonstop, 4 points saw damage |  |
