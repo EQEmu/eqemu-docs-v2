@@ -55,4 +55,4 @@ INSERT INTO object VALUES (ItemID, ZoneID, LocYPos, LocXPos, Height, Heading, 0,
 
 * This is the heart and soul of the clickable. This tells what it does.
 * If the column is blank, it is non-applicable.
-* See [Object Types Reference List](../object-types.md)
+* See [Object Types Reference List](../../server/zones/object-types)
