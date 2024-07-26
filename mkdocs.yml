@@ -773,7 +773,7 @@ nav:
       - OpenZone:
           - client/openzone/README.md
           - NPC Editing: client/openzone/npc-editing.md
-      - wcemu:
+      - WCEmu:
           - client/wcemu/README.md
           - Definitions: client/wcemu/v0.0.1.md # change to latest version manually
       - EQGZI:
