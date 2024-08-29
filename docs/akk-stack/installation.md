@@ -18,7 +18,7 @@ It doesn't matter what Linux OS you use as long as it has **Docker** and **Docke
 ### Installing Docker Compose
 
 ```
-curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 Confirm that it's working
