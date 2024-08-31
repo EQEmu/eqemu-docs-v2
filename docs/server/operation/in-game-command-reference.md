@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-    Subcommands can be found [here](../../../../server/reference-lists/in-game-subcommand-reference).
+    Subcommands can be found [here](../../../../server/operation/in-game-subcommand-reference).
 | Command | Description | Status Level |
 | :--- | :--- | :--- |
 | #acceptrules | [acceptrules] - Accept the EQEmu Agreement | Player (0) |
