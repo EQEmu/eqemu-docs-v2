@@ -2,7 +2,7 @@
 
     This page lists the commands that are available in-game, based on assigned Account Status, for your EQEmu Server.
 
-
+    Subcommands can be found [here](../../../../server/reference-lists/in-game-subcommand-reference).
 | Command | Description | Status Level |
 | :--- | :--- | :--- |
 | #acceptrules | [acceptrules] - Accept the EQEmu Agreement | Player (0) |
@@ -32,7 +32,7 @@
 | #delpetition | [petition number] - Delete a petition | ApprenticeGuide (20) |
 | #depop | [Start Spawn Timer] - Depop your NPC target and optionally start their spawn timer (false by default) | Guide (50) |
 | #depopzone | [Start Spawn Timers] - Depop the zone and optionally start spawn timers (false by default) | GMAdmin (100) |
-| #devtools | [Enable&#124;Disable] - Manages Developer Tools (send no parameter for menu) | GMMgmt (200) |
+| #devtools | [menu&#124;window] [enable&#124;disable] - Manages Developer Tools (send no parameter for menu) | GMMgmt (200) |
 | #disablerecipe | [Recipe ID] - Disables a Recipe | QuestTroupe (80) |
 | #disarmtrap | Analog for ldon disarm trap for the newer clients since we still don't have it working. | QuestTroupe (80) |
 | #door | Door editing command | QuestTroupe (80) |
@@ -51,8 +51,11 @@
 | #feature | Change your or your target's feature's temporarily | QuestTroupe (80) |
 | #size | Change your targets size (alias of #feature size) | QuestTroupe (80) |
 | #find | Search command used to find various things | Guide (50) |
+| #fish | Fish for an item | QuestTroupe (80) |
 | #fixmob | [race&#124;gender&#124;texture&#124;helm&#124;face&#124;hair&#124;haircolor&#124;beard&#124;beardcolor&#124;heritage&#124;tattoo&#124;detail] [next&#124;prev] - Manipulate appearance of your target | QuestTroupe (80) |
 | #flagedit | Edit zone flags on your target. Use #flagedit help for more info. | GMAdmin (100) |
+| #fleeinfo | - Gives info about whether a NPC will flee or not, using the command issuer as top hate. | QuestTroupe (80) |
+| #forage | Forage an item | QuestTroupe (80) |
 | #gearup | Developer tool to quickly equip yourself or your target | GMMgmt (200) |
 | #giveitem | [itemid] [charges] - Summon an item onto your target's cursor. Charges are optional. | GMMgmt (200) |
 | #givemoney | [Platinum] [Gold] [Silver] [Copper] - Gives specified amount of money to you or your player target | GMMgmt (200) |
@@ -100,6 +103,7 @@
 | #nukeitem | [Item ID] - Removes the specified Item ID from you or your player target's inventory | GMLeadAdmin (150) |
 | #object | List&#124;Add&#124;Edit&#124;Move&#124;Rotate&#124;Copy&#124;Save&#124;Undo&#124;Delete - Manipulate static and tradeskill objects within the zone | GMAdmin (100) |
 | #opcode | Reloads all opcodes from server patch files | GMMgmt (200) |
+| #parcels | View and edit the parcel system.  Requires parcels to be enabled in rules. | GMMgmt (200) |
 | #path | view and edit pathing | GMMgmt (200) |
 | #peqzone | [Zone ID&#124;Zone Short Name] - Teleports you to the specified zone if you meet the requirements. | Player (0) |
 | #petitems | View your pet's items if you have one | ApprenticeGuide (20) |
@@ -114,7 +118,7 @@
 | #rl | Reloads logs (alias of #reload logs). | GMMgmt (200) |
 | #removeitem | [Item ID] [Amount] - Removes the specified Item ID by Amount from you or your player target's inventory (Amount defaults to 1 if not used) | GMAdmin (100) |
 | #repop | [Force] - Repop the zone with optional force repop | GMAdmin (100) |
-| #resetaa | Resets a Player's AA in their profile and refunds spent AA's to unspent, may disconnect player. | GMMgmt (200) |
+| #resetaa | [aa&#124;leadership] - Resets a player's AAs or Leadership AAs and refunds spent AAs (not Leadership AAs) to unspent, may disconnect player. | GMMgmt (200) |
 | #resetaa_timer | [All&#124;Timer ID] - Command to reset AA cooldown timers for you or your player target. | GMMgmt (200) |
 | #resetdisc_timer | [All&#124;Timer ID] - Command to reset discipline timers. | GMMgmt (200) |
 | #revoke | [Character Name] [0&#124;1] - Revokes or unrevokes a player's ability to talk in OOC by name (0 = Unrevoke, 1 = Revoke) | GMMgmt (200) |
@@ -126,6 +130,7 @@
 | #scribespells | [Max level] [Min level] - Scribe all spells for you or your player target that are usable by them, up to level specified. (may freeze client for a few seconds) | GMLeadAdmin (150) |
 | #sendzonespawns | Refresh spawn list for all clients in zone | GMLeadAdmin (150) |
 | #sensetrap | Analog for ldon sense trap for the newer clients since we still don't have it working. | Player (0) |
+| #serverrules | Show server rules | Player (0) |
 | #set | Set command used to set various things | Guide (50) |
 | #show | Show command used to show various things | Guide (50) |
 | #shutdown | Shut this zone process down | GMLeadAdmin (150) |
