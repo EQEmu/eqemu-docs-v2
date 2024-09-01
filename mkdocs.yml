@@ -255,7 +255,6 @@ nav:
           - Server Management: server/operation/server-management.md
           - Server Rules: server/operation/server-rules.md
           - Server Variables: server/operation/server-variables.md
-          - Subcommands Reference: server/operation/in-game-subcommand-reference.md
       - Parcel Management:
           - server/parcels/README.md
       - Player:
