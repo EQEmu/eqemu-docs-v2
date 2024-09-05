@@ -49,13 +49,17 @@ Resolving deltas: 100% (437/437), done.
 
 ### Initialize the Environment
 
-There are a ton of configuration variables available in the **.env** file that is produced from running the next command, we will get into that later. The key thing here is that it creates the base **.env** and scrambles all of the password fields in the environment
+There are a ton of configuration variables available in the **.env** file that is produced from running the next command, we will get into that later. The key thing here is that it creates the base **.env** and scrambles all of the password fields in the environment. 
+
+!!! warning
+
+    Do not run `make init-reset-env` after the environment has been initialized. Things will no longer work properly.
 
 ```shell
 make init-reset-env
 ```
 
-Will output
+Will output the following.
 
 ```
 make env-transplant
