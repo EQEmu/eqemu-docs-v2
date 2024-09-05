@@ -52,7 +52,12 @@ Resolving deltas: 100% (437/437), done.
 There are a ton of configuration variables available in the **.env** file that is produced from running the next command, we will get into that later. The key thing here is that it creates the base **.env** and scrambles all of the password fields in the environment
 
 ```shell
-$ make init-reset-env
+make init-reset-env
+```
+
+Will output
+
+```
 make env-transplant
 Wrote updated config to [.env]
 make env-scramble-secrets
