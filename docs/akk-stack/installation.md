@@ -119,6 +119,28 @@ To stop the server, simply use the **make down** command from the root of the **
 make down
 ```
 
+### Deploying Bots
+
+ To deploy bots, simply use the 
+ ```
+make bashcd
+server/bin
+./world bots:enable
+```
+command from the root of the **akk-stack** directory.
+
+### Deploying Mercenaries
+
+ To deploy Mercenaries, simply use the 
+ ```
+make bashcd
+server/bin
+./world mercenaries:enable
+```
+command from the root of the **akk-stack** directory.
+
+
+ 
 ### Deployment Info
 
 To print a handy list of passwords and access URL's, simply use **make info** at the host level of the deployment
