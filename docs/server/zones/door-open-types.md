@@ -61,7 +61,7 @@
 | 54 | no door showing (invisible) |  |
 | 55 | nothing - will not trigger "can't reach that" message |  |
 | 56 | nothing |  |
-| 57 | nothing |  |
+| 57 | In-zone teleporter. door_param will be linked to `number` and dest_zone will be linked to `zone` from `zone_points` |  |
 | 115 | spins nonstop, 4 points saw damage |  |
 | 116 | spins with pause, 4 points saw damage |  |
 | 120 | moves down then up, 30 points spear damage |  |
