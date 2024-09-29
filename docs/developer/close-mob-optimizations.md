@@ -24,6 +24,7 @@ entities as we loop through the entire entity list. The below list are examples 
   goes for client aggro scanning and NPC aggro scanning.
 * **Client to MPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
 * **Auras** - When auras are being processed, they loop all entities, performing distance checks before determining
+* **Animations** - We would send animation packets to every client in the zone. When all that matters are clients closest to us.
 * **AE Spells** - When AE spells of any sort are processed, rains, waves, the entire entity list is being looped (600
   NPCs) versus maybe the 4 relevant entities around you and distance checks done for every entity.
 * **AE Taunt** - Lots of special ability checks, distance checks, LOS
