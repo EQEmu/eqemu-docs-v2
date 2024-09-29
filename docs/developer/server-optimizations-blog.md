@@ -1,6 +1,6 @@
-# Developer Blog - Close Mob Optimizations
+# Developer Blog - Server Optimizations
 
-**Author** Akkadius
+**Author(s)** Akkadius
 
 Several times the topic of server size optimizations and the problems we had in the past have come up.
 
