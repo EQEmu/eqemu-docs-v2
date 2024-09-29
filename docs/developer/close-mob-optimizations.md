@@ -263,5 +263,23 @@ Here is the reformatted list, including the range mentioned in the function sign
 - **mob_movement_manager.h**
   - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
+## Part 3) Sending Packet Messages to Relevant Distances
 
+This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
+
+```cpp
+RULE_INT(Range, Say, 15, "The range that is required before /say or hail messages will work to an NPC");
+RULE_INT(Range, Emote, 135, "The packet range in which emote messages are sent'");
+RULE_INT(Range, BeginCast, 200, "The packet range in which begin cast messages are sent");
+RULE_INT(Range, Anims, 135, "The packet range in which begin cast messages are sent");
+RULE_INT(Range, SpellParticles, 135, "The packet range in which spell particles are sent");
+RULE_INT(Range, DamageMessages, 50, "The packet range in which damage messages are sent (non-crit)");
+RULE_INT(Range, SpellMessages, 75, "The packet range in which spell damage messages are sent");
+RULE_INT(Range, SongMessages, 75, "The packet range in which song messages are sent");
+RULE_INT(Range, StunMessages, 75, "The packet range in which stun messages are sent");
+RULE_INT(Range, ClientPositionUpdates, 300, "Distance in which the own changed position is communicated to other clients");
+RULE_INT(Range, CriticalDamage, 80, "The packet range in which critical hit messages are sent");
+RULE_INT(Range, MobCloseScanDistance, 600, "Close scan distance");
+RULE_INT(Range, MaxDistanceToClickDoors, 100, "Max distance that a client can click a door from (Client says 'You can't reach that' at roughly ;25-50 for most doors)");
+```
 
