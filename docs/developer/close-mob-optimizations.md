@@ -49,9 +49,13 @@ entities as we loop through the entire entity list. The below list are examples 
 * **Position Updates** - Position updates are sent zone wide to every client regardless of distance as NPC's move across
   the map, as players move across the map. These can be sent far more conservatively - only sending position updates zone wide when we really need to.
 
+After thinking through all of this, it can be easy to see where all of this adds up.
+
 # Solution(s)
 
 Now you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
+
+## Part 1) Close Mob Lists
 
 **Why don't we just act against the closest relevant NPCs?**
 
@@ -66,7 +70,7 @@ Below is a visual representation of what used to happen in the codebase relative
 |--|--|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
 
-## Scanning
+### Scanning
 
 Let's dive into how the mechanics work.
 
@@ -85,7 +89,7 @@ of the close list of every mob. Most of the time, entities have less than ~10-50
 
 Checks are made to ensure we don't add the same mob twice in any scenario.
 
-### Relevant Code
+#### Relevant Code
 
 Here are the relevant mob member variables
 
@@ -170,12 +174,13 @@ For both client / npc the code is called in each entities respective Mob/Client:
 ### Scanning Dynamic Interval Timer
 
 Scanning frequency changes depending on whether an entity is moving or idle. This is to keep computational expenses very
-low. This is determined by `Client::mob_close_scan_timer` and `Mob::mob_close_scan_timer`
+low. 
+
+This is determined by `Mob::mob_close_scan_timer` and calculted during invocation of `Mob::CheckScanCloseMobsMovingTimer`
 
 | **Entity Type** | **Idle** | **Moving**      |  
 |-----------------|----------|-----------------|  
-| Client          | 1 minute | 6 seconds (tic) |  
-| NPC             | 1 minute | 6 seconds (tic) |  
+| Mob          | 1 minute | 6 seconds (tic) |  
 
 For NPC's we have a `Mob::m_mob_check_moving_timer` which is throttled to once a second to keep computational checks light
 to check if an NPC is moving or not to change the scan timer.
@@ -197,6 +202,66 @@ Mob::~Mob() {
 
 #### **What if an NPC is beyond the scan range?**
 
-Simple. Every time `GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
+Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
+
+## Part 2) Position Updates
+
+Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead. 
+
+We now only send position updates to entities close to clients and do full zone updates under certain circumstances.
+
+While the simple answer is to only send position updates to close mobs, there's a few things we have to do to ensure we don't fall out of sync under certain edge cases.
+
+### Bulk Send Position Updates
+
+When we enter a zone we get a full send of the entity list of spawn locations, appearance etc.
+
+After that initial send we only get sent zone wide updates under specific circumstances.
+
+This is handled by `Client::CheckSendBulkClientPositionUpdate()` after a client has traveled enough distance to warrant a full zone sync all mobs (Clients and NPCs).
+
+For clients, the client requires a position update roughly every 10 seconds, so if a client is out of range we just send one every 10 seconds.
+
+**Client::Process**
+
+```cpp
+if (!IsMoving() && m_position_update_timer.Check()) {
+  SentPositionPacket(0.0f, 0.0f, 0.0f, 0.0f, 0);
+}
+```
+
+Here are the ranges specified in our movement updates
+
+Here is the reformatted list, including the range mentioned in the function signature:
+
+- **client.cpp**
+  - CheckSendBulkClientPositionUpdate - `ClientRangeAny`
+- **client_packet.cpp**
+  - Handle_OP_ClientUpdate - (Not specified in the usage snippet)
+- **mob.cpp**
+  - GMMove (1st usage) - `ClientRangeAny`
+  - GMMove (2nd usage) - `ClientRangeAny`
+- **mob_movement_manager.cpp**
+  - StopMovingCommand - `ClientRangeCloseMedium`
+  - MoveToCommand (1st usage) - `ClientRangeCloseMedium`
+  - MoveToCommand (2nd usage) - `ClientRangeCloseMedium`
+  - MoveToCommand (3rd usage) - `ClientRangeCloseMedium`
+  - EvadeCombatCommand - `ClientRangeCloseMedium`
+  - TeleportToCommand - `ClientRangeAny`
+  - SwimToCommand (1st usage) - `ClientRangeCloseMedium`
+  - SwimToCommand (2nd usage) - `ClientRangeCloseMedium`
+  - SwimToCommand (3rd usage) - `ClientRangeCloseMedium`
+  - FlyToCommand (1st usage) - `ClientRangeCloseMedium`
+  - FlyToCommand (2nd usage) - `ClientRangeCloseMedium`
+  - FlyToCommand (3rd usage) - `ClientRangeCloseMedium`
+  - RotateToCommand (1st usage) - `ClientRangeCloseMedium`
+  - RotateToCommand (2nd usage) - `ClientRangeCloseMedium`
+- **spells.cpp**
+  - Spin - `ClientRangeAny`
+- **movement.cpp**
+  - command_movement - `ClientRangeAny`
+- **mob_movement_manager.h**
+  - SendCommandToClients (Declaration) - (Range not specified in this snippet)
+
 
 
