@@ -1,3 +1,7 @@
+# Developer Blog - Close Mob Optimizations
+
+**Author** Akkadius
+
 I've been asked about close mob optimizations a few times so I finally wanted to spend some time to clearly break it all down and explain to folks passing in conversations the problem, solutions and pieces around it.
 
 | Before | After |
