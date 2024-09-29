@@ -1,18 +1,13 @@
-I've been asked about these optimizations a few times and I want to explain why it was one of the most impactful
-performance things to add to the EQEmu codebase.
+I've been asked about close mob optimizations a few times so I finally wanted to spend some time to clearly break it all down and explain to folks passing in conversations the problem, solutions and pieces around it.
 
-### Before
-
-<img width="1399" alt="image" src="https://github.com/user-attachments/assets/d37ce5b9-3112-4476-9b42-ffd306a09589">  
-
-### After
-
-<img width="1406" alt="image" src="https://github.com/user-attachments/assets/7f8b5e5c-b81d-4c53-acfb-3f4ec4584f1b">  
+| Before | After |
+|--|--|
+| ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/d37ce5b9-3112-4476-9b42-ffd306a09589) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/7f8b5e5c-b81d-4c53-acfb-3f4ec4584f1b) |
 
 Whenever the system was fully rolled out, it dropped CPU utilization roughly 80% and network send dropped dramatically
 as well. I'll break it down in the sections below.
 
-# Introduction - The Problem
+# The Problem
 
 EQEmu had a bit of a scaling issue when it came to number of entities in a zone. Everything every entity does used to
 get sent to every single entity regardless of distance. Core functions would calculate against every entity regardless
@@ -23,10 +18,11 @@ thousands of times a second performing expensive checks over (N) NPC's when all 
 entities closest to you.
 
 Imagine you have a zone with 500-1000 entities between clients and NPCs. Here's what's happening against all of those
-entities
+entities as we loop through the entire entity list. The below list are examples and does not contain everything.
 
-* **Aggro Scanning** - NPC aggro scanning would hit all entities and check multiple times per second per entity. This
+* **NPC to NPC Aggro Scanning** - NPC aggro scanning would hit all entities and check multiple times per second per entity. This
   goes for client aggro scanning and NPC aggro scanning.
+* **Client to MPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
 * **Auras** - When auras are being processed, they loop all entities, performing distance checks before determining
 * **AE Spells** - When AE spells of any sort are processed, rains, waves, the entire entity list is being looped (600
   NPCs) versus maybe the 4 relevant entities around you and distance checks done for every entity.
@@ -57,7 +53,7 @@ Now you can start to see where all of these interactions add up tremendously in 
 Instead of always looping through the entity list excessively and tens of thousands of times a second in some cases, how
 can we reduce that cost by upwards of 100x?
 
-We keep a list of close mobs relevant to each mob (client, npc, bot etc.) and that's achieved through dynamicscanning.  
+We keep a list of close mobs relevant to each mob (client, npc, bot etc.) and that's achieved through dynamic scanning.  
 
 | Before | After |
 |--|--|
@@ -101,6 +97,10 @@ depending on whether an NPC is idle or moving.
 | Client          | Client::Process |  
 | NPC             | NPC::Process    |  
 
+```
+Mob::ScanCloseMobProcess()
+```
+
 For both client / npc the code is called in each entities respective Mob/Client::Process() branches.
 
 ```cpp  
@@ -117,5 +117,20 @@ low. This is determined by `Client::mob_close_scan_timer` and `Mob::mob_close_sc
 | Client          | 1 minute | 6 seconds (tic) |  
 | NPC             | 1 minute | 6 seconds (tic) |  
 
-For NPC's we have a `Mob::mob_check_moving_timer` which is throttled to once a second to keep computational checks light
+For NPC's we have a `Mob::m_mob_check_moving_timer` which is throttled to once a second to keep computational checks light
 to check if an NPC is moving or not to change the scan timer.
+
+### Book Keeping
+
+In order to ensure we don't have dangling pointers, crashes we have to clean this close mob list up when entities die.
+
+In the mob destructor we cleanup
+
+```cpp
+Mob::~Mob() {
+  // ... destructor code
+  entity_list.RemoveMobFromCloseLists(this);
+  m_close_mobs.clear();
+```
+
+
