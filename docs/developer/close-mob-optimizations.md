@@ -112,39 +112,39 @@ EntityList::GetCloseMobList(Mob *mob, float distance);
 Here is the reformatted list showing just the file and the function:
 
 - **attack.cpp**
-  - Attack
+    - Attack
 - **effects.cpp**
-  - AEAttack
-  - AESpell
-  - AETaunt
-  - MassGroupBuff
+    - AEAttack
+    - AESpell
+    - AETaunt
+    - MassGroupBuff
 - **entity.cpp**
-  - GetTargetsForVirusEffect
-  - QuestJournalledSayClose
-  - QueueCloseClients
+    - GetTargetsForVirusEffect
+    - QuestJournalledSayClose
+    - QueueCloseClients
 - **mob.cpp**
-  - Say
+    - Say
 - **npc.cpp**
-  - AICheckCloseBeneficialSpells
-  - AIYellForHelp
+    - AICheckCloseBeneficialSpells
+    - AIYellForHelp
 - **spells.cpp**
-  - SpellFinished
+    - SpellFinished
 - **aura.cpp**
-  - ProcessEnterTrap
-  - ProcessExitTrap
-  - ProcessOnAllFriendlies
-  - ProcessOnAllGroupMembers
-  - ProcessOnGroupMembersPets
-  - ProcessSpawns
-  - ProcessTotem
+    - ProcessEnterTrap
+    - ProcessExitTrap
+    - ProcessOnAllFriendlies
+    - ProcessOnAllGroupMembers
+    - ProcessOnGroupMembersPets
+    - ProcessSpawns
+    - ProcessTotem
 - **client.cpp**
-  - ClientToNpcAggroProcess
+    - ClientToNpcAggroProcess
 - **mob.cpp**
-  - IsCloseToBanker
-  - SetBottomRampageList
-  - SetTopRampageList
+    - IsCloseToBanker
+    - SetBottomRampageList
+    - SetTopRampageList
 - **npc.cpp**
-  - DoNpcToNpcAggroScan
+    - DoNpcToNpcAggroScan
 
 ### Initial Scan
 
@@ -235,33 +235,33 @@ Here are the ranges specified in our movement updates
 Here is the reformatted list, including the range mentioned in the function signature:
 
 - **client.cpp**
-  - CheckSendBulkClientPositionUpdate - `ClientRangeAny`
+    - CheckSendBulkClientPositionUpdate - `ClientRangeAny`
 - **client_packet.cpp**
-  - Handle_OP_ClientUpdate - (Not specified in the usage snippet)
+    - Handle_OP_ClientUpdate - (Not specified in the usage snippet)
 - **mob.cpp**
-  - GMMove (1st usage) - `ClientRangeAny`
-  - GMMove (2nd usage) - `ClientRangeAny`
+    - GMMove (1st usage) - `ClientRangeAny`
+    - GMMove (2nd usage) - `ClientRangeAny`
 - **mob_movement_manager.cpp**
-  - StopMovingCommand - `ClientRangeCloseMedium`
-  - MoveToCommand (1st usage) - `ClientRangeCloseMedium`
-  - MoveToCommand (2nd usage) - `ClientRangeCloseMedium`
-  - MoveToCommand (3rd usage) - `ClientRangeCloseMedium`
-  - EvadeCombatCommand - `ClientRangeCloseMedium`
-  - TeleportToCommand - `ClientRangeAny`
-  - SwimToCommand (1st usage) - `ClientRangeCloseMedium`
-  - SwimToCommand (2nd usage) - `ClientRangeCloseMedium`
-  - SwimToCommand (3rd usage) - `ClientRangeCloseMedium`
-  - FlyToCommand (1st usage) - `ClientRangeCloseMedium`
-  - FlyToCommand (2nd usage) - `ClientRangeCloseMedium`
-  - FlyToCommand (3rd usage) - `ClientRangeCloseMedium`
-  - RotateToCommand (1st usage) - `ClientRangeCloseMedium`
-  - RotateToCommand (2nd usage) - `ClientRangeCloseMedium`
+    - StopMovingCommand - `ClientRangeCloseMedium`
+    - MoveToCommand (1st usage) - `ClientRangeCloseMedium`
+    - MoveToCommand (2nd usage) - `ClientRangeCloseMedium`
+    - MoveToCommand (3rd usage) - `ClientRangeCloseMedium`
+    - EvadeCombatCommand - `ClientRangeCloseMedium`
+    - TeleportToCommand - `ClientRangeAny`
+    - SwimToCommand (1st usage) - `ClientRangeCloseMedium`
+    - SwimToCommand (2nd usage) - `ClientRangeCloseMedium`
+    - SwimToCommand (3rd usage) - `ClientRangeCloseMedium`
+    - FlyToCommand (1st usage) - `ClientRangeCloseMedium`
+    - FlyToCommand (2nd usage) - `ClientRangeCloseMedium`
+    - FlyToCommand (3rd usage) - `ClientRangeCloseMedium`
+    - RotateToCommand (1st usage) - `ClientRangeCloseMedium`
+    - RotateToCommand (2nd usage) - `ClientRangeCloseMedium`
 - **spells.cpp**
-  - Spin - `ClientRangeAny`
+    - Spin - `ClientRangeAny`
 - **movement.cpp**
-  - command_movement - `ClientRangeAny`
+    - command_movement - `ClientRangeAny`
 - **mob_movement_manager.h**
-  - SendCommandToClients (Declaration) - (Range not specified in this snippet)
+    - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
 ## Part 3) Sending Packet Messages to Relevant Distances
 
