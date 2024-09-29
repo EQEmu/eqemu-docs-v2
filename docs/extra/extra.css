@@ -54,7 +54,7 @@ body .md-sidebar--primary .md-sidebar__scrollwrap {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        opacity: .05;
+        opacity: .03;
         animation: changeBg 420s infinite;
         -webkit-transition: background 420s linear;
         -moz-transition: background 420s linear;
