@@ -79,6 +79,63 @@ of the close list of every mob. Most of the time, entities have less than ~10-50
 
 Checks are made to ensure we don't add the same mob twice in any scenario.
 
+### Relevant Code
+
+Here are the relevant mob member variables
+
+```cpp
+std::unordered_map<uint16, Mob *> m_close_mobs;
+Timer                             m_scan_close_mobs_timer;
+Timer                             m_mob_check_moving_timer;
+```
+
+Relevant methods
+```cpp
+Mob::CheckScanCloseMobsMovingTimer();
+Mob::ScanCloseMobProcess();
+Mob::GetCloseMobList(float distance = 0);
+EntityList::GetCloseMobList(Mob *mob, float distance);
+```
+
+**GetCloseMobList** usages
+
+Here is the reformatted list showing just the file and the function:
+
+- **attack.cpp**
+  - Attack
+- **effects.cpp**
+  - AEAttack
+  - AESpell
+  - AETaunt
+  - MassGroupBuff
+- **entity.cpp**
+  - GetTargetsForVirusEffect
+  - QuestJournalledSayClose
+  - QueueCloseClients
+- **mob.cpp**
+  - Say
+- **npc.cpp**
+  - AICheckCloseBeneficialSpells
+  - AIYellForHelp
+- **spells.cpp**
+  - SpellFinished
+- **aura.cpp**
+  - ProcessEnterTrap
+  - ProcessExitTrap
+  - ProcessOnAllFriendlies
+  - ProcessOnAllGroupMembers
+  - ProcessOnGroupMembersPets
+  - ProcessSpawns
+  - ProcessTotem
+- **client.cpp**
+  - ClientToNpcAggroProcess
+- **mob.cpp**
+  - IsCloseToBanker
+  - SetBottomRampageList
+  - SetTopRampageList
+- **npc.cpp**
+  - DoNpcToNpcAggroScan
+
 ### Initial Scan
 
 When an entity is created, we need to call the function - initial scan is invoked differently depending on the entity.
@@ -98,15 +155,11 @@ depending on whether an NPC is idle or moving.
 | Client          | Client::Process |  
 | NPC             | NPC::Process    |  
 
-```
+```cpp
 Mob::ScanCloseMobProcess()
 ```
 
 For both client / npc the code is called in each entities respective Mob/Client::Process() branches.
-
-```cpp  
-Mob::ScanCloseMobProcess()  
-```  
 
 ### Scanning Dynamic Interval Timer
 
