@@ -7,6 +7,7 @@ I've been asked about close mob optimizations a few times so I finally wanted to
 | Before | After |
 |--|--|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/d37ce5b9-3112-4476-9b42-ffd306a09589) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/7f8b5e5c-b81d-4c53-acfb-3f4ec4584f1b) |
+| ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
 
 Whenever the system was fully rolled out, it dropped CPU utilization roughly 80% and network send dropped dramatically
 as well. I'll break it down in the sections below.
