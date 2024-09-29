@@ -401,4 +401,4 @@ Reworked how all log calls are made in the source
 
 ## All Other Performance Changes
 
-For anything not explicitly mentioned in the blog. Search "Performance" or "Optimization" in https://github.com/EQEmu/Server/tree/4d11077b216ebc7cab73ff4606bd6b6b4123f00c for more
+For anything not explicitly mentioned in the blog. Search "Performance" or "Optimization" in https://github.com/EQEmu/Server/blob/master/CHANGELOG.md for more
