@@ -277,6 +277,8 @@ Here is the reformatted list, including the range mentioned in the function sign
 
 **Year** 2017
 
+Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
+
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
 This made cost savings but not as dramatic as the close mob list optimizations themselves. They compliment the close mob changes because the packet send functions can utilize the same list instead of looping the whole entity list.
@@ -297,3 +299,25 @@ RULE_INT(Range, MobCloseScanDistance, 600, "Close scan distance");
 RULE_INT(Range, MaxDistanceToClickDoors, 100, "Max distance that a client can click a door from (Client says 'You can't reach that' at roughly ;25-50 for most doors)");
 ```
 
+## Optimization - Send Animation Packets Less
+
+**Year** 2017
+
+Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
+
+Notes from original commit
+
+``` 
+	- HP Updates now only send to others when HP percentage changes (0-100%)
+		- HP Updates were sending excessively even during idle zones when HP wasn't changing at all
+	- Attack animations now only send once per second versus up to a hundred times a second per Mob/Client
+	- 17,000 OP_ClientUpdate packets per second have been observed in combat scenarios, some of the major culprits have been
+		throttled without affecting what the client should see
+	- Before and After packet differences under similar load/tests (Packets per second)
+		- 7,000 - 8,000 	OP_Animation pps	After: 600-800 pps
+		- 13,0000 - 17,000 	OP_MobHealth pps	After: 1-10 pps
+		- 15,0000 - 20,000 	OP_ClientUpdate pps	After: 500-1,000 pps
+	- Packet reports from a 46 client test here:
+		https://gist.github.com/Akkadius/28b7ad2fdd82bdd15ea737c68f404346
+	- Servers who use Marquee HP updates will also recieve far less packet spam as they will only be sent when HP changes
+```
