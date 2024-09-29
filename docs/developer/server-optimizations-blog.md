@@ -10,7 +10,7 @@
 
     It may not be exhaustive, but it's a good start to understanding some of the notable optimizations we've made over time so we have something to link and reference.
 
-## Optimization - Mob Close Lists
+## Optimization - Close Mob Lists
 
 !!! info
 
@@ -43,7 +43,7 @@ entities as we loop through the entire entity list. The below list are examples 
   
     * **NPC to NPC Aggro Scanning** - NPC aggro scanning would hit all entities and check multiple times per second per entity. This
     goes for client aggro scanning and NPC aggro scanning.
-    * **Client to MPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
+    * **Client to NPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
     * **Auras** - When auras are being processed, they loop all entities, performing distance checks before determining
     * **Animations** - We would send animation packets to every client in the zone. When all that matters are clients closest to us.
     * **AE Spells** - When AE spells of any sort are processed, rains, waves, the entire entity list is being looped (600
