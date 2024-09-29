@@ -56,6 +56,8 @@ can we reduce that cost by upwards of 100x?
 
 We keep a list of close mobs relevant to each mob (client, npc, bot etc.) and that's achieved through dynamic scanning.  
 
+Below is a visual representation of what used to happen in the codebase relative to each entity versus how things behave today. Almost everything in the code that involved checking nearby NPC's would loop through all entities and perform expensive calculations. Today we just use the close mob list which reduces a ton of computational overhead.
+
 | Before | After |
 |--|--|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
@@ -186,5 +188,11 @@ Mob::~Mob() {
   entity_list.RemoveMobFromCloseLists(this);
   m_close_mobs.clear();
 ```
+
+### Frequently Asked Questions
+
+#### **What if an NPC is beyond the scan range?**
+
+Simple. Every time `GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
 
 
