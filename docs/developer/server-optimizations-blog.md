@@ -6,7 +6,15 @@ Several times the topic of server size optimizations and the problems we had in 
 
 I wanted to take a moment to write about some of the optimizations we've made to the server codebase to reduce CPU overhead, network send, database calls and improve performance.
 
-## Problem 1) Zone-wide Entity List Looping and Expensive Calculations
+It may not be exhaustive, but it's a good start to understanding some of the notable optimizations we've made over time so we have something to link and reference.
+
+## Optimization - Mob Close Lists
+
+**Year** 2019
+
+Initial PR - https://github.com/EQEmu/Server/pull/940
+
+Many PR's and iterations later, we had quite a few edge cases and bugs to work out. It's been rock solid for a few years now.
 
 | Before                                                                                                 | After                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -54,9 +62,9 @@ entities as we loop through the entire entity list. The below list are examples 
 
 After thinking through all of this, it can be easy to see where all of this adds up, you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
 
-### Solution - Close Mob Lists
+### Close Mob Lists
 
-**Why don't we just act against the closest relevant NPCs?**
+**Why don't we just act against the closest relevant mobs?**
 
 Instead of always looping through the entity list excessively and tens of thousands of times a second in some cases, how
 can we reduce that cost by upwards of 100x?
@@ -202,7 +210,9 @@ Mob::~Mob() {
 
 Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
 
-## Problem 2) Zone Wide Position Updates
+## Optimization - Zone Wide Position Updates
+
+**Year** 2022
 
 Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead.
 
@@ -263,7 +273,9 @@ Here is the reformatted list, including the range mentioned in the function sign
 - **mob_movement_manager.h**
     - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
-## Problem 3) Sending Packet Messages to Relevant Distances
+## Optimization - Sending Packet Messages to Relevant Distances
+
+**Year** 2017
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
