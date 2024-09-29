@@ -398,3 +398,7 @@ Reworked how all log calls are made in the source
 - This has increased binary executables roughly 15KB
 - The old extern for EQEmuLogSys is now named LogSys appropriately instead of Log (Ex: LogSys.StartFileLogs())
 - The result keeps logging footprint non-existent for when we're not logging that category
+
+## All Other Performance Changes
+
+For anything not explicitly mentioned in the blog. Search "Performance" or "Optimization" in https://github.com/EQEmu/Server/tree/4d11077b216ebc7cab73ff4606bd6b6b4123f00c for more
