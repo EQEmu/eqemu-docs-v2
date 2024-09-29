@@ -113,6 +113,7 @@ nav:
           - Build Pipeline: developer/build-pipeline.md
           - Codebase:
               - EQDictionary: developer/eqdictionary.md
+          - Close Mob Optimizations: developer/close-mob-optimizations.md
           - Database Conventions: developer/conventions-guidelines.md
           - Database Migrations: developer/database-schema-migrations.md
           - Logging: developer/logging.md
