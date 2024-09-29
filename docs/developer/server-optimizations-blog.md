@@ -375,3 +375,26 @@ Commit notes
   (export_zone) : $zoneid, $instanceid, $zoneln etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1083
   (export_mob) : $x, $y, $z, $h, $hpratio etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1032
   (export_event) : (event specific) IE: EVENT_SAY ($text) https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1141
+
+## Optimization - Logging Functions moved to Macros
+
+**Year** 2017
+
+Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
+
+Reworked how all log calls are made in the source
+
+- Before we used Log.Out, we will now use a macro Log(
+  - Before: Log.Out(Logs::General, Logs::Status, "Importing Spells...");
+  - After: Log(Logs::General, Logs::Status, "Importing Spells...");
+- The difference is
+  1) It's 200-300x faster especially when log statements are inside very hot code paths. We already
+     had most hot paths checked before we logged them, but this blankets all existing logging calls now and not just the
+     select few we had picked out in the source.
+  2) Strings don't get copied to the stack, popped and pushed constantly even when we hit a log statement that
+     actually isn't going to log anything.
+     - We do an 'if (LogSys.log_settings[log_category].is_category_enabled == 1)' before we call a log function
+     in the log macro so the log function doesn't get called at all if we're not logging the category
+- This has increased binary executables roughly 15KB
+- The old extern for EQEmuLogSys is now named LogSys appropriately instead of Log (Ex: LogSys.StartFileLogs())
+- The result keeps logging footprint non-existent for when we're not logging that category
