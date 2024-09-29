@@ -2,17 +2,21 @@
 
 **Author** Akkadius
 
-I've been asked about close mob optimizations a few times so I finally wanted to spend some time to clearly break it all down and explain to folks passing in conversations the problem, solutions and pieces around it.
+Several times the topic of server size optimizations and the problems we had in the past have come up.
 
-| Before | After |
-|--|--|
+I wanted to take a moment to discuss the close mob list optimizations we've made in the past year and how it has impacted the server.
+
+I'll also use this to discuss some of the other optimizations we've made over the years as well.
+
+| Before                                                                                                 | After                                                                                                  |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/d37ce5b9-3112-4476-9b42-ffd306a09589) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/7f8b5e5c-b81d-4c53-acfb-3f4ec4584f1b) |
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
 
 Whenever the system was fully rolled out, it dropped CPU utilization roughly 80% and network send dropped dramatically
 as well. I'll break it down in the sections below.
 
-## The Problem
+## Problem 1) Entity List Looping
 
 EQEmu had a bit of a scaling issue when it came to number of entities in a zone. Everything every entity does used to
 get sent to every single entity regardless of distance. Core functions would calculate against every entity regardless
@@ -52,21 +56,19 @@ entities as we loop through the entire entity list. The below list are examples 
 
 After thinking through all of this, it can be easy to see where all of this adds up, you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
 
-## Solution(s)
-
-### Part 1) Close Mob Lists
+### Solution - Close Mob Lists
 
 **Why don't we just act against the closest relevant NPCs?**
 
 Instead of always looping through the entity list excessively and tens of thousands of times a second in some cases, how
 can we reduce that cost by upwards of 100x?
 
-We keep a list of close mobs relevant to each mob (client, npc, bot etc.) and that's achieved through dynamic scanning.  
+We keep a list of close mobs relevant to each mob (client, npc, bot etc.) and that's achieved through dynamic scanning.
 
 Below is a visual representation of what used to happen in the codebase relative to each entity versus how things behave today. Almost everything in the code that involved checking nearby NPC's would loop through all entities and perform expensive calculations. Today we just use the close mob list which reduces a ton of computational overhead.
 
-| Before | After |
-|--|--|
+| Before                                                                                                 | After                                                                                                  |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
 
 #### Scanning
@@ -99,6 +101,7 @@ Timer                             m_mob_check_moving_timer;
 ```
 
 Relevant methods
+
 ```cpp
 Mob::CheckScanCloseMobsMovingTimer();
 Mob::ScanCloseMobProcess();
@@ -173,13 +176,13 @@ For both client / npc the code is called in each entities respective Mob/Client:
 #### Scanning Dynamic Interval Timer
 
 Scanning frequency changes depending on whether an entity is moving or idle. This is to keep computational expenses very
-low. 
+low.
 
 This is determined by `Mob::mob_close_scan_timer` and calculted during invocation of `Mob::CheckScanCloseMobsMovingTimer`
 
 | **Entity Type** | **Idle** | **Moving**      |  
 |-----------------|----------|-----------------|  
-| Mob          | 1 minute | 6 seconds (tic) |  
+| Mob             | 1 minute | 6 seconds (tic) |  
 
 For NPC's we have a `Mob::m_mob_check_moving_timer` which is throttled to once a second to keep computational checks light
 to check if an NPC is moving or not to change the scan timer.
@@ -197,21 +200,21 @@ Mob::~Mob() {
   m_close_mobs.clear();
 ```
 
-#### Frequently Asked Questions
-
-##### **What if an NPC is beyond the scan range?**
+#### **What if an NPC is beyond the scan range?**
 
 Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
 
-### Part 2) Position Updates
+## Problem 2) Zone Wide Position Updates
 
-Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead. 
+Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead.
 
 We now only send position updates to entities close to clients and do full zone updates under certain circumstances.
 
+### Simple Solution - Only Send Position Updates to Close Mobs
+
 While the simple answer is to only send position updates to close mobs, there's a few things we have to do to ensure we don't fall out of sync under certain edge cases.
 
-#### Bulk Send Position Updates
+### Solution - Bulk Send Position Updates
 
 When we enter a zone we get a full send of the entity list of spawn locations, appearance etc.
 
@@ -262,9 +265,11 @@ Here is the reformatted list, including the range mentioned in the function sign
 - **mob_movement_manager.h**
     - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
-### Part 3) Sending Packet Messages to Relevant Distances
+#### Problem 3) Sending Packet Messages to Relevant Distances
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
+
+This made cost savings but not as dramatic as the close mob list optimizations themselves. They compliment the close mob changes because the packet send functions can utilize the same list instead of looping the whole entity list.
 
 ```cpp
 RULE_INT(Range, Say, 15, "The range that is required before /say or hail messages will work to an NPC");
