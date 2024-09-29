@@ -49,11 +49,9 @@ entities as we loop through the entire entity list. The below list are examples 
 * **Position Updates** - Position updates are sent zone wide to every client regardless of distance as NPC's move across
   the map, as players move across the map. These can be sent far more conservatively - only sending position updates zone wide when we really need to.
 
-After thinking through all of this, it can be easy to see where all of this adds up.
+After thinking through all of this, it can be easy to see where all of this adds up, you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
 
 # Solution(s)
-
-Now you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
 
 ## Part 1) Close Mob Lists
 
