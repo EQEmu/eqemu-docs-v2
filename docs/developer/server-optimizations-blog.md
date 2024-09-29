@@ -10,9 +10,11 @@ It may not be exhaustive, but it's a good start to understanding some of the not
 
 ## Optimization - Mob Close Lists
 
-**Year** 2019
+!!! info
 
-Initial PR - https://github.com/EQEmu/Server/pull/940
+  **Year** 2019
+  
+  Initial PR - https://github.com/EQEmu/Server/pull/940
 
 Many PR's and iterations later, we had quite a few edge cases and bugs to work out. It's been rock solid for a few years now.
 
@@ -212,7 +214,9 @@ Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return
 
 ## Optimization - Zone Wide Position Updates
 
-**Year** 2022
+!!! info
+
+  **Year** 2022
 
 Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead.
 
@@ -275,9 +279,11 @@ Here is the reformatted list, including the range mentioned in the function sign
 
 ## Optimization - Sending Packet Messages to Relevant Distances
 
-**Year** 2017
+!!! info
 
-Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
+  **Year** 2017
+  
+  Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
@@ -301,9 +307,11 @@ RULE_INT(Range, MaxDistanceToClickDoors, 100, "Max distance that a client can cl
 
 ## Optimization - Send Animation Packets Less
 
-**Year** 2017
+!!! info
 
-Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
+  **Year** 2017
+  
+  Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
 
 Notes from original commit
 
@@ -328,9 +336,11 @@ We've made changes around this code since so you will need to look at the source
 
 ## Optimization - Perl Heavy Exports
 
-**Year** 2015
+!!! info
 
-Related commit - https://github.com/EQEmu/Server/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
+  **Year** 2015
+  
+  Related commit - https://github.com/EQEmu/Server/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
 
 Commit notes
 
@@ -378,9 +388,13 @@ Commit notes
 
 ## Optimization - Logging Functions moved to Macros
 
-**Year** 2017
+!!! info
 
-Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
+  **Year** 2017
+
+  Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
+
+Original notes
 
 Reworked how all log calls are made in the source
 
