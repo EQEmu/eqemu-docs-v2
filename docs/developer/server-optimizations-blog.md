@@ -4,9 +4,9 @@
 
 Several times the topic of server size optimizations and the problems we had in the past have come up.
 
-I wanted to take a moment to discuss the close mob list optimizations we've made in the past year and how it has impacted the server.
+I wanted to take a moment to write about some of the optimizations we've made to the server codebase to reduce CPU overhead, network send, database calls and improve performance.
 
-I'll also use this to discuss some of the other optimizations we've made over the years as well.
+## Problem 1) Zone-wide Entity List Looping and Expensive Calculations
 
 | Before                                                                                                 | After                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -15,8 +15,6 @@ I'll also use this to discuss some of the other optimizations we've made over th
 
 Whenever the system was fully rolled out, it dropped CPU utilization roughly 80% and network send dropped dramatically
 as well. I'll break it down in the sections below.
-
-## Problem 1) Entity List Looping
 
 EQEmu had a bit of a scaling issue when it came to number of entities in a zone. Everything every entity does used to
 get sent to every single entity regardless of distance. Core functions would calculate against every entity regardless
@@ -71,7 +69,7 @@ Below is a visual representation of what used to happen in the codebase relative
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | ![ezgif-4-3bc7d388a2](https://github.com/user-attachments/assets/7cb3210b-8259-4f3b-84d3-55c096a21c1a) | ![ezgif-4-9c62a2f608](https://github.com/user-attachments/assets/90056450-8a19-4cc8-b297-f41a5dfc03e9) |
 
-#### Scanning
+### Scanning
 
 Let's dive into how the mechanics work.
 
@@ -90,7 +88,7 @@ of the close list of every mob. Most of the time, entities have less than ~10-50
 
 Checks are made to ensure we don't add the same mob twice in any scenario.
 
-##### Relevant Code
+### Relevant Code
 
 Here are the relevant mob member variables
 
@@ -148,7 +146,7 @@ Here is the reformatted list showing just the file and the function:
 - **npc.cpp**
     - DoNpcToNpcAggroScan
 
-#### Initial Scan
+### Initial Scan
 
 When an entity is created, we need to call the function - initial scan is invoked differently depending on the entity.
 
@@ -157,7 +155,7 @@ When an entity is created, we need to call the function - initial scan is invoke
 | Client          | Client::CompleteConnect |  
 | NPC             | EntityList::AddNPC      |  
 
-#### Ongoing Scan
+### Ongoing Scan
 
 During the duration of an entities life, there is an ongoing scan based on a dynamic timer. This timer is also different
 depending on whether an NPC is idle or moving.
@@ -173,7 +171,7 @@ Mob::ScanCloseMobProcess()
 
 For both client / npc the code is called in each entities respective Mob/Client::Process() branches.
 
-#### Scanning Dynamic Interval Timer
+### Scanning Dynamic Interval Timer
 
 Scanning frequency changes depending on whether an entity is moving or idle. This is to keep computational expenses very
 low.
@@ -187,7 +185,7 @@ This is determined by `Mob::mob_close_scan_timer` and calculted during invocatio
 For NPC's we have a `Mob::m_mob_check_moving_timer` which is throttled to once a second to keep computational checks light
 to check if an NPC is moving or not to change the scan timer.
 
-#### Book Keeping
+### Book Keeping
 
 In order to ensure we don't have dangling pointers, crashes we have to clean this close mob list up when entities die.
 
@@ -200,7 +198,7 @@ Mob::~Mob() {
   m_close_mobs.clear();
 ```
 
-#### **What if an NPC is beyond the scan range?**
+### **What if an NPC is beyond the scan range?**
 
 Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return the close mob list if you pass in a distance less than the specified rule value `Range:MobCloseScanDistance`. If your code passes in a distance greater than this scan range, it will default to using the entire entity list. This solves for edge cases where you have a zone wide spell, zone wide AOE, aggro, taunt or otherwise.
 
@@ -210,11 +208,11 @@ Our server code used to send position updates for all NPC's and clients to the p
 
 We now only send position updates to entities close to clients and do full zone updates under certain circumstances.
 
-### Simple Solution - Only Send Position Updates to Close Mobs
+### Only Send Position Updates to Close Mobs
 
 While the simple answer is to only send position updates to close mobs, there's a few things we have to do to ensure we don't fall out of sync under certain edge cases.
 
-### Solution - Bulk Send Position Updates
+### Bulk Send Position Updates
 
 When we enter a zone we get a full send of the entity list of spawn locations, appearance etc.
 
@@ -265,7 +263,7 @@ Here is the reformatted list, including the range mentioned in the function sign
 - **mob_movement_manager.h**
     - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
-#### Problem 3) Sending Packet Messages to Relevant Distances
+## Problem 3) Sending Packet Messages to Relevant Distances
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
