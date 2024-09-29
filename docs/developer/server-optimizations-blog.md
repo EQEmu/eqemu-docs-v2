@@ -1,20 +1,22 @@
 # Developer Blog - Server Optimizations
 
-**Author(s)** Akkadius
+!!! info
 
-Several times the topic of server size optimizations and the problems we had in the past have come up.
+    **Author(s)** Akkadius
 
-I wanted to take a moment to write about some of the optimizations we've made to the server codebase to reduce CPU overhead, network send, database calls and improve performance.
+    Several times the topic of server size optimizations and the problems we had in the past have come up.
 
-It may not be exhaustive, but it's a good start to understanding some of the notable optimizations we've made over time so we have something to link and reference.
+    I wanted to take a moment to write about some of the optimizations we've made to the server codebase to reduce CPU overhead, network send, database calls and improve performance.
+
+    It may not be exhaustive, but it's a good start to understanding some of the notable optimizations we've made over time so we have something to link and reference.
 
 ## Optimization - Mob Close Lists
 
 !!! info
 
-  **Year** 2019
+    **Year** 2019
   
-  Initial PR - https://github.com/EQEmu/Server/pull/940
+    Initial PR - https://github.com/EQEmu/Server/pull/940
 
 Many PR's and iterations later, we had quite a few edge cases and bugs to work out. It's been rock solid for a few years now.
 
@@ -37,30 +39,32 @@ entities closest to you.
 Imagine you have a zone with 500-1000 entities between clients and NPCs. Here's what's happening against all of those
 entities as we loop through the entire entity list. The below list are examples and does not contain everything.
 
-* **NPC to NPC Aggro Scanning** - NPC aggro scanning would hit all entities and check multiple times per second per entity. This
-  goes for client aggro scanning and NPC aggro scanning.
-* **Client to MPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
-* **Auras** - When auras are being processed, they loop all entities, performing distance checks before determining
-* **Animations** - We would send animation packets to every client in the zone. When all that matters are clients closest to us.
-* **AE Spells** - When AE spells of any sort are processed, rains, waves, the entire entity list is being looped (600
-  NPCs) versus maybe the 4 relevant entities around you and distance checks done for every entity.
-* **AE Taunt** - Lots of special ability checks, distance checks, LOS
-* **Rampage** - Checking aggro, NPC, entity type.
-* **Say** - When an NPC says anything, it would otherwise loop the entire entity list to calculate distance.
-* **NPC Guard Assist** - Every NPC scans every single NPC for assisting during combat, performing expensive LOS checks,
-  faction, distance checks before determining if an NPC should assist.
-* **NPC Yell for Help** - (AIYellForHelp) Similar to assist, NPC scans list for distance, checking assist range to
-  determine if NPC can help another NPC. These checks can be intensely made many times a second.
-* **NPC Beneficial Cast Checks** - (AICheckCloseBeneficialSpells) When NPC's are checking to cast beneficial spells on
-  other NPC's, buffs, heals, etc. They are looping through the entire entity list, performing distance checks, LOS,
-  reverse faction, spell checks before ultimately determining if the NPC should cast the spell. This happens multiple
-  times per second per entity.
-* **QueueCloseClients** - Packet sending function used almost everywhere, would otherwise loop through the entire entity
-  list and calculate distance before sending the packet. For example this is used in the following packets - damage
-  update, death, client update, emote, yell for help, say, open door, send level appearance, spell effect, anim, spell
-  anim, spell interrupt, begin cast and more.
-* **Position Updates** - Position updates are sent zone wide to every client regardless of distance as NPC's move across
-  the map, as players move across the map. These can be sent far more conservatively - only sending position updates zone wide when we really need to.
+!!! info
+  
+    * **NPC to NPC Aggro Scanning** - NPC aggro scanning would hit all entities and check multiple times per second per entity. This
+    goes for client aggro scanning and NPC aggro scanning.
+    * **Client to MPC Aggro Scanning** - Clients would multiple times per second, per client loop through the entire entity list to determine whether or not they should aggro an NPC.
+    * **Auras** - When auras are being processed, they loop all entities, performing distance checks before determining
+    * **Animations** - We would send animation packets to every client in the zone. When all that matters are clients closest to us.
+    * **AE Spells** - When AE spells of any sort are processed, rains, waves, the entire entity list is being looped (600
+      NPCs) versus maybe the 4 relevant entities around you and distance checks done for every entity.
+    * **AE Taunt** - Lots of special ability checks, distance checks, LOS
+    * **Rampage** - Checking aggro, NPC, entity type.
+    * **Say** - When an NPC says anything, it would otherwise loop the entire entity list to calculate distance.
+    * **NPC Guard Assist** - Every NPC scans every single NPC for assisting during combat, performing expensive LOS checks,
+      faction, distance checks before determining if an NPC should assist.
+    * **NPC Yell for Help** - (AIYellForHelp) Similar to assist, NPC scans list for distance, checking assist range to
+      determine if NPC can help another NPC. These checks can be intensely made many times a second.
+    * **NPC Beneficial Cast Checks** - (AICheckCloseBeneficialSpells) When NPC's are checking to cast beneficial spells on
+      other NPC's, buffs, heals, etc. They are looping through the entire entity list, performing distance checks, LOS,
+      reverse faction, spell checks before ultimately determining if the NPC should cast the spell. This happens multiple
+      times per second per entity.
+    * **QueueCloseClients** - Packet sending function used almost everywhere, would otherwise loop through the entire entity
+      list and calculate distance before sending the packet. For example this is used in the following packets - damage
+      update, death, client update, emote, yell for help, say, open door, send level appearance, spell effect, anim, spell
+      anim, spell interrupt, begin cast and more.
+    * **Position Updates** - Position updates are sent zone wide to every client regardless of distance as NPC's move across
+      the map, as players move across the map. These can be sent far more conservatively - only sending position updates zone wide when we really need to.
 
 After thinking through all of this, it can be easy to see where all of this adds up, you can start to see where all of these interactions add up tremendously in overhead and wasted CPU cycles.
 
@@ -119,42 +123,44 @@ EntityList::GetCloseMobList(Mob *mob, float distance);
 
 **GetCloseMobList** usages
 
-Here is the reformatted list showing just the file and the function:
+!!! info
 
-- **attack.cpp**
-    - Attack
-- **effects.cpp**
-    - AEAttack
-    - AESpell
-    - AETaunt
-    - MassGroupBuff
-- **entity.cpp**
-    - GetTargetsForVirusEffect
-    - QuestJournalledSayClose
-    - QueueCloseClients
-- **mob.cpp**
-    - Say
-- **npc.cpp**
-    - AICheckCloseBeneficialSpells
-    - AIYellForHelp
-- **spells.cpp**
-    - SpellFinished
-- **aura.cpp**
-    - ProcessEnterTrap
-    - ProcessExitTrap
-    - ProcessOnAllFriendlies
-    - ProcessOnAllGroupMembers
-    - ProcessOnGroupMembersPets
-    - ProcessSpawns
-    - ProcessTotem
-- **client.cpp**
-    - ClientToNpcAggroProcess
-- **mob.cpp**
-    - IsCloseToBanker
-    - SetBottomRampageList
-    - SetTopRampageList
-- **npc.cpp**
-    - DoNpcToNpcAggroScan
+    Here is the reformatted list showing just the file and the function:
+
+    - **attack.cpp**
+        - Attack
+    - **effects.cpp**
+        - AEAttack
+        - AESpell
+        - AETaunt
+        - MassGroupBuff
+    - **entity.cpp**
+        - GetTargetsForVirusEffect
+        - QuestJournalledSayClose
+        - QueueCloseClients
+    - **mob.cpp**
+        - Say
+    - **npc.cpp**
+        - AICheckCloseBeneficialSpells
+        - AIYellForHelp
+    - **spells.cpp**
+        - SpellFinished
+    - **aura.cpp**
+        - ProcessEnterTrap
+        - ProcessExitTrap
+        - ProcessOnAllFriendlies
+        - ProcessOnAllGroupMembers
+        - ProcessOnGroupMembersPets
+        - ProcessSpawns
+        - ProcessTotem
+    - **client.cpp**
+        - ClientToNpcAggroProcess
+    - **mob.cpp**
+        - IsCloseToBanker
+        - SetBottomRampageList
+        - SetTopRampageList
+    - **npc.cpp**
+        - DoNpcToNpcAggroScan
 
 ### Initial Scan
 
@@ -216,7 +222,7 @@ Simple. Every time `Mob::GetCloseMobList()` is called, by default it will return
 
 !!! info
 
-  **Year** 2022
+    **Year** 2022
 
 Our server code used to send position updates for all NPC's and clients to the player zone wide. This resulted in excess of packet sending and waste of CPU overhead.
 
@@ -248,42 +254,44 @@ Here are the ranges specified in our movement updates
 
 Here is the reformatted list, including the range mentioned in the function signature:
 
-- **client.cpp**
-    - CheckSendBulkClientPositionUpdate - `ClientRangeAny`
-- **client_packet.cpp**
-    - Handle_OP_ClientUpdate - (Not specified in the usage snippet)
-- **mob.cpp**
-    - GMMove (1st usage) - `ClientRangeAny`
-    - GMMove (2nd usage) - `ClientRangeAny`
-- **mob_movement_manager.cpp**
-    - StopMovingCommand - `ClientRangeCloseMedium`
-    - MoveToCommand (1st usage) - `ClientRangeCloseMedium`
-    - MoveToCommand (2nd usage) - `ClientRangeCloseMedium`
-    - MoveToCommand (3rd usage) - `ClientRangeCloseMedium`
-    - EvadeCombatCommand - `ClientRangeCloseMedium`
-    - TeleportToCommand - `ClientRangeAny`
-    - SwimToCommand (1st usage) - `ClientRangeCloseMedium`
-    - SwimToCommand (2nd usage) - `ClientRangeCloseMedium`
-    - SwimToCommand (3rd usage) - `ClientRangeCloseMedium`
-    - FlyToCommand (1st usage) - `ClientRangeCloseMedium`
-    - FlyToCommand (2nd usage) - `ClientRangeCloseMedium`
-    - FlyToCommand (3rd usage) - `ClientRangeCloseMedium`
-    - RotateToCommand (1st usage) - `ClientRangeCloseMedium`
-    - RotateToCommand (2nd usage) - `ClientRangeCloseMedium`
-- **spells.cpp**
-    - Spin - `ClientRangeAny`
-- **movement.cpp**
-    - command_movement - `ClientRangeAny`
-- **mob_movement_manager.h**
-    - SendCommandToClients (Declaration) - (Range not specified in this snippet)
+!!! info
+  
+    - **client.cpp**
+      - CheckSendBulkClientPositionUpdate - `ClientRangeAny`
+    - **client_packet.cpp**
+        - Handle_OP_ClientUpdate - (Not specified in the usage snippet)
+    - **mob.cpp**
+        - GMMove (1st usage) - `ClientRangeAny`
+        - GMMove (2nd usage) - `ClientRangeAny`
+    - **mob_movement_manager.cpp**
+        - StopMovingCommand - `ClientRangeCloseMedium`
+        - MoveToCommand (1st usage) - `ClientRangeCloseMedium`
+        - MoveToCommand (2nd usage) - `ClientRangeCloseMedium`
+        - MoveToCommand (3rd usage) - `ClientRangeCloseMedium`
+        - EvadeCombatCommand - `ClientRangeCloseMedium`
+        - TeleportToCommand - `ClientRangeAny`
+        - SwimToCommand (1st usage) - `ClientRangeCloseMedium`
+        - SwimToCommand (2nd usage) - `ClientRangeCloseMedium`
+        - SwimToCommand (3rd usage) - `ClientRangeCloseMedium`
+        - FlyToCommand (1st usage) - `ClientRangeCloseMedium`
+        - FlyToCommand (2nd usage) - `ClientRangeCloseMedium`
+        - FlyToCommand (3rd usage) - `ClientRangeCloseMedium`
+        - RotateToCommand (1st usage) - `ClientRangeCloseMedium`
+        - RotateToCommand (2nd usage) - `ClientRangeCloseMedium`
+    - **spells.cpp**
+        - Spin - `ClientRangeAny`
+    - **movement.cpp**
+        - command_movement - `ClientRangeAny`
+    - **mob_movement_manager.h**
+        - SendCommandToClients (Declaration) - (Range not specified in this snippet)
 
 ## Optimization - Sending Packet Messages to Relevant Distances
 
 !!! info
 
-  **Year** 2017
-  
-  Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
+    **Year** 2017
+    
+    Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
@@ -309,13 +317,14 @@ RULE_INT(Range, MaxDistanceToClickDoors, 100, "Max distance that a client can cl
 
 !!! info
 
-  **Year** 2017
-  
-  Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
+    **Year** 2017
+    
+    Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
 
 Notes from original commit
 
-``` 
+!!! quote
+
 	- HP Updates now only send to others when HP percentage changes (0-100%)
 		- HP Updates were sending excessively even during idle zones when HP wasn't changing at all
 	- Attack animations now only send once per second versus up to a hundred times a second per Mob/Client
@@ -328,90 +337,94 @@ Notes from original commit
 	- Packet reports from a 46 client test here:
 		https://gist.github.com/Akkadius/28b7ad2fdd82bdd15ea737c68f404346
 	- Servers who use Marquee HP updates will also recieve far less packet spam as they will only be sent when HP changes
-```
 
-Packet report https://gist.github.com/Akkadius/28b7ad2fdd82bdd15ea737c68f404346
 
-We've made changes around this code since so you will need to look at the source to see the latest record of how these changes are implemented.
+!!! info
+
+    We've made changes around this code since so you will need to look at the source to see the latest record of how these changes are implemented.
 
 ## Optimization - Perl Heavy Exports
 
 !!! info
 
-  **Year** 2015
-  
-  Related commit - https://github.com/EQEmu/Server/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
+    **Year** 2015
+    
+    Related commit - https://github.com/EQEmu/Server/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
 
 Commit notes
 
-- Added Rate limit the rate in which signals are processed for NPC's (.5 seconds instead of .01 seconds)
-  Added Perl Export Settings which should heavily reduce the Perl footprint
-- Normally when any sub EVENT_ gets triggered, all kinds of variables have to get exported every single time an event is triggered and
-  this can make Perl very slow when events are triggered constantly
-  - The two most taxing variable exports are the item variables ($itemcount{} $hasitem{} $oncursor{}) and qglobals ($qglobals{})
-  - qglobals can pose to be an issue quickly when global qglobals build up, it is highly recommend to use the GetGlobal() and SetGlobal()
-  methods instead as they don't reference the hashmap $qglobals{} that is rebuilt every single time a sub event is triggered
-- A stress test conducted with 10,000 samples shows an excess of time taken to export variables: http://i.imgur.com/NEpW1tS.png
-- After the Perl Export Settings table is implemented, and all exports are shut off you see the following test result:
-  http://i.imgur.com/Du5hth9.png
-- The difference of eliminating uneeded exports brings the overhead and footprint of 10,000 triggers from 54 seconds to 2 seconds
-- In a 10,000 sample test (10,000 sub event triggers), exporting item variables adds 12 seconds alone, when item variables are only needed in
-  EVENT_ITEM and EVENT_SAY a majority of the time if at all
-- In a 10,000 sample test (10,000 sub event triggers), exporting qglobals with approximately 1,000 global qglobals in the database creates
-  about 11-20 seconds of delay on its own (Depending on hardware of course)
-- I've written a parser that has determined which of these exports are needed in which sub routines and have turned off all of the unneeded
-  exports in sub routines that do not need them and used it to create the default table that will be installed in the database.
-- The export table is called 'perl_event_export_settings' and it resembles the following structure and contains all current 81 EVENTS
-  - If an entry doesn't exist in this table and a new subroutine is added to the source, all exports will be on by default for that routine
+!!! quote
 
-```
-+----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
-| event_id | event_description                       | export_qglobals | export_mob | export_zone | export_item | export_event |
-+----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
-|        0 | EVENT_SAY                               |               1 |          1 |           1 |           1 |            1 |
-|        1 | EVENT_ITEM                              |               1 |          1 |           1 |           0 |            1 |
-|        2 | EVENT_DEATH                             |               1 |          1 |           1 |           0 |            1 |
-|        3 | EVENT_SPAWN                             |               1 |          1 |           1 |           0 |            1 |
-|        4 | EVENT_ATTACK                            |               0 |          1 |           1 |           0 |            1 |
-|        5 | EVENT_COMBAT                            |               1 |          1 |           1 |           0 |            1 |
-+----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
-```
-
-- If a change is made to this table while the server is live and running, you can hot reload all zone process settings via:
-  #reloadperlexportsettings
-- For those who wonder what "exports" are, they are reference to variables that are made available at runtime of the sub event, such as:
-  (export_qglobals) (Heavy) : $qglobals https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L916
-  (export_item) (Heavy) : $itemcount{} $hasitem{} $oncursor{} https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1103
-  (export_zone) : $zoneid, $instanceid, $zoneln etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1083
-  (export_mob) : $x, $y, $z, $h, $hpratio etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1032
-  (export_event) : (event specific) IE: EVENT_SAY ($text) https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1141
+    - Added Rate limit the rate in which signals are processed for NPC's (.5 seconds instead of .01 seconds)
+      Added Perl Export Settings which should heavily reduce the Perl footprint
+    - Normally when any sub EVENT_ gets triggered, all kinds of variables have to get exported every single time an event is triggered and
+      this can make Perl very slow when events are triggered constantly
+      - The two most taxing variable exports are the item variables ($itemcount{} $hasitem{} $oncursor{}) and qglobals ($qglobals{})
+      - qglobals can pose to be an issue quickly when global qglobals build up, it is highly recommend to use the GetGlobal() and SetGlobal()
+      methods instead as they don't reference the hashmap $qglobals{} that is rebuilt every single time a sub event is triggered
+    - A stress test conducted with 10,000 samples shows an excess of time taken to export variables: http://i.imgur.com/NEpW1tS.png
+    - After the Perl Export Settings table is implemented, and all exports are shut off you see the following test result:
+      http://i.imgur.com/Du5hth9.png
+    - The difference of eliminating uneeded exports brings the overhead and footprint of 10,000 triggers from 54 seconds to 2 seconds
+    - In a 10,000 sample test (10,000 sub event triggers), exporting item variables adds 12 seconds alone, when item variables are only needed in
+      EVENT_ITEM and EVENT_SAY a majority of the time if at all
+    - In a 10,000 sample test (10,000 sub event triggers), exporting qglobals with approximately 1,000 global qglobals in the database creates
+      about 11-20 seconds of delay on its own (Depending on hardware of course)
+    - I've written a parser that has determined which of these exports are needed in which sub routines and have turned off all of the unneeded
+      exports in sub routines that do not need them and used it to create the default table that will be installed in the database.
+    - The export table is called 'perl_event_export_settings' and it resembles the following structure and contains all current 81 EVENTS
+      - If an entry doesn't exist in this table and a new subroutine is added to the source, all exports will be on by default for that routine
+  
+    ```
+    +----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
+    | event_id | event_description                       | export_qglobals | export_mob | export_zone | export_item | export_event |
+    +----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
+    |        0 | EVENT_SAY                               |               1 |          1 |           1 |           1 |            1 |
+    |        1 | EVENT_ITEM                              |               1 |          1 |           1 |           0 |            1 |
+    |        2 | EVENT_DEATH                             |               1 |          1 |           1 |           0 |            1 |
+    |        3 | EVENT_SPAWN                             |               1 |          1 |           1 |           0 |            1 |
+    |        4 | EVENT_ATTACK                            |               0 |          1 |           1 |           0 |            1 |
+    |        5 | EVENT_COMBAT                            |               1 |          1 |           1 |           0 |            1 |
+    +----------+-----------------------------------------+-----------------+------------+-------------+-------------+--------------+
+    ```
+  
+    - If a change is made to this table while the server is live and running, you can hot reload all zone process settings via:
+      #reloadperlexportsettings
+      - For those who wonder what "exports" are, they are reference to variables that are made available at runtime of the sub event, such as:
+        (export_qglobals) (Heavy) : $qglobals https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L916
+        (export_item) (Heavy) : $itemcount{} $hasitem{} $oncursor{} https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1103
+        (export_zone) : $zoneid, $instanceid, $zoneln etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1083
+        (export_mob) : $x, $y, $z, $h, $hpratio etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1032
+        (export_event) : (event specific) IE: EVENT_SAY ($text) https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1141
 
 ## Optimization - Logging Functions moved to Macros
 
 !!! info
 
-  **Year** 2017
-
-  Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
+    **Year** 2017
+  
+    Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
 
 Original notes
 
-Reworked how all log calls are made in the source
+!!! quote
 
-- Before we used Log.Out, we will now use a macro Log(
-  - Before: Log.Out(Logs::General, Logs::Status, "Importing Spells...");
-  - After: Log(Logs::General, Logs::Status, "Importing Spells...");
-- The difference is
-  1) It's 200-300x faster especially when log statements are inside very hot code paths. We already
-     had most hot paths checked before we logged them, but this blankets all existing logging calls now and not just the
-     select few we had picked out in the source.
-  2) Strings don't get copied to the stack, popped and pushed constantly even when we hit a log statement that
-     actually isn't going to log anything.
-     - We do an 'if (LogSys.log_settings[log_category].is_category_enabled == 1)' before we call a log function
-     in the log macro so the log function doesn't get called at all if we're not logging the category
-- This has increased binary executables roughly 15KB
-- The old extern for EQEmuLogSys is now named LogSys appropriately instead of Log (Ex: LogSys.StartFileLogs())
-- The result keeps logging footprint non-existent for when we're not logging that category
+    Reworked how all log calls are made in the source
+    
+    - Before we used Log.Out, we will now use a macro Log(
+      - Before: Log.Out(Logs::General, Logs::Status, "Importing Spells...");
+      - After: Log(Logs::General, Logs::Status, "Importing Spells...");
+      - The difference is
+        1) It's 200-300x faster especially when log statements are inside very hot code paths. We already
+           had most hot paths checked before we logged them, but this blankets all existing logging calls now and not just the
+           select few we had picked out in the source.
+        2) Strings don't get copied to the stack, popped and pushed constantly even when we hit a log statement that
+           actually isn't going to log anything.
+           - We do an 'if (LogSys.log_settings[log_category].is_category_enabled == 1)' before we call a log function
+           in the log macro so the log function doesn't get called at all if we're not logging the category
+      - This has increased binary executables roughly 15KB
+      - The old extern for EQEmuLogSys is now named LogSys appropriately instead of Log (Ex: LogSys.StartFileLogs())
+      - The result keeps logging footprint non-existent for when we're not logging that category
 
 ## All Other Performance Changes
 
