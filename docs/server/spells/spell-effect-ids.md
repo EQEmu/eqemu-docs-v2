@@ -179,8 +179,8 @@
 | 174 | SE_DodgeChance | Dodge | Modify chance to dodge. | percent modifer | none | none | |
 | 175 | SE_ParryChance | Parry | Modify chance to parry. | percent modifer | none | none | |
 | 176 | SE_DualWieldChance | Dual Wield | Modify dual weild chance. | percent modifer | none | none | |
-| 177 | SE_DoubleAttackChance | Double Attack | Modify double attack chance. | percent modifer | none | none | Positive value will heal you | Negative value will damage you|
-| 178 | SE_MeleeLifetap | Melee Lifetap | Heal for a percentage for your melee damage on target. | percentage | none | none | |
+| 177 | SE_DoubleAttackChance | Double Attack | Modify double attack chance. | percent modifer | none | none | |
+| 178 | SE_MeleeLifetap | Melee Lifetap | Heal for a percentage for your melee damage on target. | percentage | none | none | Positive value will heal you. Negative value will damage you|
 | 179 | SE_AllInstrumentMod | All Instrument Modifier | Set modifier value for all instrument and singing modifers that will be used if higher then the respective item modifers. | modifier percentage | none | none | |
 | 180 | SE_ResistSpellChance | Resist Spell Chance | Modify chance to resist incoming spells by percent. | percent modifer | none | none | |
 | 181 | SE_ResistFearChance | Resist Fear Spell Chance | Modify chance to resist incoming fear spells by percent. | percent modifer | none | none | |
