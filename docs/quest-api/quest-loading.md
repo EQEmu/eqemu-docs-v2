@@ -69,8 +69,8 @@ In order of operations, a Bot's script will be dictated by the first script that
 | :--- | :--- |
 | quests/zoneshortname/v[instance_version]/bot.[ext] | quests/qeynos/v0/bot.pl |
 | quests/zoneshortname/bot_v[instance_version].[ext] | quests/qeynos/bot_v1.pl |
-| quests/zoneshortname/player.[ext] | quests/qeynos/bot.lua |
-| quests/global/player.[ext] | quests/global/bot.pl |
+| quests/zoneshortname/bot.[ext] | quests/qeynos/bot.lua |
+| quests/global/bot.[ext] | quests/global/bot.pl |
 
 ## Items
 
