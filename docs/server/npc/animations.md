@@ -2,45 +2,56 @@
 
 These animations are different and vary depending on the race model with which the animation packet is sent.
 
-| **ID** | **Animation** |
-| :--- | :--- |
-| 1 | Kick |
-| 2 | Primary Jab |
-| 3 | 2H Swipe |
-| 4 | 2H Jab |
-| 5 | Primary Swipe |
-| 6 | Secondary Swipe |
-| 7 | Secondary Bash |
-| 8 | Primary Upper Jab |
-| 9 | Shoot Arrow |
-| 10 | Swim Primary Swipe |
-| 11 | Round Kick |
-| 12 | Being Hit |
-| 13 | Bend Down - Being Hit |
-| 14 | Swim - Being Hit |
-| 15 | Lean Back Evil Laugh |
-| 16 | Death |
-| 19 | Small Jump |
-| 20 | Vertical Jump |
-| 21 | Free Falling |
-| 25 | Swimming Idle |
-| 26 | Standing Idle |
-| 27 | Cheer |
-| 28 | Shamed Head Lowering |
-| 29 | Wave |
-| 30 | Rude Gesture |
-| 31 | Yawn |
-| 33 | Sit |
-| 36 | Kneel |
-| 37 | Swimming Moving |
-| 39 | Light Drumming |
-| 40 | Air Guitar |
-| 41 | Blow Horn |
-| 42 | Step Forward Flex |
-| 43 | Arms up and Forward Cast |
-| 44 | Throw |
-| 45 | Jump Double Kick |
-| 46 | Primary/Secondary Combo Swipes |
+Can be played in game with `#doanim #`
+
+| **ID** | **Animation** | **CODE**
+| :--- | :--- | :---- |
+| 1 | Kick | C01
+| 2 | Primary Jab | C02
+| 3 | 2H Swipe | C03
+| 4 | 2H Jab | C04
+| 5 | Primary Swipe | C05
+| 6 | Secondary Swipe | C06
+| 7 | Secondary Bash | C07
+| 8 | Primary Upper Jab | C08
+| 9 | Shoot Arrow | C09
+| 10 | Swim - Primary Swipe | C10
+| 11 | Round Kick | C11
+| 12 | Being Hit | D01
+| 13 | Bend Down - Being Hit | D02
+| 14 | Swim - Being Hit | D03
+| 15 | Swim - Drowning | D04
+| 16 | Fall Down / Death | D05
+| 17 | Walk | L01
+| 18 | Run | L02
+| 19 | Jump Across | L03
+| 20 | Jump | L04
+| 21 | Free Falling | L05
+| 22 | Crouch Walk | L06
+| 23 | Climb | L07
+| 24 | Crouch | L08
+| 25 | Swim Idle | L09
+| 26 | Stand Idle | O01
+| 27 | /cheer | S01
+| 28 | /cry | S02
+| 29 | /wave | S03
+| 30 | /rude | S04
+| 31 | /yawn | S05
+| 32 | Stand Still | P01
+| 33 | Sit | P02
+| 34 | Turn Right | P03
+| 35 | Ice Strafe | P04
+| 36 | Kneel | P05
+| 37 | Swim - Forward | P06
+| 38 | ? | P07
+| 39 | Instrument - Percussion | T01
+| 40 | Instrument - Strings | T02
+| 41 | Instrument - Brass | T03
+| 42 | Spell - Defense | T04
+| 43 | Spell - General | T05
+| 44 | Spell - Offense | T06
+| 45 | Flying Kick | T07
+| 46 | Primary/Secondary Combo Swipes | T08
 | 47 | Kung Fu Jab |
 | 48 | Nod |
 | 49 | Lean Back |
