@@ -30,8 +30,8 @@ Can be played in game with `#doanim #`
 | 22 | Crouch Walk | L06
 | 23 | Climb | L07
 | 24 | Crouch | L08
-| 25 | Swim Idle | L09
-| 26 | Stand Idle | O01
+| 25 | Swim - Idle | L09
+| 26 | Stand - Idle 01 | O01
 | 27 | /cheer | S01
 | 28 | /cry | S02
 | 29 | /wave | S03
@@ -52,30 +52,35 @@ Can be played in game with `#doanim #`
 | 44 | Spell - Offense | T06
 | 45 | Flying Kick | T07
 | 46 | Primary/Secondary Combo Swipes | T08
-| 47 | Kung Fu Jab |
-| 48 | Nod |
-| 49 | Lean Back |
-| 50 | Plea |
-| 51 | Clap |
-| 52 | Hold Stomach Sick |
-| 53 | Bashful |
-| 54 | Laugh |
-| 55 | Cough |
-| 56 | Scared |
-| 57 | Sigh |
-| 58 | Dance |
-| 59 | Disagree |
-| 60 | Hands on Hips |
-| 61 | Look |
-| 62 | Kneel |
-| 63 | Laugh |
-| 64 | Point |
-| 65 | Shrug |
-| 66 | Raise Hand |
-| 67 | Salute |
-| 68 | Shiver |
-| 69 | Tap Foot |
-| 70 | Small Bow |
+| 47 | Kung Fu Jab | T09
+| 48 | /nod | S06
+| 49 | /amaze | S07
+| 50 | /plead | S08
+| 51 | /clap | S09
+| 52 | /hungry | S10
+| 53 | /blush | S11
+| 54 | /chuckle | S12
+| 55 | /cough | S13
+| 56 | /duck | S14
+| 57 | /puzzle | S15
+| 58 | /dance | S16
+| 59 | /blink | S17
+| 60 | /glare | S18
+| 61 | /drool | S19
+| 62 | /kneel | S20
+| 63 | /laugh | S21
+| 64 | /point | S22
+| 65 | /shrug | S23
+| 66 | /ready | S24
+| 67 | /salute | S25
+| 68 | /shiver | S26
+| 69 | /tap | S27
+| 70 | /bow | S28
+| 71 | Stand - Idle 02 | P08
+| 72 | Stand - Idle 03 | O02
+| 73 | Sit - Idle 01 | O03
+| 74 | Default | POS
+| 75 | Pose | DRF
 | 77 | Smile |
 | 84 | Secondary Swipe 2 |
 | 85 | Secondary Jab |
