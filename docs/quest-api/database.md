@@ -14,6 +14,8 @@ Perl is reference counted so handles will be closed when its last reference is d
 
 Connections can be made manually or by using exported constants to connect to the server databases specified in `eqemu_config`.
 
+The API uses the current zone connections by default when using a server database constant. An overload is available to create [`Database`](#database) objects that make new connections.
+
 Making new database connections avoids possible concurrency issues since the zone database connections might be used in other threads. The connection is synchronized for some prepared statement operations but safety isn't guaranteed. See the developer [thread safety](../developer/mysql-stmt.md#thread-safety) section for more info.
 
 New connections also allow the use of [unbuffered](../developer/mysql-stmt.md#options) results with prepared statements. If a prepared statement is executed with buffering disabled, then all results must be fetched or freed before any other queries on that connection can occur. Failure to consume all results before the next query will cause a "Commands out of sync" error. If zone connections were used this would cause all zone queries on that connection to start failing if a script error occured before results could be fetched, or the server tried to perform a query in another thread before the script finished fetching results.
@@ -187,8 +189,8 @@ Constructors
     `Database()`
     : Returns a `Database` object that connects to the server's default database connection. If the connection fails then a `std::runtime_error` exception is thrown and script execution halts.
 
-    `Database(Connection type)`
-    : Returns a `Database` object for the specified server database type specified in the eqemu_config. If the connection fails or the connection type is invalid a `std::runtime_error` exception is thrown and script execution halts.
+    `Database(Connection type, bool connect = false)`
+    : Returns a `Database` object for the specified server database type specified in the eqemu_config. If `connect` is `true` a new connection is made to the database. If `connect` is `false` the `Database` object uses the zone's current active server connection. If the connection fails or the connection type is invalid a `std::runtime_error` exception is thrown and script execution halts.
 
     `Database(string host, string user, string pass, string dbname, int port)`
     : Returns a `Database` object that connects to the specified database. If the connection fails then a `std::runtime_error` exception is thrown and script execution halts.
@@ -198,8 +200,8 @@ Constructors
     `Database::new()`
     : Returns a `Database` object that connects to the server's default database connection. If the connection fails then a `std::runtime_error` exception is thrown and script execution halts.
 
-    `Database::new(Connection type)`
-    : Returns a `Database` object for the specified server database type specified in the eqemu_config. If the connection fails or the connection type is invalid a `std::runtime_error` exception is thrown and script execution halts.
+    `Database::new(Connection type, bool connect = false)`
+    : Returns a `Database` object for the specified server database type specified in the eqemu_config. If `connect` is `true` a new connection is made to the database. If `connect` is `false` the `Database` object uses the zone's current active server connection. If the connection fails or the connection type is invalid a `std::runtime_error` exception is thrown and script execution halts.
 
     `Database::new(string host, string user, string pass, string dbname, int port)`
     : Returns a `Database` object that connects to the specified database. If the connection fails then a `std::runtime_error` exception is thrown and script execution halts.
