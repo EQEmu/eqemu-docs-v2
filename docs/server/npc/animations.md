@@ -18,10 +18,10 @@ Can be played in game with `#doanim #`
 | 10 | Swim - Primary Swipe | C10
 | 11 | Round Kick | C11
 | 12 | Being Hit | D01
-| 13 | Bend Down - Being Hit | D02
+| 13 | Bend Down - Being Hit / Chest: Take Damage| D02
 | 14 | Swim - Being Hit | D03
-| 15 | Swim - Drowning | D04
-| 16 | Fall Down / Death | D05
+| 15 | Swim - Drowning / Chest: Open Lid| D04
+| 16 | Fall Down / Death / Chest: Crumble| D05
 | 17 | Walk | L01
 | 18 | Run | L02
 | 19 | Jump Across | L03
