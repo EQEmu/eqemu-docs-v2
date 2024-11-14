@@ -11,8 +11,8 @@ Whether you just want to rename one of the existing playable races, or you plan 
 
 You will need to locate and update the appropriate fields in your db_str table. The `id` field will be the race id you want to change, type 8 is the race description seen on the character create screen, type 11 is race name, type 12 is plural race name. Using my example above I would do something like this:
 
-`UPDATE db_str SET value='Zombie' WHERE id=522 AND type IN (11, 12);`
-`UPDATE db_str SET value='Insert Zombie race description here' WHERE id=522 AND type=8`
+- `UPDATE db_str SET value='Zombie' WHERE id=522 AND type IN (11, 12);`
+- `UPDATE db_str SET value='Insert Zombie race description here' WHERE id=522 AND type=8`
 
 
 ## Update eqstr_us.txt
