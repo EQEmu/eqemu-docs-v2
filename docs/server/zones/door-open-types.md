@@ -62,6 +62,15 @@
 | 55 | nothing - will not trigger "can't reach that" message |  |
 | 56 | nothing |  |
 | 57 | In-zone teleporter. door_param will be linked to `number` and dest_zone will be linked to `zone` from `zone_points` |  |
+| 58 | nothing |  |
+| 59 | moves up and down Z axis on click | used for lifts such as the ones in gfaydark <br> If using this opentype you can use door_param to change how high it will go <br> If you make another door and set the 'triggerdoor' to the door id of your lift you can remotely activate it |
+| 60 | moves up and down Z axis on click | same as 59 with the addition of playing drawbridge sound effect |
+| 100 | spins around the 'heading' value in a full circle | can set invert_state=1 to have rotating doors without clicking <br> clicking will stop rotation but you can lock it to prevent stopping |
+| 101 | spins around the 'heading' value in a full circle (faster) | |
+| 102 | spins around the 'heading' value in a full circle (fastest) | |
+| 105 | spins around the 'incline' value in a full circle | can set invert_state=1 to have rotating doors without clicking <br> clicking will stop rotation but you can lock it to prevent stopping |
+| 106 | spins around the 'incline' value in a full circle (faster) | |
+| 107 | spins around the 'incline' value in a full circle (fastest) | |
 | 115 | spins nonstop, 4 points saw damage |  |
 | 116 | spins with pause, 4 points saw damage |  |
 | 120 | moves down then up, 30 points spear damage |  |
