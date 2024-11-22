@@ -60,6 +60,17 @@ In order of operations, an Item's script will be dictated by the first script th
 | quests/zone/items/default.[ext] | quests/qeynos/items/default.lua |
 | quests/global/items/default.[ext] | quests/global/items/default.pl |
 
+## Mercenaries
+
+In order of operations, a Mercenary's script will be dictated by the first script that it finds below:
+
+| Hierarchy | Example |
+| :--- | :--- |
+| quests/zoneshortname/v[instance_version]/merc.[ext] | quests/qeynos/v0/merc.pl |
+| quests/zoneshortname/merc_v[instance_version].[ext] | quests/qeynos/merc_v1.pl |
+| quests/zoneshortname/merc.[ext] | quests/qeynos/merc.lua |
+| quests/global/merc.[ext] | quests/global/merc.pl |
+
 ## NPCs
 
 These scripts run in a context based on NPC ID or NPC name.
@@ -81,17 +92,6 @@ In order of operations, an NPC's script will be dictated by the first script tha
 | quests/zoneshortname/v[instance_version]/default.[ext] | quests/tutorialb/v0/default.pl |
 | quests/zoneshortname/default.[ext] | quests/tutorialb/default.pl |
 | quests/global/default.[ext] | quests/global/default.lua |
-
-## Mercenaries
-
-In order of operations, a Mercenary's script will be dictated by the first script that it finds below:
-
-| Hierarchy | Example |
-| :--- | :--- |
-| quests/zoneshortname/v[instance_version]/merc.[ext] | quests/qeynos/v0/merc.pl |
-| quests/zoneshortname/merc_v[instance_version].[ext] | quests/qeynos/merc_v1.pl |
-| quests/zoneshortname/merc.[ext] | quests/qeynos/merc.lua |
-| quests/global/merc.[ext] | quests/global/merc.pl |
 
 ## Players
 
