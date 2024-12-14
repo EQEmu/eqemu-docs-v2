@@ -179,6 +179,7 @@ nav:
           - Augment Types: server/items/augment-types.md
           - Bard Types: server/items/bard-types.md
           - Click Types: server/items/click-types.md
+          - Evolving Items: server/items/evolving.md
           - Food and Drink: server/items/food-and-drink.md
           - GetItemStat Identifiers: server/items/getitemstat-identifiers.md
           - Item Class: server/items/item-class.md
