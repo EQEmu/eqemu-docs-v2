@@ -122,7 +122,7 @@ make down
 ### Deploying Bots
 
  To deploy bots, simply use the 
- ```
+```
 make bashcd
 server/bin
 ./world bots:enable
@@ -132,7 +132,7 @@ command from the root of the **akk-stack** directory.
 ### Deploying Mercenaries
 
  To deploy Mercenaries, simply use the 
- ```
+```
 make bashcd
 server/bin
 ./world mercenaries:enable
