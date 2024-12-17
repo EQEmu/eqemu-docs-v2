@@ -1,4 +1,4 @@
-=== "Perl (33)"
+=== "Perl (51)"
 
     !!! info end
 
@@ -10,24 +10,42 @@
     $doors->ForceClose(Mob* sender, bool alt_mode);
     $doors->ForceOpen(Mob* sender);
     $doors->ForceOpen(Mob* sender, bool alt_mode);
+    $doors->GetClientVersionMask();
+    $doors->GetDestinationHeading();
+    $doors->GetDestinationInstanceID();
+    $doors->GetDestinationX();
+    $doors->GetDestinationY();
+    $doors->GetDestinationZ();
+    $doors->GetDestinationZoneName();
     $doors->GetDisableTimer();
     $doors->GetDoorDBID();
     $doors->GetDoorID();
+    $doors->GetDoorParam();
+    $doors->GetDzSwitchID();
+    $doors->GetGuildID();
     $doors->GetHeading();
     $doors->GetID();
     $doors->GetIncline();
+    $doors->GetInvertState();
     $doors->GetKeyItem();
     $doors->GetLockPick();
     $doors->GetModelName();
     $doors->GetNoKeyring();
     $doors->GetOpenType();
     $doors->GetSize();
+    $doors->GetTriggerDoorID();
+    $doors->GetTriggerType();
     $doors->GetX();
     $doors->GetY();
     $doors->GetZ();
+    $doors->HasDestinationZone();
+    $doors->IsDestinationZoneSame();
+    $doors->IsDoorBlacklisted();
+    $doors->IsLDoNDoor();
     $doors->SetDisableTimer(bool disable_timer);
     $doors->SetHeading(float heading);
     $doors->SetIncline(uint32_t incline);
+    $doors->SetInvertState(int invert_state);
     $doors->SetKeyItem(uint32_t key_item_id);
     $doors->SetLocation(float x, float y, float z);
     $doors->SetLockPick(uint32_t lockpick_type);

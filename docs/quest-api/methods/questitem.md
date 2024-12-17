@@ -1,4 +1,4 @@
-=== "Perl (56)"
+=== "Perl (57)"
 
     !!! info end
 
@@ -25,6 +25,7 @@
     $questitem->GetItem(uint8 slot_id);
     $questitem->GetItem();
     $questitem->GetItemID(uint8 slot_id);
+    $questitem->GetItemLink();
     $questitem->GetItemScriptID();
     $questitem->GetKillsNeeded(uint8 current_level);
     $questitem->GetMaxEvolveLevel();
@@ -51,9 +52,9 @@
     $questitem->SetCharges(int16_t charges);
     $questitem->SetColor(uint32 color);
     $questitem->SetCustomData(string identifier, bool value);
-    $questitem->SetCustomData(string identifier, float value);
-    $questitem->SetCustomData(string identifier, int value);
     $questitem->SetCustomData(string identifier, string value);
+    $questitem->SetCustomData(string identifier, int value);
+    $questitem->SetCustomData(string identifier, float value);
     $questitem->SetEXP(uint32 exp);
     $questitem->SetInstanceNoDrop(bool is_attuned);
     $questitem->SetPrice(uint32 price);

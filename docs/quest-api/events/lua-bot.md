@@ -126,6 +126,10 @@ function EVENT_DESPAWN(e) {
 ``` lua
 
 function EVENT_ENTITY_VARIABLE_DELETE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
 }
 ```
 ## EVENT_ENTITY_VARIABLE_SET
@@ -133,6 +137,10 @@ function EVENT_ENTITY_VARIABLE_DELETE(e) {
 ``` lua
 
 function EVENT_ENTITY_VARIABLE_SET(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
 }
 ```
 ## EVENT_ENTITY_VARIABLE_UPDATE
@@ -140,6 +148,10 @@ function EVENT_ENTITY_VARIABLE_SET(e) {
 ``` lua
 
 function EVENT_ENTITY_VARIABLE_UPDATE(e) {
+	eq.debug("variable_name " .. e.variable_name);
+	eq.debug("variable_value " .. e.variable_value);
+	eq.debug("old_value " .. e.old_value);
+	eq.debug("new_value " .. e.new_value);
 }
 ```
 ## EVENT_EQUIP_ITEM_BOT
@@ -218,6 +230,13 @@ function EVENT_SLAY(e) {
 ``` lua
 
 function EVENT_SPAWN(e) {
+}
+```
+## EVENT_SPELL_BLOCKED
+
+``` lua
+
+function EVENT_SPELL_BLOCKED(e) {
 }
 ```
 ## EVENT_TARGET_CHANGE

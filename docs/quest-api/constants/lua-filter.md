@@ -6,12 +6,14 @@
 Filter.Auctions
 Filter.BadWords
 Filter.BardSongs
+Filter.BardSongsOnPets
 Filter.DOT
 Filter.DamageShields
 Filter.FocusEffects
 Filter.GroupChat
 Filter.GuildChat
 Filter.HealOverTime
+Filter.ItemSpeech
 Filter.MeleeCrits
 Filter.MissedMe
 Filter.MyMisses
@@ -28,9 +30,7 @@ Filter.Shouts
 Filter.Socials
 Filter.SpellCrits
 Filter.SpellDamage
-Filter.Unknown25
-Filter.Unknown26
-Filter.Unknown27
-Filter.Unknown28
+Filter.Strikethrough
+Filter.Stuns
 
 ```

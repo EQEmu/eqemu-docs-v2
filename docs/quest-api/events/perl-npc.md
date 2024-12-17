@@ -122,11 +122,12 @@ sub EVENT_DEATH {
 	quest::debug("damage_received " . $damage_received);
 	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+	quest::debug("killed_merc_id " . $killed_merc_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -144,11 +145,12 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("damage_received " . $damage_received);
 	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+	quest::debug("killed_merc_id " . $killed_merc_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
 }
 ```
 ## EVENT_DESPAWN
@@ -158,6 +160,7 @@ sub EVENT_DEATH_COMPLETE {
 sub EVENT_DESPAWN {
 	quest::debug("despawned_entity_id " . $despawned_entity_id);
 	quest::debug("despawned_bot_id " . $despawned_bot_id);
+	quest::debug("despawned_merc_id " . $despawned_merc_id);
 	quest::debug("despawned_npc_id " . $despawned_npc_id);
 }
 ```
@@ -184,6 +187,25 @@ sub EVENT_ENTER_AREA {
 sub EVENT_ENTITY_VARIABLE_DELETE {
 	quest::debug("variable_name " . $variable_name);
 	quest::debug("variable_value " . $variable_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_SET
+
+``` perl
+
+sub EVENT_ENTITY_VARIABLE_SET {
+	quest::debug("variable_name " . $variable_name);
+	quest::debug("variable_value " . $variable_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_UPDATE
+
+``` perl
+
+sub EVENT_ENTITY_VARIABLE_UPDATE {
+	quest::debug("variable_name " . $variable_name);
+	quest::debug("old_value " . $old_value);
+	quest::debug("new_value " . $new_value);
 }
 ```
 ## EVENT_EXIT
@@ -343,6 +365,17 @@ sub EVENT_SLAY {
 ``` perl
 
 sub EVENT_SPAWN {
+}
+```
+## EVENT_SPELL_BLOCKED
+
+``` perl
+
+sub EVENT_SPELL_BLOCKED {
+	quest::debug("blocking_spell_id " . $blocking_spell_id);
+	quest::debug("cast_spell_id " . $cast_spell_id);
+	quest::debug("blocking_spell " . $blocking_spell);
+	quest::debug("cast_spell " . $cast_spell);
 }
 ```
 ## EVENT_TARGET_CHANGE

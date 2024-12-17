@@ -1,4 +1,4 @@
-=== "Lua (33)"
+=== "Lua (51)"
 
     !!! info end
 
@@ -8,27 +8,45 @@
     door:CreateDatabaseEntry();
     door:ForceClose(Mob sender, bool alt_mode);
     door:ForceClose(Mob sender);
-    door:ForceOpen(Mob sender, bool alt_mode);
     door:ForceOpen(Mob sender);
+    door:ForceOpen(Mob sender, bool alt_mode);
+    door:GetClientVersionMask();
+    door:GetDestinationHeading();
+    door:GetDestinationInstanceID();
+    door:GetDestinationX();
+    door:GetDestinationY();
+    door:GetDestinationZ();
+    door:GetDestinationZoneName();
     door:GetDisableTimer();
     door:GetDoorDBID();
     door:GetDoorID();
     door:GetDoorName();
+    door:GetDoorParam();
+    door:GetDzSwitchID();
+    door:GetGuildID();
     door:GetHeading();
     door:GetID();
     door:GetIncline();
+    door:GetInvertState();
     door:GetKeyItem();
     door:GetLockPick();
     door:GetNoKeyring();
     door:GetOpenType();
     door:GetSize();
+    door:GetTriggerDoorID();
+    door:GetTriggerType();
     door:GetX();
     door:GetY();
     door:GetZ();
+    door:HasDestinationZone();
+    door:IsDestinationZoneSame();
+    door:IsDoorBlacklisted();
+    door:IsLDoNDoor();
     door:SetDisableTimer(bool flag);
     door:SetDoorName(string name);
     door:SetHeading(float h);
     door:SetIncline(uint32 incline);
+    door:SetInvertState(int invert_state);
     door:SetKeyItem(uint32 key);
     door:SetLocation(float x, float y, float z);
     door:SetLockPick(uint32 pick);

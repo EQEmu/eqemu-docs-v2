@@ -2,13 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-## 
-
-``` perl
-
-sub  {
-}
-```
 ## EVENT_AA_BUY
 
 ``` perl
@@ -34,6 +27,24 @@ sub EVENT_AA_EXP_GAIN {
 
 sub EVENT_AA_GAIN {
 	quest::debug("aa_gained " . $aa_gained);
+}
+```
+## EVENT_AA_LOSS
+
+``` perl
+
+sub EVENT_AA_LOSS {
+	quest::debug("aa_lost " . $aa_lost);
+}
+```
+## EVENT_ALT_CURRENCY_LOSS
+
+``` perl
+
+sub EVENT_ALT_CURRENCY_LOSS {
+	quest::debug("currency_id " . $currency_id);
+	quest::debug("amount " . $amount);
+	quest::debug("total " . $total);
 }
 ```
 ## EVENT_ALT_CURRENCY_MERCHANT_BUY
@@ -313,11 +324,12 @@ sub EVENT_DEATH {
 	quest::debug("damage_received " . $damage_received);
 	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+	quest::debug("killed_merc_id " . $killed_merc_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -335,11 +347,12 @@ sub EVENT_DEATH_COMPLETE {
 	quest::debug("damage_received " . $damage_received);
 	quest::debug("healing_received " . $healing_received);
 	quest::debug("killed_corpse_id " . $killed_corpse_id);
-	quest::debug("killed_npc_id " . $killed_npc_id);
 	quest::debug("killed_x " . $killed_x);
 	quest::debug("killed_y " . $killed_y);
 	quest::debug("killed_z " . $killed_z);
 	quest::debug("killed_h " . $killed_h);
+	quest::debug("killed_merc_id " . $killed_merc_id);
+	quest::debug("killed_npc_id " . $killed_npc_id);
 }
 ```
 ## EVENT_DESTROY_ITEM_CLIENT
@@ -381,6 +394,20 @@ sub EVENT_DROP_ITEM_CLIENT {
 	quest::debug("item " . $item);
 }
 ```
+## EVENT_DUEL_LOSE
+
+``` perl
+
+sub EVENT_DUEL_LOSE {
+}
+```
+## EVENT_DUEL_WIN
+
+``` perl
+
+sub EVENT_DUEL_WIN {
+}
+```
 ## EVENT_ENTER
 
 ``` perl
@@ -411,6 +438,25 @@ sub EVENT_ENTER_ZONE {
 sub EVENT_ENTITY_VARIABLE_DELETE {
 	quest::debug("variable_name " . $variable_name);
 	quest::debug("variable_value " . $variable_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_SET
+
+``` perl
+
+sub EVENT_ENTITY_VARIABLE_SET {
+	quest::debug("variable_name " . $variable_name);
+	quest::debug("variable_value " . $variable_value);
+}
+```
+## EVENT_ENTITY_VARIABLE_UPDATE
+
+``` perl
+
+sub EVENT_ENTITY_VARIABLE_UPDATE {
+	quest::debug("variable_name " . $variable_name);
+	quest::debug("old_value " . $old_value);
+	quest::debug("new_value " . $new_value);
 }
 ```
 ## EVENT_ENVIRONMENTAL_DAMAGE
@@ -650,6 +696,13 @@ sub EVENT_POPUPRESPONSE {
 	quest::debug("popupid " . $popupid);
 }
 ```
+## EVENT_READ_ITEM
+
+``` perl
+
+sub EVENT_READ_ITEM {
+}
+```
 ## EVENT_RESPAWN
 
 ``` perl
@@ -696,6 +749,17 @@ sub EVENT_SKILL_UP {
 	quest::debug("skill_value " . $skill_value);
 	quest::debug("skill_max " . $skill_max);
 	quest::debug("is_tradeskill " . $is_tradeskill);
+}
+```
+## EVENT_SPELL_BLOCKED
+
+``` perl
+
+sub EVENT_SPELL_BLOCKED {
+	quest::debug("blocking_spell_id " . $blocking_spell_id);
+	quest::debug("cast_spell_id " . $cast_spell_id);
+	quest::debug("blocking_spell " . $blocking_spell);
+	quest::debug("cast_spell " . $cast_spell);
 }
 ```
 ## EVENT_TARGET_CHANGE

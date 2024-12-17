@@ -1,4 +1,4 @@
-=== "Lua (24)"
+=== "Lua (25)"
 
     !!! info end
 
@@ -9,6 +9,7 @@
     entity:CastToClient();
     entity:CastToCorpse();
     entity:CastToDoor();
+    entity:CastToMerc();
     entity:CastToMob();
     entity:CastToNPC();
     entity:CastToObject();

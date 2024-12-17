@@ -29,6 +29,14 @@ function EVENT_AA_GAIN(e) {
 	eq.debug("aa_gained " .. e.aa_gained);
 }
 ```
+## EVENT_AA_LOSS
+
+``` lua
+
+function EVENT_AA_LOSS(e) {
+	eq.debug("aa_lost " .. e.aa_lost);
+}
+```
 ## EVENT_ALT_CURRENCY_GAIN
 
 ``` lua
@@ -309,6 +317,10 @@ function EVENT_DEATH(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
 	eq.debug("killed_entity_id " .. e.killed_entity_id);
+	eq.debug("combat_start_time " .. e.combat_start_time);
+	eq.debug("combat_end_time " .. e.combat_end_time);
+	eq.debug("damage_received " .. e.damage_received);
+	eq.debug("healing_received " .. e.healing_received);
 }
 ```
 ## EVENT_DEATH_COMPLETE
@@ -322,6 +334,10 @@ function EVENT_DEATH_COMPLETE(e) {
 	eq.debug("spell " .. e.spell);
 	eq.debug("skill " .. e.skill);
 	eq.debug("killed_entity_id " .. e.killed_entity_id);
+	eq.debug("combat_start_time " .. e.combat_start_time);
+	eq.debug("combat_end_time " .. e.combat_end_time);
+	eq.debug("damage_received " .. e.damage_received);
+	eq.debug("healing_received " .. e.healing_received);
 }
 ```
 ## EVENT_DESTROY_ITEM_CLIENT
@@ -684,6 +700,22 @@ function EVENT_POPUP_RESPONSE(e) {
 	eq.debug("popup_id " .. e.popup_id);
 }
 ```
+## EVENT_READ_ITEM
+
+``` lua
+
+function EVENT_READ_ITEM(e) {
+	eq.debug("text_file " .. e.text_file);
+	eq.debug("item_id " .. e.item_id);
+	eq.debug("book_text " .. e.book_text);
+	eq.debug("can_cast " .. e.can_cast);
+	eq.debug("can_scribe " .. e.can_scribe);
+	eq.debug("slot_id " .. e.slot_id);
+	eq.debug("target_id " .. e.target_id);
+	eq.debug("type " .. e.type);
+	eq.debug("item " .. e.item);
+}
+```
 ## EVENT_RESPAWN
 
 ``` lua
@@ -729,6 +761,17 @@ function EVENT_SKILL_UP(e) {
 	eq.debug("skill_value " .. e.skill_value);
 	eq.debug("skill_max " .. e.skill_max);
 	eq.debug("is_tradeskill " .. e.is_tradeskill);
+}
+```
+## EVENT_SPELL_BLOCKED
+
+``` lua
+
+function EVENT_SPELL_BLOCKED(e) {
+	eq.debug("blocking_spell_id " .. e.blocking_spell_id);
+	eq.debug("cast_spell_id " .. e.cast_spell_id);
+	eq.debug("blocking_spell " .. e.blocking_spell);
+	eq.debug("cast_spell " .. e.cast_spell);
 }
 ```
 ## EVENT_TARGET_CHANGE

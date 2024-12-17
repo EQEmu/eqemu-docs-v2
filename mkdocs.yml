@@ -5,11 +5,15 @@ plugins:
       tags_file: tags.md
   - git-committers:
       branch: main
-      enabled: !ENV [ ENV_PROD, false ]
+      enabled:
+        - ENV_PROD
+        - false
       repository: EQEmu/eqemu-docs-v2
   - git-revision-date-localized:
       enable_creation_date: true
-      enabled: !ENV [ ENV_PROD, false ]
+      enabled:
+        - ENV_PROD
+        - false
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
@@ -678,8 +682,10 @@ nav:
           - Quest Loading: quest-api/quest-loading.md
       - Methods:
           - Bot: quest-api/methods/bot.md
+          - Buff: quest-api/methods/buff.md
           - Client: quest-api/methods/client.md
           - Corpse: quest-api/methods/corpse.md
+          - Database: quest-api/methods/database.md
           - Door: quest-api/methods/door.md
           - Doors: quest-api/methods/doors.md
           - Entity: quest-api/methods/entity.md
@@ -690,7 +696,9 @@ nav:
           - Inventory: quest-api/methods/inventory.md
           - Item: quest-api/methods/item.md
           - ItemInst: quest-api/methods/iteminst.md
+          - Merc: quest-api/methods/merc.md
           - Mob: quest-api/methods/mob.md
+          - MySQLPreparedStmt: quest-api/methods/mysqlpreparedstmt.md
           - NPC: quest-api/methods/npc.md
           - Object: quest-api/methods/object.md
           - Packet: quest-api/methods/packet.md
@@ -706,12 +714,14 @@ nav:
       - Events:
           - Perl [Bot]: quest-api/events/perl-bot.md
           - Perl [Item]: quest-api/events/perl-item.md
+          - Perl [Merc]: quest-api/events/perl-merc.md
           - Perl [NPC]: quest-api/events/perl-npc.md
           - Perl [Player]: quest-api/events/perl-player.md
           - Perl [Spell]: quest-api/events/perl-spell.md
           - Lua [Bot]: quest-api/events/lua-bot.md
           - Lua [Encounter]: quest-api/events/lua-encounter.md
           - Lua [Item]: quest-api/events/lua-item.md
+          - Lua [Merc]: quest-api/events/lua-merc.md
           - Lua [NPC]: quest-api/events/lua-npc.md
           - Lua [Player]: quest-api/events/lua-player.md
           - Lua [Spell]: quest-api/events/lua-spell.md
@@ -722,12 +732,15 @@ nav:
           - Lua [BT]: quest-api/constants/lua-bt.md
           - Lua [Class]: quest-api/constants/lua-class.md
           - Lua [ClientVersion]: quest-api/constants/lua-clientversion.md
+          - Lua [Database]: quest-api/constants/lua-database.md
           - Lua [Event]: quest-api/constants/lua-event.md
+          - Lua [ExpSource]: quest-api/constants/lua-expsource.md
           - Lua [ExpeditionLockMessage]: quest-api/constants/lua-expeditionlockmessage.md
           - Lua [Faction]: quest-api/constants/lua-faction.md
           - Lua [Filter]: quest-api/constants/lua-filter.md
           - Lua [InventoryWhere]: quest-api/constants/lua-inventorywhere.md
           - Lua [JournalMode]: quest-api/constants/lua-journalmode.md
+          - Lua [Language]: quest-api/constants/lua-language.md
           - Lua [MT]: quest-api/constants/lua-mt.md
           - Lua [Material]: quest-api/constants/lua-material.md
           - Lua [Opcode]: quest-api/constants/lua-opcode.md
@@ -736,6 +749,7 @@ nav:
           - Lua [Slot]: quest-api/constants/lua-slot.md
           - Lua [SpeakMode]: quest-api/constants/lua-speakmode.md
           - Lua [SpecialAbility]: quest-api/constants/lua-specialability.md
+          - Lua [Zone]: quest-api/constants/lua-zone.md
   - Changelog:
       - "2023": changelog/server/2023.md
       - "2022": changelog/server/2022.md
@@ -779,7 +793,7 @@ nav:
           - Custom Zone Making: client/guides/custom-zone-making.md
           - Custom Zone Editing: client/guides/custom-zone-editing.md
           - File Formats:
-                - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
+              - WLD by Windcatcher: client/guides/file-formats/wld-by-windcatcher.md
           - Fog System and Clip Plane: client/guides/fog-system-and-clip-plane.md
           - Model Loading: client/guides/model-loading.md
           - Placing Objects: client/guides/placing-objects.md

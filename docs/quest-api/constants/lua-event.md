@@ -6,6 +6,7 @@
 Event.aa_buy
 Event.aa_exp_gained
 Event.aa_gained
+Event.aa_loss
 Event.aggro_say
 Event.alt_currency_gain
 Event.alt_currency_loss
@@ -93,6 +94,7 @@ Event.payload
 Event.player_pickup
 Event.popup_response
 Event.proximity_say
+Event.read
 Event.say
 Event.scale_calc
 Event.scribe_spell

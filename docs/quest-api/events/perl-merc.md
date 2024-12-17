@@ -185,45 +185,6 @@ sub EVENT_ENTITY_VARIABLE_UPDATE {
 	quest::debug("new_value " . $new_value);
 }
 ```
-## EVENT_EQUIP_ITEM_BOT
-
-``` perl
-
-sub EVENT_EQUIP_ITEM_BOT {
-	quest::debug("item_id " . $item_id);
-	quest::debug("item_quantity " . $item_quantity);
-	quest::debug("slot_id " . $slot_id);
-	quest::debug("item " . $item);
-}
-```
-## EVENT_ITEM
-
-``` perl
-
-sub EVENT_ITEM {
-	quest::debug("QuestItem " . $QuestItem);
-	quest::debug("copper " . $copper);
-	quest::debug("silver " . $silver);
-	quest::debug("gold " . $gold);
-	quest::debug("platinum " . $platinum);
-}
-```
-## EVENT_LEVEL_DOWN
-
-``` perl
-
-sub EVENT_LEVEL_DOWN {
-	quest::debug("levels_lost " . $levels_lost);
-}
-```
-## EVENT_LEVEL_UP
-
-``` perl
-
-sub EVENT_LEVEL_UP {
-	quest::debug("levels_gained " . $levels_gained);
-}
-```
 ## EVENT_NPC_SLAY
 
 ``` perl
@@ -342,17 +303,6 @@ sub EVENT_TIMER_START {
 
 sub EVENT_TIMER_STOP {
 	quest::debug("timer " . $timer);
-}
-```
-## EVENT_UNEQUIP_ITEM_BOT
-
-``` perl
-
-sub EVENT_UNEQUIP_ITEM_BOT {
-	quest::debug("item_id " . $item_id);
-	quest::debug("item_quantity " . $item_quantity);
-	quest::debug("slot_id " . $slot_id);
-	quest::debug("item " . $item);
 }
 ```
 ## EVENT_USE_SKILL

@@ -360,6 +360,17 @@ function EVENT_SPAWN_ZONE(e) {
 	eq.debug("other " .. e.other);
 }
 ```
+## EVENT_SPELL_BLOCKED
+
+``` lua
+
+function EVENT_SPELL_BLOCKED(e) {
+	eq.debug("blocking_spell_id " .. e.blocking_spell_id);
+	eq.debug("cast_spell_id " .. e.cast_spell_id);
+	eq.debug("blocking_spell " .. e.blocking_spell);
+	eq.debug("cast_spell " .. e.cast_spell);
+}
+```
 ## EVENT_TARGET_CHANGE
 
 ``` lua

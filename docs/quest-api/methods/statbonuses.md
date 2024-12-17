@@ -1,4 +1,4 @@
-=== "Perl (255)"
+=== "Perl (256)"
 
     !!! info end
 
@@ -94,6 +94,7 @@
     $statbonuses->GetFeignedCastOnChance();
     $statbonuses->GetFinishingBlow(int slot);
     $statbonuses->GetFinishingBlowLevel(int slot);
+    $statbonuses->GetFlatMaxHPChange();
     $statbonuses->GetFlurryChance();
     $statbonuses->GetFocusEffects(int slot);
     $statbonuses->GetFocusEffectsWorn(int slot);
@@ -261,7 +262,7 @@
     $statbonuses->GetWindModifier();
     $statbonuses->GetXPRateModifier();
     ```
-=== "Lua (256)"
+=== "Lua (257)"
 
     !!! info end
 
@@ -354,6 +355,7 @@
     statbonuses:FeignedCastOnChance();
     statbonuses:FinishingBlow(int idx);
     statbonuses:FinishingBlowLvl(int idx);
+    statbonuses:FlatMaxHPChange();
     statbonuses:FlurryChance();
     statbonuses:FocusEffects(int idx);
     statbonuses:FocusEffectsWorn(int idx);

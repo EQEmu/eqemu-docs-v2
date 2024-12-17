@@ -11,6 +11,7 @@ $zoneln
 $zonemin
 $zonesn
 $zonetime
+$zoneuptime
 $zoneweather
 
 ```

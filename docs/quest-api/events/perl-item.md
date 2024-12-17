@@ -2,13 +2,6 @@
 
     Also see [Spire Quest API Explorer](http://spire.akkadius.com/quest-api-explorer?lang=perl){:target="perl_event"} for latest definitions and Quest examples
 
-## 
-
-``` perl
-
-sub  {
-}
-```
 ## EVENT_AUGMENT_INSERT
 
 ``` perl
@@ -61,6 +54,18 @@ sub EVENT_EQUIP_ITEM {
 ``` perl
 
 sub EVENT_ITEM_CLICK {
+	quest::debug("itemid " . $itemid);
+	quest::debug("itemname " . $itemname);
+	quest::debug("slotid " . $slotid);
+	quest::debug("spell_id " . $spell_id);
+	quest::debug("spell " . $spell);
+}
+```
+## EVENT_ITEM_CLICK_CAST
+
+``` perl
+
+sub EVENT_ITEM_CLICK_CAST {
 	quest::debug("itemid " . $itemid);
 	quest::debug("itemname " . $itemname);
 	quest::debug("slotid " . $slotid);
@@ -135,5 +140,12 @@ sub EVENT_UNAUGMENT_ITEM {
 ``` perl
 
 sub EVENT_UNEQUIP_ITEM {
+}
+```
+## EVENT_WEAPON_PROC
+
+``` perl
+
+sub EVENT_WEAPON_PROC {
 }
 ```

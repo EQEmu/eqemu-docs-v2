@@ -1,4 +1,4 @@
-=== "Lua (55)"
+=== "Lua (56)"
 
     !!! info end
 
@@ -23,6 +23,7 @@
     iteminst:GetItem();
     iteminst:GetItem(uint8 slot_id);
     iteminst:GetItemID(uint8 slot_id);
+    iteminst:GetItemLink();
     iteminst:GetItemScriptID();
     iteminst:GetKillsNeeded(uint8 current_level);
     iteminst:GetMaxEvolveLvl();
@@ -35,23 +36,23 @@
     iteminst:IsAttuned();
     iteminst:IsAugmentable();
     iteminst:IsAugmented();
-    iteminst:IsEquipable(int16 slot_id);
     iteminst:IsEquipable(uint16 race_bitmask, uint16 class_bitmask);
+    iteminst:IsEquipable(int16 slot_id);
     iteminst:IsExpendable();
     iteminst:IsInstNoDrop();
     iteminst:IsStackable();
     iteminst:IsType(int item_class);
     iteminst:IsWeapon();
-    iteminst:ItemSay(string text, uint8 language_id // @categories Inventory and Items);
     iteminst:ItemSay(string text // @categories Inventory and Items);
+    iteminst:ItemSay(string text, uint8 language_id // @categories Inventory and Items);
     iteminst:RemoveTaskDeliveredItems();
     iteminst:SetAttuned(bool flag);
     iteminst:SetCharges(int charges);
     iteminst:SetColor(uint32 color);
-    iteminst:SetCustomData(const std);
-    iteminst:SetCustomData(const std);
-    iteminst:SetCustomData(const std);
     iteminst:SetCustomData(const string &identifier, std);
+    iteminst:SetCustomData(const std);
+    iteminst:SetCustomData(const std);
+    iteminst:SetCustomData(const std);
     iteminst:SetExp(uint32 exp);
     iteminst:SetInstNoDrop(bool flag);
     iteminst:SetPrice(uint32 price);

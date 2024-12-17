@@ -18,11 +18,13 @@ SpecialAbility.flee_percent
 SpecialAbility.flurry
 SpecialAbility.ignore_root_aggro_rules
 SpecialAbility.immune_aggro
+SpecialAbility.immune_aggro_bot
 SpecialAbility.immune_aggro_client
 SpecialAbility.immune_aggro_npc
 SpecialAbility.immune_aggro_on
 SpecialAbility.immune_assassinate
 SpecialAbility.immune_casting_from_range
+SpecialAbility.immune_damage_bot
 SpecialAbility.immune_damage_client
 SpecialAbility.immune_damage_npc
 SpecialAbility.immune_feign_death
