@@ -68,6 +68,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 
 			command := strings.TrimSpace(lineData[0])
 			command = strings.ReplaceAll(command, "\"", "")
+			command = strings.ReplaceAll(command, "(RuleB(Bots, Enabled) && ", "")
 
 			help := strings.TrimSpace(lineData[1])
 			help = strings.ReplaceAll(help, "\"", "")
@@ -87,7 +88,7 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 		}
 	}
 
-	commandData += "\n";
+	commandData += "\n"
 
 	commandData += "| Command | Subcommand | Usage |\n"
 
@@ -100,27 +101,27 @@ func (c *GMCommandsDocsGenerateCommand) Handle(_ *cobra.Command, _ []string) {
 		if err != nil {
 			fmt.Println(err)
 		}
-	
+
 		body, err := ioutil.ReadAll(resp.Body)
 		if err != nil {
 			fmt.Println(err)
 		}
-	
+
 		for _, line := range strings.Split(string(body), "\n") {
 			if strings.Contains(line, "Cmd{.cmd = \"") {
 				line = strings.ReplaceAll(line, "Cmd{.cmd = \"", "")
 				line = strings.ReplaceAll(line, "\t", "")
 				line = strings.ReplaceAll(line, ".u = ", "")
-	
+
 				lineData := strings.Split(line, "\", ")
-	
+
 				subcommand := strings.TrimSpace(lineData[0])
 				subcommand = strings.ReplaceAll(subcommand, "\"", "")
-	
+
 				help := strings.TrimSpace(lineData[1])
 				help = strings.ReplaceAll(help, "\"", "")
 				help = strings.ReplaceAll(help, "|", "&#124;")
-	
+
 				commandData += fmt.Sprintf(
 					"| #%v | %v | #%v %v |\n",
 					command,

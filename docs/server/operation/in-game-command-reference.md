@@ -178,6 +178,7 @@
 | #find | faction | #find faction [Search Criteria] |
 | #find | item | #find item [Search Criteria] |
 | #find | language | #find language [Search Criteria] |
+| #find | ldon_theme | #find ldon_theme [Search Criteria] |
 | #find | object_type | #find object_type [Search Criteria] |
 | #find | race | #find race [Search Criteria] |
 | #find | recipe | #find recipe [Search Criteria] |
@@ -187,6 +188,7 @@
 | #find | spell | #find spell [Search Criteria] |
 | #find | task | #find task [Search Criteria] |
 | #find | zone | #find zone [Search Criteria] |
+| #find | bot | #find bot [Search Criteria] |
 | #set | aa_exp | #set aa_exp [aa&#124;group&#124;raid] [Amount] |
 | #set | aa_points | #set aa_points [aa&#124;group&#124;raid] [Amount] |
 | #set | adventure_points | #set adventure_points [Theme ID] [Amount] |
