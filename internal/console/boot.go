@@ -14,7 +14,6 @@ func Run() error {
 		NewDbGenerateDocsCommand().Command(),
 		NewBotCommandsDocsGenerateCommand().Command(),
 		NewGMCommandsDocsGenerateCommand().Command(),
-		NewGMSubcommandsDocsGenerateCommand().Command(),
 		NewServerRulesDocsGenerateCommand().Command(),
 	}
 
