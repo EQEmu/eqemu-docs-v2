@@ -31,6 +31,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | AA:ModernAAScalingAALimit | 4000 | The number of earned AA when AA experience scaling ends |
 | AA:SoundForAAEarned | false | Play sound when AA point earned |
 | AA:UnusedAAPointCap | -1 | Cap for Unused AA Points.  Default: -1.  NOTE: DO NOT LOWER THIS WITHOUT KNOWING WHAT YOU ARE DOING. MAY RESULT IN PLAYERS LOSING AAs. |
+| AA:MaxAAEXPPerKill | -1 | Maximum AA EXP per Kill (3425214 is about 7%) - Default: -1 will disable the check |
 
 ## Adventure Rules
 | Rule Name | Default Value | Description |
@@ -70,6 +71,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Aggro:AggroPlayerPets | false | If enabled, NPCs will aggro player pets |
 | Aggro:UndeadAlwaysAggro | true | should undead always aggro? |
 | Aggro:BardAggroCap | 40 | per song bard aggro cap. |
+| Aggro:InitialAggroBonus | 100 | Initial Aggro Bonus, Default: 100 |
+| Aggro:InitialPetAggroBonus | 100 | Initial Pet Aggro Bonus, Default 100 |
 
 ## Analytics Rules
 | Rule Name | Default Value | Description |
@@ -83,6 +86,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Bazaar:MaxSearchResults | 50 | Maximum number of search results in Bazaar |
 | Bazaar:EnableWarpToTrader | true | Setting whether teleport to the selected trader should be active |
 | Bazaar:MaxBarterSearchResults | 200 | The maximum results returned in the /barter search |
+| Bazaar:ParcelDeliveryCostMod | 0.20 | Cost of parcel delivery for a bazaar purchase as a percentage of item cost. Default is 20% of item cost. RoF+ Only. |
+| Bazaar:VoucherDeliveryCost | 200 | Number of vouchers for direct delivery for a bazaar purchase. Default is 200 vouchers. RoF+ Only. |
+| Bazaar:EnableParcelDelivery | true | Enable bazaar purchases via parcel delivery.  Default is True. |
+| Bazaar:MaxBuyerInventorySearchResults | 200 | Maximum number of search results when a Buyer searches the global item list. Default is 200. RoF+ Only. |
 
 ## Bots Rules
 | Rule Name | Default Value | Description |
@@ -119,8 +126,11 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Bots:AutosaveIntervalSeconds | 300 | Number of seconds after which a timer is triggered which stores the bot data. The value 0 means no periodic automatic saving. |
 | Bots:CazicTouchBotsOwner | true | Default True. Cazic Touch/DT will hit bot owner rather than bot. |
 | Bots:BotsClickItemsMinLvl | 1 | Minimum level for bots to be able to use ^clickitem. Default 1. |
-| Bots:BotsCanClickItems | true | Enabled the ability for bots to click items they have equipped. Default TRUE |
+| Bots:BotsCanClickItems | true | Enables the ability for bots to click items they have equipped. Default TRUE |
 | Bots:CanClickMageEpicV1 | true | Whether or not bots are allowed to click Mage Epic 1.0. Default TRUE |
+| Bots:BotsIgnoreLevelBasedHasteCaps | false | Ignores hard coded level based haste caps. |
+| Bots:BotsHasteCap | 100 | Haste cap for non-v3(over haste) haste |
+| Bots:BotsHastev3Cap | 25 | Haste cap for v3(over haste) haste |
 
 ## Bugs Rules
 | Rule Name | Default Value | Description |
@@ -149,7 +159,10 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:UseDeathExpLossMult | false | Setting to control whether DeathExpLossMultiplier or the code default is used: (Level x Level / 18.0) x 12000 |
 | Character:UseOldRaceRezEffects | false | Older clients had ID 757 for races with high starting STR, but it doesn't seem used anymore |
 | Character:CorpseDecayTime | 604800000 | Time after which the corpse decays (milliseconds) DEFAULT: 604800000 (7 Days) |
+| Character:EmptyCorpseDecayTime | 10800000 | Time after which an empty corpse decays (milliseconds) DEFAULT: 10800000 (3 Hours) |
 | Character:CorpseResTime | 10800000 | Time after which the corpse can no longer be resurrected (milliseconds) DEFAULT: 10800000 (3 Hours) |
+| Character:DuelCorpseResTime | 600000 | Time before cant res corpse after a duel (milliseconds) DEFAULT: 600000 (10 Minutes) |
+| Character:CorpseOwnerOnlineTime | 30000 | How often corpse will check if its owner is online DEFAULT: 30000 (30 Seconds) |
 | Character:LeaveCorpses | true | Setting whether you leave a corpse behind |
 | Character:LeaveNakedCorpses | false | Setting whether you leave a corpse without items |
 | Character:MaxDraggedCorpses | 2 | Maximum number of corpses you can drag at once |
@@ -273,6 +286,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:UseNoJunkFishing | false | Disregards junk items when fishing |
 | Character:SoftDeletes | true | When characters are deleted in character select, they are only soft deleted |
 | Character:DefaultGuild | 0 | If not 0, new characters placed into the guild # indicated |
+| Character:DefaultGuildRank | 8 | Default guild rank when Character:DefaultGuild is a non-0 value, default is 8 (Recruit) |
 | Character:ProcessFearedProximity | false | Processes proximity checks when feared |
 | Character:EnableCharacterEXPMods | false | Enables character zone-based experience modifiers. |
 | Character:PVPEnableGuardFactionAssist | true | Enables faction based assisting against the aggresor in pvp. |
@@ -321,9 +335,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Character:PreventMountsFromZoning | false | Enable to prevent mounts from zoning - Prior to December 15, 2004 this is enabled. |
 | Character:GroupInvitesRequireTarget | false | Enable to require players to have invitee on target (Disables /invite name) - Classic Style |
 | Character:PlayerTradingLoreFeedback | true | If enabled, during a player to player trade, if lore items exist, it will output which items. |
-|  Character:EmptyCorpseDecayTime | 10800000 | Time after which an empty corpse decays (milliseconds) DEFAULT: 10800000 (3 Hours) |
-|  Character:DuelCorpseResTime | 600000 | Time before cant res corpse after a duel (milliseconds) DEFAULT: 600000 (10 Minutes) |
-|  Character:CorpseOwnerOnlineTime | 30000 | How often corpse will check if its owner is online DEFAULT: 30000 (30 Seconds) |
+| Character:MendAlwaysSucceedValue | 199 | Value at which mend will always succeed its skill check. Default: 199 |
+| Character:SneakAlwaysSucceedOver100 | false | When sneak skill is over 100, always succeed sneak/hide. Default: false |
+| Character:BandolierSwapDelay | 0 | Bandolier swap delay in milliseconds, default is 0 |
 
 ## Chat Rules
 | Rule Name | Default Value | Description |
@@ -377,6 +391,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:AERampageMaxDistance | 70 | Max AERampage range (% of max combat distance) |
 | Combat:PetBaseCritChance | 0 | Pet base crit chance |
 | Combat:NPCBashKickLevel | 6 | The level that NPCcan KICK/BASH |
+| Combat:NPCKickStunLevel | 1 | The level that NPC has a chance to stun with kick. |
+| Combat:PCKickStunLevel | 56 | The level that PC has a chance to stun with kick. |
 | Combat:MeleeCritDifficulty | 8900 | Value against which is rolled to check if a melee crit is triggered. Lower is easier |
 | Combat:ArcheryCritDifficulty | 3400 | Value against which is rolled to check if an archery crit is triggered. Lower is easier |
 | Combat:ThrowingCritDifficulty | 1100 | Value against which is rolled to check if a throwing crit is triggered. Lower is easier |
@@ -384,6 +400,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:UseIntervalAC | true | Switch whether bonuses, armour class, multipliers, classes and caps should be considered in the calculation of damage values |
 | Combat:PetAttackMagicLevel | 10 | Level at which pets can cause magic damage, no longer used |
 | Combat:NPCAttackMagicLevel | 10 | Level at which NPC and pets can cause magic damage |
+| Combat:LevelDifferenceRollCheck | -1 | Level Difference to enable LeverDifferenceRollBonus for MeleeMitigation - Default: -1 is disabled, 20 is common |
+| Combat:LevelDifferenceRollBonus | 0.5 | Roll Bonus/Detrement if using LevelDifferenceRollCheck |
 | Combat:EnableFearPathing | true | Setting whether to use pathing during fear |
 | Combat:FleeGray | true | If true FleeGrayHPRatio will be used |
 | Combat:FleeGrayHPRatio | 50 | HP percentage when a Gray NPC begins to flee |
@@ -397,6 +415,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:ProcDexDivideBy | 11000 | Divisor for the probability of a proc increased by dexterity |
 | Combat:MinRangedAttackDist | 25 | Minimum Distance to use Ranged Attacks |
 | Combat:ArcheryBonusRequiresStationary | true | does the 2x archery bonus chance require a stationary npc |
+| Combat:ArcheryBonusLevelRequirement | 51 | Level requirement when the 2x archery bonus will be enabled. The default is 51. |
 | Combat:ArcheryNPCMultiplier | 1.0 | Value is multiplied by the regular dmg to get the archery dmg |
 | Combat:AssistNoTargetSelf | true | When assisting a target that does not have a target: true = target self, false = leave target as was before assist (false = live like) |
 | Combat:MaxRampageTargets | 3 | Maximum number of people hit with rampage |
@@ -445,11 +464,15 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:FrontalStunImmunityRaces | 512 | Bitmask for Races than have frontal stun immunity, Ogre (512) only by default. |
 | Combat:NPCsUseFrontalStunImmunityRaces | true | Enable or disable NPCs using frontal stun immunity Races from Combat:FrontalStunImmunityRaces, true by default. |
 | Combat:AssassinateOnlyHumanoids | true | Enable or disable Assassinate only being allowed on Humanoids, true by default. |
+| Combat:AssassinateLevelRequirement | 60 | Level requirement to enable assassinate attempts on backstabs. The default is 60. |
 | Combat:HeadshotOnlyHumanoids | true | Enable or disable Headshot only being allowed on Humanoids, true by default. |
 | Combat:EnableWarriorShielding | true | Enable or disable Warrior Shielding Ability (/shield), true by default. |
 | Combat:BackstabIgnoresElemental | false | Enable or disable Elemental weapon damage affecting backstab damage, false by default. |
 | Combat:BackstabIgnoresBane | false | Enable or disable Bane weapon damage affecting backstab damage, false by default. |
+| Combat:DoubleBackstabLevelRequirement | 55 | Level requirement to enable double backstab attempts. The default is 55. |
 | Combat:SummonMeleeRange | true | Enable or disable summoning of a player when already in melee range of the summoner. |
+| Combat:ArcheryHitPenalty | 0 | Archery has a hit penalty to try to help balance it with the plethora of long term +hit modifiers for it - Default: 0 |
+| Combat:ArcheryBaseDamageBonus | 1 | Percentage modifier to base archery Damage 0.5=50% base damage, 1=100%,2=200% - Default: 1 |
 | Combat:WaterMatchRequiredForAutoFireLoS | true | Enable/Disable the requirement of both the attacker/victim being both in or out of water for AutoFire LoS to pass. |
 | Combat:ExtraAllowedKickClassesBitmask | 0 | Bitmask for allowing extra classes beyond Warrior, Ranger, Beastlord, and Berserker to kick, No Extra Classes (0) by default |
 | Combat:MaxProcs | 4 | Adjustable maximum number of procs per round, the hard cap is MAX_PROCS (11). Requires mob repop or client zone when changed |
@@ -460,8 +483,31 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Combat:ClassicTripleAttackChanceBerserker | 100 | Innate Chance for Berserker to Triple Attack after a Double Attack (200 = 20%). DEFAULT: 100 |
 | Combat:ClassicTripleAttackChanceRanger | 100 | Innate Chance for Ranger to Triple Attack after a Double Attack (200 = 20%). DEFAULT: 100 |
 | Combat:StunChance | 12 | Percent chance that client will be stunned when mob is behind player. DEFAULT: 12 |
+| Combat:StunDuration | 2000 | Duration of stuns in ms. DEFAULT: 2000 |
+| Combat:ClientStunMessage | false | Client stunning NPC produces message. DEFAULT false |
 | Combat:BashTwoHanderUseShoulderAC | false | Enable to use shoulder AC for bash calculations when two hander is equipped. Unproven if accurate DEFAULT: false |
 | Combat:BashACBonusDivisor | 25.0 | this divides the AC value contribution to bash damage, lower to increase damage |
+| Combat:UseMobStaticOffenseSkill | false | Toggle to enabled the use of a static offense skill for Mobs.  DEFAULT: false |
+| Combat:UseEnhancedMobStaticWeaponSkill | false | Toggle to enabled the use of an enhanced (slightly higher hit rate) static weapon skill for Mobs.  DEFAULT: false |
+| Combat:PCAttackPowerScaling | 100 | Applies scaling to PC Attack Power (75 = 75%).  DEFAULT: 100 to not adjust existing Servers |
+| Combat:PCAccuracyAvoidanceMod2Scale | 100 | Scale Factor for PC Accuracy and Avoidance (Mod2, found on items).  Found a value of 100 to make both too strong (75 = x0.75).  DEFAULT: 100 to not adjust existing Servers |
+| Combat:AllowRaidTargetBlind | false | Toggle to allow raid targets to be blinded, default is false (Live-like) |
+| Combat:RogueBackstabHasteCorrection | false | Toggle to enable correction for Haste impacting Backstab DPS too much.  DEFAULT: false |
+| Combat:LegacyComputeDefense | false | Trim AGI Scaling of defense mostly for lower levels to help compensate for the newer agi based defense system. Default: False |
+| Combat:SlayDamageMultiplier | 1.0 | Slay Damage Adjustment - Multiply final slay damage by this value. Default: 1.0 |
+| Combat:SlayRateMultiplier | 1.0 | Slay Rate Adjustments - Multiply final slay rate check by this value. Default: 1.0 |
+| Combat:MaximumLevelStunsCripplingBlow | 55 | Maximum level that Crippling Blows will stun a npc. Default: 55 |
+| Combat:ArcheryBaseDamage | 0 | Archery base damage, default is 0 |
+| Combat:BackstabBaseDamage | 0 | Backstab base damage, default is 0 |
+| Combat:BashBaseDamage | 2 | Bash base damage, default is 2 |
+| Combat:DragonPunchBaseDamage | 12 | Dragon Punch base damage, default is 12 |
+| Combat:EagleStrikeBaseDamage | 7 | Eagle Strike base damage, default is 7 |
+| Combat:FlyingKickBaseDamage | 25 | Flying Kick base damage, default is 25 |
+| Combat:FrenzyBaseDamage | 10 | Frenzy base damage, default is 10 |
+| Combat:KickBaseDamage | 3 | Kick base damage, default is 3 |
+| Combat:RoundKickBaseDamage | 5 | Round Kick base damage, default is 5 |
+| Combat:ThrowingBaseDamage | 0 | Throwing base damage, default is 0 |
+| Combat:TigerClawBaseDamage | 4 | Tiger Claw base damage, default is 4 |
 
 ## Command Rules
 | Rule Name | Default Value | Description |
@@ -569,6 +615,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Inventory:TransformSummonedBags | false | Transforms summoned bags into disenchanted ones instead of deleting |
 | Inventory:AllowMultipleOfSameAugment | false | Allows multiple of the same augment to be placed in an item via #augmentitem or MQ2, set to true to allow |
 | Inventory:AlternateAugmentationSealer | 53 | Allows RoF+ clients to augment items from a special container type |
+| Inventory:LazyLoadBank | true | Don't load bank during zoning, only when in proximinity to a banker. May increase zone speed and stability |
 
 ## Items Rules
 | Rule Name | Default Value | Description |
@@ -582,6 +629,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Items:DisableNoTransfer | false | Enable this to disable No Transfer Items |
 | Items:DisablePotionBelt | false | Enable this to disable Potion Belt Items |
 | Items:DisableSpellFocusEffects | false | Enable this to disable Spell Focus Effects on Items |
+| Items:SummonItemAllowInvisibleAugments | false | Enable this to allow augments to be put in invisible augment slots of items in Client::SummonItem |
+| Items:AugmentItemAllowInvisibleAugments | false | Enable this to allow augments to be put in invisible augment slots by players |
 
 ## Logging Rules
 | Rule Name | Default Value | Description |
@@ -614,6 +663,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Rule Name | Default Value | Description |
 | :--- | :--- | :--- |
 | Merchant:UsePriceMod | true | Use faction/charisma price modifiers |
+| Merchant:UseClassicPriceMod | false | Must also set UsePriceMod. Negates other rules for vendor price mods. |
 | Merchant:SellCostMod | 1.05 | Modifier for NPC sell price |
 | Merchant:BuyCostMod | 0.95 | Modifier for NPC buy price |
 | Merchant:PriceBonusPct | 4 | Determines maximum price bonus from having good faction/CHA. Value is a percent |
@@ -637,6 +687,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Mercs:ResurrectRadius | 50 | Determines the distance from which a healer merc will attempt to resurrect a group member's corpse |
 | Mercs:ScaleRate | 100 | Merc scale factor |
 | Mercs:AllowMercSuspendInCombat | true | Allow merc suspend in combat |
+| Mercs:MercsIgnoreLevelBasedHasteCaps | false | Ignores hard coded level based haste caps. |
+| Mercs:MercsHasteCap | 100 | Haste cap for non-v3(over haste) haste |
+| Mercs:MercsHastev3Cap | 25 | Haste cap for v3(over haste) haste |
 
 ## NPC Rules
 | Rule Name | Default Value | Description |
@@ -673,6 +726,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | NPC:AnimalsOpenDoors | true | Determines or not whether animals open doors or not when they approach them |
 | NPC:MaxRaceID | 732 | Maximum Race ID, RoF2 by default supports up to 732 |
 | NPC:DisableLastNames | false | Enable to disable NPC Last Names |
+| NPC:NPCIgnoreLevelBasedHasteCaps | false | Ignores hard coded level based haste caps. |
+| NPC:NPCHasteCap | 150 | Haste cap for non-v3(over haste) haste |
+| NPC:NPCHastev3Cap | 25 | Haste cap for v3(over haste) haste |
 
 ## Network Rules
 | Rule Name | Default Value | Description |
@@ -683,6 +739,17 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Network:ResendDelayMaxMS | 5000 | Maximum timespan between two send retries (milliseconds) |
 | Network:ClientDataRate | 0.0 | KB / sec, 0.0 disabled |
 | Network:CompressZoneStream | true | Setting whether the zone stream should be compressed for transmission |
+
+## Parcel Rules
+| Rule Name | Default Value | Description |
+| :--- | :--- | :--- |
+| Parcel:EnableParcelMerchants | true | Enable or Disable Parcel Merchants.  Requires RoF+ Clients. |
+| Parcel:EnableDirectToInventoryDelivery | false | Enable or Disable RoF2 bazaar purchases to be delivered directly to the buyer's inventory. |
+| Parcel:DeleteOnDuplicate | false | Delete retrieved item if it creates a lore conflict. |
+| Parcel:EnablePruning | false | Enable the automatic pruning of sent parcels.  Uses rule ParcelPruneDelay for prune delay. |
+| Parcel:ParcelDeliveryDelay | 30000 | Sets the time that a player must wait between sending parcels. |
+| Parcel:ParcelMaxItems | 50 | The maximum number of parcels a player is allowed to have in their mailbox. |
+| Parcel:ParcelPruneDelay | 30 | The number of days after which a parcel is deleted. Items are lost! |
 
 ## Pathing Rules
 | Rule Name | Default Value | Description |
@@ -739,6 +806,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Range:DamageMessages | 50 | The packet range in which damage messages are sent (non-crit) |
 | Range:SpellMessages | 75 | The packet range in which spell damage messages are sent |
 | Range:SongMessages | 75 | The packet range in which song messages are sent |
+| Range:StunMessages | 75 | The packet range in which stun messages are sent |
 | Range:ClientPositionUpdates | 300 | Distance in which the own changed position is communicated to other clients |
 | Range:CriticalDamage | 80 | The packet range in which critical hit messages are sent |
 | Range:MobCloseScanDistance | 600 | Close scan distance |
@@ -828,7 +896,8 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:SwarmPetTargetLock | false | Use old method of swarm pets target locking till target dies then despawning |
 | Spells:NPC_UseFocusFromSpells | true | Allow NPC to use most spell derived focus effects |
 | Spells:NPC_UseFocusFromItems | false | Allow NPC to use most item derived focus effects |
-| Spells:UseAdditiveFocusFromWornSlot | false | Allows an additive focus effect to be calculated from worn slot |
+| Spells:UseAdditiveFocusFromWornSlot | false | Allows an additive focus effect to be calculated from worn slot. Does not apply limits checks. Can only have one additive focus rule be true. |
+| Spells:UseAdditiveFocusFromWornSlotWithLimits | false | Allows an additive focus effect to be calculated from worn slot. Applies normal limit checks. Can only have one additive focus rule be true. |
 | Spells:AlwaysSendTargetsBuffs | false | Ignore Leadership Alternate Abilities level if true |
 | Spells:FlatItemExtraSpellAmt | false | Allow SpellDmg stat to affect all spells, regardless of cast time/cooldown/etc |
 | Spells:IgnoreSpellDmgLvlRestriction | false | Ignore the 5 level spread on applying SpellDmg |
@@ -843,7 +912,6 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:CallOfTheHeroAggroClearDist | 250.0 | Distance at which CoTH will wipe aggro. To disable and always enable aggro wipe on any distance of CoTH, set to 0. |
 | Spells:NPCSpellPush | false | Enable spell push on NPCs |
 | Spells:July242002PetResists | true | Enable Pets using PCs resist change from July 24 2002 |
-| Spells:AOEMaxTargets | 0 | Max number of targets a Targeted AOE spell can cast on. Set to 0 for no limit. |
 | Spells:CazicTouchTargetsPetOwner | true | If True, causes Cazic Touch to swap targets from pet to pet owner if a pet is tanking. |
 | Spells:PreventFactionWarOnCharmBreak | false | Enable spell interupts and dot removal on charm break to prevent faction wars. |
 | Spells:AllowDoubleInvis | true | Allows you to cast invisibility spells on a player that is already invisible, live like behavior. |
@@ -878,7 +946,15 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Spells:EvacClearCharmPet | false | Enable to have evac in zone clear charm from charm pets and detach buffs. |
 | Spells:ManaTapsRequireNPCMana | false | Enabling will require target to have mana to tap. Default off as many npc's are caster class with 0 mana and need fixed. |
 | Spells:HarmTouchCritRatio | 200 | Harmtouch crit bonus, on top of BaseCritRatio |
+| Spells:UseClassicHarmTouchDamage | false | Use pre 2007 Harm Touch calculations - Default: False |
 | Spells:UseClassicSpellFocus | false | Enabling will tell the server to handle random focus damage as classic spell imports lack the limit values. |
+| Spells:ManaTapsOnAnyClass | false | Enabling this will allow you to cast mana taps on any class, this will bypass ManaTapsRequireNPCMana rule. |
+| Spells:HealAmountMessageFilterThreshold | 100 | Lifetaps below this threshold will not have a message sent to the client (Heal will still process) 0 to Disable. |
+| Spells:SnareOverridesSpeedBonuses | false | Enabling will allow snares to override any speed bonuses the entity may have. Default: False |
+| Spells:TargetedAOEMaxTargets | 4 | Max number of targets a Targeted AOE spell can cast on. Set to 0 for no limit. |
+| Spells:PointBlankAOEMaxTargets | 0 | Max number of targets a Point-Blank AOE spell can cast on. Set to 0 for no limit. |
+| Spells:DefaultAOEMaxTargets | 0 | Max number of targets that an AOE spell which does not meet other descriptions can cast on. Set to 0 for no limit. |
+| Spells:AllowFocusOnSkillDamageSpells | false | Allow focus effects 185, 459, and 482 to enhance SkillAttack spell effect 193 |
 
 ## TaskSystem Rules
 | Rule Name | Default Value | Description |
@@ -894,6 +970,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | TaskSystem:SharedTasksWorldProcessRate | 6000 | Timer interval (milliseconds) that shared tasks are processed in world |
 | TaskSystem:SharedTasksTerminateTimerMS | 120000 | Delay (milliseconds) until a shared task is terminated if requirements are no longer met after member removal (default: 2 minutes) |
 | TaskSystem:UpdateOneElementPerTask | true | If true (live-like) task updates only increment the first matching activity. If false all matching elements will be incremented. |
+| TaskSystem:MaxUpdateMessages | 50 | Maximum update messages for non-GiveCash activity types in IncrementDoneCount |
 
 ## Watermap Rules
 | Rule Name | Default Value | Description |
@@ -938,6 +1015,9 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | World:BootHour | 0 | Sets the in-game hour world will set when it first boots. 0-24 are valid options, where 0 disables this rule |
 | World:UseItemLinksForKeyRing | false | Uses item links for Key Ring Listing instead of item name |
 | World:UseOldShadowKnightClassExport | true | Disable to have Shadowknight show as Shadow Knight (live-like) |
+| World:EnableAutoLogin | false | Enables or disables auto login of characters, allowing people to log characters in directly from loginserver to ingame |
+| World:EnablePVPRegions | true | Enables or disables PVP Regions automatically setting your PVP flag |
+| World:CustomFilesAdminLevel | 20 | Admin level at which custom file key is not required when CustomFilesKey is specified |
 
 ## Zone Rules
 | Rule Name | Default Value | Description |
@@ -964,6 +1044,7 @@ You can then use [`#reload rules`](https://docs.eqemu.io/server/operation/loadin
 | Zone:KillProcessOnDynamicShutdown | true | When process has booted a zone and has hit its zone shut down timer, it will hard kill the process to free memory back to the OS |
 | Zone:SpawnEventMin | 3 | When strict is set in spawn_events, specifies the max EQ minutes into the trigger hour a spawn_event will fire. Going below 3 may cause the spawn_event to not fire. |
 | Zone:ForageChance | 25 | Chance of foraging from zone table vs global table |
+| Zone:FishingChance | 399 | Chance of fishing from zone table vs global table |
 | Zone:AllowCrossZoneSpellsOnBots | false | Set to true to allow cross zone spells (cast/remove) to affect bots |
 | Zone:AllowCrossZoneSpellsOnMercs | false | Set to true to allow cross zone spells (cast/remove) to affect mercenaries |
 | Zone:AllowCrossZoneSpellsOnPets | false | Set to true to allow cross zone spells (cast/remove) to affect pets |
