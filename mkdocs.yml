@@ -5,15 +5,11 @@ plugins:
       tags_file: tags.md
   - git-committers:
       branch: main
-      enabled:
-        - ENV_PROD
-        - false
+      enabled: !ENV [ ENV_PROD, false ]
       repository: EQEmu/eqemu-docs-v2
   - git-revision-date-localized:
       enable_creation_date: true
-      enabled:
-        - ENV_PROD
-        - false
+      enabled: !ENV [ ENV_PROD, false ]
 repo_url: https://github.com/EQEmu/server
 site_url: https://docs.eqemu.io/
 repo_name: EQEmu Server
