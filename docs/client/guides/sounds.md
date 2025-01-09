@@ -4,6 +4,8 @@ description: This page describes all sounds in EQ
 
 # UI Sounds
 
+name|file|note
+---|---|---
 itemclth.wav|snd2.pfs|cloth bag opening
 buyitem.wav|snd2.pfs|Buying an item from merchant sound
 wearclth.wav|snd2.pfs|Equipping an item
@@ -16,8 +18,13 @@ endquest.wav|snd2.pfs|Finish a quest sound
 
 # Event Sounds
 
+name|file|note
+---|---|---
+
 # Player Sounds
 
+name|file|note
+---|---|---
 fall_hit.wav|snd2.pfs|
 spelcast.wav|snd2.pfs|
 spelgdht.wav|snd2.pfs|
@@ -34,6 +41,8 @@ spelltrav.wav|snd6.pfs|
 
 # Environment Sounds
 
+name|file|note
+---|---|---
 animal_scurry_01.wav|snd14.pfs|
 animal_scurry_02.wav|snd14.pfs|
 arena_lp.wav|snd11.pfs|
@@ -47,6 +56,8 @@ thunder2.wav|snd2.pfs|
 
 # Mob Sounds
 
+name|file|note
+---|---|---
 aam_atk.wav|snd13.pfs|
 aam_dam.wav|snd13.pfs|
 aam_dth.wav|snd13.pfs|
