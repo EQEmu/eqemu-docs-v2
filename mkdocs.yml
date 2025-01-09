@@ -794,6 +794,7 @@ nav:
           - Model Loading: client/guides/model-loading.md
           - Placing Objects: client/guides/placing-objects.md
           - Sky System: client/guides/sky-system.md
+          - Sounds Reference: client/guides/sounds.md
           - Renaming Playable Race: client/guides/rename-race.md
       - OpenZone:
           - client/openzone/README.md
