@@ -6,7 +6,7 @@ This update significantly simplifies the NPC item hand-in system by consolidatin
 
 ## Key Improvements
 
-## Catch-All System for Returning Items
+### Catch-All System for Returning Items
 
 ![Image](https://github.com/user-attachments/assets/09d97498-eb4f-496d-aaf0-c6e98e53c928)
 
@@ -20,11 +20,11 @@ Previously, item loss could occur in various scenarios. The new system mitigates
 - **Augment loss in Perl scripts:** Previously, augments were lost when using item ID-based summons. This update ensures augments remain intact by returning the original item instance.
 - **Disable** Catch-All behavior can be disabled by rule **Items:AlwaysReturnHandins** (Default: true) (Not recommended)
 
-## Item Stacks
+### Item Stacks
 
 - Item stacks can now be processed without being lost!
 
-## Full Item Instance Return
+### Full Item Instance Return
 
 - Items can be handed in with full bags, equipped augments and will be returned in full!
 
