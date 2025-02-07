@@ -2,9 +2,13 @@
 
 This update significantly simplifies the NPC item hand-in system by consolidating logic into the source, ensuring consistent behavior across both Perl and Lua. Additionally, it introduces robust item return handling, improves logging to aid in debugging, and adds native support for multi-quest NPCs.
 
+![Image](https://github.com/user-attachments/assets/d7a55891-9ace-4a1a-99e7-e9710f4e2414)
+
 ## Key Improvements
 
 ## Catch-All System for Returning Items
+
+![Image](https://github.com/user-attachments/assets/09d97498-eb4f-496d-aaf0-c6e98e53c928)
 
 Previously, item loss could occur in various scenarios. The new system mitigates these issues:
 
@@ -49,10 +53,9 @@ Previously, item loss could occur in various scenarios. The new system mitigates
     <source src="https://github.com/user-attachments/assets/5c65d784-cd82-45a3-9b58-b258bec6f116" type="video/mp4">
 </video>
 
+**Hasten Bootstrutter Example**
+
 === "Lua"
-
-
-	Hasten_Bootstrutter.lua
 
 	```lua
 	function event_trade(e)
@@ -68,8 +71,6 @@ Previously, item loss could occur in various scenarios. The new system mitigates
 
 === "Perl"
 
-	Hasten_Bootstrutter.pl
-
 	```perl
 	sub EVENT_ITEM {
 	    $npc->MultiQuestEnable();
@@ -82,7 +83,9 @@ Previously, item loss could occur in various scenarios. The new system mitigates
 	}
 	```
 
+## Hand-In Examples
 
+[ ] TODO: Add examples @Akkadius
 
 ## Logging Enhancements
 
