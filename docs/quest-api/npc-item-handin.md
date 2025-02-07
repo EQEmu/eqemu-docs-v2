@@ -20,6 +20,14 @@ Previously, item loss could occur in various scenarios. The new system mitigates
 - **Augment loss in Perl scripts:** Previously, augments were lost when using item ID-based summons. This update ensures augments remain intact by returning the original item instance.
 - **Disable** Catch-All behavior can be disabled by rule **Items:AlwaysReturnHandins** (Default: true) (Not recommended)
 
+## Item Stacks
+
+- Item stacks can now be processed without being lost!
+
+## Full Item Instance Return
+
+- Items can be handed in with full bags, equipped augments and will be returned in full!
+
 ### Unified Handling Across Perl and Lua
 
 - Previously, hand-in logic was separately maintained in both Perl and Lua.
