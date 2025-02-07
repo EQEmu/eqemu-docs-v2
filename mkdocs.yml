@@ -675,6 +675,7 @@ nav:
           - Database API: quest-api/database.md
           - Dialogue Window (DiaWind): quest-api/diawind.md
           - Events: quest-api/events.md
+          - NPC Item Hand-In System Overhaul: quest-api/npc-item-handin.md
           - Quest Loading: quest-api/quest-loading.md
       - Methods:
           - Bot: quest-api/methods/bot.md
