@@ -5,8 +5,8 @@
 | 3001 | Warrior |
 | 3002 | Cleric |
 | 3003 | Paladin |
-| 3004 | Shadow Knight |
-| 3005 | Ranger |
+| 3004 | Ranger |
+| 3005 | Shadow Knight |
 | 3006 | Druid |
 | 3007 | Monk |
 | 3008 | Bard |
