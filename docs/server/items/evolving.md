@@ -4,7 +4,7 @@ description: This page describes the evolving items currently available on your 
 
 # Evolving Items
 
-The evolving items system is only available on the Rain of Fear 2 (RoF2) Client.  
+The evolving items system is only available on the Rain of Fear 2 (RoF2) Client.  It requires Server Release 22.62.0+
 
 - Allows for evolving item support for RoF2 only.
 - Has a 30 sec timer after equipping an evolving item before it can start to evolve. Time is configurable with a Rule.
@@ -26,6 +26,12 @@ The system is controlled using the following server rules:
 
 ## Installation
 
+This update requires that your opcodes be updated.  If you are using Spire, this can be done from within that tool, otherwise the opcodes are located at within the source at /utils/patches/patches_RoF2.conf.  
+  
+The opcode in question is: OP_EvolveItem=0x7cfb
+
+Opcodes need to be reloaded, or a server restart to take effect.
+
 There are two tables utilized in the functionality.
 
 #character_evolving_items
@@ -34,15 +40,19 @@ This table contains character specific data surrounding the evolving items in th
 #items_evolving_details
 This table is sourced from the content database and contains the generic evolution data regarding an item.  There are several generic columns, though there are three that should be understood:
 
+These two tables are the most important to enable actual items.
+
 **type**
 References the how the item evolves.  Types are sourced in the namespace EvolvingItems::Types and are listed below. This list will be expanded as more is known about evolving items.
 
 |Type|Description|
 |:---:|:---|
 |1|Experience based evolution|
-|2|Number of Kills|
+|2|Number of Kills (not yet implemented)|
 |3|Specific Mob Race|
 |4|Specific Zone ID|
+
+* Type 99 is a placeholder and identifies items not yet configured.
 
 |SubType|Description|
 |:---:|:---|
@@ -99,13 +109,42 @@ The following player events are available.
 |:---|:---|:---|
 |Evolve Item|Enabled|7 days|
 
-The playerevent has a status field which captures a more detailed explanation.  Status messages such as:
-- Evolved Item due to obtaining progression - Old Evolve Item removed from inventory.
-- Evolved Item due to obtaining progression - New Evolve Item placed in inventory.
-- Transfer XP - Original FROM Evolve Item removed from inventory.
-- Transfer XP - Updated FROM item placed in inventory.
-- Transfer XP - Original TO Evolve Item removed from inventory.
-- Transfer XP - Updated TO Evolve item placed in inventory.
+The playerevent has a status field which captures a more detailed explanation.  
+Status messages such as:  
+- Evolved Item due to obtaining progression - Old Evolve Item removed from inventory.  
+- Evolved Item due to obtaining progression - New Evolve Item placed in inventory.  
+- Transfer XP - Original FROM Evolve Item removed from inventory.  
+- Transfer XP - Updated FROM item placed in inventory.  
+- Transfer XP - Original TO Evolve Item removed from inventory.  
+- Transfer XP - Updated TO Evolve item placed in inventory.  
+
+## Creating new items
+
+If you would like to create a new item, not part of the exisiting evolving items already established, please follow these steps.
+
+- Create a new 'item' in the items tables.  This is found in your content database.
+- There are 4 fields that play a role for evolving items.  
+
+|Field|Description|
+|:---|:---|
+|evolitem| 1 = evoling item, 0 = not an evolving item|
+|evolid| a unique id within all evolving items, and shared between all items of the same evolving group|
+|evolvinglevel| the evolving level of this item within the evolving group id (1, 2, 3, etc)|
+|evomax| the max evolving level of the evolving group id|
+
+For example, for the items with evoid = 1066
+
+|Item ID|evolitem|evoid|evolvinglevel|evomx|
+|:---|:---|:---|:---|:---|
+|89550|1|1066|1|3|
+|89551|1|1066|2|3|
+|89552|1|1066|3|3|
+
+- To enable the new item(s) jsut created, you need to rerun shared_memory and restart your server.
+- Create the records in items_evolving_details as noted above.
+
+That should be it.  
+If you have ideas about other ways to evolve an item, please post an issue at https://github.com/EQEmu/Server/issues
 
 ## Known Issues
 
