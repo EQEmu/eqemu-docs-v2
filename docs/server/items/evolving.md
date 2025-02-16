@@ -62,7 +62,7 @@ References the how the item evolves.  Types are sourced in the namespace Evolvin
 |3|When type = 1, use only raid experience|
 |x|When type = 2, NOT YET IMPLEMENTED|
 |x|When type = 3, the Mob Race ID of the kill|
-|x|When type = 2, the Zone ID where the kill must occur|
+|x|When type = 4, the Zone ID where the kill must occur|
 
 |required_amount|Description|
 |:---:|:---|
