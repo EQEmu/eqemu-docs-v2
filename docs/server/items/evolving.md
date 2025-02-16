@@ -123,24 +123,24 @@ Status messages such as:
 If you would like to create a new item, not part of the exisiting evolving items already established, please follow these steps.
 
 - Create a new 'item' in the items tables.  This is found in your content database.
-- There are 4 fields that play a role for evolving items.  
+- There are 4 fields in the items table that play a role for evolving items.  
 
 |Field|Description|
 |:---|:---|
-|evolitem| 1 = evoling item, 0 = not an evolving item|
-|evolid| a unique id within all evolving items, and shared between all items of the same evolving group|
+|evoitem| 1 = evolving item, 0 = not an evolving item|
+|evoid| a unique id within all evolving items, and shared between all items of the same evolving group|
 |evolvinglevel| the evolving level of this item within the evolving group id (1, 2, 3, etc)|
 |evomax| the max evolving level of the evolving group id|
 
 For example, for the items with evoid = 1066
 
-|Item ID|evolitem|evoid|evolvinglevel|evomx|
+|Item ID|evoitem|evoid|evolvinglevel|evomax|
 |:---|:---|:---|:---|:---|
 |89550|1|1066|1|3|
 |89551|1|1066|2|3|
 |89552|1|1066|3|3|
 
-- To enable the new item(s) jsut created, you need to rerun shared_memory and restart your server.
+- To enable the new item(s) just created, you need to rerun shared_memory and restart your server.
 - Create the records in items_evolving_details as noted above.
 
 That should be it.  
