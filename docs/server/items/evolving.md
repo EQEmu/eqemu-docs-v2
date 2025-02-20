@@ -82,7 +82,7 @@ Level 3 is item id 89552 requring 2000 kills of race id 274
 
 ## XP Transfer
 
-There is an witch in Corathus Creep who will preform basic transfer of evolving item experience.  The current implementation allows for the following:
+There is a witch in Corathus Creep who will preform basic transfer of evolving item experience.  The current implementation allows for the following:
 
 - If sub_types are the same, the conversion rate is 100% otherwise it is 30%
 - The current amount is the total of all the levels currently obtained
@@ -127,14 +127,14 @@ If you would like to create a new item, not part of the exisiting evolving items
 
 |Field|Description|
 |:---|:---|
-|evolitem| 1 = evoling item, 0 = not an evolving item|
-|evolid| a unique id within all evolving items, and shared between all items of the same evolving group|
+|evoitem| 1 = evoling item, 0 = not an evolving item|
+|evoid| a unique id within all evolving items, and shared between all items of the same evolving group|
 |evolvinglevel| the evolving level of this item within the evolving group id (1, 2, 3, etc)|
 |evomax| the max evolving level of the evolving group id|
 
 For example, for the items with evoid = 1066
 
-|Item ID|evolitem|evoid|evolvinglevel|evomx|
+|Item ID|evoitem|evoid|evolvinglevel|evomx|
 |:---|:---|:---|:---|:---|
 |89550|1|1066|1|3|
 |89551|1|1066|2|3|
