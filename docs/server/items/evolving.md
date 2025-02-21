@@ -127,20 +127,20 @@ If you would like to create a new item, not part of the exisiting evolving items
 
 |Field|Description|
 |:---|:---|
-|evoitem| 1 = evoling item, 0 = not an evolving item|
+|evoitem| 1 = evolving item, 0 = not an evolving item|
 |evoid| a unique id within all evolving items, and shared between all items of the same evolving group|
 |evolvinglevel| the evolving level of this item within the evolving group id (1, 2, 3, etc)|
 |evomax| the max evolving level of the evolving group id|
 
 For example, for the items with evoid = 1066
 
-|Item ID|evoitem|evoid|evolvinglevel|evomx|
+|item_id|evoitem|evoid|evolvinglevel|evomax|
 |:---|:---|:---|:---|:---|
 |89550|1|1066|1|3|
 |89551|1|1066|2|3|
 |89552|1|1066|3|3|
 
-- To enable the new item(s) jsut created, you need to rerun shared_memory and restart your server.
+- To enable the new item(s) just created, you need to rerun shared_memory and restart your server.
 - Create the records in items_evolving_details as noted above.
 
 That should be it.  
