@@ -802,7 +802,7 @@ nav:
           - NPC Editing: client/openzone/npc-editing.md
       - WCEmu:
           - client/wcemu/README.md
-          - Definitions: client/wcemu/v0.0.1.md # change to latest version manually
+          - Definitions: client/wcemu/latest.md # change to latest version manually
       - EQGZI:
           - client/eqgzi/README.md
           - Animated Textures: client/eqgzi/animated-textures.md
