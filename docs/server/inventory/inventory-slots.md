@@ -125,7 +125,7 @@ Bags in the shared bank are
 
 !!! note
 
-    Not all clients support all of the server-recognized slots. Care should be taken when attempting to hard-code slot values over the use of server-based free slot requests.
+    Not all clients support all of the server-recognized slots. Care should be taken when attempting to hard-code slot values over the use of server-based free slot requests. For example, 200-slot bags are only supported on RoF2 at this time.
 
 #### Quest-Use Reference
 
