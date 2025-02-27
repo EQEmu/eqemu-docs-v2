@@ -273,7 +273,7 @@
 | **Multi-Quest Support**           | NPCs can handle multiple valid hand-in combinations. |
 | **Stacked Item Processing**       | Supports large stack hand-ins without loss. |
 | **Improved Event Tracking**       | Captures all hand-ins for better debugging. |
-| **Enhanced Logging**              | Introduced `Logs::NpcHandin` for real-time tracking. |
+| **Enhanced Logging**              | Introduced **Logs::NpcHandin** for real-time tracking. |
 | **Pet Hand-in Safety**            | Prevents accidental item loss to pets. |
 | **Better Quest Consistency**      | Centralized logic reduces discrepancies between scripting languages. |
 | **Catch-All Disable Option**      | Configurable rule to return unhandled items. |
@@ -315,7 +315,7 @@
 
 ## Logging Enhancements
 
-- A new logging category `Logs::NpcHandin` has been introduced.
+- A new logging category **Logs::NpcHandin** has been introduced.
 - This captures all item hand-ins, making it easier to debug and track player transactions.
 - Logs can be output to both the console and GM chat for real-time monitoring.
 
