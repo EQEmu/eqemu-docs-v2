@@ -224,7 +224,7 @@
 
 	!!! info
 
-		MultiQuestEnable must be set on spawn or set on the npc_types field
+		**MultiQuestEnable** must be set on spawn or set on the npc_types field **multiquest_enabled**
 
 	=== "Lua"
 
@@ -257,35 +257,28 @@
 		}
 		```
 
-## Overview
+## Overhaul Overview
 
-This update significantly simplifies the NPC item hand-in system by consolidating logic into the source, ensuring consistent behavior across both Perl and Lua. Additionally, it introduces robust item return handling, improves logging to aid in debugging, and adds native support for multi-quest NPCs.
+!!! info 
 
-![Image](https://github.com/user-attachments/assets/d7a55891-9ace-4a1a-99e7-e9710f4e2414)
+	This overhaul simplifies item hand-ins, unifies handling across scripting languages, prevents item loss, improves logging for debugging, and adds multi-quest support. Users and developers can expect a more stable and predictable experience when handling items in quests.
 
-## Key Improvements
+### Improvements (Why)
 
-### Catch-All System for Returning Items
+| Feature                           | Improvement Summary |
+|-----------------------------------|---------------------|
+| **Unified Hand-in Handling**      | Standardized item/money hand-ins across Lua & Perl. |
+| **Item Loss Prevention**          | Ensures items aren't lost due to missing scripts or errors. |
+| **Full Item Instance Return**     | Returns handed-in items with augments, serials, and properties intact. |
+| **Multi-Quest Support**           | NPCs can handle multiple valid hand-in combinations. |
+| **Stacked Item Processing**       | Supports large stack hand-ins without loss. |
+| **Improved Event Tracking**       | Captures all hand-ins for better debugging. |
+| **Enhanced Logging**              | Introduced `Logs::NpcHandin` for real-time tracking. |
+| **Pet Hand-in Safety**            | Prevents accidental item loss to pets. |
+| **Better Quest Consistency**      | Centralized logic reduces discrepancies between scripting languages. |
+| **Catch-All Disable Option**      | Configurable rule to return unhandled items. |
 
 ![Image](https://github.com/user-attachments/assets/09d97498-eb4f-496d-aaf0-c6e98e53c928)
-
-Previously, item loss could occur in various scenarios. The new system mitigates these issues:
-
-- **Empty `EVENT_TRADE` handlers:** Players no longer lose items when handing in to NPCs without a valid event handler.
-- **Accidental hand-ins to pets:** Items are returned instead of being lost when mistakenly given to a pet instead of an NPC.
-- **Missing `return_items` calls in scripts:** Even if a quest script does not explicitly return items, the system ensures they are not lost.
-- **NPCs lacking proper `check_handin` logic:** Items are not consumed without proper validation.
-- **Preserving original item instances:** Previously, NPCs returned a new item rather than the exact instance handed in (losing augments, attuned properties, and serial numbers). Now, the exact item instance is returned with all properties intact.
-- **Augment loss in Perl scripts:** Previously, augments were lost when using item ID-based summons. This update ensures augments remain intact by returning the original item instance.
-- **Disable** Catch-All behavior can be disabled by rule **Items:AlwaysReturnHandins** (Default: true) (Not recommended)
-
-### Item Stacks
-
-- Item stacks can now be processed without being lost!
-
-### Full Item Instance Return
-
-- Items can be handed in with full bags, equipped augments and will be returned in full!
 
 ### Unified Handling Across Perl and Lua
 
@@ -330,7 +323,4 @@ Previously, item loss could occur in various scenarios. The new system mitigates
 
 This update includes corresponding changes to quest plugins. See the associated plugin update: [ProjectEQ Quest Plugin Changes #1403](https://github.com/ProjectEQ/projecteqquests/pull/1403)
 
-## Conclusion
-
-This overhaul simplifies item hand-ins, unifies handling across scripting languages, prevents item loss, improves logging for debugging, and adds multi-quest support. Users and developers can expect a more stable and predictable experience when handling items in quests.
 
