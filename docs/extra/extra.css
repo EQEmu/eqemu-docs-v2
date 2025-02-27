@@ -101,3 +101,7 @@ body .md-sidebar--primary .md-sidebar__scrollwrap {
         box-shadow: none;
     }
 }
+
+img, video {
+    border-radius: 10px;
+}
