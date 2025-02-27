@@ -92,7 +92,7 @@
 		}
 		```
 
-=== "Item Table"
+=== "Hand-In Table"
 
 	=== "Lua"
 
