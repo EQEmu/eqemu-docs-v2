@@ -1,6 +1,7 @@
 site_name: EverQuest Emulator Docs
 plugins:
   - search
+  - glightbox
   - tags:
       tags_file: tags.md
   - git-committers:

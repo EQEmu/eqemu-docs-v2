@@ -66,6 +66,7 @@ install: ##@dev Install
 	pip install mkdocs-material
 	pip install mkdocs-git-committers-plugin
 	pip install mkdocs-git-revision-date-localized-plugin
+	pip install mkdocs-glightbox
 
 generate: ##dev Generate docs
 	go run main.go doc:quest-api-doc-generate
