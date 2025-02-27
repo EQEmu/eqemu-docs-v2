@@ -222,11 +222,18 @@
 
 === "Multi-Questing"
 
+	!!! info
+
+		MultiQuestEnable must be set on spawn or set on the npc_types field
+
 	=== "Lua"
 
 		```lua
+		function event_spawn(e)
+			e.self:MultiQuestEnable();
+		end
+
 		function event_trade(e)
-			e.self:MultiQuestEnable(); 
 			if (eq.handin({[12268] = 1, [7100] = 1, platinum = 325})) then
 				e.self:Say("The time to trade has come!! I am now rich and you are now fast. Take the Journeyman Boots and run like the wind.");
 				e.other:QuestReward(e.self, 0, 0, 0, 0, 2300, 1250);
@@ -237,8 +244,11 @@
 	=== "Perl"
 
 		```perl
-		sub EVENT_ITEM {
+		sub EVENT_SPAWN {
 		    $npc->MultiQuestEnable();
+		}
+
+		sub EVENT_ITEM {
 		    if (quest::handin({12268 => 1, 7100 => 1, "platinum" => 325})) {
 		        quest::say("The time to trade has come!! I am now rich and you are now fast. Take the Journeyman Boots and run like the wind.");
 		        quest::summonitem(2300);
