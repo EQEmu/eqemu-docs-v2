@@ -29,9 +29,15 @@ ADD COLUMN `id` int(11) NOT NULL AUTO_INCREMENT FIRST,
 DROP PRIMARY KEY,
 ADD PRIMARY KEY (`id`) USING BTREE,
 ADD UNIQUE INDEX(`varname`);
-)"
+)",
+		.content_schema_update = false,
+		.force_interactive = true
 	},
 ```
+
+### Optional fields:
+- `.content_schema_update`	- If true, this will update the content_db if configured
+- `.force_interactive`		- If true, this will require the user during the migration to consent to the upgrade to move forward as it could be risky or breaking changes.
 
 That's it! As far as what is needed from a developer to have the server run the migration, that is all you need to do.
 
@@ -50,3 +56,11 @@ You can test it by running world manually after you compile. Please test your da
 // 	std::string sql{};         // the SQL DDL that gets ran when the condition is true
 // };
 ```
+
+### Match Conditions
+
+- **contains**	= Strings::Contains(r, e.match);
+- **match**		= e.match;
+- **missing**	= !Strings::Contains(r, e.match);
+- **empty**		= r.empty();
+- **not_empty**	= !r.empty();
