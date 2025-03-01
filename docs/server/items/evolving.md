@@ -1,5 +1,5 @@
 ---
-description: This page describes the evolving items currently available on your EQEmu Server.  This requires release 22.xx.
+description: This page describes the evolving items currently available on your EQEmu Server.  This requires release 22.62.0+.
 ---
 
 # Evolving Items
@@ -48,25 +48,29 @@ References the how the item evolves.  Types are sourced in the namespace Evolvin
 |Type|Description|
 |:---:|:---|
 |1|Experience based evolution|
-|2|Number of Kills (not yet implemented)|
+|2|Number of Kills (implemented as of 22.62.xx)|
 |3|Specific Mob Race|
 |4|Specific Zone ID|
 
 * Type 99 is a placeholder and identifies items not yet configured.
 
-|SubType|Description|
-|:---:|:---|
-|0|When type = 1, use all experience|
-|1|When type = 1, use only solo experience|
-|2|When type = 1, use only group experience|
-|3|When type = 1, use only raid experience|
-|x|When type = 2, NOT YET IMPLEMENTED|
-|x|When type = 3, the Mob Race ID of the kill|
-|x|When type = 4, the Zone ID where the kill must occur|
+|SubType|Description|Multi-Value|
+|:---:|:---|:---|
+|0|When type = 1, use all experience|No|
+|1|When type = 1, use only solo experience|No|
+|2|When type = 1, use only group experience|No|
+|3|When type = 1, use only raid experience|No|
+|x|When type = 2, the minimum level of the mob required.  0 no requirement (implemented as of 22.62.xx)|No|
+|x|When type = 3, the Mob Race ID of the kill|Yes|
+|x|When type = 4, the Zone ID where the kill must occur|Yes|
 
 |required_amount|Description|
 |:---:|:---|
 |x|The amount required of the type/subtype combination to evolve that level of the item|
+
+Please note:  
+- The mobs must produce xp otherwise the evolving logic will not trigger. That is, if you are killing mobs that do not provide xp to the player, the evolving item will not evolve.
+- As of release 22.62.xx, the subtype is delimited by a '.' to allow for multiple values. Not all subtypes allow for this. Please see above table for details. Therefore, with type = 3 subtype can be '273.274' to allow for race ids of 273 an 274 to trigger the evolution.
 
 There are two items with presets to demonstrate
 
