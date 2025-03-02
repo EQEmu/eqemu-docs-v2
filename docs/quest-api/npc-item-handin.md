@@ -319,6 +319,14 @@
 - This captures all item hand-ins, making it easier to debug and track player transactions.
 - Logs can be output to both the console and GM chat for real-time monitoring.
 
+## Always Return Items
+
+Part of the fundamental change in the new system is that instead of only conditionally returning items, sometimes in scripts, sometimes in the source, we **always** return items unless the script or source specifically **consumed** the item handed in.
+
+!!! warning 
+
+	This can sometimes create issues if you wrote your own way of handling items. If you want to disable this behavior (not recommended) you can do so with rule **Items:AlwaysReturnHandins**
+
 ## Related Plugin Changes
 
 This update includes corresponding changes to quest plugins. See the associated plugin update: [ProjectEQ Quest Plugin Changes #1403](https://github.com/ProjectEQ/projecteqquests/pull/1403)
