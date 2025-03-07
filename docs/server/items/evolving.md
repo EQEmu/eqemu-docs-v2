@@ -23,6 +23,7 @@ The system is controlled using the following server rules:
 | EvolvingItems | PercentOfGroupExperience | 0.1 | Percentage of group experience allocated to evolving items that require experience.  Default is 0.1%| 
 | EvolvingItems | PercentOfRaidExperience | 0.1 | Percentage of solo experience allocated to evolving items that require experience.  Default is 0.1%| 
 | EvolvingItems | DelayUponEquipping | 30000 | Delay in ms before an evolving item will earn rewards after equipping.  Default is 30000ms or 30s. | 
+| EvolvingItems | DestroyAugmentsOnEvolve | false | If this is enabled, any augments in an item will be destroyed when the item evolves. Otherwise, send augments to the player via the parcel system (requires that the Parcel System be enabled). | 
 
 ## Installation
 
