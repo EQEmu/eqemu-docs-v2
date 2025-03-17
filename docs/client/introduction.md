@@ -13,6 +13,9 @@ Client side modifications
 ## File Formats
 - [WLD by Windcatcher](guides/file-formats/wld-by-windcatcher.md) - A reference guide to the WLD file format
 
+## References
+- [Race Files](race-files.md) - Lists race IDs, model names, and file references
+
 ## Tools
 
 - [OpenZone](openzone/README.md) - A S3D-only NPC and Zone editor 

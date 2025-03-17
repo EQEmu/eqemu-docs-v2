@@ -2,6 +2,8 @@
 
 This list contains all Race IDs and bitmasks.
 
+For a more comprehensive client-side modding list, check out [Race Files](/client/race-files.md)
+
 ## Player Races
 
 | ID | Bitmask | Name |

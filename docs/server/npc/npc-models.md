@@ -2,6 +2,9 @@
 
 Below is a list of NPC Race Models that are used in the _chr text files in the client
 
+For a more comprehensive client-side modding list, check out [Race Files](/client/race-files.md)
+
+
 | **Race ID** | **Model Code** | **File Loaded From** | **Race** |
 | :--- | :--- | :--- | :--- |
 | 8 | dwm |  | Dwarf |
