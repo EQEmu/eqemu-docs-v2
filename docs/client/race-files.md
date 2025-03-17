@@ -7,8 +7,10 @@ description: Race Files includes race id, name, model names, and zone references
 This list includes race id, name, model names, and zone references.
 
 Other references include:
-- [Race List](/server/npc/race-list.md) for race IDs
-- [NPC Models](/server/npc/npc-models.md) for _chr txt refs
+
+- [Race List](/server/npc/race-list) for race IDs
+
+- [NPC Models](/server/npc/npc-models) for _chr txt refs
 
 ID|Name|Models|Zones
 |:-----|:---------------------------|
