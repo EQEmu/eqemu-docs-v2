@@ -806,6 +806,7 @@ nav:
           - Definitions: client/wcemu/latest.md # change to latest version manually
       - References:
           - Race Files: client/race-files.md
+          - IT Model Files: client/it-model-files.md
       - EQGZI:
           - client/eqgzi/README.md
           - Animated Textures: client/eqgzi/animated-textures.md

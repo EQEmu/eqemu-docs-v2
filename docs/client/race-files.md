@@ -32,22 +32,22 @@ ID|Name|Models|Zones
 16|Centaur|CEM CEF CEN|qrg_chr.s3d+
 17|Golem|GOM GOF GOL|highkeep_chr.s3d, pofire_chr.s3d
 18|Giant|GIA|qey2hh1_chr.s3d+
-19|Trakanon
-20|Venril Sathir
-21|Evil Eye
-22|Beetle
-23|Kerran
-24|Fish
-25|Fairy
-26|Froglok
-27|Froglok
-28|Fungusman
-29|Gargoyle
-30|Gasbag
-31|Gelatinous Cube
-32|Ghost
-33|Ghoul
-34|Bat
+19|Trakanon|TRK|sebilis_chr.s3d
+20|Venril Sathir|VST|karnor_chr.s3d+
+21|Evil Eye|BEH|fearplane_chr.s3d+
+22|Beetle|BET|ecommons_chr.s3d+
+23|Kerran|CPM CPF|warrens_chr.s3d+
+24|Fish|FIS|tox_chr.s3d+
+25|Fairy|FAM|gfaydark_chr.s3d+
+26|Froglok|FRO|gukbottom_chr.s3d+
+27|Froglok|FRG|gukbottom_chr.s3d+
+28|Fungusman|FUN|unrest_chr.s3d+
+29|Gargoyle|GAM|velketor_chr.s3d+
+30|Gasbag|BEH|fearplane_chr.s3d+
+31|Gelatinous Cube|CUB|fearplane_chr.s3d+
+32|Ghost|GHM GHF|highkeep_chr.s3d+
+33|Ghoul|GHU|commons_chr.s3d+
+34|Bat|BAT|bat_chr.s3d+
 35|Eel
 36|Rat
 37|Snake
