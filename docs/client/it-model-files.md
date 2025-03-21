@@ -10,7 +10,7 @@ This list includes weapon/shield/armor IT id, name, model names, and zone refere
 id|name|file
 --|--|--
 it1||gequip.s3d
-it1k15glove||gequip4.s3d
+it2||gequip.s3d
 it3||gequip.s3d
 it4||gequip.s3d
 it5||gequip.s3d
@@ -983,10 +983,14 @@ it10203||gequip4.s3d
 it10300||gequip3.s3d
 it10301||gequip3.s3d
 it10400||gequip5.s3d
-it10403kast501||gequip5.s3d
+it10401||gequip5.s3d
+it10401||gequip5.s3d
+it10402||gequip5.s3d
+it10404||gequip5.s3d
 it10405||gequip5.s3d
 it10406||gequip5.s3d
 it10409||gequip5.s3d
+it10410||gequip5.s3d
 it10411||gequip5.s3d
 it10412||gequip5.s3d
 it10413||gequip5.s3d
@@ -14998,8 +15002,6 @@ it86746||rafplategold.eqg
 it86747||rafplategold.eqg
 it86748||rafplategold.eqg
 it86749||rafplategold.eqg
-it1041010410||gequip5.s3d
-itk29glove||gequip4.s3d
 itstat301||hohonora_obj.s3d
 itstat301||potimea_obj.s3d
 itstat301||sseru_obj.s3d
