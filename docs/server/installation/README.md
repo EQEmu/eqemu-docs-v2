@@ -39,7 +39,7 @@ The PEQ database may not provide the exact data that makes **your world** exactl
 
 ### Making the World Server talk to the Database
 
-Consider this your first step in customizing your world once you've run the installer script.  You will need to [configure your eqemu_config.json](configure-your-eqemu_config.md) file to set your world's name, the name of your database, and more.  Follow the instructions carefully so that your decisions do not become the cause of something going horribly wrong.
+Consider this your first step in customizing your world once you've run the installer script.  You will need to configure your [eqemu_config.json](../../configuration/eqemu_config.md) file to set your world's name, the name of your database, and more.  Follow the instructions carefully so that your decisions do not become the cause of something going horribly wrong.
 
 !!! warning
       Be sure to back up any files before you start to modify them!  
