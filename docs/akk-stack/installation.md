@@ -65,6 +65,14 @@ Will output the following.
 make env-transplant
 Wrote updated config to [.env]
 make env-scramble-secrets
+Scrambling [MARIADB_PASSWORD]
+Scrambling [MARIADB_ROOT_PASSWORD]
+Scrambling [SERVER_PASSWORD]
+Scrambling [PHPMYADMIN_PASSWORD]
+Scrambling [SPIRE_ADMIN_PASSWORD]
+Scrambling [PEQ_EDITOR_PROXY_PASSWORD]
+Scrambling [PEQ_EDITOR_PASSWORD]
+Scrambling [FTP_QUESTS_PASSWORD]
 Wrote updated config to [.env]
 ```
 
