@@ -129,25 +129,93 @@ make down
 
 ### Deploying Bots
 
- To deploy bots, simply use the 
+To enable Bots, navigate into your **akk-stack** directory and run the following commands:
+```bash
+user@host:~/akk-stack$ make bash
+eqemu@ct-eqemu-server:~/$ cd server
+eqemu@ct-eqemu-server:~/server$ bin/world bots:enable
 ```
-make bash
-cd server/bin
-./world bots:enable
+The output will look like this:
+```bash
+ World |    Info    | BotsEnable Bootstrapping bot tables
+ World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/bot_tables_bootstrap.sql]
+ World |    Info    | BotsEnable Enabling bots
+ World |    Info    | BotsEnable Setting rule Bots:Enabled to true
 ```
-command from the root of the **akk-stack** directory.
+Doing this will create the required tables. At the next server boot, you will have access to the bot commands. If you need disable bots, you will run the disable command:
+```bash
+eqemu@ct-eqemu-server:~/server$ bin/world bots:disable
+```
+The output will look like this:
+```bash
+Warning! This will drop all bot tables, are you sure? [y/n]y
+ World |    Info    | BotsDisable Dropping table [bot_blocked_buffs]
+ World |    Info    | BotsDisable Dropping table [bot_buffs]
+ World |    Info    | BotsDisable Dropping table [bot_command_settings]
+ World |    Info    | BotsDisable Dropping table [bot_create_combinations]
+ World |    Info    | BotsDisable Dropping table [bot_data]
+ World |    Info    | BotsDisable Dropping table [bot_heal_rotation_members]
+ World |    Info    | BotsDisable Dropping table [bot_heal_rotation_targets]
+ World |    Info    | BotsDisable Dropping table [bot_heal_rotations]
+ World |    Info    | BotsDisable Dropping table [bot_inspect_messages]
+ World |    Info    | BotsDisable Dropping table [bot_inventories]
+ World |    Info    | BotsDisable Dropping table [bot_owner_options]
+ World |    Info    | BotsDisable Dropping table [bot_pet_buffs]
+ World |    Info    | BotsDisable Dropping table [bot_pet_inventories]
+ World |    Info    | BotsDisable Dropping table [bot_pets]
+ World |    Info    | BotsDisable Dropping table [bot_settings]
+ World |    Info    | BotsDisable Dropping table [bot_spell_casting_chances]
+ World |    Info    | BotsDisable Dropping table [bot_spell_settings]
+ World |    Info    | BotsDisable Dropping table [bot_spells_entries]
+ World |    Info    | BotsDisable Dropping table [bot_stances]
+ World |    Info    | BotsDisable Dropping table [bot_timers]
+ World |    Info    | BotsDisable Setting rule Bots:Enabled to false
+ World |    Info    | BotsDisable Bots disabled
+```
+Answering `yes` removes the tables from the database and disables bots.
 
 ### Deploying Mercenaries
 
- To deploy Mercenaries, simply use the 
+To enable Mercs, navigate into your **akk-stack** directory and run the following commands:
+```bash
+user@host:~/akk-stack$ make bash
+eqemu@ct-eqemu-server:~/$ cd server
+eqemu@ct-eqemu-server:~/server$ bin/world mercs:enable
 ```
-make bash
-cd server/bin
-./world mercenaries:enable
+The output will look like this:
+```bash
+ World |    Info    | MercsEnable Bootstrapping merc tables
+ World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/merc_tables_bootstrap.sql]
+ World |    Info    | MercsEnable Enabling Mercenaries
+ World |    Info    | MercsEnable Setting rule Mercs:AllowMercs to true
+ World |    Info    | MercsEnable Mercenaries enabled
 ```
-command from the root of the **akk-stack** directory.
-
-
+Doing this will create the required tables. At the next server boot, you will have access to the mercenary merchants. If you need disable mercs, you will run the disable command:
+```bash
+eqemu@ct-eqemu-server:~/server$ bin/world mercs:disable
+```
+The output will look like this:
+```bash
+Warning! This will drop all merc tables, are you sure? [y/n]y
+ World |    Info    | MercsDisable Dropping table [merc_armorinfo]
+ World |    Info    | MercsDisable Dropping table [merc_inventory]
+ World |    Info    | MercsDisable Dropping table [merc_merchant_entries]
+ World |    Info    | MercsDisable Dropping table [merc_merchant_template_entries]
+ World |    Info    | MercsDisable Dropping table [merc_merchant_templates]
+ World |    Info    | MercsDisable Dropping table [merc_name_types]
+ World |    Info    | MercsDisable Dropping table [merc_npc_types]
+ World |    Info    | MercsDisable Dropping table [merc_spell_list_entries]
+ World |    Info    | MercsDisable Dropping table [merc_spell_lists]
+ World |    Info    | MercsDisable Dropping table [merc_stance_entries]
+ World |    Info    | MercsDisable Dropping table [merc_stats]
+ World |    Info    | MercsDisable Dropping table [merc_subtypes]
+ World |    Info    | MercsDisable Dropping table [merc_templates]
+ World |    Info    | MercsDisable Dropping table [merc_types]
+ World |    Info    | MercsDisable Dropping table [merc_weaponinfo]
+ World |    Info    | MercsDisable Setting rule Mercs:AllowMercs to false
+ World |    Info    | MercsDisable Disabled mercs and dropped tables
+```
+Answering `yes` removes the tables from the database and disables mercs.
  
 ### Deployment Info
 
