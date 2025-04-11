@@ -4,7 +4,7 @@ description: This guide covers adding or editing zones in the client.
 
 # Custom Zone Editing
 
-When you make a new zone, or want to edit an existing one, you need to override some hard coded client side data points. There's two routes to do this: eq-core-dll injection, or eqgame patching
+When you make a new zone, or want to edit an existing one, you need to override some hard coded client side data points. There's two routes to do this: eq-core-dll injection, or eqgame patching (hex editor, not covered in guide)
 
 ## EQ-Core-DLL Injection
 
@@ -22,10 +22,6 @@ static ZoneEntry Zones[] = {
 ```
 - Update your zone table with SQL, you will see fields such as zoneidnumber, short_name, long_name. Make sure they match the eq-core-dll entries. (This affects the "You have entered" message after zoning)
 - Edit eqstr_us.txt and ensure the eqStrID exists, and has your zone long name in it. (This affects the text when at character select informing a player of their current zone)
-
-## EQGame Patching
-
-This guide is not yet covered in detail, but essentially you use a hex editor and search for the zone short name in your eqgame.exe, you'll see data near it similar to the info provided for injection, and can edit the values. You'll still need to distribute the patched eqgame with something like [eqemupatcher](https://github.com/xackery/eqemupatcher), but keep in mind eqemupatcher checks the CRC of eqgame, so it may need additional fixing for that too.  
 
 ## EQGame Zone Cloning
 
