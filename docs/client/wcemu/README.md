@@ -4,6 +4,8 @@ WCEmu is a community made intermediary format for s3d wld data. It is an ASCII p
 
 ## [latest](latest.md)
 
+## [v1.6.0](v1.6.0.md)
+
 ## [v1.5.9](v1.5.9.md)
 ## [v1.5.8](v1.5.8.md)
 
