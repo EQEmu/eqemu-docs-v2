@@ -1,7 +1,6 @@
 # Grids
 
 * **#wpinfo** - Target an NPC and use this to retrieve WP information assigned to it.
-* **#gassign** grid_num - Target an NPC and use this to assign it's spawn2 point to grid grid_num.
 * **#grid** add/delete grid_num wandertype pausetype - Adds grid grid_num with the wandertype/pausetype, or deletes grid number grid_num.
 * **#wp** add/delete grid_num pause wp_num -h - Adds waypoint number wp_num to grid grid_num with a pause of pause on the location you're standing at, or deletes waypoint number wp_num in grid number grid_num. Use the -h switch to use your current heading as the heading for that waypoint.
 * **#wpadd** [pause] [-h] - Adds a waypoint to a targeted NPC. If no grid is assigned, a new one will be created. Pause (default 0) and the heading switch are optional. As with #wp add, the heading switch will use your current heading.
