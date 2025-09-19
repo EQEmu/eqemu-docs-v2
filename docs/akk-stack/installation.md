@@ -127,6 +127,49 @@ To stop the server, simply use the **make down** command from the root of the **
 make down
 ```
 
+### Deployment Info
+
+To print a handy list of passwords and access URL's, simply use **make info** at the host level of the deployment. Spire is located at the EQEmu Admin web interface.
+
+```
+make info
+```
+
+!!! info
+    Note this may look different depending on the services you have booted
+
+```
+----------------------------------
+> Server Info
+----------------------------------
+> Akkas Test Bed (LDL)
+----------------------------------
+> Passwords
+----------------------------------
+MARIADB_PASSWORD=wNh6CrKiVq6oy5FPjQIMr7M18oAC7Ii
+MARIADB_ROOT_PASSWORD=jrwe7Jv6sZRgrYig5vgoTEvBX6XGgxb
+SERVER_PASSWORD=UXWrUXWv4MPZsJpUgbWuEPJn59ksNpc
+PHPMYADMIN_PASSWORD=L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
+PEQ_EDITOR_PASSWORD=jufMcw584ZDK3JRNJf4JB8z0e3Whoma
+FTP_QUESTS_PASSWORD=gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
+----------------------------------
+> IP
+----------------------------------
+IP_ADDRESS=192.168.65.62
+----------------------------------
+> Quests FTP  | 192.168.65.62:21 | quests / gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
+----------------------------------
+> Web Interfaces
+----------------------------------
+> PEQ Editor  | http://192.168.65.62:8081 | admin / jufMcw584ZDK3JRNJf4JB8z0e3Whoma
+> PhpMyAdmin  | http://192.168.65.62:8082 | admin / L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
+> EQEmu Admin | http://192.168.65.62:3000 | admin / 2c9a88fa8470a70168080e5dbc8446
+----------------------------------
+> Spire Backend Development  | http://192.168.65.62:3010 | 
+> Spire Frontend Development | http://192.168.65.62:8080 | 
+----------------------------------
+```
+
 ### Deploying Bots
 
 To enable Bots, navigate into your **akk-stack** directory and run the following commands:
@@ -216,46 +259,6 @@ Warning! This will drop all merc tables, are you sure? [y/n]y
  World |    Info    | MercsDisable Disabled mercs and dropped tables
 ```
 Answering `yes` removes the tables from the database and disables mercs.
- 
-### Deployment Info
 
-To print a handy list of passwords and access URL's, simply use **make info** at the host level of the deployment
-
-```
-make info
-```
-
-!!! info
-    Note this may look different depending on the services you have booted
-
-```
-----------------------------------
-> Server Info
-----------------------------------
-> Akkas Test Bed (LDL)
-----------------------------------
-> Passwords
-----------------------------------
-MARIADB_PASSWORD=wNh6CrKiVq6oy5FPjQIMr7M18oAC7Ii
-MARIADB_ROOT_PASSWORD=jrwe7Jv6sZRgrYig5vgoTEvBX6XGgxb
-SERVER_PASSWORD=UXWrUXWv4MPZsJpUgbWuEPJn59ksNpc
-PHPMYADMIN_PASSWORD=L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
-PEQ_EDITOR_PASSWORD=jufMcw584ZDK3JRNJf4JB8z0e3Whoma
-FTP_QUESTS_PASSWORD=gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
-----------------------------------
-> IP
-----------------------------------
-IP_ADDRESS=192.168.65.62
-----------------------------------
-> Quests FTP  | 192.168.65.62:21 | quests / gtL1yKDmZyC4eK9X85ZAytGdUVEgN62
-----------------------------------
-> Web Interfaces
-----------------------------------
-> PEQ Editor  | http://192.168.65.62:8081 | admin / jufMcw584ZDK3JRNJf4JB8z0e3Whoma
-> PhpMyAdmin  | http://192.168.65.62:8082 | admin / L6buMu5dzfIkhNTjh7LeMsxNdFfLUrA
-> EQEmu Admin | http://192.168.65.62:3000 | admin / 2c9a88fa8470a70168080e5dbc8446
-----------------------------------
-> Spire Backend Development  | http://192.168.65.62:3010 | 
-> Spire Frontend Development | http://192.168.65.62:8080 | 
-----------------------------------
-```
+### Local Loginserver
+(Optional) Spire web interface can be used to enable and start a local loginserver process. Depending on your setup (i.e., server on LAN) you may need to modify `localaddress` to match `address` within `akk-stack/server/eqemu_config.json` and `make down`/`make up`.
