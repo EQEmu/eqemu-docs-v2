@@ -146,7 +146,7 @@ To install the required submodules:
 Submodules are now installed.
 
 !!!info
-      If you are using CMake 3.15 or higher, you should modify Line #1 of your submodules/recastnavigation/CMakeLists.txt file to reflect 3.5 instead of 3.0.
+      If you are using CMake 3.15 or higher, you should modify Line 1 of your submodules/recastnavigation/CMakeLists.txt file to reflect 3.5 instead of 3.0.
 
 
 ### Installing Dependencies/VCPkg
