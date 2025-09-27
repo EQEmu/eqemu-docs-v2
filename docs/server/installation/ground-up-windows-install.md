@@ -18,11 +18,7 @@ _Screenshots may vary depending on options selected and program graphical user i
 
 ## Compiler Setup
 
-The current C/C++ support standard of the EQEmulator server code base mandates the use of Visual Studio 2017 or later compilers.
-
-Visual Studio 2017 is the current EQEmulator standard for binary compilation. Please ensure that your system meets the [[Visual Studio 2017 Minimum System Requirements](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-system-requirements-vs#visual-studio-2017-system-requirements)].
-
-Visual Studio 2019 may also be used..though, less is known about the stability of this platform with the EQEmulator code base.
+The current C/C++ support standard of the EQEmulator server code base mandates the use of Visual Studio 2022 or later compilers. The free Community Edition is a good option.
 
 This setup assumes an install on a 64-bit Windows operating system with 64-bit target binaries.
 
@@ -55,8 +51,6 @@ Some of the pre-requisites for compiling binaries are the same as running a serv
 
 If you have already installed any of the following, the download and installation requirement should be omitted:
 
-*   Visual Studio 2017 Community Edition [[select Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)]
-
     _Note: Microsoft now requires a user account to download Visual Studio. Clicking the Visual Studio link above will take you to the "older versions" page. Clicking the_ `Download` _button on that page will prompt you to log in or create an account._
 
 *   Visual Studio 2022 Community Edition [[alternative download](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=3602&passive=false)]
@@ -82,13 +76,6 @@ During the install process, ensure the option for `Desktop development with C++`
 
 !!! info
       This package is required by Visual Studio to compile c/c++ code and by CMake to determine available compiler options. It will also cause CMake file generation to fail, if not enabled
-
-
-If you selected Visual Studio 2017 Community Edition, you will need to update to the most current version.
-
-!!! info
-      This requirement is not needed for Visual Studio 2019 installations..but, it is a good idea to have the most up-to-date compiler features
-
 
 ### Install Perl
 
@@ -157,6 +144,9 @@ To install the required submodules:
 ![image](https://user-images.githubusercontent.com/89047260/201527593-9e8db013-2164-45fc-af2d-9f7954591b84.png)
 
 Submodules are now installed.
+
+!!!info
+If you are using CMake 3.15 or higher, you should modify Line #1 of your submodules/recastnavigation/CMakeLists.txt file to reflect 3.5 instead of 3.0.
 
 
 ### Installing Dependencies/VCPkg
