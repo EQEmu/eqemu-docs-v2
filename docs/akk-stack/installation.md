@@ -33,11 +33,11 @@ Docker Compose version v2.2.3
 First clone the repository somewhere on your server, in this case I'm going to clone it to an `/opt/eqemu-servers` folder in a Debian Linux host with Docker installed
 
 ```
-git clone https://github.com/Akkadius/akk-stack.git && cd akk-stack
+git clone https://github.com/EQEmuTools/akk-stack.git && cd akk-stack
 ```
 
 ```
-$ git clone https://github.com/Akkadius/akk-stack.git
+$ git clone https://github.com/EQEmuTools/akk-stack.git
 Cloning into 'akk-stack'...
 remote: Enumerating objects: 57, done.
 remote: Counting objects: 100% (57/57), done.
