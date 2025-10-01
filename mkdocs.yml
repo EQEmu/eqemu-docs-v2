@@ -12,7 +12,7 @@ plugins:
       enable_creation_date: true
       enabled: !ENV [ ENV_PROD, false ]
 repo_url: https://github.com/EQEmu/server
-site_url: https://docs.eqemu.io/
+site_url: https://docs.eqemu.dev/
 repo_name: EQEmu Server
 edit_uri: https://github.com/EQEmu/eqemu-docs-v2/edit/main/docs/
 extra:
