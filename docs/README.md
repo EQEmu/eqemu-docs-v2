@@ -45,13 +45,13 @@ for EverQuest built mostly on C / C++**
 
 Find us on Discord!
 
-<iframe src="https://discord.com/widget?id=212663220849213441&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://discord.com/widget?id=1421535813031821376&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 ## Bug Reports
 
 * Please use the [issue tracker](https://github.com/EQEmu/Server/issues) provided by GitHub to send us bug reports or
   feature requests.
-* [Discord](https://discord.gg/QHsm7CD) is also a place to get more immediate help from community members on
+* [Discord](https://discord.gg/pX7Duv9djP) is also a place to get more immediate help from community members on
   troubleshooting
 
 ## External Resource links
