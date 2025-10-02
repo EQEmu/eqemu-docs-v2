@@ -4,47 +4,75 @@
 | :--- | :--- |
 | 0 | 1H Slashing |
 | 1 | 2H Slashing |
-| 2 | 1H Piercing |
+| 2 | Piercing |
 | 3 | 1H Blunt |
 | 4 | 2H Blunt |
 | 5 | Archery |
-| 7 | Throwing |
+| 6 | Crossbow |
+| 7 | Throwing v1 |
 | 8 | Shield |
+| 9 | Spell |
 | 10 | Armor |
-| 11 | Tradeskill Items |
-| 12 | Lockpicking |
+| 11 | Misc |
+| 12 | Lockpicks |
+| 13 | Fist |
 | 14 | Food |
 | 15 | Drink |
-| 16 | Light Source |
-| 17 | Common Inventory Item |
-| 18 | Bind Wound |
-| 19 | Thrown Casting Items |
-| 20 | Spells / Song Sheets |
-| 21 | Potions |
-| 22 | Fletched Arrows |
-| 23 | Wind Instruments |
-| 24 | Stringed Instruments |
-| 25 | Brass Instruments |
-| 26 | Percussion Instruments |
-| 27 | Ammo |
+| 16 | Light |
+| 17 | Combinable |
+| 18 | Bandages |
+| 19 | Throwing v2 |
+| 20 | Scroll |
+| 21 | Potion |
+| 22 | Fletched Arrow |
+| 23 | Wind Instrument |
+| 24 | Stringed Instrument |
+| 25 | Brass Instrument |
+| 26 | Percussion Instrument |
+| 27 | Arrow |
+| 28 | Bolt |
 | 29 | Jewelry |
-| 31 | Readable Notes and Scrolls |
-| 32 | Readable Books |
-| 33 | Keys |
-| 34 | Odd Items |
+| 30 | Skull |
+| 31 | Book |
+| 32 | Note |
+| 33 | Key v1 |
+| 34 | Coin |
 | 35 | 2H Piercing |
-| 36 | Fishing Poles |
+| 36 | Fishing Pole |
 | 37 | Fishing Bait |
-| 38 | Alcoholic Beverages |
-| 39 | More Keys |
-| 40 | Compasses |
-| 42 | Poisons |
+| 38 | Alcohol |
+| 39 | Key v2 |
+| 40 | Compass |
+| 41 | Metal Key |
+| 42 | Poison |
+| 43 | Magic Arrow |
+| 44 | Magic Bolt |
 | 45 | Hand to Hand |
-| 52 | Charms |
-| 53 | Dyes |
-| 54 | Augments |
-| 55 | Augment Solvents |
-| 56 | Augment Distillers |
-| 58 | Fellowship Banner Materials |
-| 60 | Cultural Armor Manuals |
-| 63 | New Curencies like Orum |
+| 46 | Item Has Effect |
+| 47 | Haste Item |
+| 48 | Item Has FT |
+| 49 | Item Has Focus |
+| 50 | Singing Instrument |
+| 51 | All Instruments |
+| 52 | Charm |
+| 53 | Armor Dye |
+| 54 | Augment |
+| 55 | Augment Solvent |
+| 56 | Augment Distiller |
+| 57 | Alternate Ability |
+| 58 | Guild Banner Kit |
+| 59 | Guild Banner Modify Token |
+| 60 | Cultural Armor Recipe Book |
+| 61 | Cultural Weapon Recipe Book |
+| 62 | Book with Spell Effect |
+| 63 | Alternate Currency |
+| 64 | Perfected Augment Distiller |
+| 65 | Placeable |
+| 66 | Collectible |
+| 67 | Container |
+| 68 | Mount |
+| 69 | Illusion |
+| 70 | Familiar |
+| 71 | Unknown71 |
+| 72 | Unknown72 |
+| 255 | None |
