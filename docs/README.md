@@ -62,8 +62,8 @@ Find us on Discord!
 | EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server){target=_blank}                                                                   |
 | Quest Scripts                  | [https://github.com/ProjectEQ/projecteqquests](https://github.com/ProjectEQ/projecteqquests){target=_blank}                                         |
 | Plugins                        | [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins){target=_blank} |
-| Maps                           | [https://github.com/Akkadius/EQEmuMaps](https://github.com/Akkadius/EQEmuMaps){target=_blank}                                                       |
-| Installer Resources            | [https://github.com/Akkadius/EQEmuInstall](https://github.com/Akkadius/EQEmuInstall){target=_blank}                                                 |
+| Maps                           | [https://github.com/EQEmuTools/eqemu-maps](https://github.com/EQEmuTools/eqemu-maps){target=_blank}                                                 |
+| Installer Resources            | [https://github.com/EQEmuTools/eqemu-install-v2](https://github.com/EQEmuTools/eqemu-install-v2){target=_blank}                                     |
 | ProjectEQ (PEQ) Database       | [http://db.projecteq.net](http://db.projecteq.net){target=_blank}                                                                                   |
 
 ## Additional / Alternative Quest Script Repositories
