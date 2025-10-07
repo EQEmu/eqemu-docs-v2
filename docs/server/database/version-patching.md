@@ -11,9 +11,13 @@ All links are referenced to an archive server called rebuildeq/server
 ## Makefile Injects
 
 In this [Makefile](https://github.com/rebuildeq/server/blob/main/.devcontainer/Makefile#L335) you can see how a new `make inject-custom` was added.
+
 - The first line has `@cd base && make inject --no-print-directory`, this went to the [base](https://github.com/rebuildeq/server/blob/main/base/Makefile) subfolder and ran the `make inject` command. Each inject was categorized by a subfolder. We'll use item as an example.
+
 - Inside [base/item](https://github.com/rebuildeq/server/tree/main/base/item) subfolder, there is a [Makefile](<https://github.com/rebuildeq/server/blob/main/base/item/Makefile>) that sourced all the sql files in this directory (salvaging-skills.sql, boxes.sql, parts.sql, etc) and any subfolder sql files.
+
 - These sql files are all built to be applied multiple times with no side effects. Such as:
+
 - [aug.sql](https://github.com/rebuildeq/server/blob/main/base/item/aug/aug.sql) patched aug slots to a new simplified variant.
 
 
