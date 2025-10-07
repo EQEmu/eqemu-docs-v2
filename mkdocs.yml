@@ -138,6 +138,7 @@ nav:
           - Multi Tenancy: server/database/multi-tenancy.md
           - Performance Tuning: server/database/performance-tuning.md
           - Schema: /schema/aas/aa_ability/
+          - Version Patching: server/database/version-patching.md
       - Expansions:
           - Classic:
               - server/expansions/classic/README.md
