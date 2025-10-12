@@ -34,7 +34,7 @@ A dazzling array of NPC attributes are displayed on the page.  These attributes 
 
 ![Default settings for our new NPC](../../../gitbook/assets/peq_database_editor-5.png)
 
-Explanations for each of these fields can be found on the [npc_types]([docs/schema/npcs/npc_types.md]) page (opens new window) in the Database Schema documentation.  
+Explanations for each of these fields can be found on the [npc_types](../../../schema/npcs/npc_types.md) page (opens new window) in the Database Schema documentation.  
 
 For our Server Greeter Bot, we are going to input the NPC Name as "_**Salutation_Model_XIV**_", select the **457 - Gnomework** _race_, with a **5 - Construct** _bodytype_ setting, _gender_ **Neuter**. These options will cause the NPC to display correctly to the client.  Be sure to also place a checkmark in the following boxes:  **Will Not Aggro (24)**, **Immune to Aggro (25)**, and **Has Quest File**.  The rest of the settings are entirely up to you.  You can choose to match the settings below for the purposes of this guide.  We do want our Greeter Bot to be noticeable, so we have increased the _size_ to **10**.  We also don't want our Greeter Bot to be accidentally killed, so we have made the NPC quite resilient by granting ridiculous HP and resist.  
 
