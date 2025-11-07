@@ -29,12 +29,13 @@
 
 ## Online Server Tools/References
 
-| __**Name**__           | __**Description**__                                                                                                             | __**Link**__                                   |
-|:-----------------------|:--------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------|
-| EOC                    | Online Deprecated Editor with some still useful tools                                                                           | https://eoc.eqemu.dev/                         |
-| Quest-API Introduction | Introduction to EQEmu Quest API                                                                                                 | https://docs.eqemu.dev/quest-api/introduction/ |
-| Spire                  | Online rich, portable server editing and development toolkit for EverQuest Emulator servers                                     | https://spire.eqemu.dev/                       |
-| Allaclone Website      | Online Allakhazam Clone for EQEmu PEQ Database                                                                                  | https://alla.eqemu.dev/                        |
+| __**Name**__              | __**Description**__                                                                         | __**Link**__                                   |
+|:--------------------------|:--------------------------------------------------------------------------------------------|:-----------------------------------------------|
+| EOC                       | Online Deprecated Editor with some still useful tools                                       | https://eoc.eqemu.dev/                         |
+| Quest-API Introduction    | Introduction to EQEmu Quest API                                                             | https://docs.eqemu.dev/quest-api/introduction/ |
+| Spire                     | Online rich, portable server editing and development toolkit for EverQuest Emulator servers | https://spire.eqemu.dev/                       |
+| Allaclone Website         | Online Allakhazam Clone for EQEmu PEQ Database                                              | https://alla.eqemu.dev/                        |
+| Shendare's Race Inventory | Find all races per zone and the associated _chr links                                       | http://www.shendare.com/EQ/Emu/EQRI/           |
 
 ## Gameplay Tools
 
