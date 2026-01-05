@@ -164,7 +164,7 @@ That's it! You're ready to play now. Double-click that shortcut you just created
 
 Find us on Discord!
 
-[New Tanaan EQ Emu Discord](https://discord.gg/BCJCakNf8R)
+[New Tanaan EQEmu Discord](https://discord.gg/BCJCakNf8R)
 
 <!-- <iframe src="https://discord.com/widget?id=212663220849213441&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
 
