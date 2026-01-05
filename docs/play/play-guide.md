@@ -98,22 +98,22 @@ Fill out the fields and proceed.
 
 !!! eqhost
 
-    As of November 2021; most of the community has been going through ProjectEQ Loginserver for stability reasons even when your Loginserver accounts are EQEmulator accounts
+    
   
     === "Titanium & Secrets of Faydwer"
 
     ```text
     [LoginServer]
-    # Host=login.eqemulator.net:5998
-    Host=login.projecteq.net:5998
+    Host=login.eqemulator.net:5998
+    # Host=login.projecteq.net:5998
     ```
 
     === "Seeds of Destruction, Underfoot, Rain of Fear"
 
     ```text
     [LoginServer]
-    # Host=login.eqemulator.net:5999
-    Host=login.projecteq.net:5999
+    Host=login.eqemulator.net:5999
+    # Host=login.projecteq.net:5999
     ```
 
 ## Step 5) Creating Shortcut
@@ -164,7 +164,9 @@ That's it! You're ready to play now. Double-click that shortcut you just created
 
 Find us on Discord!
 
-<iframe src="https://discord.com/widget?id=212663220849213441&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+[New Tanaan EQEmu Discord](https://discord.gg/BCJCakNf8R)
+
+<!-- <iframe src="https://discord.com/widget?id=212663220849213441&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
 
 
 ## FAQs
