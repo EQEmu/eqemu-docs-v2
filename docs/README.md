@@ -60,12 +60,12 @@ Find us on Discord!
 | Page                           | Link                                                                                                                                                |
 |:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | EQEmulator Website             | [http://www.eqemulator.org](http://www.eqemulator.org){target=_blank}                                                                               |
-| EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/Server){target=_blank}                                                                   |
+| EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/EQEmu){target=_blank}                                                                    |
 | Quest Scripts                  | [https://github.com/ProjectEQ/projecteqquests](https://github.com/ProjectEQ/projecteqquests){target=_blank}                                         |
 | Plugins                        | [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins){target=_blank} |
-| Maps                           | [https://github.com/EQEmuTools/eqemu-maps](https://github.com/EQEmuTools/eqemu-maps){target=_blank}                                                 |
+| Maps                           | [https://github.com/EQEmu/maps](https://github.com/EQEmu/maps){target=_blank}                                                                       |
 | Installer Resources            | [https://github.com/EQEmuTools/eqemu-install-v2](https://github.com/EQEmuTools/eqemu-install-v2){target=_blank}                                     |
-| ProjectEQ (PEQ) Database       | [http://db.projecteq.net](http://db.projecteq.net){target=_blank}                                                                                   |
+| ProjectEQ (PEQ) Database       | [http://db.projecteq.net](https://db.eqemu.dev/){target=_blank}                                                                                     |
 
 ## Additional / Alternative Quest Script Repositories
 
