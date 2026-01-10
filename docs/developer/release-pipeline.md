@@ -24,7 +24,7 @@ Version gets defined in **package.json** and it needs to be changed in order for
   "version": "22.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EQEmu/Server.git"
+    "url": "https://github.com/EQEmu/EQEmu.git"
   }
 }
 ```
@@ -82,8 +82,6 @@ People do. Whether consumers or developers, the end users of software are human 
 
 To build the base of the changelog, we built a tool to build out the scaffolding of the changelog contents. 
 
-As of this writing it can be found here http://spire.akkadius.com/dev/changelog
-
 This provides pull requests, suggest putting them in a section by them self called "Pull Requests" and providing other high level information above.
 
 Choose the amount of days since the previous release to capture changes since then.
@@ -106,8 +104,8 @@ index 323dea8de..0d2ac4028 100644
 +
 +### Fixes
 +
-+* Fix botgrouplist to display unique entries. ([#2785](https://github.com/EQEmu/Server/pull/2785)) ([Aeadoin](https://github.com/Aeadoin)) 2023-01-23
-+* Fix scenario where dereferenced object could be null. ([#2784](https://github.com/EQEmu/Server/pull/2784)) ([Aeadoin](https://github.com/Aeadoin)) 2023-01-23
++* Fix botgrouplist to display unique entries. ([#2785](https://github.com/EQEmu/EQEmu/pull/2785)) ([Aeadoin](https://github.com/Aeadoin)) 2023-01-23
++* Fix scenario where dereferenced object could be null. ([#2784](https://github.com/EQEmu/EQEmu/pull/2784)) ([Aeadoin](https://github.com/Aeadoin)) 2023-01-23
 +
  ## [22.1.0] - 01/22/2022
  
@@ -136,7 +134,7 @@ index 8f51d0ec9..4eaa1d797 100644
 +  "version": "22.1.1",
    "repository": {
      "type": "git",
-     "url": "https://github.com/EQEmu/Server.git"
+     "url": "https://github.com/EQEmu/EQEmu.git"
 ```
 
 ## Releasing
