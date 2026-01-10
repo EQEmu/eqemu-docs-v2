@@ -5,14 +5,14 @@
 | __**Name**__           | __**Description**__                                                                                                         | __**Link**__                                       |
 |:-----------------------|:----------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------|
 | The Grand Library      | Compilation of repositories                                                                                                 | https://gitlab.com/TheGrandLibrary                 |
-| EQEmu                  | Main Repo for EQEmulator                                                                                                    | https://github.com/EQEmu/Server                    |
+| EQEmu                  | Main Repo for EQEmulator                                                                                                    | https://github.com/EQEmu/EQEmu                     |
 | ProjectEQ Database     | PEQ Database daily dumps for EQEmu                                                                                          | https://db.eqemu.dev/                              |
 | ProjectEQ Quests       | Quests Repo for ProjectEQ                                                                                                   | https://github.com/ProjectEQ/projecteqquests       |
 | EQEmu Maps             | Base, Nav, Water and Pathing maps for EQEmu                                                                                 | https://github.com/EQEmu/maps                      |
 | EQEmu Docs             | Docs Repo for EQEmulator                                                                                                    | https://github.com/EQEmu/eqemu-docs-v2             |
 | Allaclone              | Allakhazam Clone for EQEmulator                                                                                             | https://github.com/EQEmuTools/EQEmuAllakhazamClone |
 | CharBrowser            | Magelo Clone for EQEmulator                                                                                                 | https://github.com/maudigan/charbrowser            |
-| Spire                  | A rich, portable server editing and development toolkit for EverQuest Emulator servers                                      | https://github.com/EQEmuTools/spire                |
+| Spire                  | A rich, portable server editing and development toolkit for EverQuest Emulator servers                                      | https://github.com/EQEmu/spire                     |
 | PEQPHPEditor           | Full-Featured PHP Editor for EQEmulator                                                                                     | https://github.com/ProjectEQ/peqphpeditor          |
 | EQEmu EOC              | Deprecated Editor with some still useful tools                                                                              | https://github.com/EQEmuTools/EQEmuEOC             |
 | EQEmuPatcher           | Auto Patcher for EQEmu Servers                                                                                              | https://github.com/xackery/eqemupatcher            |
@@ -61,14 +61,14 @@
 
 | __**Name**__          | __**Link**__                                                                              |
 |:----------------------|:------------------------------------------------------------------------------------------|
-| Bot Tables Bootstrap  | https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/bot_tables_bootstrap.sql  |
-| Merc Tables Bootstrap | https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/merc_tables_bootstrap.sql |
+| Bot Tables Bootstrap  | https://raw.githubusercontent.com/EQEmu/EQEmu/master/utils/sql/bot_tables_bootstrap.sql   |
+| Merc Tables Bootstrap | https://raw.githubusercontent.com/EQEmu/EQEmu/master/utils/sql/merc_tables_bootstrap.sql  |
 
 ## AkkStack References
 
 | __**Name**__           | __**Link**__                                       |
 |:-----------------------|:---------------------------------------------------|
-| Akk-Stack              | https://github.com/EQEmuTools/akk-stack            |
+| Akk-Stack              | https://github.com/EQEmu/akk-stack                 |
 | Akk-Stack-Introduction | https://docs.eqemu.dev/akk-stack/introduction/     |
 | Akk-Stack-Installation | https://docs.eqemu.dev/akk-stack/installation/     |
 | Akk-Stack-Backups      | https://docs.eqemu.dev/akk-stack/operate/backups/  |
