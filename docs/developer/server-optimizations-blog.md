@@ -16,7 +16,7 @@
 
     **Year** 2019
   
-    Initial PR - https://github.com/EQEmu/Server/pull/940
+    Initial PR - https://github.com/EQEmu/EQEmu/pull/940
 
 Many PR's and iterations later, we had quite a few edge cases and bugs to work out. It's been rock solid for a few years now.
 
@@ -291,7 +291,7 @@ Here is the reformatted list, including the range mentioned in the function sign
 
     **Year** 2017
     
-    Relevant commit - https://github.com/EQEmu/Server/commit/14d09485eb1fda95982eba7ebf48207729b394a2
+    Relevant commit - https://github.com/EQEmu/EQEmu/commit/14d09485eb1fda95982eba7ebf48207729b394a2
 
 This one was done long before close mob lists, but we went in and implemented sending updates by range and implemented them as configurable rules in the source.
 
@@ -319,7 +319,7 @@ RULE_INT(Range, MaxDistanceToClickDoors, 100, "Max distance that a client can cl
 
     **Year** 2017
     
-    Related commit https://github.com/EQEmu/Server/commit/127f51e7587b0d354f0f326f8661a640baf313e2
+    Related commit https://github.com/EQEmu/EQEmu/commit/127f51e7587b0d354f0f326f8661a640baf313e2
 
 Notes from original commit
 
@@ -349,7 +349,7 @@ Notes from original commit
 
     **Year** 2015
     
-    Related commit - https://github.com/EQEmu/Server/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
+    Related commit - https://github.com/EQEmu/EQEmu/commit/e8d18cb014fc2123518056fe5dbf9d8f17360da6
 
 Commit notes
 
@@ -391,11 +391,11 @@ Commit notes
     - If a change is made to this table while the server is live and running, you can hot reload all zone process settings via:
       #reloadperlexportsettings
       - For those who wonder what "exports" are, they are reference to variables that are made available at runtime of the sub event, such as:
-        (export_qglobals) (Heavy) : $qglobals https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L916
-        (export_item) (Heavy) : $itemcount{} $hasitem{} $oncursor{} https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1103
-        (export_zone) : $zoneid, $instanceid, $zoneln etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1083
-        (export_mob) : $x, $y, $z, $h, $hpratio etc. https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1032
-        (export_event) : (event specific) IE: EVENT_SAY ($text) https://github.com/EQEmu/Server/blob/master/zone/embparser.cpp#L1141
+        (export_qglobals) (Heavy) : $qglobals https://github.com/EQEmu/EQEmu/blob/master/zone/embparser.cpp#L916
+        (export_item) (Heavy) : $itemcount{} $hasitem{} $oncursor{} https://github.com/EQEmu/EQEmu/blob/master/zone/embparser.cpp#L1103
+        (export_zone) : $zoneid, $instanceid, $zoneln etc. https://github.com/EQEmu/EQEmu/blob/master/zone/embparser.cpp#L1083
+        (export_mob) : $x, $y, $z, $h, $hpratio etc. https://github.com/EQEmu/EQEmu/blob/master/zone/embparser.cpp#L1032
+        (export_event) : (event specific) IE: EVENT_SAY ($text) https://github.com/EQEmu/EQEmu/blob/master/zone/embparser.cpp#L1141
 
 ## Optimization - Logging Functions moved to Macros
 
@@ -403,7 +403,7 @@ Commit notes
 
     **Year** 2017
   
-    Related commit - https://github.com/EQEmu/Server/commit/7aa1d243b0483ad9041537aada44f923bf923390
+    Related commit - https://github.com/EQEmu/EQEmu/commit/7aa1d243b0483ad9041537aada44f923bf923390
 
 Original notes
 
@@ -428,4 +428,4 @@ Original notes
 
 ## All Other Performance Changes
 
-For anything not explicitly mentioned in the blog. Search "Performance" or "Optimization" in https://github.com/EQEmu/Server/blob/master/CHANGELOG.md for more
+For anything not explicitly mentioned in the blog. Search "Performance" or "Optimization" in https://github.com/EQEmu/EQEmu/blob/master/CHANGELOG.md for more
