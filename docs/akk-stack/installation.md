@@ -33,11 +33,11 @@ Docker Compose version v2.2.3
 First clone the repository somewhere on your server, in this case I'm going to clone it to an `/opt/eqemu-servers` folder in a Debian Linux host with Docker installed
 
 ```
-git clone https://github.com/EQEmuTools/akk-stack.git && cd akk-stack
+git clone https://github.com/EQEmu/akk-stack.git && cd akk-stack
 ```
 
 ```
-$ git clone https://github.com/EQEmuTools/akk-stack.git
+$ git clone https://github.com/EQEmu/akk-stack.git
 Cloning into 'akk-stack'...
 remote: Enumerating objects: 57, done.
 remote: Counting objects: 100% (57/57), done.
@@ -181,7 +181,7 @@ eqemu@ct-eqemu-server:~/server$ bin/world bots:enable
 The output will look like this:
 ```bash
  World |    Info    | BotsEnable Bootstrapping bot tables
- World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/bot_tables_bootstrap.sql]
+ World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/EQEmu/master/utils/sql/bot_tables_bootstrap.sql]
  World |    Info    | BotsEnable Enabling bots
  World |    Info    | BotsEnable Setting rule Bots:Enabled to true
 ```
@@ -228,7 +228,7 @@ eqemu@ct-eqemu-server:~/server$ bin/world mercs:enable
 The output will look like this:
 ```bash
  World |    Info    | MercsEnable Bootstrapping merc tables
- World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/Server/master/utils/sql/merc_tables_bootstrap.sql]
+ World |    Info    | SourceSqlFromUrl Downloading and installing from [https://raw.githubusercontent.com/EQEmu/EQEmu/master/utils/sql/merc_tables_bootstrap.sql]
  World |    Info    | MercsEnable Enabling Mercenaries
  World |    Info    | MercsEnable Setting rule Mercs:AllowMercs to true
  World |    Info    | MercsEnable Mercenaries enabled
