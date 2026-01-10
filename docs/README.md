@@ -6,11 +6,11 @@ Everything you need can be found by using **search** as well as the left and top
 
 !!! info
 
-    If you see anything that is missing or could be improved, please feel free to [contribute](https://github.com/EQEmu/eqemu-docs-v2) and feel free to submit pull requests! Merged pull requests immediately publish to these docs.
+    If you see anything that is missing or could be improved in the documenation, please feel free to [contribute](https://github.com/EQEmu/eqemu-docs-v2) and feel free to submit pull requests! Merged pull requests immediately publish to these docs.
 
     The information presented represents the commitment of countless hours of coding and documentation by a large, passionate, open-source community.
 
-    The breadth of information compiled in the documentation is the accumulation of open source community members dating back to early 2000's.
+    The breadth of information compiled in the documentation is the accumulation of open source community members dating back to early 2000s.
 
     The purpose of this platform is to allow a scalable transfer of knowledge and information regarding this massive project.
 
@@ -50,7 +50,7 @@ Find us on Discord!
 
 ## Bug Reports
 
-* Please use the [issue tracker](https://github.com/EQEmu/Server/issues) provided by GitHub to send us bug reports or
+* Please use the [issue tracker](https://github.com/EQEmu/EQEmu/issues) provided by GitHub to send us bug reports or
   feature requests.
 * [Discord](https://discord.gg/pX7Duv9djP) is also a place to get more immediate help from community members on
   troubleshooting
@@ -60,12 +60,12 @@ Find us on Discord!
 | Page                           | Link                                                                                                                                                |
 |:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | EQEmulator Website             | [http://www.eqemulator.org](http://www.eqemulator.org){target=_blank}                                                                               |
-| EQEmu Server GitHub Repository | [https://github.com/EQEmu/Server](https://github.com/EQEmu/EQEmu){target=_blank}                                                                    |
+| EQEmu Server GitHub Repository | [https://github.com/EQEmu/EQEmu](https://github.com/EQEmu/EQEmu){target=_blank}                                                                     |
 | Quest Scripts                  | [https://github.com/ProjectEQ/projecteqquests](https://github.com/ProjectEQ/projecteqquests){target=_blank}                                         |
 | Plugins                        | [https://github.com/ProjectEQ/projecteqquests/tree/master/plugins](https://github.com/ProjectEQ/projecteqquests/tree/master/plugins){target=_blank} |
 | Maps                           | [https://github.com/EQEmu/maps](https://github.com/EQEmu/maps){target=_blank}                                                                       |
 | Installer Resources            | [https://github.com/EQEmuTools/eqemu-install-v2](https://github.com/EQEmuTools/eqemu-install-v2){target=_blank}                                     |
-| ProjectEQ (PEQ) Database       | [http://db.projecteq.net](https://db.eqemu.dev/){target=_blank}                                                                                     |
+| ProjectEQ (PEQ) Database       | [http://db.eqemu.dev](https://db.eqemu.dev/){target=_blank}                                                                                         |
 
 ## Additional / Alternative Quest Script Repositories
 
