@@ -2,7 +2,7 @@
 
 #### What is it?
 
-EQDictionary is a collection of lookup references, accessed by specific namespaces and referenced by implementation standard, or [client](https://github.com/EQEmu/Server/wiki/Client-Version-List) and [mob](https://github.com/EQEmu/Server/wiki/Mob-Version-List) versions.
+EQDictionary is a collection of lookup references, accessed by specific namespaces and referenced by implementation standard, or [client](https://github.com/EQEmu/EQEmu/wiki/Client-Version-List) and [mob](https://github.com/EQEmu/EQEmu/wiki/Mob-Version-List) versions.
 
 References are usually tied back to the originating client definition and are available through an indexed lookup system. Server-based 'hybrid' definitions may also be implemented to bridge differences between client implementations and server requirements.
 
@@ -80,23 +80,23 @@ A deep, working knowledge of client behavior is required to correctly set up dyn
 
 Currently, the following files comprise the system:
 
-* [emu_constants.h](https://github.com/EQEmu/Server/blob/master/common/emu_constants.h)
-* [emu_limits.h](https://github.com/EQEmu/Server/blob/master/common/emu_limits.h)
-* [emu_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/emu_limits.cpp)
-* [eq_limits.h](https://github.com/EQEmu/Server/blob/master/common/eq_limits.h)
-* [eq_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/eq_limits.cpp)
-* [titanium_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/titanium_limits.h)
-* [titanium_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/titanium_limits.cpp)
-* [sof_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/sof_limits.h)
-* [sof_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/sof_limits.cpp)
-* [sod_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/sod_limits.h)
-* [sod_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/sod_limits.cpp)
-* [uf_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/uf_limits.h)
-* [uf_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/uf_limits.cpp)
-* [rof_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/rof_limits.h)
-* [rof_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/rof_limits.cpp)
-* [rof2_limits.h](https://github.com/EQEmu/Server/blob/master/common/patches/rof2_limits.h)
-* [rof2_limits.cpp](https://github.com/EQEmu/Server/blob/master/common/patches/rof2_limits.cpp)
+* [emu_constants.h](https://github.com/EQEmu/EQEmu/blob/master/common/emu_constants.h)
+* [emu_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/emu_limits.h)
+* [emu_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/emu_limits.cpp)
+* [eq_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/eq_limits.h)
+* [eq_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/eq_limits.cpp)
+* [titanium_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/titanium_limits.h)
+* [titanium_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/titanium_limits.cpp)
+* [sof_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/sof_limits.h)
+* [sof_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/sof_limits.cpp)
+* [sod_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/sod_limits.h)
+* [sod_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/sod_limits.cpp)
+* [uf_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/uf_limits.h)
+* [uf_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/uf_limits.cpp)
+* [rof_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/rof_limits.h)
+* [rof_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/rof_limits.cpp)
+* [rof2_limits.h](https://github.com/EQEmu/EQEmu/blob/master/common/patches/rof2_limits.h)
+* [rof2_limits.cpp](https://github.com/EQEmu/EQEmu/blob/master/common/patches/rof2_limits.cpp)
 
 #### How do I create a new lookup or add to an existing one?
 
