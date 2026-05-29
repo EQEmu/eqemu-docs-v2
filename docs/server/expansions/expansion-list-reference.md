@@ -33,4 +33,10 @@ description: Expansion names and their corresponding Internal ID's
 | Ring of Scale | 24 |
 | The Burning Lands | 25 |
 | Torment of Velious | 26 |
+| Claws of Veeshan | 27|
+| Terror of Luclin| 28|
+| Night of Shadows| 29 |
+| Laurion's Song | 30 |
+| The Outer Brood | 31 |
+| Shattering of Ro | 32 |
 
